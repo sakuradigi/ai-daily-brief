@@ -1,0 +1,215 @@
+{
+  "date": "2026-07-07",
+  "type": "daily",
+  "sections": [
+    {
+      "id": "headlines",
+      "title": { "zh": "今日頭條", "en": "Top Stories" },
+      "items": [
+        {
+          "headline": {
+            "zh": "Claude Fable 5 訂閱內含今日截止，明起改用量計費",
+            "en": "Last day of subscription-included Claude Fable 5; usage credits start tomorrow"
+          },
+          "detail": {
+            "zh": "今天（7/7）是 Fable 5 內含於 Pro/Max/Team 方案的最後一天。7/8 起改為用量計費：輸入 $10/百萬 tokens、輸出 $50/百萬 tokens，為 Opus 4.8 的兩倍。有把 pipeline 路由到 Fable 5 的開發者應立即檢查路由設定並設定額度上限，避免明天開始產生意外帳單。",
+            "en": "Today (Jul 7) is the last day Fable 5 is included in Pro/Max/Team plans. From Jul 8 it moves to usage credits: $10/M input, $50/M output tokens — double Opus 4.8. Developers routing pipelines to Fable 5 should audit routing configs and set credit limits now to avoid surprise bills tomorrow."
+          },
+          "source": "https://www.buildfastwithai.com/blogs/ai-news-today-july-6-2026",
+          "tags": ["anthropic", "pricing", "dev-ops"]
+        },
+        {
+          "headline": {
+            "zh": "白宮自願性前沿模型標準預計本週公布，將決定 GPT-5.6 開放時程",
+            "en": "White House voluntary frontier-model standards expected this week; gates GPT-5.6 rollout"
+          },
+          "detail": {
+            "zh": "FT 報導白宮與 AI 公司的自願性標準談判已進入最後階段，公布窗口落在 7/7–11。框架包含前沿模型認定基準（保密）、30 天發布前政府審查機制與境外存取規則。GPT-5.6（Sol/Terra/Luna）目前僅開放約 20 家政府審核夥伴，分析師預期框架公布後 7/7–21 間全面開放。",
+            "en": "Per FT, White House talks with AI companies on voluntary standards are in final stages, with announcement expected Jul 7–11. The framework covers classified frontier-model criteria, a 30-day pre-release review, and foreign-access rules. GPT-5.6 (Sol/Terra/Luna) remains limited to ~20 vetted partners; analysts expect broad rollout Jul 7–21 once the framework lands."
+          },
+          "source": "https://finance.yahoo.com/technology/ai/articles/us-talks-ai-companies-voluntary-001646707.html",
+          "tags": ["policy", "openai"]
+        },
+        {
+          "headline": {
+            "zh": "中國 AI 擬人化服務新規 7/15 生效：Doubao、Qwen 直接關閉 agent 功能",
+            "en": "China's AI companion law hits Jul 15: Doubao and Qwen shut down agent features outright"
+          },
+          "detail": {
+            "zh": "新規要求防沉迷、使用提示與即時退出機制——與持久記憶 agent 的架構本質矛盾，ByteDance 與 Alibaba 選擇直接下架而非改造。Doubao（3.45 億月活）用戶資料 10/15 後永久無法存取；Qwen 甚至不提供任何遷移工具。對 agent 開發者是重要判例：法規摩擦可以直接殺死一整類產品架構。",
+            "en": "The rules mandate anti-addiction friction, usage alerts, and instant-exit — structurally incompatible with persistent-memory agents, so ByteDance and Alibaba chose shutdown over retrofit. Doubao (345M MAU) data becomes permanently inaccessible after Oct 15; Qwen offers no migration path at all. A key precedent for agent builders: regulatory friction can kill an entire product architecture."
+          },
+          "source": "https://www.techtimes.com/articles/319703/20260704/china-ai-companion-law-arrives-july-15-doubao-qwen-agent-data-will-deleted.htm",
+          "tags": ["policy", "agents", "china"]
+        }
+      ]
+    },
+    {
+      "id": "opensource",
+      "title": { "zh": "開源與工具", "en": "Open Source & Tools" },
+      "items": [
+        {
+          "headline": {
+            "zh": "Meta 開源 SWE-Together：衡量多輪 coding agent 的「人工導正負擔」",
+            "en": "Meta open-sources SWE-Together: measuring the human steering burden of coding agents"
+          },
+          "detail": {
+            "zh": "109 題多輪 benchmark，重播真實工程 session，測模型跨多輪維持脈絡、吸收回饋、自我修正的能力——比單輪 SWE-bench 更貼近實際使用。Claude Opus 4.8 以 63% pass@1 奪冠且需要最少人工導正，直接驗證了「agent 價值在自主可靠性而非單次生成品質」的論點。",
+            "en": "A 109-task multi-turn benchmark replaying real engineering sessions — testing context retention, feedback adaptation, and self-correction across turns, closer to production reality than single-turn SWE-bench. Claude Opus 4.8 leads at 63% pass@1 with the least corrective steering, validating that agent value lies in autonomous reliability, not one-shot generation quality."
+          },
+          "source": "https://aiweekly.co/ai-news-today/anthropic-news",
+          "tags": ["benchmark", "coding-agent", "meta"]
+        },
+        {
+          "headline": {
+            "zh": "MCP 2026-07-28 規格 RC：協定層改為 stateless",
+            "en": "MCP 2026-07-28 spec RC: protocol reworked to be stateless"
+          },
+          "detail": {
+            "zh": "MCP（去年 12 月捐給 Linux Foundation）新版規格候選將協定層改為無狀態設計，對水平擴展與 serverless 部署友善。MCP + Google A2A + OpenAI AGENTS.md 三個開放標準已形成 2026 年 agent 互通的事實標準組合。",
+            "en": "The new spec RC for MCP (donated to the Linux Foundation last December) makes the protocol layer stateless — friendlier to horizontal scaling and serverless deployment. MCP + Google's A2A + OpenAI's AGENTS.md now form the de facto 2026 standard trio for agent interoperability."
+          },
+          "source": "https://blog.mean.ceo/open-source-ai-news-july-2026/",
+          "tags": ["mcp", "standards", "agents"]
+        },
+        {
+          "headline": {
+            "zh": "GLM-5.2（MIT 授權）SWE-bench Pro 62.1% 超越 GPT-5.5",
+            "en": "GLM-5.2 (MIT license) hits 62.1% on SWE-bench Pro, beating GPT-5.5"
+          },
+          "detail": {
+            "zh": "Zhipu AI 的 744B MoE（每 token 約 40B 活躍參數）以 MIT 授權開放權重，SWE-bench Pro 62.1% vs GPT-5.5 的 58.6%。定價 $1.40/$4.40 比西方前沿模型便宜 3 倍以上。開放權重模型在 coding 上追平閉源前沿的又一里程碑。",
+            "en": "Zhipu AI's 744B MoE (~40B active params/token) ships open weights under MIT. 62.1% on SWE-bench Pro vs GPT-5.5's 58.6%, priced at $1.40/$4.40 — 3x+ cheaper than Western frontier models. Another milestone for open weights matching closed frontier on coding."
+          },
+          "source": "https://llm-stats.com/llm-updates",
+          "tags": ["open-weights", "coding", "china"]
+        }
+      ]
+    },
+    {
+      "id": "products",
+      "title": { "zh": "產品與應用", "en": "Products & Applications" },
+      "items": [
+        {
+          "headline": {
+            "zh": "Anthropic 推出 Claude Science Workbench：Opus 4.8 直連 60+ 科學資料庫",
+            "en": "Anthropic launches Claude Science Workbench: Opus 4.8 wired to 60+ scientific databases"
+          },
+          "detail": {
+            "zh": "涵蓋基因體（NCBI、Ensembl）、蛋白質體（UniProt、PDB、AlphaFold DB）、化學資訊與臨床文獻庫，單一 session 內完成跨庫檢索、分析與綜合。AlphaFold 之父 John Jumper 參與設計。AI for Science 補助（50 個專案、各 $30K credits）7/15 截止申請。",
+            "en": "Spans genomics (NCBI, Ensembl), proteomics (UniProt, PDB, AlphaFold DB), cheminformatics, and clinical literature — multi-database retrieval, analysis, and synthesis in one session. AlphaFold lead John Jumper informed the design. AI for Science grants (50 projects, $30K credits each) close Jul 15."
+          },
+          "source": "https://aiweekly.co/ai-news-today/anthropic-news",
+          "tags": ["anthropic", "science", "tooling"]
+        },
+        {
+          "headline": {
+            "zh": "Tesla Robotaxi 進駐邁阿密：第五城、首次預設無安全員",
+            "en": "Tesla Robotaxi lands in Miami: fifth city, first with no safety monitor by default"
+          },
+          "detail": {
+            "zh": "The Information 報導邁阿密是 Tesla 首個一上線就完全無監督營運的城市（前四城：Austin、Houston、Dallas、Phoenix），目標年底擴至 12 州。走州法而非 NHTSA 預審路線。這是史上最激進的「AI 決策無人工監督」消費級部署。",
+            "en": "Per The Information, Miami is Tesla's first market launching fully unsupervised from day one (after Austin, Houston, Dallas, Phoenix), targeting 12 US states by year-end — via state law rather than NHTSA pre-approval. The most aggressive consumer deployment of unsupervised AI decision-making to date."
+          },
+          "source": "https://llm-stats.com/ai-news",
+          "tags": ["autonomous", "tesla"]
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "title": { "zh": "模型與研究", "en": "Models & Research" },
+      "items": [
+        {
+          "headline": {
+            "zh": "Gemini 3.5 Pro 再度延期：token 效率、coding、長任務推理三大問題",
+            "en": "Gemini 3.5 Pro delayed again: token efficiency, coding gaps, long-task reasoning"
+          },
+          "detail": {
+            "zh": "已錯過兩個自訂期限，仍停在 Vertex 企業預覽。企業測試者回報 agentic 任務 token 消耗過高（2026 年採購指標已是「每美元智慧」而非 benchmark 分數）；且 Pro 在最難的長脈絡推理上尚未追回 Flash 的退化。Google 選擇延期而非帶病上線。",
+            "en": "Two missed self-imposed deadlines; still in Vertex enterprise preview. Testers flagged excessive token burn on agentic tasks (in 2026, intelligence-per-dollar beats raw benchmarks as a procurement metric), and Pro hasn't yet closed Flash's regression on the hardest long-context reasoning. Google chose delay over shipping with caveats."
+          },
+          "source": "https://theairankings.com/google/gemini-3-5-pro/",
+          "tags": ["google", "gemini"]
+        },
+        {
+          "headline": {
+            "zh": "OpenAI 發布 GeneBench-Pro：前沿模型在專家級生物學上全面低分",
+            "en": "OpenAI releases GeneBench-Pro: frontier models flunk expert-level biology"
+          },
+          "detail": {
+            "zh": "129 題計算生物學 benchmark（基因體分析、蛋白質摺疊、濕實驗設計）。最強的 GPT-5.6 Sol Pro 僅 31.5%，Opus 4.8 更只有 16%——顯示 PhD 級科學知識仍是現有訓練管線的死角。對評估生醫 AI 的團隊是重要校準：這種分數的模型需要大量領域工具與驗證流程輔助。",
+            "en": "A 129-problem computational biology benchmark (genome analysis, protein folding, wet-lab design). Top model GPT-5.6 Sol Pro scores just 31.5%; Opus 4.8 only 16% — PhD-level science remains a blind spot for current training pipelines. Key calibration for teams evaluating biomedical AI: models at these scores need heavy domain tooling and validation."
+          },
+          "source": "https://aiweekly.co/ai-news-today/anthropic-news",
+          "tags": ["benchmark", "biology", "openai"]
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": { "zh": "產業與政策", "en": "Industry & Policy" },
+      "items": [
+        {
+          "headline": {
+            "zh": "中國模型吃下 OpenRouter 45% 流量，小米 MiMo-V2-Pro 成平台最大模型",
+            "en": "Chinese models now serve 45% of OpenRouter traffic; Xiaomi's MiMo-V2-Pro is the top model"
+          },
+          "detail": {
+            "zh": "一年前不到 2%。小米每週處理 4.21 兆 tokens、市佔 21.1%（OpenAI 僅 7.5%）。驅動力是成本套利而非 benchmark：免費預覽、百萬 token 上下文、價格低 3–10 倍。但要注意三個坑：政治敏感內容硬編碼拒答、資料司法管轄、tool-call JSON 偶爾不合規。",
+            "en": "Up from under 2% a year ago. Xiaomi processes 4.21T weekly tokens for 21.1% share (OpenAI: 7.5%). The driver is cost arbitrage, not benchmarks: free previews, 1M-token context, 3–10x lower prices. Three caveats: hard-coded political refusals, data jurisdiction, and occasionally off-spec tool-call JSON."
+          },
+          "source": "https://www.digitalapplied.com/blog/chinese-ai-models-q2-2026-market-share-report",
+          "tags": ["market", "china", "openrouter"]
+        },
+        {
+          "headline": {
+            "zh": "UN 全球 AI 治理對話於日內瓦開幕，169 國與會",
+            "en": "Inaugural UN Global Dialogue on AI Governance opens in Geneva with 169 countries"
+          },
+          "detail": {
+            "zh": "7/6–7 舉行，緊接著 ITU AI for Good 峰會（7/7–10）與 UN AI for Good 全球委員會首次會議（7/8）。與白宮本週的自願性標準框架並行，全球 AI 治理正在同一週於兩條軌道上推進。",
+            "en": "Running Jul 6–7, immediately followed by the ITU AI for Good Summit (Jul 7–10) and the first UN AI for Good Global Commission meeting (Jul 8). Alongside the White House framework expected this week, global AI governance is advancing on two tracks in the same week."
+          },
+          "source": "https://aitoolsrecap.com/Blog/AINewsJuly2026.aspx",
+          "tags": ["policy", "un"]
+        }
+      ]
+    },
+    {
+      "id": "quickbits",
+      "title": { "zh": "一句話快訊", "en": "Quick Bits" },
+      "style": "flash",
+      "items": [
+        {
+          "headline": {
+            "zh": "Claude Fable 5 重新上線 72 小時後再遭 jailbreak，這次花了約 20 小時",
+            "en": "Claude Fable 5 jailbroken again ~20 hours in, just 72 hours after restoration"
+          },
+          "source": "https://orangebot.ai/hacker-news-top-stories"
+        },
+        {
+          "headline": {
+            "zh": "Alibaba 將通義實驗室、Qwen 等五單位整併為「Token Hub」，由 CEO 吳泳銘直管",
+            "en": "Alibaba merges Tongyi Lab, Qwen and three other units into a 'Token Hub' under CEO Eddie Wu"
+          },
+          "source": "https://fortune.com/2026/04/12/china-token-economy-ai-boom-big-tech-startups/"
+        },
+        {
+          "headline": {
+            "zh": "FT 評論：美國資料中心建設應被當作供應鏈產業政策，而非單純 AI 投資",
+            "en": "FT op-ed: US data center buildout should be treated as supply-chain industrial policy, not just AI investment"
+          },
+          "source": "https://llm-stats.com/ai-news"
+        },
+        {
+          "headline": {
+            "zh": "中國全國日均 token 消耗達 140 兆，兩年成長約 1,400 倍",
+            "en": "China now processes 140T tokens daily nationwide — a ~1,400x increase in two years"
+          },
+          "source": "https://fortune.com/2026/04/12/china-token-economy-ai-boom-big-tech-startups/"
+        }
+      ]
+    }
+  ]
+}

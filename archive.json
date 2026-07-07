@@ -1,0 +1,13 @@
+{
+  "latest": "2026-07-07",
+  "reports": [
+    {
+      "date": "2026-07-07",
+      "type": "daily",
+      "summary": {
+        "zh": "Fable 5 計費轉換、白宮 AI 標準本週公布、中國 agent 新規、Meta 開源 SWE-Together",
+        "en": "Fable 5 billing shift, White House AI standards due this week, China agent rules, Meta open-sources SWE-Together"
+      }
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 時事快報</title>
+<style>
+  :root {
+    --bg: #fafaf8; --card: #ffffff; --text: #1a1a1a; --muted: #6b6b6b;
+    --accent: #c96442; --border: #e5e2dc; --chip: #f0ede6; --hover: #f5f2ec;
+  }
+  [data-theme="dark"] {
+    --bg: #141413; --card: #1f1e1c; --text: #eceae4; --muted: #9a968c;
+    --accent: #e08d6d; --border: #34322d; --chip: #2a2926; --hover: #2a2926;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body {
+    background: var(--bg); color: var(--text);
+    font-family: -apple-system, "PingFang TC", "Noto Sans TC", sans-serif;
+    line-height: 1.65; transition: background .2s, color .2s;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 24px 16px 64px; }
+  header { display: flex; align-items: center; justify-content: space-between; }
+  h1 { font-size: 1.35rem; letter-spacing: .02em; cursor: pointer; }
+  .date { color: var(--muted); font-size: .85rem; margin: 4px 0 18px; }
+  .ctrl { display: flex; gap: 8px; }
+  .ctrl button {
+    background: var(--chip); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 4px 12px; font-size: .8rem; cursor: pointer;
+  }
+  .ctrl button:hover { background: var(--hover); }
+  .toolbar { display: flex; justify-content: flex-end; gap: 14px; margin-bottom: 12px; }
+  .toolbar a { color: var(--muted); font-size: .78rem; cursor: pointer; text-decoration: none; }
+  .toolbar a:hover { color: var(--accent); }
+  section { margin-bottom: 22px; }
+  .sec-title {
+    font-size: .82rem; font-weight: 600; color: var(--accent);
+    text-transform: uppercase; letter-spacing: .08em; margin-bottom: 8px;
+  }
+  details {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 10px; margin-bottom: 6px; overflow: hidden;
+  }
+  summary {
+    padding: 10px 14px; cursor: pointer; list-style: none;
+    display: flex; align-items: baseline; gap: 8px; font-size: .95rem;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary:hover { background: var(--hover); }
+  summary::before { content: "▸"; color: var(--muted); font-size: .7rem; flex-shrink: 0; }
+  details[open] summary::before { content: "▾"; }
+  .body { padding: 0 14px 12px 32px; color: var(--muted); font-size: .88rem; }
+  .body a { color: var(--accent); text-decoration: none; }
+  .tags { margin-top: 6px; }
+  .tag {
+    display: inline-block; background: var(--chip); border-radius: 99px;
+    padding: 1px 9px; font-size: .7rem; color: var(--muted); margin-right: 4px;
+  }
+  .flash { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 10px 14px; }
+  .flash li { margin-left: 18px; font-size: .88rem; padding: 2px 0; }
+  .flash li a { color: var(--muted); text-decoration: none; font-size: .78rem; }
+  .flash li a:hover { color: var(--accent); }
+  .weekly-badge {
+    display: inline-block; background: var(--accent); color: #fff;
+    border-radius: 6px; padding: 1px 8px; font-size: .7rem; vertical-align: middle; margin-left: 8px;
+  }
+  .weekly-box {
+    background: var(--card); border: 1px solid var(--accent); border-radius: 10px;
+    padding: 14px 16px; margin-bottom: 22px; font-size: .92rem;
+  }
+  .archive-list { list-style: none; }
+  .archive-list li { margin-bottom: 6px; }
+  .archive-list a {
+    display: block; background: var(--card); border: 1px solid var(--border);
+    border-radius: 10px; padding: 10px 14px; color: var(--text);
+    text-decoration: none; font-size: .95rem;
+  }
+  .archive-list a:hover { background: var(--hover); }
+  .archive-month { font-size: .82rem; font-weight: 600; color: var(--accent); margin: 16px 0 8px; }
+  .loading, .error { color: var(--muted); text-align: center; padding: 48px 0; }
+  footer { margin-top: 40px; color: var(--muted); font-size: .78rem; text-align: center; }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1 id="siteTitle" onclick="location.hash=''">⚡ AI 時事快報</h1>
+    <div class="ctrl">
+      <button id="langBtn">EN</button>
+      <button id="themeBtn">◐</button>
+    </div>
+  </header>
+  <div id="app"><div class="loading">Loading…</div></div>
+  <footer id="foot"></footer>
+</div>
+
+<script>
+const T = {
+  zh: { title: "⚡ AI 時事快報", daily: "日報", weekly: "週報", expand: "全部展開", collapse: "全部收合",
+        archive: "📁 封存", latest: "← 最新一期", source: "→ 原文", weeklyTitle: "本週綜觀",
+        foot: "每日自動更新 · 週一為週報", err: "讀取失敗。若在本機開啟，請先啟動本地伺服器：python3 -m http.server",
+        weekdays: ["週日","週一","週二","週三","週四","週五","週六"] },
+  en: { title: "⚡ AI Daily Brief", daily: "Daily", weekly: "Weekly", expand: "Expand all", collapse: "Collapse all",
+        archive: "📁 Archive", latest: "← Latest", source: "→ Source", weeklyTitle: "Week in Review",
+        foot: "Updated daily · Weekly edition on Mondays", err: "Failed to load. If opening locally, run: python3 -m http.server",
+        weekdays: ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"] }
+};
+let lang = localStorage.getItem('lang') || 'zh';
+let theme = localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+let archive = null, current = null;
+
+const $ = s => document.querySelector(s);
+const t = () => T[lang];
+const L = o => o ? (o[lang] || o.zh || o.en || "") : "";
+
+function fmtDate(d) {
+  const dt = new Date(d + "T00:00:00");
+  const wd = t().weekdays[dt.getDay()];
+  return lang === 'zh'
+    ? `${dt.getFullYear()} 年 ${dt.getMonth()+1} 月 ${dt.getDate()} 日 · ${wd}`
+    : dt.toLocaleDateString('en-US', { year:'numeric', month:'long', day:'numeric' }) + ` · ${wd}`;
+}
+
+function applyTheme() { document.documentElement.dataset.theme = theme; localStorage.setItem('theme', theme); }
+function applyChrome() {
+  $('#siteTitle').textContent = t().title;
+  $('#langBtn').textContent = lang === 'zh' ? 'EN' : '中';
+  $('#foot').textContent = t().foot;
+  document.documentElement.lang = lang === 'zh' ? 'zh-Hant' : 'en';
+  localStorage.setItem('lang', lang);
+}
+
+async function loadArchive() {
+  if (!archive) archive = await (await fetch('archive.json')).json();
+  return archive;
+}
+
+function reportPath(date) {
+  const [y, m] = date.split('-');
+  return `reports/${y}/${m}/${date}.json`;
+}
+
+function renderItem(it) {
+  const tags = (it.tags || []).map(x => `<span class="tag">${x}</span>`).join('');
+  const src = it.source ? ` <a href="${it.source}" target="_blank" rel="noopener">${t().source}</a>` : '';
+  return `<details><summary>${L(it.headline)}</summary>
+    <div class="body">${L(it.detail)}${src}${tags ? `<div class="tags">${tags}</div>` : ''}</div></details>`;
+}
+
+function renderReport(r) {
+  const badge = r.type === 'weekly' ? `<span class="weekly-badge">${t().weekly}</span>` : '';
+  let html = `<div class="date">${fmtDate(r.date)} · ${r.type === 'weekly' ? t().weekly : t().daily}${badge}</div>
+    <div class="toolbar">
+      <a onclick="document.querySelectorAll('details').forEach(d=>d.open=true)">${t().expand}</a>
+      <a onclick="document.querySelectorAll('details').forEach(d=>d.open=false)">${t().collapse}</a>
+      <a href="#archive">${t().archive}</a>
+    </div>`;
+  if (r.weekly) html += `<div class="weekly-box"><div class="sec-title">${t().weeklyTitle}</div>${L(r.weekly)}</div>`;
+  for (const sec of r.sections) {
+    html += `<section><div class="sec-title">${L(sec.title)}</div>`;
+    if (sec.style === 'flash') {
+      html += `<div class="flash">` + sec.items.map(it => {
+        const src = it.source ? ` <a href="${it.source}" target="_blank" rel="noopener">↗</a>` : '';
+        return `<li>${L(it.headline)}${src}</li>`;
+      }).join('') + `</div>`;
+    } else {
+      html += sec.items.map(renderItem).join('');
+    }
+    html += `</section>`;
+  }
+  $('#app').innerHTML = html;
+}
+
+function renderArchive(a) {
+  let html = `<div class="date">${t().archive}</div>
+    <div class="toolbar"><a href="#">${t().latest}</a></div>`;
+  const byMonth = {};
+  for (const e of a.reports) {
+    const m = e.date.slice(0, 7);
+    (byMonth[m] = byMonth[m] || []).push(e);
+  }
+  for (const m of Object.keys(byMonth).sort().reverse()) {
+    html += `<div class="archive-month">${m}</div><ul class="archive-list">`;
+    for (const e of byMonth[m].sort((x, y) => y.date.localeCompare(x.date))) {
+      const badge = e.type === 'weekly' ? `<span class="weekly-badge">${t().weekly}</span>` : '';
+      html += `<li><a href="#${e.date}">${fmtDate(e.date)}${badge}<br>
+        <span style="color:var(--muted);font-size:.82rem">${L(e.summary)}</span></a></li>`;
+    }
+    html += `</ul>`;
+  }
+  $('#app').innerHTML = html;
+}
+
+async function route() {
+  try {
+    const a = await loadArchive();
+    const h = location.hash.slice(1);
+    if (h === 'archive') { current = null; renderArchive(a); return; }
+    const date = /^\d{4}-\d{2}-\d{2}$/.test(h) ? h : a.latest;
+    current = await (await fetch(reportPath(date))).json();
+    renderReport(current);
+  } catch (e) {
+    $('#app').innerHTML = `<div class="error">${t().err}</div>`;
+  }
+}
+
+$('#langBtn').onclick = () => {
+  lang = lang === 'zh' ? 'en' : 'zh'; applyChrome();
+  if (location.hash === '#archive' && archive) renderArchive(archive);
+  else if (current) renderReport(current);
+};
+$('#themeBtn').onclick = () => { theme = theme === 'dark' ? 'light' : 'dark'; applyTheme(); };
+window.addEventListener('hashchange', route);
+applyTheme(); applyChrome(); route();
+</script>
+</body>
+</html>

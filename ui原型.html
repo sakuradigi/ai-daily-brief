@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 時事快報 · UI 原型</title>
+<style>
+  :root {
+    --bg: #fafaf8; --card: #ffffff; --text: #1a1a1a; --muted: #6b6b6b;
+    --accent: #c96442; --border: #e5e2dc; --chip: #f0ede6; --hover: #f5f2ec;
+  }
+  [data-theme="dark"] {
+    --bg: #141413; --card: #1f1e1c; --text: #eceae4; --muted: #9a968c;
+    --accent: #e08d6d; --border: #34322d; --chip: #2a2926; --hover: #2a2926;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body {
+    background: var(--bg); color: var(--text);
+    font-family: -apple-system, "PingFang TC", "Noto Sans TC", sans-serif;
+    line-height: 1.6; transition: background .2s, color .2s;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 24px 16px 64px; }
+  header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 4px; }
+  h1 { font-size: 1.35rem; letter-spacing: .02em; }
+  .date { color: var(--muted); font-size: .85rem; margin-bottom: 20px; }
+  .ctrl { display: flex; gap: 8px; }
+  .ctrl button {
+    background: var(--chip); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 4px 12px; font-size: .8rem; cursor: pointer;
+  }
+  .ctrl button:hover { background: var(--hover); }
+  .toolbar { display: flex; justify-content: flex-end; gap: 12px; margin-bottom: 12px; }
+  .toolbar a { color: var(--muted); font-size: .78rem; cursor: pointer; text-decoration: none; }
+  .toolbar a:hover { color: var(--accent); }
+  section { margin-bottom: 22px; }
+  .sec-title {
+    font-size: .82rem; font-weight: 600; color: var(--accent);
+    text-transform: uppercase; letter-spacing: .08em; margin-bottom: 8px;
+  }
+  details {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 10px; margin-bottom: 6px; overflow: hidden;
+  }
+  summary {
+    padding: 10px 14px; cursor: pointer; list-style: none;
+    display: flex; align-items: baseline; gap: 8px; font-size: .95rem;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary:hover { background: var(--hover); }
+  summary::before { content: "▸"; color: var(--muted); font-size: .7rem; flex-shrink: 0; }
+  details[open] summary::before { content: "▾"; }
+  .body { padding: 0 14px 12px 32px; color: var(--muted); font-size: .88rem; }
+  .body a { color: var(--accent); text-decoration: none; }
+  .tags { margin-top: 6px; }
+  .tag {
+    display: inline-block; background: var(--chip); border-radius: 99px;
+    padding: 1px 9px; font-size: .7rem; color: var(--muted); margin-right: 4px;
+  }
+  .flash { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 10px 14px; }
+  .flash li { margin-left: 18px; font-size: .88rem; padding: 2px 0; }
+  .weekly-badge {
+    display: inline-block; background: var(--accent); color: #fff;
+    border-radius: 6px; padding: 1px 8px; font-size: .7rem; vertical-align: middle; margin-left: 8px;
+  }
+  footer { margin-top: 40px; color: var(--muted); font-size: .78rem; text-align: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1 data-zh="⚡ AI 時事快報" data-en="⚡ AI Daily Brief">⚡ AI 時事快報</h1>
+    <div class="ctrl">
+      <button id="langBtn">EN</button>
+      <button id="themeBtn">◐</button>
+    </div>
+  </header>
+  <div class="date" data-zh="2026 年 7 月 7 日 · 週二 · 日報" data-en="July 7, 2026 · Tuesday · Daily">2026 年 7 月 7 日 · 週二 · 日報</div>
+
+  <div class="toolbar">
+    <a id="expandAll" data-zh="全部展開" data-en="Expand all">全部展開</a>
+    <a id="collapseAll" data-zh="全部收合" data-en="Collapse all">全部收合</a>
+    <a data-zh="📁 封存" data-en="📁 Archive">📁 封存</a>
+  </div>
+
+  <section>
+    <div class="sec-title" data-zh="今日頭條" data-en="Top Stories">今日頭條</div>
+    <details>
+      <summary data-zh="（範例）某實驗室發布新一代開源權重模型，長上下文推理大幅提升" data-en="(Sample) Lab releases next-gen open-weights model with major long-context gains">（範例）某實驗室發布新一代開源權重模型，長上下文推理大幅提升</summary>
+      <div class="body">
+        <span data-zh="展開後才看到的 2–3 句細節：模型規格、benchmark 對比、為什麼重要。附原文連結。" data-en="2–3 sentences shown only on expand: specs, benchmark comparison, why it matters. With source link.">展開後才看到的 2–3 句細節：模型規格、benchmark 對比、為什麼重要。附原文連結。</span>
+        <a href="#" data-zh="→ 原文" data-en="→ Source">→ 原文</a>
+        <div class="tags"><span class="tag">open-source</span><span class="tag">llm</span></div>
+      </div>
+    </details>
+    <details>
+      <summary data-zh="（範例）Agent 框架重大更新：原生支援多代理協作協定" data-en="(Sample) Major agent framework update: native multi-agent protocol support">（範例）Agent 框架重大更新：原生支援多代理協作協定</summary>
+      <div class="body"><span data-zh="細節說明…" data-en="Details…">細節說明…</span> <a href="#" data-zh="→ 原文" data-en="→ Source">→ 原文</a></div>
+    </details>
+  </section>
+
+  <section>
+    <div class="sec-title" data-zh="模型與研究" data-en="Models & Research">模型與研究</div>
+    <details>
+      <summary data-zh="（範例）arXiv：新的注意力機制將推理成本降低 40%" data-en="(Sample) arXiv: new attention mechanism cuts inference cost by 40%">（範例）arXiv：新的注意力機制將推理成本降低 40%</summary>
+      <div class="body"><span data-zh="論文重點、方法、限制。" data-en="Key findings, method, limitations.">論文重點、方法、限制。</span> <a href="#">→ arXiv</a></div>
+    </details>
+  </section>
+
+  <section>
+    <div class="sec-title" data-zh="開源與工具" data-en="Open Source & Tools">開源與工具</div>
+    <details>
+      <summary data-zh="（範例）GitHub 本日熱門：本地 LLM 推理引擎 v2.0" data-en="(Sample) GitHub trending: local LLM inference engine v2.0">（範例）GitHub 本日熱門：本地 LLM 推理引擎 v2.0</summary>
+      <div class="body"><span data-zh="細節…" data-en="Details…">細節…</span></div>
+    </details>
+  </section>
+
+  <section>
+    <div class="sec-title" data-zh="一句話快訊" data-en="Quick Bits">一句話快訊</div>
+    <div class="flash">
+      <li data-zh="（範例）某雲端平台調降 GPU 租用價格 15%" data-en="(Sample) Cloud platform cuts GPU rental prices by 15%">（範例）某雲端平台調降 GPU 租用價格 15%</li>
+      <li data-zh="（範例）歐盟 AI 法案第二階段條款生效" data-en="(Sample) EU AI Act phase-two provisions take effect">（範例）歐盟 AI 法案第二階段條款生效</li>
+    </div>
+  </section>
+
+  <footer data-zh="週一為週報 — 含一週綜觀 + 當日重點" data-en="Mondays are weekly editions — week in review + today's highlights">週一為週報 — 含一週綜觀 + 當日重點</footer>
+</div>
+
+<script>
+  const root = document.documentElement;
+  let lang = localStorage.getItem('lang') || 'zh';
+  let theme = localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+
+  function applyLang() {
+    document.querySelectorAll('[data-zh]').forEach(el => el.textContent = el.dataset[lang]);
+    document.getElementById('langBtn').textContent = lang === 'zh' ? 'EN' : '中';
+    document.documentElement.lang = lang === 'zh' ? 'zh-Hant' : 'en';
+    localStorage.setItem('lang', lang);
+  }
+  function applyTheme() {
+    root.dataset.theme = theme;
+    localStorage.setItem('theme', theme);
+  }
+  document.getElementById('langBtn').onclick = () => { lang = lang === 'zh' ? 'en' : 'zh'; applyLang(); };
+  document.getElementById('themeBtn').onclick = () => { theme = theme === 'dark' ? 'light' : 'dark'; applyTheme(); };
+  document.getElementById('expandAll').onclick = () => document.querySelectorAll('details').forEach(d => d.open = true);
+  document.getElementById('collapseAll').onclick = () => document.querySelectorAll('details').forEach(d => d.open = false);
+  applyLang(); applyTheme();
+</script>
+</body>
+</html>
