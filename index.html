@@ -87,6 +87,7 @@
   <header>
     <h1 id="siteTitle" onclick="location.hash=''">⚡ AI 時事快報</h1>
     <div class="ctrl">
+      <button id="fontBtn" title="字體大小">A</button>
       <button id="langBtn">EN</button>
       <button id="themeBtn">◐</button>
     </div>
@@ -108,6 +109,8 @@ const T = {
 };
 let lang = localStorage.getItem('lang') || 'zh';
 let theme = localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+const FONT_SIZES = [{ pct: 100, label: "A" }, { pct: 112, label: "A+" }, { pct: 125, label: "A++" }, { pct: 88, label: "A-" }];
+let fontIdx = parseInt(localStorage.getItem('fontIdx') || '0', 10) % FONT_SIZES.length;
 let archive = null, current = null;
 
 const $ = s => document.querySelector(s);
@@ -123,12 +126,28 @@ function fmtDate(d) {
 }
 
 function applyTheme() { document.documentElement.dataset.theme = theme; localStorage.setItem('theme', theme); }
+function applyFont() {
+  const f = FONT_SIZES[fontIdx];
+  document.documentElement.style.fontSize = f.pct + '%';
+  $('#fontBtn').textContent = f.label;
+  localStorage.setItem('fontIdx', fontIdx);
+}
 function applyChrome() {
   $('#siteTitle').textContent = t().title;
   $('#langBtn').textContent = lang === 'zh' ? 'EN' : '中';
-  $('#foot').textContent = t().foot;
   document.documentElement.lang = lang === 'zh' ? 'zh-Hant' : 'en';
   localStorage.setItem('lang', lang);
+  updateFoot();
+}
+function updateFoot() {
+  let s = t().foot;
+  if (current && current.generated_at) {
+    const d = new Date(current.generated_at);
+    const ts = d.toLocaleString(lang === 'zh' ? 'zh-TW' : 'en-US',
+      { timeZone: 'Asia/Taipei', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hour12: false });
+    s = (lang === 'zh' ? `本期生成於 ${ts}（台北）· ` : `Generated ${ts} (Taipei) · `) + s;
+  }
+  $('#foot').textContent = s;
 }
 
 async function loadArchive() {
@@ -196,10 +215,11 @@ async function route() {
   try {
     const a = await loadArchive();
     const h = location.hash.slice(1);
-    if (h === 'archive') { current = null; renderArchive(a); return; }
+    if (h === 'archive') { current = null; renderArchive(a); updateFoot(); return; }
     const date = /^\d{4}-\d{2}-\d{2}$/.test(h) ? h : a.latest;
     current = await (await fetch(reportPath(date))).json();
     renderReport(current);
+    updateFoot();
   } catch (e) {
     $('#app').innerHTML = `<div class="error">${t().err}</div>`;
   }
@@ -211,8 +231,9 @@ $('#langBtn').onclick = () => {
   else if (current) renderReport(current);
 };
 $('#themeBtn').onclick = () => { theme = theme === 'dark' ? 'light' : 'dark'; applyTheme(); };
+$('#fontBtn').onclick = () => { fontIdx = (fontIdx + 1) % FONT_SIZES.length; applyFont(); };
 window.addEventListener('hashchange', route);
-applyTheme(); applyChrome(); route();
+applyTheme(); applyFont(); applyChrome(); route();
 </script>
 </body>
 </html>

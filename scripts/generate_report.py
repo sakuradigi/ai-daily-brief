@@ -204,6 +204,7 @@ def main():
         raise SystemExit(f"FATAL: generation failed after 3 attempts: {last_err}")
 
     summary = report.pop("summary")
+    report["generated_at"] = datetime.datetime.now(TAIPEI).isoformat(timespec="minutes")
     REPORT_PATH.parent.mkdir(parents=True, exist_ok=True)
     REPORT_PATH.write_text(json.dumps(report, ensure_ascii=False, indent=1), encoding="utf-8")
 
