@@ -32,7 +32,7 @@ jobs:
         env:
           PROVIDER: gemini
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-3-flash' }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}   # 留空即用腳本內現行 flash 候選；要固定型號才設此 variable
         run: python scripts/generate_report.py
 
       - name: Commit & push

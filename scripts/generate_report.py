@@ -2,7 +2,7 @@
 """讀取 data/sources_raw.json → 呼叫 LLM 生成雙語日報 → reports/ + archive.json
 
 Model-agnostic：PROVIDER=gemini（預設）| claude | mock
-- gemini: 需 GEMINI_API_KEY（免費層即可），GEMINI_MODEL 預設 gemini-3-flash
+- gemini: 需 GEMINI_API_KEY（免費層即可），GEMINI_MODEL 未設時自動用現行 flash（見 GEMINI_FALLBACKS）
 - claude: 需 ANTHROPIC_API_KEY，CLAUDE_MODEL 預設 claude-sonnet-5
 - mock:   不呼叫 API，產生測試用日報（驗證管線）
 週一（台北時間）自動生成週報：type=weekly + weekly 綜觀欄位。
@@ -72,24 +72,42 @@ WEEKLY_INSTRUCTIONS = """## 週報加項（今天是週一）
 """
 
 
+# 候選模型：GEMINI_MODEL（若設）優先，其後依序 fallback。
+# 單一型號名失效（改名/下架 → 404）不再整包失敗，會自動退到下一個。
+# 現行名稱見 https://ai.google.dev/gemini-api/docs/models（2026-06 為準）
+GEMINI_FALLBACKS = ["gemini-3.5-flash", "gemini-flash-latest", "gemini-3.1-flash-lite"]
+
+
 def call_gemini(prompt: str) -> str:
     key = os.environ["GEMINI_API_KEY"]
-    model = os.environ.get("GEMINI_MODEL", "gemini-3-flash")
-    r = requests.post(
-        f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
-        params={"key": key},
-        json={
-            "contents": [{"parts": [{"text": prompt}]}],
-            "generationConfig": {
-                "temperature": 0.4,
-                "maxOutputTokens": 16384,
-                "responseMimeType": "application/json",
+    candidates = []
+    if os.environ.get("GEMINI_MODEL"):
+        candidates.append(os.environ["GEMINI_MODEL"])
+    candidates += [m for m in GEMINI_FALLBACKS if m not in candidates]
+
+    last_err = None
+    for model in candidates:
+        r = requests.post(
+            f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
+            params={"key": key},
+            json={
+                "contents": [{"parts": [{"text": prompt}]}],
+                "generationConfig": {
+                    "temperature": 0.4,
+                    "maxOutputTokens": 16384,
+                    "responseMimeType": "application/json",
+                },
             },
-        },
-        timeout=300,
-    )
-    r.raise_for_status()
-    return r.json()["candidates"][0]["content"]["parts"][0]["text"]
+            timeout=300,
+        )
+        # 型號不存在/無權限 → 換下一個候選；其餘錯誤照常拋出
+        if r.status_code in (403, 404):
+            last_err = f"{model}: HTTP {r.status_code} {r.text[:200]}"
+            print(f"WARN model '{model}' unavailable ({r.status_code}), trying next", file=sys.stderr)
+            continue
+        r.raise_for_status()
+        return r.json()["candidates"][0]["content"]["parts"][0]["text"]
+    raise RuntimeError(f"all Gemini models unavailable: {last_err}")
 
 
 def call_claude(prompt: str) -> str:

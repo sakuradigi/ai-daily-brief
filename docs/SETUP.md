@@ -9,7 +9,7 @@
 3. Repo → Settings → Secrets and variables → Actions → New repository secret
    - Name: `GEMINI_API_KEY`，Value: 貼上 key
 
-（可選）若之後要換模型：Settings → Secrets and variables → Actions → Variables 分頁 → 新增 `GEMINI_MODEL`（預設 `gemini-3-flash`）。
+（可選）若要固定模型：Settings → Secrets and variables → Actions → Variables 分頁 → 新增 `GEMINI_MODEL`（例如 `gemini-3.5-flash`）。留空時腳本自動用現行 flash 候選，並在型號改名/下架時自動退到下一個，不會整包失敗。
 
 ## 2. 觸發用 PAT（cron-job.org 呼叫 GitHub 用）
 
