@@ -1,0 +1,282 @@
+{
+ "date": "2026-07-09",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "SpaceXAI 發表 Grok 4.5，馬斯克稱其為「Opus 級」高效能模型",
+      "en": "SpaceXAI releases Grok 4.5, described by Musk as an 'Opus-class' model"
+     },
+     "detail": {
+      "zh": "SpaceXAI 推出最新一代 Grok 4.5，主打比同級頂尖模型更低的推理成本與更高的效率。這款被定位為「Opus 級別」的模型，旨在為開發者提供更具性價比的前沿 LLM 選擇。",
+      "en": "SpaceXAI has launched Grok 4.5, promising a cheaper and more efficient alternative to other frontier models. Positioned as an 'Opus-class' model, it aims to provide developers with highly cost-effective LLM capabilities."
+     },
+     "source": "https://techcrunch.com/2026/07/08/spacexai-releases-grok-4-5-which-elon-describes-as-an-opus-class-model/",
+     "tags": [
+      "Grok 4.5",
+      "SpaceXAI",
+      "LLM"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 推出 GPT-Live 語音模型，主打極低延遲與自然雙向對話",
+      "en": "OpenAI introduces GPT-Live voice models for natural, low-latency interactions"
+     },
+     "detail": {
+      "zh": "OpenAI 發表全新原生語音模型 GPT-Live，能同時進行聽與說，並支援即時中斷與語氣停頓偵測。該模型已整合至 ChatGPT 語音模式，大幅提升了語音應用的互動流暢度。",
+      "en": "OpenAI has released GPT-Live, a new generation of voice models capable of simultaneous listening and speaking with real-time interruption handling. Now powering ChatGPT Voice, it significantly enhances the naturalness of voice-driven applications."
+     },
+     "source": "https://openai.com/index/introducing-gpt-live",
+     "tags": [
+      "GPT-Live",
+      "OpenAI",
+      "Voice Model"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "駭客利用「HalluSquatting」漏洞，藉 LLM 幻覺套件名稱構建大規模殭屍網路",
+      "en": "Hackers exploit 'HalluSquatting' to build massive botnets via LLM package hallucinations"
+     },
+     "detail": {
+      "zh": "研究指出，駭客正利用主流 LLM 產生的程式碼幻覺（虛構不存在的套件名稱），搶先註冊同名惡意套件。開發者若直接複製 AI 生成的安裝指令，將面臨供應鏈攻擊並可能被植入殭屍網路。",
+      "en": "Security researchers warn that hackers are leveraging LLM code hallucinations by pre-registering non-existent package names suggested by AI. Developers copying AI-generated install commands risk supply-chain attacks and botnet infections."
+     },
+     "source": "https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets/",
+     "tags": [
+      "Security",
+      "HalluSquatting",
+      "LLM Hallucination"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Hugging Face 推出 vLLM 原生速度 Transformers 建模後端",
+      "en": "Hugging Face releases native-speed vLLM transformers modeling backend"
+     },
+     "detail": {
+      "zh": "此更新為 Transformers 庫引入了 vLLM 的高效推理後端，讓開發者無需複雜配置即可享有極致的吞吐量與低延遲。這大幅簡化了本地部署與生產環境的模型推理優化流程。",
+      "en": "This integration brings vLLM's high-performance inference backend directly to the Transformers library. Developers can now achieve native-speed throughput and low latency without complex configurations, streamlining local and production deployments."
+     },
+     "source": "https://huggingface.co/blog/native-speed-vllm-transformers-backend",
+     "tags": [
+      "vLLM",
+      "Transformers",
+      "Inference"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "法國新創 ZML 開源 ZML/LLMD，加速跨異質晶片之模型推論",
+      "en": "ZML releases free ZML/LLMD tool to accelerate inference across diverse AI chips"
+     },
+     "detail": {
+      "zh": "獲得 Yann LeCun 背書的 ZML 推出免費開源工具 ZML/LLMD，旨在優化並加速模型在不同硬體（如 TPU、GPU 及各類 AI 晶片）上的推論效率，有效降低企業的算力部署成本。",
+      "en": "Endorsed by Yann LeCun, French startup ZML has released ZML/LLMD, a free open-source tool designed to optimize and accelerate model inference across heterogeneous hardware (TPUs, GPUs, and custom silicon), reducing deployment costs."
+     },
+     "source": "https://techcrunch.com/2026/07/08/hot-french-startup-zml-releases-free-product-to-speed-inference-across-lots-of-ai-chips/",
+     "tags": [
+      "ZML",
+      "LLMD",
+      "Hardware Acceleration"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "NVIDIA 與 Hugging Face 聯手開源 Open Data for Agents 代理訓練資料集",
+      "en": "NVIDIA and Hugging Face release Open Data for Agents dataset"
+     },
+     "detail": {
+      "zh": "雙方合作釋出專為 AI Agent 訓練設計的開源資料集，旨在提升 Agent 在工具調用、多步驟規劃與任務執行上的準確度，為開源 Agent 社群提供高品質的微調基石。",
+      "en": "NVIDIA and Hugging Face have partnered to release an open dataset tailored for training AI agents. It aims to improve agent performance in tool calling, multi-step planning, and task execution, providing a high-quality foundation for open-source agent fine-tuning."
+     },
+     "source": "https://huggingface.co/blog/nvidia/open-data-for-agents",
+     "tags": [
+      "NVIDIA",
+      "AI Agents",
+      "Dataset"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "ChatGPT 升級版語音模式上線：更聰明的「打斷」與停頓等待機制",
+      "en": "Upgraded ChatGPT Voice mode rolls out with better interruption handling"
+     },
+     "detail": {
+      "zh": "搭載全新的 GPT-Live-1 模型，升級後的語音模式更像與真人對話。系統能精準識別用戶的語氣停頓並耐心等待，減少了過往語音助理頻繁搶話或錯誤打斷的痛點。",
+      "en": "Powered by the new GPT-Live-1 model, the upgraded voice mode behaves more like a human conversationalist. It accurately detects user pauses and waits for continuation, resolving the common pain point of premature interruptions."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/962856/chatgpt-upgraded-voice-mode-gpt-live",
+     "tags": [
+      "ChatGPT Voice",
+      "GPT-Live-1",
+      "Voice Assistant"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Meta 推出 Muse Image 生成模型，因用戶資料隱私爭議引發社群反彈",
+      "en": "Meta rolls out Muse Image generator amid user backlash over training data"
+     },
+     "detail": {
+      "zh": "Meta 發表全新圖像生成模型 Muse，主打廣告與創意設計應用。然而，由於該模型大量使用旗下社群平台的用戶相片進行訓練，再度引發創作者與用戶對隱私權的強烈抗議。",
+      "en": "Meta has launched Muse, a new image generation model targeted at advertising and creative design. However, the release has sparked intense backlash from users and creators over Meta's use of personal platform photos for model training."
+     },
+     "source": "https://techcrunch.com/2026/07/07/meta-rolls-out-muse-a-new-ai-image-generator/",
+     "tags": [
+      "Meta Muse",
+      "Image Generation",
+      "Privacy"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 發表分析報告，指出熱門程式碼評測集 SWE-Bench Pro 存在雜訊與信賴度問題",
+      "en": "OpenAI analysis reveals reliability and noise issues in SWE-Bench Pro benchmark"
+     },
+     "detail": {
+      "zh": "OpenAI 針對專門評估 AI 軟體工程能力的 SWE-Bench Pro 進行深入分析，發現其測試案例中存在顯著的雜訊與不一致性。這項研究提醒社群在評估 LLM 程式碼能力時，需更審慎對待基準測試的準確性。",
+      "en": "OpenAI's deep dive into SWE-Bench Pro, a popular benchmark for evaluating AI software engineering capabilities, uncovers significant noise and inconsistencies in test cases. The study cautions the community to be more rigorous when interpreting LLM coding evaluations."
+     },
+     "source": "https://openai.com/index/separating-signal-from-noise-coding-evaluations",
+     "tags": [
+      "SWE-Bench Pro",
+      "Benchmark",
+      "Code Evaluation"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "貝佐斯投資新創 General Intuition 嘗試以遊戲畫面訓練物理世界 AI 基礎模型",
+      "en": "Bezos-backed General Intuition trains physical AI models using video game data"
+     },
+     "detail": {
+      "zh": "該新創認為純文字 LLM 缺乏對空間與時間移動的物理理解。他們透過數百萬小時的電玩遊戲影像資料來訓練基礎模型，試圖以極低的現實資料成本，加速具身智能（Robotics AI）的發展。",
+      "en": "Arguing that text-based LLMs lack spatial and temporal understanding of the physical world, the startup is training robotics foundation models using millions of hours of video game data to accelerate physical AI with minimal real-world data."
+     },
+     "source": "https://techcrunch.com/2026/07/08/this-startup-thinks-robotics-is-about-to-have-its-chatgpt-moment/",
+     "tags": [
+      "General Intuition",
+      "Robotics AI",
+      "AGI"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "AI 晶片製造商 SambaNova 完成 10 億美元 F 輪融資，估值達 110 億美元",
+      "en": "AI chipmaker SambaNova raises $1B Series F at $11B valuation"
+     },
+     "detail": {
+      "zh": "在傳出 Intel 有意收購的數月後，SambaNova 成功募集巨額資金，估值飆升至 110 億美元。這筆資金將用於加速其客製化 AI 晶片與全棧式企業級 AI 解決方案的研發與部署。",
+      "en": "Months after rumors of a potential acquisition by Intel, SambaNova secured a massive $1B funding round, pushing its valuation to $11B. The capital will accelerate the development and deployment of its custom AI chips and enterprise solutions."
+     },
+     "source": "https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/",
+     "tags": [
+      "SambaNova",
+      "AI Chip",
+      "Funding"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "AI 資料中心用電量暴增，導致美國製造業電費上漲並面臨能源競爭",
+      "en": "AI data center energy demands drive up US manufacturing power costs"
+     },
+     "detail": {
+      "zh": "隨著 AI 資料中心在美國鐵鏽地帶等地區大肆擴建，龐大的電力需求推高了區域電費，導致傳統製造業面臨高昂的能源成本壓力，甚至威脅到「美國製造」的產業復興計劃。",
+      "en": "The rapid expansion of AI data centers in regions like the US Rust Belt is driving up local electricity rates. This energy squeeze is placing a heavy cost burden on traditional manufacturers, potentially threatening domestic manufacturing initiatives."
+     },
+     "source": "https://arstechnica.com/tech-policy/2026/07/us-manufacturers-energy-costs-soar-because-of-ai-data-center-demand/",
+     "tags": [
+      "Data Center",
+      "Energy Crisis",
+      "Manufacturing"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "Cloudflare 工程師 Kenton Varda 宣布禁止團隊使用 AI 生成 PR 與 Commit 說明",
+      "en": "Kenton Varda bans AI-written PR and commit descriptions due to lack of high-level context"
+     },
+     "source": "https://simonwillison.net/2026/Jul/8/kenton-varda/#atom-everything"
+    },
+    {
+     "headline": {
+      "zh": "企業級 AI Agent 平台 Prime Intellect 完成 1.3 億美元 A 輪融資",
+      "en": "Prime Intellect raises $130M Series A to help enterprises build custom AI agents"
+     },
+     "source": "https://techcrunch.com/2026/07/08/prime-intellect-raises-130m-series-a-to-help-enterprises-build-their-own-ai-agents/"
+    },
+    {
+     "headline": {
+      "zh": "常春藤盟校教授因懷疑學生集體用 AI 作弊改採實體考試，平均成績暴跌 50%",
+      "en": "Ivy League professor orders in-person exam over AI cheating suspicions; scores drop 50%"
+     },
+     "source": "https://arstechnica.com/ai/2026/07/we-cannot-choose-to-become-idiots-the-ai-cheating-scandal-roiling-brown-university/"
+    },
+    {
+     "headline": {
+      "zh": "AI 程式碼生成新創 Lovable 進行 3 億美元融資談判，估值有望翻倍至 132 億美元",
+      "en": "AI coding startup Lovable in talks to double valuation to $13.2B in $300M round"
+     },
+     "source": "https://techcrunch.com/2026/07/08/lovable-reportedly-in-talks-to-double-its-valuation-to-13-2b/"
+    }
+   ]
+  }
+ ],
+ "generated_at": "2026-07-09T07:02+08:00"
+}

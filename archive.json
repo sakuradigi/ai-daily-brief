@@ -1,6 +1,14 @@
 {
- "latest": "2026-07-08",
+ "latest": "2026-07-09",
  "reports": [
+  {
+   "date": "2026-07-09",
+   "type": "daily",
+   "summary": {
+    "zh": "Grok 4.5 與 GPT-Live 雙強對決，開源推論加速與安全漏洞成焦點",
+    "en": "Grok 4.5 and GPT-Live debut; open-source inference acceleration and security vulnerabilities take center stage"
+   }
+  },
   {
    "date": "2026-07-08",
    "type": "daily",
