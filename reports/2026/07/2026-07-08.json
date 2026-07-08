@@ -1,0 +1,256 @@
+{
+ "date": "2026-07-08",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "騰訊開源 295B MoE 模型 Hy3，採 Apache 2.0 授權",
+      "en": "Tencent open-sources Hy3, a 295B MoE model under Apache 2.0 license"
+     },
+     "detail": {
+      "zh": "騰訊推出 Hy3 混合專家模型，擁有 295B 參數（21B 啟用參數），採 Apache 2.0 開源授權。該模型在後續訓練中導入高品質數據，效能超越同級模型，並可媲美參數量大 2-5 倍的旗艦開源模型。",
+      "en": "Tencent released Hy3, a 295B MoE model with 21B active parameters under Apache 2.0 license. It outperforms similar-sized models and rivals flagship open-source models with 2-5x its parameter count."
+     },
+     "source": "https://simonwillison.net/2026/Jul/6/hy3/#atom-everything",
+     "tags": [
+      "LLM",
+      "Open Source",
+      "MoE"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "微軟為降低 AI 成本，開始擴大採用自家模型",
+      "en": "Microsoft shifts to in-house models to cut soaring AI costs"
+     },
+     "detail": {
+      "zh": "微軟正加入矽谷科技巨頭的省錢行列，透過增加對自家內部 AI 模型的依賴，逐步減少對 OpenAI 等外部高成本模型的支出。這項轉變顯示微軟正試圖在維持 AI 功能的同時，優化其雲端基礎設施的營運利潤。",
+      "en": "Microsoft is cutting back on AI spending by relying more on its own in-house models instead of expensive external APIs, signaling a strategic shift to optimize cloud infrastructure margins."
+     },
+     "source": "https://techcrunch.com/2026/07/07/microsoft-joins-ai-cost-cutting-trend-by-relying-more-on-its-own-models/",
+     "tags": [
+      "Microsoft",
+      "Business",
+      "Cloud Compute"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 將 Claude Cowork 協作平台推向行動端與網頁版",
+      "en": "Anthropic expands Claude Cowork platform to mobile and web"
+     },
+     "detail": {
+      "zh": "原本僅限於桌面應用的 Claude Cowork 代理協作平台，現已正式支援行動裝置與網頁瀏覽器。Max 訂閱用戶可率先體驗跨裝置無縫接軌的自動化工作流，其他方案用戶將於數週內獲得存取權。",
+      "en": "Anthropic is expanding its Claude Cowork agent platform to mobile and web interfaces. Currently rolling out to Max subscribers, it allows users to manage and monitor multi-step agentic workflows seamlessly across devices."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/961978/anthropic-claude-cowork-mobile-web",
+     "tags": [
+      "Anthropic",
+      "Claude",
+      "AI Agent"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "sqlite-utils 4.0 正式發布，支援資料庫綱要遷移與巢狀事務",
+      "en": "sqlite-utils 4.0 released with database schema migrations and nested transactions"
+     },
+     "detail": {
+      "zh": "知名開發者 Simon Willison 發布 sqlite-utils 4.0，為 2020 年以來首次重大版本更新。新版導入資料庫遷移（migrations）、透過 db.atomic() 實現的巢狀事務，以及複合外鍵支援，大幅提升 SQLite 開發體驗。",
+      "en": "Simon Willison released sqlite-utils 4.0, the first major update since 2020. It introduces native schema migrations, nested transactions via db.atomic(), and support for compound foreign keys."
+     },
+     "source": "https://simonwillison.net/2026/Jul/7/sqlite-utils-4/#atom-everything",
+     "tags": [
+      "SQLite",
+      "Database",
+      "Python"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "SkyPilot 聯手 Hugging Face 推出免傳輸費的跨雲 AI 儲存方案",
+      "en": "Run AI on any cloud with zero-egress storage via SkyPilot and Hugging Face"
+     },
+     "detail": {
+      "zh": "Hugging Face 與 SkyPilot 合作推出零資料傳輸費（zero-egress）儲存方案。開發者可在任何雲端平台上執行 AI 工作負載，並直接將資料儲存於 Hugging Face，免去高昂的跨雲資料傳輸成本。",
+      "en": "Hugging Face partnered with SkyPilot to offer zero-egress storage. Developers can now run AI workloads on any cloud provider while storing data on Hugging Face without incurring steep data egress fees."
+     },
+     "source": "https://huggingface.co/blog/skypilot-hf-storage",
+     "tags": [
+      "Cloud Compute",
+      "SkyPilot",
+      "Storage"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Hugging Face 機器人開源庫 LeRobot v0.6.0 發布",
+      "en": "Hugging Face releases LeRobot v0.6.0 for open-source robotics"
+     },
+     "detail": {
+      "zh": "LeRobot 釋出 v0.6.0 版本，主打「想像、評估、改進」工作流。此更新優化了實體機器人控制演算法的訓練與評估介面，降低了開發者進入開源具身智能（Embodied AI）的門檻。",
+      "en": "Hugging Face released LeRobot v0.6.0, focusing on the 'Imagine, Evaluate, Improve' workflow. This update refines training and evaluation pipelines for real-world robotic control, lowering the barrier to embodied AI."
+     },
+     "source": "https://huggingface.co/blog/lerobot-release-v060",
+     "tags": [
+      "Robotics",
+      "Embodied AI",
+      "Open Source"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Meta 推出 Muse Image 影像生成模型，支援跨平台社群應用",
+      "en": "Meta launches Muse Image generator across Instagram and WhatsApp"
+     },
+     "detail": {
+      "zh": "Meta 超級智能實驗室推出首款影像生成模型 Muse Image，已整合至 Meta AI、Instagram 與 WhatsApp。該模型具備將其他用戶拉入 AI 合照等新穎功能，但也引發了隱私與版權爭議。",
+      "en": "Meta's Superintelligence Labs launched Muse Image, a new generative model powering image tools across Instagram, WhatsApp, and Meta AI. It features social capabilities like pulling other users into AI-generated photos, sparking privacy debates."
+     },
+     "source": "https://www.theverge.com/tech/962485/meta-muse-image-ai-model-instagram",
+     "tags": [
+      "Meta",
+      "Image Generation",
+      "Social Media"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Hugging Face 支援一鍵部署至 Amazon SageMaker Studio",
+      "en": "One-click deployment from Hugging Face to Amazon SageMaker Studio"
+     },
+     "detail": {
+      "zh": "Hugging Face 推出全新整合功能，開發者現在可以一鍵將平台上的模型直接導入 Amazon SageMaker Studio 進行訓練與部署，大幅簡化了 AWS 環境下的機器學習工作流。",
+      "en": "Hugging Face introduced a new integration allowing developers to launch and configure models directly in Amazon SageMaker Studio with a single click, streamlining AWS-based ML workflows."
+     },
+     "source": "https://huggingface.co/blog/amazon/one-click-to-sagemaker-studio",
+     "tags": [
+      "AWS",
+      "Hugging Face",
+      "MLOps"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": []
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "面對美國出口管制，DeepSeek 計劃自主研發晶片",
+      "en": "DeepSeek plans to design its own chips amid US export controls"
+     },
+     "detail": {
+      "zh": "面對美方嚴格的半導體出口限制，中國 AI 獨角獸 DeepSeek 計劃自主設計晶片，旨在降低對 NVIDIA 與華為的依賴。此舉顯示出中國頂尖 AI 團隊在硬體供應鏈自主化上的最新嘗試。",
+      "en": "Facing stringent US export restrictions, China's DeepSeek is planning to design its own silicon to reduce reliance on Nvidia and Huawei, marking a major shift in its hardware supply chain strategy."
+     },
+     "source": "https://arstechnica.com/ai/2026/07/facing-us-export-controls-chinas-deepseek-plans-to-make-its-own-chips/",
+     "tags": [
+      "DeepSeek",
+      "Hardware",
+      "Geopolitics"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "AI 資料中心能耗暴增，擠壓美國傳統製造業電網資源",
+      "en": "AI data center power demands squeeze US manufacturing energy costs"
+     },
+     "detail": {
+      "zh": "隨著 AI 資料中心在美國鐵鏽地帶等地區瘋狂擴建，其龐大的電力需求導致當地製造業電費飆升。這項能源爭奪戰正對美國本土製造業復興計劃構成實質威脅。",
+      "en": "The massive energy consumption of AI data centers is driving up electricity bills for US manufacturers, particularly in the Rust Belt, threatening national plans to revitalize domestic manufacturing."
+     },
+     "source": "https://arstechnica.com/tech-policy/2026/07/us-manufacturers-energy-costs-soar-because-of-ai-data-center-demand/",
+     "tags": [
+      "Data Center",
+      "Energy",
+      "Policy"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "開發者使用 GPT-5.5 提示詞建構出用於嵌入 GitHub 程式碼的 Web Component。",
+      "en": "Developer builds a Web Component for embedding GitHub code using GPT-5.5."
+     },
+     "source": "https://simonwillison.net/2026/Jul/7/github-code-component/#atom-everything"
+    },
+    {
+     "headline": {
+      "zh": "Discord 承認其 AI 審查系統出現 Bug，自五月起誤封鎖了數百名上傳無害圖片的用戶。",
+      "en": "Discord admits an AI moderation bug has been wrongfully banning users over harmless images since May."
+     },
+     "source": "https://techcrunch.com/2026/07/07/discord-admits-ai-moderation-bug-wrongfully-banned-users-over-harmless-images/"
+    },
+    {
+     "headline": {
+      "zh": "首例由 AI 代理執行的勒索軟體攻擊曝光，但關鍵決策與憑證提供仍需人類介入。",
+      "en": "The first AI-agent executed ransomware attack is revealed, though human intervention was still required for key setup."
+     },
+     "source": "https://techcrunch.com/2026/07/06/the-first-ai-run-ransomware-attack-still-needed-a-human/"
+    },
+    {
+     "headline": {
+      "zh": "Solos 推出僅重 19 克的無相機智慧眼鏡 AirGo A6，主打純語音 AI 互動與隱私保護。",
+      "en": "Solos debuts AirGo A6 camera-less smart glasses weighing just 19g, focusing on voice-only AI and privacy."
+     },
+     "source": "https://www.theverge.com/tech/961711/solos-airgo-a6-smart-glasses-ai-assistant-privacy"
+    },
+    {
+     "headline": {
+      "zh": "sqlite-migrate 釋出 0.2 版，正式宣告退役並轉為 sqlite-utils 4.0 的相容過渡層。",
+      "en": "sqlite-migrate 0.2 released, retiring the library in favor of a compatibility shim for sqlite-utils 4.0."
+     },
+     "source": "https://simonwillison.net/2026/Jul/7/sqlite-migrate/#atom-everything"
+    }
+   ]
+  }
+ ],
+ "generated_at": "2026-07-08T09:11+08:00"
+}
