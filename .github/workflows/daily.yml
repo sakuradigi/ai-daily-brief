@@ -89,7 +89,7 @@ jobs:
             echo "SKIP failure notify: 未設 Telegram secrets"; exit 0
           fi
           DATE=$(TZ=Asia/Taipei date +%F)
+          TEXT=$(printf '⚠️ AI 時事快報 產製失敗（%s）\n請查 Actions log：%s' "$DATE" "$RUN_URL")
           curl -s -X POST "https://api.telegram.org/bot${TG_TOKEN}/sendMessage" \
             -d chat_id="${TG_CHAT}" \
-            --data-urlencode "text=⚠️ AI 時事快報 產製失敗（${DATE}）
-請查 Actions log：${RUN_URL}" >/dev/null || true
+            --data-urlencode "text=${TEXT}" >/dev/null || true
