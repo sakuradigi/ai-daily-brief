@@ -11,6 +11,17 @@
 
 （可選）若要固定模型：Settings → Secrets and variables → Actions → Variables 分頁 → 新增 `GEMINI_MODEL`（例如 `gemini-3.5-flash`）。留空時腳本自動用現行 flash 候選，並在型號改名/下架時自動退到下一個，不會整包失敗。
 
+### 1b. 備援：Claude（付費、穩定，強烈建議）
+
+Gemini 免費層在尖峰易吃 503。workflow 已設 `PROVIDER: gemini,claude`：Gemini 失敗會自動退到 Claude。啟用只需加一個 secret：
+
+1. 到 [Anthropic Console](https://console.anthropic.com/) 建立 API key（需綁定 billing 的帳戶才穩定）
+2. Repo → Settings → Secrets and variables → Actions → New repository secret
+   - Name: `ANTHROPIC_API_KEY`，Value: 貼上 key
+3. （可選）固定模型：新增 Variable `CLAUDE_MODEL`（預設 `claude-haiku-4-5`）
+
+一天一次、每月成本約 US$1–3。沒設 `ANTHROPIC_API_KEY` 也能跑，只是 Gemini 掛掉時沒有備援。網頁頁尾會顯示「本報由 X 撰寫」，一眼看出當天走的是主力還備援。
+
 ## 2. 觸發用 PAT（cron-job.org 呼叫 GitHub 用）
 
 1. GitHub → Settings（個人）→ Developer settings → [Fine-grained tokens](https://github.com/settings/personal-access-tokens/new)

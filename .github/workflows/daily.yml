@@ -47,9 +47,11 @@ jobs:
       - name: Generate report
         if: steps.guard.outputs.skip == 'false'
         env:
-          PROVIDER: gemini
+          PROVIDER: gemini,claude          # 主用 Gemini（免費），失敗自動退到 Claude（付費、穩定）
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}   # 留空即用腳本內現行 flash 候選；要固定型號才設此 variable
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}       # 留空即用腳本內現行 flash 候選
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLAUDE_MODEL: ${{ vars.CLAUDE_MODEL }}        # 留空預設 claude-haiku-4-5
         run: python scripts/generate_report.py
 
       - name: Commit & push

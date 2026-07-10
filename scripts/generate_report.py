@@ -123,29 +123,47 @@ def call_gemini(prompt: str) -> str:
                 time.sleep(wait)
                 continue
             r.raise_for_status()
-            return r.json()["candidates"][0]["content"]["parts"][0]["text"]
+            return r.json()["candidates"][0]["content"]["parts"][0]["text"], model
     raise RuntimeError(f"all Gemini attempts exhausted: {last_err}")
 
 
-def call_claude(prompt: str) -> str:
-    r = requests.post(
-        "https://api.anthropic.com/v1/messages",
-        headers={
-            "x-api-key": os.environ["ANTHROPIC_API_KEY"],
-            "anthropic-version": "2023-06-01",
-        },
-        json={
-            "model": os.environ.get("CLAUDE_MODEL", "claude-sonnet-5"),
-            "max_tokens": 16384,
-            "messages": [{"role": "user", "content": prompt}],
-        },
-        timeout=300,
-    )
-    r.raise_for_status()
-    return r.json()["content"][0]["text"]
+def call_claude(prompt: str):
+    """備援：Anthropic Claude（付費、穩定）。預設 Haiku，性價比高。"""
+    model = os.environ.get("CLAUDE_MODEL", "claude-haiku-4-5")
+    last_err = None
+    for attempt in range(4):
+        try:
+            r = requests.post(
+                "https://api.anthropic.com/v1/messages",
+                headers={
+                    "x-api-key": os.environ["ANTHROPIC_API_KEY"],
+                    "anthropic-version": "2023-06-01",
+                },
+                json={
+                    "model": model,
+                    "max_tokens": 16384,
+                    "messages": [{"role": "user", "content": prompt}],
+                },
+                timeout=300,
+            )
+        except requests.RequestException as ex:
+            last_err = ex
+            wait = 5 * 2 ** attempt
+            print(f"WARN claude network error, backoff {wait}s: {ex}", file=sys.stderr)
+            time.sleep(wait)
+            continue
+        if r.status_code in TRANSIENT or r.status_code == 529:  # 過載/限流 → 退避重試
+            last_err = f"HTTP {r.status_code} {r.text[:200]}"
+            wait = 5 * 2 ** attempt
+            print(f"WARN claude HTTP {r.status_code} (transient), backoff {wait}s", file=sys.stderr)
+            time.sleep(wait)
+            continue
+        r.raise_for_status()
+        return r.json()["content"][0]["text"], model
+    raise RuntimeError(f"claude attempts exhausted: {last_err}")
 
 
-def call_mock(prompt: str) -> str:
+def call_mock(prompt: str):
     report = {
         "date": DATE, "type": "weekly" if IS_WEEKLY else "daily",
         "summary": {"zh": "管線測試", "en": "pipeline test"},
@@ -162,7 +180,7 @@ def call_mock(prompt: str) -> str:
     }
     if IS_WEEKLY:
         report["weekly"] = {"zh": "本週綜觀測試。", "en": "Weekly test."}
-    return json.dumps(report, ensure_ascii=False)
+    return json.dumps(report, ensure_ascii=False), "mock"
 
 
 PROVIDERS = {"gemini": call_gemini, "claude": call_claude, "mock": call_mock}
@@ -224,22 +242,34 @@ def main():
         sources=json.dumps(sources["items"], ensure_ascii=False),
     )
 
-    call = PROVIDERS[PROVIDER]
-    last_err = None
-    # call_gemini 內部已對 503/429 做退避重試＋換模型；外層這 2 次主要救「解析/驗證」失敗（重下 prompt）
-    for attempt in range(2):
-        try:
-            report = parse_json(call(prompt))
-            report["date"] = DATE  # 強制對齊
-            validate(report)
+    # 供應商鏈：PROVIDER 可為逗號清單（如 "gemini,claude"）。依序嘗試，前者失敗才退到後者。
+    # 每個供應商內層各自已對 503/429 做退避重試；外層這 2 次主要救「解析/驗證」失敗（重下 prompt）。
+    chain = [p.strip() for p in PROVIDER.split(",") if p.strip()]
+    report, used_model, last_err = None, None, None
+    for prov in chain:
+        call = PROVIDERS.get(prov)
+        if call is None:
+            print(f"WARN unknown provider '{prov}', skipping", file=sys.stderr)
+            continue
+        for attempt in range(2):
+            try:
+                text, used_model = call(prompt)
+                rep = parse_json(text)
+                rep["date"] = DATE  # 強制對齊
+                validate(rep)
+                report = rep
+                break
+            except Exception as ex:
+                last_err = ex
+                print(f"WARN provider={prov} attempt {attempt + 1} failed: {ex}", file=sys.stderr)
+        if report is not None:
             break
-        except Exception as ex:
-            last_err = ex
-            print(f"WARN attempt {attempt + 1} failed: {ex}", file=sys.stderr)
-    else:
-        raise SystemExit(f"FATAL: generation failed after 3 attempts: {last_err}")
+        print(f"WARN provider={prov} 全數失敗，改試下一個供應商", file=sys.stderr)
+    if report is None:
+        raise SystemExit(f"FATAL: 所有供應商皆失敗: {last_err}")
 
     summary = report.pop("summary")
+    report["model"] = used_model  # 實際生成本報的模型，供網頁顯示
     report["generated_at"] = datetime.datetime.now(TAIPEI).isoformat(timespec="minutes")
     REPORT_PATH.parent.mkdir(parents=True, exist_ok=True)
     REPORT_PATH.write_text(json.dumps(report, ensure_ascii=False, indent=1), encoding="utf-8")
@@ -252,7 +282,7 @@ def main():
     ARCHIVE_PATH.write_text(json.dumps(archive, ensure_ascii=False, indent=1), encoding="utf-8")
 
     n = sum(len(s["items"]) for s in report["sections"])
-    print(f"OK: {REPORT_PATH.relative_to(ROOT)} ({report['type']}, {n} items, provider={PROVIDER})")
+    print(f"OK: {REPORT_PATH.relative_to(ROOT)} ({report['type']}, {n} items, model={used_model})")
 
 
 if __name__ == "__main__":
