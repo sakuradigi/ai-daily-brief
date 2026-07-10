@@ -1,0 +1,301 @@
+{
+ "date": "2026-07-10",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 推出 GPT-5.6 三代模型 Luna、Terra 與 Sol，定價最低每百萬 Token $1 美元",
+      "en": "OpenAI launches GPT-5.6 model family (Luna, Terra, Sol) with pricing starting at $1/1M tokens"
+     },
+     "detail": {
+      "zh": "新模型包含 Luna（$1/$6）、Terra（$2.50/$15）與 Sol（$5/$30）三種尺寸。雖然帳面定價看似比 Claude 系列便宜，但因推理 Token 運算機制不同，實際開發成本仍需視具體任務的推理深度而定。",
+      "en": "The new family includes Luna ($1/$6), Terra ($2.50/$15), and Sol ($5/$30). While token prices seem competitive compared to Claude, actual development costs will depend heavily on reasoning token usage per task."
+     },
+     "source": "https://simonwillison.net/2026/Jul/9/gpt-5-6/#atom-everything",
+     "tags": [
+      "OpenAI",
+      "GPT-5.6",
+      "LLM",
+      "Pricing"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Meta 推出 Muse Spark 1.1 並開放 API，主打 Agent 級工具調用與程式碼遷移",
+      "en": "Meta releases Muse Spark 1.1 with API, targeting agentic tool calling and code migration"
+     },
+     "detail": {
+      "zh": "這是首款提供 API 的 Spark 模型，顯著提升了 Agent 工具調用與電腦操作能力，旨在與現有 AI 程式輔助工具競爭，協助企業進行大規模程式碼遷移與 Bug 修復。",
+      "en": "This is the first Spark model to offer an API, featuring significant improvements in agentic tool calling and computer use, designed to compete in the AI coding space and assist with large-scale code migrations."
+     },
+     "source": "https://techcrunch.com/2026/07/09/meta-enters-the-crowded-ai-coding-battle-with-muse-spark-1-1/",
+     "tags": [
+      "Meta",
+      "Muse Spark",
+      "API",
+      "Coding Agent"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 宣佈關閉 Atlas 瀏覽器，全面轉向 ChatGPT Work 桌面與擴充功能",
+      "en": "OpenAI sunsets Atlas browser, pivoting agentic features to ChatGPT Work and Chrome extension"
+     },
+     "detail": {
+      "zh": "推出不到一年的 AI 任務瀏覽器 Atlas 即將走入歷史。OpenAI 證實將其 Agent 瀏覽與自動化功能整合至全新的 ChatGPT Work 桌面應用程式與 Chrome 擴充功能中。",
+      "en": "Less than a year after launch, OpenAI is sunsetting its Atlas browser. The company is migrating its agentic browsing capabilities into the new ChatGPT Work desktop app and a Chrome extension."
+     },
+     "source": "https://techcrunch.com/2026/07/09/openai-is-shutting-down-atlas-but-its-ai-browser-ambitions-are-still-growing/",
+     "tags": [
+      "OpenAI",
+      "Atlas",
+      "ChatGPT Work",
+      "Deprecation"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "開源本地 LLM 工具 Ollama 完成 6500 萬美元融資，用戶數逼近 900 萬",
+      "en": "Open-source local LLM runner Ollama raises $65M as user base nears 9 million"
+     },
+     "detail": {
+      "zh": "由 Benchmark 領投，Ollama 在 GitHub 已累積 17.6 萬顆星。此資金將用於優化本地模型運行效率，對去中心化與隱私優先的開發者社群是一大助力。",
+      "en": "Led by Benchmark, Ollama has amassed 176k stars on GitHub. The funding will be used to optimize local model execution, providing a major boost to decentralized and privacy-first developer workflows."
+     },
+     "source": "https://techcrunch.com/2026/07/09/popular-open-source-ai-developer-tool-ollama-raises-65m-grows-to-nearly-9m-users/",
+     "tags": [
+      "Ollama",
+      "Open Source",
+      "Local LLM",
+      "Funding"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Simon Willison 發佈 llm-meta-ai 0.1，支援在 CLI 直接調用 Muse Spark 1.1",
+      "en": "Simon Willison releases llm-meta-ai 0.1, enabling Muse Spark 1.1 prompts via CLI"
+     },
+     "detail": {
+      "zh": "配合 Meta 新 API 推出，熱門 CLI 工具 llm 同步更新至 0.31.1，修復了 OpenAI 相容端點在工具調用參數為空時會導致 JSON 解析錯誤的 Bug。",
+      "en": "Released alongside Meta's new API, the popular llm CLI tool was updated to 0.31.1 to fix a bug where empty tool call arguments caused JSON errors on OpenAI-compatible endpoints."
+     },
+     "source": "https://simonwillison.net/2026/Jul/9/llm-meta-ai/#atom-everything",
+     "tags": [
+      "CLI",
+      "llm",
+      "Meta",
+      "Open Source"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "FableCut：專為 AI Agent 設計的無依賴瀏覽器影片編輯器",
+      "en": "FableCut: A zero-dependency browser video editor designed for AI agents"
+     },
+     "detail": {
+      "zh": "一款可讓 AI Agent 直接操作的瀏覽器影片編輯器，具備零外部依賴特性，方便開發者將影片剪輯與生成工作流無縫整合至 Agent 系統中。",
+      "en": "A browser-based video editor that AI agents can drive directly. Featuring zero external dependencies, it allows developers to easily integrate video editing workflows into agentic systems."
+     },
+     "source": "https://github.com/ronak-create/FableCut",
+     "tags": [
+      "FableCut",
+      "Browser Video Editor",
+      "AI Agent",
+      "GitHub"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 發表 ChatGPT Work：可跨應用執行長達數小時任務的 AI 助理",
+      "en": "OpenAI introduces ChatGPT Work: An agent capable of running multi-hour cross-app tasks"
+     },
+     "detail": {
+      "zh": "基於 Codex 系統重新設計，ChatGPT Work 可以在雲端或經授權後在本地讀取檔案與操作桌面應用，能自主維持長時間的工作流以完成複雜專案。",
+      "en": "A rebranded Codex system, ChatGPT Work can take actions across apps and files in the cloud or locally (with permission), maintaining state over hours to complete complex projects."
+     },
+     "source": "https://openai.com/index/chatgpt-for-your-most-ambitious-work",
+     "tags": [
+      "ChatGPT Work",
+      "AI Agent",
+      "Productivity"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 推出 Claude Wrapped 功能，可視化用戶的 AI 使用數據",
+      "en": "Anthropic launches Claude Wrapped, visualizing user AI usage data"
+     },
+     "detail": {
+      "zh": "效仿 Spotify Wrapped，新功能 Reflect 儀表板可分析並呈現用戶過去一個月的對話數據，在提供使用洞察的同時也巧妙地加深用戶對 Claude 的黏著度。",
+      "en": "Inspired by Spotify Wrapped, the new Reflect dashboard analyzes and visualizes user interaction data over the past month, subtly reinforcing user reliance on the chatbot."
+     },
+     "source": "https://techcrunch.com/2026/07/09/anthropics-new-claude-feature-is-quietly-selling-you-on-ai/",
+     "tags": [
+      "Anthropic",
+      "Claude",
+      "UI/UX",
+      "Analytics"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "SMetric 論文：針對 Agent 服務重新思考 LLM 調度，優化 KV 快取重用率",
+      "en": "SMetric: Rethinking LLM scheduling for agents with session-centric optimization"
+     },
+     "detail": {
+      "zh": "研究指出 Agent 任務與人類對話不同，更依賴完整響應（TPS）而非單個 Token 延遲，且 KV 快取重用率高達 80%。SMetric 提出平衡的對話中心調度演算法以大幅提升吞吐量。",
+      "en": "The paper highlights that agent workloads prioritize complete response throughput (TPS) over per-token latency, with KV cache reuse exceeding 80%. SMetric proposes a session-centric scheduling algorithm to maximize throughput."
+     },
+     "source": "https://arxiv.org/abs/2607.08565v1",
+     "tags": [
+      "LLM Serving",
+      "Scheduling",
+      "KV Cache",
+      "AI Agent"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "論文揭示量化盲區：傳統指標無法捕捉 LLM 量化後的行為偏差",
+      "en": "Paper reveals quantization blindspots: Traditional metrics fail to capture behavioral shifts"
+     },
+     "detail": {
+      "zh": "研究發現準確度和困惑度（perplexity）無法反映量化帶來的決策變化。論文引入「正確性一致度」指標，揭示即使量化模型整體準確度不變，其預測行為已與原模型產生顯著分歧。",
+      "en": "The study shows that accuracy and perplexity fail to capture behavioral changes in quantized LLMs. Introducing correctness agreement, the authors reveal significant decision-level divergence between base and quantized models despite similar accuracy."
+     },
+     "source": "https://arxiv.org/abs/2607.08734v1",
+     "tags": [
+      "Quantization",
+      "Model Evaluation",
+      "LLM Behavior"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "UniClawBench：針對真實世界任務主動式 Agent 的通用基準測試",
+      "en": "UniClawBench: A universal benchmark for proactive agents on real-world tasks"
+     },
+     "detail": {
+      "zh": "現有基準測試多依賴沙盒與單輪對話，難以評估主動式 Agent。UniClawBench 解決了能力混雜與環境受限的問題，提供更客觀的工具操作與環境適應性評估。",
+      "en": "Existing benchmarks rely on sandboxed, single-turn evaluations, failing to assess proactive agents. UniClawBench addresses these limitations by providing a robust framework to evaluate real-world tool usage and adaptability."
+     },
+     "source": "https://arxiv.org/abs/2607.08768v1",
+     "tags": [
+      "Benchmark",
+      "AI Agent",
+      "Evaluation"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "紐約時報指控 OpenAI 在版權訴訟中隱瞞並刪除 ChatGPT 訓練數據證據",
+      "en": "NYT accuses OpenAI of hiding and deleting evidence in ChatGPT copyright trial"
+     },
+     "detail": {
+      "zh": "紐時向法院申請制裁，指控 OpenAI 謊稱無法搜尋其訓練數據，並隱瞞、刪除了能證明其侵權使用新聞內容的關鍵工具與數十億條日誌。",
+      "en": "Filing for sanctions, the NYT accuses OpenAI of falsely claiming an inability to search its training data, while actively hiding and deleting key tools and billions of logs that could prove copyright infringement."
+     },
+     "source": "https://arstechnica.com/tech-policy/2026/07/openai-faked-inability-to-search-training-data-hid-billions-of-logs-nyt-says/",
+     "tags": [
+      "OpenAI",
+      "Copyright",
+      "Lawsuit",
+      "NYT"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI AGI 主管 Fidji Simo 因病離職，轉任兼職顧問",
+      "en": "OpenAI AGI Chief Fidji Simo steps down due to illness, transitions to advisor"
+     },
+     "detail": {
+      "zh": "剛上任不久的 AGI 主管 Fidji Simo 因神經免疫疾病延長醫療假，決定卸下全職職務。這在 OpenAI 面臨潛在 IPO 與 Anthropic 競爭的關鍵時期留下了領導層真空。",
+      "en": "Shortly after taking the role, AGI Chief Fidji Simo is stepping down due to a neuroimmune condition. Her departure leaves a leadership vacuum at a critical time as OpenAI eyes a potential IPO and faces intense competition from Anthropic."
+     },
+     "source": "https://techcrunch.com/2026/07/09/fidji-simo-steps-down-from-openais-no-2-role/",
+     "tags": [
+      "OpenAI",
+      "Leadership",
+      "AGI"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "Google 將在「我的廣告中心」標註使用 AI 製作或編輯的廣告",
+      "en": "Google to label ads created or edited with AI in My Ad Center"
+     },
+     "source": "https://techcrunch.com/2026/07/09/google-will-now-disclose-which-ads-are-made-with-ai/"
+    },
+    {
+     "headline": {
+      "zh": "微軟 2026 永續報告顯示其碳排放量因 AI 擴張大增 25%",
+      "en": "Microsoft's carbon emissions surge 25% driven by AI infrastructure expansion"
+     },
+     "source": "https://www.theverge.com/tech/963728/microsoft-sustainability-report-2026"
+    },
+    {
+     "headline": {
+      "zh": "Meta 自研 AI 晶片將於 9 月投產，採用模組化設計因應快速變化的需求",
+      "en": "Meta's new custom AI chips to enter production in September with modular design"
+     },
+     "source": "https://techcrunch.com/2026/07/09/metas-new-ai-chips-will-begin-production-in-september/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.5-flash",
+ "generated_at": "2026-07-10T13:42+08:00"
+}
