@@ -12,6 +12,7 @@ import json
 import os
 import re
 import sys
+import time
 import zoneinfo
 from pathlib import Path
 
@@ -78,6 +79,10 @@ WEEKLY_INSTRUCTIONS = """## 週報加項（今天是週一）
 GEMINI_FALLBACKS = ["gemini-3.5-flash", "gemini-flash-latest", "gemini-3.1-flash-lite"]
 
 
+# 過載/限流/暫時性錯誤：退避重試，退避後仍失敗就換下一個候選模型
+TRANSIENT = {429, 500, 502, 503, 504}
+
+
 def call_gemini(prompt: str) -> str:
     key = os.environ["GEMINI_API_KEY"]
     candidates = []
@@ -85,29 +90,41 @@ def call_gemini(prompt: str) -> str:
         candidates.append(os.environ["GEMINI_MODEL"])
     candidates += [m for m in GEMINI_FALLBACKS if m not in candidates]
 
+    payload = {
+        "contents": [{"parts": [{"text": prompt}]}],
+        "generationConfig": {
+            "temperature": 0.4,
+            "maxOutputTokens": 16384,
+            "responseMimeType": "application/json",
+        },
+    }
+
     last_err = None
     for model in candidates:
-        r = requests.post(
-            f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
-            params={"key": key},
-            json={
-                "contents": [{"parts": [{"text": prompt}]}],
-                "generationConfig": {
-                    "temperature": 0.4,
-                    "maxOutputTokens": 16384,
-                    "responseMimeType": "application/json",
-                },
-            },
-            timeout=300,
-        )
-        # 型號不存在/無權限 → 換下一個候選；其餘錯誤照常拋出
-        if r.status_code in (403, 404):
-            last_err = f"{model}: HTTP {r.status_code} {r.text[:200]}"
-            print(f"WARN model '{model}' unavailable ({r.status_code}), trying next", file=sys.stderr)
-            continue
-        r.raise_for_status()
-        return r.json()["candidates"][0]["content"]["parts"][0]["text"]
-    raise RuntimeError(f"all Gemini models unavailable: {last_err}")
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+        # 每個模型最多 4 次，指數退避（5→10→20→40s），吸收 503/429 這類暫時性過載
+        for attempt in range(4):
+            try:
+                r = requests.post(url, params={"key": key}, json=payload, timeout=300)
+            except requests.RequestException as ex:  # 連線/逾時
+                last_err = f"{model}: {ex}"
+                wait = 5 * 2 ** attempt
+                print(f"WARN {model} network error, backoff {wait}s: {ex}", file=sys.stderr)
+                time.sleep(wait)
+                continue
+            if r.status_code in (403, 404):  # 型號不存在/無權限 → 直接換下一個候選
+                last_err = f"{model}: HTTP {r.status_code} {r.text[:200]}"
+                print(f"WARN model '{model}' unavailable ({r.status_code}), trying next model", file=sys.stderr)
+                break
+            if r.status_code in TRANSIENT:  # 過載/限流 → 退避後重試同模型
+                last_err = f"{model}: HTTP {r.status_code} {r.text[:200]}"
+                wait = 5 * 2 ** attempt
+                print(f"WARN {model} HTTP {r.status_code} (transient), backoff {wait}s", file=sys.stderr)
+                time.sleep(wait)
+                continue
+            r.raise_for_status()
+            return r.json()["candidates"][0]["content"]["parts"][0]["text"]
+    raise RuntimeError(f"all Gemini attempts exhausted: {last_err}")
 
 
 def call_claude(prompt: str) -> str:
@@ -209,7 +226,8 @@ def main():
 
     call = PROVIDERS[PROVIDER]
     last_err = None
-    for attempt in range(3):
+    # call_gemini 內部已對 503/429 做退避重試＋換模型；外層這 2 次主要救「解析/驗證」失敗（重下 prompt）
+    for attempt in range(2):
         try:
             report = parse_json(call(prompt))
             report["date"] = DATE  # 強制對齊

@@ -1,9 +1,8 @@
 name: Daily Brief
 
 on:
-  workflow_dispatch:        # 主要觸發：cron-job.org 準點呼叫（見 docs/SETUP.md）
-  schedule:
-    - cron: "30 23 * * *"   # 備援：UTC 23:30 = 台北 07:30（GitHub cron 可能延遲，僅保底）
+  workflow_dispatch:        # 唯一觸發：cron-job.org 準點呼叫（見 docs/SETUP.md）
+                            # 已移除 GitHub 內建 schedule：它會延遲、且與 cron-job.org 重複觸發製造紅叉噪音
 
 permissions:
   contents: write
@@ -18,17 +17,35 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # 當日報告若已存在，整個 job 綠燈跳過（避免重複觸發造成紅叉）
+      - name: Skip if today already done
+        id: guard
+        run: |
+          DATE=$(TZ=Asia/Taipei date +%F)
+          F="reports/${DATE:0:4}/${DATE:5:2}/${DATE}.json"
+          if [ -f "$F" ]; then
+            echo "已存在 $F，跳過本次生成"
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "尚無 $F，繼續生成"
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - uses: actions/setup-python@v5
+        if: steps.guard.outputs.skip == 'false'
         with:
           python-version: "3.12"
 
       - name: Install deps
+        if: steps.guard.outputs.skip == 'false'
         run: pip install --quiet requests feedparser
 
       - name: Fetch sources
+        if: steps.guard.outputs.skip == 'false'
         run: python scripts/fetch_sources.py
 
       - name: Generate report
+        if: steps.guard.outputs.skip == 'false'
         env:
           PROVIDER: gemini
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -36,6 +53,7 @@ jobs:
         run: python scripts/generate_report.py
 
       - name: Commit & push
+        if: steps.guard.outputs.skip == 'false'
         run: |
           git config user.name "ai-daily-bot"
           git config user.email "actions@users.noreply.github.com"

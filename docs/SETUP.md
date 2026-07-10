@@ -46,6 +46,7 @@ Repo → Actions → Daily Brief → Run workflow。約 1–2 分鐘後：
 - 紅叉 → 點進去看 log；常見問題：
   - `GEMINI_API_KEY` secret 沒設或打錯名
   - 模型名失效 → 到 [模型清單](https://ai.google.dev/gemini-api/docs/models) 查現行名稱，設 `GEMINI_MODEL` variable
+  - Gemini 回 503/429（過載/限流）→ 腳本已內建指數退避重試＋換備援模型；若仍失敗多半是 Google 端當下大範圍不穩，稍後重跑即可
   - 某 RSS 來源失效 → 只是 WARN 不影響出報；要調整清單改 `scripts/fetch_sources.py` 的 `FEEDS`
 
 ## 維運備忘
@@ -53,4 +54,5 @@ Repo → Actions → Daily Brief → Run workflow。約 1–2 分鐘後：
 - 週一自動出週報（台北時區判斷），無需設定
 - 想重生成當日報告：Run workflow 前先刪掉當日 JSON，或本地跑 `FORCE=1 python scripts/generate_report.py`
 - 換回 Claude 生成：workflow env 改 `PROVIDER: claude` + 新增 secret `ANTHROPIC_API_KEY`
-- Actions 60 天無 push 會自動停用 schedule——本 repo 每日 commit，不會發生
+- 觸發只靠 cron-job.org（workflow_dispatch）；已移除 GitHub 內建 schedule（會延遲又製造重複紅叉）。若哪天想加回保底 cron，於 `daily.yml` 的 `on:` 補 `schedule:` 即可
+- 當日報告若已存在，workflow 會直接綠燈跳過（重複觸發不會再紅叉）
