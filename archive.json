@@ -1,6 +1,14 @@
 {
- "latest": "2026-07-10",
+ "latest": "2026-07-11",
  "reports": [
+  {
+   "date": "2026-07-11",
+   "type": "daily",
+   "summary": {
+    "zh": "GPT-5.6 發表與數學突破；蘋果起訴 OpenAI",
+    "en": "GPT-5.6 launches with math breakthrough; Apple sues OpenAI."
+   }
+  },
   {
    "date": "2026-07-10",
    "type": "daily",

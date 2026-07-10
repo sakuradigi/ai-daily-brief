@@ -1,0 +1,295 @@
+{
+ "date": "2026-07-11",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 發表全新 GPT-5.6 模型家族，主打網路安全與推理能力提升",
+      "en": "OpenAI launches new GPT-5.6 model family with enhanced cybersecurity and reasoning"
+     },
+     "detail": {
+      "zh": "OpenAI 正式推出新一代 GPT-5.6 模型家族，顯著提升推理與網路安全防禦能力。該模型也已被確認為微軟 Copilot 365 的首選核心模型。",
+      "en": "OpenAI has officially rolled out its new GPT-5.6 model family, boasting major upgrades in reasoning and cybersecurity capabilities. The new model is also confirmed as the preferred engine for Microsoft Copilot 365."
+     },
+     "source": "https://techcrunch.com/2026/07/09/openai-launches-its-new-family-of-models-with-gpt-5-6/",
+     "tags": [
+      "LLM",
+      "OpenAI",
+      "GPT-5.6",
+      "Microsoft"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "蘋果起訴 OpenAI 竊取商業機密，指控其高層主導挖角與技術剽竊",
+      "en": "Apple sues OpenAI over alleged trade secret theft directed by leadership"
+     },
+     "detail": {
+      "zh": "蘋果正式對 OpenAI 提起訴訟，指控其高層（包含前蘋果員工）有計畫地竊取商業機密。此舉可能對兩家公司未來的技術合作與人才流動投下震撼彈。",
+      "en": "Apple has filed a lawsuit against OpenAI, alleging that its senior leadership orchestrated the theft of proprietary trade secrets via former Apple employees. This legal battle could severely impact future talent acquisition and partnerships."
+     },
+     "source": "https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/",
+     "tags": [
+      "Legal",
+      "Apple",
+      "OpenAI",
+      "IP"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "GPT-5.6 Sol Ultra 成功產出數學難題「循環雙覆蓋猜想」之學術證明",
+      "en": "GPT-5.6 Sol Ultra generates formal proof for the Cycle Double Cover Conjecture"
+     },
+     "detail": {
+      "zh": "OpenAI 發佈 PDF 報告，展示其最新 GPT-5.6 Sol Ultra 模型成功推導出數學界著名「循環雙覆蓋猜想」的完整證明。這代表大語言模型在極限邏輯推理與形式化驗證上取得重大突破。",
+      "en": "OpenAI released a PDF detailing how its GPT-5.6 Sol Ultra model successfully generated a mathematical proof for the Cycle Double Cover Conjecture, marking a milestone in LLM-driven logical reasoning and formal verification."
+     },
+     "source": "https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf",
+     "tags": [
+      "Research",
+      "Mathematics",
+      "Reasoning",
+      "GPT-5.6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "PyTorch 效能分析指南第三彈：專注於 Attention 機制的效能瓶頸",
+      "en": "Profiling in PyTorch Part 3: Deep dive into Attention mechanism bottlenecks"
+     },
+     "detail": {
+      "zh": "Hugging Face 發佈 PyTorch 效能分析系列最新文章，深入探討 Attention 機制的記憶體與計算瓶頸。文章提供實用的 profiling 工具與優化技巧，協助開發者降低 Transformer 訓練與推論成本。",
+      "en": "Hugging Face released the third part of its PyTorch profiling series, focusing on memory and compute bottlenecks within the Attention mechanism. It provides actionable profiling workflows and optimization techniques for developers to cut Transformer costs."
+     },
+     "source": "https://huggingface.co/blog/torch-attention-profile",
+     "tags": [
+      "PyTorch",
+      "Profiling",
+      "Transformer",
+      "Optimization"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Hugging Face 執行長指出企業正告別「租用 AI」，開源自託管成主流",
+      "en": "Hugging Face CEO explains why enterprises are moving away from \"renting AI\""
+     },
+     "detail": {
+      "zh": "Clem Delangue 表示，越來越多 Fortune 500 企業正從依賴閉源 API 轉向開源模型與自託管架構。此趨勢能降低長期持有成本、確保資料隱私，並提升基礎設施的掌控度。",
+      "en": "Clem Delangue highlights that Fortune 500 companies are transitioning from proprietary APIs to open-source models and self-hosted setups to reduce long-term TCO, secure data privacy, and maintain control over infrastructure."
+     },
+     "source": "https://techcrunch.com/2026/07/10/hugging-faces-ceo-on-why-companies-are-done-renting-their-ai/",
+     "tags": [
+      "OpenSource",
+      "Enterprise",
+      "Self-Hosting",
+      "HuggingFace"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 推出「Work」自主工作流程工具，支援本地與雲端檔案協作",
+      "en": "OpenAI introduces \"Work\" for autonomous workflows with local and cloud file support"
+     },
+     "detail": {
+      "zh": "OpenAI 將原 Codex 重新包裝為「Work」工具，主打可自主運行數小時的獨立工作流。該工具在桌面端支援本地檔案與應用程式，且本地對話資料不會上傳至雲端，兼顧隱私與實用性。",
+      "en": "OpenAI rebranded Codex capabilities into \"Work\", a tool designed for autonomous workflows that can run independently for hours. The desktop version supports local files and apps, keeping local data on-device to address enterprise privacy concerns."
+     },
+     "source": "https://arstechnica.com/ai/2026/07/09/openai-wants-its-new-tool-to-do-your-work-for-you-and-with-you/",
+     "tags": [
+      "Productivity",
+      "OpenAI",
+      "Agent",
+      "Codex"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 宣佈終止 AI 瀏覽器 Atlas，功能將整合至桌面端與擴充功能",
+      "en": "OpenAI sunsets Atlas AI browser, shifting agentic features to desktop and extensions"
+     },
+     "detail": {
+      "zh": "推出不到一年，OpenAI 決定停用其 AI 瀏覽器 Atlas。開發團隊將把其核心的瀏覽 Agent 功能轉移至 ChatGPT 桌面應用程式與 Chrome 擴充功能中，開發者需留意相關 API 與工具鏈的變更。",
+      "en": "Less than a year after launch, OpenAI is sunsetting its Atlas AI browser. The team is pivoting by integrating its agentic browsing capabilities directly into the desktop app and a Chrome extension, signaling a shift in their product delivery strategy."
+     },
+     "source": "https://techcrunch.com/2026/07/09/openai-is-shutting-down-atlas-but-its-ai-browser-ambitions-are-still-growing/",
+     "tags": [
+      "Deprecation",
+      "OpenAI",
+      "Atlas",
+      "Agent"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "AI Agent 新創 Lyzr 讓自家 Agent 自主完成 1 億美元融資",
+      "en": "AI Agent startup Lyzr lets its own agent run its $100M fundraising round"
+     },
+     "detail": {
+      "zh": "企業級 AI Agent 新創 Lyzr 透過自家開發的 Agent 成功運行並完成了 1 億美元的融資流程。此舉向市場與開發者展示了多 Agent 協作在複雜商業談判與流程自動化中的實際可行性。",
+      "en": "Enterprise AI Agent startup Lyzr utilized its own agentic workflow to manage and close a $100 million fundraising round, demonstrating the real-world viability of multi-agent orchestration in complex business processes."
+     },
+     "source": "https://techcrunch.com/2026/07/09/an-ai-agent-startup-just-let-its-agent-run-its-100-million-fundraise/",
+     "tags": [
+      "AI-Agent",
+      "Startup",
+      "Fundraising",
+      "Automation"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "橫向評測：GPT-5.6、Grok 4.5、Claude 與 Muse Spark 實測開發 4 款應用程式",
+      "en": "Benchmark: GPT-5.6, Grok 4.5, Claude, and Muse Spark build the same 4 apps"
+     },
+     "detail": {
+      "zh": "一項最新評測讓 12 個主流模型（包含 GPT-5.6、Grok 4.5 等）挑戰開發相同的 4 款應用程式。結果顯示新一代模型在程式碼生成完整度與 Debug 效率上有顯著提升，為開發者選擇 Code Copilot 提供實測依據。",
+      "en": "A hands-on evaluation tested 12 models, including GPT-5.6, Grok 4.5, and Claude, to build the same four applications. The benchmark highlights significant improvements in code completion and debugging efficiency among the latest frontier models."
+     },
+     "source": "https://www.tryai.dev/blog/gpt-5-6-build-off-12-models",
+     "tags": [
+      "Benchmark",
+      "Coding",
+      "LLM-Comparison",
+      "Copilot"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "EPFL 推出 NEVO 專案：利用 AI 生成影片精準刺激大腦特定區域",
+      "en": "EPFL launches NEVO: AI-generated videos designed to target specific brain regions"
+     },
+     "detail": {
+      "zh": "瑞士洛桑聯邦理工學院（EPFL）開發出 NEVO 系統，能生成特定視覺特徵的 AI 影片，用以最大化刺激大腦的特定區域。這項研究融合了神經科學與生成式 AI，為未來腦機介面與認知治療開闢新路徑。",
+      "en": "EPFL's NEVO project utilizes generative AI to create videos with specific visual stimuli designed to maximally drive targeted brain regions, bridging neuroscience and generative models for future cognitive therapies."
+     },
+     "source": "https://nevo-project.epfl.ch/",
+     "tags": [
+      "Neuroscience",
+      "Generative-AI",
+      "Research",
+      "EPFL"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "SK Hynix 於美國完成 265 億美元 IPO，創歷史紀錄並受促建美晶圓廠",
+      "en": "SK Hynix raises $26.5B in historic US IPO, urged to build domestic fabs"
+     },
+     "detail": {
+      "zh": "受惠於 AI 晶片與高頻寬記憶體（HBM）需求暴增，南韓半導體巨頭 SK Hynix 在美完成史上最大規模外資 IPO，募資 265 庫美元。美國政府正積極遊說其在美建立新晶圓廠，以強化本土供應鏈。",
+      "en": "Driven by the AI hardware boom, South Korean chipmaker SK Hynix raised $26.5 billion in the largest foreign IPO in US history. The company is now facing strong pressure from US officials to build domestic semiconductor fabrication plants."
+     },
+     "source": "https://techcrunch.com/2026/07/10/sk-hynix-raises-26-5b-in-the-biggest-foreign-ipo-in-us-history-is-urged-to-build-new-us-fabs/",
+     "tags": [
+      "Hardware",
+      "IPO",
+      "SK-Hynix",
+      "Semiconductor"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "微軟最新永續報告揭露：因 AI 資料中心擴張，碳排放量大增 25%",
+      "en": "Microsoft sustainability report reveals 25% surge in carbon emissions due to AI expansion"
+     },
+     "detail": {
+      "zh": "微軟 2026 年永續發展報告顯示，其碳排放量在過去一年激增 25%，總計達 3400 萬公噸。這凸顯了 AI 算力與資料中心急遽擴張對科技巨頭氣候承諾所帶來的嚴峻挑戰。",
+      "en": "Microsoft's 2026 sustainability report reveals a 25% year-over-year increase in carbon emissions, totaling 34 million metric tons. The surge highlights the environmental toll of rapid AI data center expansion against corporate climate goals."
+     },
+     "source": "https://www.theverge.com/tech/963728/microsoft-sustainability-report-2026",
+     "tags": [
+      "Sustainability",
+      "Microsoft",
+      "Data-Center",
+      "Carbon-Footprint"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "開發者社群呼籲 Google 不要停用 Gemini 2.5 Flash 模型",
+      "en": "Developers urge Google not to discontinue Gemini 2.5 Flash model"
+     },
+     "source": "https://discuss.ai.google.dev/t/please-dont-discontinue-gemini-2-5-flash/174246"
+    },
+    {
+     "headline": {
+      "zh": "OpenAI AGI 主管 Fidji Simo 因健康因素轉任兼職顧問",
+      "en": "OpenAI AGI chief Fidji Simo steps down due to illness, transitions to advisor"
+     },
+     "source": "https://techcrunch.com/2026/07/09/fidji-simo-steps-down-from-openais-no-2-role/"
+    },
+    {
+     "headline": {
+      "zh": "德國電信與 OpenAI 合作，推動語音與客服流程 AI 原生化",
+      "en": "Deutsche Telekom partners with OpenAI to build AI-native telecom workflows"
+     },
+     "source": "https://openai.com/index/deutsche-telekom"
+    },
+    {
+     "headline": {
+      "zh": "歐盟警告 Meta 必須停用自動播放與無限滾動，否則面臨鉅額罰款",
+      "en": "EU warns Meta to disable autoplay and infinite scroll or face massive fines"
+     },
+     "source": "https://arstechnica.com/tech-policy/2026/07/disable-auto-play-and-infinite-scroll-or-risk-massive-fines-eu-tells-meta/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.5-flash",
+ "generated_at": "2026-07-11T07:01+08:00"
+}
