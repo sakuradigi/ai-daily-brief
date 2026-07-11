@@ -1,6 +1,14 @@
 {
- "latest": "2026-07-11",
+ "latest": "2026-07-12",
  "reports": [
+  {
+   "date": "2026-07-12",
+   "type": "daily",
+   "summary": {
+    "zh": "蘋果狀告 OpenAI 涉竊密；防 AI 爬訊字型亮相",
+    "en": "Apple sues OpenAI over trade secrets; Ghost Font blocks AI OCR scrapers"
+   }
+  },
   {
    "date": "2026-07-11",
    "type": "daily",

@@ -1,0 +1,178 @@
+{
+ "date": "2026-07-12",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "蘋果正式起訴 OpenAI 與 Jony Ive 新創，指控前員工系統性竊取硬體機密",
+      "en": "Apple sues OpenAI and Jony Ive's startup over alleged hardware trade secret theft"
+     },
+     "detail": {
+      "zh": "蘋果向法院提起訴訟，指控多名跳槽至 OpenAI 的前蘋果工程師系統性竊取晶片與硬體設計等商業機密，以加速 OpenAI 的硬體開發計劃。訴訟對象亦包含 Jony Ive 的硬體新創公司 IO Products，顯示矽谷在邊緣 AI 硬體人才與技術上的競爭已進入白熱化訴訟階段。",
+      "en": "Apple has filed a lawsuit against OpenAI and Jony Ive's hardware startup, IO Products, alleging a pattern of trade secret theft by former Apple engineers. The suit claims these employees transferred proprietary hardware and chip designs to accelerate OpenAI's hardware ambitions, highlighting the escalating legal battle over edge-AI hardware talent."
+     },
+     "source": "https://www.nytimes.com/2026/07/10/technology/apple-openai-lawsuit.html",
+     "tags": [
+      "Apple",
+      "OpenAI",
+      "Lawsuit",
+      "Hardware Secrets"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Ghost Font：人類肉眼可讀、但能徹底干擾 AI OCR 的防爬蟲字型",
+      "en": "Ghost Font: A font readable by humans but unreadable by AI OCR"
+     },
+     "detail": {
+      "zh": "此專案推出了一款特殊的視覺干擾字型，人類肉眼能輕鬆辨識其內容，但主流的 AI 光學字元識別（OCR）模型與網頁爬蟲在解析時會產生嚴重錯誤。這為創作者與網站開發者提供了一種低成本、防止敏感文字資料被 AI 惡意爬取與訓練的新手段。",
+      "en": "Ghost Font utilizes specific visual distortions that allow human eyes to read text easily while causing mainstream AI OCR models and web scrapers to fail. It provides a novel, low-overhead method for creators to protect web content from unauthorized AI training."
+     },
+     "source": "https://www.mixfont.com/ghost-font",
+     "tags": [
+      "Font",
+      "Anti-AI",
+      "OCR",
+      "Security"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "輿論反彈！Meta 緊急下架 Instagram 未經授權生成 AI 深偽肖像功能",
+      "en": "Meta backtracks, disables controversial Instagram AI deepfake generator"
+     },
+     "detail": {
+      "zh": "Meta 宣布關閉本週剛推出的 AI 圖像生成功能。該功能原先允許用戶直接標記公開帳號，並在未經原創者同意下，利用其公開照片生成 AI 虛擬肖像。此舉因引發嚴重的隱私侵犯與深偽（Deepfake）濫用疑慮，在社群強烈抗議後被緊急停用。",
+      "en": "Following intense backlash, Meta has disabled a newly launched Instagram feature that allowed users to generate AI images of public accounts simply by tagging them. The feature drew severe criticism for enabling unauthorized deepfakes without the account owners' consent."
+     },
+     "source": "https://www.theverge.com/tech/964416/meta-instagram-ai-muse-image-deepfakes",
+     "tags": [
+      "Meta",
+      "Instagram",
+      "Deepfake",
+      "Privacy"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 招募家庭產品經理，計畫將 ChatGPT 推向家庭與長者市場",
+      "en": "OpenAI hires product manager to bring ChatGPT into family households"
+     },
+     "detail": {
+      "zh": "根據最新職缺資訊，OpenAI 正招募專職的產品經理，旨在為家庭、照護者及年長者打造專屬的 ChatGPT 互動體驗。這顯示 OpenAI 正試圖將產品定位從個人生產力工具，進一步擴展至家庭日常與照護生態系。",
+      "en": "OpenAI is hiring a dedicated product manager to build tailored ChatGPT experiences for families, caregivers, and older adults. This move signals OpenAI's strategy to transition ChatGPT from a professional productivity tool into a household consumer product."
+     },
+     "source": "https://techcrunch.com/2026/07/11/openai-bets-on-families-as-chatgpt-goes-deeper-into-households/",
+     "tags": [
+      "OpenAI",
+      "ChatGPT",
+      "Product Strategy",
+      "Consumer AI"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Geohot 撰文探討「AI 2040」與智力崇拜的迷思",
+      "en": "Geohot on 'AI 2040' and the cult of intelligence"
+     },
+     "detail": {
+      "zh": "知名駭客 George Hotz (Geohot) 發表部落格文章，反思當前科技界對 AGI 的盲目崇拜。他指出，智力並非解決人類所有問題的萬靈藥，並從物理限制與社會結構角度，探討了 2040 年 AI 發展的實際局限性。",
+      "en": "Renowned hacker George Hotz (Geohot) shares his perspective on the industry's obsession with AGI. He argues that raw intelligence is not a panacea for human problems and discusses the physical limits and societal implications of AI leading up to 2040."
+     },
+     "source": "https://geohot.github.io//blog/jekyll/update/2026/07/11/ai-2040.html",
+     "tags": [
+      "Geohot",
+      "AGI",
+      "Philosophy",
+      "Future of AI"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "逆向人馬（Reverse Centaurs）如何成為破解 AI 悖論的關鍵",
+      "en": "Reverse centaurs as the answer to the AI paradox"
+     },
+     "detail": {
+      "zh": "專欄作家 Cory Doctorow 探討「逆向人馬」概念——即由人類作為低薪勞動力來為不成熟的 AI 系統「補漏」的現狀。他指出，當前的 AI 經濟過度依賴隱形的人工標註與審查，若不改變此架構，AI 的商業可行性將難以維持。",
+      "en": "Cory Doctorow discusses the concept of 'reverse centaurs,' where cheap human labor is used to patch the flaws of AI systems. He argues that the current AI economy relies heavily on hidden human labor, posing a fundamental challenge to its long-term viability."
+     },
+     "source": "https://pluralistic.net/2025/09/11/vulgar-thatcherism/#there-is-an-alternative",
+     "tags": [
+      "AI Paradox",
+      "Labor Economics",
+      "Cory Doctorow"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "蘋果起訴 OpenAI 及 Jony Ive 的新創公司，指控其系統性竊取硬體設計機密。",
+      "en": "Apple sues OpenAI and Jony Ive's IO Products over alleged systematic theft of hardware secrets."
+     },
+     "source": "https://www.theverge.com/tech/964350/apple-openai-lawsuit-trade-secrets"
+    },
+    {
+     "headline": {
+      "zh": "因用戶強烈反彈，Meta 證實已將 Instagram 爭議性的 AI 肖像生成功能下架。",
+      "en": "Meta confirms it has removed the controversial AI image generation feature on Instagram following public backlash."
+     },
+     "source": "https://techcrunch.com/2026/07/10/meta-removes-controversial-ai-feature-on-instagram-after-backlash/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.5-flash",
+ "generated_at": "2026-07-12T07:01+08:00"
+}
