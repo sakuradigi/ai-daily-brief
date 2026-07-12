@@ -1,6 +1,14 @@
 {
- "latest": "2026-07-12",
+ "latest": "2026-07-13",
  "reports": [
+  {
+   "date": "2026-07-13",
+   "type": "weekly",
+   "summary": {
+    "zh": "Claude Code 消耗驚人；GPT-5.6 遷移效能大增",
+    "en": "Claude Code token overhead sparks debate; GPT-5.6 migration shows massive gains."
+   }
+  },
   {
    "date": "2026-07-12",
    "type": "daily",

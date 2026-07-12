@@ -1,0 +1,245 @@
+{
+ "date": "2026-07-13",
+ "type": "weekly",
+ "weekly": {
+  "zh": "本週 AI 領域迎來劇烈震盪。最受矚目的三大事件為：第一，OpenAI 正式發表 GPT-5.6 模型家族（Luna、Terra、Sol），以極低定價與強大推理能力重塑市場，並推出 ChatGPT Work 協作工具；第二，蘋果對 OpenAI 及 Jony Ive 的新創公司發起訴訟，控告其系統性竊取硬體機密，揭開巨頭間的專利大戰；第三，開源與本地端生態持續爆發，Ollama 完成 6,500 萬美元融資，而 Meta 推出 Muse Spark 1.1 並開放 API。整體趨勢顯示，企業正從「租用 AI」轉向「開源自託管」，且 Agent 級工具的調用與效能優化（如 MCP 規格更新與 SMetric 調度）已成為開發者關注的絕對核心。",
+  "en": "This week witnessed major shifts in the AI landscape. The top three events were: first, OpenAI's launch of the GPT-5.6 model family (Luna, Terra, Sol) alongside ChatGPT Work, significantly lowering costs while boosting reasoning; second, Apple's lawsuit against OpenAI and Jony Ive's startup over systematic hardware secret theft, signaling intense IP battles; and third, the surge in open-source and local AI, highlighted by Ollama's $65M funding and Meta's Muse Spark 1.1 API release. The overarching trends show enterprises shifting from 'renting AI' to 'open-source self-hosting,' with agent-level tool calling and performance optimization (such as MCP spec updates and SMetric scheduling) becoming the core focus for developers."
+ },
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Claude Code 遭爆在讀取 Prompt 前消耗 33k Token；OpenCode 僅需 7k",
+      "en": "Claude Code Exposed Sending 33k Tokens Before Reading Prompt; OpenCode Only Uses 7k"
+     },
+     "detail": {
+      "zh": "效能分析顯示，Anthropic 的 CLI 工具 Claude Code 在發送用戶 Prompt 前，會夾帶高達 33k token 的上下文（包含 git 狀態、檔案結構等），造成高額成本。相比之下，開源替代方案 OpenCode 僅消耗 7k token。開發者在選擇 CLI 輔助工具時需密切注意此 Token 隱性開銷。",
+      "en": "A comparative analysis reveals that Anthropic's Claude Code CLI tool sends up to 33k tokens of context (including git status and file structures) before even reading the user's prompt, leading to high token overhead. In contrast, the open-source alternative OpenCode only consumes 7k tokens. Developers should closely monitor this hidden cost when choosing CLI coding assistants."
+     },
+     "source": "https://systima.ai/blog/claude-code-vs-opencode-token-overhead",
+     "tags": [
+      "Claude Code",
+      "Token Overhead",
+      "Cost Optimization",
+      "CLI Tools"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "實際遷移案例：生產環境 Agent 升級至 GPT-5.6，速度提升 2.2 倍、成本降低 27%",
+      "en": "Real-World Migration: Upgrading Production Agent to GPT-5.6 Yields 2.2x Speedup and 27% Cost Reduction"
+     },
+     "detail": {
+      "zh": "Ploy.ai 分享了將生產環境 AI Agent 遷移至最新 GPT-5.6 的實測數據。升級後不僅推論速度提升 2.2 倍，整體 API 成本更降低了 27%。這證實了 GPT-5.6 家族（特別是 Sol/Terra）在實際 Agent 工作流中的高性價比，為開發者提供強烈的升級誘因。",
+      "en": "Ploy.ai shared empirical data from migrating their production AI agent to the newly released GPT-5.6. The upgrade resulted in a 2.2x speedup in execution and a 27% reduction in API costs. This confirms the high cost-performance ratio of the GPT-5.6 family (especially Sol/Terra) in real-world agentic workflows, offering a strong incentive for developers to upgrade."
+     },
+     "source": "https://ploy.ai/blog/migrating-a-production-ai-agent-to-gpt-5-6",
+     "tags": [
+      "GPT-5.6",
+      "AI Agent",
+      "Migration",
+      "Performance",
+      "Cost"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 再次延長 Claude Fable 5 免費額度至 7 月 19 日",
+      "en": "Anthropic Extends Claude Fable 5 Access on Paid Plans Through July 19"
+     },
+     "detail": {
+      "zh": "面對 OpenAI GPT-5.6 Sol 的強勢競爭，Anthropic 宣佈再次延長付費用戶在 Claude Max 方案中免費存取 Fable 5 的期限，並將 Claude Code 的每週使用限制提高 50%。此舉顯示出大模型競爭白熱化下，廠商正透過延長額度與放寬限制來留住開發者。",
+      "en": "In response to intense competition from OpenAI's GPT-5.6 Sol, Anthropic has once again extended free access to Claude Fable 5 for paid plans through July 19, while keeping Claude Code's weekly rate limits 50% higher. This tactical move highlights how model providers are leveraging quota extensions to retain developers amidst fierce market competition."
+     },
+     "source": "https://simonwillison.net/2026/Jul/12/bump/#atom-everything",
+     "tags": [
+      "Anthropic",
+      "Claude Fable 5",
+      "Claude Code",
+      "Pricing",
+      "Rate Limits"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Mesh LLM：基於 Iroh 協定的去中心化 P2P 分散式 AI 計算",
+      "en": "Mesh LLM: Decentralized P2P Distributed AI Computing Powered by Iroh"
+     },
+     "detail": {
+      "zh": "Mesh LLM 利用 Iroh 的 P2P 網路協定，實現了無需中央伺服器的分散式 LLM 推論。開發者可以將多台消費級硬體裝置串聯成一個運算網格，共同分擔大型模型的記憶體與計算負載，為邊緣運算與隱私敏感型應用提供全新架構。",
+      "en": "Mesh LLM leverages the Iroh P2P networking protocol to enable decentralized LLM inference without a central server. Developers can chain multiple consumer-grade hardware devices into a computing grid to share memory and compute loads of large models, offering a novel architecture for edge computing and privacy-sensitive applications."
+     },
+     "source": "https://www.iroh.computer/blog/mesh-llm",
+     "tags": [
+      "Mesh LLM",
+      "Iroh",
+      "P2P",
+      "Distributed Computing",
+      "Edge AI"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Mindwalk：在 3D 程式碼地圖上重播 AI Coding Agent 的執行軌跡",
+      "en": "Mindwalk: Replay AI Coding Agent Sessions on a 3D Map of Your Codebase"
+     },
+     "detail": {
+      "zh": "Mindwalk 是一款開源的可視化工具，能將程式碼庫渲染為 3D 地圖，並動態重播 AI 程式碼代理（Coding Agent）在各個檔案間的修改與跳轉路徑。這極大地提升了開發者對 Agent 自主修改程式碼過程的可解釋性與除錯效率。",
+      "en": "Mindwalk is an open-source visualization tool that renders codebases as 3D maps and dynamically replays the paths taken by AI coding agents as they modify and jump between files. This significantly improves the interpretability and debugging efficiency of autonomous code modifications made by agents."
+     },
+     "source": "https://github.com/cosmtrek/mindwalk",
+     "tags": [
+      "Mindwalk",
+      "AI Agent",
+      "3D Visualization",
+      "Debugging",
+      "Open Source"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "sqlite-utils 4.1 發布：支援透過 CLI 傳入 Python 程式碼區塊進行資料插入",
+      "en": "sqlite-utils 4.1 Released: Supports Passing Python Code Blocks via CLI for Data Insertion"
+     },
+     "detail": {
+      "zh": "繼 4.0 大改版後，sqlite-utils 迅速推出 4.1 版本。新版在 `insert` 與 `upsert` 指令中新增了 `--code` 參數，允許開發者直接在命令列傳入一段 Python 程式碼（或指定 .py 檔案）來定義資料列生成邏輯，大幅簡化了臨時資料清洗與導入的工作流。",
+      "en": "Following the major 4.0 release, sqlite-utils 4.1 has been rolled out. The new version introduces the `--code` option to `insert` and `upsert` commands, allowing developers to pass a Python code block (or a path to a .py file) directly via CLI to define row generation logic, greatly simplifying ad-hoc data cleaning and ingestion workflows."
+     },
+     "source": "https://simonwillison.net/2026/Jul/11/sqlite-utils/#atom-everything",
+     "tags": [
+      "sqlite-utils",
+      "Database",
+      "CLI",
+      "Python",
+      "Data Engineering"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": []
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "研究指出：AI 雖能加速科研產出，卻窄化了人類探索新創意的光譜",
+      "en": "Study: AI Boosts Research Careers but Narrows the Span of Ideas Explored"
+     },
+     "detail": {
+      "zh": "一項發表於 IEEE Spectrum 的研究顯示，雖然 AI 工具顯著提升了科研人員的論文產出速度與職涯晉升，但卻導致研究主題高度趨同。AI 的推薦與生成機制無形中「平庸化」了科學探索，使人類科學家傾向於在已知領域深挖，而非開拓全新的研究方向。",
+      "en": "A study featured in IEEE Spectrum shows that while AI tools significantly accelerate researchers' paper output and career advancement, they lead to a narrowing of explored topics. The recommendation and generation mechanisms of AI subtly 'flatten' scientific discovery, nudging researchers to double down on familiar domains rather than exploring entirely new paradigms."
+     },
+     "source": "https://spectrum.ieee.org/ai-science-research-flattens-discovery",
+     "tags": [
+      "Scientific Research",
+      "AI Impact",
+      "IEEE Spectrum",
+      "Research Diversity"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "蘋果已終止的自動駕駛計畫，為如今強大的 Apple Silicon AI 晶片奠定基礎",
+      "en": "Apple’s Cancelled Self-Driving Car Program Left a Legacy of Powerful AI Chips"
+     },
+     "detail": {
+      "zh": "雖然蘋果的 Apple Car 計畫最終告吹，但該專案早期開發車載自動駕駛晶片（如 M7 Ultra 雛形）的經驗，直接反哺了如今 Apple Silicon 的神經網路引擎（ANE）設計。這解釋了為何蘋果晶片在無風扇裝置上仍能展現極為強悍的本地端 AI 推論效能。",
+      "en": "Although Apple's self-driving car program was ultimately cancelled, its early efforts to develop powerful on-device autonomous driving processors (such as the M7 Ultra prototype) directly laid the foundation for today's Apple Silicon Neural Engine (ANE). This legacy explains why Apple chips deliver exceptional local AI inference performance even on fanless devices."
+     },
+     "source": "https://www.theverge.com/tech/964519/apple-silicon-self-driving-car-ai-m7-ultra",
+     "tags": [
+      "Apple Silicon",
+      "Apple Car",
+      "AI Hardware",
+      "Neural Engine"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "AI 資料中心能耗爭奪戰開打：地方電網與居民面臨嚴峻考驗",
+      "en": "The Fight Against AI Data Centers is Just Beginning as Power Grids Face Strain"
+     },
+     "detail": {
+      "zh": "隨著 AI 巨頭瘋狂擴建資料中心，電力供應已成為最關鍵的瓶頸。這不僅推高了地方製造業的電費，更引發了環保團體與當地居民對於能源分配與碳排放的強烈抗議，預示著未來 AI 基礎設施建設將面臨更嚴格的政策與社會審查。",
+      "en": "As tech giants aggressively expand AI data centers, power supply has emerged as the ultimate bottleneck. This buildout is not only driving up electricity bills for local manufacturing but also sparking fierce backlash from environmental groups and residents over resource allocation and carbon emissions, signaling tighter regulatory and social scrutiny ahead."
+     },
+     "source": "https://www.theverge.com/column/963346/ai-data-centers-fight",
+     "tags": [
+      "Data Center",
+      "Power Grid",
+      "Sustainability",
+      "AI Infrastructure"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "封包層級分析揭露：xAI Grok 建置 CLI 在背後向伺服器傳送了哪些資料",
+      "en": "Wire-level analysis reveals what xAI's Grok build CLI transmits to its servers"
+     },
+     "source": "https://gist.github.com/cereblab/dc9a40bc26120f4540e4e09b75ffb547"
+    },
+    {
+     "headline": {
+      "zh": "開發者反思：請停止一味要求使用者「去問 LLM」的敷衍作法",
+      "en": "Developer reflection: Stop telling users to just 'ask an LLM' for everything"
+     },
+     "source": "https://blog.yaelwrites.com/stop-telling-me-to-ask-an-llm/"
+    },
+    {
+     "headline": {
+      "zh": "歌手 Lorde 於音樂祭開嗆，直指 Ray-Ban Meta AI 智慧眼鏡「一點都不性感」",
+      "en": "Singer Lorde calls Ray-Ban Meta AI smartglasses 'not sexy' during festival performance"
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/964539/lorde-says-ray-ban-meta-ai-glasses-are-not-sexy"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.5-flash",
+ "generated_at": "2026-07-13T07:01+08:00"
+}
