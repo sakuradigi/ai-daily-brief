@@ -1,6 +1,14 @@
 {
- "latest": "2026-07-13",
+ "latest": "2026-07-14",
  "reports": [
+  {
+   "date": "2026-07-14",
+   "type": "daily",
+   "summary": {
+    "zh": "Apple 狀告 OpenAI 竊密；xAI 爆隱私漏洞；Fable 5 延期退役。",
+    "en": "Apple sues OpenAI over trade secrets, xAI CLI leaks user repos, and Anthropic extends Fable 5 access."
+   }
+  },
   {
    "date": "2026-07-13",
    "type": "weekly",

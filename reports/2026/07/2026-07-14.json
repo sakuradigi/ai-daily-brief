@@ -1,0 +1,278 @@
+{
+ "date": "2026-07-14",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Apple 狀告 OpenAI：指控其夥同前員工竊取硬體與未公開產品機密",
+      "en": "Apple sues OpenAI, alleging conspiracy with ex-employees to steal hardware trade secrets"
+     },
+     "detail": {
+      "zh": "Apple 正式起訴 OpenAI，指控其利用漏洞並唆使面試的前 Apple 員工提供未公開的硬體原型與機密文件。這場訴訟揭露了兩家巨頭在生成式 AI 與硬體整合領域的白熱化競爭。",
+      "en": "Apple has filed a major lawsuit against OpenAI, accusing the startup of using system bugs and coaxing Apple job candidates to hand over unreleased hardware prototypes and confidential documents. This marks a significant escalation in the battle over AI hardware integration."
+     },
+     "source": "https://arstechnica.com/tech-policy/2026/07/apple-sues-openai-after-ex-engineer-allegedly-used-bug-to-steal-trade-secrets/",
+     "tags": [
+      "Apple",
+      "OpenAI",
+      "Lawsuit",
+      "Trade Secrets"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "安全警訊：xAI 的 Grok Build CLI 被爆會自動將使用者目錄與 Git 儲存庫上傳至雲端",
+      "en": "Security Alert: xAI's Grok Build CLI silently uploads entire Git repositories to Google Cloud"
+     },
+     "detail": {
+      "zh": "開發者發現 xAI 推出的 Grok Build 命令列工具（CLI）會將使用者的本機目錄及完整的 Git 儲存庫自動打包並上傳至其 Google Cloud Bucket。使用該工具的開發者應立即檢查本機敏感資料是否外洩。",
+      "en": "Developers discovered that xAI's Grok Build CLI automatically packages and uploads local user directories and entire Git repositories to a Google Cloud bucket. Developers using this tool should immediately audit their local environments for potential credential leaks."
+     },
+     "source": "https://www.internationalcyberdigest.com/xais-grok-build-cli-uploads-entire-git-repositories-to-a-google-cloud-bucket/",
+     "tags": [
+      "xAI",
+      "Grok",
+      "Security",
+      "CLI"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "開發者福利：Anthropic 延長 Claude Fable 5 使用期限並維持 Claude Code 高額度",
+      "en": "Anthropic extends Claude Fable 5 access and maintains higher Claude Code limits"
+     },
+     "detail": {
+      "zh": "由於 GPT-5.6 Sol 的競爭壓力，Anthropic 再次延後了付費方案中 Fable 5 模型的停用時間至 7 月 19 日，並將 Claude Code 的每週使用額度限制維持在 50% 的加成狀態，緩解了開發者的額度焦慮。",
+      "en": "Facing competition from GPT-5.6 Sol, Anthropic has once again pushed back the deprecation date for Claude Fable 5 on paid plans to July 19, while keeping Claude Code's weekly rate limits 50% higher."
+     },
+     "source": "https://simonwillison.net/2026/Jul/12/bump/#atom-everything",
+     "tags": [
+      "Anthropic",
+      "Claude",
+      "Claude Code",
+      "Developer Limits"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "DOOMQL：將 SQLite 作為遊戲引擎運作的終端機版類 Doom 遊戲",
+      "en": "DOOMQL: A terminal-based Doom clone powered entirely by SQLite as the game engine"
+     },
+     "detail": {
+      "zh": "開發者利用 GPT-5.6 Sol 打造了 DOOMQL，大膽挑戰將 SQLite 作為遊戲引擎而非單純的資料庫。遊戲中的移動、碰撞偵測、戰鬥及畫面像素渲染完全由 SQL 查詢控制，並以 Python 終端機腳本執行。",
+      "en": "Built using GPT-5.6 Sol, DOOMQL explores using SQLite as a core game engine rather than just a data store. Movement, collision, combat, and RGB pixel rendering are entirely driven by SQL queries, running inside a Python terminal script."
+     },
+     "source": "https://simonwillison.net/2026/Jul/13/doomql/#atom-everything",
+     "tags": [
+      "SQLite",
+      "Game Engine",
+      "Python",
+      "GPT-5.6"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "網頁截圖工具 shot-scraper 1.11 發佈：優化伺服器啟動輪詢機制",
+      "en": "shot-scraper 1.11 released with improved server startup polling"
+     },
+     "detail": {
+      "zh": "知名命令列網頁截圖工具 shot-scraper 推出 1.11 版本，將多圖與影片截圖時的伺服器等待時間從固定的 1 秒改為最長 30 秒的連接埠輪詢，大幅提升了在慢速本機伺服器上的運作穩定性。",
+      "en": "The CLI screenshot utility shot-scraper released version 1.11, replacing its fixed 1-second startup delay with a robust 30-second port-polling mechanism. This prevents timeout failures when capturing from slower local development servers."
+     },
+     "source": "https://simonwillison.net/2026/Jul/12/shot-scraper/#atom-everything",
+     "tags": [
+      "shot-scraper",
+      "CLI",
+      "Web Scraping",
+      "Release"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "iOS 27 公開測試版上線：全新 Siri AI 深度融入日常工作流",
+      "en": "iOS 27 Public Beta launches, bringing deeply integrated Siri AI to daily workflows"
+     },
+     "detail": {
+      "zh": "Apple 釋出 iOS 27 首個公開測試版，展示了全新 Siri AI 的實用功能。測試顯示，新版 Siri 在系統層級的脈絡理解與跨應用操作上表現優異，顯著改變了使用者與 iPhone 的互動方式。",
+      "en": "Apple has released the first public beta of iOS 27, showcasing the capabilities of its redesigned Siri AI. Early testing indicates significant improvements in system-wide context awareness and cross-app execution, reshaping daily iPhone interactions."
+     },
+     "source": "https://www.theverge.com/tech/964714/siri-ai-public-beta-preview-ios-27-hands-on",
+     "tags": [
+      "Apple",
+      "iOS 27",
+      "Siri AI",
+      "Beta"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Waze 整合 Google Gemini：推出 AI 語音路況回報與個人化導航",
+      "en": "Waze integrates Google Gemini for AI voice reporting and personalized trips"
+     },
+     "detail": {
+      "zh": "Google 將 Gemini 引入導航應用 Waze，升級對話式路況回報功能。使用者現在可以用更自然的口語進行路況回報，AI 會自動解析語意並更新地圖，降低駕駛分心的風險。",
+      "en": "Google is rolling out Gemini-powered features to Waze, upgrading its conversational reporting. Drivers can now report road hazards using natural spoken language, which the AI parses to update map data automatically, reducing driving distractions."
+     },
+     "source": "https://www.theverge.com/transportation/964132/waze-gemini-ai-voice-commands-less-chatty",
+     "tags": [
+      "Waze",
+      "Google Gemini",
+      "Navigation",
+      "Voice AI"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "以毒攻毒：安全防禦者利用「脈絡轟炸」阻斷惡意 AI Agent 的攻擊",
+      "en": "Context Bombing: Defenders leverage prompt injection to shut down malicious AI agents"
+     },
+     "detail": {
+      "zh": "安全研究人員開始採用「脈絡轟炸」（Context Bombing）技術，將特定的提示詞注入網頁中。當惡意的自動化駭客 Agent 掃描到這些內容時，會被誘導觸發安全機制並自動中斷執行，成為新型態的防禦手段。",
+      "en": "Security researchers are turning prompt injection into a defensive tool called \"context bombing.\" By embedding specific prompt instructions on web pages, they can trick automated hacking agents into shutting down before they can cause harm."
+     },
+     "source": "https://arstechnica.com/security/2026/07/now-defenders-are-embracing-the-prompt-injection-too/",
+     "tags": [
+      "Security",
+      "Prompt Injection",
+      "AI Agent",
+      "Context Bombing"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "模擬一切的承諾與極限：深入探討 AI 世界模型（World Models）的現況",
+      "en": "Simulating everything: The promises and limitations of AI World Models"
+     },
+     "detail": {
+      "zh": "專家深入剖析「世界模型」的技術架構與邊界。雖然 Sora 等模型展現了強大的物理模擬潛力，但目前的模型在處理複雜因果關係與精確物理規律時仍存在局限，距離真正的「萬物模擬器」仍有距離。",
+      "en": "Experts weigh in on the architecture and limits of \"world models.\" While models like Sora demonstrate impressive physical simulation, current architectures still struggle with complex causal reasoning and precise physical laws, leaving the \"general simulator\" goal unfulfilled."
+     },
+     "source": "https://arstechnica.com/ai/2026/07/simulating-everything-sort-of-the-promise-and-limits-of-world-models/",
+     "tags": [
+      "World Models",
+      "Sora",
+      "AI Simulation",
+      "Research"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "微軟執行長 Satya Nadella 警告：過度依賴單一封閉模型恐成企業的「特洛伊木馬」",
+      "en": "Satya Nadella warns that relying on proprietary AI models could be a \"Trojan horse\""
+     },
+     "detail": {
+      "zh": "微軟執行長 Nadella 對企業發出警告，指出過度依賴特定巨頭的封閉原始碼模型，可能會讓企業陷入嚴重的供應商鎖定（Vendor Lock-in）困境，呼籲業界重視多模型架構與開源方案。",
+      "en": "Microsoft CEO Satya Nadella issued a warning to enterprises, suggesting that over-reliance on proprietary models from single AI labs could act as a \"Trojan horse,\" leading to severe vendor lock-in. He advocated for multi-model approaches and open alternatives."
+     },
+     "source": "https://techcrunch.com/2026/07/13/satya-nadella-has-issued-a-shocking-warning-to-companies-using-ai/",
+     "tags": [
+      "Satya Nadella",
+      "Microsoft",
+      "Proprietary Models",
+      "Enterprise AI"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Zed 編輯器創辦人直言不諱：批評 Anthropic 在 Claude Code 宣傳上言過其實",
+      "en": "Zed editor creator criticizes Anthropic's Claude Code marketing claims"
+     },
+     "detail": {
+      "zh": "高效能編輯器 Zed 的創辦人公開批評 Anthropic，指其在推廣 AI 程式碼助手 Claude Code 時有過度包裝與誇大成效之嫌，並呼籲開發者社群應理性評估 AI 工具的真實生產力提升。",
+      "en": "The creator of the high-performance Zed editor has publicly criticized Anthropic, accusing the company of blowing smoke and overhyping the capabilities of its Claude Code assistant, urging developers to maintain a realistic view of AI productivity tools."
+     },
+     "source": "https://raymyers.org/post/zed-creator-calls-spade-a-spade/",
+     "tags": [
+      "Zed Editor",
+      "Anthropic",
+      "Claude Code",
+      "Developer Tools"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "Samsung Health 應用程式威脅：若使用者拒絕 AI 訓練將刪除其健康數據",
+      "en": "Samsung Health app threatens data deletion if users opt out of AI training"
+     },
+     "source": "https://neow.in/cWsyMTV3"
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 開始為其第二大市場印度推出盧比本地化訂閱定價方案",
+      "en": "Anthropic starts localizing Claude pricing in Indian Rupees for its second-largest market"
+     },
+     "source": "https://techcrunch.com/2026/07/13/anthropic-starts-localizing-claude-pricing-for-india-its-biggest-market-after-the-us/"
+    },
+    {
+     "headline": {
+      "zh": "Sam Altman 駁斥馬斯克的太空資料中心計劃，直言其為「向公開市場投資人吸金的騙局」",
+      "en": "Sam Altman dismisses Elon Musk's space data center plans as a scam targeting public market investors"
+     },
+     "source": "https://techcrunch.com/2026/07/13/sam-altmans-space-data-center-trash-talk-is-what-most-experts-already-believe/"
+    },
+    {
+     "headline": {
+      "zh": "Hacker News 社群熱烈討論是否應為 AI 生成的文章新增專屬標記",
+      "en": "Hacker News community debates adding a dedicated flag for AI-generated articles"
+     },
+     "source": "https://news.ycombinator.com/item?id=48886741"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.5-flash",
+ "generated_at": "2026-07-14T07:02+08:00"
+}
