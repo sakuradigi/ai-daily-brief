@@ -1,6 +1,14 @@
 {
- "latest": "2026-07-14",
+ "latest": "2026-07-15",
  "reports": [
+  {
+   "date": "2026-07-15",
+   "type": "daily",
+   "summary": {
+    "zh": "GPT-5.6 驚傳刪檔災情；紐約暫停資料中心建設",
+    "en": "GPT-5.6 Sol file deletion warnings; NY halts new data centers"
+   }
+  },
   {
    "date": "2026-07-14",
    "type": "daily",
