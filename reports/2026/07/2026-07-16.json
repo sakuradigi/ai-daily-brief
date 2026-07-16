@@ -1,0 +1,299 @@
+{
+ "date": "2026-07-16",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "xAI 開源 grok-build 工具，因隱私爭議（上傳整目錄）引發社群反彈",
+      "en": "xAI Open-Sources grok-build Amid Backlash Over Directory Upload Privacy Concerns"
+     },
+     "detail": {
+      "zh": "xAI 開源了其 grok 命令列工具，但隨即被社群發現該工具會將執行目錄下的所有檔案（包含 SSH 金鑰、密碼庫等敏感資料）上傳至 Google Cloud。此安全漏洞引發開發者強烈抗議，xAI 已緊急對此做出回應。",
+      "en": "xAI open-sourced its grok CLI tool, but faced immediate backlash after users discovered it uploads the entire running directory—including sensitive files like SSH keys and password databases—to Google Cloud. xAI has responded to the community outcry."
+     },
+     "source": "https://github.com/xai-org/grok-build",
+     "tags": [
+      "Open Source",
+      "Security",
+      "xAI",
+      "grok-build"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Claude 網頁擷取工具漏洞：駭客可透過間接提示注入竊取用戶記憶",
+      "en": "Claude Web Fetch Vulnerability: How Hackers Can Exfiltrate User Memories via Indirect Prompt Injection"
+     },
+     "detail": {
+      "zh": "研究人員發現 Claude 的 web_fetch 工具存在安全漏洞。攻擊者可透過惡意網頁進行間接提示注入（Indirect Prompt Injection），繞過安全防護並將用戶過去累積的私密記憶資料（Memories）外流。",
+      "en": "Researchers discovered a vulnerability in Claude's web_fetch tool. Attackers can leverage indirect prompt injection on hostile websites to bypass security boundaries and exfiltrate the user's private conversational memories."
+     },
+     "source": "https://www.ayush.digital/blog/the-memory-heist",
+     "tags": [
+      "Security",
+      "Claude",
+      "Prompt Injection",
+      "Vulnerability"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Thinking Machines 推出 9750 億參數開源權重模型 Inkling",
+      "en": "Thinking Machines Launches Inkling, a 975B Parameter Open-Weights Model"
+     },
+     "detail": {
+      "zh": "基礎設施新創公司 Thinking Machines 發表其首款開源權重模型 Inkling，參數規模高達 975B。該公司旨在打破「單一模型適用所有場景」的現狀，為企業提供更具彈性的客製化基礎設施。",
+      "en": "Infrastructure startup Thinking Machines has unveiled Inkling, a massive 975-billion-parameter open-weights model. This marks the company's first public step to challenge the 'one-size-fits-all' AI paradigm by offering highly customizable infrastructure."
+     },
+     "source": "https://thinkingmachines.ai/news/introducing-inkling/",
+     "tags": [
+      "LLM",
+      "Open Weights",
+      "Thinking Machines",
+      "Inkling"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "IBM Research 探討模型路由（Model Routing）的實作挑戰與複雜度",
+      "en": "IBM Research Explores the Real-World Complexity of Model Routing"
+     },
+     "detail": {
+      "zh": "隨著多模型架構普及，如何將請求精準分流至最適合、成本最低的模型成為關鍵。IBM 探討了從簡單規則到動態機器學習路由器的演進，並指出在實際生產環境中維持低延遲與高精準度的工程挑戰。",
+      "en": "As multi-model architectures become standard, routing requests to the most cost-effective and capable model is crucial. IBM details the transition from simple heuristics to dynamic ML routers, highlighting the engineering challenges of balancing latency and accuracy."
+     },
+     "source": "https://huggingface.co/blog/ibm-research/model-routing-is-simple-until-it-isnt",
+     "tags": [
+      "Model Routing",
+      "LLMOps",
+      "IBM Research"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Allen Institute 分享 Shippy 專案：打造實用 AI Agent 的工程啟示",
+      "en": "Allen Institute Shares Engineering Lessons from Building Shippy AI Agent"
+     },
+     "detail": {
+      "zh": "Allen Institute 團隊分享了開發 Shippy 代理工具的經驗，探討了在實際任務中如何處理 Agent 的不確定性、工具調用（Tool Calling）的容錯機制，以及如何設計更穩健的評估指標。",
+      "en": "The Allen Institute team shares practical engineering insights from developing Shippy, focusing on handling agent non-determinism, robust tool-calling error recovery, and designing reliable evaluation frameworks."
+     },
+     "source": "https://huggingface.co/blog/allenai/shippy-tech-blog",
+     "tags": [
+      "AI Agents",
+      "Engineering",
+      "Allen Institute"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "語音 AI 新評測基準：Real World VoiceEQ 衡量人聲擬真度",
+      "en": "Real World VoiceEQ: A New Benchmark for Measuring Human Quality in Voice AI"
+     },
+     "detail": {
+      "zh": "隨著語音生成技術爆發，新型評估框架 VoiceEQ 旨在客觀量化 AI 語音的「人類質感」，包含情感表達、語調起伏與自然停頓，為開發者提供更貼近真實聽覺體驗的評測指標。",
+      "en": "With the rise of generative voice tech, the VoiceEQ framework aims to objectively measure the 'human quality' of AI voices, assessing emotional expression, intonation, and natural pauses to provide a realistic auditory benchmark."
+     },
+     "source": "https://huggingface.co/blog/real-world-voiceeq",
+     "tags": [
+      "Voice AI",
+      "Benchmark",
+      "VoiceEQ"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 發表首款硬體產品：售價 230 美元的 Codex Micro 輔助鍵盤",
+      "en": "OpenAI Releases Its First Branded Hardware: The $230 Codex Micro Keyboard"
+     },
+     "detail": {
+      "zh": "OpenAI 推出專為其 Codex 代理程式開發平台設計的實體硬體「Codex Micro」。這款售價 230 美元的發光輔助鍵盤，旨在讓開發者能一目了然地監控並切換多個並行的 Agent 執行緒。",
+      "en": "OpenAI has launched 'Codex Micro,' a $230 physical light-up keyboard designed for its Codex agentic coding platform. The device allows developers to monitor and manage multiple parallel agentic threads at a single glance."
+     },
+     "source": "https://arstechnica.com/ai/2026/07/openais-first-branded-hardware-is-a-light-up-keyboard/",
+     "tags": [
+      "Hardware",
+      "Codex",
+      "Developer Tools",
+      "OpenAI"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 揭露 GPT-Red：利用自我博弈實現自動化紅隊演練",
+      "en": "OpenAI Details GPT-Red: Automating Red Teaming via Self-Play"
+     },
+     "detail": {
+      "zh": "OpenAI 發表自動化紅隊演練系統 GPT-Red，透過自我博弈（Self-play）機制讓模型自行尋找安全漏洞與提示注入（Prompt Injection）弱點，藉此提升模型的強健度與對齊表現。",
+      "en": "OpenAI introduced GPT-Red, an automated red teaming system that leverages self-play to discover security vulnerabilities and prompt injection exploits, significantly enhancing model robustness and alignment."
+     },
+     "source": "https://openai.com/index/unlocking-self-improvement-gpt-red",
+     "tags": [
+      "Red Teaming",
+      "AI Safety",
+      "Self-Play",
+      "OpenAI"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "LeMario：在《超級瑪利歐兄弟》上訓練 JEPA 世界模型",
+      "en": "LeMario: Training a JEPA World Model on Super Mario Bros"
+     },
+     "detail": {
+      "zh": "開發者成功在經典遊戲《超級瑪利歐兄弟》中訓練了基於聯合嵌入預測架構（JEPA）的世界模型。該專案展示了非生成式世界模型在預報遊戲物理狀態與動作規劃上的高效能與潛力。",
+      "en": "A developer successfully trained a Joint Embedding Predictive Architecture (JEPA) world model on Super Mario Bros. The project demonstrates the efficiency of non-generative world models in predicting game physics and action planning."
+     },
+     "source": "https://www.benjamin-bai.com/projects/lemario",
+     "tags": [
+      "JEPA",
+      "World Model",
+      "Reinforcement Learning",
+      "Super Mario"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Apple Intelligence 獲准在中國推出，將搭載阿里巴巴通義千問",
+      "en": "Apple Intelligence Approved for China Launch Powered by Alibaba's Qwen"
+     },
+     "detail": {
+      "zh": "蘋果已獲准在中國市場推出 Apple Intelligence 服務，並確認與阿里巴巴合作，採用其開源的「通義千問（Qwen）」模型。此舉解決了蘋果在中國面臨的法規合規與在地化 LLM 整合難題。",
+      "en": "Apple has secured approval to launch Apple Intelligence in China by partnering with Alibaba to integrate its open-source Qwen models, resolving key regulatory and localization hurdles in the critical market."
+     },
+     "source": "https://techcrunch.com/2026/07/15/apple-intelligence-approved-for-launch-in-china-with-alibabas-qwen-ai/",
+     "tags": [
+      "Apple",
+      "Qwen",
+      "China",
+      "Regulation"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Suno 遭駭客入侵洩漏源碼，證實抓取 YouTube 與 Genius 數據進行訓練",
+      "en": "Suno Hack Reveals AI Music Generator Scraped YouTube and Genius for Training"
+     },
+     "detail": {
+      "zh": "一起針對 AI 音樂生成器 Suno 的駭客入侵事件曝光了其內部源碼，證實該公司在未公開的情況下，抓取了 YouTube Music、Deezer 和 Genius 等平台數百萬首歌曲與歌詞進行模型訓練，面臨潛在的版權法律風暴。",
+      "en": "A security breach at Suno exposed source code confirming that the AI music generator scraped millions of songs and lyrics from YouTube Music, Deezer, and Genius for training, intensifying its ongoing copyright controversies."
+     },
+     "source": "https://techcrunch.com/2026/07/15/hack-suggests-ai-music-generator-suno-scraped-youtube-for-training-data/",
+     "tags": [
+      "Suno",
+      "Copyright",
+      "Data Scraping",
+      "Security Breach"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 與黑石集團聯手成立 Ode，押注企業 AI 落地導入服務",
+      "en": "Anthropic and Blackstone Launch Ode, Betting on Enterprise AI Implementation"
+     },
+     "detail": {
+      "zh": "Anthropic 攜手黑石集團等巨頭成立合資企業 Ode，派遣前線工程師直接進駐大型企業，協助解決 AI 落地與系統整合難題。創辦人指出，下一個兆級 AI 商機在於「導入實作」而非模型本身。",
+      "en": "Backed by Anthropic and Blackstone, Ode has launched to embed forward-deployed engineers inside enterprises, betting that the next trillion-dollar AI opportunity lies in implementation and integration rather than raw models."
+     },
+     "source": "https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models/",
+     "tags": [
+      "Anthropic",
+      "Ode",
+      "Enterprise AI",
+      "Implementation"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "網際網路之父 Vint Cerf 正在制定開放網路 AI Agent 的識別與規範標準",
+      "en": "Internet pioneer Vint Cerf is working on a standard for identifying AI agents on the open web."
+     },
+     "source": "https://techcrunch.com/2026/07/15/vint-cerf-is-working-on-a-plan-to-unleash-ai-agents-on-the-open-internet/"
+    },
+    {
+     "headline": {
+      "zh": "前 Google DeepMind 研究員撰文分享其離職原因與對 AI 安全的擔憂",
+      "en": "Former Google DeepMind researcher shares reasons for departure and concerns over AI safety."
+     },
+     "source": "https://turntrout.com/why-i-left-google-deepmind"
+    },
+    {
+     "headline": {
+      "zh": "GitHub Dependabot 新增預設 3 天冷卻期，降低惡意套件即時更新的供應鏈風險",
+      "en": "GitHub Dependabot defaults to a 3-day cooldown for new releases to mitigate supply chain risks."
+     },
+     "source": "https://simonwillison.net/2026/Jul/14/github-changeling/#atom-everything"
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 於歐洲法院輸掉商標糾紛訴訟",
+      "en": "OpenAI loses trademark dispute at EU court."
+     },
+     "source": "https://dpa-international.com/economics/urn:newsml:dpa.com:20090101:260715-930-389143/"
+    },
+    {
+     "headline": {
+      "zh": "傳微軟訓練銷售團隊貶低 OpenAI 與 Anthropic，力推自家更具性價比模型",
+      "en": "Microsoft reportedly trains sales staff to downplay OpenAI and Anthropic to push its own cost-effective models."
+     },
+     "source": "https://techcrunch.com/2026/07/15/microsoft-is-reportedly-training-salespeople-to-talk-down-openai-and-anthropic/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.5-flash",
+ "generated_at": "2026-07-16T08:16+08:00"
+}

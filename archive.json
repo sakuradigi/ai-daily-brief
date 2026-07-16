@@ -1,6 +1,14 @@
 {
- "latest": "2026-07-15",
+ "latest": "2026-07-16",
  "reports": [
+  {
+   "date": "2026-07-16",
+   "type": "daily",
+   "summary": {
+    "zh": "grok-build 開源爭議與 Claude 記憶外洩漏洞",
+    "en": "grok-build open-source controversy and Claude memory exfiltration vulnerability."
+   }
+  },
   {
    "date": "2026-07-15",
    "type": "daily",
