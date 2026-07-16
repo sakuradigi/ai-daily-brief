@@ -1,6 +1,14 @@
 {
- "latest": "2026-07-16",
+ "latest": "2026-07-17",
  "reports": [
+  {
+   "date": "2026-07-17",
+   "type": "daily",
+   "summary": {
+    "zh": "開源大模型 Inkling 與 Kimi K3 齊發",
+    "en": "Inkling and Kimi K3 lead open-weights surge; Linus Torvalds defends AI in Linux."
+   }
+  },
   {
    "date": "2026-07-16",
    "type": "daily",

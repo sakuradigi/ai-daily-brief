@@ -1,0 +1,328 @@
+{
+ "date": "2026-07-17",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Mira Murati 旗下實驗室推出 975B 開源 MoE 模型 Inkling",
+      "en": "Mira Murati's Thinking Machines Lab releases 975B open-weights MoE model Inkling"
+     },
+     "detail": {
+      "zh": "該模型採用 Apache-2.0 授權，擁有 9750 億參數（410 億活躍參數），並在高達 45 兆個包含文本、影像、音訊及影片的 Token 上進行多模態訓練，為開源社群注入強大戰力。",
+      "en": "Licensed under Apache-2.0, Inkling features 975B total parameters (41B active) and was trained on 45 trillion multimodal tokens, delivering a massive boost to the open-source community."
+     },
+     "source": "https://simonwillison.net/2026/Jul/16/inkling/#atom-everything",
+     "tags": [
+      "Open Source",
+      "MoE",
+      "Multimodal",
+      "LLM"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "月之暗面發表 2.8 兆參數模型 Kimi K3，承諾 7 月底開源",
+      "en": "Moonshot AI unveils 2.8T parameter Kimi K3, promising open weights by late July"
+     },
+     "detail": {
+      "zh": "Kimi K3 號稱是目前最大的開源等級模型，在基準測試中超越了 Claude Opus 4.8 與 GPT-5.5，官方預計於 2026 年 7 月 27 日前釋出開源權重。",
+      "en": "Claimed as the largest 'open-class' model to date with 2.8 trillion parameters, Kimi K3 reportedly outperforms Claude Opus 4.8 and GPT-5.5, with open weights promised by July 27, 2026."
+     },
+     "source": "https://simonwillison.net/2026/Jul/16/kimi-k3/#atom-everything",
+     "tags": [
+      "LLM",
+      "Open Weights",
+      "Moonshot AI",
+      "Benchmarks"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Linus Torvalds 強硬表態：不爽 Linux 引入 AI 輔助開發就請便或自行 Fork",
+      "en": "Linus Torvalds to critics of AI coding in Linux: 'Fork it. Or just walk away.'"
+     },
+     "detail": {
+      "zh": "Linux 創始人明確指出 Linux 不會排斥 AI 工具，並認為 AI 輔助開發的實用性已毋庸置疑，他將無視任何要求禁用 AI 工具的抗議。",
+      "en": "The Linux creator firmly stated that Linux is not an anti-AI project, emphasizing that AI is a clearly useful tool and that he will 'very loudly ignore' calls for a ban."
+     },
+     "source": "https://arstechnica.com/ai/2026/07/linus-torvalds-to-critics-of-ai-coding-in-linux-fork-it-or-just-walk-away/",
+     "tags": [
+      "Linux",
+      "Open Source",
+      "AI Coding",
+      "Linus Torvalds"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "xAI 開源 grok-build CLI 工具，卻因「上傳整個目錄」引發隱私風暴",
+      "en": "xAI open-sources grok-build CLI, sparking privacy backlash over directory uploads"
+     },
+     "detail": {
+      "zh": "該工具被社群發現會在執行時將整個目錄（包含 SSH 金鑰、密碼資料庫等敏感檔案）上傳至 xAI 的雲端儲存空間，引發極大爭議，官方隨後緊急將其開源以自清。",
+      "en": "The CLI tool faced severe backlash after users discovered it uploaded entire directories, including sensitive files like SSH keys and password databases, to xAI's cloud buckets."
+     },
+     "source": "https://simonwillison.net/2026/Jul/15/grok-build/#atom-everything",
+     "tags": [
+      "CLI",
+      "Privacy",
+      "xAI",
+      "Open Source"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "DoorDash 推出 dd-cli 終端機工具，支援開發者與 AI 代理直接點餐",
+      "en": "DoorDash launches dd-cli, enabling developers and AI agents to order from terminal"
+     },
+     "detail": {
+      "zh": "透過開放此命令列工具測試版，開發者與 AI Agent 可直接在終端機搜尋店家、加入購物車並下單，象徵軟體設計正朝「面向 AI 代理」轉型。",
+      "en": "DoorDash opened a limited beta of dd-cli, allowing developers and AI agents to search, build carts, and place orders directly from the terminal, signaling a shift toward agent-first software."
+     },
+     "source": "https://techcrunch.com/2026/07/16/yes-you-can-now-order-doordash-from-the-command-line/",
+     "tags": [
+      "CLI",
+      "API",
+      "AI Agent",
+      "Developer Tool"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "LM Studio 推出 Bionic：專為開源模型打造的 AI 代理",
+      "en": "LM Studio introduces Bionic: An AI agent designed for open models"
+     },
+     "detail": {
+      "zh": "該工具旨在將 AI 代理能力帶入本地與開源模型，讓開發者能在不依賴封閉 API 的情況下，構建具備自主執行任務能力的本地工作流。",
+      "en": "LM Studio Bionic brings agentic workflows to open and local models, enabling developers to build autonomous task-executing systems without relying on proprietary APIs."
+     },
+     "source": "https://lmstudio.ai/blog/introducing-lm-studio-bionic",
+     "tags": [
+      "LM Studio",
+      "AI Agent",
+      "Local LLM",
+      "Open Source"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "1Password 整合 Claude 瀏覽器套件，允許 AI 代理自動存取憑證執行任務",
+      "en": "1Password integrates with Claude, allowing AI to access credentials for tasks"
+     },
+     "detail": {
+      "zh": "此整合讓 Claude 能在使用者授權下，直接讀取 1Password 儲存的帳密，自動完成訂機票、管理線上帳戶等跨網頁的多步驟複雜任務。",
+      "en": "The new browser integration allows Claude to access stored credentials with user authorization, enabling the chatbot to perform multi-step tasks like booking travel on behalf of users."
+     },
+     "source": "https://www.theverge.com/tech/966442/1password-anthropic-claude-browser-integration",
+     "tags": [
+      "Claude",
+      "1Password",
+      "AI Agent",
+      "Security"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Google 將 NotebookLM 更名為 Gemini Notebook，深化生態系整合",
+      "en": "Google renames NotebookLM to Gemini Notebook, deepening ecosystem integration"
+     },
+     "detail": {
+      "zh": "雖然更名，但該 AI 筆記應用仍保持獨立運作，未來將與 Gemini 核心模型及 Google 搜尋進行更深度的技術與功能整合。",
+      "en": "Google is rebranding its popular AI note-taking app to Gemini Notebook, keeping it standalone while integrating it more deeply with Gemini and Google Search."
+     },
+     "source": "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/",
+     "tags": [
+      "Google",
+      "Gemini Notebook",
+      "NotebookLM",
+      "Rebrand"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "NVIDIA Nemotron 3 Embed 奪得 RTEB 基準測試冠軍，推進代理檢索技術",
+      "en": "NVIDIA Nemotron 3 Embed ranks #1 on RTEB, advancing agentic retrieval"
+     },
+     "detail": {
+      "zh": "該嵌入模型在「檢索錦標賽評估基準（RTEB）」中名列第一，顯著提升了 RAG（檢索增強生成）與 AI 代理在處理複雜查詢時的精準度。",
+      "en": "NVIDIA's embedding model topped the Retrieval Tournament Evaluation Benchmark (RTEB), marking a significant advancement for RAG and agentic retrieval workflows."
+     },
+     "source": "https://huggingface.co/blog/nvidia/nemotron-3-embed-wins-rteb",
+     "tags": [
+      "NVIDIA",
+      "Embedding",
+      "RAG",
+      "Benchmark"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "德國 AI 聯盟發表 30B 開源模型 Soofi S，雙語基準測試奪冠",
+      "en": "German AI consortium releases Soofi S, an open 30B model topping benchmarks"
+     },
+     "detail": {
+      "zh": "該模型擁有 300 億參數，在英文與德文的多項基準測試中表現優異，為歐洲開源大型語言模型生態系注入新選擇。",
+      "en": "The 30B open-weights model developed by a German consortium tops performance benchmarks in both English and German, offering a strong European alternative."
+     },
+     "source": "https://the-decoder.com/german-ai-consortium-releases-soofi-s-an-open-30b-model-that-tops-benchmarks-in-both-english-and-german/",
+     "tags": [
+      "LLM",
+      "Open Weights",
+      "Soofi S",
+      "Benchmarks"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "實戰教學：如何在 6GB VRAM 的舊 Linux 電腦上訓練大鼓擴散模型",
+      "en": "Guide: Training a generative kick drum diffusion model on 6GB VRAM"
+     },
+     "detail": {
+      "zh": "本文展示了如何利用極低硬體預算，在舊型 Linux 桌機上微調與訓練專門生成大鼓音效的擴散模型，對音訊開發者極具實用價值。",
+      "en": "This hands-on guide details how to train and fine-tune a kick drum diffusion model on an old Linux desktop with only 6GB VRAM, proving accessible AI audio generation is possible."
+     },
+     "source": "https://www.zhinit.dev/blog/training-a-kick-drum-diffusion-model",
+     "tags": [
+      "Audio AI",
+      "Diffusion Model",
+      "VRAM",
+      "Tutorial"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "歐盟裁定 Google 必須向競爭對手開放 Android 與搜尋數據以利 AI 競爭",
+      "en": "EU orders Google to open Android and Search data to rival AI assistants"
+     },
+     "detail": {
+      "zh": "根據歐盟數位市場法（DMA），Google 被要求向競爭對手的 AI 助理與搜尋引擎提供更深度的 Android 系統與搜尋數據存取權限，可能重塑行動 AI 競爭格局。",
+      "en": "Under the EU's Digital Markets Act, Google must grant rival AI assistants and search engines greater access to Android and Search data, potentially weakening its platform dominance."
+     },
+     "source": "https://arstechnica.com/gadgets/2026/07/its-official-eu-will-force-google-to-share-search-data-and-open-up-ai-on-android/",
+     "tags": [
+      "EU",
+      "Antitrust",
+      "Google",
+      "Regulation"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Hugging Face 發布 2026 年 7 月安全事件揭露報告",
+      "en": "Hugging Face discloses July 2026 security incident"
+     },
+     "detail": {
+      "zh": "開源 AI 社群平台 Hugging Face 揭露了最新的安全事件細節，提醒開發者注意憑證安全，並持續強化平台整體的防禦機制。",
+      "en": "Hugging Face released a security incident disclosure for July 2026, detailing recent security anomalies and advising developers on token and credential hygiene."
+     },
+     "source": "https://huggingface.co/blog/security-incident-july-2026",
+     "tags": [
+      "Hugging Face",
+      "Security",
+      "Vulnerability"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Apple Intelligence 獲准在中國推出，將與阿里、百度展開合作",
+      "en": "Apple Intelligence approved for China launch with Alibaba and Baidu partnerships"
+     },
+     "detail": {
+      "zh": "蘋果已獲得在中國市場推出其 AI 服務的許可，並將與當地的阿里巴巴（通義千問）及百度合作，以符合當地的監管法規。",
+      "en": "Apple has secured approval to launch its Apple Intelligence suite in China, partnering with local tech giants Alibaba and Baidu to comply with local regulatory frameworks."
+     },
+     "source": "https://techcrunch.com/2026/07/16/apple-intelligence-approved-for-launch-in-china-with-alibabas-qwen-ai/",
+     "tags": [
+      "Apple",
+      "China",
+      "Alibaba",
+      "Baidu"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "GPT-5.6 Codex 驚爆嚴重 Bug：在無沙盒環境下可能誤刪使用者 $HOME 目錄",
+      "en": "GPT-5.6 Codex bug can unexpectedly delete user's $HOME directory without sandboxing"
+     },
+     "source": "https://simonwillison.net/2026/Jul/16/bad-codex-bug/#atom-everything"
+    },
+    {
+     "headline": {
+      "zh": "xAI 起訴一名惡意繞過安全防護、利用 Grok 生成兒少性剝削影像的用戶",
+      "en": "xAI sues South Carolina man for bypassing safeguards to generate CSAM using Grok"
+     },
+     "source": "https://arstechnica.com/tech-policy/2026/07/xai-cant-deny-grok-makes-csam-anymore-so-its-suing-users/"
+    },
+    {
+     "headline": {
+      "zh": "擔憂 Atlas 人形機器人搶飯碗，現代汽車韓國工廠爆發工人罷工",
+      "en": "Fear of Atlas humanoid robots triggers worker strikes at Hyundai auto factory"
+     },
+     "source": "https://arstechnica.com/ai/2026/07/fear-of-humanoid-robots-spurs-human-workers-to-strike-at-hyundai-auto-factory/"
+    },
+    {
+     "headline": {
+      "zh": "開發者利用 WebAssembly 將 Grok CLI 的 Mermaid 渲染器移植至瀏覽器",
+      "en": "Developer ports Grok CLI's Mermaid renderer to browser via WebAssembly"
+     },
+     "source": "https://simonwillison.net/2026/Jul/16/grok-mermaid/#atom-everything"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.5-flash",
+ "generated_at": "2026-07-17T07:03+08:00"
+}
