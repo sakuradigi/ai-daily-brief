@@ -1,6 +1,14 @@
 {
- "latest": "2026-07-17",
+ "latest": "2026-07-18",
  "reports": [
+  {
+   "date": "2026-07-18",
+   "type": "daily",
+   "summary": {
+    "zh": "蘋果起訴 OpenAI；Patreon 封鎖 AI 爬蟲",
+    "en": "Apple sues OpenAI over trade secrets; Patreon blocks AI scrapers."
+   }
+  },
   {
    "date": "2026-07-17",
    "type": "daily",

@@ -1,0 +1,244 @@
+{
+ "date": "2026-07-18",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "蘋果向數十名轉投 OpenAI 的前員工發律師函，指控洩露商業機密",
+      "en": "Apple targets dozens of former employees at OpenAI with legal letters over trade secrets"
+     },
+     "detail": {
+      "zh": "蘋果正式對 OpenAI 提起訴訟，指控其系統性挖角超過 400 名前蘋果員工（包含前硬體主管），並向數十名員工發送律師函。此舉可能嚴重干擾 OpenAI 正在籌備的 IPO 計劃，也揭示了兩家巨頭在 AI 領域的公開決裂。",
+      "en": "Apple has filed a trade secrets lawsuit against OpenAI, targeting over 400 former employees (including its chief hardware officer) and sending legal letters to dozens. This aggressive legal battle could severely disrupt OpenAI's rumored IPO plans and marks a major escalation in the tech giants' rivalry."
+     },
+     "source": "https://www.ft.com/content/1b8c9d52-88a9-426b-ba47-f1811f859166",
+     "tags": [
+      "Apple",
+      "OpenAI",
+      "Lawsuit",
+      "IP"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Patreon 放棄 robots.txt 宣告，聯手 Cloudflare 主動封鎖 AI 爬蟲",
+      "en": "Patreon partners with Cloudflare to actively block AI scrapers, moving past robots.txt"
+     },
+     "detail": {
+      "zh": "Patreon 宣布不再僅依賴 robots.txt 等被動宣告，而是與 Cloudflare 合作，主動封鎖未經授權抓取創作者內容進行 AI 訓練的爬蟲。這代表平台方對 AI 訓練數據抓取的態度轉向主動防禦，開發者未來獲取公開訓練數據的難度將大幅提升。",
+      "en": "Patreon is moving away from passive robots.txt files to actively blocking unauthorized AI training scrapers through a partnership with Cloudflare. This shift highlights a growing industry trend of active defense against data harvesting, making public training data collection increasingly difficult for developers."
+     },
+     "source": "https://techcrunch.com/2026/07/17/patreon-stops-asking-ai-bots-not-to-scrape-and-starts-blocking-them/",
+     "tags": [
+      "Patreon",
+      "Data Scraping",
+      "Cloudflare",
+      "Copyright"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Puter 成功將 Firefox 編譯為 WebAssembly，實現「瀏覽器中的瀏覽器」",
+      "en": "Puter compiles Firefox to WebAssembly, running a full browser inside another browser"
+     },
+     "detail": {
+      "zh": "雲端作業系統 Puter 成功將 Firefox (Gecko 引擎) 編譯為 WebAssembly，使其能在 Chrome 等其他瀏覽器中完整運行。該專案利用 Claude Opus 和 Fable 輔助開發，展示了 WebAssembly 在運行複雜、單一行程桌面級軟體上的巨大潛力。",
+      "en": "Cloud OS Puter has successfully compiled Firefox (Gecko engine) into WebAssembly, allowing a full browser to run inside another browser. Developed with the help of Claude Opus and Fable, this project demonstrates WebAssembly's immense potential for running complex, single-process desktop-class software on the web."
+     },
+     "source": "https://simonwillison.net/2026/Jul/16/firefox-in-webassembly/#atom-everything",
+     "tags": [
+      "WebAssembly",
+      "Firefox",
+      "Puter",
+      "Claude"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "NVIDIA NeMo Automodel 聯手 Hugging Face Diffusers，實現大規模影音模型微調",
+      "en": "Fine-tune video and image models at scale with NVIDIA NeMo Automodel and HF Diffusers"
+     },
+     "detail": {
+      "zh": "Hugging Face 與 NVIDIA 合作，將 NeMo Automodel 的大規模分散式訓練能力引入 Diffusers 庫。開發者現在可以更容易地在多節點 GPU 叢集上，高效微調大型圖像與影片生成模型，解決了以往超大型生成模型微調時的記憶體與擴展性瓶頸。",
+      "en": "Hugging Face and NVIDIA have integrated NeMo Automodel's large-scale distributed training capabilities with the Diffusers library. Developers can now easily fine-tune massive image and video generation models across multi-node GPU clusters, overcoming previous memory and scalability bottlenecks."
+     },
+     "source": "https://huggingface.co/blog/nvidia/scale-diffusers-finetuning-nemo-automodel",
+     "tags": [
+      "NVIDIA",
+      "Hugging Face",
+      "Diffusers",
+      "Fine-tuning"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "2026 年開源 AI 現狀報告發布，聚焦開源權重模型的開發者影響力",
+      "en": "State of Open Source AI report released, highlighting the developer impact of open-weight models"
+     },
+     "detail": {
+      "zh": "該報告深入分析了當前開源 AI 的生態，指出開源權重模型（Open-weight models）在代碼生成、成本控制上已成為開發者的首選。報告也探討了開源定義的爭議，以及開發者在實際部署、微調這些模型時面臨的工具鏈挑戰。",
+      "en": "The comprehensive report analyzes the current open-source AI ecosystem, showing that open-weight models have become the preferred choice for developers due to cost savings and coding capabilities. It also addresses the ongoing debate over the definition of 'open source AI' and the tooling challenges in deployment."
+     },
+     "source": "https://stateofopensource.ai/",
+     "tags": [
+      "Open Source",
+      "LLM",
+      "Developer Survey",
+      "Open-weight"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "開發者深度剖析 Claude Code：揭示終端工具設計中的「反特徵」",
+      "en": "Developer dissects Claude Code, highlighting 'misfeatures' in terminal tool design"
+     },
+     "detail": {
+      "zh": "一篇針對 Anthropic 終端工具 Claude Code 的深度分析指出，該工具在自動化執行命令時存在過度設計與安全隱憂。作者批評其未經確認即執行破壞性操作的傾向，提醒開發者在將 AI 代理（Agent）整合進本地開發流程時，應保持對寫入權限的警惕。",
+      "en": "A deep-dive analysis of Anthropic's terminal tool, Claude Code, criticizes its over-engineered behavior and potential security risks. The author highlights the tool's tendency to execute destructive actions without explicit confirmation, warning developers to be cautious when granting local write permissions to AI agents."
+     },
+     "source": "https://www.olafalders.com/2026/07/17/claude-code-anatomy-of-a-misfeature/",
+     "tags": [
+      "Claude Code",
+      "Anthropic",
+      "Developer Tools",
+      "AI Agent"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "TikTok 測試 AI 肖像特徵偵測工具，防範未授權的深偽內容",
+      "en": "TikTok tests AI likeness detection tool to combat unauthorized deepfakes"
+     },
+     "detail": {
+      "zh": "TikTok 正向部分美國創作者測試一項主動加入（opt-in）的工具，該工具能掃描並偵測平台上的 AI 肖像特徵，允許創作者檢舉未經授權的 AI 複製人或深偽（deepfake）影片。這對創作者個人 IP 保護具有重要意義，也預示著平台對生成式 AI 內容的監管趨嚴。",
+      "en": "TikTok is testing an opt-in tool with select US creators that scans for AI likenesses, enabling them to report unauthorized deepfakes or AI clones of themselves. This marks a significant step in protecting creator IP and signals tighter platform regulation on generative AI content."
+     },
+     "source": "https://www.theverge.com/tech/967486/tiktok-ai-likeness-detection-tool",
+     "tags": [
+      "TikTok",
+      "Deepfake",
+      "AI Likeness",
+      "Creator Economy"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Kimi K3 發表：從 Pelican 基準測試看長文本與推理模型的進步",
+      "en": "Kimi K3 released: What the Pelican benchmark reveals about long-context reasoning"
+     },
+     "detail": {
+      "zh": "月之暗面（Moonshot AI）推出 Kimi K3 模型，Simon Willison 藉此探討了 Pelican 基準測試在評估長文本與推理能力上的價值。K3 在處理複雜上下文與防範系統提示詞洩漏（System Prompt Leak）上表現優異，展示了新一代推理模型在對齊與安全性上的提升。",
+      "en": "Moonshot AI has launched Kimi K3. Simon Willison analyzes its performance using the Pelican benchmark, highlighting its advancements in long-context processing and robust defense against system prompt leaks, showcasing the progress of next-gen reasoning models."
+     },
+     "source": "https://simonwillison.net/2026/Jul/16/kimi-k3/",
+     "tags": [
+      "Kimi K3",
+      "Pelican Benchmark",
+      "Reasoning",
+      "Long Context"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 發表「AI 時代計分卡」，為企業提供量化 ROI 的實用框架",
+      "en": "OpenAI introduces 'AI Scorecard' to help enterprises measure ROI"
+     },
+     "detail": {
+      "zh": "OpenAI 財務長 Sarah Friar 提出了一套實用的 AI 計分卡，旨在幫助企業從實用工作量、單次任務成本、可靠性以及算力回報（Return on Compute）四個維度量化 AI 投資報酬率。這為開發團隊向管理層證明 AI 工具與 API 支出的合理性提供了標準化框架。",
+      "en": "OpenAI CFO Sarah Friar introduced a practical AI scorecard designed to help enterprises measure ROI across four dimensions: useful work, cost per successful task, dependability, and return on compute. This provides a structured framework for dev teams to justify AI tool and API expenditures to management."
+     },
+     "source": "https://openai.com/index/a-scorecard-for-the-ai-age",
+     "tags": [
+      "OpenAI",
+      "Enterprise AI",
+      "ROI",
+      "Metrics"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "Hacker News 用戶反映 Fable 疑似從 Claude 訂閱中移除，現需額外購買點數",
+      "en": "HN users report Fable disappearing from Claude subscription, now requiring separate credits"
+     },
+     "source": "https://news.ycombinator.com/item?id=48950477"
+    },
+    {
+     "headline": {
+      "zh": "開發者用 Fable 5 打造「LLM 陳腔濫調高亮器」，秒讀 AI 腔文章",
+      "en": "Developer builds 'LLM Cliché Highlighter' using Fable 5 to instantly spot AI-generated writing patterns"
+     },
+     "source": "https://simonwillison.net/2026/Jul/17/llm-cliche-highlighter/#atom-everything"
+    },
+    {
+     "headline": {
+      "zh": "舊金山檢察長要求蘋果與 Google 下架 AI 脫衣（Nudify）應用程式",
+      "en": "San Francisco AG orders Apple and Google to remove AI nudify apps from their app stores"
+     },
+     "source": "https://arstechnica.com/tech-policy/2026/07/apple-google-must-stop-profiting-off-ai-nudify-apps-san-francisco-ag-says/"
+    },
+    {
+     "headline": {
+      "zh": "谷歌資助的 FireSat 野火偵測衛星成功發射，可精準捕捉早期火源",
+      "en": "Google-backed FireSat satellites launch to detect early-stage wildfires missed by other orbiters"
+     },
+     "source": "https://arstechnica.com/space/2026/07/google-backed-satellites-for-wildfire-detection-launch-as-smoke-chokes-us-canada/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.5-flash",
+ "generated_at": "2026-07-18T07:01+08:00"
+}
