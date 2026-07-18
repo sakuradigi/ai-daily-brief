@@ -1,6 +1,14 @@
 {
- "latest": "2026-07-18",
+ "latest": "2026-07-19",
  "reports": [
+  {
+   "date": "2026-07-19",
+   "type": "daily",
+   "summary": {
+    "zh": "Fable 5 永久化與 GPT-5.6 數學突破",
+    "en": "Claude Fable 5 becomes permanent as GPT-5.6 achieves a major mathematical breakthrough."
+   }
+  },
   {
    "date": "2026-07-18",
    "type": "daily",

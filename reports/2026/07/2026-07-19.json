@@ -1,0 +1,242 @@
+{
+ "date": "2026-07-19",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Anthropic 宣佈 Claude Fable 5 納入常規方案，並提供 Pro 用戶 $100 額度",
+      "en": "Anthropic makes Claude Fable 5 permanent in Premium plans with $100 credits for Pro users"
+     },
+     "detail": {
+      "zh": "因應 GPT-5.6 Sol 與 Kimi 3 的競爭，Anthropic 改變移除 Fable 5 的計畫。自 7 月 20 日起，Fable 5 將納入 Max 與 Team Premium 方案（額度為 50%），而 Pro 與 Team Standard 用戶則可透過使用額度存取，並獲得一次性 100 美元額度。這對依賴該模型的開發者是一大好消息。",
+      "en": "Driven by competition from GPT-5.6 Sol and Kimi 3, Anthropic reversed its plan to retire Fable 5. Starting July 20, Fable 5 will be included in Max and Team Premium plans at 50% capacity, while Pro and Team Standard users get a one-time $100 credit to access it. This is a major win for developers relying on Fable's capabilities."
+     },
+     "source": "https://simonwillison.net/2026/Jul/18/claude-make-fable-5-permanent/#atom-everything",
+     "tags": [
+      "Anthropic",
+      "Claude Fable 5",
+      "Pricing",
+      "LLM"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "GPT-5.6 僅憑 Prompt 突破凸優化領域 30 年學術瓶頸",
+      "en": "GPT-5.6 closes 30-year gap in convex optimization using a single prompt"
+     },
+     "detail": {
+      "zh": "在 OpenAI 發表 CDC 證明後，社群發現 GPT-5.6 成功透過特定 Prompt 解決了困擾數學界 30 年的凸優化難題。這展示了前沿 LLM 在極度專業的數學與理論科學領域中，具備超越人類專家直覺的啟發式搜尋能力。",
+      "en": "Following OpenAI's CDC proof announcement, the community discovered that GPT-5.6 successfully resolved a 30-year-old bottleneck in convex optimization using a specific prompt. This highlights the potential of frontier LLMs to surpass human expert intuition in highly specialized mathematical and theoretical domains."
+     },
+     "source": "https://old.reddit.com/r/math/comments/1uxj3cy/after_openais_cdc_proof_announcement_gpt56_used_a/",
+     "tags": [
+      "GPT-5.6",
+      "OpenAI",
+      "Mathematics",
+      "Prompt Engineering"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Databricks 估值飆升至 1880 億美元，力推開源權重模型降低開發成本",
+      "en": "Databricks hits $188B valuation, championing open-weight models for cost-efficient coding"
+     },
+     "detail": {
+      "zh": "Databricks 成功轉型為 AI 巨頭，估值達到 1880 億美元。該公司近期發表研究，強調使用開源權重（open-weight）AI 模型進行程式碼編寫能為企業帶來顯著的成本優勢，直接挑戰閉源 API 的壟斷地位。",
+      "en": "Successfully rebranding as an AI powerhouse, Databricks reached a $188B valuation. The company recently published research highlighting the dramatic cost savings of using open-weight AI models for coding tasks, directly challenging closed-source API dominance."
+     },
+     "source": "https://techcrunch.com/2026/07/17/databricks-hits-188b-valuation-extending-its-run-as-ais-favorite-second-act/",
+     "tags": [
+      "Databricks",
+      "Open-Weight",
+      "Valuation",
+      "Enterprise AI"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "閒置 Mac 變身 Agent：手把手教你用 Claude Code 進行本機控制",
+      "en": "Turn your spare Mac into an agent: A step-by-step guide to Claude Code control"
+     },
+     "detail": {
+      "zh": "本指南詳細介紹如何配置一台閒置的 Mac，讓 Anthropic 的 Claude Code 工具能夠安全地接管並執行系統級操作。對於想嘗試全自動本地 Agent 工作流的開發者來說，這是一個極具參考價值的實踐教學。",
+      "en": "This step-by-step guide details how to configure a spare Mac to allow Anthropic's Claude Code tool to safely execute system-level operations. It is an invaluable practical resource for developers looking to experiment with fully autonomous local agent workflows."
+     },
+     "source": "https://ykdojo.github.io/claude-controls-mac/",
+     "tags": [
+      "Claude Code",
+      "AI Agent",
+      "macOS",
+      "Developer Tools"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "SQLite 查詢解釋器：利用 Pyodide 與 WASM 在瀏覽器中解析執行計畫",
+      "en": "SQLite Query Explainer: Parsing query plans in-browser via Pyodide and WASM"
+     },
+     "detail": {
+      "zh": "由 Fable 輔助開發的互動式工具，在瀏覽器中透過 Pyodide 執行 Python 與 SQLite，並為 EXPLAIN 和 EXPLAIN QUERY PLAN 的輸出提供易懂的解釋。這能幫助開發者快速優化資料庫查詢，無需安裝繁瑣的本地環境。",
+      "en": "An interactive tool built with Fable's assistance that runs SQLite in Python via Pyodide and WebAssembly in the browser. It adds an explanatory layer to EXPLAIN and EXPLAIN QUERY PLAN outputs, helping developers optimize database queries without local setup."
+     },
+     "source": "https://simonwillison.net/2026/Jul/18/sqlite-query-explainer/#atom-everything",
+     "tags": [
+      "SQLite",
+      "WASM",
+      "Pyodide",
+      "Database Tools"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "售價 6,880 美元的 Vertu 奢華摺疊機：內建 AI Agent 實測表現平庸",
+      "en": "Vertu's $6,880 luxury foldable phone: Mediocre performance from its built-in AI Agent"
+     },
+     "detail": {
+      "zh": "奢華手機品牌 Vertu 推出針對高階主管、售價近 7,000 美元的摺疊手機，主打專屬 AI Agent 工作流。然而實測顯示，其 AI 代理在實際工作流、電池壽命與安全防護上的表現並未達到其高昂售價應有的水準。",
+      "en": "Luxury phone brand Vertu released a $6,880 foldable phone targeted at executives, featuring a dedicated AI Agent. However, hands-on testing reveals that its AI workflows, battery life, and security measures fail to justify the premium price tag."
+     },
+     "source": "https://techcrunch.com/2026/07/17/vertu-wants-executives-to-pay-6880-for-an-ai-agent-heres-how-it-actually-performs/",
+     "tags": [
+      "Vertu",
+      "AI Agent",
+      "Hardware",
+      "Product Review"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Fable 5 對決 GPT-5.6 Sol：探討 /goal 提示詞對求解 NP-Hard 問題的影響",
+      "en": "Fable 5 vs. GPT-5.6 Sol: Analyzing the impact of /goal prompts on NP-Hard problems"
+     },
+     "detail": {
+      "zh": "一項針對 Fable 5 與 GPT-5.6 Sol 在解決 NP-Hard（非確定性多項式困難）問題上的基準測試。研究重點在於加入 /goal 提示詞是否能顯著提升推理模型的路徑搜尋效率，為 Prompt 工程師提供量化參考。",
+      "en": "A benchmark study comparing Fable 5 and GPT-5.6 Sol on solving NP-Hard problems. The research focuses on whether appending a /goal prompt significantly improves the path-finding efficiency of reasoning models, offering quantitative insights for prompt engineers."
+     },
+     "source": "https://charlesazam.com/blog/fable-5-gpt-5-6-sol-goal/",
+     "tags": [
+      "Benchmark",
+      "NP-Hard",
+      "GPT-5.6",
+      "Fable 5",
+      "Prompt Engineering"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "月之暗面推出 Kimi 新版本，引發市場對「全面 AI 共產主義」的討論",
+      "en": "Moonshot AI releases new Kimi model, sparking discussions on 'full AI communism'"
+     },
+     "detail": {
+      "zh": "中國 AI 獨角獸月之暗面（Moonshot AI）本週推出全新 Kimi 模型，其強大的長文本處理與極低的定價策略，引發業界對於算力補貼與「AI 共產主義」式市場破壞的擔憂。",
+      "en": "Chinese AI unicorn Moonshot AI released a new version of its Kimi model this week. Its powerful long-context capabilities combined with aggressive pricing have sparked industry concerns over compute subsidies and market disruption akin to 'full AI communism.'"
+     },
+     "source": "https://techcrunch.com/2026/07/18/kimi-threat-or-menace/",
+     "tags": [
+      "Moonshot AI",
+      "Kimi",
+      "China AI",
+      "Market Strategy"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "一張圖看懂 AI 對 StackOverflow 流量造成的毀滅性衝擊",
+      "en": "A single graph illustrates the devastating impact of AI on StackOverflow traffic"
+     },
+     "source": "https://data.stackexchange.com/stackoverflow/query/1953768#graph"
+    },
+    {
+     "headline": {
+      "zh": "知名作家 Dave Eggers 向 OpenAI 員工直言：ChatGPT 正在抹殺一整代人的創造力",
+      "en": "Author Dave Eggers tells OpenAI staff that ChatGPT is silencing an entire generation"
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/967630/dave-eggers-openai-chatgpt-silencing-an-entire-generation"
+    },
+    {
+     "headline": {
+      "zh": "美國 Kaiser 護理師工會抗議：AI 與職場監控正在惡化醫療品質與工作環境",
+      "en": "Kaiser nurses protest that AI and workplace surveillance are degrading patient care and working conditions"
+     },
+     "source": "https://localnewsmatters.org/2026/07/15/kaiser-nurses-say-ai-workplace-surveillance-are-making-their-jobs-and-patient-care-worse/"
+    },
+    {
+     "headline": {
+      "zh": "美國政府試辦 AI 醫療保險審查，引發是否會加劇「預先授權」爭議的討論",
+      "en": "US government pilots AI for insurance-coverage decisions, raising prior authorization concerns"
+     },
+     "source": "https://arstechnica.com/ai/2026/07/will-ai-fix-prior-authorization-or-make-it-worse/"
+    },
+    {
+     "headline": {
+      "zh": "反 AI 錄音反撲：新型 Zoom 阻斷技術讓會議記錄工具無法強制錄音",
+      "en": "Anti-AI recording backlash: New Zoom hack prevents meeting transcription tools from recording"
+     },
+     "source": "https://techcrunch.com/2026/07/17/the-zoom-hack-that-says-dont-record-me/"
+    },
+    {
+     "headline": {
+      "zh": "Index Ventures 共同創辦人預測：矽谷因 AI 產生的歷史性財富終將面臨重分配",
+      "en": "Index Ventures co-founder Neil Rimer predicts historic AI wealth will face redistribution"
+     },
+     "source": "https://techcrunch.com/2026/07/17/neil-rimer-thinks-the-ai-money-is-coming-back-out/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.5-flash",
+ "generated_at": "2026-07-19T07:01+08:00"
+}
