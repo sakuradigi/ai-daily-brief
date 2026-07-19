@@ -1,6 +1,14 @@
 {
- "latest": "2026-07-19",
+ "latest": "2026-07-20",
  "reports": [
+  {
+   "date": "2026-07-20",
+   "type": "weekly",
+   "summary": {
+    "zh": "Claude Code 換核心，Codex 縮減上下文",
+    "en": "Claude Code adopts Rust-Bun; Codex shrinks context."
+   }
+  },
   {
    "date": "2026-07-19",
    "type": "daily",

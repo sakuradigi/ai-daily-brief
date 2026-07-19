@@ -1,0 +1,268 @@
+{
+ "date": "2026-07-20",
+ "type": "weekly",
+ "weekly": {
+  "zh": "本週 AI 領域呈現三大核心趨勢。首先是「開源與前沿模型」的軍備競賽，月之暗面推出 2.8 兆參數的 Kimi K3，Mira Murati 的實驗室也推出 975B 的 Inkling，開源權重模型在規模上直逼封閉模型。其次是「開發者工具的隱私與安全風暴」，xAI 的 grok-build 被指控自動上傳使用者目錄，而 GPT-5.6 Codex 則爆出可能誤刪 $HOME 目錄的嚴重 Bug。最後是「巨頭間的法律與商業角力」，蘋果正式起訴 OpenAI 侵犯商業機密，劍指其硬體佈局，而微軟也傳出正引導客戶轉向自家更具性價比的模型。",
+  "en": "This week highlighted three major AI trends. First, the \"open-source vs. frontier model\" battle intensified with Moonshot AI's 2.8T Kimi K3 and Mira Murati's 975B Inkling, pushing open weights to unprecedented scales. Second, \"developer tool security and privacy\" took center stage as xAI's grok-build faced backlash for uploading user directories, and GPT-5.6 Codex suffered a critical bug threatening to delete $HOME directories. Lastly, \"big tech legal and commercial friction\" escalated with Apple suing OpenAI over hardware trade secrets, while Microsoft reportedly steered clients toward its own cost-effective models."
+ },
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Claude Code 升級採用 Rust 重寫的 Bun，啟動速度提升 10%",
+      "en": "Claude Code Upgrades to Rust-Based Bun, Boosting Startup Speed by 10%"
+     },
+     "detail": {
+      "zh": "Claude Code 自 v2.1.181 起已靜默切換至以 Rust 重寫的 Bun 執行環境。這項底層重構使 Linux 上的啟動速度提升了 10%，為終端機 AI 工具帶來更流暢的開發體驗。",
+      "en": "Claude Code has silently transitioned to a Rust-rewritten Bun runtime starting from v2.1.181. This low-level refactoring improves startup speed on Linux by 10%, delivering a snappier experience for CLI-based AI workflows."
+     },
+     "source": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/",
+     "tags": [
+      "Claude Code",
+      "Bun",
+      "Rust",
+      "Developer Tools"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 縮減 Codex 模型上下文視窗，自 372k 降至 272k",
+      "en": "OpenAI Reduces Codex Context Window from 372k to 272k Tokens"
+     },
+     "detail": {
+      "zh": "GitHub Pull Request 顯示 OpenAI 已將 Codex 模型的最大上下文長度從 372k 縮減至 272k。開發者在處理超大型專案程式碼庫時，需注意 Token 額度限制以避免截斷。",
+      "en": "A GitHub pull request reveals that OpenAI has decreased the maximum context window of its Codex model from 372k to 272k tokens. Developers working with massive codebases should adjust their prompt budgets to avoid truncation."
+     },
+     "source": "https://github.com/openai/codex/pull/33972/files",
+     "tags": [
+      "OpenAI",
+      "Codex",
+      "Context Window",
+      "API"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Kimi K3 推理需求爆發，月之暗面宣布暫停新用戶訂閱",
+      "en": "Moonshot AI Suspends New Subscriptions Amid Surging Kimi K3 Demand"
+     },
+     "detail": {
+      "zh": "由於新發表的 2.8 兆參數推理模型 Kimi K3 引發極大的算力需求，月之暗面宣布暫停受理新訂閱。這突顯出長文本推理模型在推論成本與算力調度上面臨的巨大挑戰。",
+      "en": "Due to overwhelming compute demand for the newly released 2.8T parameter reasoning model Kimi K3, Moonshot AI has suspended new subscriptions. This highlights the massive scaling and inference cost challenges faced by next-gen reasoning models."
+     },
+     "source": "https://twitter.com/kimi_moonshot/status/2078855608565207130",
+     "tags": [
+      "Moonshot AI",
+      "Kimi K3",
+      "LLM",
+      "Compute"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "阿里開源 Qwen 3.8，主打輕量級高效能邊緣端部署",
+      "en": "Alibaba Releases Qwen 3.8, Targeting Lightweight Edge Deployment"
+     },
+     "detail": {
+      "zh": "阿里 Qwen 團隊正式推出 Qwen 3.8 開源模型，旨在為邊緣裝置與本機開發提供低延遲、高效率的推理能力，進一步降低開發者部署本機 AI 代理的門檻。",
+      "en": "Alibaba's Qwen team has officially released Qwen 3.8, an open-weights model designed for low-latency, highly efficient inference on edge devices and local environments, lowering the barrier for local AI agent deployment."
+     },
+     "source": "https://twitter.com/Alibaba_Qwen/status/2078759124914098291",
+     "tags": [
+      "Qwen 3.8",
+      "Open Source",
+      "Edge AI",
+      "Alibaba"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "非營利組織 Current AI 致力打造「AI 版全球資訊網」開放生態系",
+      "en": "Nonprofit Current AI Races to Build an Open \"World Wide Web of AI\""
+     },
+     "detail": {
+      "zh": "Current AI 正在開發一個跨裝置、文化包容且完全免費的 AI 聊天與代理生態系。其目標是打破科技巨頭的封閉花園，建立類似全球資訊網（WWW）的去中心化 AI 標準。",
+      "en": "Current AI is building a cross-device, culturally inclusive, and entirely free AI chat and agent ecosystem. The project aims to break down big tech's walled gardens by establishing decentralized AI standards akin to the World Wide Web."
+     },
+     "source": "https://techcrunch.com/2026/07/19/nonprofit-current-ai-is-racing-to-build-the-world-wide-web-of-ai-free-for-all/",
+     "tags": [
+      "Current AI",
+      "Decentralized AI",
+      "Open Standard",
+      "Nonprofit"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Suno AI 生成音樂打破「無聊」魔咒，引發業界對 AI 創作藝術性的討論",
+      "en": "Suno AI-Generated Track Challenges the \"Boring AI Music\" Stereotype"
+     },
+     "detail": {
+      "zh": "樂評人指出歌手 1010benja 利用 Suno 創作的新歌展現出極高的藝術性，打破了過往 AI 生成音樂流於平庸的刻板印象。這顯示生成式音樂工具在輔助專業創作上的潛力。",
+      "en": "Music critics note that artist 1010benja's new track, co-created with Suno, showcases remarkable artistry, defying the stereotype of generic AI music. This indicates the growing potential of generative audio tools in professional workflows."
+     },
+     "source": "https://www.theverge.com/entertainment/967678/1010benja-semiramis-dream-suno-ai-music",
+     "tags": [
+      "Suno",
+      "Generative Music",
+      "AI Art",
+      "Audio AI"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Qwen 3.8 Max 預覽版定價公布，主打極致性價比 API 服務",
+      "en": "Qwen 3.8 Max Preview Pricing Unveiled, Undercutting Competitors"
+     },
+     "detail": {
+      "zh": "阿里公布了 Qwen 3.8 Max 預覽版的 Token 計費方案。該模型定位為高階商業推理，透過極具競爭力的定價，直接向 OpenAI 與 Anthropic 的旗艦 API 發起價格戰。",
+      "en": "Alibaba has released the token pricing plan for Qwen 3.8 Max Preview. Positioned as a high-end commercial reasoning model, its aggressive pricing directly challenges the API dominance of OpenAI and Anthropic."
+     },
+     "source": "https://www.qwencloud.com/pricing/token-plan",
+     "tags": [
+      "Qwen 3.8 Max",
+      "API Pricing",
+      "Alibaba",
+      "LLM"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "研究指出：過度依賴 AI 建議會使決策錯誤率翻倍，自信心卻反向暴增",
+      "en": "Study: AI Advice Triples Error Rates While Doubling User Confidence"
+     },
+     "detail": {
+      "zh": "最新研究發現，當人類接受 AI 建議時，決策準確度下降了三倍，但對錯誤答案的自信度卻提升了兩倍。這警告開發者在設計人機協作（HITL）系統時，必須防範「自動化偏誤」。",
+      "en": "A new study reveals that relying on AI advice reduces decision accuracy threefold while doubling users' confidence in wrong answers. This warns developers to design human-in-the-loop (HITL) systems that actively mitigate automation bias."
+     },
+     "source": "https://thenextweb.com/news/ai-advice-suppresses-critical-thinking-wrong-answers-study",
+     "tags": [
+      "Human-AI Interaction",
+      "Automation Bias",
+      "Research",
+      "Cognitive Science"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "蘋果起訴 OpenAI 侵犯機密，恐重創其智慧音箱等硬體佈局",
+      "en": "Apple's Trade Secret Lawsuit Threatens to Derail OpenAI's Hardware Ambitions"
+     },
+     "detail": {
+      "zh": "隨著蘋果對 OpenAI 提起訴訟，指控其夥同前員工竊取硬體機密，外界預測這將嚴重打擊 OpenAI 計劃推出的無螢幕智慧音箱等硬體產品，並為其 IPO 增添變數。",
+      "en": "As Apple files a lawsuit accusing OpenAI of conspiring with ex-employees to steal hardware secrets, analysts predict this legal battle could severely impact OpenAI's rumored screenless smart speaker and complicate its IPO plans."
+     },
+     "source": "https://techcrunch.com/2026/07/19/can-an-apple-lawsuit-derail-openais-hardware-plans/",
+     "tags": [
+      "Apple",
+      "OpenAI",
+      "Lawsuit",
+      "AI Hardware"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "紐約市擬立法強制房東與仲介揭露租屋廣告中的 AI 生成圖片",
+      "en": "NYC Proposes Law Requiring Landlords to Disclose AI-Generated Listing Images"
+     },
+     "detail": {
+      "zh": "紐約市議員提案要求房東在租屋廣告中使用 AI 修改或生成的圖片時必須進行標註。此舉旨在防止利用深偽或美化圖片進行虛假宣傳，代表地方政府對生成式 AI 監管的具體落地。",
+      "en": "An NYC bill proposes forcing landlords and realtors to disclose when listing photos are modified or generated by AI. Aimed at preventing deceptive advertising, this represents a concrete step in local government regulation of generative AI."
+     },
+     "source": "https://petapixel.com/2026/07/16/mayor-mamdani-says-landlords-cant-secretly-use-ai-images-to-advertise-properties/",
+     "tags": [
+      "Regulation",
+      "AI Ethics",
+      "NYC",
+      "Deepfake"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "黃仁勳結束訪日行程，輝達與日本科技生態系達成全面合作",
+      "en": "Jensen Huang Concludes Japan Visit with Broad Tech Ecosystem Deals"
+     },
+     "detail": {
+      "zh": "輝達執行長黃仁勳結束東京之行，與日本政府及多家科技巨頭達成涵蓋半導體、主權 AI 與超級電腦建設的全面合作協議，鞏固輝達在亞洲 AI 供應鏈的霸主地位。",
+      "en": "NVIDIA CEO Jensen Huang concluded his Tokyo trip after securing deals across Japan's tech ecosystem, spanning semiconductors, sovereign AI, and supercomputing infrastructure, solidifying NVIDIA's dominance in the Asian AI supply chain."
+     },
+     "source": "https://techcrunch.com/2026/07/19/what-to-watch-for-after-jensen-huangs-japan-visit/",
+     "tags": [
+      "NVIDIA",
+      "Jensen Huang",
+      "Japan",
+      "Sovereign AI"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "導演克里斯多福·諾蘭痛批 AI 是顯而易見的「特洛伊木馬」",
+      "en": "Director Christopher Nolan Calls AI an Obvious \"Trojan Horse\""
+     },
+     "source": "https://techcrunch.com/2026/07/19/odyssey-director-christopher-nolan-calls-ai-an-obvious-trojan-horse/"
+    },
+    {
+     "headline": {
+      "zh": "業內人士爆料：盲目的 AI 熱潮正在摧毀企業高層的技術決策品質",
+      "en": "Insider Reveals How Blind AI Hype Is Ruining Corporate Technical Strategy"
+     },
+     "source": "https://ludic.mataroa.blog/blog/ai-mania-is-eviscerating-global-decision-making/#fnref:3"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.5-flash",
+ "generated_at": "2026-07-20T07:02+08:00"
+}
