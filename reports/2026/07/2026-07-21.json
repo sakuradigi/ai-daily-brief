@@ -1,0 +1,295 @@
+{
+ "date": "2026-07-21",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "中國開源模型 Kimi K3 與 Qwen 3.8 崛起，挑戰美國封閉專利生態",
+      "en": "China's Kimi K3 and Qwen 3.8 challenge US AI dominance with aggressive open-weight strategy"
+     },
+     "detail": {
+      "zh": "中國頂尖 AI 廠商（月之暗面、阿里）接連推出 Kimi K3 與 Qwen 3.8，宣稱能以極低成本抗衡 OpenAI 與 Anthropic。這使得美國以封閉、專利為主的 AI 領先優勢面臨嚴峻挑戰。",
+      "en": "China's leading AI labs are releasing models like Kimi K3 and Qwen 3.8 that rival top US proprietary models at a fraction of the cost, threatening the US's closed-source dominance."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/967781/chinese-ai-models-open-source-moonshot-kimi-k3-alibaba-qwen",
+     "tags": [
+      "Open-Weights",
+      "LLM",
+      "China-AI",
+      "Market-Dynamics"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 揭露長週期（Long-Horizon）模型安全與對齊挑戰",
+      "en": "OpenAI shares safety and alignment lessons for long-horizon AI models"
+     },
+     "detail": {
+      "zh": "隨著 AI 執行任務的時間拉長，OpenAI 釋出其部署長週期模型的安全經驗，指出新型態的安全風險、觀察到的失效模式，以及如何透過迭代部署建立改進的防護機制。",
+      "en": "As AI agents run for longer periods, OpenAI highlights new safety risks, failure modes, and mitigation strategies learned from deploying long-horizon models."
+     },
+     "source": "https://openai.com/index/safety-alignment-long-horizon-models",
+     "tags": [
+      "AI-Safety",
+      "Alignment",
+      "Long-Horizon",
+      "OpenAI"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "NVIDIA 推出 Cosmos 3 Edge，加速邊緣端 AI 部署",
+      "en": "NVIDIA introduces Cosmos 3 Edge for accelerated edge AI deployment"
+     },
+     "detail": {
+      "zh": "NVIDIA 於 Hugging Face 推出 Cosmos 3 Edge，旨在提升邊緣運算裝置上的 AI 推理效率，為開發者提供更強大的本機端部署工具。",
+      "en": "NVIDIA has launched Cosmos 3 Edge on Hugging Face, designed to optimize and accelerate AI inference directly on edge devices, empowering local-first developers."
+     },
+     "source": "https://huggingface.co/blog/nvidia/cosmos3edge",
+     "tags": [
+      "NVIDIA",
+      "Edge-AI",
+      "Hugging-Face",
+      "Inference"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "超越傳統 Grep：Augment Code 倡導建立富上下文的 AI 程式碼安全框架",
+      "en": "Beyond grep: Augment Code advocates for context-rich AI coding harnesses"
+     },
+     "detail": {
+      "zh": "專訪 Augment Code 的 Vinay Perneti，探討如何透過建立富含上下文（context-rich）的開發框架，解決現有 AI 程式碼生成工具缺乏專案全域認知、難以處理複雜依賴關係的痛點。",
+      "en": "An interview with Augment Code's Vinay Perneti highlights the necessity of context-rich harnesses over simple search tools to help AI coding assistants understand complex codebase dependencies."
+     },
+     "source": "https://arstechnica.com/ai/2026/07/beyond-grep-the-case-for-a-context-rich-ai-coding-harness/",
+     "tags": [
+      "AI-Coding",
+      "Developer-Tools",
+      "Context-Window",
+      "Software-Engineering"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "AI 關鍵通訊協定引入「無狀態」Session ID，大幅簡化伺服器端開發",
+      "en": "AI's key protocol adopts stateless session IDs to simplify server-side development"
+     },
+     "detail": {
+      "zh": "該協定更新後將採用類似傳統網頁的「無狀態（stateless）」伺服器端 Session ID 處理機制。這將降低開發者維護長連接狀態的複雜度，使 AI 應用的擴展更為容易。",
+      "en": "The updated protocol adopts a stateless approach to session IDs on the server side, mirroring standard web architecture and significantly reducing the complexity of scaling AI backends."
+     },
+     "source": "https://techcrunch.com/2026/07/20/ais-most-important-protocol-is-getting-a-little-bit-easier-to-use/",
+     "tags": [
+      "AI-Protocol",
+      "Web-Development",
+      "Backend",
+      "API-Design"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "AI 讓硬體逆向工程與自動化成本降至冰點",
+      "en": "AI agents drastically lower the cost of hardware reverse-engineering"
+     },
+     "detail": {
+      "zh": "Simon Willison 指出，開發者正廣泛利用 AI 程式碼 Agent 快速逆向工程並自動化家用智慧裝置。過去因投資報酬率過低而被放棄的非官方 API 串接，如今在 AI 輔助下變得極其廉價且可行。",
+      "en": "Simon Willison highlights how developers are using coding agents to reverse-engineer and automate home devices, turning previously high-effort, low-ROI tasks into cheap, viable weekend projects."
+     },
+     "source": "https://simonwillison.net/2026/Jul/20/cheap-reverse-engineering/#atom-everything",
+     "tags": [
+      "AI-Agents",
+      "Reverse-Engineering",
+      "IoT",
+      "Automation"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Adobe 實驗性相機 App「Project Indigo」引入生成式 AI 工具",
+      "en": "Adobe's experimental camera app 'Project Indigo' embraces generative AI"
+     },
+     "detail": {
+      "zh": "原本主打「自然單眼感」的 iPhone 相機 App Project Indigo，在最新更新中加入了生成式 AI 工具（如背景消除與照片評估），且出乎意料地並非完全依賴 Adobe 自家的 Firefly 模型。",
+      "en": "Originally designed for a natural SLR-like look, Adobe's Project Indigo iPhone app has been updated with generative AI tools for background removal and critiques, notably stepping beyond Firefly models."
+     },
+     "source": "https://www.theverge.com/tech/967791/adobe-indigo-camera-app-ai-playground-update",
+     "tags": [
+      "Adobe",
+      "Mobile-App",
+      "Generative-AI",
+      "Computer-Vision"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Claude Fable 成功構造出數學界「雅可比猜想」的反例",
+      "en": "Claude Fable produces a counterexample to the Jacobian Conjecture"
+     },
+     "detail": {
+      "zh": "數學家分享 Claude Fable 模型成功構造出一個針對著名數學難題「雅可比猜想（Jacobian Conjecture）」的反例，展示了前沿 LLM 在高等數學推導與符號計算中的驚人潛力。",
+      "en": "A mathematician revealed that Claude Fable successfully generated a counterexample to the famous Jacobian Conjecture, showcasing LLMs' growing capability in advanced mathematical reasoning."
+     },
+     "source": "https://xcancel.com/__alpoge__/status/2079028340955197566",
+     "tags": [
+      "Claude-Fable",
+      "Mathematics",
+      "Jacobian-Conjecture",
+      "Reasoning"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "研究指出：AI 建議會降低人類判斷準確度，卻盲目提升自信心",
+      "en": "Study: AI advice suppresses critical thinking, making users less accurate but more confident"
+     },
+     "detail": {
+      "zh": "最新研究顯示，接受 AI 給予的建議會抑制人類的批判性思考。受試者在獲得 AI 協助後，給出錯誤答案的機率增加，但對自身答案的信心卻反而上升，凸顯了過度依賴 AI 的認知偏誤風險。",
+      "en": "A new study reveals that AI recommendations suppress critical thinking, leading users to accept wrong answers more frequently while paradoxically increasing their confidence in those incorrect decisions."
+     },
+     "source": "https://thenextweb.com/news/ai-advice-suppresses-critical-thinking-wrong-answers-study",
+     "tags": [
+      "AI-Research",
+      "Human-AI-Interaction",
+      "Cognitive-Bias",
+      "Critical-Thinking"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Cursor 探討 Agent 群體（Swarms）與全新模型經濟學",
+      "en": "Cursor explores agent swarms and the shift in model economics"
+     },
+     "detail": {
+      "zh": "Cursor 團隊分析了多 Agent 協同（Agent Swarms）對模型推理成本與架構設計的影響。隨著單次任務呼叫次數暴增，如何優化小模型與大模型的混合調度，成為降低開發成本的關鍵。",
+      "en": "Cursor discusses how agent swarms are reshaping model economics, emphasizing the need to balance small and large models to manage the compounding costs of multi-agent workflows."
+     },
+     "source": "https://cursor.com/blog/agent-swarm-model-economics",
+     "tags": [
+      "Agent-Swarms",
+      "Cursor",
+      "Model-Economics",
+      "LLM-Ops"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "科技分析師建議美國立法保障「模型蒸餾」以對抗中國開源優勢",
+      "en": "Analyst proposes US legalize model distillation to counter Chinese open-weight threat"
+     },
+     "detail": {
+      "zh": "針對中國開源模型的威脅，Ben Thompson 建議美國應立法明確將「訓練數據收集」視為合理使用，並禁止限制「模型蒸餾（distillation）」的服務條款，以協助美國開源社群更有效地與中國競爭。",
+      "en": "Ben Thompson proposes that the US should pass laws declaring training data collection as fair use and banning anti-distillation terms of service, helping US open-source models compete with China."
+     },
+     "source": "https://simonwillison.net/2026/Jul/20/afraid-of-chinese-models/#atom-everything",
+     "tags": [
+      "AI-Policy",
+      "Model-Distillation",
+      "Fair-Use",
+      "Open-Source"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "奧特曼內部言論曝光：擬釋出本地 GPT-3 等級模型以打壓競爭對手融資",
+      "en": "Leaked Sam Altman quote reveals plan to release local GPT-3 class model to block rivals"
+     },
+     "detail": {
+      "zh": "洩露的董事會討論顯示，Sam Altman 曾計畫儘快推出可在消費級硬體本機運行的 GPT-3 等級模型。其戰略意圖在於搶在 Stability 等對手前佔領市場，從而遏制其他開源項目的融資能力。",
+      "en": "A leaked quote from Sam Altman reveals OpenAI's internal strategy to release a local, consumer-hardware-friendly GPT-3 class model specifically to preempt rivals like Stability and discourage their funding."
+     },
+     "source": "https://simonwillison.net/2026/Jul/20/sam-altman/#atom-everything",
+     "tags": [
+      "Sam-Altman",
+      "OpenAI",
+      "Open-Source-Strategy",
+      "Market-Competition"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "川普政府新任 AI 專員 David Sacks 離職後，繼任者亦已閃電辭職",
+      "en": "Trump’s latest AI czar resigns shortly after David Sacks' departure"
+     },
+     "source": "https://techcrunch.com/2026/07/20/trumps-latest-ai-czar-has-already-resigned/"
+    },
+    {
+     "headline": {
+      "zh": "Google 研發新型 AI 晶片，旨在大幅提升 Gemini 模型運行效率",
+      "en": "Google reportedly developing a new AI chip to boost Gemini's efficiency"
+     },
+     "source": "https://techcrunch.com/2026/07/20/google-is-working-on-a-new-ai-chip-designed-to-make-gemini-more-efficient/"
+    },
+    {
+     "headline": {
+      "zh": "YouTube 更新營利政策，明確限制低品質 AI 垃圾影片（AI Slop）獲利",
+      "en": "YouTube updates monetization policies to crack down on low-quality AI slop"
+     },
+     "source": "https://techcrunch.com/2026/07/20/youtube-clarifies-policies-around-ai-slop-and-upsetting-videos/"
+    },
+    {
+     "headline": {
+      "zh": "黃仁勳結束日本行，與日本科技生態系達成多項 AI 合作協議",
+      "en": "Jensen Huang secures extensive AI deals across Japan's tech ecosystem"
+     },
+     "source": "https://techcrunch.com/2026/07/19/what-to-watch-for-after-jensen-huangs-japan-visit/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.5-flash",
+ "generated_at": "2026-07-21T07:01+08:00"
+}

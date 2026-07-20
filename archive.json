@@ -1,6 +1,14 @@
 {
- "latest": "2026-07-20",
+ "latest": "2026-07-21",
  "reports": [
+  {
+   "date": "2026-07-21",
+   "type": "daily",
+   "summary": {
+    "zh": "開源與中方模型崛起，逆向工程與長文安全成焦點",
+    "en": "Rise of open-weights & Chinese models; reverse engineering & long-horizon safety in focus."
+   }
+  },
   {
    "date": "2026-07-20",
    "type": "weekly",
