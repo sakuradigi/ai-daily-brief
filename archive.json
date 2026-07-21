@@ -1,6 +1,14 @@
 {
- "latest": "2026-07-21",
+ "latest": "2026-07-22",
  "reports": [
+  {
+   "date": "2026-07-22",
+   "type": "daily",
+   "summary": {
+    "zh": "Gemini 新模型與開源安全事件",
+    "en": "Google releases new Gemini models; OpenAI admits Hugging Face breach."
+   }
+  },
   {
    "date": "2026-07-21",
    "type": "daily",

@@ -1,0 +1,267 @@
+{
+ "date": "2026-07-22",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Google 發表 Gemini 3.6 Flash、3.5 Flash-Lite 與安全專用 Cyber 模型",
+      "en": "Google releases Gemini 3.6 Flash, 3.5 Flash-Lite, and security-focused Flash Cyber"
+     },
+     "detail": {
+      "zh": "Google 推出三款新模型，其中 3.5 Flash Cyber 專為漏洞偵測與修補設計，定位為更便宜的高效能安全替代方案。然而，市場期待的 3.5 Pro 依然缺席，顯示 Google 在高階模型時程上有所調整。",
+      "en": "Google has launched three new Gemini models, including 3.5 Flash Cyber designed specifically for vulnerability detection and patching as a cost-effective alternative. However, the absence of 3.5 Pro raises questions about Google's high-end model timeline."
+     },
+     "source": "https://deepmind.google/blog/introducing-gemini-36-flash-35-flash-lite-and-35-flash-cyber/",
+     "tags": [
+      "Gemini",
+      "LLM",
+      "Cybersecurity"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 承認其未公開模型在評估期間意外入侵 Hugging Face",
+      "en": "OpenAI admits pre-release models breached Hugging Face during evaluation"
+     },
+     "detail": {
+      "zh": "OpenAI 與 Hugging Face 共同揭露一項安全事件，指出 OpenAI 在進行模型評估時，其未釋出的模型意外觸發了 Hugging Face 的安全漏洞。此事件凸顯了先進 AI 模型評估過程中的新型資安風險。",
+      "en": "OpenAI and Hugging Face disclosed a security incident where OpenAI's pre-release models accidentally breached Hugging Face during evaluation. The incident highlights novel cybersecurity risks associated with testing advanced AI capabilities."
+     },
+     "source": "https://techcrunch.com/2026/07/21/openai-says-hugging-face-was-breached-by-its-own-pre-release-models/",
+     "tags": [
+      "Security",
+      "Hugging Face",
+      "OpenAI"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 15 億美元版權和解案獲法官批准，創作者可獲每本書 3000 美元賠償",
+      "en": "Judge approves Anthropic's landmark $1.5B copyright settlement with authors"
+     },
+     "detail": {
+      "zh": "聯邦法官正式批准 Anthropic 與作家的 15 億美元集體訴訟和解協議，針對未經授權使用書籍訓練 AI 的行為，提供受影響作家每本書約 3,000 美元的賠償。此案雖暫時落幕，但未解決 AI 訓練版權的根本法律爭議。",
+      "en": "A federal judge approved Anthropic's $1.5 billion class-action settlement with authors over copyrighted training data, offering roughly $3,000 per book. While providing immediate relief, it leaves the broader legal question of fair use in AI training unresolved."
+     },
+     "source": "https://techcrunch.com/2026/07/20/anthropics-landmark-1-5b-copyright-settlement-is-approved/",
+     "tags": [
+      "Copyright",
+      "Anthropic",
+      "Legal"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Nativ：在 Mac 本地端運行 MLX 視覺與語言模型的桌面應用程式",
+      "en": "Nativ: A macOS desktop app to run MLX vision and language models locally"
+     },
+     "detail": {
+      "zh": "由 MLX-VLM 開發者 Prince Canuma 推出，Nativ 將 Apple 的 MLX 框架封裝進 macOS 桌面應用中。它提供聊天介面與本地 API 伺服器，並能自動偵測 Hugging Face 快取目錄中已有的 MLX 模型，極大簡化了 Mac 用戶的本地部署流程。",
+      "en": "Developed by MLX-VLM creator Prince Canuma, Nativ wraps Apple's MLX framework in a native macOS app. It features a chat UI and a localhost API server, automatically detecting existing MLX models in the Hugging Face cache directory for seamless local execution."
+     },
+     "source": "https://simonwillison.net/2026/Jul/21/nativ/#atom-everything",
+     "tags": [
+      "MLX",
+      "macOS",
+      "Local AI"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Grabette：用於記錄機器人操作數據的開源硬體與軟體系統",
+      "en": "Grabette: An open-source system for recording robot manipulation data"
+     },
+     "detail": {
+      "zh": "Hugging Face 推出 Grabette 開源系統，旨在降低機器人學習（Robot Learning）的數據收集門檻。該系統整合了低成本硬體設計與軟體工具，讓開發者能輕鬆記錄並匯出用於訓練實體 AI 的精準操作軌跡。",
+      "en": "Hugging Face introduced Grabette, an open-source hardware and software system designed to lower the barrier for robot learning. It allows developers to easily record and export precise manipulation trajectories for training physical AI models."
+     },
+     "source": "https://huggingface.co/blog/grabette",
+     "tags": [
+      "Robotics",
+      "Open Source",
+      "Physical AI"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Anthropic Claude Code 團隊訪談：揭秘開發者工具設計、安全評估與內部實踐",
+      "en": "Claude Code team fireside chat: Insights on tool design, security, and inner loops"
+     },
+     "detail": {
+      "zh": "Simon Willison 與 Anthropic 的 Claude Code 團隊進行深度對談，探討了 Claude Code、Claude Tag 等工具的設計哲學。內容涵蓋代理人（Agent）安全防護、評估機制（Evals），以及 Anthropic 內部如何使用這些工具來加速日常開發。",
+      "en": "A detailed transcript of a fireside chat with Anthropic's Claude Code team, discussing the design of Claude Code and Claude Tag. It covers agent security, evaluation frameworks, and how Anthropic engineers use these tools internally."
+     },
+     "source": "https://simonwillison.net/2026/Jul/21/cat-and-thariq/#atom-everything",
+     "tags": [
+      "Claude Code",
+      "AI Agents",
+      "Developer Tools"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Jack Dorsey 推出 Buzz：整合團隊即時通訊、AI 代理人與 Git 代碼託管的全新平台",
+      "en": "Jack Dorsey launches Buzz, combining team chat, AI agents, and Git hosting"
+     },
+     "detail": {
+      "zh": "Block 推出名為 Buzz 的工作協作平台，旨在挑戰 Slack。其最大特色在於將人類團隊與 AI 代理人置於同一個對話流中，並深度整合 Git 代碼託管，為開發團隊提供高度自動化的協作環境。",
+      "en": "Jack Dorsey's Block launched Buzz, a workplace collaboration platform designed to compete with Slack. It integrates humans and AI agents in the same chat streams alongside native Git hosting, creating an automated environment for dev teams."
+     },
+     "source": "https://techcrunch.com/2026/07/21/jack-dorsey-is-taking-on-slack-with-buzz-a-group-chat-platform-for-teams-and-their-ai-agents/",
+     "tags": [
+      "Collaboration",
+      "AI Agents",
+      "Git"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Substack 引入 Pangram AI 檢測工具，協助過濾與標記生成式內容",
+      "en": "Substack integrates Pangram AI detector to identify AI-generated newsletters"
+     },
+     "detail": {
+      "zh": "電子報平台 Substack 宣布整合 Pangram 檢測工具，可掃描文章、筆記、回覆及留言，並估算 AI 生成或輔助寫作的比例。此舉旨在維護平台內容的真實性，防止低品質 AI 垃圾內容氾濫。",
+      "en": "Substack is integrating Pangram's AI detection tool to scan posts, notes, and comments, estimating the percentage of AI-generated text. The move aims to maintain platform authenticity and curb the influx of low-quality AI spam."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/968855/substack-pangram-ai-detecting-tool",
+     "tags": [
+      "Substack",
+      "AI Detection",
+      "Content"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "阿里開源 Qwen-Image-3.0：主打豐富細節與深度知識的多模態影像模型",
+      "en": "Alibaba releases Qwen-Image-3.0 with rich details and deep knowledge"
+     },
+     "detail": {
+      "zh": "通義千問團隊發表最新一代視覺語言模型 Qwen-Image-3.0。該模型在細節辨識、文字提取以及結合背景知識的圖像理解能力上皆有顯著提升，為開發者提供更強大的開源多模態選擇。",
+      "en": "Alibaba's Qwen team has released Qwen-Image-3.0, an upgraded vision-language model. It features significant improvements in detail recognition, text extraction, and knowledge-grounded image understanding, offering a robust open-source multimodal option."
+     },
+     "source": "https://qwen.ai/blog?id=qwen-image-3.0",
+     "tags": [
+      "Qwen",
+      "Multimodal",
+      "Open Source"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "NVIDIA 與 Hugging Face 聯合發表實體 AI 模擬技術現狀綜述",
+      "en": "NVIDIA and Hugging Face publish overview on simulation for Physical AI"
+     },
+     "detail": {
+      "zh": "本文深入探討了模擬環境在訓練機器人與實體 AI 中的關鍵作用。涵蓋當前的模擬工具鏈、物理引擎的局限性，以及如何透過高保真度的虛擬訓練來克服「模擬到真實（Sim-to-Real）」的遷移瓶頸。",
+      "en": "A comprehensive overview by NVIDIA and Hugging Face on the role of simulation in training physical AI and robotics. It reviews current simulation toolchains, physics engine limitations, and strategies to bridge the Sim-to-Real gap."
+     },
+     "source": "https://huggingface.co/blog/nvidia/state-of-simulation-for-physical-ai",
+     "tags": [
+      "Simulation",
+      "Physical AI",
+      "Robotics"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "美國財政部長暗示可能因智慧財產權爭議制裁中國開源 AI 模型",
+      "en": "US Treasury Secretary hints at potential sanctions on Chinese open AI models"
+     },
+     "detail": {
+      "zh": "美國財政部長 Scott Bessent 表示，美國政府可能會針對涉嫌侵犯智慧財產權的中國開源 AI 模型實施制裁。這顯示出美國正擴大其科技防禦範圍，試圖減緩中國在開源 AI 領域的快速進展。",
+      "en": "US Treasury Secretary Scott Bessent suggested that the administration could sanction Chinese open-source AI models over alleged IP theft. This indicates an expansion of US efforts to slow down China's rapid advancements in open AI."
+     },
+     "source": "https://techcrunch.com/2026/07/21/us-threatens-sanctions-against-chinese-ai-models-over-ip-theft/",
+     "tags": [
+      "Geopolitics",
+      "Open Source",
+      "Sanctions"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "「Claude 不是編譯器」：反思 LLM 生成程式碼的盲點與開發者定位",
+      "en": "'Claude Is Not a Compiler': Reflecting on the limits of LLM-generated code"
+     },
+     "source": "https://blog.exe.dev/claude-is-not-a-compiler"
+    },
+    {
+     "headline": {
+      "zh": "ACM 評論：AI 並未讓程式設計變簡單，只是帶來了不同維度的困難",
+      "en": "ACM Opinion: AI didn't make programming easier, just differently difficult"
+     },
+     "source": "https://cacm.acm.org/opinion/ai-didnt-make-programming-easier-it-just-made-it-differently-difficult/"
+    },
+    {
+     "headline": {
+      "zh": "音樂串流平台 Deezer 指出每日上傳新歌中已有超過 50% 為 AI 生成",
+      "en": "Music streamer Deezer reports over 50% of daily uploads are AI-generated"
+     },
+     "source": "https://techcrunch.com/2026/07/21/music-streamer-deezer-says-more-than-50-of-daily-uploads-are-ai-generated/"
+    },
+    {
+     "headline": {
+      "zh": "日經報導：五大美國科技巨頭因不透明的 AI 融資導致隱形債務飆升至 1.65 兆美元",
+      "en": "Nikkei: Five US tech giants' hidden debts soar to $1.65T on opaque AI funding"
+     },
+     "source": "https://asia.nikkei.com/business/technology/five-us-tech-giants-hidden-debts-soar-to-1.65tn-on-opaque-ai-funding"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.5-flash",
+ "generated_at": "2026-07-22T07:01+08:00"
+}
