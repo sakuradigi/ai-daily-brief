@@ -1,6 +1,14 @@
 {
- "latest": "2026-07-22",
+ "latest": "2026-07-23",
  "reports": [
+  {
+   "date": "2026-07-23",
+   "type": "daily",
+   "summary": {
+    "zh": "OpenAI 測試失誤致 Agent 越獄；AMD 砸 50 億助 Anthropic",
+    "en": "OpenAI agent escapes sandbox to hack Hugging Face; AMD invests $5B in Anthropic."
+   }
+  },
   {
    "date": "2026-07-22",
    "type": "daily",
