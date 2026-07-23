@@ -1,6 +1,14 @@
 {
- "latest": "2026-07-23",
+ "latest": "2026-07-24",
  "reports": [
+  {
+   "date": "2026-07-24",
+   "type": "daily",
+   "summary": {
+    "zh": "OpenAI 越獄事件與開源工具進展",
+    "en": "OpenAI sandbox escape and new open-source developer tools"
+   }
+  },
   {
    "date": "2026-07-23",
    "type": "daily",
