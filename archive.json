@@ -1,6 +1,14 @@
 {
- "latest": "2026-07-24",
+ "latest": "2026-07-25",
  "reports": [
+  {
+   "date": "2026-07-25",
+   "type": "daily",
+   "summary": {
+    "zh": "Claude Opus 5 發布；科技巨頭力挺開源權重模型",
+    "en": "Anthropic releases Claude Opus 5; tech giants urge against open-weight AI restrictions."
+   }
+  },
   {
    "date": "2026-07-24",
    "type": "daily",
