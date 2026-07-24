@@ -75,8 +75,8 @@ WEEKLY_INSTRUCTIONS = """## 週報加項（今天是週一）
 
 # 候選模型：GEMINI_MODEL（若設）優先，其後依序 fallback。
 # 單一型號名失效（改名/下架 → 404）不再整包失敗，會自動退到下一個。
-# 現行名稱見 https://ai.google.dev/gemini-api/docs/models（2026-06 為準）
-GEMINI_FALLBACKS = ["gemini-3.5-flash", "gemini-flash-latest", "gemini-3.1-flash-lite"]
+# 現行名稱見 https://ai.google.dev/gemini-api/docs/models（2026-07 為準）
+GEMINI_FALLBACKS = ["gemini-3.6-flash", "gemini-3.5-flash", "gemini-flash-latest"]
 
 
 # 過載/限流/暫時性錯誤：退避重試，退避後仍失敗就換下一個候選模型
