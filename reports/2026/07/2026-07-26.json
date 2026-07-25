@@ -1,0 +1,230 @@
+{
+ "date": "2026-07-26",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Anthropic 正式推出 Claude Opus 5：性能接近頂尖模型，價格僅一半",
+      "en": "Anthropic introduces Claude Opus 5: Near-frontier intelligence at half the price"
+     },
+     "detail": {
+      "zh": "Anthropic 發表最新模型 Claude Opus 5，定價維持與 Opus 4.8 相同，智商表現接近頂級模型 Fable 5 且目前登頂 Artificial Analysis 排行榜。對開發者而言，新模型在維持強大推理解析能力的同時大幅降本，適合部署高複雜度的日常任務。",
+      "en": "Anthropic launched Claude Opus 5, priced identically to Opus 4.8 while delivering intelligence close to its frontier Fable 5 model at half the cost. It currently tops the Artificial Analysis leaderboard, offering developers high-tier reasoning with significantly better cost efficiency."
+     },
+     "source": "https://simonwillison.net/2026/Jul/24/introducing-claude-opus-5/#atom-everything",
+     "tags": [
+      "Anthropic",
+      "Claude Opus 5",
+      "LLM",
+      "Benchmark"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 發布 Claude 5 世代 Context Engineering 新構建指南",
+      "en": "Anthropic releases new context engineering rules for Claude 5 models"
+     },
+     "detail": {
+      "zh": "隨著新一代 Claude 5 模型發布，官方同步釋出了 Context Engineering（長上下文與提示詞工程）的新策略原則。這套指南針對長文本注意力機制與快取結構進行優化，協助開發者重構 Prompt 架構以降低 Token 消耗並提高回應準確度。",
+      "en": "Following the release of Claude 5 models, Anthropic published updated context engineering guidelines. These rules focus on optimizing prompt structure and context window usage, helping developers refine prompt architecture to minimize token overhead and boost execution precision."
+     },
+     "source": "https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models",
+     "tags": [
+      "Anthropic",
+      "Context Engineering",
+      "Prompt",
+      "Claude 5"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "開源權重 AI 迎來「Kubernetes 時刻」：雲端原生基礎設施轉型中",
+      "en": "Open-weight AI reaches its Kubernetes moment in cloud-native infrastructure"
+     },
+     "detail": {
+      "zh": "開源權重模型（Open-weight AI）的生態正在快速標準化，其部署與編排模式正經歷類似當年 Docker 與 Kubernetes 普及的爆發期。這意味著企業端在 self-host 大模型時，託管工具與微調框架將更加模組化，大幅降低對專有 API 的依賴與運運維門檻。",
+      "en": "The open-weight AI ecosystem is undergoing a standardizing revolution similar to the early days of Docker and Kubernetes. Infrastructure tools for self-hosting, orchestration, and fine-tuning are becoming modularized, significantly reducing enterprise dependency on proprietary API vendors."
+     },
+     "source": "https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/",
+     "tags": [
+      "Open Source",
+      "Infrastructure",
+      "Kubernetes",
+      "Self-Hosting"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Ruff v0.16.0 釋出：預設啟用檢查規則從 59 項目暴增至 413 項",
+      "en": "Ruff v0.16.0 released: Default enabled rules jumped from 59 to 413"
+     },
+     "detail": {
+      "zh": "Python 高效能 Linter 工具 Ruff 發布 v0.16.0，將預設開啟的檢查規則從原本 v0.1.0 時期的 59 項一口氣調高至 413 項。若 CI/CD 流程中未鎖定 Ruff 版本號，可能導致既有 Python 專案構建失敗，開發者需盡快更新配置或釘選版本。",
+      "en": "Astral released Ruff v0.16.0, expanding default active linter rules from 59 to 413. Developers using unpinned Ruff dependencies in CI pipelines may experience sudden build failures and should review rule settings or pin their dev dependencies."
+     },
+     "source": "https://simonwillison.net/2026/Jul/25/ruff/#atom-everything",
+     "tags": [
+      "Python",
+      "Ruff",
+      "DevOps",
+      "Tooling"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 推出工程師專用 AI 實體 Keypad，提供硬體級快捷鍵控制",
+      "en": "OpenAI introduces dedicated AI Keypad for coders"
+     },
+     "detail": {
+      "zh": "OpenAI 開發了一款專門搭配 AI 編程工作流的硬體 Keypad。該裝置提供實體按鈕以觸發常見的 Code Generation、Refactor 及 Context 快捷操作，針對極度依賴 LLM 重度開發者的工作流進行硬體層面優化。",
+      "en": "OpenAI released a standalone physical AI keypad designed for software engineers. Featuring custom tactile controls for rapid code generation, refactoring, and context switching, it targets high-volume AI-assisted developer workflows."
+     },
+     "source": "https://techcrunch.com/2026/07/24/i-tried-out-openais-new-ai-keypad-which-will-be-fun-for-coders-and-slightly-mystifying-to-everyone-else/",
+     "tags": [
+      "OpenAI",
+      "Hardware",
+      "Developer Tools",
+      "Productivity"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Claude Opus 5 安全報告：抗 Prompt 注入攻擊能力創下新高",
+      "en": "Claude Opus 5 System Card shows top-tier defense against prompt injection"
+     },
+     "detail": {
+      "zh": "根據 Anthropic 公布的 System Card 測試數據，Opus 5 是迄今抵禦 Prompt Injection（提示注入攻擊）能力最強的模型。在多項 Red Teaming 與 PI 評測中展現了高度的防禦韌性，對構建自動化 Agent 與處理未過濾用戶輸入的開發者是一大安全利多。",
+      "en": "Anthropic's System Card reveals that Claude Opus 5 is their most resistant model yet against prompt injection attacks. Standardized PI evaluations and red-teaming tests show significant safety gains, crucial for developers building autonomous AI agents processing untrusted inputs."
+     },
+     "source": "https://simonwillison.net/2026/Jul/25/boris-cherny/#atom-everything",
+     "tags": [
+      "Security",
+      "Prompt Injection",
+      "Claude Opus 5",
+      "Anthropic"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "分析：Opus 5 的演進核心在於 Token 效率與推理成本改善，而非純能力躍升",
+      "en": "Analysis: Opus 5 focuses on token efficiency over pure intelligence leaps"
+     },
+     "detail": {
+      "zh": "Ars Technica 分析指出，Opus 5 並非極致追求基準測試分數的大幅突破，而是專注於提高每 Token 輸出效率與降低推理延遲。這反映出當前前沿模型的發展趨勢：在能力足夠好的前提下，降低營運成本比盲目擴大模型規模更符合市場需求。",
+      "en": "Analysis by Ars Technica highlights that Claude Opus 5 prioritizes token efficiency and lower operational cost rather than drastic capability gains. This reflects an industry pivot toward practical deployment efficiency and cheaper inference over brute-force parameter scaling."
+     },
+     "source": "https://arstechnica.com/ai/2026/07/anthropics-opus-5-is-about-token-efficiency-not-a-capability-leap/",
+     "tags": [
+      "Token Efficiency",
+      "Inference Cost",
+      "AI Research",
+      "Anthropic"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Reid Hoffman 與 Mark Pincus 新創 AI 實驗室 Prentis 洽談 1 億美元融資",
+      "en": "Reid Hoffman and Mark Pincus's AI lab Prentis in talks for $100M funding"
+     },
+     "detail": {
+      "zh": "由 LinkedIn 創辦人 Reid Hoffman 與 Zynga 創辦人 Mark Pincus 共同設立的新實驗室 Prentis 正談判融資 1 億美元。該公司賭注於「日常電腦任務自動化」將取代純寫程式（Coding），成為未來 AI 最大且最具價值的應用場景。",
+      "en": "New AI lab Prentis, co-founded by Reid Hoffman and Mark Pincus, is seeking $100M in funding. The lab bets that automating routine desktop tasks will soon surpass code generation as the dominant enterprise AI use case."
+     },
+     "source": "https://techcrunch.com/2026/07/24/prentis-new-ai-lab-co-founded-by-reid-hoffman-mark-pincus-in-talks-to-raise-100m/",
+     "tags": [
+      "Venture Capital",
+      "Prentis",
+      "AI Automation",
+      "Industry"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "高壓電線故障意外暴露北美 AI 資料中心基礎設施供電脆弱性",
+      "en": "Single power line failure highlights AI data center grid vulnerabilities"
+     },
+     "detail": {
+      "zh": "維吉尼亞州北部一次單一輸電線路故障險些引發大規模 AI 資料中心斷電，顯現出當前高密度算力中心對電網韌性的嚴峻挑戰。隨著大模型訓練與推理需求暴增，電力備援與獨立微電網架構將成為大型 AI 服務商的下一階段佈局重點。",
+      "en": "A power line disruption in Northern Virginia exposed critical vulnerabilities in data center grid responses. As compute demand surges for AI workloads, grid resilience and localized backup power infrastructure are becoming primary bottlenecks for deployment."
+     },
+     "source": "https://techcrunch.com/2026/07/25/one-fallen-power-line-exposed-a-growing-ai-data-center-problem-heres-how-to-fix-it/",
+     "tags": [
+      "Data Center",
+      "Infrastructure",
+      "Power Grid",
+      "Hardware"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "加拿大議員在國會辯論發言中意外唸出 LLM 的 Prompt 提示句：「這是更自然流暢的版本...」",
+      "en": "Canadian MP accidentally reads raw LLM response prompt aloud during floor speech."
+     },
+     "source": "https://arstechnica.com/ai/2026/07/canadian-legislator-reads-out-apparent-llm-response-in-floor-speech/"
+    },
+    {
+     "headline": {
+      "zh": "全美圖書館發起「避開 AI」工作坊，回應民眾對科技巨頭強制植入 AI 功能的反彈",
+      "en": "Libraries launch viral 'Avoiding AI' workshops amidst consumer backlash against Big Tech's forced AI integration."
+     },
+     "source": "https://techcrunch.com/2026/07/25/librarians-are-hosting-viral-avoiding-ai-workshops-for-people-who-are-fed-up-with-big-tech/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.6-flash",
+ "generated_at": "2026-07-26T07:01+08:00"
+}

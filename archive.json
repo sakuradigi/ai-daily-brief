@@ -1,6 +1,14 @@
 {
- "latest": "2026-07-25",
+ "latest": "2026-07-26",
  "reports": [
+  {
+   "date": "2026-07-26",
+   "type": "daily",
+   "summary": {
+    "zh": "Claude Opus 5 發布主打 Token 效率與防 Prompt 注入；Ruff 預設規則大增。",
+    "en": "Claude Opus 5 released with high token efficiency; Ruff v0.16.0 enables 413 default rules."
+   }
+  },
   {
    "date": "2026-07-25",
    "type": "daily",
