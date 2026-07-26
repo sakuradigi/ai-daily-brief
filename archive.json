@@ -1,6 +1,14 @@
 {
- "latest": "2026-07-26",
+ "latest": "2026-07-27",
  "reports": [
+  {
+   "date": "2026-07-27",
+   "type": "weekly",
+   "summary": {
+    "zh": "DeepSeek 融資因外洩洩密暫停；HF 要求 OpenAI 自主攻擊事件透明化。",
+    "en": "DeepSeek pauses fundraising after compute leak; HF CEO demands transparency post-OpenAI hack."
+   }
+  },
   {
    "date": "2026-07-26",
    "type": "daily",
