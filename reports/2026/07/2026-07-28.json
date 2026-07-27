@@ -1,0 +1,317 @@
+{
+ "date": "2026-07-28",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "月之暗面 Kimi-K3 正式上架 Hugging Face，中國開源權重模型再次震撼社群",
+      "en": "Moonshot AI releases Kimi-K3 open weights on Hugging Face"
+     },
+     "detail": {
+      "zh": "月之暗面（Moonshot AI）將其最新 Kimi-K3 模型開源權重釋出至 Hugging Face。該模型以極低的推理成本達到頂尖性能，持續重塑開源 AI 社群與美國前端專有模型巨頭的競爭格局。",
+      "en": "Moonshot AI has released the open weights for its flagship Kimi-K3 model on Hugging Face. The model delivers top-tier performance at a fraction of the inference cost, disrupting the competitive balance between open-source tools and proprietary US providers."
+     },
+     "source": "https://huggingface.co/moonshotai/Kimi-K3",
+     "tags": [
+      "Kimi-K3",
+      "MoonshotAI",
+      "OpenSource",
+      "LLM"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "輝達與微軟等巨頭成立「Open Secure AI Alliance」，三大 LLM 龍頭缺席",
+      "en": "Nvidia and Microsoft launch Open Secure AI Alliance without OpenAI, Google, or Anthropic"
+     },
+     "detail": {
+      "zh": "輝達、微軟與 SpaceX 等企業聯合發起開源 AI 安全聯盟，旨在共享抵禦前沿模型攻擊的防禦工具。值得注意的是，OpenAI、Google 及 Anthropic 均未參與本次首發聯盟。",
+      "en": "Nvidia, Microsoft, and SpaceX have formed a coalition to build and share open-source cybersecurity tools against frontier AI threats. Notably, AI giants OpenAI, Google, and Anthropic are absent from the initiative."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/971281/nvidia-open-secure-ai-alliance-cybersecurity",
+     "tags": [
+      "Nvidia",
+      "Microsoft",
+      "Cybersecurity",
+      "OpenSource"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Anthropic Claude 共享對話與 Artifacts 連結傳出遭 Google 搜尋引擎公開索引",
+      "en": "Claude shared chats and Artifacts indexed by Google Search, raising security concerns"
+     },
+     "detail": {
+      "zh": "用戶發現使用 Claude「分享對話」功能產生的公開網址已被 Google 爬蟲抓取並公開於搜尋結果中。建議開發者與企業檢查敏感 Prompt 與程式碼 Artifacts，避免商業機密與 API 金鑰外洩。",
+      "en": "Conversations and Artifacts shared via Claude's 'share link' feature were found indexed by Google Search. Developers and enterprise users should audit shared URLs to avoid leaking sensitive prompts or codebase artifacts."
+     },
+     "source": "https://techcrunch.com/2026/07/27/psa-your-claude-shared-chats-and-artifacts-may-have-ended-up-on-google/",
+     "tags": [
+      "Claude",
+      "Anthropic",
+      "Security",
+      "Privacy"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "中國高性能開源模型湧現，逼使矽谷調整 API 定價與開發者策略",
+      "en": "Rise of Chinese open-weight models forces Silicon Valley to rethink API pricing"
+     },
+     "detail": {
+      "zh": "外媒分析指出，以 Kimi-K3 為代表的中國開源模型正加速釋出高性價比權重。這逼使美國模型廠商必須下調 API 價格並開放更多底層調控權，開發者因此獲得更多高性價比的替代方案。",
+      "en": "Analysis shows that highly capable open-weight models like Kimi-K3 are challenging US AI monopolies. This shift is driving down API costs and forcing Western labs to offer developers greater flexibility."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/971444/how-chinese-open-weight-ai-models-impact-us-companies",
+     "tags": [
+      "OpenSource",
+      "LLM",
+      "API",
+      "AI-Economics"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "輝達發布 Cosmos-H-Dreams，將實時生成式模擬引進手術機器人開發",
+      "en": "NVIDIA releases Cosmos-H-Dreams for real-time surgical robotics simulation"
+     },
+     "detail": {
+      "zh": "NVIDIA 在 Hugging Face 發布專為醫療手術機器人打造的物理與視訊生成模擬模型 Cosmos-H-Dreams。這讓開發者能在高逼真的合成環境中訓練與驗證醫療 AI 代理人，大幅降低實體測試風險。",
+      "en": "NVIDIA introduced Cosmos-H-Dreams on Hugging Face, bringing real-time generative simulation to surgical robotics. It enables developers to train physical AI agents in hyper-realistic synthetic environments."
+     },
+     "source": "https://huggingface.co/blog/nvidia/cosmos-h-dreams",
+     "tags": [
+      "NVIDIA",
+      "Robotics",
+      "Simulation",
+      "HuggingFace"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "微軟推出首款網路安全專用 AI 模型與 Agentic 自動化防禦系統",
+      "en": "Microsoft launches its first cybersecurity AI model and agentic defense platform"
+     },
+     "detail": {
+      "zh": "微軟正式發布針對資安場景微調的 AI 模型及自動化 Agent 平台，強調資安防禦邊界監控與威脅分析。官方宣稱其推理成本更低，且在多項資安基準測試中超越市場競品。",
+      "en": "Microsoft announced its first domain-specific cybersecurity AI model alongside an agentic platform designed to automate threat response. Microsoft claims it outperforms rival platforms at a lower operational cost."
+     },
+     "source": "https://techcrunch.com/2026/07/27/microsoft-launches-its-first-cyber-model-and-a-new-agentic-cybersecurity-system/",
+     "tags": [
+      "Microsoft",
+      "Cybersecurity",
+      "AI-Agent"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "ChatGPT 開始限制直接複製特定作家風格，改採寬鬆意境風格模仿",
+      "en": "ChatGPT blocks direct requests to replicate famous writers' exact style"
+     },
+     "detail": {
+      "zh": "OpenAI 調整了 ChatGPT 的系統安全與輸出機制，當用戶要求完全仿寫特定知名作家時將觸發拒絕。系統改為僅提取廣義風格特徵，反映出生成式 AI 著作權訴訟對產品行為的具體影響。",
+      "en": "ChatGPT now blocks prompts requesting exact voice replication of specific authors, offering generalized stylistic feel instead. The change highlights growing legal pressures surrounding copyrighted writing styles in LLM outputs."
+     },
+     "source": "https://arstechnica.com/ai/2026/07/chatgpt-stops-cloning-famous-writers-voices-but-may-capture-a-similar-feeling/",
+     "tags": [
+      "ChatGPT",
+      "OpenAI",
+      "Copyright",
+      "Prompt-Engineering"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "數據顯示 Google AI Overviews 涵蓋率達 43%，生成式搜尋成為預設體驗",
+      "en": "Google AI Overviews now appear in 43% of searches, setting a new default"
+     },
+     "detail": {
+      "zh": "最新分析報告指出，近半數 Google 搜尋查詢皆會觸發 AI Overviews。這代表傳統 SEO 策略需加速轉向 GEO（生成式引擎最佳化），以爭取產品與內容被 AI 摘要引用的機會。",
+      "en": "Data shows Google AI Overviews now show up in 43% of search queries. This rapid adoption forces developers and creators to shift focus toward Generative Engine Optimization (GEO) for content visibility."
+     },
+     "source": "https://techcrunch.com/2026/07/27/googles-ai-search-is-rapidly-becoming-the-default-new-data-shows/",
+     "tags": [
+      "Google",
+      "AI-Search",
+      "SEO"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "具身智能研究新突破：腦電波（EEG）數據成為實體 AI 訓練的新輸入維度",
+      "en": "Brain wave readings emerge as the next frontier data source for physical AI"
+     },
+     "detail": {
+      "zh": "具身智能模型訓練不再僅仰賴多視角影片與文字，研究者開始引入高密度腦電波（EEG）信號進行端到端動作控制訓練。這項技術有助於提昇機器人對人類意圖與微小動作的感知精度。",
+      "en": "Frontier physical AI research is expanding beyond multi-camera video feeds to incorporate dense EEG brain wave readings. This multimodal input aims to dramatically improve robot responsiveness to human intent."
+     },
+     "source": "https://techcrunch.com/2026/07/26/are-brain-waves-the-next-unlock-for-physical-ai/",
+     "tags": [
+      "Physical-AI",
+      "Robotics",
+      "EEG",
+      "Research"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 合作平台漏洞事件，再度引爆 AI 對齊與沙盒隔離路線之爭",
+      "en": "Breach revives debate over model alignment vs system containment"
+     },
+     "detail": {
+      "zh": "針對近期 OpenAI 在第三方平台上發生的權限漏洞事件，社群再度掀起安全架構討論。一方主張應深化模型本身的倫理對齊（Alignment），另一方則強調必須建立嚴格的系統層級沙盒隔離（Containment）。",
+      "en": "A recent platform breach associated with OpenAI models has reignited debate over AI safety approaches. Experts remain divided on whether to focus on model-level alignment or strict system-level containment."
+     },
+     "source": "https://techcrunch.com/2026/07/27/openais-hugging-face-breach-has-reignited-the-debate-over-alignment-and-control/",
+     "tags": [
+      "AI-Safety",
+      "Alignment",
+      "OpenAI",
+      "Security"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Ilya Sutskever 創立的 Safe Superintelligence (SSI) 結盟輝達擴展超級算力",
+      "en": "Ilya Sutskever's Safe Superintelligence partners with Nvidia to scale research"
+     },
+     "detail": {
+      "zh": "結束兩年隱形模式後，SSI 宣布與輝達達成長期戰略合作，取得高規格算力基礎設施支援。這意味著 SSI 正在為超級智能模型的下一階段規模化訓練做準備。",
+      "en": "Safe Superintelligence (SSI) has announced a long-term partnership with Nvidia after two years in stealth. The deal secures computing infrastructure as SSI prepares to scale its frontier research."
+     },
+     "source": "https://techcrunch.com/2026/07/27/ilya-sutskevers-safe-superintelligence-partners-with-nvidia-to-scale-its-ai-research/",
+     "tags": [
+      "SSI",
+      "IlyaSutskever",
+      "Nvidia",
+      "Infrastructure"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "微軟 CEO Nadella 警告：缺乏 AI Gateway 與多模型架構的企業將難以生存",
+      "en": "Satya Nadella: Companies relying on a single AI model without AI gateways risk failure"
+     },
+     "detail": {
+      "zh": "Satya Nadella 指出單一模型無法滿足企業需求，企業必須部署 AI 閘道器（AI Gateway）隔離 Prompt 與模型層。這凸顯了中介軟體與 Gateway 架構在開發者技術堆疊中的重要性。",
+      "en": "Microsoft CEO Satya Nadella warned that relying on a single AI model is risky. He emphasized the necessity of AI Gateways to separate enterprise prompts from underlying model providers."
+     },
+     "source": "https://techcrunch.com/2026/07/27/satya-nadella-says-companies-that-trust-one-ai-for-everything-may-not-survive/",
+     "tags": [
+      "Microsoft",
+      "AIGateway",
+      "Architecture",
+      "Enterprise"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "網頁爬蟲於美國法庭獲勝，法官駁回 Google 與 Reddit 濫用 DMCA 阻擋 AI 抓取",
+      "en": "Web scraper wins court victory against Google and Reddit's DMCA claims"
+     },
+     "detail": {
+      "zh": "數據抓取業者在 DMCA 訴訟中勝訴，法院判決單純抓取公開網頁內容不構成著作權侵權。此判例為 AI 訓練數據集的收集與爬蟲工具的合法性提供了重要法律保障。",
+      "en": "A web scraper won a key court ruling against Google and Reddit, which tried using DMCA notices to block data extraction. The judge ruled public scraping is legal, clarifying boundaries for AI dataset sourcing."
+     },
+     "source": "https://arstechnica.com/tech-policy/2026/07/google-wont-give-up-odd-war-against-ai-web-scraping-despite-court-loss/",
+     "tags": [
+      "WebScraping",
+      "Copyright",
+      "DMCA",
+      "Policy"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "Claude Opus 5 服務傳出異常，官方狀態頁顯示錯誤率暫時升高",
+      "en": "Elevated error rates reported on Claude Opus 5 according to Anthropic status page"
+     },
+     "source": "https://status.claude.com/incidents/mfdtrknpxghq"
+    },
+    {
+     "headline": {
+      "zh": "美國 AI 企業在華盛頓的政治遊說支出創下歷史新高紀錄",
+      "en": "AI companies spend record sums on Washington lobbying amid tightening regulation"
+     },
+     "source": "https://www.ft.com/content/d8a5f95e-3b6d-463a-a848-c9ef8e2394db"
+    },
+    {
+     "headline": {
+      "zh": "Verizon 與 Google 簽訂 10 億美元暗光纖合約，為 AI 資料中心提供基礎設施",
+      "en": "Verizon signs $1B dark fiber deal with Google to support AI data center expansion"
+     },
+     "source": "https://arstechnica.com/ai/2026/07/verizon-seeks-ai-profits-with-mini-data-centers-1b-dark-fiber-deal-with-google/"
+    },
+    {
+     "headline": {
+      "zh": "Meta AI 助手正式整合至 Threads 私訊功能（DMs），開放用戶直接對話",
+      "en": "Meta AI chatbot rolls out to Threads DMs, allowing direct conversations"
+     },
+     "source": "https://techcrunch.com/2026/07/27/threads-users-can-now-chat-with-meta-ai-in-their-dms/"
+    },
+    {
+     "headline": {
+      "zh": "前 Google DeepMind 研究員發表離職心路歷程，引發 Hacker News 熱議",
+      "en": "Former Google DeepMind researcher's post on why they left sparks Hacker News discussion"
+     },
+     "source": "https://www.lesswrong.com/posts/iKm2FhpWkuuBojm82/why-i-left-google-deepmind"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.6-flash",
+ "generated_at": "2026-07-28T07:01+08:00"
+}

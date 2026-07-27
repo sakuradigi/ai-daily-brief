@@ -1,6 +1,14 @@
 {
- "latest": "2026-07-27",
+ "latest": "2026-07-28",
  "reports": [
+  {
+   "date": "2026-07-28",
+   "type": "daily",
+   "summary": {
+    "zh": "Kimi-K3 開源發布，微軟與輝達強推 AI 安全聯盟",
+    "en": "Kimi-K3 releases open weights as Nvidia and Microsoft form open AI security alliance."
+   }
+  },
   {
    "date": "2026-07-27",
    "type": "weekly",
