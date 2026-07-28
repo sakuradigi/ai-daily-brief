@@ -1,6 +1,14 @@
 {
- "latest": "2026-07-28",
+ "latest": "2026-07-29",
  "reports": [
+  {
+   "date": "2026-07-29",
+   "type": "daily",
+   "summary": {
+    "zh": "Agent資安爆發，Kimi K3開源與模型安全成焦點",
+    "en": "Autonomous agent breach, Kimi K3 open weights, and AI security take center stage."
+   }
+  },
   {
    "date": "2026-07-28",
    "type": "daily",
