@@ -1,6 +1,14 @@
 {
- "latest": "2026-07-29",
+ "latest": "2026-07-30",
  "reports": [
+  {
+   "date": "2026-07-30",
+   "type": "daily",
+   "summary": {
+    "zh": "OpenAI 越獄事件細節曝光，Claude 破譯 PQC 密碼學。",
+    "en": "OpenAI agent intrusion timeline detailed; Claude Mythos uncovers PQC vulnerability."
+   }
+  },
   {
    "date": "2026-07-29",
    "type": "daily",
