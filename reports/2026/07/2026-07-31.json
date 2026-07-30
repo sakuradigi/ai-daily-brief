@@ -1,0 +1,293 @@
+{
+ "date": "2026-07-31",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 發布 GPT-5.6，大幅推升性價比極限",
+      "en": "OpenAI Releases GPT-5.6, Advancing the Price-Performance Frontier"
+     },
+     "detail": {
+      "zh": "OpenAI 推出全新 GPT-5.6 模型，主打推理效能與成本控制的極致平衡。對開發者而言，新模型在保持高階推理與程式寫作能力的同時顯著降低 API 呼叫成本，為大規模 Agent 部署提供更具成本效益的選擇。",
+      "en": "OpenAI unveiled GPT-5.6, focusing on optimizing inference efficiency and cost. It offers high-level reasoning and coding capabilities at significantly lower API costs, making large-scale agent deployments much more cost-effective."
+     },
+     "source": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
+     "tags": [
+      "OpenAI",
+      "GPT-5.6",
+      "API",
+      "LLM"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Google DeepMind 發表 Gemini Robotics 2，支援全身人形機器人控制",
+      "en": "Google DeepMind Unveils Gemini Robotics 2 with Whole-Body Intelligence"
+     },
+     "detail": {
+      "zh": "DeepMind 推出 Gemini Robotics 2 與 ER 2，突破過去僅限上半身控制的限制，實現腳尖到手指的全身動態協調與多機器人協作。該模型具備長影片理解與任務編排能力，顯著提升具身智能在實體環境中的自主性。",
+      "en": "DeepMind released Gemini Robotics 2 and ER 2, expanding beyond upper-body control to full-body locomotion and fingertip dexterity. Featuring long-video understanding and task orchestration, it boosts embodied AI autonomy in complex environments."
+     },
+     "source": "https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration/",
+     "tags": [
+      "Google DeepMind",
+      "Robotics",
+      "Embodied AI",
+      "Gemini"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "MCP 通訊協定發布無狀態架構規範，解決企業級大規模導入瓶頸",
+      "en": "New Stateless MCP Spec Solves Key Scalability Barrier for Enterprises"
+     },
+     "detail": {
+      "zh": "Model Context Protocol (MCP) 更新規範，引進無狀態（Stateless）設計與明確的 API 相容性政策。此改進解決了企業在負載平衡與水平擴展 AI Agent 服務時的架構痛點，極大地加速了工具調用標準的商業落地。",
+      "en": "The Model Context Protocol (MCP) updated its specification to introduce stateless architecture and formal API policies. This removes major architectural friction in load balancing and horizontal scaling for enterprise AI agent deployments."
+     },
+     "source": "https://arstechnica.com/ai/2026/07/with-a-stateless-makeover-new-mcp-spec-targets-enterprise-scale/",
+     "tags": [
+      "MCP",
+      "Enterprise",
+      "Architecture",
+      "Agent"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Agent-Manager：專為 Claude Code、Codex 與 OpenCode 設計的 Tmux 終端管理介面",
+      "en": "Agent-Manager: A Tmux TUI for Running Claude Code, Codex, and OpenCode"
+     },
+     "detail": {
+      "zh": "這是一款輕量化的 Tmux TUI 工具，能讓開發者在單一終端視窗中同時監控與調度多個 CLI AI Coding Agent。透過直觀的多頁籤管理，顯著提升平行開發與 Code Review 的協作效率。",
+      "en": "A lightweight Tmux TUI tool allowing developers to monitor and dispatch multiple CLI coding agents simultaneously in one terminal window. It simplifies parallel development and code review workflows."
+     },
+     "source": "https://github.com/YoanWai/agent-manager",
+     "tags": [
+      "Tmux",
+      "Developer Tools",
+      "CLI",
+      "Agent"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "LLM Honeypot：針對 AI Agent 誘捕與安全性檢測的開源實驗工具",
+      "en": "LLM Honeypot: An Open Tooling Project for Testing Agent Vulnerabilities"
+     },
+     "detail": {
+      "zh": "該專案提供套裝的 Honeypot 環境，專門測試自主 Agent 在遭遇 Prompt Injection 或惡意指示時的防禦表現。資安人員與開發者可用其模擬真實攻防場景，防範 Agent 被惡意操控。",
+      "en": "This project provides a pre-packaged honeypot environment to test AI agents against prompt injections and malicious instruction attacks. It allows security engineers to simulate attack vectors and harden agent boundaries."
+     },
+     "source": "https://llm2human.pages.dev/",
+     "tags": [
+      "Security",
+      "LLM",
+      "Honeypot",
+      "Prompt Injection"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "ASD-STE100 Agent Skill：自動約束 LLM 輸出符合簡化技術英語規範",
+      "en": "ASD-STE100 Skill: Forcing LLM Documentation into Simplified Technical English"
+     },
+     "detail": {
+      "zh": "此 Agent Skill 能強制 LLM 在生成技術文件時恪守航空與工程領域的 ASD-STE100 規範。能精準控制詞彙與句型結構，大幅提高工程手冊與 API 文件的可讀性與翻譯準確度。",
+      "en": "This agent skill enforces ASD-STE100 standards when LLMs generate technical documentation. By strictly limiting vocabulary and grammar rules, it improves clarity and translation precision for engineering manuals."
+     },
+     "source": "https://github.com/AminBlg/SimpleEnglish",
+     "tags": [
+      "Documentation",
+      "Agent Skill",
+      "Prompt Engineering"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Google 利用 LLM 輔助修復 Chrome 漏洞，單月修復量超越過去兩年總和",
+      "en": "Google Uses AI to Patch More Chrome Bugs in June Than Over Past Two Years Combined"
+     },
+     "detail": {
+      "zh": "Google 揭露其在 6 月利用 LLM 自動化檢測與程式碼修正技術，修復了大量 Chrome 瀏覽器的安全缺陷。這顯示出 AI 自動化修補在大型開源專案與基礎架構維護中的巨大實用價值。",
+      "en": "Google revealed it leveraged LLMs in June to automatically detect and generate patches for Chrome vulnerabilities, fixing more bugs in one month than the prior two years. This demonstrates the immense impact of AI in software security maintenance."
+     },
+     "source": "https://techcrunch.com/2026/07/30/google-says-it-fixed-more-chrome-bugs-in-june-than-over-the-past-two-years-thanks-to-ai/",
+     "tags": [
+      "Google",
+      "Chrome",
+      "Security",
+      "AI Assisted Coding"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "微軟確認今年將推出整合 Chat、Coding 與 Agent 的 Copilot 超級應用",
+      "en": "Microsoft Confirms Integrated Copilot 'Super App' Launching This Year"
+     },
+     "detail": {
+      "zh": "微軟執行長 Satya Nadella 在財報會上證實，正打造一款橫跨 C 端與 B 端的 Copilot 超級 App。該軟體將把傳統對話、自動編程與自主 Agent 工作流統一於單一入口，簡化用戶跨情境的使用體驗。",
+      "en": "Microsoft CEO Satya Nadella confirmed an upcoming Copilot 'super app' combining chat, automated coding, and agentic capabilities into a single interface for both consumer and enterprise workflows."
+     },
+     "source": "https://www.theverge.com/tech/972927/microsoft-copilot-super-app-confirmed",
+     "tags": [
+      "Microsoft",
+      "Copilot",
+      "Super App",
+      "Agent"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Mythos 模型破譯後量子密碼學候選演算法 HAWK 隱蔽缺陷",
+      "en": "Mythos Uncovers Hidden Cryptographic Vulnerability in PQC Candidate HAWK"
+     },
+     "detail": {
+      "zh": "研究人員運用 Mythos AI 發現了經過多年測試均未察覺的 HAWK 簽章演算法致命漏洞，導致該候選演算法退出 NIST 評選。這標誌著 AI 模型已被成功運用於高難度密碼分析與演算法漏洞自動破譯。",
+      "en": "Researchers used the Mythos AI model to discover a fatal vulnerability in the HAWK signature algorithm that had eluded human analysis for years. This highlights AI's growing power in automated cryptanalysis."
+     },
+     "source": "https://arstechnica.com/security/2026/07/mythos-uncovers-crypto-weaknesses-that-went-unknown-for-years/",
+     "tags": [
+      "Security",
+      "Cryptography",
+      "Mythos",
+      "Research"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "《Science》報導：頂尖 AI 新創團隊公開發布論文數量急遽下降",
+      "en": "Science Report: Top AI Startups Are Barely Publishing Research Papers"
+     },
+     "detail": {
+      "zh": "研究顯示，隨著商業競爭白熱化，頂尖 AI 團隊選擇將前沿突破轉為商業機密而非發表同儕審查論文。這使得開源社群與學術界難以複現最先進的模型架構與訓練細節，拉大產學技術鴻溝。",
+      "en": "A report highlights that top AI startups are withholding research to maintain commercial advantages rather than publishing peer-reviewed papers. This trend hinders academic reproducibility and widens the gap between industry and academia."
+     },
+     "source": "https://www.science.org/content/article/ai-s-top-startups-are-barely-publishing-their-research",
+     "tags": [
+      "AI Research",
+      "Open Source",
+      "Industry Trends"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "英國 Neocloud 業者 Nscale 收購 Anyscale，強化全棧算力與調度佈局",
+      "en": "British Neocloud Nscale Acquires Anyscale to Strengthen Compute and Orchestration Stack"
+     },
+     "detail": {
+      "zh": "Nscale 宣佈收購分散式算力框架 Ray 的背後公司 Anyscale，旨在將底層資料中心算力與上層分散式任務調度軟體深度整合，降低企業客戶在大規模 LLM 訓練與推理上的部署複雜度。",
+      "en": "Nscale acquired Anyscale (creators of Ray) to unify its cloud compute infrastructure with software orchestration layers, simplifying large-scale LLM training and inference workloads for enterprise clients."
+     },
+     "source": "https://techcrunch.com/2026/07/30/nscale-buys-anyscale-as-it-seeks-to-own-more-of-the-ai-compute-stack/",
+     "tags": [
+      "Nscale",
+      "Anyscale",
+      "Infrastructure",
+      "M&A"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "GCC 指導委員會正式公布 GNU 編譯器套件之 AI 程式碼貢獻政策",
+      "en": "GCC Steering Committee Announces Official Policy on AI-Generated Code"
+     },
+     "detail": {
+      "zh": "GNU 編譯器套件（GCC）委員會規範了 AI 生成程式碼的提交標準，要求貢獻者必須確認授權條款並承擔品質責任。該政策反映出傳統基礎開源專案對 AI 生成內容版權與穩定性的審慎態度。",
+      "en": "The GCC steering committee established new guidelines for AI-generated code submissions, demanding contributor verification regarding licensing and reliability. It reflects cautious adoption among critical open-source software projects."
+     },
+     "source": "https://lwn.net/Articles/1086041/",
+     "tags": [
+      "GCC",
+      "Open Source",
+      "Policy",
+      "Governance"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "LinkedIn 新增「疑似 AI 廢文」檢舉按鈕以改善動態牆內容品質",
+      "en": "LinkedIn Adds a Report Button for 'Seems Like AI Slop' Content"
+     },
+     "source": "https://techcrunch.com/2026/07/30/linkedin-adds-a-button-to-report-ai-generated-slop/"
+    },
+    {
+     "headline": {
+      "zh": "Okta 以約 2 億美元收購 AI 身分安全新創 Permiso",
+      "en": "Okta Acquires AI Security Startup Permiso for Estimated $200 Million"
+     },
+     "source": "https://techcrunch.com/2026/07/30/okta-buys-ai-security-startup-permiso-source-says-for-about-200m/"
+    },
+    {
+     "headline": {
+      "zh": "AI 穿戴裝置 Friend 重新推出，新增語音喇叭且售價翻倍",
+      "en": "AI Wearable Friend Relaunches with a Voice Speaker at Double the Price"
+     },
+     "source": "https://techcrunch.com/2026/07/30/friend-the-lonely-ai-wearable-returns-with-a-new-voice-and-a-much-bigger-price-tag/"
+    },
+    {
+     "headline": {
+      "zh": "聯邦法官裁定美國政府缺乏證據將 Anthropic 列入供應鏈風險名單",
+      "en": "Federal Judge Rules US Admin Lacks Evidence for Anthropic Supply-Chain Risk Label"
+     },
+     "source": "https://techcrunch.com/2026/07/30/judge-says-trump-admin-still-lacks-evidence-for-anthropic-supply-chain-risk-label/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.6-flash",
+ "generated_at": "2026-07-31T07:01+08:00"
+}

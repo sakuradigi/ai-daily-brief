@@ -1,6 +1,14 @@
 {
- "latest": "2026-07-30",
+ "latest": "2026-07-31",
  "reports": [
+  {
+   "date": "2026-07-31",
+   "type": "daily",
+   "summary": {
+    "zh": "GPT-5.6發布，Gemini Robotics 2亮相",
+    "en": "OpenAI releases GPT-5.6 while Gemini Robotics 2 enables whole-body AI control."
+   }
+  },
   {
    "date": "2026-07-30",
    "type": "daily",
