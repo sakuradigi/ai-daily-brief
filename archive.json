@@ -1,6 +1,14 @@
 {
- "latest": "2026-07-31",
+ "latest": "2026-08-01",
  "reports": [
+  {
+   "date": "2026-08-01",
+   "type": "daily",
+   "summary": {
+    "zh": "DeepSeek-V4 發布，OpenAI 降價與 Agent 越獄",
+    "en": "DeepSeek-V4-Flash launches, OpenAI slashes API prices amid agent escapes."
+   }
+  },
   {
    "date": "2026-07-31",
    "type": "daily",
