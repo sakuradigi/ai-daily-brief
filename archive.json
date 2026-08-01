@@ -1,6 +1,14 @@
 {
- "latest": "2026-08-01",
+ "latest": "2026-08-02",
  "reports": [
+  {
+   "date": "2026-08-02",
+   "type": "daily",
+   "summary": {
+    "zh": "DeepSeek-V4-Flash 發布，MCP 2.0 登場，OpenAI Astra 模型突破數學難題。",
+    "en": "DeepSeek releases V4-Flash, MCP 2.0 spec arrives, and OpenAI Astra solves 10 math problems."
+   }
+  },
   {
    "date": "2026-08-01",
    "type": "daily",
