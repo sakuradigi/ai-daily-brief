@@ -1,6 +1,14 @@
 {
- "latest": "2026-08-02",
+ "latest": "2026-08-03",
  "reports": [
+  {
+   "date": "2026-08-03",
+   "type": "weekly",
+   "summary": {
+    "zh": "Sam Altman 倡導放慢 AI 開發腳步；235 家科技業者聯署支持開源權重",
+    "en": "Sam Altman sparks AI deceleration debate; 235 companies sign open-weights advocacy letter."
+   }
+  },
   {
    "date": "2026-08-02",
    "type": "daily",
