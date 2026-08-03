@@ -1,6 +1,14 @@
 {
- "latest": "2026-08-03",
+ "latest": "2026-08-04",
  "reports": [
+  {
+   "date": "2026-08-04",
+   "type": "daily",
+   "summary": {
+    "zh": "OpenAI 解密語音架構，Qwen 3.8 發布，LLM 虛假資安報告引爆爭議。",
+    "en": "OpenAI details GPT-Live voice design, Alibaba drops Qwen3.8-Max, and LLM-generated fake CVEs spark dev debate."
+   }
+  },
   {
    "date": "2026-08-03",
    "type": "weekly",
