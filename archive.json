@@ -1,6 +1,14 @@
 {
- "latest": "2026-08-04",
+ "latest": "2026-08-05",
  "reports": [
+  {
+   "date": "2026-08-05",
+   "type": "daily",
+   "summary": {
+    "zh": "Anthropic百億交易；德州暫緩併網",
+    "en": "Anthropic signs $10B cloud deal; Texas halts new data center grid connections."
+   }
+  },
   {
    "date": "2026-08-04",
    "type": "daily",

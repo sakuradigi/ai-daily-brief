@@ -1,0 +1,299 @@
+{
+ "date": "2026-08-05",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Anthropic 簽訂 100 億美元 AI 雲端合約，押注新興算力供應商 Volta",
+      "en": "Anthropic Signs $10B Cloud Compute Deal with AI Startup Volta"
+     },
+     "detail": {
+      "zh": "Anthropic 持續擴展基礎設施，與算力初創公司 Volta 簽訂高達 100 億美元的雲端合作。此舉顯示前沿模型廠商對單一雲端巨頭的依賴度正逐步降低，並正加速鎖定第三方高密度算力。",
+      "en": "Anthropic continues its infrastructure expansion spree by striking a $10B agreement with AI cloud startup Volta. The massive commitment underscores how frontier AI labs are diversifying compute suppliers beyond traditional hyperscalers."
+     },
+     "source": "https://techcrunch.com/2026/08/04/anthropic-signs-10-billion-deal-with-ai-cloud-startup-volta/",
+     "tags": [
+      "Anthropic",
+      "Cloud",
+      "Compute"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "德州因電力負荷過重，暫停資料中心新設併網並全面實施電力審計",
+      "en": "Texas Pauses Data Center Grid Connections Pending Mandatory Audits"
+     },
+     "detail": {
+      "zh": "德州州長要求監管機構 PUCT 與 ERCOT 對欲接入電網的資料中心專案進行嚴格審計，在通過評估前暫緩併網。此政策可能顯著拉長美南地區 AI 資料中心的建置週期與營運時程。",
+      "en": "Texas Governor Greg Abbott directed state energy regulators to audit and verify new data center proposals before granting grid access. The sudden moratorium is set to slow down deployment timelines for high-density AI infrastructure in the state."
+     },
+     "source": "https://arstechnica.com/ai/2026/08/texas-halts-data-center-connections-to-power-grid-amid-overwhelming-demand/",
+     "tags": [
+      "Data Center",
+      "Infrastructure",
+      "Policy"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 公開內部對話紀錄，強硬反駁 Apple 商業機密訴訟",
+      "en": "OpenAI Publishes Internal Logs Countering Apple's Trade Secret Lawsuit"
+     },
+     "detail": {
+      "zh": "針對 Apple 指控前員工攜帶機密離職加入 OpenAI，OpenAI 發布文章稱訴訟毫無根據，並公開內部 iMessage 與電郵對話。兩大巨頭的法律對峙升級，顯示離職工程師與智慧財產權爭議正成為 AI 人才戰的焦點。",
+      "en": "OpenAI fired back against Apple's trade secret lawsuit by releasing internal communications and emails to discredit the claims. The high-profile public spat highlights escalating legal friction around talent poaching and IP in the AI industry."
+     },
+     "source": "https://openai.com/index/apple-is-getting-this-wrong",
+     "tags": [
+      "OpenAI",
+      "Apple",
+      "Lawsuit"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "DeepSeek V4 Flash 成功移植至單張 AMD MI300X 進行推論",
+      "en": "DeepSeek V4 Flash Successfully Ported to Run on a Single AMD MI300X"
+     },
+     "detail": {
+      "zh": "社群開源專案實現將 DeepSeek V4 Flash 運行於單顆 AMD MI300X 加速卡上。這為不想綁定 Nvidia CUDA 生態系的開發團隊提供了實用的替代推論方案。",
+      "en": "A new community project demonstrates running DeepSeek V4 Flash on a single AMD MI300X accelerator. This offers developers a viable open-source inference setup outside the Nvidia CUDA ecosystem."
+     },
+     "source": "https://github.com/ryanzhou/deepseek-v4-flash-mi300x",
+     "tags": [
+      "AMD",
+      "DeepSeek",
+      "Inference"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "開源專案 Soup 支援在 4GB 顯存筆電 GPU 上微調 8B 模型",
+      "en": "Open-Source Tool \"Soup\" Enables Fine-Tuning 8B Models on 4GB Laptop GPUs"
+     },
+     "detail": {
+      "zh": "Soup 專案透過記憶體優化技巧，讓開發者能在消費級筆電（僅 4GB VRAM）進行 8B 模型全量或高效參數微調。極大幅度降低了個人開發者與邊緣端進行 LLM 定制的門檻。",
+      "en": "The Soup repository utilizes memory optimization techniques to allow fine-tuning of 8B models on consumer laptops with as little as 4GB VRAM. It significantly lowers the hardware entry barrier for edge LLM customization."
+     },
+     "source": "https://github.com/MakazhanAlpamys/Soup",
+     "tags": [
+      "Fine-tuning",
+      "Open Source",
+      "GPU"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "MiniMax-H3 全模態生成模型推出 Apple Silicon MLX 移植版",
+      "en": "MiniMax-H3 Omni-Modal Model Ported to Apple Silicon via MLX"
+     },
+     "detail": {
+      "zh": "開源社群將支援影音文字生成的 MiniMax-H3 移植至 Apple MLX 框架，Mac 使用者現可在 M 晶片本機端直接運行推論。實測能在 M5 Max 機器上順利輸出帶音訊的短視訊片段。",
+      "en": "Developers ported MiniMax-H3—an omni-modal generative model supporting text, audio, and video—to Apple's MLX framework. Mac users can now run local inference to generate short video clips with synchronized audio natively on Apple Silicon."
+     },
+     "source": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
+     "tags": [
+      "MLX",
+      "Apple Silicon",
+      "Omni-Modal"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Warp 推出 Agent CLI，直接在終端機內建 Coding Agent 功能",
+      "en": "Warp Introduces Warp Agent CLI for Terminal-Native AI Coding"
+     },
+     "detail": {
+      "zh": "Warp 發表全新的 Agent CLI 工具，將 AI 編程代理直接無縫整合進開發者常用的 Shell 環境中。開發者無需切換至 IDE 或 Web 視窗即可直接讓 Agent 執行跨檔案重構與命令編譯。",
+      "en": "Warp announced the Warp Agent CLI, embedding coding agent workflows directly into the developer's terminal. It allows execution of multi-file refactoring and command building without leaving the command-line environment."
+     },
+     "source": "https://www.warp.dev/blog/introducing-the-warp-agent-cli-coding-agent",
+     "tags": [
+      "CLI",
+      "Developer Tools",
+      "AI Agent"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Liquid AI 發布 LFM2.5-2.6B，主打邊緣裝置與跨平台 Agent 部署",
+      "en": "Liquid AI Releases LFM2.5-2.6B for Cross-Platform Edge Agent Deployment"
+     },
+     "detail": {
+      "zh": "Liquid AI 於 Hugging Face 釋出僅 2.6B 參數量的 LFM2.5 模型，具備低延遲與高非架構轉化效率。專為輕量端側 Agent 設計，適合部署於手機、物聯網及本機開發環境。",
+      "en": "Liquid AI introduced LFM2.5-2.6B on Hugging Face, optimized for low-latency local agent execution. The lightweight architecture targets cross-platform deployment on mobile devices, IoT, and desktop environments."
+     },
+     "source": "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b",
+     "tags": [
+      "Liquid AI",
+      "Edge AI",
+      "Agents"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Spotify 合作獨立音樂聯盟 Merlin，推進合法 AI 翻唱與二創功能",
+      "en": "Spotify Partners with Merlin for Opt-in AI Remix and Cover Products"
+     },
+     "detail": {
+      "zh": "繼環球音樂後，代表 3 萬多家獨立廠牌的 Merlin 加入 Spotify AI 二創合作。付費使用者將能合法對參與音樂進行 AI 二創與翻唱，同時保障原作者的選擇權與分潤收益。",
+      "en": "Spotify expanded its upcoming paid AI remix and covers tool by partnering with Merlin, representing over 30,000 independent labels. The opt-in platform ensures participating artists receive proper attribution and revenue sharing for user-generated AI remakes."
+     },
+     "source": "https://techcrunch.com/2026/08/04/spotify-adds-merlin-to-its-ai-music-remix-and-covers-effort/",
+     "tags": [
+      "Spotify",
+      "Music AI",
+      "Copyright"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Mistral 釋出 Shieldstral 3B 開源多模態內容審核模型",
+      "en": "Mistral Releases Shieldstral 3B Open-Weight Multimodal Moderation Model"
+     },
+     "detail": {
+      "zh": "Mistral 推出的 Shieldstral 3B 專為安全護欄設計，支援同時對文字與影像輸入進行內容審核。這讓開發者能在私有化部署環境中建構符合規範的防護機制，無需依賴商業 API。",
+      "en": "Mistral launched Shieldstral 3B, an open-weight model engineered for safety moderation across text and image inputs. It provides developers with a privacy-friendly, self-hosted safety guardrail alternative to proprietary moderation APIs."
+     },
+     "source": "https://mistral.ai/news/shieldstral/",
+     "tags": [
+      "Mistral",
+      "Safety",
+      "Multimodal"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "SaferAI 評測指出開源模型性能逼近閉源前沿，但安全機制仍有缺口",
+      "en": "SaferAI Report Highlights Growing Safety Gap as Open-Weight Models Catch Up"
+     },
+     "detail": {
+      "zh": "SaferAI 發布最新報告顯示，如 GLM-5.2 等開源模型的能力已迅速接近頂級閉源模型，但在防範濫用與對齊護欄上仍存在落差。這引發業界對開源模型治理與安全標準的最新討論。",
+      "en": "A new report by SaferAI reveals that open-weight models like GLM-5.2 are rapidly closing the benchmark gap with frontier proprietary models, yet lack robust safety mitigations, sparking debate over open-source governance."
+     },
+     "source": "https://techcrunch.com/2026/08/04/open-weight-ai-models-are-catching-up-to-the-frontier-the-safety-gap-remains/",
+     "tags": [
+      "Safety",
+      "Open Source",
+      "Benchmarks"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Nvidia 主導之 Open Secure AI 聯盟成立首週即發布 AI Agent 防護草案",
+      "en": "Nvidia-Led Open Secure AI Alliance Delivers First AI Agent Security Proposals"
+     },
+     "detail": {
+      "zh": "由 Nvidia 牽頭、包含超過 120 家企業的 Open Secure AI 聯盟成立僅一週，便迅速發表針對 AI Agent 攻擊與防護的首份技術建議案，加速推動 Agentic AI 的業界安全標準。",
+      "en": "Just a week after launching, the 120+ member Open Secure AI Alliance spearheaded by Nvidia released technical proposals for defending against AI agent vulnerabilities, accelerating security standardization for autonomous agent workflows."
+     },
+     "source": "https://techcrunch.com/2026/08/04/nvidia-doesnt-mess-around-a-week-after-open-ai-industry-group-formed-its-already-showing-progress/",
+     "tags": [
+      "Nvidia",
+      "Security",
+      "AI Agents"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "美商與烏克蘭簽署 1 億美元合約，升級 5 萬架自殺無人機 AI 自主追蹤",
+      "en": "Ukraine Signs $100M Deal to Equip 50,000 Kamikaze Drones with Autonomous AI"
+     },
+     "detail": {
+      "zh": "烏克蘭取得美國 AI 技術支援，升級其低成本 FPV 自殺無人機，使其能在抗干擾環境下自主鎖定並追蹤目標。此舉象徵邊緣端 AI 晶片在現代軍事領域的大規模邊緣實戰化。",
+      "en": "A $100M contract brings US-developed AI software to 50,000 Ukrainian kamikaze drones, enabling autonomous target recognition resistant to electronic warfare, marking a major scale-up of edge AI in military defense."
+     },
+     "source": "https://arstechnica.com/ai/2026/08/ukraines-drones-get-ai-upgrades-for-kamikaze-strikes-future-swarm-attacks/",
+     "tags": [
+      "Defense",
+      "Edge AI",
+      "Drones"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "Runware 推出可升級模組化資料中心 Sonic Inference Pod，主打靈活推論部署。",
+      "en": "Runware introduces Sonic Inference Pod, a modular data center container designed for flexible AI inference."
+     },
+     "source": "https://techcrunch.com/2026/08/04/is-the-future-of-data-centers-portable-runware-builds-a-pod-to-find-out/"
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 說明近期第三方資安評測事件，並承諾升級模型的安全性測試與審查護欄。",
+      "en": "OpenAI addresses recent third-party cyber evaluation incidents and commits to stronger model testing safeguards."
+     },
+     "source": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models"
+    },
+    {
+     "headline": {
+      "zh": "知名開發者 Steve Yegge 指出其 Agent 框架 Gas Town 在 Claude Opus 4.7 發布後因模型過度自我修復而陷入無限循環。",
+      "en": "Steve Yegge reports his Gas Town agent framework broke on Claude Opus 4.7 due to infinite self-correction loops."
+     },
+     "source": "https://simonwillison.net/2026/Aug/4/steve-yegge/#atom-everything"
+    },
+    {
+     "headline": {
+      "zh": "SpaceX 今年已向 Tesla 採購 3.29 億美元 Megapack 儲能設備，深化兩公司算力與能源合作。",
+      "en": "SpaceX has purchased $329 million worth of Tesla Megapack batteries so far this year to support energy infrastructure."
+     },
+     "source": "https://techcrunch.com/2026/08/04/spacex-has-bought-329m-worth-of-tesla-megapacks-so-far-this-year/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.6-flash",
+ "generated_at": "2026-08-05T07:01+08:00"
+}
