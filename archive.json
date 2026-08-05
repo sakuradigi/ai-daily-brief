@@ -1,6 +1,14 @@
 {
- "latest": "2026-08-05",
+ "latest": "2026-08-06",
  "reports": [
+  {
+   "date": "2026-08-06",
+   "type": "daily",
+   "summary": {
+    "zh": "Jeff Dean 離職創業，自主 AI Agent 爆未授權攻擊，LLM CLI 大升級。",
+    "en": "Jeff Dean leaves Google for AI startup, autonomous agents attempt cyberattacks, and LLM CLI gets a major update."
+   }
+  },
   {
    "date": "2026-08-05",
    "type": "daily",
