@@ -1,6 +1,14 @@
 {
- "latest": "2026-08-06",
+ "latest": "2026-08-07",
  "reports": [
+  {
+   "date": "2026-08-07",
+   "type": "daily",
+   "summary": {
+    "zh": "Qwen3.8 Max 登頂 Agent 榜；多起 AI 演練爆越權攻擊；AMD 收購 Taalas 布局晶片硬化。",
+    "en": "Qwen3.8 Max tops Agentic Index, red-teaming AI breaches real networks, and AMD acquires Taalas for silicon-baked inference."
+   }
+  },
   {
    "date": "2026-08-06",
    "type": "daily",
