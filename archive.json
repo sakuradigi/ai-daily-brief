@@ -1,6 +1,14 @@
 {
- "latest": "2026-08-07",
+ "latest": "2026-08-08",
  "reports": [
+  {
+   "date": "2026-08-08",
+   "type": "daily",
+   "summary": {
+    "zh": "Agent瀏覽器推出與模型成本控管潮",
+    "en": "Cloudflare launches agent browser as tech companies race to curb token spend."
+   }
+  },
   {
    "date": "2026-08-07",
    "type": "daily",

@@ -1,0 +1,295 @@
+{
+ "date": "2026-08-08",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Cloudflare 推出 Kitesurf：專為 AI Agent 設計的 V8 隔離區雲端瀏覽器",
+      "en": "Cloudflare Launches Kitesurf: An Agent-First Browser Running in V8 Isolates"
+     },
+     "detail": {
+      "zh": "Cloudflare 發表雲端託管瀏覽器 Kitesurf，直接在 V8 isolate 環境執行自動化任務。相較於標準 Chromium 能大幅降低算力消耗，為開發者構建瀏覽器 Agent 提供更高吞吐量與低成本的基礎設施。",
+      "en": "Cloudflare introduced Kitesurf, a cloud-hosted browser tailored for AI agents running within V8 isolate environments. It uses significantly less compute than traditional Chromium instances, enabling developers to build browser automation agents with much higher efficiency."
+     },
+     "source": "https://blog.cloudflare.com/kitesurf/",
+     "tags": [
+      "Cloudflare",
+      "AI Agent",
+      "Browser",
+      "Infrastructure"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "DeepSeek V4 Flash 0731 登錄 ARC-AGI 榜單，展現抽象推理進展",
+      "en": "DeepSeek V4 Flash 0731 Posts Results on ARC-AGI Benchmark"
+     },
+     "detail": {
+      "zh": "DeepSeek 最新微型推理模型 Flash 0731 在 ARC-AGI benchmark 取得新成績。展示了輕量級模型在小樣本抽象推理任務上的顯著進步，對邊緣端推理與低成本部署具參考價值。",
+      "en": "DeepSeek's new Flash 0731 model logged official evaluation results on the ARC-AGI benchmark. The performance highlights advancements in lightweight model abstract reasoning, offering promising implications for low-cost and edge deployments."
+     },
+     "source": "https://arcprize.org/results/deepseek-v4-flash-0731",
+     "tags": [
+      "DeepSeek",
+      "ARC-AGI",
+      "Benchmark",
+      "LLM"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Oracle 正式禁止 OpenJDK 提交 AI 生成代碼，維護程式庫合規性",
+      "en": "Oracle Bans AI-Generated Code Submissions from OpenJDK Project"
+     },
+     "detail": {
+      "zh": "Oracle 更新專案規範，禁止任何由 AI 生成的程式碼提交至 OpenJDK 開源專案。此舉旨在防範潛在的版權糾紛與程式碼品質風險，對 Java 生態系貢獻者的開發工作流帶來直接約束。",
+      "en": "Oracle has officially prohibited AI-generated code from being contributed to OpenJDK codebase. The policy change aims to avoid copyright contamination and maintain code quality, directly impacting Java open-source contributors."
+     },
+     "source": "https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim-oracle-isn-t-writing-its-own-code",
+     "tags": [
+      "Oracle",
+      "OpenJDK",
+      "Java",
+      "Policy"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "剖析 vLLM：高吞吐量 LLM 推理系統架構全解析",
+      "en": "Inside vLLM: Architecture Breakdown of High-Throughput LLM Inference Systems"
+     },
+     "detail": {
+      "zh": "深入拆解 vLLM 內部機制，包含 PagedAttention 記憶體管理與動態 Batching 技術。文章提供了針對 LLM 推理伺服器部署優化、減少 KV Cache 碎片化的實戰架構解析。",
+      "en": "A comprehensive technical deep dive detailing vLLM's internal mechanisms, focusing on PagedAttention memory management and dynamic batching. Provides practical architectural insights for optimizing LLM inference server throughput and reducing KV cache fragmentation."
+     },
+     "source": "https://www.aleksagordic.com/blog/vllm",
+     "tags": [
+      "vLLM",
+      "Inference",
+      "Optimization",
+      "Architecture"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Databricks 分享降低 70% AI 編程成本的架構優化經驗",
+      "en": "How Databricks Reduced AI Coding Infrastructure Spend by 70%"
+     },
+     "detail": {
+      "zh": "Databricks 揭露其內部大規模使用 AI 輔助寫程式時，如何透過提示詞壓縮、快取機制與 Model 路由策略削減 70% 支出。為企業級 LLM API 成本管理提供了實用的工程化參考。",
+      "en": "Databricks disclosed engineering strategies used to slash AI coding tool spending by 70% at scale. Tactics include prompt caching, context optimization, and model routing, offering a blueprint for enterprise LLM cost control."
+     },
+     "source": "https://www.databricks.com/blog/managing-ai-coding-costs-scale",
+     "tags": [
+      "Databricks",
+      "Cost Control",
+      "Prompt Engineering",
+      "DevOps"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 研發 300-400 美元硬體裝置，搭載物理元件增強互動感",
+      "en": "OpenAI's Upcoming AI Hardware Reported at $300-$400 with Mechanical Parts"
+     },
+     "detail": {
+      "zh": "報導指出 OpenAI 首款 AI 硬體產品定價約在 300 至 400 美元之間，採用智慧音箱型態並結合可動物理結構。該硬體旨在透過肢體反應增強與語音 Agent 的自然互動體驗。",
+      "en": "Reports indicate OpenAI's first AI hardware device will cost between $300-$400 in a smart speaker form factor featuring physical moving parts. The physical responses are designed to make agentic voice interactions feel more intuitive and lifelike."
+     },
+     "source": "https://arstechnica.com/gadgets/2026/08/openais-expensive-smart-speaker-will-use-moving-parts-to-seem-more-alive/",
+     "tags": [
+      "OpenAI",
+      "Hardware",
+      "Smart Speaker",
+      "Agent"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Rippling 推出 AI Spend Console，追蹤員工與團隊 Token 消耗 ROI",
+      "en": "Rippling Launches AI Spend Console to Track Employee Token Consumption and ROI"
+     },
+     "detail": {
+      "zh": "在經歷數百萬美元的 AI 支出暴增後，Rippling 推出專門用於企業內部追蹤員工與團隊 AI 工具使用額度與 ROI 的控制台。可防止影子 AI 支出過度膨脹並實現精準計費。",
+      "en": "Following an internal surge in AI expenses, Rippling launched the AI Spend Console to track individual and team AI tool usage and ROI. The product helps organizations control unsanctioned token spend and optimize SaaS budgets."
+     },
+     "source": "https://techcrunch.com/2026/08/07/after-rippling-blew-millions-on-ai-in-months-it-built-an-employee-roi-tool/",
+     "tags": [
+      "Rippling",
+      "FinOps",
+      "AI Cost",
+      "Enterprise"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 暫緩 Astra 模型開發，因網路安全能力超標引發疑慮",
+      "en": "OpenAI Pauses Astra Model Development Over Cyber Capability Concerns"
+     },
+     "detail": {
+      "zh": "OpenAI 宣布暫停新模型 Astra 的部分內部開發，原因是該模型在資安評估中展現過強的潛在攻擊能力。在建立更嚴格的安全防護機制之前，公司將保持審慎態度。",
+      "en": "OpenAI has temporarily slowed development on its upcoming Astra model after preliminary evaluations revealed elevated cybersecurity risks. Work is paused until enhanced safety guardrails and evaluation protocols are established."
+     },
+     "source": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities",
+     "tags": [
+      "OpenAI",
+      "Astra",
+      "Cybersecurity",
+      "Safety"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "字節跳動訓練 10 兆參數巨型 AI 模型，對標 Anthropic 旗艦模型",
+      "en": "ByteDance Trains 10-Trillion Parameter Model to Rival Anthropic"
+     },
+     "detail": {
+      "zh": "消息透露字節跳動正在訓練包含 10 兆參數（10 Trillion Parameters）的超大規模模型。此舉旨在增強其底層基礎模型競爭力，直接挑戰 Anthropic 與 OpenAI 的主力產品。",
+      "en": "ByteDance is reportedly training a massive AI model scaling up to 10 trillion parameters. The initiative aims to build a competitive foundation model capable of matching Anthropic and OpenAI's frontier capabilities."
+     },
+     "source": "https://arstechnica.com/ai/2026/08/bytedance-trains-massive-ai-model-in-bid-to-rival-anthropic/",
+     "tags": [
+      "ByteDance",
+      "LLM",
+      "Scale",
+      "Anthropic"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "AllenAI 發布 TutorMoments 研究，探討 AI 導師的最佳介入時機",
+      "en": "AllenAI Releases TutorMoments to Study Optimal Intervention for AI Tutors"
+     },
+     "detail": {
+      "zh": "Allen Institute for AI 發表最新研究成果，評估 LLM 導師在教學過程中應何時引導、何時保持沉默。該基準協助教育類 AI 應用開發者設計更加精準的提示詞與對話策略。",
+      "en": "The Allen Institute for AI published TutorMoments, exploring when AI tutors should offer hints versus holding back. The dataset provides evaluation metrics for building pedagogical agent workflows."
+     },
+     "source": "https://huggingface.co/blog/allenai/tutormoments",
+     "tags": [
+      "AllenAI",
+      "Research",
+      "Education",
+      "Agent Workflow"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "「Token 災難」降臨：企業紛紛限縮非技術人員的 LLM API 額度",
+      "en": "The Tokenpocalypse: Enterprises Scramble to Curb Non-Engineer Token Consumption"
+     },
+     "detail": {
+      "zh": "內部數據顯示非工程人員高頻且無節制的模型呼叫成了企業 Token 帳單主因。許多公司正全面檢討內部 AI 額度分配，推動精準提示詞與低成本模型的替換潮。",
+      "en": "Leaked internal data shows non-engineering employees are driving disproportionate token usage across enterprises. Organizations are now tightening API access controls and migrating non-critical tasks to smaller, cost-effective models."
+     },
+     "source": "https://simonwillison.net/2026/Aug/7/pdfs-are-terrible/#atom-everything",
+     "tags": [
+      "Enterprise",
+      "Token Consumption",
+      "LLM API",
+      "Cost Optim"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Google AI 團隊人事大幅震盪，部分高層與 Jeff Dean 轉任新職",
+      "en": "Google AI Leadership Restructuring Sees Key Executives Transition Out"
+     },
+     "detail": {
+      "zh": "Google AI 團隊進行重大重組，包括資深科學家 Jeff Dean 在內的多位核心人物職務調整或離開原團隊。面對 Anthropic 與 OpenAI 的持續逼近，Google 內部正面臨模型研發與組織效率的重整壓力。",
+      "en": "Google's AI division underwent a major leadership shake-up, with prominent figures including Jeff Dean moving to new roles outside Google DeepMind. The reorganization reflects internal pressure to streamline frontier model development against competitors."
+     },
+     "source": "https://www.theverge.com/podcast/976784/google-deepmind-ai-race-vergecast",
+     "tags": [
+      "Google",
+      "DeepMind",
+      "Leadership",
+      "Industry"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "Airbnb 正式測試 AI 驅動的全新搜尋切換開關功能",
+      "en": "Airbnb Tests New AI-Powered Search Toggle Experience"
+     },
+     "source": "https://techcrunch.com/2026/08/07/airbnb-says-ai-is-helping-it-ship-features-faster-as-it-tests-a-new-search-function/"
+    },
+    {
+     "headline": {
+      "zh": "Roku 推出全 AI 生成內容的 Fairground FAST 直播頻道",
+      "en": "Roku Launches Fairground, a FAST Channel Dedicated to AI-Generated Content"
+     },
+     "source": "https://www.theverge.com/entertainment/976939/roku-fairground-ai-fast-channel"
+    },
+    {
+     "headline": {
+      "zh": "新墨西哥州法院判處 Meta 需額外支付 5.67 億美元兒童安全罰款",
+      "en": "New Mexico Court Orders Meta to Pay Additional $567M Fine in Child Safety Case"
+     },
+     "source": "https://techcrunch.com/2026/08/07/new-mexico-court-orders-meta-to-pay-additional-567m-in-child-safety-case/"
+    },
+    {
+     "headline": {
+      "zh": "Codex Desktop 搭配 GPT-5.6 Sol Ultra 展示多 Agent 遊戲全自動生成能力",
+      "en": "Codex Desktop with GPT-5.6 Sol Ultra Demonstrates Multi-Agent Game Generation"
+     },
+     "source": "https://simonwillison.net/2026/Aug/7/moonlight-mayhem/#atom-everything"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.6-flash",
+ "generated_at": "2026-08-08T07:01+08:00"
+}
