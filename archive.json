@@ -1,6 +1,14 @@
 {
- "latest": "2026-08-08",
+ "latest": "2026-08-09",
  "reports": [
+  {
+   "date": "2026-08-09",
+   "type": "daily",
+   "summary": {
+    "zh": "OpenAI事故細節公開，Claude Code預設改為Auto，DeepMind發布WeatherNext。",
+    "en": "OpenAI-HF incident timeline revealed, Claude Code defaults to Auto mode, and DeepMind introduces WeatherNext."
+   }
+  },
   {
    "date": "2026-08-08",
    "type": "daily",

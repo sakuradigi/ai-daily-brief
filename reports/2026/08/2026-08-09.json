@@ -1,0 +1,244 @@
+{
+ "date": "2026-08-09",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Claude Code 將於 8/14 起預設開啟 Auto Mode，大幅降低人機互動門檻",
+      "en": "Claude Code to Make Auto Mode Default Across Paid Plans Starting Aug 14"
+     },
+     "detail": {
+      "zh": "Anthropic 宣佈針對 Pro、Max 與 Team 方案用戶，新會話將預設啟用 Auto Mode。團隊對其安全性與提示詞注入防範能力深具信心，將直接改變終端開發者的工作流程體驗。",
+      "en": "Anthropic is confident enough in Claude Code's safety mechanisms against prompt injection to set Auto mode as default for Pro, Max, and Team plans starting August 14th, shifting developers toward autonomous execution."
+     },
+     "source": "https://simonwillison.net/2026/Aug/8/auto-mode/#atom-everything",
+     "tags": [
+      "Claude Code",
+      "Developer Tools",
+      "Anthropic"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 於 Black Hat 解密「對 Hugging Face 誤發 DDoS」完整時間線",
+      "en": "OpenAI Details Black Hat Timeline of Accidental Hugging Face Incident"
+     },
+     "detail": {
+      "zh": "OpenAI 在 Black Hat 安全會議公開事件全貌：今年 5 月啟動未發布實驗模型的訓練與獎勵訊號評估時，因無意間調用外部 API 導致 Hugging Face 遭遇巨量請求。最終 OpenAI 透過社群討論才意識到自身即為流量來源。",
+      "en": "OpenAI revealed at Black Hat that an experimental training run in May inadvertently flooded Hugging Face via external API calls, with OpenAI only realizing they caused the outage after seeing online community reports."
+     },
+     "source": "https://simonwillison.net/2026/Aug/7/openai-timeline/",
+     "tags": [
+      "OpenAI",
+      "Hugging Face",
+      "Postmortem"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "DeepMind 發佈 WeatherNext 氣象模型，氣旋預測取得突破進展",
+      "en": "DeepMind Unveils WeatherNext AI Model for Breakthrough Cyclone Forecasting"
+     },
+     "detail": {
+      "zh": "DeepMind 發表 WeatherNext AI 氣象預測模型，能以更低的資料解析度需求完成高準確度的氣旋預報，成功為氣象預報員爭取額外一日的預警應變時間。",
+      "en": "DeepMind's WeatherNext achieves significant accuracy breakthroughs in forecasting tropical cyclones while operating on lower-resolution input data, offering forecasters an extra day of early warning time."
+     },
+     "source": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/",
+     "tags": [
+      "DeepMind",
+      "WeatherNext",
+      "AI Research"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Gentoo Bugzilla 因遭受巨量 AI Bot 爬蟲濫用被迫關閉存取",
+      "en": "Gentoo Bugzilla Suspends Access Due to AI Bot Scraper Overload"
+     },
+     "detail": {
+      "zh": "Gentoo 社群維護者透露，由於未經控制的 AI 數據抓取爬蟲對 Bugzilla 發動高頻率請求，導致伺服器負載過高，團隊不得不臨時關閉 Bugzilla 服務。這凸顯了 LLM 訓練資料採集對開源基礎設施的負面衝擊。",
+      "en": "Gentoo infrastructure team had to close Bugzilla access after aggressive AI training scrapers overwhelmed their servers, highlighting the growing operational burden placed on open-source projects by data harvesting."
+     },
+     "source": "https://social.treehouse.systems/@mgorny/117058483039362779",
+     "tags": [
+      "Open Source",
+      "Gentoo",
+      "Web Scraping"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 技術簡報曝光 RL 訓練階段評估機制的潛在網路風險",
+      "en": "OpenAI Briefing Reveals Potential Network Risks During RL Model Training"
+     },
+     "detail": {
+      "zh": "根據 OpenAI 公開的事件檢討，實驗模型在強化學習（RL）訓練流程中，會利用「獎勵訊號」評判表現，過程中模型獲得了自主訪問外網 API 的能力，技術社群正高度關注未受限 Agent 的存取邊界。",
+      "en": "Post-incident analysis shows OpenAI's unreleased model was issuing live API calls during reward-signal evaluation in training, raising technical concerns over unrestricted agent environments."
+     },
+     "source": "https://simonwillison.net/2026/Aug/8/now-we-have-a-timeline-of-the-openai-accidental-attack-against-h/#atom-everything",
+     "tags": [
+      "AI Safety",
+      "RL",
+      "OpenAI"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Rippling 因 AI 支出激增而開發「AI 支出主控台」供企業追蹤 ROI",
+      "en": "Rippling Builds AI Spend Console After Facing Millions in Internal AI Costs"
+     },
+     "detail": {
+      "zh": "HR 平台新創 Rippling 在數月內耗費數百萬美元 AI API 費用後，內部開發並推出了「AI Spend Console」，可精準追蹤個別員工與團隊的 AI 訂閱與 API 成本，協助企業評估投資回報率。",
+      "en": "After spending millions on AI API usage internally, Rippling released the AI Spend Console to help organizations monitor employee-level AI consumption and measure productivity ROI."
+     },
+     "source": "https://techcrunch.com/2026/08/07/after-rippling-blew-millions-on-ai-in-months-it-built-an-employee-roi-tool/",
+     "tags": [
+      "Enterprise AI",
+      "FinOps",
+      "Rippling"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Claude Code 預設 Auto 模式引入安全機制，防止命令列遭惡意控制",
+      "en": "Claude Code Mitigates Terminal Risk in Auto Mode Push"
+     },
+     "detail": {
+      "zh": "隨著 Claude Code 將 Auto Mode 設為預設，Anthropic 針對提示詞注入（Prompt Injection）攻擊進行強化防護，確保 LLM 在終端環境執行指令時不會被惡意 Repo 或網頁內容誘導執行危險操作。",
+      "en": "With Auto Mode becoming the default in Claude Code, Anthropic is highlighting its safety safeguards designed to prevent command-injection attacks when processing external code or context."
+     },
+     "source": "https://simonwillison.net/2026/Aug/8/auto-mode/#atom-everything",
+     "tags": [
+      "Claude Code",
+      "AI Security",
+      "LLM Agent"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 坦承因 Astra 模型觸及「資安臨界值」而放緩開發進度",
+      "en": "OpenAI Slows Development of 'Astra' Model Over Cyber Threat Threshold"
+     },
+     "detail": {
+      "zh": "OpenAI 指出尚在開發中的未公開模型 Astra 已達到「關鍵網路安全閾值」，代表該模型具備自主識別與執行對真實世界系統進行網路攻擊的能力，因而決定主動放慢研發步調。",
+      "en": "OpenAI slowed development of its unreleased 'Astra' model after it crossed a critical cybersecurity threshold, demonstrating autonomous capabilities in identifying and executing exploits against protected systems."
+     },
+     "source": "https://techcrunch.com/2026/08/07/openai-says-it-slowed-astra-model-development-over-security-concerns/",
+     "tags": [
+      "OpenAI",
+      "AI Safety",
+      "Cybersecurity"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Ars Technica：WeatherNext 展現高效能氣象預測，顯著減輕算力負擔",
+      "en": "Ars Technica Highlights DeepMind's WeatherNext Low-Res Efficiency"
+     },
+     "detail": {
+      "zh": "傳統數值天氣預報極度依賴超級電腦與高解析度網格，WeatherNext 證明透過機器學習，即使輸入低解析度數據也能維持優異的極端氣候預測精度，大幅降低氣象預測算力門檻。",
+      "en": "Unlike resource-heavy traditional numerical models, DeepMind's WeatherNext maintains high cyclone prediction accuracy even when fed with reduced-resolution inputs, substantially lowering compute requirements."
+     },
+     "source": "https://arstechnica.com/science/2026/08/deepminds-hurricane-model-bought-forecasters-an-extra-day/",
+     "tags": [
+      "DeepMind",
+      "WeatherNext",
+      "ML Efficiency"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "亞馬遜為西德州 AI 資料中心投資興建天然氣發電廠引發環保爭議",
+      "en": "Amazon Backs Gas Power Plant for Texas Data Center, Sparking Climate Concerns"
+     },
+     "detail": {
+      "zh": "為了滿足 AI 資料中心龐大的電力需求，亞馬遜投資建置位於德州佩科斯郡的天然氣發電廠，該設施可能成為美國單一最大的溫室氣體排放源之一，引發科技業能源轉型疑慮。",
+      "en": "To power its West Texas AI data center, Amazon is investing in an on-site natural gas power plant that could reportedly become one of the largest single industrial carbon emitters in the United States."
+     },
+     "source": "https://techcrunch.com/2026/08/08/planned-amazon-data-center-could-become-the-biggest-climate-polluter-in-the-u-s/",
+     "tags": [
+      "Amazon",
+      "Data Center",
+      "Energy"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 收購 AI 簡報製作新創 NextSlide，團隊將加入 ChatGPT 業務",
+      "en": "OpenAI Acquires AI Presentation Startup NextSlide to Boost ChatGPT Features"
+     },
+     "source": "https://techcrunch.com/2026/08/08/openai-acquires-presentation-startup-nextslide/"
+    },
+    {
+     "headline": {
+      "zh": "丹麥防範學生利用 AI 代寫作業，全面要求書面報告須搭配現場口試",
+      "en": "Denmark Mandates Oral Defenses for Student Papers to Curb AI Cheating"
+     },
+     "source": "https://mezha.net/eng/bukvy/ca117584_denmark_requires_oral/"
+    },
+    {
+     "headline": {
+      "zh": "亞馬遜巨型 AI 數據中心發電廠規劃案遭紐約時報與 Verge 曝光碳排疑慮",
+      "en": "The Verge Reports Amazon's New Texas Data Center Power Plant May Be Nation's Top Polluter"
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/977124/amazon-data-center-worst-polluting-power-plant"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.6-flash",
+ "generated_at": "2026-08-09T07:01+08:00"
+}
