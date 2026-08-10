@@ -1,6 +1,14 @@
 {
- "latest": "2026-08-10",
+ "latest": "2026-08-11",
  "reports": [
+  {
+   "date": "2026-08-11",
+   "type": "daily",
+   "summary": {
+    "zh": "Meta 發布 Muse Glimmer，Docker 推 AI 沙盒",
+    "en": "Meta releases Muse Glimmer 30B model; Docker introduces AI Sandboxes."
+   }
+  },
   {
    "date": "2026-08-10",
    "type": "weekly",
