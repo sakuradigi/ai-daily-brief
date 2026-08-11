@@ -1,6 +1,14 @@
 {
- "latest": "2026-08-11",
+ "latest": "2026-08-12",
  "reports": [
+  {
+   "date": "2026-08-12",
+   "type": "daily",
+   "summary": {
+    "zh": "Meta開源Muse模型；商用API推理軌跡遭洩漏。",
+    "en": "Meta releases Muse Glimmer open model while security research exposes reasoning trace leakage in commercial LLM APIs."
+   }
+  },
   {
    "date": "2026-08-11",
    "type": "daily",

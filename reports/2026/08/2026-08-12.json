@@ -1,0 +1,295 @@
+{
+ "date": "2026-08-12",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "商用 LLM API 遭破解：利用重放攻擊即可提煉高階模型隱藏的 Reasoning Traces",
+      "en": "Stealing Reasoning Traces from Proprietary LLM APIs via Replay Attacks"
+     },
+     "detail": {
+      "zh": "研究人員發現 Anthropic、OpenAI 及 Google API 回傳的加密鏈式思考（CoT）區塊可跨帳號與模型重放。將高階模型的加密軌跡輸入弱模型後進行越獄（Jailbreak），能以極低成本還原出強模型的明文推理過程，對現有 API 隱私與智財防護提出嚴峻挑戰。",
+      "en": "Security researchers discovered that encrypted chain-of-thought blocks returned by major LLM APIs can be replayed into weaker models to extract the original frontier model's hidden plaintext reasoning, exposing critical flaws in current API privacy implementations."
+     },
+     "source": "https://stolen-thoughts.com/",
+     "tags": [
+      "Security",
+      "LLM API",
+      "Reasoning Traces",
+      "Jailbreak"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Meta 推出 Muse Glimmer 30B 開源模型，採用 Apache 2.0 授權且專注 Agent 任務",
+      "en": "Meta Releases Muse Glimmer 30B Open Model Under Apache 2.0 License"
+     },
+     "detail": {
+      "zh": "Meta 擺脫過去爭議性的 Llama 授權條款，以真正的 Apache 2.0 商業友善協議開源 Muse Glimmer 30B。該模型針對 DeepSearch QA、MCP-Atlas 及 SWE-Bench 等 Agent 框架進行優化，大幅提升本地端 AI 代理人的實務執行成功率。",
+      "en": "Meta released Muse Glimmer, a 30B open-weights model under the clean Apache 2.0 license, optimized specifically for end-to-end agentic tasks across benchmarks like SWE-Bench and MCP-Atlas."
+     },
+     "source": "https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/#atom-everything",
+     "tags": [
+      "Open Source",
+      "LLM",
+      "Meta",
+      "Apache 2.0",
+      "AI Agent"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 正式推出原生 Linux 版 ChatGPT 桌面應用程式",
+      "en": "OpenAI Launches Native ChatGPT Desktop App for Linux"
+     },
+     "detail": {
+      "zh": "在 Mac 與 Windows 版本發布許久後，OpenAI 正式為 Linux 作業系統帶來專屬的 ChatGPT 桌面端。工程師現在能在 Linux 環境直接使用全域快捷鍵調用 ChatGPT，並更順暢地整合至本地 CLI 與開發工作流程中。",
+      "en": "OpenAI has officially launched the native ChatGPT desktop app for Linux, providing Linux developer users with system-wide shortcuts and tighter integration into their local engineering setups."
+     },
+     "source": "https://techcrunch.com/2026/08/11/openai-launches-chatgpt-desktop-app-for-linux/",
+     "tags": [
+      "OpenAI",
+      "ChatGPT",
+      "Linux",
+      "Developer Tools"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Redis 創辦人 antirez 開源 h3.c：專為 Apple Silicon 設計的 MiniMax-H3 推理引擎",
+      "en": "antirez Releases h3.c: Native MiniMax-H3 Inference for Apple Silicon"
+     },
+     "detail": {
+      "zh": "Salvatore Sanfilippo (antirez) 以純 C 語言與 Metal API 編寫了 h3.c，提供在高階 M 晶片上原生執行 MiniMax-H3 模型的高效能推理環境。專案注重極簡架構與零依賴，方便開發者直接嵌入或進行底層二次開發。",
+      "en": "Redis creator antirez released h3.c, a minimal, zero-dependency C/Metal inference engine tailored for running MiniMax-H3 models natively on Apple Silicon chips."
+     },
+     "source": "https://github.com/antirez/h3.c",
+     "tags": [
+      "Apple Silicon",
+      "Metal",
+      "Inference Engine",
+      "C"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "突破 macOS 虛擬機器 GPU 限制：llama.cpp 實現 GPU 直通與高效能推理",
+      "en": "GPU Passthrough in macOS VMs Boosts llama.cpp Inference Performance"
+     },
+     "detail": {
+      "zh": "該研究展示如何在 macOS 虛擬機器中實作 GPU 虛擬化與直通技術，大幅降低 llama.cpp 在虛擬環境下的效能損耗。這項突破讓習慣以沙盒或容器隔離部署本地 LLM 服務的開發者能兼具安全性與硬體加速。",
+      "en": "Technical guide and benchmark detailing GPU passthrough methods for macOS VMs, significantly boosting llama.cpp LLM inference throughput inside sandboxed virtual environments."
+     },
+     "source": "https://github.com/trycua/cua/blob/main/blog/gpu-passthrough-macos-vms.md",
+     "tags": [
+      "macOS",
+      "Virtualization",
+      "llama.cpp",
+      "GPU Passthrough"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "逆向拆解 GitHub Copilot：中間人代理揭露 IDE 背後 API 請求與 Context 封裝細節",
+      "en": "Reverse Engineering GitHub Copilot Traffic via MitM Proxy"
+     },
+     "detail": {
+      "zh": "開發者透過搭建 MitM Proxy 攔截並解析 Copilot 外掛傳輸的網路封包，完整揭露了 IDE 如何將程式碼上下文、開檔紀錄與系統 Prompt 封裝發送給後端 LLM。成果為打造自研擴充套件及維護資安提供了第一手參考。",
+      "en": "A detailed security study using a MitM proxy to inspect GitHub Copilot traffic reveals exact prompt structures, context bundling techniques, and API payload specifications sent by the IDE extension."
+     },
+     "source": "https://www.lighthousenewsletter.com/p/i-put-github-copilot-behind-a-mitm",
+     "tags": [
+      "GitHub Copilot",
+      "Reverse Engineering",
+      "IDE",
+      "DevTools"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI Daybreak 資安專用模型登陸 AWS Bedrock 雲端平台",
+      "en": "OpenAI Daybreak Cybersecurity Models Now Available on AWS Bedrock"
+     },
+     "detail": {
+      "zh": "OpenAI 與 AWS 合作，將專為網路安全防禦訓練的 Daybreak 模型上架 Amazon Bedrock。企業開發者可直接透過 AWS API 將自動化漏洞分析與威脅防禦能力整合至現有的 Cloud SOC 工作流中。",
+      "en": "OpenAI and AWS integrated the Daybreak cybersecurity-focused AI models into Amazon Bedrock, allowing enterprise engineers to plug automated vulnerability analysis directly into cloud security infrastructure."
+     },
+     "source": "https://openai.com/index/daybreak-models-are-now-available-on-aws",
+     "tags": [
+      "OpenAI",
+      "AWS Bedrock",
+      "Cybersecurity",
+      "Enterprise API"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 展開 ChatGPT 免費版廣告測試，強調不影響模型回答獨立性",
+      "en": "OpenAI Begins Testing Ads in ChatGPT Free Tier"
+     },
+     "detail": {
+      "zh": "為補貼免費版龐大的算力成本，OpenAI 開始在 ChatGPT 介面中測試贊助廣告。官方聲明廣告將有明確標記，且用戶對話數據不會用於廣告精準投放，模型輸出的生成內容亦不會受廣告商干擾。",
+      "en": "OpenAI has begun testing clearly labeled advertisements within ChatGPT's free tier to cover compute costs, asserting that ads will not influence model outputs or compromise user privacy."
+     },
+     "source": "https://openai.com/index/testing-ads-in-chatgpt",
+     "tags": [
+      "OpenAI",
+      "ChatGPT",
+      "Monetization",
+      "Ads"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Anthropic 未公開實驗模型於「黎曼猜想」取得推理階段性突破",
+      "en": "Unreleased Anthropic Model Makes Progress on Riemann Hypothesis"
+     },
+     "detail": {
+      "zh": "Anthropic 透露其內部尚未發布的新一代推理模型，在嘗試解析百年數學難題「黎曼猜想」時推導出新型態的證明路徑。雖然尚未完整證明，但展示了前沿 LLM 在符號邏輯與高等數學推導上的驚人潛力。",
+      "en": "Anthropic disclosed that an unreleased internal frontier model made verifiable mathematical progress on the Riemann hypothesis, highlighting rapid advances in LLM-driven complex logical reasoning."
+     },
+     "source": "https://techcrunch.com/2026/08/11/an-unreleased-anthropic-model-made-progress-on-one-of-maths-biggest-unsolved-problems/",
+     "tags": [
+      "Anthropic",
+      "Mathematics",
+      "Reasoning Models",
+      "Research"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "IBM 發布 ALTK Evolve：以更少 Token 消耗完成複雜 AI Agent 任務",
+      "en": "IBM Releases ALTK Evolve SLDD for High-Efficiency Agent Workflows"
+     },
+     "detail": {
+      "zh": "IBM 研究團隊發布 SLDD 演算法與 ALTK 框架，透過優化 Agent 的狀態機與動作循環，在維持高任務成功率的前提下大幅降低推理所需的 Token 總數，能顯著減輕 API 呼叫成本與延遲。",
+      "en": "IBM Research introduced ALTK Evolve SLDD, a framework optimizing context efficiency for agentic workflows to complete multi-step tasks with drastically reduced token consumption."
+     },
+     "source": "https://huggingface.co/blog/ibm-research/altk-evolve-sldd",
+     "tags": [
+      "IBM Research",
+      "AI Agent",
+      "Token Optimization",
+      "Hugging Face"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "xAI 前共同創辦人成立的新創 River AI 融資 11 億美元",
+      "en": "Ex-xAI Co-founder's River AI Raises $1.1B Led by General Catalyst"
+     },
+     "detail": {
+      "zh": "由 xAI 共同創辦人 Igor Babuschkin 成立僅兩個月的新創 River AI，獲得由 General Catalyst 領投的 11 億美元鉅額融資。該公司將集中資源打造具備極高執行力的新一代個人 AI Agent 架構。",
+      "en": "River AI, founded two months ago by ex-xAI co-founder Igor Babuschkin, secured a massive $1.1 billion funding round led by General Catalyst to build next-generation personal agent architectures."
+     },
+     "source": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai/",
+     "tags": [
+      "Venture Capital",
+      "River AI",
+      "xAI",
+      "AI Agent"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 高層持續變動：前 COO Brad Lightcap 宣布離職創業",
+      "en": "Longtime OpenAI COO Brad Lightcap Steps Down to Launch New Venture"
+     },
+     "detail": {
+      "zh": "在 OpenAI 任職長達八年的前營運長 Brad Lightcap 正式宣布離職。作為過去推動 OpenAI 商業化與企業級市場的核心老將，其離開標誌著公司管理團隊的又一次重組。",
+      "en": "Longtime OpenAI COO Brad Lightcap announced his departure after an eight-year tenure to start something new, marking another major executive leadership transition at the AI giant."
+     },
+     "source": "https://techcrunch.com/2026/08/11/brad-lightcap-openais-longtime-coo-is-leaving-to-start-something-new/",
+     "tags": [
+      "OpenAI",
+      "Tech Industry",
+      "Leadership"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "Google Gemini 總用戶數突破 10 億大關，語音互動功能使用率達 63%",
+      "en": "Google Gemini reaches 1B users, with 63% using voice features"
+     },
+     "source": "https://techcrunch.com/2026/08/11/googles-gemini-app-surges-to-one-billion-users/"
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 全面實施 AI 生成內容隱形水印與 C2PA 中繼資料標籤以配合歐盟法規",
+      "en": "Anthropic adds machine-readable watermarks and metadata to Claude generations"
+     },
+     "source": "https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content"
+    },
+    {
+     "headline": {
+      "zh": "資安團隊僅用不到 20 次 AI Prompt 提示即成功挖出 Zoom 零日漏洞",
+      "en": "Security researchers discover major Zoom flaw using fewer than 20 AI prompts"
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/977909/zoom-vulnerability-ai-attack"
+    },
+    {
+     "headline": {
+      "zh": "Spotify 將全面標註「AI 藝人」並預設將其自演算法推薦清單中剔除",
+      "en": "Spotify to label 'AI Personas' and exclude their tracks from recommendation algorithms"
+     },
+     "source": "https://techcrunch.com/2026/08/11/spotify-will-label-ai-persona-profiles-and-exclude-their-music-from-recommendations/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.6-flash",
+ "generated_at": "2026-08-12T07:02+08:00"
+}
