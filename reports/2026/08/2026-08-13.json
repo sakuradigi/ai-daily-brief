@@ -1,0 +1,283 @@
+{
+ "date": "2026-08-13",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "DeepSeek V4 Pro 上線 OpenRouter",
+      "en": "DeepSeek V4 Pro 0813 Lands on OpenRouter"
+     },
+     "detail": {
+      "zh": "DeepSeek 推出了最新的 V4 Pro 0813 模型更新，現已透過 OpenRouter API 開放呼叫。開發者可直接接入進行推理測試，評估其在程式碼生成與複雜邏輯推理上的升級效能。",
+      "en": "DeepSeek has released the DeepSeek V4 Pro 0813 model update, now available via OpenRouter API. Developers can immediately integrate and benchmark its upgraded performance in code generation and complex reasoning."
+     },
+     "source": "https://openrouter.ai/deepseek/deepseek-v4-pro-0813",
+     "tags": [
+      "DeepSeek",
+      "LLM",
+      "API"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Grok 4.6 發布：人工智慧綜合指數得分達 61",
+      "en": "Grok 4.6 Released, Scoring 61 on Artificial Analysis Index"
+     },
+     "detail": {
+      "zh": "xAI 推出最新旗艦模型 Grok 4.6，第三方機構 Artificial Analysis 發布首波基準測試，綜合指數取得 61 分。該版本針對長文本處理與 Agent 工具呼叫能力進行了顯著強化。",
+      "en": "xAI has launched Grok 4.6, with initial third-party evaluation by Artificial Analysis recording a score of 61. This release significantly improves long-context processing and agentic tool-calling capabilities."
+     },
+     "source": "https://artificialanalysis.ai/articles/grok-4-6-benchmarks-and-analysis",
+     "tags": [
+      "xAI",
+      "Grok",
+      "Benchmark"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "研究揭露：可重放 API 加密區塊還原 LLM 隱藏推理鏈",
+      "en": "Research Reveals Replaying API Blocks Steals Hidden LLM Reasoning Traces"
+     },
+     "detail": {
+      "zh": "最新研究發現，Anthropic、OpenAI 與 Google 返回的加密思考過程（Chain-of-Thought）區塊可在不同會話與模型間重放。攻擊者能將強大模型的思考軌跡重放至較弱模型，從而解密並還原未公開的完整推理鏈內容。",
+      "en": "A new research paper reveals that encrypted reasoning blocks returned by OpenAI, Anthropic, and Google APIs can be replayed into weaker models. This allows attackers to jailbreak the weaker model and extract the frontier model's hidden reasoning traces in plaintext."
+     },
+     "source": "https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces/",
+     "tags": [
+      "Security",
+      "LLM",
+      "API"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Liquid AI 推出 LFM2.5-VL-3B：專為邊緣端打造的高效視覺模型",
+      "en": "Liquid AI Releases LFM2.5-VL-3B for High-Performance Edge Vision"
+     },
+     "detail": {
+      "zh": "Liquid AI 發布了 30 億參數的輕量化視覺語言模型 LFM2.5-VL-3B。該模型在極低的推論延遲與記憶體佔用下，展現出高水準的圖文理解能力，適合直接部署於邊緣裝置或終端設備。",
+      "en": "Liquid AI introduced LFM2.5-VL-3B, a 3B parameter vision-language model. It balances low latency and memory usage while delivering strong multimodal capabilities for edge and local deployment."
+     },
+     "source": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-3b",
+     "tags": [
+      "VLM",
+      "Edge AI",
+      "Open Source"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "ShieldFont：利用動態字型防止 AI 網頁爬蟲亂擷取資料",
+      "en": "ShieldFont Protects Web Content from AI Scrapers Using Custom Fonts"
+     },
+     "detail": {
+      "zh": "ShieldFont 是一種新型防爬技術，透過打亂向量字型中的字元對應表，讓人類讀者正常閱讀內容，但爬蟲擷取到的純文字卻是亂碼。這提供給網站開發者一種對抗無授權 AI 訓練集採集的新手段。",
+      "en": "ShieldFont scrambles font character mappings so human users see rendered text correctly while AI scrapers extract useless nonsense. It gives web developers a new defensive tool against unauthorized dataset scraping."
+     },
+     "source": "https://arstechnica.com/ai/2026/08/new-font-turns-ordinary-webpages-into-nonsense-for-ai-scrapers/",
+     "tags": [
+      "Web Dev",
+      "Anti-Scraping",
+      "Security"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "AllenAI 發布 OlmoEarth Embeddings 專用地理空間模型",
+      "en": "AllenAI Introduces OlmoEarth Embeddings for Geospatial Analysis"
+     },
+     "detail": {
+      "zh": "艾倫人工智慧研究所（AllenAI）推出 OlmoEarth Studio 向量導出功能，允許開發者導出高品質的地理與衛星影像特徵向量。這有助於加速 downstream 地理資訊分析與環境監測應用的開發。",
+      "en": "AllenAI introduced custom embedding exports from OlmoEarth Studio, enabling researchers and developers to extract high-quality geospatial vector representations for downstream satellite and environmental analytics."
+     },
+     "source": "https://huggingface.co/blog/allenai/olmoearth-embeddings",
+     "tags": [
+      "Embeddings",
+      "Geospatial",
+      "AllenAI"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "SpaceXAI 推出 Grok Bot：能跨平台執行的雲端 AI 協作夥伴",
+      "en": "SpaceXAI Launches Grok Bot Beta as Autonomous Workplace AI Teammates"
+     },
+     "detail": {
+      "zh": "SpaceXAI 推出 Grok Bot Beta 版，這款全天候運作的 Agent 能在專屬雲端環境中登入既有軟體與網站，自主完成多步驟的複雜工作流程，如同獨立運作的 AI 團隊成員。",
+      "en": "SpaceXAI has introduced Grok Bot in beta, offering autonomous AI agents that run in isolated cloud environments. They can sign into existing work applications and perform multi-step digital workflows independently."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/978666/spacexai-grok-bot-ai-agent-beta-launch",
+     "tags": [
+      "Grok",
+      "Agents",
+      "Automation"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Discovered Materials (YC P26)：利用自主 Agent 加速新材料研發",
+      "en": "Discovered Materials Uses Autonomous AI Agents for Material Science"
+     },
+     "detail": {
+      "zh": "YC 新創公司 Discovered Materials 發表新平台，透過建構特化 AI Agent 模擬晶體結構與化學反應，自動化執行新材料的篩選與合成推演，大幅縮短材料科學的研發週期。",
+      "en": "YC-backed Discovered Materials announced its AI agent system designed to simulate chemical reactions and crystal structures, accelerating the discovery and screening of next-generation physical materials."
+     },
+     "source": "https://discoveredmaterials.com/research/",
+     "tags": [
+      "YC",
+      "Material Science",
+      "Agents"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "騰訊混元團隊推出 Hunyuan3D-WorldClaw：大規模開放 3D 世界生成 Agent",
+      "en": "Tencent Hunyuan Introduces Hunyuan3D-WorldClaw for Scalable 3D World Generation"
+     },
+     "detail": {
+      "zh": "騰訊混元開源 Hunyuan3D-WorldClaw 框架，結合大型語言模型與 3D 生成管線，實現自動化、可擴展的大規模 3D 開放世界場景建構，大幅降低 3D 遊戲與虛擬環境開發門檻。",
+      "en": "Tencent's Hunyuan team presented Hunyuan3D-WorldClaw, an agentic framework leveraging LLMs and 3D generation pipelines to programmatically generate scalable 3D open worlds for interactive environments."
+     },
+     "source": "https://tencent-hunyuan.github.io/Hunyuan3D-WorldClaw/",
+     "tags": [
+      "3D",
+      "Hunyuan",
+      "Generative AI"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Google DeepMind 發表 SL2T 手語轉文字 AI 模型",
+      "en": "Google DeepMind Unveils Sign-Language-to-Text Model (SL2T)"
+     },
+     "detail": {
+      "zh": "DeepMind 開發出手語轉文字（SL2T）突破性模型，能精準解析連續手語動作並即時輸出文字，為聽障使用者提供更流暢的即時溝通體驗。",
+      "en": "Google DeepMind introduced its Sign-Language-to-Text (SL2T) breakthrough model, enabling real-time continuous sign language recognition and translation into text for accessible communications."
+     },
+     "source": "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/",
+     "tags": [
+      "DeepMind",
+      "Accessibility",
+      "Computer Vision"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Twitch 開放創作者手動選擇退出 Amazon AI 模型訓練",
+      "en": "Twitch Introduces Opt-Out Controls for Amazon AI Model Training"
+     },
+     "detail": {
+      "zh": "Amazon 旗下直播平台 Twitch 推出新機制，允許實況主將其影片、剪輯與聊天室紀錄排除於 Amazon 生成式 AI 模型未來的訓練數據之外，改善創作者資料隱私爭議。",
+      "en": "Amazon's Twitch platform now allows creators to opt out of having their live streams, VODs, clips, and chat logs used to train future Amazon generative AI models."
+     },
+     "source": "https://www.theverge.com/tech/979112/twitch-streamers-can-now-opt-out-from-training-amazons-ai",
+     "tags": [
+      "Twitch",
+      "Amazon",
+      "Privacy"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "反思：AI 輔助程式設計是否正在消除軟體工程的中產階層？",
+      "en": "Is AI Coding Removing the Middle Class of Software Engineering?"
+     },
+     "detail": {
+      "zh": "社群深度討論指出，過度依賴 AI 程式碼生成可能導致工程團隊出現斷層——缺乏深度除錯能力與底層架構知識的中階工程師漸遭淘汰，提醒團隊仍需維持程式碼審查與系統機制的掌控。",
+      "en": "A viral essay discusses how heavy reliance on AI coding tools threatens middle-tier software engineers who rely on AI without understanding underlying mechanics, sparking debate on long-term engineering skill retention."
+     },
+     "source": "https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html",
+     "tags": [
+      "Software Engineering",
+      "Developer Productivity",
+      "Career"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "知名 AI Python 套件遭供應鏈攻擊，數 TB 系統憑證遭竊外洩",
+      "en": "Terabytes of credentials leaked in massive supply-chain attack on AI package"
+     },
+     "source": "https://arstechnica.com/security/2026/08/terabytes-of-credentials-leaked-in-massive-supply-chain-attack/"
+    },
+    {
+     "headline": {
+      "zh": "資安機構警示：有惡意用戶冒用 ClaudeBot 等 AI 爬蟲標頭進行大規模漏洞掃描",
+      "en": "Mass vulnerability scans detected spoofing legitimate AI bots like ClaudeBot"
+     },
+     "source": "https://knownagents.com/insights"
+    },
+    {
+     "headline": {
+      "zh": "AI 程式碼生成新星 Cognition 傳將以 400 億美元估值進行新一輪融資",
+      "en": "AI coding startup Cognition reportedly in talks to raise funding at a $40B valuation"
+     },
+     "source": "https://techcrunch.com/2026/08/12/ai-coding-startup-cognition-reportedly-already-in-talks-to-raise-at-40b-valuation/"
+    },
+    {
+     "headline": {
+      "zh": "宣稱「100% 真人撰寫與同行審查」的研究機構遭踢爆審稿流程全由 AI 完成",
+      "en": "Company promising '100% human-written, never AI' medical peer review found using entirely AI"
+     },
+     "source": "https://www.404media.co/company-offering-100-human-written-never-ai-peer-review-is-entirely-ai/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.6-flash",
+ "generated_at": "2026-08-13T07:01+08:00"
+}

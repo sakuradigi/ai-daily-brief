@@ -1,6 +1,14 @@
 {
- "latest": "2026-08-12",
+ "latest": "2026-08-13",
  "reports": [
+  {
+   "date": "2026-08-13",
+   "type": "daily",
+   "summary": {
+    "zh": "DeepSeek V4 Pro 登場與 Grok 4.6 基準報告",
+    "en": "DeepSeek V4 Pro launched alongside Grok 4.6 benchmark results."
+   }
+  },
   {
    "date": "2026-08-12",
    "type": "daily",
