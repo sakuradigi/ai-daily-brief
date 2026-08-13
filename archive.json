@@ -1,6 +1,14 @@
 {
- "latest": "2026-08-13",
+ "latest": "2026-08-14",
  "reports": [
+  {
+   "date": "2026-08-14",
+   "type": "daily",
+   "summary": {
+    "zh": "DeepSeek 釋出 V4 Pro 開源權重，Gemini 3.7 Flash 突襲登場",
+    "en": "DeepSeek releases V4 Pro open weights as Google debuts Gemini 3.7 Flash."
+   }
+  },
   {
    "date": "2026-08-13",
    "type": "daily",
