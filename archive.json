@@ -1,6 +1,14 @@
 {
- "latest": "2026-08-14",
+ "latest": "2026-08-15",
  "reports": [
+  {
+   "date": "2026-08-15",
+   "type": "daily",
+   "summary": {
+    "zh": "Qwen 3.8 發布，中美 LLM 爆發價格戰。",
+    "en": "Qwen 3.8 released as US-China LLM price war escalates."
+   }
+  },
   {
    "date": "2026-08-14",
    "type": "daily",

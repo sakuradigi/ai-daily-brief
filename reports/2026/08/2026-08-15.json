@@ -1,0 +1,311 @@
+{
+ "date": "2026-08-15",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "阿里通義千問發布 Qwen 3.8 27B FP8 量化權重",
+      "en": "Alibaba Releases Qwen 3.8 27B FP8 Quantized Weights"
+     },
+     "detail": {
+      "zh": "Qwen 3.8 系列推出 27B 參數規模的 FP8 native 量化版本，極大地降低了中型 LLM 在單卡 GPU 上的推論門檻。開發者現可直接在 Hugging Face 下載權重進行本機部署與微調。",
+      "en": "The Qwen 3.8 family introduces a 27B parameter FP8 natively quantized version, drastically lowering GPU VRAM requirements for single-card inference. Developers can download weights directly on Hugging Face."
+     },
+     "source": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8",
+     "tags": [
+      "Qwen",
+      "OpenSource",
+      "Quantization",
+      "LLM"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "DeepSeek API 推出離峰時段優惠計價機制",
+      "en": "DeepSeek API Introduces Off-Peak Discounted Pricing"
+     },
+     "detail": {
+      "zh": "DeepSeek 官方更新 API 計價政策，引入尖峰與離峰時間動態價格。對於非即時性批次任務或異步處理的開發者而言，善用離峰時段可大幅降低 API 呼叫成本。",
+      "en": "DeepSeek officially updated its API pricing model to feature peak and off-peak dynamic rates. Developers running batch processing or async tasks can leverage off-peak hours to cut API costs significantly."
+     },
+     "source": "https://api-docs.deepseek.com/news/news260813/",
+     "tags": [
+      "DeepSeek",
+      "API",
+      "Pricing",
+      "DevOps"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "面對中國低價模型逼近，OpenAI 與 Anthropic 掀起 API 價格戰",
+      "en": "OpenAI and Anthropic Enter Price War as Chinese AI Rivals Gain Ground"
+     },
+     "detail": {
+      "zh": "受 DeepSeek 等高性價比模型進逼，美系 AI 巨頭紛紛下調輕量級與主力 API 價格。這意味著開發者構建 Agent 和大規模 LLM 應用的 Token 成本將進一步暴跌。",
+      "en": "Pressure from cost-effective models like DeepSeek has driven US AI leaders to slash API prices for lightweight and flagship models, further reducing token costs for agentic workflows."
+     },
+     "source": "https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground/",
+     "tags": [
+      "OpenAI",
+      "Anthropic",
+      "LLM",
+      "PriceWar"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "標籤分類新思路：讓 LLM 自由幻覺，再搭配向量比對",
+      "en": "A New Tagging Strategy: Let LLMs Hallucinate, Then Map via Embeddings"
+     },
+     "detail": {
+      "zh": "當已有標籤庫龐大無法全放入 Prompt 時，可讓模型先發揮『想像』產生語意標籤，再利用 Vector Embedding 找尋資料庫中最接近的既有 Tag，兼具彈性與精準度。",
+      "en": "Instead of feeding thousands of existing tags into a prompt, let the LLM generate unconstrained ideal tags, then use vector embeddings to match them against your existing taxonomy."
+     },
+     "source": "https://simonwillison.net/2026/Aug/14/dont-classify-hallucinate/",
+     "tags": [
+      "LLM",
+      "PromptEngineering",
+      "Embeddings",
+      "VectorDB"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Hugging Face 發布 2026 夏季開源模型現狀報告",
+      "en": "Hugging Face Releases Summer 2026 State of Open Models Report"
+     },
+     "detail": {
+      "zh": "報告指出開放權重模型在 10B-30B 級距的效能已追平前代閉源旗艦，且端側推理與 FP8/INT4 量化生態正在快速成熟，獨立開發者的自我託管能力顯著增強。",
+      "en": "The report highlights that open-weight models in the 10B-30B parameter range now match previous closed-source flagships, with edge inference and FP8/INT4 ecosystems rapidly maturing."
+     },
+     "source": "https://huggingface.co/blog/state-of-open-models-summer-2026",
+     "tags": [
+      "HuggingFace",
+      "OpenSource",
+      "Report"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "剖析 AI 文字浮水印原理：Logits 採樣中的隱形機制",
+      "en": "Understanding AI Text Watermarking: Invisible Signals in Logits Sampling"
+     },
+     "detail": {
+      "zh": "本文深度解析生成式 AI 如何在 Logits 採樣階段將特定隨機數序列寫入生成的 Token 流中，實現不影響閱讀體驗又能高精準度檢測 LLM 內容的機制。",
+      "en": "A deep dive into how generative AI embeds subtle pseudo-random signals during logits sampling, enabling precise LLM text detection without degrading readability."
+     },
+     "source": "https://declaude.org/watermarking/",
+     "tags": [
+      "Watermarking",
+      "LLM",
+      "Security",
+      "NLP"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Anthropic 發布 Claude Code 開發會話最佳化指南",
+      "en": "Anthropic Shares Guide on Maximizing Claude Code Session Efficiency"
+     },
+     "detail": {
+      "zh": "官方點出多數工程師使用 Claude Code 遇到的 Token 浪費問題，並提供 Context 管理、跨會話記憶保持與精確 Prompt 拆解的最佳實踐。",
+      "en": "Anthropic shares best practices to avoid token waste in Claude Code, focusing on effective context management, cross-session memory preservation, and task decomposition."
+     },
+     "source": "https://claude.com/blog/maximizing-the-value-of-your-claude-code-sessions",
+     "tags": [
+      "Claude",
+      "Anthropic",
+      "DeveloperTools",
+      "CodingAI"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Google Gemini 開放關閉生成圖片與影片的可視水印",
+      "en": "Google Allows Disabling Visible Watermarks on Gemini Generations"
+     },
+     "detail": {
+      "zh": "使用者現可在 Gemini 與 Flow 中關閉右下角的可視水印，但此舉不會影響檔案內部嵌入的 SynthID 隱形 AI 浮水印與驗證機制。",
+      "en": "Users can now toggle off the visible sparkle watermark in Gemini and Flow image/video outputs without affecting background SynthID invisible watermarking."
+     },
+     "source": "https://techcrunch.com/2026/08/14/google-will-now-allow-users-to-remove-visible-watermark-from-its-ai-generations/",
+     "tags": [
+      "Google",
+      "Gemini",
+      "Watermark",
+      "GenAI"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Writer 基於 GLM-5.2 推出新模型，著眼降低企業 Token 成本",
+      "en": "Writer Introduces New Model Built on GLM-5.2 to Contain Token Costs"
+     },
+     "detail": {
+      "zh": "Writer 以 Z.ai 開源的 GLM-5.2 為基礎進行後訓練，並結合升級的 Harness 框架，協助企業在保持推論品質的同時壓縮代碼與文字生成開銷。",
+      "en": "Built as a post-training variation on GLM-5.2, Writer's new system pairs with an upgraded harness to deliver production-ready capabilities at significantly lower token costs."
+     },
+     "source": "https://techcrunch.com/2026/08/13/writer-introduces-new-ai-model-and-upgraded-harness-to-contain-token-costs/",
+     "tags": [
+      "Writer",
+      "GLM",
+      "EnterpriseAI",
+      "CostOptimization"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Google 展示全同態加密用於隱私 AI 推論的實務進展",
+      "en": "Google Demonstrates Practical Homomorphic Encryption for Private AI"
+     },
+     "detail": {
+      "zh": "Google 開源其同態加密 (FHE) 技術最新成果，能在完全不解密用戶敏感資料的情況下完成 LLM 推算，大幅邁向隱私安全計算的實用化階段。",
+      "en": "Google detailed its latest practical progress in Fully Homomorphic Encryption (FHE), enabling LLM inference on encrypted data without ever exposing sensitive plaintext."
+     },
+     "source": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
+     "tags": [
+      "Google",
+      "Encryption",
+      "Privacy",
+      "Research"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "初創公司 Kog 突破 GPU 限制，優化 Agent 導向的推論效率",
+      "en": "Startup Kog Optimizes GPU Architecture to Boost Agentic Inference Efficiency"
+     },
+     "detail": {
+      "zh": "法國新創 Kog 針對 Agent 多輪互動與頻繁上下文切換的特性，重新架構 GPU 推論記憶體管理，挑戰 GPU 不適合 Agent 工作流的傳統迷思。",
+      "en": "French startup Kog is re-architecting GPU memory and execution pipelines to drastically improve inference throughput for context-heavy agentic workflows."
+     },
+     "source": "https://techcrunch.com/2026/08/14/kog-is-going-deeper-to-squeeze-more-inference-out-of-gpus/",
+     "tags": [
+      "Hardware",
+      "GPU",
+      "Inference",
+      "AgenticAI"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Apple 據報與阿里巴巴合作為中國市場訓練專屬 AI 模型",
+      "en": "Apple Reportedly Trains Custom China AI Model with Alibaba"
+     },
+     "detail": {
+      "zh": "為符合中國地緣法規與監管要求，蘋果與阿里巴巴合作開發適用於中國境內 Apple Intelligence 的專屬模型，展現美中科技分流下的折衷策略。",
+      "en": "To satisfy local regulatory constraints, Apple partnered with Alibaba to co-train a China-specific LLM for Apple Intelligence features in the domestic market."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/980160/apple-intelligence-china-custom-ai-model-alibaba",
+     "tags": [
+      "Apple",
+      "Alibaba",
+      "Regulation",
+      "China"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Meta 推出可自託管的 Glimmer 開源權重模型",
+      "en": "Meta Releases Self-Hostable Open-Weight Model Glimmer"
+     },
+     "detail": {
+      "zh": "扎克伯格重申 AI 屬於所有人，釋出可於本機硬體運行的 Glimmer 開源模型，但同時將更強大的 Muse Spark 保留為 API 獨佔模式。",
+      "en": "Meta released Glimmer as an open-weight model executable on local hardware, while reserving its higher-tier Muse Spark model behind proprietary APIs."
+     },
+     "source": "https://techcrunch.com/video/does-mark-zuckerberg-really-believe-ai-is-for-everyone/",
+     "tags": [
+      "Meta",
+      "OpenSource",
+      "Glimmer",
+      "AIStrategy"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "自辦訴訟原告懷疑法官使用 AI 審案，在起訴書中注入 Prompt 試圖操控判決",
+      "en": "Pro se litigant injects prompt injections into court filings suspecting judge uses AI"
+     },
+     "source": "https://arstechnica.com/tech-policy/2026/08/suspecting-court-of-using-ai-man-injected-prompts-in-filings-to-try-to-win-case/"
+    },
+    {
+     "headline": {
+      "zh": "微軟 Copilot 語音模式宣布退役黃色膠囊吉祥物 Mico",
+      "en": "Microsoft retires Mico avatar from Copilot Voice mode"
+     },
+     "source": "https://www.theverge.com/tech/979871/microsoft-copilot-mico-retired"
+    },
+    {
+     "headline": {
+      "zh": "Simon Willison 發布 sqlite-utils 4.2.1 修復依賴套件崩潰 Bug",
+      "en": "Simon Willison releases sqlite-utils 4.2.1 to fix dependency crash"
+     },
+     "source": "https://simonwillison.net/2026/Aug/13/sqlite-utils-2/"
+    },
+    {
+     "headline": {
+      "zh": "預測顯示天然氣價格暴漲，或加重超大規模 AI 資料中心能耗成本",
+      "en": "Natural gas price spike forecast threatens to hike hyperscaler AI data center costs"
+     },
+     "source": "https://techcrunch.com/2026/08/14/hyperscalers-might-regret-embracing-natural-gas-if-new-forecast-proves-correct/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.6-flash",
+ "generated_at": "2026-08-15T07:01+08:00"
+}
