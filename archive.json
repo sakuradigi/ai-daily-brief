@@ -1,6 +1,14 @@
 {
- "latest": "2026-08-15",
+ "latest": "2026-08-16",
  "reports": [
+  {
+   "date": "2026-08-16",
+   "type": "daily",
+   "summary": {
+    "zh": "SpaceX收購Cursor，Claude公布浮水印技術",
+    "en": "SpaceX acquires Cursor; Anthropic details Claude watermarks."
+   }
+  },
   {
    "date": "2026-08-15",
    "type": "daily",
