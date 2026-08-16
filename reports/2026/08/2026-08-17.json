@@ -1,0 +1,239 @@
+{
+ "date": "2026-08-17",
+ "type": "weekly",
+ "weekly": {
+  "zh": "過去一週 AI 領域迎來重大整併與開源模型大洗牌。產業端以金融與開發者工具巨頭的跨界收購最為顯著，包含 SpaceX 收購 AI 編輯器 Cursor，以及 Stripe 擬以逾 70 億美元併購 AI 網關平台 OpenRouter，顯示流量與開發者通道已成為金流與算力企業的必爭之地。模型層面則由 DeepSeek V4 Pro (1.7T) 與阿里 Qwen 3.8 27B 領銜開源陣營，強烈逼迫 OpenAI 與 Anthropic 掀起新一輪 API 降價與推論極速化（如 GPT-5.6 Sol）競爭。此外，Agent 自主權限引發的沙盒隔離（Docker Sandboxes）與安全防護問題，亦成為本週開發者關注的核心焦點。",
+  "en": "The past week was marked by massive consolidation and rapid open-weight model iterations. Strategic M&A dominated industry news, highlighted by SpaceX acquiring AI code editor Cursor and Stripe's reported $7B+ deal to acquire AI gateway OpenRouter, signaling that developer interfaces and model routing are critical infrastructure for fintech and compute giants. On the weights front, the release of DeepSeek V4 Pro (1.7T) and Alibaba's Qwen 3.8 27B triggered fresh API price cuts and speed-focused optimizations (like GPT-5.6 Sol) from proprietary vendors. Meanwhile, agent execution security—spanning Docker Sandboxes to multi-agent alignment—became a top developer priority."
+ },
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Stripe 傳將以逾 70 億美元天價收購 AI 模型網關平台 OpenRouter",
+      "en": "Stripe Reportedly Near $7B+ Deal to Acquire AI Gateway Startup OpenRouter"
+     },
+     "detail": {
+      "zh": "支付巨頭 Stripe 傳出正洽談收購提供多模型 API 路由的 OpenRouter。若交易達成，不僅創下今年 AI 基礎設施的最大收購案之一，也標誌著金融支付與 AI 模型 API 計費/轉售生態的深層整合。",
+      "en": "Payments giant Stripe is reportedly in talks to acquire OpenRouter, a key API gateway for routing LLM traffic. If completed, the deal highlights how critical model billing and infrastructure routing have become to payment incumbents."
+     },
+     "source": "https://www.bloomberg.com/news/articles/2026-08-16/stripe-nears-deal-to-buy-ai-firm-openrouter-for-over-7-billion",
+     "tags": [
+      "Acquisition",
+      "OpenRouter",
+      "Stripe",
+      "Infrastructure"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 解散 Preparedness 團隊，將模型重大風險評估職責轉移至其他部門",
+      "en": "OpenAI Reportedly Disbands Its Preparedness Team for Frontier AI Safety"
+     },
+     "detail": {
+      "zh": "據外媒報導，OpenAI 已於上月底正式解散專門評估前沿模型自主入侵、生物風險等極端威脅的 Preparedness 團隊。該團隊原成員與業務將被分拆整合至其他研發與安全小組，引發外界對前沿安全監控機制弱化的疑慮。",
+      "en": "OpenAI has reportedly disbanded its Preparedness team, which was responsible for assessing severe risks like autonomous rogue actions or cybersecurity threats. The responsibilities will be distributed across other internal research and safety teams."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/980817/openai-disbands-preparedness-team",
+     "tags": [
+      "OpenAI",
+      "AI Safety",
+      "Governance"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "ChatGPT macOS 桌面版推出「Computer History」，可追蹤點擊與按鍵以輔助 Codex 自動化",
+      "en": "ChatGPT macOS App Introduces 'Computer History' Tracking Clicks and Keystrokes"
+     },
+     "detail": {
+      "zh": "OpenAI 為 macOS 應用程式新增 Computer History 功能，能記錄使用者的操作軌跡並轉化為上下文。這使 ChatGPT 與 Codex 能更精準接續未完成的開發任務，但也帶來對開發者端本地隱私與紀錄授權的討論。",
+      "en": "OpenAI added a Computer History feature to its macOS desktop client, logging user clicks and keystrokes to generate timeline context. This allows ChatGPT and Codex to automate repetitive tasks and resume unfinished code workflows."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/980742/chatgpts-computer-history-tracks-your-clicks-and-keystrokes",
+     "tags": [
+      "ChatGPT",
+      "macOS",
+      "Developer Tools",
+      "Automation"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Simon Willison 實測 Qwen 3.8 27B：基準測試出色，但預設推論行為傾向「過度思考」",
+      "en": "Simon Willison Reviews Qwen 3.8 27B: Powerful Open Model with Wild Overthinking Defaults"
+     },
+     "detail": {
+      "zh": "知名技術專家 Simon Willison 分析阿里最新發布的 Qwen 3.8 27B（Apache 2.0 授權），指出其視覺與推理表現超越了前代與許多閉源模型，但在處理簡單 Prompt 時，預設會生成極長的內部思考鏈，需要透過 Prompt 或調參抑制過度思考以節省 Token。",
+      "en": "Tech blogger Simon Willison reviewed Alibaba's Apache 2.0-licensed Qwen 3.8 27B. While benchmark gains and vision support make it ideal for local runtimes, the model defaults to generating unnecessarily long reasoning chains on straightforward tasks."
+     },
+     "source": "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
+     "tags": [
+      "Qwen",
+      "LLM",
+      "OpenSource",
+      "Benchmarking"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 官方更新並公開 Claude 系列模型的系統提示詞文件庫",
+      "en": "Anthropic Updates and Standardizes Official System Prompts Documentation"
+     },
+     "detail": {
+      "zh": "Anthropic 更新了官方開發者文件，公開 Claude 3.5 與 Claude Code 系統提示詞（System Prompts）的演進細節。這包含 Prompt 中對於工具調用、標籤封裝與拒絕回應的結構化規範，是 Prompt 工程師優化對話鏈的重要參考。",
+      "en": "Anthropic updated its documentation detailing the system prompts used across Claude models and Claude Code. The release offers clear insight into how Anthropic structures instruction hierarchy, tool usage syntax, and safety guardrails."
+     },
+     "source": "https://platform.claude.com/docs/en/release-notes/system-prompts",
+     "tags": [
+      "Anthropic",
+      "Claude",
+      "SystemPrompts",
+      "PromptEngineering"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "剖析 AI API 點數套利與 Token 中介商生態圈：轉售經濟如何運作",
+      "en": "An Inside Look at the AI Credit Resale Economy and Token Brokers"
+     },
+     "detail": {
+      "zh": "文章深度拆解目前新興的 Token 中介商（Token Brokers）生態。這些平台透過收集企業未使用的雲端算力額度、優惠券或跨區 API 價差，建構出平行於官方 API 的二級 Token 交易市場，並探討其對開發者成本與供應鏈安全的影響。",
+      "en": "An analytical breakdown reveals how token brokers leverage enterprise credit overcapacity, promo codes, and regional price arbitrage to create a shadow API resale market, presenting both cost opportunities and rate-limit risks for developers."
+     },
+     "source": "https://vectoral.com/blog/who-are-the-token-brokers",
+     "tags": [
+      "API",
+      "TokenEconomy",
+      "CostOptimization",
+      "Infrastructure"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Anthropic 發表多 Agent 系統突發行為研究：揭露協同與對抗競爭的動態模式",
+      "en": "Anthropic Research Highlights Emerging Patterns and Pitfalls in Multi-Agent Systems"
+     },
+     "detail": {
+      "zh": "Anthropic 的最新論文探討多個 AI Agent 在複雜環境協作時產生的非預期行為，包含資源爭奪、重複執行與溝通死鎖。研究強調現有單 Agent 的 Alignment 策略無法直接擴展至多 Agent 網路，需引入新的賽局架構。",
+      "en": "Anthropic published findings on multi-agent interactions, detailing dynamic failures like agent deadlocks, resource hoarding, and misaligned handoffs. The study demonstrates that alignment methods designed for single models fail to scale to multi-agent environments."
+     },
+     "source": "https://www.anthropic.com/research/multiagent-systems",
+     "tags": [
+      "MultiAgent",
+      "Anthropic",
+      "AIResearch",
+      "Alignment"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "研究測試：當 LLM 的訓練語料完全被限制在小學程度以下時會發生什麼？",
+      "en": "Study Reveals LLM Capability Boundaries When Training Data is Capped at 5th-Grade Level"
+     },
+     "detail": {
+      "zh": "Little Learner 專案實驗評估了僅使用小學五年級以下文字訓練的模型。結果顯示，模型在邏輯泛化與基礎語言運算表現驚人，但在高階抽象推理上出現極限，為預訓練資料集篩選與微調成本效益提供了量化依據。",
+      "en": "The Little Learner experiment evaluated LLMs trained exclusively on data up to a 5th-grade reading level. Results highlight surprising synthetic logic capabilities while marking strict extrapolation limits for high-level reasoning tasks."
+     },
+     "source": "https://littlelearner-ll.github.io/",
+     "tags": [
+      "LLM",
+      "TrainingData",
+      "AIResearch",
+      "Datasets"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Anthropic CEO Dario Amodei 回應 AI 反彈：社會疑慮源於公眾對科技巨頭的信任危機",
+      "en": "Anthropic CEO Dario Amodei Says Public AI Backlash is 'Fundamentally a Crisis of Trust'"
+     },
+     "detail": {
+      "zh": "面對社會對 AI 發展的負面情緒，Anthropic 執行長 Dario Amodei 表示，這種反彈並非因為安全警訊過度宣傳，而是大眾對政府與科技企業長期積累的不信任。他認為缺乏透明度比技術風險更難解。",
+      "en": "Anthropic CEO Dario Amodei pushed back against claims that safety warnings cause AI anxiety, arguing that public skepticism stems from a long-standing crisis of trust in tech giants rather than fear of the technology itself."
+     },
+     "source": "https://simonwillison.net/2026/Aug/16/dario-amodei/",
+     "tags": [
+      "Anthropic",
+      "AIGovernance",
+      "IndustryTrends"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "Grok 圖像生成防護網遭指控出現嚴重漏洞，涉及濫用真人照片生成不當影像",
+      "en": "Woman Claims Stepfather Used Grok to Generate Explicit Images from Childhood Photos"
+     },
+     "source": "https://techcrunch.com/2026/08/15/woman-claims-her-stepfather-used-grok-to-transform-childhood-photo-into-explicit-imagery/"
+    },
+    {
+     "headline": {
+      "zh": "TechCrunch 報導分析 Stripe 擬以 70 億美元併購 OpenRouter 背後的戰略意圖",
+      "en": "TechCrunch Analyzes Strategic Rationale Behind Stripe's $7B+ OpenRouter Acquisition"
+     },
+     "source": "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/"
+    },
+    {
+     "headline": {
+      "zh": "市場對扎克伯格 AI 願景存疑，Meta 巨額資本支出正面臨商業化獲利考驗",
+      "en": "Why Investors and Users Remain Skeptical of Mark Zuckerberg's AI Future"
+     },
+     "source": "https://techcrunch.com/2026/08/16/why-people-arent-buying-mark-zuckerbergs-ai-future/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.6-flash",
+ "generated_at": "2026-08-17T07:01+08:00"
+}

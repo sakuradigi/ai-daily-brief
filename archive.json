@@ -1,6 +1,14 @@
 {
- "latest": "2026-08-16",
+ "latest": "2026-08-17",
  "reports": [
+  {
+   "date": "2026-08-17",
+   "type": "weekly",
+   "summary": {
+    "zh": "Stripe 傳 70 億美元併購 OpenRouter；OpenAI 撤銷安全團隊；Qwen 3.8 27B 實測出爐。",
+    "en": "Stripe reportedly buys OpenRouter for $7B+; OpenAI disbands Preparedness team; Qwen 3.8 27B evaluated."
+   }
+  },
   {
    "date": "2026-08-16",
    "type": "daily",
