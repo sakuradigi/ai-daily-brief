@@ -1,6 +1,14 @@
 {
- "latest": "2026-08-17",
+ "latest": "2026-08-18",
  "reports": [
+  {
+   "date": "2026-08-18",
+   "type": "daily",
+   "summary": {
+    "zh": "Copilot Autofix 爆發資安漏洞；Claude 導入文字浮水印引爭議；Qwen 3.8 27B 開源發布。",
+    "en": "Copilot Autofix triggers security breach; Claude text watermark sparks backlash; Qwen 3.8 27B released."
+   }
+  },
   {
    "date": "2026-08-17",
    "type": "weekly",
