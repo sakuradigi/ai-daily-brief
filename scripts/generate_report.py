@@ -3,7 +3,7 @@
 
 Model-agnostic：PROVIDER=gemini（預設）| claude | mock
 - gemini: 需 GEMINI_API_KEY（免費層即可），GEMINI_MODEL 未設時自動用現行 flash（見 GEMINI_FALLBACKS）
-- claude: 需 ANTHROPIC_API_KEY，CLAUDE_MODEL 預設 claude-sonnet-5
+- claude: 需 ANTHROPIC_API_KEY，CLAUDE_MODEL 預設 claude-haiku-4-5（備援用）
 - mock:   不呼叫 API，產生測試用日報（驗證管線）
 週一（台北時間）自動生成週報：type=weekly + weekly 綜觀欄位。
 """
