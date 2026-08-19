@@ -1,0 +1,312 @@
+{
+ "date": "2026-08-20",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Mojo 編譯器與工具鏈正式以 Apache 2 執照開源",
+      "en": "Mojo Compiler and Toolchain Open Sourced Under Apache 2 License"
+     },
+     "detail": {
+      "zh": "Modular 宣佈將高效能 AI 程式語言 Mojo 1.0 的編譯器與工具鏈完整開源。開發者現在可自由開發與延伸其編譯架構，有助於加速 Python 生態系的系統級高效能算力優化。",
+      "en": "Modular has officially released the Mojo 1.0 compiler and toolchain under the Apache 2.0 license. Developers can now inspect and extend its compilation pipeline, accelerating system-level performance for Python workloads."
+     },
+     "source": "https://simonwillison.net/2026/Aug/18/mojo-is-now-open-source/",
+     "tags": [
+      "Mojo",
+      "Open Source",
+      "Compiler",
+      "Python"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 推出前沿模型零資料保留（ZDR）與隱私安全處理機制",
+      "en": "OpenAI Rolls Out Zero Data Retention and Private Safety Processing for Frontier Models"
+     },
+     "detail": {
+      "zh": "OpenAI 為企業級 API 用戶擴大零資料保留（ZDR）承諾，確保 Prompt 不留存於伺服器。同時預覽「隱私安全處理」機制，在確保 AI 模型安全審查運作的同時不妥協數據隱私。",
+      "en": "OpenAI has expanded Zero Data Retention (ZDR) to eligible API users, ensuring enterprise data is not stored. It also previewed Private Safety Processing to maintain safety guardrails without storing prompt content."
+     },
+     "source": "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
+     "tags": [
+      "OpenAI",
+      "API",
+      "Privacy",
+      "Security"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Cursor 擴張版圖推出程式碼託管平台，直面挑戰 GitHub",
+      "en": "Cursor Launches Code-Hosting Platform to Challenge GitHub"
+     },
+     "detail": {
+      "zh": "知名 AI 編輯器 Cursor 推出了專屬的程式碼託管服務。此舉標誌著 Cursor 將從單純的 Editor 體驗延伸至全流程的程式碼託管與團隊協同生態系。",
+      "en": "AI code editor Cursor has launched its own code-hosting platform aiming directly at GitHub. This expands Cursor's footprint from AI-assisted editing into full-stack repository hosting and dev workflows."
+     },
+     "source": "https://techcrunch.com/2026/08/18/cursor-capitalizes-on-github-frustration-launches-rival-hosting-platform/",
+     "tags": [
+      "Cursor",
+      "GitHub",
+      "DevTools",
+      "Code Hosting"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "fx：極簡原生開放式 Coding Agent 發布",
+      "en": "fx: A Tiny, Native, and Open-Source Coding Agent"
+     },
+     "detail": {
+      "zh": "fx 是一款標榜輕量與原生執行的開放源碼 Coding Agent，主打極簡架構與快速響應。工程師可直接於本地 CLI 環境執行多步驟程式碼重構與自動化任務。",
+      "en": "fx is a lightweight, natively compiled coding agent designed for rapid CLI workflows. It offers a minimal footprint for local execution, enabling automated codebase refactoring and task completion."
+     },
+     "source": "https://fx.sh",
+     "tags": [
+      "Coding Agent",
+      "CLI",
+      "Open Source",
+      "DevTools"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "ModelMap：互動式 HuggingFace 模型架構視覺化工具",
+      "en": "ModelMap: Interactive Animated Architecture Viewer for HuggingFace Models"
+     },
+     "detail": {
+      "zh": "ModelMap 提供互動且帶有動態效果的模型結構圖，支援解析 HuggingFace 上的各種 LLM 與視覺模型。這讓工程師機能直觀檢視 Transformer 網絡層、注意力機制與張量維度。",
+      "en": "ModelMap offers animated visual diagrams for models hosted on Hugging Face. It helps engineers intuitively inspect Transformer layers, attention routing, and tensor dimensions."
+     },
+     "source": "https://modelmap.cc",
+     "tags": [
+      "Hugging Face",
+      "Visualization",
+      "LLM",
+      "DevTools"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Liquid AI 發布基於量化感知蒸餾的 LFM2.5 Q4_0 模型權重",
+      "en": "Liquid AI Releases LFM2.5 Q4_0 Checkpoints via Quantization-Aware Distillation"
+     },
+     "detail": {
+      "zh": "Liquid AI 運用量化感知蒸餾（QAD）技術推出了 LFM2.5 的 Q4_0 量化版本。該方法能在顯著降低顯存與記憶體佔用的同時，保留接近 FP16 的基準精度。",
+      "en": "Liquid AI released LFM2.5 Q4_0 checkpoints built with Quantization-Aware Distillation (QAD). This method preserves near-baseline accuracy while drastically cutting RAM and VRAM footprint."
+     },
+     "source": "https://huggingface.co/blog/LiquidAI/qad",
+     "tags": [
+      "Quantization",
+      "Liquid AI",
+      "Open Weights",
+      "LLM"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Replit 推出由 GPT-5.6 Luna 驅動的免費模式，免計算 Token 成本",
+      "en": "Replit Introduces Free Mode Powered by GPT-5.6 Luna"
+     },
+     "detail": {
+      "zh": "Replit 整合 GPT-5.6 Luna 模型推出了「Free Mode」，讓開發者免去計算 API Token 額度即可透過自然語言直接建立與部署可運作的軟體原型。",
+      "en": "Replit introduced Free Mode powered by GPT-5.6 Luna, letting users build working applications without worrying about API token fees. This lowers the cost barrier for prototyping and rapid app iteration."
+     },
+     "source": "https://openai.com/index/replit",
+     "tags": [
+      "Replit",
+      "GPT-5.6",
+      "Developer Tools",
+      "SaaS"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Meta AI 推出 Mac 桌面版，支援螢幕共享內容分析與全域語音輸入",
+      "en": "Meta AI Launches Native Mac App with Screen Sharing and System-Wide Dictation"
+     },
+     "detail": {
+      "zh": "Meta 發布 macOS 專用應用程式，允許使用者即時共享螢幕畫面給 AI 進行內容解讀與問答。此外，該 App 還整合了跨應用的全域語音聽寫功能。",
+      "en": "Meta launched a dedicated macOS client for Meta AI, featuring real-time screen sharing for contextual Q&A and code analysis. It also brings cross-application system-wide voice dictation."
+     },
+     "source": "https://www.theverge.com/tech/982270/meta-ai-mac-app",
+     "tags": [
+      "Meta",
+      "macOS",
+      "Productivity",
+      "Desktop App"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "開發者透過 Claude Code 指導 macOS 原生支援舊型 HP 印表機驅動",
+      "en": "Developer Uses Claude Code to Teach macOS to Print to Unsupported HP Laser"
+     },
+     "detail": {
+      "zh": "社群開發者分享透過 Claude Code 生成並修復驅動程式，使 macOS 能原生支援無官方驅動的 HP Laser 1008a。展現了 LLM 在底層系統開發與逆向工程上的實用潛力。",
+      "en": "A developer demonstrated using Claude Code to write and debug driver code, enabling macOS to natively print to an unsupported HP Laser 1008a. It highlights LLM capabilities in low-level driver engineering."
+     },
+     "source": "https://cdn.kuber.studio/chat/hp-laser-1008a-driver",
+     "tags": [
+      "Claude Code",
+      "macOS",
+      "Hardware",
+      "Drivers"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "ArXiv 論文剖析 AI 時代下數學研究與自動定理證明的範式轉移",
+      "en": "New ArXiv Paper Explores the Paradigm Shift of Mathematics in the AI Era"
+     },
+     "detail": {
+      "zh": "最新 ArXiv 預印本論文探討了 LLM 與自動定理證明器（ATP）對純數學研究的深遠影響，分析當前模型在形式化邏輯推導中的瓶頸，並提出人機協作數學研究的未來方向。",
+      "en": "A new preprint surveys the impact of LLMs and Automated Theorem Provers (ATPs) on mathematical research. It highlights formal reasoning bottlenecks and frameworks for human-AI collaborative discovery."
+     },
+     "source": "https://arxiv.org/abs/2608.16753",
+     "tags": [
+      "Research",
+      "Mathematics",
+      "Formal Reasoning",
+      "ArXiv"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Linear 發布團隊 AI 導入模式報告：程式碼產出量與概念完整性分析",
+      "en": "Linear Data Reveals AI Adoption Patterns in Modern Software Engineering Teams"
+     },
+     "detail": {
+      "zh": "Linear 發布團隊開發數據，分析軟體團隊導入 AI 助手後的習慣轉變。報告指出程式碼生成量增加並不一定降低維護品質，關鍵在於保持軟體架構的概念完整性（Conceptual Integrity）。",
+      "en": "Linear published insights on how engineering teams integrate AI coding assistants. The study reveals that higher code generation rates can maintain quality if conceptual integrity is preserved."
+     },
+     "source": "https://linear.app/data",
+     "tags": [
+      "Software Engineering",
+      "Productivity",
+      "Metrics",
+      "Developer Trends"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "華爾街巨頭與 Nvidia 合作，將 GPU 算力打造為 5000 億美元金融資產",
+      "en": "Wall Street Partners with Nvidia to Turn GPU Compute into $500B Asset Class"
+     },
+     "detail": {
+      "zh": "Goldman Sachs、BlackRock 等金融機構與 Nvidia 合作推出 5,000 億美元融資方案，將資料中心 GPU 算力轉化為可定價與避險的金融資產類別，顯示算力正在商品化。",
+      "en": "Financial giants including Goldman Sachs and BlackRock are partnering with Nvidia on $500B in financing to treat GPU compute as an asset class. This enables institutions to price and hedge AI infrastructure costs."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/981668/nvidias-goldman-blackrock-gpu-compute-asset",
+     "tags": [
+      "Nvidia",
+      "Compute",
+      "Finance",
+      "Infrastructure"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 宣布主動放緩部分發布節奏以升級資安防護與稽核",
+      "en": "OpenAI Voluntarily Slows Down Product Releases for Security Audits"
+     },
+     "detail": {
+      "zh": "OpenAI 宣佈暫緩部分項目的發布節奏，進行內部安全性調整與稽核。這顯示出頂尖 AI 廠商在面對極致市場競爭的同時，逐漸提高對系統資安防護的重視。",
+      "en": "OpenAI announced a temporary slowdown in certain releases to complete security audits and strengthen safeguards. The decision underscores the growing tension between rapid market release and AI safety testing."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/982323/openai-hit-brakes-voluntary-pacing-ai",
+     "tags": [
+      "OpenAI",
+      "AI Safety",
+      "Industry",
+      "Governance"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "Cognition CEO 否認 SpaceX 收購傳聞，但確認 SpaceX 日前已收購 Cursor",
+      "en": "Cognition CEO denies SpaceX acquisition reports following SpaceX's Cursor purchase"
+     },
+     "source": "https://techcrunch.com/2026/08/19/cognition-ceo-denies-report-that-spacex-tried-to-acquire-the-startup/"
+    },
+    {
+     "headline": {
+      "zh": "Google 在 Gemini 推出 Student Hub 專區，整合筆記、Flashcard 與測驗功能",
+      "en": "Google introduces a dedicated Student Hub within Gemini for research and quizzes"
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/982425/google-gemini-student-hub"
+    },
+    {
+     "headline": {
+      "zh": "資安研究人員反映 OpenAI 撤銷了其限定網路安全研究計畫（Trusted Access）的權限",
+      "en": "Security researchers express concern after OpenAI revokes access to cyber research program"
+     },
+     "source": "https://techcrunch.com/2026/08/19/researchers-complain-that-openai-revoked-their-access-to-limited-cyber-program/"
+    },
+    {
+     "headline": {
+      "zh": "空心光纖新創 Relativity Networks 獲 2,200 萬美元融資，提升 AI 資料中心傳輸速度 30%",
+      "en": "Hollow-core fiber startup Relativity Networks raises $22M to speed up data center connectivity"
+     },
+     "source": "https://techcrunch.com/2026/08/19/relativity-networks-raises-22-million-to-bring-a-faster-kind-of-fiber-to-data-centers/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.6-flash",
+ "generated_at": "2026-08-20T07:05+08:00"
+}

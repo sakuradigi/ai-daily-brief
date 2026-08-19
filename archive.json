@@ -1,6 +1,14 @@
 {
- "latest": "2026-08-19",
+ "latest": "2026-08-20",
  "reports": [
+  {
+   "date": "2026-08-20",
+   "type": "daily",
+   "summary": {
+    "zh": "Mojo 語言正式開源，Cursor 推出程式碼託管服務。",
+    "en": "Mojo compiler goes open source while Cursor introduces code hosting to rival GitHub."
+   }
+  },
   {
    "date": "2026-08-19",
    "type": "daily",
