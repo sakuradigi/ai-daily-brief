@@ -1,6 +1,14 @@
 {
- "latest": "2026-08-20",
+ "latest": "2026-08-21",
  "reports": [
+  {
+   "date": "2026-08-21",
+   "type": "daily",
+   "summary": {
+    "zh": "Slack 推協同寫程式頻道，Grok 爆安全漏洞，AI 路由工具登場。",
+    "en": "Slack unveils vibe-coding channels, Grok hits prompt injection bug, and new LLM routing tools emerge."
+   }
+  },
   {
    "date": "2026-08-20",
    "type": "daily",

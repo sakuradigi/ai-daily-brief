@@ -1,0 +1,301 @@
+{
+ "date": "2026-08-21",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Grok 遭加密 Context 注入攻擊，可能導致使用者敏感資料外洩",
+      "en": "Grok vulnerability allows data exfiltration via Cryptographic Context Injection"
+     },
+     "detail": {
+      "zh": "資安研究顯示，當惡意指令經過加密繞過模型安全護欄時，Grok 會在不知情的狀況下執行並回傳使用者資料。此類提示詞注入（Prompt Injection）防禦仍是目前 LLM 系統最大的安全威脅之一。開發者在構建整合第三方輸入的 Agent 時，需嚴格實施輸入淨化與傳輸邊界管制。",
+      "en": "Security researchers found that Grok can be tricked into executing encrypted malicious instructions, bypassing guardrails to exfiltrate user data. Cryptographic Context Injection highlights the ongoing challenge of securing LLM agents against untrusted user inputs."
+     },
+     "source": "https://arstechnica.com/security/2026/08/grok-exfiltrates-user-data-when-malicious-instructions-are-encrypted/",
+     "tags": [
+      "Security",
+      "Prompt Injection",
+      "Grok"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Slack 推出 Slack Code：支援團隊與 AI Agent 共同開發的 Vibe-Coding 專屬頻道",
+      "en": "Slack introduces Slack Code for collaborative vibe-coding with AI agents"
+     },
+     "detail": {
+      "zh": "Slack 宣布推出 Slack Code 專屬頻道，讓團隊能在同一個介面中與 AI Agent 協同撰寫程式碼。系統提供程式變更對照與 HTML 即時預覽功能，目標是讓開發者減少在 Cursor、Claude Code 與通訊軟體之間的切換成本。",
+      "en": "Slack launched dedicated coding channels featuring real-time code comparisons and HTML previews directly integrated with AI agents. The tool aims to reduce context switching between IDEs and messaging apps during agentic development."
+     },
+     "source": "https://www.theverge.com/tech/982628/slack-code-vibe-coding-channels-launch",
+     "tags": [
+      "Slack",
+      "Vibe Coding",
+      "Developer Tools"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "「別直接貼上 AI 內容」引發 Hacker News 社群熱議低品質 LLM 輸出危害",
+      "en": "Hacker News debate erupts over 'Don't paste the AI' and low-quality LLM content"
+     },
+     "detail": {
+      "zh": "一篇名為《Don't paste the AI》的文章登上 HN 榜首，批評開發者與作者不加過濾便將 LLM 產生的文字或程式碼貼入文件與 Issue 中。社群強調，AI 應作為輔助而非思考替代品，未審核的輸出大幅增加了代碼審查與溝通成本。",
+      "en": "A viral post titled 'Don't paste the AI' sparked discussions on Hacker News about the flood of unverified LLM output in code repositories and docs. Developers urged colleagues to edit and verify AI-generated responses before submitting them."
+     },
+     "source": "https://dontpastetheai.com/",
+     "tags": [
+      "Developer Community",
+      "LLM",
+      "Code Quality"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "smolmachines / smolvm：安全執行未受信任 Python 與 JS 程式碼的輕量沙盒",
+      "en": "smolvm provides a fast micro-sandbox for untrusted Python and JavaScript"
+     },
+     "detail": {
+      "zh": "Simon Willison 測試了 smolmachines/smolvm 在隔離未受信任程式碼上的表現。它能精確限制記憶體與 CPU 使用量，保護系統不受死迴圈攻擊，並可設定無網路與指定檔案系統權限，非常適合為 LLM Agent 構建可擴充的延伸套件執行環境。",
+      "en": "Simon Willison evaluated smolvm as a high-security micro-sandbox for untrusted Python/JS execution. It restricts RAM, CPU, and network access, providing an ideal runtime boundary for user-extended LLM plugins."
+     },
+     "source": "https://simonwillison.net/2026/Aug/19/smolmachines-untrusted-sandbox/",
+     "tags": [
+      "Sandbox",
+      "Security",
+      "Python",
+      "JavaScript"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Liquid AI 推出 LFM2.5-DSpark：推論速度提升高達 3.2 倍",
+      "en": "Liquid AI releases LFM2.5-DSpark featuring up to 3.2x faster inference"
+     },
+     "detail": {
+      "zh": "Hugging Face 發布 Liquid AI 的 LFM2.5-DSpark 技術文章，展示其最新的模型優化方案。透過特殊的結構設計與優化，該模型在維持同等精度下將推論吞吐量提升至 3.2 倍，大幅降低端側與伺服器端的部署成本。",
+      "en": "Liquid AI introduced LFM2.5-DSpark on Hugging Face, achieving up to 3.2x faster inference speeds. The architectural improvements significantly lower latency and compute costs for production deployments."
+     },
+     "source": "https://huggingface.co/blog/LiquidAI/lfm25-dspark",
+     "tags": [
+      "Inference Optimization",
+      "Liquid AI",
+      "Hugging Face"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "開源 125M 參數小型模型，可在裝置端實現 MIDI 鋼琴即時自動補全",
+      "en": "Developer trains 125M model for real-time on-device MIDI piano autocomplete"
+     },
+     "detail": {
+      "zh": "社群開發者訓練了一個僅 1.25 億參數的極小化模型，完全跑在本地裝置端，可為 MIDI 鍵盤進行即時鋼琴樂曲補全。此案例再次展示了小模型（SLM）在低延遲、特定領域任務上的強大實用價值。",
+      "en": "A developer released a 125M parameter model capable of running entirely locally for real-time MIDI piano completion. It highlights the efficiency of specialized small language models for low-latency domain tasks."
+     },
+     "source": "https://simedw.com/2026/08/20/midi-autocomplete/",
+     "tags": [
+      "On-Device AI",
+      "SLM",
+      "MIDI",
+      "Audio"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "金融科技公司 Ramp 推出獨立 AI 模型路由器 Router API",
+      "en": "Ramp launches Router API to enable dynamic AI model switching"
+     },
+     "detail": {
+      "zh": "Ramp 推出名為 Router 的模型路由服務，允許企業與開發者透過統一的 API 介面自動挑選並切換不同的大型語言模型。此工具旨在解決對單一 LLM 供應商的綁定問題，並依任務複雜度優化成本與回應延遲。",
+      "en": "Fintech firm Ramp released Router, an API service allowing organizations to dynamically route queries across multiple LLM providers. The service optimizes API costs and performance while avoiding vendor lock-in."
+     },
+     "source": "https://techcrunch.com/2026/08/20/ramp-launches-its-own-ai-model-router-called-router/",
+     "tags": [
+      "Model Router",
+      "API",
+      "Ramp"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "幣安推出 Agent OS，支援 Claude Code 與 Cursor 進行自動化加密貨幣交易",
+      "en": "Binance launches Agent OS allowing AI agents like Claude Code to execute trades"
+     },
+     "detail": {
+      "zh": "幣安發布 Agent OS 框架，與 ChatGPT、Claude Code 及 Cursor 等開發工具整合，允許 AI Agent 呼叫 API 執行自動化交易。然而，幣安也警告用戶需自行承擔 Agent 誤判或過度操作的風險風控。",
+      "en": "Binance introduced Agent OS, enabling integration between trading workflows and AI tools like Claude Code and Cursor. While enabling autonomous trading, Binance emphasized that risk management remains the user's responsibility."
+     },
+     "source": "https://techcrunch.com/2026/08/20/binance-now-lets-ai-agents-trade-but-keeping-them-in-check-is-largely-up-to-users/",
+     "tags": [
+      "Binance",
+      "AI Agents",
+      "Trading"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Meta AI 推出全新 Mac App，支援跨應用程式全系統語音輸入控制",
+      "en": "Meta AI launches Mac desktop app featuring system-wide voice dictation"
+     },
+     "detail": {
+      "zh": "Meta 發布了專為 macOS 設計的 Meta AI 應用程式，主打能在所有 Mac 應用程式中運作的語音聽寫與控制功能，正面對決 Wispr Flow 與 Superwhisper 等效率工具。",
+      "en": "Meta released a dedicated Mac desktop application introducing system-wide voice dictation across all macOS apps, competing with tools like Wispr Flow and Superwhisper."
+     },
+     "source": "https://techcrunch.com/2026/08/20/meta-ais-new-mac-app-wants-you-to-talk-to-your-apps/",
+     "tags": [
+      "Meta AI",
+      "macOS",
+      "Voice AI"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "研究指出：ChatGPT 問世以來，網路上已有三分之一的新發表網頁包含 AI 生成內容",
+      "en": "Study shows one-third of post-ChatGPT web content exhibits AI authorship"
+     },
+     "detail": {
+      "zh": "最新研討數據顯示，自 ChatGPT 推出以來出版的新網頁中，約有 33% 展現出明顯的 AI 撰寫或編輯特徵。這意味著 LLM 正在迅速改變網路數據的基底組成，同時也對未來的模型訓練資料集潔淨度提出警訊。",
+      "en": "A new analysis reveals that over 30% of web pages created since ChatGPT's launch show clear signs of AI writing or editing, highlighting the rapid shift in web content and synthetic data saturation."
+     },
+     "source": "https://techcrunch.com/2026/08/20/a-third-of-webpages-published-since-chatgpts-launch-show-signs-of-ai-authorship-study-finds/",
+     "tags": [
+      "AI Detection",
+      "Web Data",
+      "LLM Impact"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "技術分析指出「反 AI 字型」無效且可能對網頁可存取性造成傷害",
+      "en": "Analysis refutes 'anti-AI fonts', deeming them ineffective and harmful"
+     },
+     "detail": {
+      "zh": "針對部分網站採用混淆字型（Anti-AI fonts）來防止 LLM 爬蟲抓取的做法，文章進行了深度技術剖析，指出現代 OCR 與 LLM 能輕易還原內容，此類字型反而破壞了無障礙閱讀（Accessibility）與 SEO。",
+      "en": "A technical deep-dive demonstrates why anti-AI obfuscation fonts fail against modern multimodal LLMs and OCR, while negatively impacting web accessibility and search indexability."
+     },
+     "source": "https://blog.yaros.ae/anti-ai-fonts-are-useless-and-harmful/",
+     "tags": [
+      "Web Scraping",
+      "Fonts",
+      "Accessibility"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "企業級 AI 市場加劇爭奪：OpenAI 與 Anthropic 展開資料隱私規格戰",
+      "en": "OpenAI and Anthropic clash over enterprise data privacy features"
+     },
+     "detail": {
+      "zh": "最新數據顯示，OpenAI 正在企業市場侵蝕 Anthropic 的市佔率，雙方針對企業客戶資料處理與隱私防護推出更高規格的標準。數據指出企業客戶黏著度並不高，極易隨著最新模型發布而在兩大巨頭間轉移。",
+      "en": "Data indicates intensifying competition between OpenAI and Anthropic for enterprise customers, with both vendors rolling out aggressive data privacy guarantees to win market share."
+     },
+     "source": "https://techcrunch.com/2026/08/19/openai-seeks-to-one-up-anthropic-with-new-customer-privacy-protections/",
+     "tags": [
+      "OpenAI",
+      "Anthropic",
+      "Enterprise AI"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 推出《AI Futures》部落格專欄，探討通用人工智慧對經濟與治理的衝擊",
+      "en": "OpenAI launches 'AI Futures' to analyze macro economic and governance impacts"
+     },
+     "detail": {
+      "zh": "OpenAI 開設了名為 AI Futures 的全新專欄，聚焦於轉型 AI 對世界權力結構、政府治理、經濟模式與個人自由的潛在重塑。這是其為未來 IPO 與長期政策對話鋪路的一環。",
+      "en": "OpenAI announced 'AI Futures', a blog series examining how advanced AI could impact global governance, economics, and individual freedom ahead of its long-term strategic milestones."
+     },
+     "source": "https://openai.com/index/introducing-ai-futures",
+     "tags": [
+      "OpenAI",
+      "AI Governance",
+      "Policy"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "Grok Lite 模型爆出大規模回應亂碼問題，xAI 目前尚未提出解答",
+      "en": "Grok Lite users report widespread gibberish output errors"
+     },
+     "source": "https://techcrunch.com/2026/08/20/grok-keeps-sending-gibberish-responses-to-users/"
+    },
+    {
+     "headline": {
+      "zh": "Cognition 執行長出面否認 SpaceX 擬出價併購 Devin 母公司的市場傳聞",
+      "en": "Cognition CEO denies reports of acquisition talks with SpaceX"
+     },
+     "source": "https://techcrunch.com/2026/08/19/cognition-ceo-denies-report-that-spacex-tried-to-acquire-the-startup/"
+    },
+    {
+     "headline": {
+      "zh": "ChatGPT 整合 Apple Messages 外掛，支援自動撰寫並代發簡訊",
+      "en": "ChatGPT adds Apple Messages plugin to compose and send text messages"
+     },
+     "source": "https://techcrunch.com/2026/08/20/chatgpt-can-now-send-texts-for-you-with-new-apple-messages-plugin/"
+    },
+    {
+     "headline": {
+      "zh": "Google Discover 將導入 AI 對話功能，允許使用者自訂與記住 Feed 偏好",
+      "en": "Google Discover testing AI-tuned customized feeds for users"
+     },
+     "source": "https://www.theverge.com/tech/983088/google-discover-ai-chatbot-feed"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.6-flash",
+ "generated_at": "2026-08-21T07:03+08:00"
+}
