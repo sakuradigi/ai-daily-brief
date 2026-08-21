@@ -1,6 +1,14 @@
 {
- "latest": "2026-08-21",
+ "latest": "2026-08-22",
  "reports": [
+  {
+   "date": "2026-08-22",
+   "type": "daily",
+   "summary": {
+    "zh": "DeepSeek釋出視覺模型API，TTS延遲突破50ms",
+    "en": "DeepSeek releases vision API; sub-50ms TTS unlocked"
+   }
+  },
   {
    "date": "2026-08-21",
    "type": "daily",

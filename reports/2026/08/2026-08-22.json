@@ -1,0 +1,278 @@
+{
+ "date": "2026-08-22",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "DeepSeek 上線 DeepSeek-v4-flash-vision-exp 視覺模型 API",
+      "en": "DeepSeek Releases DeepSeek-v4-flash-vision-exp Vision API"
+     },
+     "detail": {
+      "zh": "DeepSeek 官方 API 文件新增輕量級視覺實驗模型指南，提供多模態圖像理解與結構化輸出能力。該模型延續 flash 系列高性價比與低延遲特性，為需要視覺 Agent 與 OCR 替代方案的開發者提供新選擇。",
+      "en": "DeepSeek updated its API documentation with a new lightweight experimental vision model guide. Designed with the characteristic high efficiency of the flash lineup, it offers low-cost multimodal image reasoning and structured extraction for vision agent pipelines."
+     },
+     "source": "https://api-docs.deepseek.com/guides/vision/",
+     "tags": [
+      "DeepSeek",
+      "Vision",
+      "API",
+      "LLM"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Nari Labs 揭秘：如何將 Qwen3-TTS 語音合成首字延遲壓至 50ms 內",
+      "en": "Nari Labs Achieves Sub-50ms Latency for Qwen3-TTS Models"
+     },
+     "detail": {
+      "zh": "Nari Labs 發布工程架構解析，透過推論管線並行化、自訂串流解碼與極限權重優化，將 TTS 端到端延遲縮短至 50 毫秒以內。這項突破大幅降低即時語音對話 Agent 的打斷與回應停頓，兼顧音質與推論伺服器成本。",
+      "en": "Nari Labs detailed their engineering optimizations that brought end-to-end TTS response latency under 50ms. By overhauling pipeline streaming and decoding for Qwen3-TTS, this development removes dialogue latency bottlenecks for real-time conversational agents."
+     },
+     "source": "https://nari-labs.com/blog/qwen3-tts-speed-cost-frontier/",
+     "tags": [
+      "TTS",
+      "Speech",
+      "Performance",
+      "Audio"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Nvidia 研究：決定 Agent 表現上限的是執行框架（Harness）而非基底模型",
+      "en": "Nvidia Research: Agent Harness and Fine-Tuning Matter More Than Base Model"
+     },
+     "detail": {
+      "zh": "Nvidia 最新實驗顯示，即使底層模型基準分數平平，透過嚴謹的 Harness 執行環境與專用微調，Agent 仍能在複雜任務中維持穩定且不失控。這項發現將工程焦點從盲目追求超大模型，轉向架構約束與執行時防護設計。",
+      "en": "Nvidia research demonstrates that specialized agent harnesses and fine-tuning outweigh raw base model size when preventing hallucinations and ensuring task completion. The finding pivots engineering priorities toward agent runtime environments rather than frontier model scale."
+     },
+     "source": "https://techcrunch.com/2026/08/21/nvidia-just-showed-that-the-harness-not-the-ai-model-is-now-the-real-hero/",
+     "tags": [
+      "Nvidia",
+      "AI Agents",
+      "Architecture",
+      "Research"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "llm-openrouter 0.7 與 llm 0.32.1 發布：支援伺服器端工具呼叫",
+      "en": "llm-openrouter 0.7 & llm 0.32.1 Released with Server-Side Tool Support"
+     },
+     "detail": {
+      "zh": "Simon Willison 維護的 CLI 工具發布更新，修復 OpenAI SDK 依賴問題並升級 OpenRouter Responses API 支援。新版外掛支援 Shell、WebFetch 與 WebSearch 等伺服器端工具，讓命令列互動更具擴充彈性。",
+      "en": "Simon Willison released updates fixing dependency issues and integrating OpenRouter's Responses API. The 0.7 plugin adds native CLI support for server-side tools including Shell, WebFetch, and WebSearch."
+     },
+     "source": "https://simonwillison.net/2026/Aug/21/llm-openrouter/",
+     "tags": [
+      "CLI",
+      "OpenRouter",
+      "Developer Tools",
+      "Open Source"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Claudette：消除 Claude 回覆中「BuzzFeed 浮誇風格」的系統提示詞專案",
+      "en": "Claudette: Open Source System Prompts to Strip BuzzFeed Tone from Claude"
+     },
+     "detail": {
+      "zh": "社群釋出名為 nobuzz 的 Prompt 套件，針對 Claude 系列容易產生的過度熱情、農場標題式贅字進行系統層級約束。開發者可直接整合至 API 請求的 System Message 中，獲取更精準俐落的技術輸出。",
+      "en": "The open-source 'nobuzz' repository provides tailored system prompts to suppress Claude's overly enthusiastic, buzzword-laden outputs. It allows developers to enforce concise, technical, and grounded responses across API workflows."
+     },
+     "source": "https://github.com/adnanakil/nobuzz/blob/main/README.md",
+     "tags": [
+      "Claude",
+      "Prompt Engineering",
+      "GitHub",
+      "Developer Tools"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "ChatGPT 整合 Apple Messages 外掛，支援自動代寫與發送簡訊",
+      "en": "ChatGPT Launches Apple Messages Integration for Automated Texting"
+     },
+     "detail": {
+      "zh": "OpenAI 推出串接 iMessage 訊息生態的外掛功能，使用者可委派 ChatGPT 處理日常對話回覆與排程訊息。此舉標誌著 AI 助理正深度切入作業系統原生即時通訊入口。",
+      "en": "OpenAI introduced an Apple Messages plug-in allowing ChatGPT to draft, schedule, and send SMS messages directly. This step represents a deeper integration of conversational AI into default OS communication channels."
+     },
+     "source": "https://techcrunch.com/2026/08/20/chatgpt-can-now-send-texts-for-you-with-new-apple-messages-plugin/",
+     "tags": [
+      "OpenAI",
+      "ChatGPT",
+      "Apple Messages",
+      "Product"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Google Discover 測試以自然語言對話自訂個人化推薦流",
+      "en": "Google Discover Rolls Out Conversational Tuning for Content Feeds"
+     },
+     "detail": {
+      "zh": "Google 正式為 Discover 資訊流導入 AI 調校選項，使用者能直接用語意描述喜好的內容類型與過濾條件，並由模型記憶偏好，取代傳統手動勾選分類標籤的繁瑣操作。",
+      "en": "Google is rolling out an AI-assisted customization feature for Discover feeds, allowing users to define content preferences and filter rules via natural language prompts instead of static category toggles."
+     },
+     "source": "https://www.theverge.com/tech/983088/google-discover-ai-chatbot-feed",
+     "tags": [
+      "Google",
+      "Recommendation",
+      "Personalization",
+      "Product"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Hugging Face 剖析語音識別 Benchmark 過度最佳化問題",
+      "en": "Hugging Face Examines Over-Optimization Traps in ASR Benchmarks"
+     },
+     "detail": {
+      "zh": "Hugging Face 最新研究文章揭露 ASR（語音辨識）領域中針對公開基準過度擬合的現象。報告指出部分模型在標準資料集表現亮眼，但在真實噪聲環境與領域特定名詞辨識上嚴重退化，呼籲建立多維度評估體系。",
+      "en": "A Hugging Face study highlights benchmark over-optimization in Automatic Speech Recognition (ASR). Models tailored specifically to standard datasets often degrade sharply in real-world noisy conditions, underscoring the need for robust evaluation metrics."
+     },
+     "source": "https://huggingface.co/blog/asr-benchmark-optimization",
+     "tags": [
+      "ASR",
+      "Benchmark",
+      "Hugging Face",
+      "Research"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "DeepMind 回顧 15 年遊戲 AI 研究：從 Atari 街機到《EVE Online》",
+      "en": "DeepMind Reflects on 15 Years of Game AI: From Atari to EVE Online"
+     },
+     "detail": {
+      "zh": "Google DeepMind 發文梳理從強化學習早期突破至現代大型多人線上遊戲的技術演進。團隊目前正與主流遊戲工作室合作，將複雜決策與協作 Agent 導入沙盒宇宙，探索動態 NPC 與策略推論極限。",
+      "en": "Google DeepMind recapped 15 years of reinforcement learning milestones from Atari to AlphaStar, announcing active partnerships with game studios to embed complex, cooperative agent architectures into MMO titles like EVE Online."
+     },
+     "source": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/",
+     "tags": [
+      "DeepMind",
+      "Reinforcement Learning",
+      "Gaming",
+      "Research"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Anna's Archive 指控 AI 公司掃描珍稀實體書籍後逕行銷毀",
+      "en": "Anna's Archive Calls for Rare Book Preservation Amid AI Physical Destruction"
+     },
+     "detail": {
+      "zh": "影子圖書館 Anna's Archive 發文披露部分 AI 數據供應商為加速高解析掃描與切頁 OCR，在數位化後銷毀實體絕版古籍。社群發起緊急搶救倡議，強調公共文化遺產與商業模型訓練資料獲取之間的衝突加劇。",
+      "en": "Anna's Archive reported that certain AI data collection operations physically destroy rare books after destructive sheet-fed scanning. The disclosure sparks debate over cultural preservation versus aggressive dataset acquisition by commercial AI firms."
+     },
+     "source": "https://annas-archive.pk/blog/physical-destruction.html",
+     "tags": [
+      "Datasets",
+      "Copyright",
+      "Preservation",
+      "Ethics"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "美國司法部對 a16z 展開反壟斷調查，劍指 Databricks 與 Fivetran 董事席位",
+      "en": "US DOJ Investigates a16z Over Interlocking Boards at Databricks and Fivetran"
+     },
+     "detail": {
+      "zh": "司法部依據百年前的反壟斷法規，針對知名創投 a16z 合夥人同時兼任具競爭關係之數據公司董事展開調查。此舉可能迫使頂級創投重組投資組合的治理結構，改變矽谷創投與新創董事會生態。",
+      "en": "The US Department of Justice is probing venture firm a16z under Clayton Act antitrust rules for holding concurrent board seats at competing data firms Databricks and Fivetran, potentially altering VC board governance norms."
+     },
+     "source": "https://techcrunch.com/podcast/the-doj-is-investigating-a16z-what-does-this-mean-for-venture-capital/",
+     "tags": [
+      "DOJ",
+      "Antitrust",
+      "Venture Capital",
+      "Regulation"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "歐盟法律觀點再次重申：純 AI 生成內容缺乏人類原創性，不受著作權法保護",
+      "en": "EU Legal Clarification Reaffirms AI-Generated Content Ineligible for Copyright Protection"
+     },
+     "source": "https://mathstodon.xyz/@maxpool/117128107757895678"
+    },
+    {
+     "headline": {
+      "zh": "LinkedIn 推出「疑似 AI 垃圾訊息（AI Slop）」檢舉功能，點擊使用量已破百萬次",
+      "en": "Over 1 Million Users Click LinkedIn's New 'Seems Like AI Slop' Report Button"
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/983502/linkedin-ai-slop-button-one-million-people-message"
+    },
+    {
+     "headline": {
+      "zh": "教育研究指出：過度依賴 AI 雖拉高平時作業成績，但學生隨後的閉卷考試表現顯著下滑",
+      "en": "Study Finds AI Crutches Boost Homework Scores but Cause Steep Drops in Exam Results"
+     },
+     "source": "https://canews24.online/?p=71"
+    },
+    {
+     "headline": {
+      "zh": "太空運算新創 Starcloud 完成 2.5 億美元融資，推進軌道 AI 資料中心建置",
+      "en": "Orbital Data Center Startup Starcloud Secures $250M Amid Rocket Launch Capacity Constraints"
+     },
+     "source": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.7-flash",
+ "generated_at": "2026-08-22T07:01+08:00"
+}
