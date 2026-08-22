@@ -1,0 +1,288 @@
+{
+ "date": "2026-08-23",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 宣佈 GPT 5.6 Sol API 降價 20%",
+      "en": "OpenAI Announces 20% Price Reduction for GPT 5.6 Sol API"
+     },
+     "detail": {
+      "zh": "OpenAI 調降了 GPT 5.6 Sol 模型的 API 價格 20%。此舉將直接降低開發者部署高頻率呼叫與大規模 Agent 工作流的營運成本。",
+      "en": "OpenAI has reduced the API price for its GPT 5.6 Sol model by 20%, directly lowering operational costs for high-volume API calls and large-scale agent workflows."
+     },
+     "source": "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
+     "tags": [
+      "OpenAI",
+      "API",
+      "Pricing",
+      "LLM"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Model Context Protocol (MCP) 公佈最新發展路線圖",
+      "en": "Model Context Protocol (MCP) Unveils New Roadmap"
+     },
+     "detail": {
+      "zh": "MCP 團隊發布了最新的工程路線圖，重點放在擴充生態系規範、強化安全性與簡化伺服器整合。這為未來 LLM 存取外部上下文與工具的標準化邁出重要一步。",
+      "en": "The MCP team published its latest engineering roadmap focusing on extending ecosystem standards, security enhancements, and simplifying server integrations for LLM tools."
+     },
+     "source": "https://blog.modelcontextprotocol.io/posts/mcp-roadmap/",
+     "tags": [
+      "MCP",
+      "Infrastructure",
+      "Developer Tools",
+      "Standards"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 被爆在 Claude Code 中 A/B 測試「降載推論」",
+      "en": "Anthropic Reportedly A/B Testing Reduced Effort Levels in Claude Code"
+     },
+     "detail": {
+      "zh": "社群觀察到 Anthropic 正在對 Claude Code 進行 A/B 測試，默默調降部分請求的 effort level。開發者反映這可能影響複雜重構與邏輯推理時的解答品質。",
+      "en": "Community reports indicate Anthropic is A/B testing reduced effort levels in Claude Code, which developers note may impact quality during complex code refactoring."
+     },
+     "source": "https://twitter.com/argofowl/status/2091150597374537729",
+     "tags": [
+      "Anthropic",
+      "Claude Code",
+      "A/B Test",
+      "Developer Tools"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Munder Difflin：能執行分身 Agent 辦公室的測試框架",
+      "en": "Munder Difflin: Agent Harness to Run an Office of Clones"
+     },
+     "detail": {
+      "zh": "Munder Difflin 是一個開源 Agent harness，允許開發者部署並協同運作多個模擬自身行為與風格的 AI 分身，為自動化多角色工作流提供實驗平台。",
+      "en": "Munder Difflin is an open-source agent harness that enables developers to deploy and coordinate multiple AI clones representing team roles for workflow automation."
+     },
+     "source": "https://munderdiffl.in/",
+     "tags": [
+      "Open Source",
+      "AI Agents",
+      "Automation",
+      "Workflow"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Simon Willison 釋出 CLI 工具 `llm` 0.33 版本",
+      "en": "Simon Willison Releases CLI Tool `llm` Version 0.33"
+     },
+     "detail": {
+      "zh": "知名開發者 Simon Willison 升級了其 LLM 命令行工具，全面支援 OpenAI Python SDK 3.x 並將 HTTP 用戶端改為 httpx2，同時為 Embedding 功能加入按次傳遞 Key 的控制能力。",
+      "en": "Simon Willison updated his LLM CLI tool to OpenAI Python SDK 3.x, switched HTTP client to httpx2, and added per-call API key support for embedding commands."
+     },
+     "source": "https://simonwillison.net/2026/Aug/22/llm/",
+     "tags": [
+      "Python",
+      "CLI",
+      "OpenAI",
+      "Embeddings"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "解析「為什麼你的 Local LLM 感覺比實際能力更笨」",
+      "en": "Why Your Local LLM Feels Dumber Than It Actually Is"
+     },
+     "detail": {
+      "zh": "極客論壇熱議本地端 LLM 表現不如預期的技術主因，指出問題多半源自激進的量化損耗（如 4-bit 以下）、上下文長度截斷以及 Sampler（如 Temperature、Top-P）預設參數配置不當。",
+      "en": "A detailed analysis explores why local LLMs underperform, pointing to aggressive quantization losses, context window truncations, and misconfigured sampler parameters."
+     },
+     "source": "https://forum.level1techs.com/t/why-your-local-llm-feels-dumber-than-it-is/253917",
+     "tags": [
+      "Local LLM",
+      "Quantization",
+      "Optimization",
+      "Tips"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "DeepMind 校友團隊發表 Faraday AI 助手，研究重現度超越 Anthropic 與 OpenAI",
+      "en": "DeepMind Alumni Lab Inherent Launches Faraday, Outperforming OpenAI in Research Replication"
+     },
+     "detail": {
+      "zh": "英國 AI 實驗室 Inherent 推出名為 Faraday 的科學 AI 隊友，專注於重現與驗證學術論文程式碼，官方宣稱其成功率超越了目前的 Claude 與 GPT 旗艦模型。",
+      "en": "British AI lab Inherent released Faraday, an AI agent designed to replicate scientific research papers, reportedly beating OpenAI and Anthropic in replication benchmarks."
+     },
+     "source": "https://techcrunch.com/2026/08/22/inherent-founded-by-deepmind-alumni-says-its-ai-teammate-just-outperformed-anthropic-and-openai-at-replicating-research/",
+     "tags": [
+      "AI Agents",
+      "Research",
+      "Benchmarking",
+      "Science"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Linus Torvalds 分享 AI 輔助除錯經驗：工程師的堅持能補足 AI 缺陷",
+      "en": "Linus Torvalds Shares AI Debugging Experience: Human Persistence Complements AI Limitations"
+     },
+     "detail": {
+      "zh": "Linux 之父分享他在棘手除錯中運用 AI 的心得。儘管 AI 數度斷言問題無法解決並建議放棄，但在工程師的堅持與要求下，AI 仍成功遞迴注入 Debug code 協助找出關鍵 Bug。",
+      "en": "Linus Torvalds shared his experience using AI for a complex kernel debug session, noting that while the AI gave up several times, human persistence kept it writing debug code until resolved."
+     },
+     "source": "https://simonwillison.net/2026/Aug/22/linus-torvalds/",
+     "tags": [
+      "Linus Torvalds",
+      "Debugging",
+      "Software Engineering",
+      "Coding Agents"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "研究揭示：各大 AI 實驗室仍缺乏「失控模型隔離機制」公開預案",
+      "en": "Study Finds Frontier AI Labs Lack Documented Containment Plans for Rogue Models"
+     },
+     "detail": {
+      "zh": "最新調查指出，包含頂尖業者在內的 Frontier AI Labs 幾乎沒有公開任何關於「若模型展現出非預期的危險行為時該如何技術隔離」的確切預案，引發 AI 安全維度上的隱憂。",
+      "en": "A new study reveals leading AI labs have few publicly documented containment protocols for rogue models, raising readiness questions as capabilities advance."
+     },
+     "source": "https://techcrunch.com/2026/08/22/frontier-ai-labs-still-wont-say-how-theyd-contain-a-rogue-model/",
+     "tags": [
+      "AI Safety",
+      "Research",
+      "Governance",
+      "Risk Mitigation"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "測試顯示 Anthropic Opus 4.6 防護欄機制易遭越獄繞過",
+      "en": "Tests Show Anthropic Opus 4.6 Safety Guardrails Easily Bypassed"
+     },
+     "detail": {
+      "zh": "儘管 Anthropic 明文禁止生成色情與敏感內容，TechCrunch 測試顯示 Opus 4.6 的系統提示詞與過濾機制在經過特定語意誘導後仍會失靈，突顯現行 Guardrail 的侷限性。",
+      "en": "Despite explicit bans on sexual content, testing reveals Anthropic's Opus 4.6 guardrails can be bypassed with minimal prompt manipulation, highlighting safety alignment challenges."
+     },
+     "source": "https://techcrunch.com/2026/08/21/anthropics-opus-4-6-is-a-smut-machine/",
+     "tags": [
+      "Anthropic",
+      "Opus 4.6",
+      "Jailbreak",
+      "Safety"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 轉向支持加州 SB 53 AI 安全法案並呼籲強化內容",
+      "en": "OpenAI Calls for Strengthening California's SB 53 AI Safety Bill"
+     },
+     "detail": {
+      "zh": "OpenAI 改變先前反對態度，公開呼籲加州立法者強化 SB 53 法案。此法案旨在規範前沿 AI 開發者的安全評估責任與災害預防機制。",
+      "en": "OpenAI reversed its earlier opposition, now urging California lawmakers to strengthen SB 53, a major AI safety bill focused on safety protocols for frontier models."
+     },
+     "source": "https://techcrunch.com/2026/08/22/openai-says-california-should-strengthen-its-ai-safety-bill/",
+     "tags": [
+      "OpenAI",
+      "Policy",
+      "Regulation",
+      "California"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Nvidia 結盟資料中心業者 Cloverleaf 擴建 AI 基礎建設",
+      "en": "Nvidia Partners with Data Center Developer Cloverleaf"
+     },
+     "detail": {
+      "zh": "Nvidia 宣佈與開發商 Cloverleaf 合作建置新一代 AI 資料中心。Nvidia 正持續透過資本與硬體支援，確保全球 AI 算力基礎設施具備足夠的電力與冷卻技術。",
+      "en": "Nvidia has partnered with developer Cloverleaf to build out specialized data centers, reinvesting AI revenues directly into physical compute infrastructure."
+     },
+     "source": "https://techcrunch.com/2026/08/21/nvidia-partners-with-data-center-developer-cloverleaf/",
+     "tags": [
+      "Nvidia",
+      "Data Center",
+      "Hardware",
+      "Infrastructure"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "LinkedIn 推出的「檢舉 AI 廢文 (Slop)」按鈕點擊量突破 100 萬次",
+      "en": "Over 1 million users have clicked LinkedIn's 'Seems like AI slop' report button"
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/983502/linkedin-ai-slop-button-one-million-people-message"
+    },
+    {
+     "headline": {
+      "zh": "哈佛商學院 Foundry 方案採用導師 AI 化身為學員提供 Pitch 實戰反饋",
+      "en": "Harvard's $699 startup bootcamp offers AI avatars of its instructors for pitch feedback"
+     },
+     "source": "https://techcrunch.com/2026/08/22/harvards-699-startup-bootcamp-offers-ai-avatars-of-its-instructors/"
+    },
+    {
+     "headline": {
+      "zh": "Simon Willison 探討 Coding Agent 驗證思維：除了 Code Review 更需建立動態驗證機制",
+      "en": "Simon Willison discusses coding agent validation beyond line-by-line code review"
+     },
+     "source": "https://simonwillison.net/2026/Aug/22/more-than-just-code-review/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.6-flash",
+ "generated_at": "2026-08-23T07:03+08:00"
+}

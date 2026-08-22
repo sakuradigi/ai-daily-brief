@@ -1,6 +1,14 @@
 {
- "latest": "2026-08-22",
+ "latest": "2026-08-23",
  "reports": [
+  {
+   "date": "2026-08-23",
+   "type": "daily",
+   "summary": {
+    "zh": "GPT 5.6 Sol 降價 20%、MCP 釋出新路線圖、Claude Code 測試降載機制。",
+    "en": "GPT 5.6 Sol drops API prices by 20%, MCP releases new roadmap, and Claude Code A/B tests reduced effort levels."
+   }
+  },
   {
    "date": "2026-08-22",
    "type": "daily",
