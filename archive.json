@@ -1,6 +1,14 @@
 {
- "latest": "2026-08-23",
+ "latest": "2026-08-24",
  "reports": [
+  {
+   "date": "2026-08-24",
+   "type": "weekly",
+   "summary": {
+    "zh": "Qwen 3.8 27B 實測優異，開發者聚焦成本與 Harness。",
+    "en": "Qwen 3.8 27B excels in reverse engineering as devs prioritize cost and harnesses."
+   }
+  },
   {
    "date": "2026-08-23",
    "type": "daily",
