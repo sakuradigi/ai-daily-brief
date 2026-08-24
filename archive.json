@@ -1,6 +1,14 @@
 {
- "latest": "2026-08-24",
+ "latest": "2026-08-25",
  "reports": [
+  {
+   "date": "2026-08-25",
+   "type": "daily",
+   "summary": {
+    "zh": "GPT-5.6 降價與整合，Hugging Face 傳高價收購",
+    "en": "GPT-5.6 price cuts and integrations; Hugging Face $13B acquisition talks."
+   }
+  },
   {
    "date": "2026-08-24",
    "type": "weekly",

@@ -1,0 +1,291 @@
+{
+ "date": "2026-08-25",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 將 GPT-5.6 整合至 Kiro 開發平台",
+      "en": "OpenAI Integrates GPT-5.6 into Kiro Platform"
+     },
+     "detail": {
+      "zh": "OpenAI 宣布將 GPT-5.6 引入 Kiro 軟體開發環境，協助工程師進行程式碼規劃、構建、審查與測試。該整合旨在提高軟體工程生命週期的性價比與自動化效率。",
+      "en": "OpenAI has launched GPT-5.6 in Kiro, aiming to streamline software development across planning, building, reviewing, and testing. The update brings improved price-performance to AI-assisted coding workflows."
+     },
+     "source": "https://openai.com/index/gpt-5-6-in-kiro",
+     "tags": [
+      "OpenAI",
+      "GPT-5.6",
+      "Developer Tools",
+      "Kiro"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 針對 GPT-5.6 Sol 推出限時 API 降價優惠",
+      "en": "OpenAI Cuts API Pricing for GPT-5.6 Sol"
+     },
+     "detail": {
+      "zh": "OpenAI 更新 API 計價文件，針對 GPT-5.6 Sol 模型推出價格調降方案，優惠期至少持續至 11 月 21 日。此舉能直接降低構建高頻次模型呼叫應用的開發成本。",
+      "en": "OpenAI has updated its API pricing docs to reflect a price reduction for the GPT-5.6 Sol model through at least Nov 21. This provides direct cost savings for high-volume developer API workloads."
+     },
+     "source": "https://developers.openai.com/api/docs/pricing",
+     "tags": [
+      "OpenAI",
+      "API",
+      "Pricing",
+      "LLM"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Hugging Face 傳出尋求 130 億美元估值收購談判",
+      "en": "Hugging Face Reportedly in $13B Acquisition Talks"
+     },
+     "detail": {
+      "zh": "消息指出 Hugging Face 正與潛在買家接洽收購事宜，估值約 130 億美元。然而基於創辦團隊對開源社群的承諾，交易最終是否能達成仍存在變數。",
+      "en": "Hugging Face is reportedly fielding acquisition offers at a valuation around $13 billion. However, founder commitment to the open-source community casts doubt on whether a deal will ultimately go through."
+     },
+     "source": "https://techcrunch.com/2026/08/24/hugging-face-reportedly-in-talks-to-be-acquired-for-13b/",
+     "tags": [
+      "Hugging Face",
+      "Acquisition",
+      "Industry",
+      "Open Source"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "llm-anthropic 0.27 發布：全面相容 Anthropic Python SDK v1.0",
+      "en": "llm-anthropic 0.27 Released with Anthropic Python SDK v1.0 Compatibility"
+     },
+     "detail": {
+      "zh": "Simon Willison 的 CLI 工具外掛 llm-anthropic 更新至 0.27，同步升級底層 Anthropic SDK 至 v1.0.0，並隨之將 HTTP 客戶端依賴項由 httpx 升級為 httpx2。",
+      "en": "Simon Willison's CLI plugin llm-anthropic has been updated to v0.27, bringing full compatibility with the new Anthropic Python SDK v1.0.0 and updating the HTTP client dependency to httpx2."
+     },
+     "source": "https://simonwillison.net/2026/Aug/24/llm-anthropic/",
+     "tags": [
+      "Anthropic",
+      "Python",
+      "CLI",
+      "SDK"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OCR It：自動提取無法複製文件純文字的 LLM 輔助工具",
+      "en": "OCR It: Extract Non-Copyable Text from Documents for LLMs"
+     },
+     "detail": {
+      "zh": "開源專案 OCR It 旨在讓使用者迅速從不可複製或影像格式的檔案中提取文字，便利地餵給 LLM 進行後續分析與處理。",
+      "en": "OCR It is a lightweight tool designed to extract non-copyable text from images and documents, simplifying context pipeline preparation for LLMs."
+     },
+     "source": "https://github.com/thiagotigaz/ocr-it",
+     "tags": [
+      "OCR",
+      "Open Source",
+      "LLM Tools"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Pure CMake 實現 GPT-2：僅用建置系統寫出語言模型推論",
+      "en": "Pure CMake Implementation of GPT-2"
+     },
+     "detail": {
+      "zh": "開發者以純粹的 CMake 語言實作了 GPT-2 推論過程，展示了極端環境下的建置腳本與演算法能力，極具 Geek 實驗價值。",
+      "en": "A developer implemented GPT-2 inference entirely in pure CMake, showcasing creative algorithmic execution using build system configuration scripts."
+     },
+     "source": "https://github.com/AlpinDale/gpt2.cmake",
+     "tags": [
+      "CMake",
+      "GPT-2",
+      "Geek",
+      "C++"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "低延遲 AI 夥伴：實作陪同玩家遊玩《上古卷軸 V》",
+      "en": "Low-Latency AI Gaming Companion for Skyrim"
+     },
+     "detail": {
+      "zh": "開發者打造了一款高即時性的 AI Companion 專案，結合語音識別與 LLM 推論，能在玩家遊玩《上古卷軸 V：無界天際》時即時進行對話與陪伴互動。",
+      "en": "A developer built a real-time AI companion that integrates low-latency voice pipeline and LLMs to interact with players live while playing Skyrim."
+     },
+     "source": "https://pantel.is/projects/ai-gaming-companion/",
+     "tags": [
+      "AI Companion",
+      "Gaming",
+      "Real-time AI",
+      "Skyrim"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Instinct 全能 AI 助手引發隱私與資安合規隱憂",
+      "en": "Instinct AI Assistant Raises Privacy and Security Concerns"
+     },
+     "detail": {
+      "zh": "Instinct AI 助手憑藉強大的跨軟體操作權限贏得早期使用者讚譽，但其寬鬆的服務條款與高權限自動化操作能力，也讓安全專家對資料隱私風險提出警告。",
+      "en": "While early testers praise Instinct AI assistant's capabilities, security experts warn that its broad permissions and autonomous action capabilities pose serious privacy tradeoffs."
+     },
+     "source": "https://techcrunch.com/2026/08/24/instincts-powerful-ai-assistant-is-raising-privacy-and-security-concerns/",
+     "tags": [
+      "AI Agent",
+      "Privacy",
+      "Security",
+      "Automation"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "史丹佛研究：AI 衝擊初階職缺最巨，受影響領域青年就業下滑 19%",
+      "en": "Stanford Study: AI Hits Entry-Level Jobs Hardest, Youth Employment Down 19%"
+     },
+     "detail": {
+      "zh": "史丹佛最新研究顯示，在受 AI 技術影響最深遠的職業類別中，初階與年輕勞工的就業率相較於高抗性領域下滑了 19%，顯現生成式 AI 對職場新人結構的重構效應。",
+      "en": "A Stanford study reveals that young worker employment in AI-exposed fields fell 19% compared to AI-resistant occupations, showing significant structural impact on junior roles."
+     },
+     "source": "https://arstechnica.com/ai/2026/08/ai-is-hitting-entry-level-jobs-hardest-stanford-study-finds/",
+     "tags": [
+      "Research",
+      "Stanford",
+      "Labor Market",
+      "AI Impact"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "專文反思：過度依賴 AI 輔助開發恐導致工程師專業能力斷層",
+      "en": "Essay Warns AI Reliance May Cause Collapse of Coding Expertise"
+     },
+     "detail": {
+      "zh": "技術文章探討程式設計師長期倚賴 AI 自動補全與生成的後果，警告初學者可能因缺乏基礎功鍛鍊，致使整個產業的深層除錯與系統架構專業逐漸退化。",
+      "en": "An analysis argues that heavy dependence on AI coding assistants will hamper foundational learning for junior developers, ultimately eroding deep debugging and architectural expertise industry-wide."
+     },
+     "source": "https://larsfaye.com/articles/ai-coding-will-prevent-expertise",
+     "tags": [
+      "Software Engineering",
+      "AI Coding",
+      "Opinion"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "具身智能新星 General Intuition 獲新一輪融資，估值達 60 億美元",
+      "en": "General Intuition Reaches $6B Valuation for Physical AI Models"
+     },
+     "detail": {
+      "zh": "致力於開發時空感知通用 Agent 模型的 General Intuition 正進行新一輪融資，估值達 60 億美元，投資方包含 Valor 與 Point72，重點加速機器人領域模型研發。",
+      "en": "Robotics foundation model startup General Intuition is raising at a $6 billion valuation from investors including Valor and Point72 to advance temporal-spatial agent capabilities."
+     },
+     "source": "https://techcrunch.com/2026/08/24/valor-point72-back-general-intuition-at-6b-valuation-as-ai-startup-pushes-into-robotics/",
+     "tags": [
+      "Robotics",
+      "Venture Capital",
+      "Embodied AI"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 密集佈局全場景 AI Agent，試圖推進大眾市場應用",
+      "en": "OpenAI Pushes to Build AI Agents for Mass Market Adoption"
+     },
+     "detail": {
+      "zh": "OpenAI 內部正積極將 AI Agent 的應用範疇從軟體工程擴展至一般消費與企業場景，期望透過自主代理工具改變用戶與技術互動的型態。",
+      "en": "OpenAI is aggressively expanding its AI agent roadmap beyond software engineering into general consumer and enterprise workflows to drive widespread adoption."
+     },
+     "source": "https://techcrunch.com/2026/08/24/openai-is-building-an-ai-agent-for-everything-will-everyone-use-them/",
+     "tags": [
+      "OpenAI",
+      "AI Agents",
+      "Industry Trends"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "將 Linux 可執行檔偽裝成 SQLite 資料庫檔的黑科技實作",
+      "en": "Linux Pattern Encapsulates Executable Binaries inside SQLite Databases"
+     },
+     "source": "https://simonwillison.net/2026/Aug/24/your-executable-is-a-sqlite-database/"
+    },
+    {
+     "headline": {
+      "zh": "Mac 軟體開發商 CorkMac 聲明旗下產品堅決不採用任何 AI 技術",
+      "en": "CorkMac Declares Strict No-AI Stance Across All Software Products"
+     },
+     "source": "https://corkmac.app/our-ai-stance/"
+    },
+    {
+     "headline": {
+      "zh": "Nvidia 高層捲入美超微走私 AI 伺服器至中國案件遭起訴",
+      "en": "Senior Nvidia Manager Indicted in Supermicro AI Server Smuggling Scheme"
+     },
+     "source": "https://arstechnica.com/tech-policy/2026/08/nvidia-senior-manager-linked-to-supermicro-scheme-smuggling-ai-servers-to-china/"
+    },
+    {
+     "headline": {
+      "zh": "Replit CEO Amjad Masad 將於 TechCrunch Disrupt 發表 AI 程式設計演講",
+      "en": "Replit CEO Amjad Masad to Discuss Future of AI Coding at TC Disrupt 2026"
+     },
+     "source": "https://techcrunch.com/2026/08/24/amjad-masad-ceo-and-co-founder-of-replit-joins-the-disrupt-stage-at-techcrunch-disrupt-2026/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.6-flash",
+ "generated_at": "2026-08-25T07:03+08:00"
+}
