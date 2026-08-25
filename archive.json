@@ -1,6 +1,14 @@
 {
- "latest": "2026-08-25",
+ "latest": "2026-08-26",
  "reports": [
+  {
+   "date": "2026-08-26",
+   "type": "daily",
+   "summary": {
+    "zh": "OpenAI 推出自研推論晶片 Jalapeño",
+    "en": "OpenAI unveils custom Jalapeño chip for low-latency AI inference"
+   }
+  },
   {
    "date": "2026-08-25",
    "type": "daily",
