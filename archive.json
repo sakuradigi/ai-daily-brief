@@ -1,6 +1,14 @@
 {
- "latest": "2026-08-26",
+ "latest": "2026-08-27",
  "reports": [
+  {
+   "date": "2026-08-27",
+   "type": "daily",
+   "summary": {
+    "zh": "OpenAI 揭露安全事故報告，Z.ai 證實 Ox Alpha 身份並預告開源權重。",
+    "en": "OpenAI releases Hugging Face security report while Z.ai confirms ownership of Ox Alpha with open weights coming soon."
+   }
+  },
   {
    "date": "2026-08-26",
    "type": "daily",
