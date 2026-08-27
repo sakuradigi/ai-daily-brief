@@ -1,6 +1,14 @@
 {
- "latest": "2026-08-27",
+ "latest": "2026-08-28",
  "reports": [
+  {
+   "date": "2026-08-28",
+   "type": "daily",
+   "summary": {
+    "zh": "Nvidia 傳出 130 億收購 Hugging Face；Claude Code 自動模式遭爆漏洞。",
+    "en": "Nvidia reportedly acquiring Hugging Face for $13B; Claude Code auto mode prompt injection exploit revealed."
+   }
+  },
   {
    "date": "2026-08-27",
    "type": "daily",
