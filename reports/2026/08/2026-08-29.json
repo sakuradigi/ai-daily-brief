@@ -1,0 +1,308 @@
+{
+ "date": "2026-08-29",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "GLM-5.3 模型權重正式開源，登頂開源社群熱門",
+      "en": "GLM-5.3 Weights Are Now Officially Open-Source on Hugging Face"
+     },
+     "detail": {
+      "zh": "智譜 AI 旗下最新一代基礎模型 GLM-5.3 正式釋出開源權重，社群反應熱烈。這為開發者在私有化部署與進階微調上提供了最新一代的高效能開源大模型選項。",
+      "en": "Zhipu AI has officially released the open weights for GLM-5.3 on Hugging Face. This provides developers with a powerful new open-weight foundation model for self-hosting and specialized fine-tuning."
+     },
+     "source": "https://huggingface.co/zai-org/GLM-5.3",
+     "tags": [
+      "OpenWeight",
+      "LLM",
+      "GLM"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "美聯邦法院裁定五角大廈封殺 Anthropic 屬違法行為",
+      "en": "US Federal Judge Rules Pentagon's Blacklisting of Anthropic Unlawful"
+     },
+     "detail": {
+      "zh": "美國聯邦法官判決川普政府此前以供應鏈風險為由封殺 Anthropic 的行政命令違憲且違法。此判決消除了政府承包商與企業客戶在整合 Claude 系列 API 時的合規與政治風險疑慮。",
+      "en": "A federal judge ruled that the Trump administration unlawfully blacklisted Anthropic over supply-chain risk designations. The decision clears significant legal and compliance uncertainty for enterprise and government users relying on Claude models."
+     },
+     "source": "https://www.reuters.com/legal/government/us-judge-blocks-pentagons-anthropic-blacklisting-2026-08-28/",
+     "tags": [
+      "Anthropic",
+      "Policy",
+      "Compliance"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 推出標準化硬體驅動介面，讓 AI Agent 控制實體設備",
+      "en": "Anthropic Introduces Standardized Hardware Interface for Physical AI Agents"
+     },
+     "detail": {
+      "zh": "Anthropic 提出全新統一硬體驅動標準，旨在讓 AI Agent 能夠無縫與各類實體感測器與硬體設備溝通與協同操作。這將大幅降低物聯網與機器人領域接入大模型 Agent 的整合門檻。",
+      "en": "Anthropic has unveiled a new hardware driver standard enabling AI agents to control physical devices and communicate with each other. This significantly reduces the friction of integrating LLM agents into IoT and robotics hardware."
+     },
+     "source": "https://arstechnica.com/ai/2026/08/anthropics-new-hardware-standard-lets-ai-agents-control-the-physical-world/",
+     "tags": [
+      "Anthropic",
+      "Agent",
+      "Hardware",
+      "Standard"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Claude Code 預設 Auto Mode 遭資安研究員攻破，存在提示注入風險",
+      "en": "Security Researcher Breaks Claude Code Opus 5 Auto Mode via Prompt Injection"
+     },
+     "detail": {
+      "zh": "資安研究員 Johann Rehberger 揭露 Claude Code 的 Auto Mode 存在提示注入漏洞，可透過誘騙解壓惡意 Zip 檔執行未授權操作，成功率達 80%。開發者使用 CLI Agent 工具自動化處理外部未信任檔案時需保持警惕。",
+      "en": "Researcher Johann Rehberger demonstrated a prompt injection attack against Claude Code's default Auto Mode with an 80% success rate via malicious archive extraction. Developers should exercise caution when letting coding agents process untrusted repositories."
+     },
+     "source": "https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode/",
+     "tags": [
+      "Security",
+      "ClaudeCode",
+      "PromptInjection"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Experiential：將 API 調用日誌轉化為模型微調數據的開源中繼層",
+      "en": "Experiential: Open-Source OpenRouter Alternative Turning Usage into Training Data"
+     },
+     "detail": {
+      "zh": "開源專案 Experiential 提供類似 OpenRouter 的多模型 API 代理層，並能在保障隱私的前提下自動將真實推理對話與反饋轉化為高質量微調資料集，用於持續迭代專用模型。",
+      "en": "Experiential is an open-source model proxy that logs LLM interactions and automatically curates high-quality datasets to fine-tune better custom models from real-world usage."
+     },
+     "source": "https://github.com/experientiallabs/experiential",
+     "tags": [
+      "OpenSource",
+      "FineTuning",
+      "APIProxy"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "AI Engineer Notebooks：純 Python、零框架的 RAG 與 Agent 學習庫",
+      "en": "AI Engineer Notebooks: Framework-Free RAG, Agent, and Eval Tutorials on Colab"
+     },
+     "detail": {
+      "zh": "該專案提供一系列不依賴 LangChain 或 LlamaIndex 等重型框架的 Jupyter Notebook，純粹使用原生 Python 與 API 實作 RAG、Agent 循環及評估流程，適合想掌握底層機制的工程師。",
+      "en": "A curated collection of framework-free Colab notebooks implementing RAG, agent workflows, and evaluations in pure Python, ideal for engineers looking to understand LLM mechanics without abstraction bloat."
+     },
+     "source": "https://github.com/calmrocks/ai-engineer-notebooks",
+     "tags": [
+      "Python",
+      "RAG",
+      "Agent",
+      "Tutorial"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Meta 更新智慧眼鏡韌體：遮蔽 LED 指示燈將自動中斷錄影",
+      "en": "Meta Updates AI Glasses to Halt Recording When Privacy LED Is Covered"
+     },
+     "detail": {
+      "zh": "為解決偷拍爭議，Meta 推送更新使智慧眼鏡在感測器偵測到拍攝提示燈被遮擋時自動停止錄影。這顯示穿戴式 AI 裝置在隱私防護與合規工程上的設計正日趨嚴格。",
+      "en": "Meta has rolled out a firmware update to its AI smart glasses that automatically stops recording if the external safety LED is covered, addressing privacy concerns around non-consensual capture."
+     },
+     "source": "https://arstechnica.com/tech-policy/2026/08/meta-tweaks-ai-glasses-to-block-some-creepy-recordings-but-privacy-risks-remain/",
+     "tags": [
+      "Meta",
+      "WearableAI",
+      "Privacy"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 與泰國高等教育科研部合作啟動 AI 新創加速計畫",
+      "en": "OpenAI Launches 8-Week AI Startup Accelerator with Thai Government"
+     },
+     "detail": {
+      "zh": "OpenAI 宣布與泰國 MHESI 合作推出為期 8 週的加速器，首批資助 10 家醫療、健康與教育領域新創，協助其將 AI 原型產品化並擴展至東南亞市場。",
+      "en": "OpenAI and Thailand's MHESI launched an eight-week accelerator to support 10 Southeast Asian startups in health, wellness, and education in bringing AI prototypes into production."
+     },
+     "source": "https://openai.com/index/supporting-next-generation-ai-startups-thailand",
+     "tags": [
+      "OpenAI",
+      "Startups",
+      "Global"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Anthropic 研究員揭示自我改進 AI 機制：自動對齊且不降泛化水準",
+      "en": "Anthropic Research Previews Self-Improving AI Alignment Without Degradation"
+     },
+     "detail": {
+      "zh": "Anthropic 研究人員展示了自動化系統在 10 項對齊基準測試中的自我改進能力，成功修正特定偏離行為，同時完全未損害模型原有的通用推理與程式能力。",
+      "en": "Anthropic researchers demonstrated an automated self-improvement framework that fixed targeted misaligned behaviors across 10 benchmarks without degrading general model capabilities."
+     },
+     "source": "https://techcrunch.com/2026/08/28/an-anthropic-researcher-just-gave-us-a-peek-at-self-improving-ai/",
+     "tags": [
+      "Research",
+      "Alignment",
+      "Anthropic"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Terminal-Bench-Science：評估 AI Agent 科研工作流能力的全新 Benchmark",
+      "en": "Terminal-Bench-Science: Benchmark Evaluating AI Agents on Scientific Workflows"
+     },
+     "detail": {
+      "zh": "該基準測試專注於評估自主 Agent 在終端環境中執行科學計算、資料分析及研究管線的能力，為評測非單純寫扣的複雜科研 Agent 提供標準化指標。",
+      "en": "A new benchmark designed to rigorously evaluate AI agents executing terminal-based scientific computing and data analysis pipelines beyond standard coding tasks."
+     },
+     "source": "https://www.terminal-bench-science.ai/announcement",
+     "tags": [
+      "Benchmark",
+      "Agent",
+      "Science"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Hugging Face 開源語音識別排行榜首次納入全球南方語言",
+      "en": "Hugging Face Open ASR Leaderboard Adds First Global South Language"
+     },
+     "detail": {
+      "zh": "Hugging Face 擴展了 Open ASR Leaderboard 的評測範疇，首次導入低資源與非主流語系評測，推動語音辨識模型在全球多元語境下的效能驗證。",
+      "en": "Hugging Face has expanded its Open ASR Leaderboard to include Global South languages, encouraging better evaluation of speech models on low-resource linguistic datasets."
+     },
+     "source": "https://huggingface.co/blog/open-asr-leaderboard-global-south",
+     "tags": [
+      "HuggingFace",
+      "ASR",
+      "Benchmark"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "GPU 雲端算力商 Lambda 獲得 10 億美元債務融資以擴充晶片集群",
+      "en": "Neocloud Lambda Secures $1B in Debt to Expand Nvidia GPU Capacity"
+     },
+     "detail": {
+      "zh": "專注於 AI 基礎設施的 Neocloud Lambda 透過發行 10 億美元私募債券購買輝達 GPU 並轉租給微軟等巨頭，突顯出算力代管市場巨大的資本密集度與擴張需求。",
+      "en": "Neocloud Lambda raised $1B in private debt to acquire Nvidia GPUs for long-term leases to hyperscalers like Microsoft, highlighting the immense capital scale required for AI cloud compute."
+     },
+     "source": "https://techcrunch.com/2026/08/28/neocloud-lambda-secures-1b-in-debt-to-buy-more-chips/",
+     "tags": [
+      "Infrastructure",
+      "Compute",
+      "Funding"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "矽谷掀起開源權重模型團隊收購熱潮，資本加速佈局核心技術人才",
+      "en": "Open-Weight AI Startups Emerge as Valley's Hottest Acquisition Targets"
+     },
+     "detail": {
+      "zh": "隨著基礎模型研發成本居高不下，矽谷創投與科技巨頭轉向積極收購或資助具備開源模型權重訓練經驗的新創團隊，以獲取頂尖架構優化與微調人才。",
+      "en": "Silicon Valley investors and tech giants are aggressively targeting open-weight model startups for acquisition, aiming to secure specialized talent in model architecture and training optimization."
+     },
+     "source": "https://techcrunch.com/2026/08/28/open-weight-ai-companies-are-the-valleys-hottest-acquisition-targets/",
+     "tags": [
+      "M&A",
+      "OpenWeight",
+      "VentureCapital"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "資安警訊：開源補丁公開僅數分鐘內即出現自動化 Exploit 探測攻擊",
+      "en": "Automated security exploits are now targeting open-source patches within minutes of public disclosure."
+     },
+     "source": "https://simonwillison.net/2026/Aug/28/just-a-rumour-of-a-bug/"
+    },
+    {
+     "headline": {
+      "zh": "開源遊戲引擎 Luanti 因 AI 抓取自動版權通知遭 Google Play 錯誤下架",
+      "en": "Open-source engine Luanti was mistakenly delisted from Google Play following an automated AI copyright notice."
+     },
+     "source": "https://blog.luanti.org/2026/08/27/luanti-dmca-tracer-ai/"
+    },
+    {
+     "headline": {
+      "zh": "開源維護者公開呼籲：請勿為了美化個人履歷向專案發送 AI 生成的垃圾 PR",
+      "en": "Open-source maintainers plead with developers to stop submitting low-quality AI-generated PRs for resume padding."
+     },
+     "source": "https://neilalexander.dev/2026/06/30/flooding-contributions"
+    },
+    {
+     "headline": {
+      "zh": "美國 EPA 擬修改規則，放寬 AI 資料中心公開空氣污染與排放數據的監管要求",
+      "en": "US EPA proposes rule change allowing data centers to bypass public comment periods on air pollution permits."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/986176/data-center-pollution-epa-rule-change-air-permit"
+    },
+    {
+     "headline": {
+      "zh": "Meta 亞太高階主管跳槽 OpenAI，執掌東南亞與澳洲地區營運業務",
+      "en": "Former Meta executive leaves to head OpenAI's operations across Southeast Asia and Australia."
+     },
+     "source": "https://techcrunch.com/2026/08/28/meta-executive-leaves-for-openai-as-the-social-media-giant-faces-growing-scrutiny-in-india/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.7-flash",
+ "generated_at": "2026-08-29T07:01+08:00"
+}

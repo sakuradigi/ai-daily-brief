@@ -1,6 +1,14 @@
 {
- "latest": "2026-08-28",
+ "latest": "2026-08-29",
  "reports": [
+  {
+   "date": "2026-08-29",
+   "type": "daily",
+   "summary": {
+    "zh": "GLM-5.3 開源權重釋出；Anthropic 贏得禁令訴訟並推硬體 Agent 標準",
+    "en": "GLM-5.3 goes open-weight; Anthropic wins Pentagon ban lawsuit and intros agent hardware standard."
+   }
+  },
   {
    "date": "2026-08-28",
    "type": "daily",
