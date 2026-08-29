@@ -1,6 +1,14 @@
 {
- "latest": "2026-08-29",
+ "latest": "2026-08-30",
  "reports": [
+  {
+   "date": "2026-08-30",
+   "type": "daily",
+   "summary": {
+    "zh": "Debian允許使用AI，唱片巨頭起訴Anthropic",
+    "en": "Debian permits AI use; Sony & Warner file massive lawsuit against Anthropic."
+   }
+  },
   {
    "date": "2026-08-29",
    "type": "daily",
