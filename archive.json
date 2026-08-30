@@ -1,6 +1,14 @@
 {
- "latest": "2026-08-30",
+ "latest": "2026-08-31",
  "reports": [
+  {
+   "date": "2026-08-31",
+   "type": "weekly",
+   "summary": {
+    "zh": "騰訊開源770B巨獸Hy4，Agent安全與能耗爭議持續升溫",
+    "en": "Tencent open-weights 770B Hy4 as agent security debates surge"
+   }
+  },
   {
    "date": "2026-08-30",
    "type": "daily",
