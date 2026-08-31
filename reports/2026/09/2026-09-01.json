@@ -1,0 +1,252 @@
+{
+ "date": "2026-09-01",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "資安研究員突破 Claude Code Opus 5 的 Auto Mode 防線，揭露 Agent 執行風險",
+      "en": "Security Researcher Breaks Claude Code Opus 5 Auto Mode, Exposing Agent Execution Vulnerabilities"
+     },
+     "detail": {
+      "zh": "研究展示了如何透過間接 Prompt Injection 劫持 Claude Code 的自主執行模式，誘使 Agent 執行未經授權的系統指令與資料外洩。這提醒開發者在賦予 Coding Agent 終端機完全執行權限時，必須建立更嚴格的沙盒與權限隔離機制。",
+      "en": "A new exploit demonstrates indirect prompt injection against Claude Code's autonomous mode, tricking the agent into executing arbitrary commands and leaking data. It underscores the critical need for strict sandboxing when granting coding agents terminal privileges."
+     },
+     "source": "https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/",
+     "tags": [
+      "Security",
+      "Claude",
+      "AI Agents"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Debian 社群投票定案：不禁止開發者使用 AI 工具產出開源代碼",
+      "en": "Debian Officially Decides Not to Ban AI-Generated Code in Its Distribution"
+     },
+     "detail": {
+      "zh": "Debian 專案投票確立了對生成式 AI 的方針，認定 AI 工具是提升生產力的有效輔助，代碼貢獻將適用現有的品質與版權審查標準，不施加額外禁令。這確立了主流 Linux 發行版對 AI 輔助開發的務實態度，貢獻者仍須為代碼品質負全責。",
+      "en": "Debian has established its generative AI policy, allowing contributors to use AI tools for development, maintenance, and documentation. AI code will be judged under standard quality and license criteria rather than blanket bans, setting a clear precedent for major open-source ecosystems."
+     },
+     "source": "https://www.theverge.com/tech/986789/linux-debian-generative-ai-policy",
+     "tags": [
+      "Open Source",
+      "Debian",
+      "Linux",
+      "DevOps"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "輝達以 35 億美元注資聯發科，反擊科技巨頭自研 AI ASIC 浪潮",
+      "en": "Nvidia Injects $3.5B into MediaTek to Counter Big Tech Custom AI Silicon"
+     },
+     "detail": {
+      "zh": "面臨雲端巨頭紛紛投入自研加速晶片的壓力，Nvidia 透過注資台灣晶片巨頭聯發科深化生態系合作，鎖定邊緣運算與自訂 AI 晶片設計能力。此舉將加速高整合度 AI 邊緣硬體推向市場，影響未來端側推論晶片的供應格局。",
+      "en": "To defend against hyperscalers developing in-house AI silicon, Nvidia has invested $3.5B in MediaTek to bolster custom chip design and edge AI capabilities. The partnership strengthens Nvidia's foothold across both edge inference and tailored accelerator markets."
+     },
+     "source": "https://techcrunch.com/2026/08/31/nvidias-3-5b-mediatek-bet-reveals-its-plan-for-tackling-big-techs-ai-chip-buildout/",
+     "tags": [
+      "Hardware",
+      "Nvidia",
+      "Chips"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "以結構化檔案格式管理 Agent 記憶：全新 Memory Fields 概念提出",
+      "en": "Agent Memory as a File Format: Exploring Memory Fields for Local LLM States"
+     },
+     "detail": {
+      "zh": "開發者探討將 AI Agent 的長期記憶儲存為純文字與可攜帶檔案格式的可行架構，避免將狀態黑箱鎖死於特定雲端或複雜向量資料庫中。此方案提供更透明、便於 Git 版本控管與快速除錯的 Agent 記憶體實現路徑。",
+      "en": "An architecture proposing agent long-term memory as portable, human-readable file formats instead of opaque vector database locks. It enables Git-friendly versioning, easy inspection, and straightforward local agent state management."
+     },
+     "source": "https://calpaterson.com/memoryfields.html",
+     "tags": [
+      "Architecture",
+      "Agents",
+      "LocalAI"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "拆解 ChatGPT Work 架構：雲端協作與本地桌面工具的雙軌佈局",
+      "en": "Dissecting ChatGPT Work: How Cloud Execution and Desktop Sandboxes Interact"
+     },
+     "detail": {
+      "zh": "Simon Willison 深度分析 OpenAI 的 ChatGPT Work 產品線，指出其分為基於瀏覽器的 Work Cloud 與桌面端本地環境兩套邏輯。了解這兩者的權限邊界、狀態同步機制與上下文隔離，對企業內部整合與安全評估至關重要。",
+      "en": "Simon Willison provides a technical teardown of ChatGPT Work, differentiating between its web-based Work Cloud and the local desktop implementation. The analysis details how workspace execution sandboxing and context synchronization actually operate."
+     },
+     "source": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work/",
+     "tags": [
+      "OpenAI",
+      "ChatGPT",
+      "Product Analysis"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Mac mini 與 Mac Studio 因本地推論需求爆發，銷量超乎蘋果預期",
+      "en": "Apple Caught Off Guard by Local AI Demand Driving Mac Mini and Studio Sales"
+     },
+     "detail": {
+      "zh": "受惠於統一大記憶體架構（Unified Memory）能以極低成本運行 70B+ 本地大模型，Mac mini 與 Mac Studio 成為開源社群與開發者的推論伺服器首選。這迫使蘋果重新評估以 AI 算力為核心的桌上型 Mac 供應鏈與產品定位。",
+      "en": "Surging developer demand for running 70B+ local LLMs on high-bandwidth Unified Memory has caused Mac Mini and Studio demand to outstrip forecasts, turning Apple Silicon desktop hardware into unexpected edge AI workhorses."
+     },
+     "source": "https://www.macrumors.com/2026/08/30/apple-unexpected-mac-mini-and-studio-demand/",
+     "tags": [
+      "Apple",
+      "Hardware",
+      "LocalLLM"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "多模態視訊搜尋新創 Clipto 估值達 2.5 億美元，ARR 突破 1,500 萬",
+      "en": "AI Video Search Startup Clipto Reaches $250M Valuation with $15M ARR"
+     },
+     "detail": {
+      "zh": "Clipto 專注於 TB 級海量影片的語意檢索與畫面片段快速定位，在未大量融資前即實現盈利並達 1,500 萬美元 ARR。這證明針對特定多模態資料索引的高效向量檢索技術在企業級影音工作流中具備高度商業價值。",
+      "en": "Clipto has hit a $250M valuation by providing semantic search across terabytes of raw video footage. Reaching $15M in ARR profitably highlights the strong demand for specialized multimodal indexing pipelines in media workflows."
+     },
+     "source": "https://techcrunch.com/2026/08/31/three-year-old-ai-media-search-startup-clipto-hits-a-250m-valuation/",
+     "tags": [
+      "Multimodal",
+      "Video AI",
+      "Enterprise"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "擴散語言模型（Diffusion LM）實作指南：從離散去噪到文字生成",
+      "en": "Step-by-Step Guide to Building and Training Diffusion Language Models"
+     },
+     "detail": {
+      "zh": "文章詳細解析如何將連續擴散機制應用於離散文字生成，包含遮罩離散擴散（MDLM）的數學推導、損失函數設計與訓練步驟。擴散語言模型具備非自回歸並行生成與靈活填空修改的潛力，是目前探索 Transformer 替代方案的重要研究方向。",
+      "en": "A comprehensive technical breakdown of building diffusion-based language models on discrete tokens. It covers the mathematical formulation of masked discrete diffusion and training dynamics, highlighting its potential for non-autoregressive parallel text generation."
+     },
+     "source": "https://kuleshov-group.github.io/blog/blog/2026/how-to-build-a-diffusion-language-model/",
+     "tags": [
+      "Diffusion LM",
+      "Machine Learning",
+      "Research"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "ChatGPT Ads 年化營收破 10 億美元，OpenAI 擴大免費層廣告覆蓋",
+      "en": "ChatGPT Ads Hits $1B Run Rate as OpenAI Expands Ad Support Globally"
+     },
+     "detail": {
+      "zh": "OpenAI 宣布其廣告業務年化運行營收（ARR）達到 10 億美元，並將在全球範圍內擴大向免費與低價層用戶推播對話廣告。這標誌著生成式搜尋與 AI 對話系統正式確立商業廣告變現模型，將對傳統搜尋引擎生態造成衝擊。",
+      "en": "OpenAI disclosed that its ChatGPT advertising tier reached a $1 billion annualized run rate, expanding global rollouts to subsidize free tiers. This cements conversational advertising as a viable revenue model directly rivaling search engines."
+     },
+     "source": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads",
+     "tags": [
+      "OpenAI",
+      "Business",
+      "Monetization"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 內部「熱愛 Z-Library」聊天紀錄曝光，遭 Sony 音樂侵權訴訟引用",
+      "en": "Anthropic Internal Chats Praising Z-Library Cited in Sony Music Copyright Suit"
+     },
+     "detail": {
+      "zh": "Sony 在針對 Anthropic 的版權訴訟中提交內部 Slack 紀錄，指控其員工明知故犯透過盜版來源與 Torrent 下載受版權保護的資料用於模型訓練。此案將進一步限縮 AI 訓練資料的合理使用（Fair Use）辯護空間，影響訓練資料集溯源合規要求。",
+      "en": "Internal Slack chats showing Anthropic staff praising shadow libraries like Z-Library were submitted in Sony's copyright lawsuit. The case intensifies legal scrutiny over training data provenance and tests the boundaries of Fair Use in LLM pretraining."
+     },
+     "source": "https://arstechnica.com/tech-policy/2026/08/zlibrary-my-beloved-anthropic-staff-chats-extolling-piracy-cited-in-sony-suit/",
+     "tags": [
+      "Anthropic",
+      "Copyright",
+      "Legal"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "歐盟依據《數位服務法》（DSA）將 ChatGPT 認定為超大型搜尋引擎（VLOSE），施加更嚴格內容審查與心理健康監管",
+      "en": "EU designates ChatGPT as a Very Large Online Search Engine under DSA, mandating strict compliance."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/986682/openai-chatgpt-eu-dsa"
+    },
+    {
+     "headline": {
+      "zh": "五角大廈在內部 AI 平台納入客製版 ChatGPT 與 Grok，與 Google Gemini 並列運行",
+      "en": "The Pentagon deploys tailored versions of ChatGPT and Grok alongside Google Gemini."
+     },
+     "source": "https://techcrunch.com/2026/08/31/the-pentagon-now-has-its-own-version-of-chatgpt-and-grok/"
+    },
+    {
+     "headline": {
+      "zh": "Instagram 限制未標註的 AI 生成虛擬網紅帳號觸及率，並強制要求標籤以打擊虛假內容",
+      "en": "Instagram throttles reach of undisclosed AI influencer accounts and renames AI profile badges."
+     },
+     "source": "https://www.theverge.com/tech/986593/instagram-addresses-fake-ai-profile-slop"
+    },
+    {
+     "headline": {
+      "zh": "AI 會議筆記工具 Circleback 推出免費方案，付費進階功能起價降至每月 14 美元",
+      "en": "AI meeting recorder Circleback launches a free tier and revised pricing starting at $14/month."
+     },
+     "source": "https://techcrunch.com/2026/08/31/meeting-notetaker-circleback-adds-a-free-tier-to-attract-more-customers/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.7-flash",
+ "generated_at": "2026-09-01T07:05+08:00"
+}

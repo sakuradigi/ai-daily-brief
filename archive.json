@@ -1,6 +1,14 @@
 {
- "latest": "2026-08-31",
+ "latest": "2026-09-01",
  "reports": [
+  {
+   "date": "2026-09-01",
+   "type": "daily",
+   "summary": {
+    "zh": "Claude Code 自動模式遭破解，Debian 擁抱 AI 代碼，輝達結盟聯發科",
+    "en": "Claude Code Auto Mode bypassed, Debian embraces AI code, and Nvidia invests $3.5B in MediaTek."
+   }
+  },
   {
    "date": "2026-08-31",
    "type": "weekly",
