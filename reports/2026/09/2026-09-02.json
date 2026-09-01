@@ -1,0 +1,317 @@
+{
+ "date": "2026-09-02",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Anthropic 推出 Claude Fable 5.1 與 Mythos 5.1，Agent 任務成本最高降 45%",
+      "en": "Anthropic Releases Claude Fable 5.1 and Mythos 5.1, Cutting Agentic Task Costs by Up to 45%"
+     },
+     "detail": {
+      "zh": "針對 Token 費用與過度攔截問題進行優化，Fable 5.1 較前代便宜 25%，複雜 Agent 任務成本更降達 45%，並放寬非必要的安全限制。",
+      "en": "Addressing customer feedback on high prices and false-positive safety triggers, Fable 5.1 reduces token costs by 25% overall and up to 45% for complex agentic workflows."
+     },
+     "source": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+     "tags": [
+      "Anthropic",
+      "Claude",
+      "LLM",
+      "API"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 揭露 Astra 安全架構：具備臨界網路安全能力並強化放行防線",
+      "en": "OpenAI Previews Astra Security Framework: Reaches Critical Cybersecurity Threshold"
+     },
+     "detail": {
+      "zh": "Astra 是首款達到 OpenAI 準備度框架中「臨界網路安全能力」的模型，具備極強系統防護與滲透測試能力，目前正接受嚴格部署評估。",
+      "en": "Astra is OpenAI's first model to meet the Critical cybersecurity threshold under its Preparedness Framework, featuring advanced capabilities in system analysis alongside heightened safeguard evaluation."
+     },
+     "source": "https://openai.com/index/path-to-astra",
+     "tags": [
+      "OpenAI",
+      "Cybersecurity",
+      "AI Safety"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "AI 模型訓練初創 AfterQuery 估值達 32 億美元，創 YC 最快獨角獸紀錄",
+      "en": "AI Model-Training Startup AfterQuery Hits $3.2B Valuation as Fastest YC Unicorn"
+     },
+     "detail": {
+      "zh": "專注於高質量模型訓練數據與反饋機制的 AfterQuery，在宣佈 A 輪後僅 5 個月估值便暴增十倍，創下 Y Combinator 歷史紀錄。",
+      "en": "Specializing in AI model training data and feedback loops, AfterQuery surged to a $3.2B valuation just five months after its $30M Series A, setting a YC speed record."
+     },
+     "source": "https://techcrunch.com/2026/09/01/afterquery-reportedly-becomes-y-combinators-fastest-ever-unicorn-now-valued-at-3-2b/",
+     "tags": [
+      "AfterQuery",
+      "Venture Capital",
+      "Y Combinator"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Hugging Face 開源 @huggingface/kernels，提供逾 200 個前端 WebGPU 核心",
+      "en": "Hugging Face Releases @huggingface/kernels with 200+ WebGPU Kernels for Client AI"
+     },
+     "detail": {
+      "zh": "包含各種底層算子優化，可直接在瀏覽器與端側設備透過 WebGPU 運行在地 AI 模型，大幅降低硬體進入門檻與雲端推論成本。",
+      "en": "Features over 200 optimized low-level kernels enabling high-performance client-side AI model execution in browsers via WebGPU without relying on cloud infrastructure."
+     },
+     "source": "https://huggingface.co/blog/webgpu-kernels",
+     "tags": [
+      "WebGPU",
+      "Edge AI",
+      "JavaScript",
+      "Hugging Face"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Python 自動化軟體工具 Wrapture 開源，兼具 Mock 測試與執行期 Tracing",
+      "en": "Python Tool Wrapture Launched: Combines Monkeypatching, Mocking, and Tracing"
+     },
+     "detail": {
+      "zh": "延伸自熱門庫 wrapt，允許開發者包覆任何 Python 函式並替換傳回值，不僅可替代 unittest.mock，還能在測試與生產環境同步記錄動態調用痕跡。",
+      "en": "Extending wrapt, Wrapture allows developers to easily wrap and override any Python function for mocking while offering zero-overhead runtime tracing for observability."
+     },
+     "source": "https://simonwillison.net/2026/Aug/31/introducing-wrapture/",
+     "tags": [
+      "Python",
+      "DevTools",
+      "Testing"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "拆解 ChatGPT 桌面版本地運行環境：封裝 1.7GB 原生工具與 LibreOffice",
+      "en": "Deconstructing ChatGPT Desktop App: Bundles 1.7GB of Native Tools and LibreOffice"
+     },
+     "detail": {
+      "zh": "社群研究發現 ChatGPT 桌面端快取內藏有完整的 Python、Node.js、git 及 LibreOffice 二進位檔，用於在本地端安全執行程式碼與處理辦公文檔。",
+      "en": "Analysis of the desktop runtime cache reveals 1.7GB of embedded binaries, including full Python, Node.js, git, and LibreOffice, used for isolated local code and document execution."
+     },
+     "source": "https://simonwillison.net/2026/Sep/1/codex-libreoffice/",
+     "tags": [
+      "ChatGPT",
+      "Reverse Engineering",
+      "Desktop App"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Google DeepMind 為 Gemini 引入 Agentic 影片理解與多步推理能力",
+      "en": "Google DeepMind Introduces Agentic Video Understanding to Gemini"
+     },
+     "detail": {
+      "zh": "新功能讓 Gemini 能像智能體般主動拆解影片結構、檢視時間軸重點並動態搜尋特定細節，顯著提升長影片問答與邏輯分析能力。",
+      "en": "Enables Gemini to operate like an agent during video analysis, breaking down structures, targeting specific timestamps, and performing multi-step reasoning over long video content."
+     },
+     "source": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
+     "tags": [
+      "Google DeepMind",
+      "Gemini",
+      "Multimodal"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Google 發布 Workspace 圖像工具 Google Pics，主打 Prompt 優先的生成與編輯",
+      "en": "Google Launches Google Pics for Workspace: Prompt-First AI Image Design Tool"
+     },
+     "detail": {
+      "zh": "整合 Gemini 與 Nano Banana 模型，打破傳統 Canvas 圖層介面，讓使用者完全透過自然語言精準控制與編輯商業級圖片。",
+      "en": "Powered by Gemini and Nano Banana models, Google Pics replaces traditional layer-based design interfaces with direct prompt-driven image generation and granular editing for Workspace users."
+     },
+     "source": "https://techcrunch.com/2026/09/01/googles-answer-to-canva-is-an-ai-tool-where-you-prompt-instead-of-design/",
+     "tags": [
+      "Google Workspace",
+      "Generative AI",
+      "Design"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 推出 ChatGPT Health 整合，支援 Epic 電子病歷資料導入",
+      "en": "OpenAI Connects ChatGPT to Healthcare Systems with Epic EHR Integration"
+     },
+     "detail": {
+      "zh": "臨床醫師現可透過唯讀權限將電子健康紀錄（EHR）與臨床數據連接至 ChatGPT，在確保資料隱私前提下加速診斷與數據檢索。",
+      "en": "Clinicians can now securely connect Electronic Health Records (EHR) like Epic to ChatGPT with read-only access, assisting medical staff with patient context and health data retrieval."
+     },
+     "source": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources",
+     "tags": [
+      "OpenAI",
+      "ChatGPT",
+      "Healthcare"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "開發者耗時 1.5 小時訓練小型 Transformer，在 ARC-1 推理基準擊敗多數大型 LLM",
+      "en": "Developer Trains Small Transformer in 1.5 Hours to Beat Major LLMs on ARC-1"
+     },
+     "detail": {
+      "zh": "透過針對抽象幾何圖形推理任務進行模型架構優化，證實小型模型經高效訓練亦能在高難度邏輯基準獲得突出表現。",
+      "en": "Demonstrates how targeted architectural tweaks and synthetic training allow a compact transformer model to outperform mainstream LLMs on abstract spatial reasoning (ARC-1) benchmark."
+     },
+     "source": "https://mvakde.github.io/blog/44-on-arc-1/",
+     "tags": [
+      "Transformer",
+      "ARC Benchmark",
+      "AI Research"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "World Labs 發布 Atlas 空間智能世界模型，強化 3D 幾何理解",
+      "en": "World Labs Unveils Atlas: A World Model Built for Spatial Intelligence"
+     },
+     "detail": {
+      "zh": "針對三維空間幾何結構與物理動態進行建模，能直接生成與理解 3D 世界，為機器人控制與虛擬實境提供底層空間模型。",
+      "en": "Atlas is designed to capture 3D spatial geometry and physical relationships, offering foundational world modeling capabilities for robotics, spatial computing, and game engines."
+     },
+     "source": "https://www.worldlabs.ai/blog/atlas",
+     "tags": [
+      "World Labs",
+      "Spatial Intelligence",
+      "3D AI"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Ai2 與 Hugging Face 聯合發表 BenchMIRT，以項目反應理論檢視 LLM 基準",
+      "en": "Ai2 and Hugging Face Publish BenchMIRT to Re-Evaluate LLM Benchmarking"
+     },
+     "detail": {
+      "zh": "引進教育學的項目反應理論（IRT），揭示當前主流評測集無法精準區分頂尖模型能力的漏洞，並提出更客觀的評測難度量化標準。",
+      "en": "Uses Item Response Theory (IRT) to quantify question difficulty and capability boundaries, revealing blind spots in popular benchmarks when evaluating frontier LLMs."
+     },
+     "source": "https://huggingface.co/blog/allenai/benchmirt",
+     "tags": [
+      "Hugging Face",
+      "LLM Evaluation",
+      "Benchmarks"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Apple 於商業機密訴訟中提交新證據，指控 OpenAI 涉嫌銷毀前員工硬碟資料",
+      "en": "Apple Alleges OpenAI Destroyed Evidence in Trade Secrets Lawsuit"
+     },
+     "detail": {
+      "zh": "Apple 取得鑑識報告顯示，轉職 OpenAI 的前員工在獲知受調後清除 MacBook 資料，Apple 據此要求法院進行緊急證據開示。",
+      "en": "Forensic analysis of a MacBook used by an ex-employee who joined OpenAI reveals data deletion after investigation notices, prompting Apple to file for expedited discovery."
+     },
+     "source": "https://9to5mac.com/2026/08/31/apple-openai-forensic-macbook-evidence/",
+     "tags": [
+      "Apple",
+      "OpenAI",
+      "Legal"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "EFF 呼籲法院勿因 AI 熱潮過度修正著作權法，應維持合理使用彈性",
+      "en": "EFF Urges Courts Not to Overhaul Copyright Law Amid AI Hype"
+     },
+     "detail": {
+      "zh": "電子前哨基金會向法庭提交簡答，主張現行著作權法的合理使用原則已足以平衡模型訓練與原創保護，無須另設過度限制性的立法。",
+      "en": "The Electronic Frontier Foundation filed an amicus brief arguing that existing fair use principles properly balance AI training with creator rights without needing restrictive copyright overhauls."
+     },
+     "source": "https://www.eff.org/deeplinks/2026/08/eff-courts-dont-rewrite-copyright-over-ai-hype",
+     "tags": [
+      "Copyright",
+      "EFF",
+      "AI Policy"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "Python 3.15.0 Release Candidate 2 正式發布，進入開源套件相容性測試與最終 Bug 修復階段。",
+      "en": "Python 3.15.0 Release Candidate 2 released, entering final bugfix and wheel compatibility testing phase."
+     },
+     "source": "https://simonwillison.net/2026/Sep/1/python-315-rc-2/"
+    },
+    {
+     "headline": {
+      "zh": "Nvidia DLSS 5 即將於 9 月 3 日發布，透過即時生成式 AI 畫面過濾大幅提升 RTX 50 系列顯卡畫質。",
+      "en": "Nvidia DLSS 5 arrives September 3rd, introducing real-time generative video filters for RTX 50-series GPUs."
+     },
+     "source": "https://www.theverge.com/tech/986378/nvidia-dlss-5-launch-nba-2k27"
+    },
+    {
+     "headline": {
+      "zh": "Sequoia 育成之 IT 故障預測新創 Empirik 獲得 2,100 萬美元融資正式出道。",
+      "en": "Sequoia-incubated IT outage prediction startup Empirik launches with $21 million in funding."
+     },
+     "source": "https://techcrunch.com/2026/09/01/sequoia-incubated-empirik-launches-with-21m-to-predict-outages-before-they-happen/"
+    },
+    {
+     "headline": {
+      "zh": "AI Agent 安全監控平台 AIR 完成 5,000 萬美元融資，主打 Agent 技能與擴充模組漏洞審查。",
+      "en": "AI Agent security startup AIR raises $50M to vet skills and add-ons used by enterprise agents."
+     },
+     "source": "https://techcrunch.com/2026/09/01/air-raises-50m-to-help-companies-vet-the-skills-and-add-ons-ai-agents-use/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.6-flash",
+ "generated_at": "2026-09-02T07:04+08:00"
+}

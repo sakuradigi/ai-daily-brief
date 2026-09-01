@@ -1,6 +1,14 @@
 {
- "latest": "2026-09-01",
+ "latest": "2026-09-02",
  "reports": [
+  {
+   "date": "2026-09-02",
+   "type": "daily",
+   "summary": {
+    "zh": "Claude 5.1 降價推出，Hugging Face 發布 WebGPU 核心。",
+    "en": "Claude 5.1 drops prices; Hugging Face introduces 200+ WebGPU kernels."
+   }
+  },
   {
    "date": "2026-09-01",
    "type": "daily",
