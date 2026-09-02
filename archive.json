@@ -1,6 +1,14 @@
 {
- "latest": "2026-09-02",
+ "latest": "2026-09-03",
  "reports": [
+  {
+   "date": "2026-09-03",
+   "type": "daily",
+   "summary": {
+    "zh": "Google 推 3.8 Flash，Claude 5.1 大幅降價，Astra 資安疑慮引熱議",
+    "en": "Google drops Gemini 3.8 Flash, Anthropic cuts Agent costs with Fable 5.1, and OpenAI's Astra sparks security debate"
+   }
+  },
   {
    "date": "2026-09-02",
    "type": "daily",

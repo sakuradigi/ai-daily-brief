@@ -1,0 +1,331 @@
+{
+ "date": "2026-09-03",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Google 突發 Gemini 3.8 Flash 與 3.8 Flash Cyber，強化反覆工具調用與資安防禦",
+      "en": "Google launches Gemini 3.8 Flash and 3.8 Flash Cyber with iterative tool use and defensive capabilities"
+     },
+     "detail": {
+      "zh": "Google 在數週內再度更新 Flash 系列，3.8 Flash 著重於複雜任務的推理步數延伸與迭代工具調用，定價維持每百萬輸入 token 0.75 美元；專用版本 3.8 Flash Cyber 則針對主動式資安防禦，僅開放特定信任防護者預覽。",
+      "en": "Google rolled out Gemini 3.8 Flash featuring deeper reasoning loops and iterative tool execution at standard Flash pricing ($0.75/M input tokens), alongside a specialized 3.8 Flash Cyber variant restricted to verified security defenders."
+     },
+     "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+     "tags": [
+      "Google",
+      "Gemini",
+      "LLM",
+      "Cybersecurity"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 釋出 Claude Fable 5.1 與 Mythos 5.1，Agent 任務成本驟降 45%",
+      "en": "Anthropic unveils Claude Fable 5.1 and Mythos 5.1, slashing Agent workload costs by up to 45%"
+     },
+     "detail": {
+      "zh": "新版 Fable 5.1 在程式編寫與長程任務上表現顯著提升，於 Terminal-Bench-Science 測試達到 52.6% 得分。針對大量上下文與工具互動的 Agent 場景，計費機制調降使整體執行成本最多降低 45%。",
+      "en": "Claude Fable 5.1 demonstrates significant gains in complex problem solving and coding, posting a 52.6% score on Terminal-Bench-Science. Optimized pricing structures deliver up to 45% cost reductions for agentic, multi-step workflows."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/987830/anthropic-claude-fable-mythos-5-1",
+     "tags": [
+      "Anthropic",
+      "Claude",
+      "Agents",
+      "Pricing"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 旗艦模型 Astra 採用「遞迴深度」架構，強大滲透能力引發資安與安全界高度擔憂",
+      "en": "OpenAI's upcoming Astra model leverages 'recurrent depth' architecture, triggering safety alarms over cyber-offense potential"
+     },
+     "detail": {
+      "zh": "即將發布的 Astra 導入 Recurrent Depth 機制，突破傳統順序思維架構以提升推理深度。然而測試中自主入侵系統的能力引發社群警告，認為若未設妥防護欄，可能成為史上資安風險最高的 AI 模型之一。",
+      "en": "OpenAI's forthcoming Astra introduces non-sequential 'recurrent depth' reasoning, excelling at complex computational tasks. However, test reports of aggressive autonomous cyber capabilities have raised major red flags among AI safety researchers."
+     },
+     "source": "https://techcrunch.com/2026/09/02/openais-new-reasoning-technique-alarms-ai-safety-experts/",
+     "tags": [
+      "OpenAI",
+      "Astra",
+      "Reasoning",
+      "AI Safety"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "llm-gemini 0.34 釋出：即刻支援 Gemini 3.8 Flash 思考程度調整",
+      "en": "llm-gemini 0.34 released with Gemini 3.8 Flash support and thinking level configuration"
+     },
+     "detail": {
+      "zh": "Simon Willison 快速跟進 Google 發表，更新 CLI 工具插件以支援 3.8 Flash，開發者可直接在終端機配置 low、medium、high 三種思考層級並修正了非同步解析版本問題。",
+      "en": "Simon Willison's CLI plugin now supports Gemini 3.8 Flash right out of the box, allowing developers to configure low, medium, and high thinking levels directly from the command line."
+     },
+     "source": "https://simonwillison.net/2026/Sep/2/llm-gemini/",
+     "tags": [
+      "CLI",
+      "Open Source",
+      "Gemini",
+      "Developer Tools"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "WebLLM：基於 WebGPU 的純瀏覽器高效能端點推論引擎",
+      "en": "WebLLM: High-performance in-browser LLM inference engine powered by WebGPU"
+     },
+     "detail": {
+      "zh": "MLC-AI 團隊推進瀏覽器內推論效能，利用 WebGPU 實現無伺服器端依賴的本地模型推論，大幅降低隱私外洩風險並消除後端 GPU 主機成本。",
+      "en": "MLC-AI's WebLLM brings zero-backend-dependency LLM acceleration into web browsers via WebGPU, providing developers with zero-server-cost and privacy-preserving client-side inference."
+     },
+     "source": "https://github.com/mlc-ai/web-llm",
+     "tags": [
+      "WebGPU",
+      "Edge AI",
+      "Inference",
+      "JavaScript"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "M4 Pro Mac Mini 本地端 LLM 實戰配置指南引發社群熱議",
+      "en": "Practitioner's guide to running local LLMs on the M4 Pro Mac Mini gains traction"
+     },
+     "detail": {
+      "zh": "開發者分享在統一記憶體架構下配置量化模型（GGUF/MLX）的最佳實務，驗證了平價硬體在運行 30B+ 規模模型做為本機 Copilot 的可行性與效能邊界。",
+      "en": "A detailed technical breakdown explores running quantized 30B+ parameter models on Apple Silicon's unified memory architecture, establishing a high-utility local workstation setup for developers."
+     },
+     "source": "https://lws.io/blog/my-local-model-setup/",
+     "tags": [
+      "Apple Silicon",
+      "Local LLM",
+      "Hardware",
+      "MLX"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Paint.NET 藉由 Claude 逆向重寫 Direct2D 核心，打破 Linux WINE 跨平台瓶頸",
+      "en": "Paint.NET uses Claude to cleanly rewrite Direct2D, resolving long-standing WINE compatibility"
+     },
+     "detail": {
+      "zh": "知名修圖軟體 Paint.NET 依靠 Claude 從零逆向實作內部 Managed Direct2D1 引擎，使軟體得以在 Linux/WINE 環境中原生順暢渲染，展現 LLM 在系統底層轉譯的實用威力。",
+      "en": "Paint.NET author Rick Brewster revealed that Claude wrote a clean-room, managed Direct2D implementation from scratch, enabling the legacy Windows application to run smoothly under WINE on Linux."
+     },
+     "source": "https://simonwillison.net/2026/Sep/2/rick-brewster/",
+     "tags": [
+      "Software Engineering",
+      "Coding Assistant",
+      "Claude",
+      "Reverse Engineering"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Weedout：自動過濾 YouTube 標記 AI 生成影片的 Safari 擴充套件",
+      "en": "Weedout: Safari extension that automatically filters YouTube AI-labeled videos"
+     },
+     "detail": {
+      "zh": "為應對影音平台充斥的低質生成內容，開源擴充套件利用 YouTube 內建的 AI 內容元數據與標籤，讓使用者能一鍵淨化搜尋結果與推薦列表。",
+      "en": "An open-source Safari extension leverages YouTube's synthetic media disclosure labels to scrub AI-generated video spam from user feeds and search results."
+     },
+     "source": "https://masteranza.github.io/weedout/",
+     "tags": [
+      "Extension",
+      "Content Moderation",
+      "YouTube"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 推出 Check-Content 頁面，供檢驗文字是否出自 Claude",
+      "en": "Anthropic introduces Claude Content Verification tool"
+     },
+     "detail": {
+      "zh": "Anthropic 上線官方檢驗入口，提供比第三方水印檢測更精確的驗證機制，協助開發者與平台判別特定文本輸出是否由 Claude 系統生成。",
+      "en": "Anthropic has rolled out an official verification endpoint allowing users and platform moderators to check whether a document was generated using Claude models."
+     },
+     "source": "https://claude.com/check-content",
+     "tags": [
+      "Anthropic",
+      "Detection",
+      "AI Safety"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "BenchMIRT 研究：運用試題反應理論解析 LLM 評測基準的真實有效性",
+      "en": "BenchMIRT analysis uses Multidimensional IRT to dissect what LLM benchmarks actually measure"
+     },
+     "detail": {
+      "zh": "艾倫人工智慧研究所（Ai2）發表研究，指出現行 LLM Benchmark 充斥資訊重複與鑑別度不足的問題，並提出以多維試題反應理論（MIRT）重新校準評測標準。",
+      "en": "Allen AI researchers published BenchMIRT, applying psychometric Item Response Theory to demonstrate that many popular LLM benchmarks suffer from item redundancy and lack true discriminative power."
+     },
+     "source": "https://huggingface.co/blog/allenai/benchmirt",
+     "tags": [
+      "Evaluation",
+      "Benchmarks",
+      "Research",
+      "Hugging Face"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "論文揭示類神經網路內部的湧現符號結構（Emergent Symbolic Structure）",
+      "en": "Research uncovers emergent symbolic structures forming inside deep artificial neural networks"
+     },
+     "detail": {
+      "zh": "最新 arXiv 論文探討大型連續神經網路在特定隱藏層中自動構建離散、可解釋的符號表徵機制，為連接主義與符號主義 AI 的融合提供理論證據。",
+      "en": "A new preprint demonstrates how continuous deep representations self-organize into discrete, interpretable symbolic structures, bridging the theoretical gap between connectionist and symbolic AI."
+     },
+     "source": "https://arxiv.org/abs/2608.29530",
+     "tags": [
+      "Mechanistic Interpretability",
+      "ArXiv",
+      "Theory"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Multiverse Computing 發表 Quasar 438B：主打極致壓縮的高能效歐洲模型",
+      "en": "Multiverse Computing introduces Quasar 438B, Europe's large-scale compressed foundation model"
+     },
+     "detail": {
+      "zh": "該模型採用量子啟發張量網路演算法進行權重壓縮，試圖在維持 400B+ 參數規模推理能力的同時，大幅降低推論所需的顯存與功耗門檻。",
+      "en": "Using quantum-inspired tensor networks, Quasar 438B compresses ultra-large model weights to significantly reduce VRAM requirements while retaining competitive reasoning capability."
+     },
+     "source": "https://multiversecomputing.com/resources/introducing-quasar-438b-europe-s-leading-ai-model",
+     "tags": [
+      "LLM",
+      "Model Compression",
+      "Open Weights"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "美國聯邦政府向法院提交陳述書，在紐時訴訟案中支持 OpenAI 訓練合理使用權",
+      "en": "US government intervenes in NYT lawsuit, backing OpenAI on copyrighted data training"
+     },
+     "detail": {
+      "zh": "川普政府正式介入紐約時報控告 OpenAI 侵權案，主張維護美國 AI 產業競爭力屬國家重大利益，支持將公開受版權保護內容納入模型訓練屬於合理使用範疇。",
+      "en": "The US administration filed a legal brief in the NYT v. OpenAI lawsuit, arguing that fair use protections for model training on public data are critical for maintaining national AI leadership."
+     },
+     "source": "https://techcrunch.com/2026/09/02/u-s-government-sides-with-openai-on-issue-of-training-llms-on-copyrighted-material/",
+     "tags": [
+      "Copyright",
+      "Policy",
+      "OpenAI",
+      "Regulation"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "紐約市宣布公立學校 2-K 至 8 年級全面禁用 AI 工具為期一年",
+      "en": "NYC bans AI tool usage for elementary and middle school students through 2027"
+     },
+     "detail": {
+      "zh": "紐約市市長宣布自 2026-2027 學年起，針對約 60 萬名幼兒園至國中生實施為期一年的課堂 AI 禁令，旨在評估生成式技術對早期認知發展與基礎學習的影響。",
+      "en": "NYC Mayor Zohran Mamdani instituted a one-year moratorium banning AI chatbot usage for 600,000 students across 2-K through 8th grades, citing cognitive and basic skill development concerns."
+     },
+     "source": "https://www.theverge.com/policy/988228/nyc-ai-restrictions-in-schools-chatbot-ban",
+     "tags": [
+      "Education",
+      "Policy",
+      "NYC"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "AI 安全防護新創 HiddenLayer 完成 1 億美元融資，聚焦 Agent 工具鏈安全審計",
+      "en": "AI security startup HiddenLayer secures $100M to protect enterprise agent toolchains"
+     },
+     "source": "https://techcrunch.com/2026/09/02/hiddenlayer-nabs-100m-as-enterprises-rush-to-secure-their-ai-deployments/"
+    },
+    {
+     "headline": {
+      "zh": "Palo Alto Networks 斥資 5 億美元收購 Thrive 投資的 AI IT 服務商 Console",
+      "en": "Palo Alto Networks acquires IT automation startup Console for $500M"
+     },
+     "source": "https://techcrunch.com/2026/09/02/palo-alto-networks-paid-500m-for-thrive-backed-console-sources-say/"
+    },
+    {
+     "headline": {
+      "zh": "亞馬遜 Alexa 購物助理加入防偽驗證，可即時辨識冒名簡訊與詐騙郵件",
+      "en": "Amazon adds AI verification to Alexa for Shopping to detect spoofed communications"
+     },
+     "source": "https://techcrunch.com/2026/09/02/psa-amazons-shopping-ai-can-now-tell-you-if-that-message-is-a-scam/"
+    },
+    {
+     "headline": {
+      "zh": "AI 資料訓練新創 AfterQuery 傳估值達 32 億美元，成為 YC 史上最快獨角獸",
+      "en": "Data training startup AfterQuery hits $3.2B valuation, becoming YC's fastest unicorn"
+     },
+     "source": "https://techcrunch.com/2026/09/01/afterquery-reportedly-becomes-y-combinators-fastest-ever-unicorn-now-valued-at-3-2b/"
+    },
+    {
+     "headline": {
+      "zh": "調查揭露三家網站炮製 21 萬篇比價垃圾頁面操縱 Perplexity 引用結果",
+      "en": "Report reveals 215k SEO-farmed pages engineered to exploit Perplexity AI citations"
+     },
+     "source": "https://trellner.com/reports/manufactured-sources-behind-ai-recommendations/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.7-flash",
+ "generated_at": "2026-09-03T07:01+08:00"
+}
