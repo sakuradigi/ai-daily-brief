@@ -1,0 +1,295 @@
+{
+ "date": "2026-09-04",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 正式推出 GPT-6 Astra：資安與電腦操作能力大躍進，API 定價出爐",
+      "en": "OpenAI Releases GPT-6 Astra with Critical Cyber Capabilities and Official API Pricing"
+     },
+     "detail": {
+      "zh": "OpenAI 發布新一代旗艦模型 GPT-6 Astra，號稱在軟體工程、電腦操作（Computer Use）與資安分析達重大突破，並首度觸及官方安全架構中的關鍵資安等級。API 定價為每百萬 Token 輸入 10 美元、輸出 50 美元，陸續向 Plus/Pro/API 及 AWS 用戶推送。",
+      "en": "OpenAI launched GPT-6 Astra, designated as its first model to hit the 'Critical' cybersecurity tier with major upgrades in computer use and coding. API pricing is set at $10/M input and $50/M output tokens, rolling out across ChatGPT tiers, API, and AWS."
+     },
+     "source": "https://simonwillison.net/2026/Sep/3/gpt6-astra/",
+     "tags": [
+      "OpenAI",
+      "GPT-6",
+      "LLM",
+      "API"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Nvidia 斥資近 130 億美元收購開源 AI 重鎮 Hugging Face",
+      "en": "Nvidia Agrees to Acquire Hugging Face for Nearly $13 Billion"
+     },
+     "detail": {
+      "zh": "晶片巨頭 Nvidia 宣布以 129.3 億美元收購開源 AI 社群核心平台 Hugging Face。儘管社群對開源中立性抱持觀望，官方承諾平台將維持既有開放模式與多硬體支援，藉此整合軟體生態系與自身算力護城河。",
+      "en": "Nvidia reached a $12.93 billion deal to acquire Hugging Face, uniting the open-source hub of over 3 million models with the dominant AI hardware supplier. Nvidia stated the platform will remain open while deepening its software stack integrations."
+     },
+     "source": "https://www.cnbc.com/2026/09/03/nvidia-agrees-to-buy-hugging-face-for-almost-13-billion-ai-expansion.html",
+     "tags": [
+      "Nvidia",
+      "HuggingFace",
+      "Acquisition",
+      "OpenSource"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Nvidia 釋出開源工具 PAIR：將家中多台閒置電腦串成個人 AI 算力中心",
+      "en": "Nvidia Releases PAIR: Open-Source Tool to Turn Idle Home PCs into Local AI Clusters"
+     },
+     "detail": {
+      "zh": "Nvidia 推出 Personal AI Router（PAIR）開源工具，非硬體路由器，而是能自動將局域網內跨平台裝置（如 RTX 桌機與 MacBook）串聯的排程中介層。它相容 Ollama 與 LM Studio 等本地推論引擎，讓開發者零成本聚合零散算力執行本地大模型。",
+      "en": "Nvidia introduced Personal AI Router (PAIR), an open-source tool designed to pool idle local machines—such as RTX rigs and MacBooks—for distributed inference. It seamlessly integrates with engines like Ollama and LM Studio for zero-cost home cluster compute."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/989435/nvidia-pair-personal-ai-router-home-local-llm-compute-tool-rtx-macbook",
+     "tags": [
+      "Nvidia",
+      "LocalLLM",
+      "OpenSource",
+      "Tools"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Cerebras 上線 Qwen 3.8 27B 推論：晶圓級引擎飆出 1500 tokens/s 極速",
+      "en": "Cerebras Deploys Qwen 3.8 27B Inference at Blazing 1500 Tokens/s"
+     },
+     "detail": {
+      "zh": "Cerebras 推論平台正式支援 Qwen 3.8 27B 模型，藉由晶圓級引擎（WSE）實現每秒 1500 tokens 的極致生成速度。此吞吐量大幅降低 Agent 多輪推理與代碼生成的延遲瓶頸，為即時高並發應用提供新選擇。",
+      "en": "Cerebras added Qwen 3.8 27B to its cloud inference platform, achieving 1,500 tokens per second on its wafer-scale hardware. This ultra-low latency unlocks new possibilities for real-time code generation and multi-turn agentic workflows."
+     },
+     "source": "https://inference-docs.cerebras.ai/models/overview",
+     "tags": [
+      "Cerebras",
+      "Qwen",
+      "Inference",
+      "Performance"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Funes：為 Coding Agent 建立自主可控的本地持久化記憶庫",
+      "en": "Funes: Self-Hosted Memory Architecture for Coding Agents"
+     },
+     "detail": {
+      "zh": "Hugging Face 發布開源專案 Funes，旨在解決 Coding Agent 跨工作階段記憶遺失的問題。開發者可完全自主託管記憶圖譜與檢索索引，不需將內部專案架構與歷史脈絡回傳給第三方閉源記憶體雲端服務。",
+      "en": "Hugging Face introduced Funes, an open-source framework granting coding agents persistent, privately hosted memory across development sessions without sending proprietary codebase context to proprietary third-party clouds."
+     },
+     "source": "https://huggingface.co/blog/funes",
+     "tags": [
+      "AI-Agent",
+      "Coding",
+      "Memory",
+      "DeveloperTools"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "僅需 100 步 GRPO：超輕量強化學習顯著提升 350M 小模型結構化輸出能力",
+      "en": "100-Step GRPO Fine-Tuning Boosts Structured Output in 350M Models"
+     },
+     "detail": {
+      "zh": "最新教學展示如何使用 TRL 框架與 GRPO（Group Relative Policy Optimization）演算法，在僅 100 步訓練下讓 350M 參數小模型精確輸出 JSON 等結構化格式，證實小模型經由對齊可勝任高效率邊緣端抽取任務。",
+      "en": "A new guide demonstrates using TRL with GRPO to drastically improve structured output reliability in a 350M parameter model in just 100 reinforcement learning steps, demonstrating cost-effective alignment for edge extraction tasks."
+     },
+     "source": "https://huggingface.co/blog/grpo-with-trl-ifstruct",
+     "tags": [
+      "GRPO",
+      "TRL",
+      "Fine-Tuning",
+      "SmallModels"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Google 推出 Workspace Live：直接語音對話操控 Gmail、Docs 與 Keep",
+      "en": "Google Rolls Out Live Voice Assistant Modes for Gmail, Docs, and Keep"
+     },
+     "detail": {
+      "zh": "Google 展開 Workspace 全新語音功能推送，將 Gemini Live 的即時對話架構整合進 Gmail、Docs 與 Keep。用戶可透過低延遲多模態語音指令直接整理信件、口述草稿或查詢筆記內容，加速日常生產力工作流。",
+      "en": "Google is adding real-time conversational capabilities—Gmail Live, Docs Live, and Keep Live—allowing users to manage documents, emails, and notes hands-free using Gemini's streaming voice engine."
+     },
+     "source": "https://www.theverge.com/tech/989508/google-gmail-docs-keep-live-voice-modes-gemini",
+     "tags": [
+      "Google",
+      "Workspace",
+      "Gemini",
+      "Productivity"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Meta Muse Spark 祭出「共享數據換 95% 折扣」開發者 API 計畫",
+      "en": "Meta Offers 95% API Discount on Muse Spark in Exchange for Prompt Data"
+     },
+     "detail": {
+      "zh": "Meta 針對專門驅動 Coding Agent 的 Muse Spark 模型推出激進定價方案：若開發者同意授權 Prompt 與模型輸出供 Meta 訓練未來模型，即可享有高達 95% 的 API 價格折扣，引發開發社群在隱私與成本間的熱議。",
+      "en": "Meta introduced an aggressive ~95% API discount for its Muse Spark coding agent model for users who opt into sharing their prompts and outputs for model training, creating a steep cost vs. data privacy trade-off for teams."
+     },
+     "source": "https://techcrunch.com/2026/09/03/meta-is-paying-to-peek-at-how-you-use-their-latest-ai-model/",
+     "tags": [
+      "Meta",
+      "API",
+      "Pricing",
+      "Coding"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "DeepMind 發表 WeatherNext 3：全球解析度提升 5 倍的頂尖氣象 AI 模型",
+      "en": "Google DeepMind Unveils WeatherNext 3 Global Weather Forecasting Model"
+     },
+     "detail": {
+      "zh": "DeepMind 推出第三代氣象預測架構 WeatherNext 3，透過衛星資料與深度學習結合，在降雨及降雪預測上取得前所未有的高解析度與準確度，未來將全面整合至 Google Search、Maps 與 Gemini 氣象服務。",
+      "en": "Google DeepMind announced WeatherNext 3, a deep learning meteorological model that enhances global forecast resolution by 5x, delivering industry-leading accuracy in precipitation and severe storm tracking."
+     },
+     "source": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/",
+     "tags": [
+      "DeepMind",
+      "WeatherAI",
+      "Research",
+      "EarthScience"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "GPT-6 Astra 在 ARC-AGI-3 抽象推理基準測試結果公開",
+      "en": "OpenAI GPT-6 Astra Evaluated on ARC-AGI-3 Reasoning Benchmark"
+     },
+     "detail": {
+      "zh": "ARC Prize 團隊公布 GPT-6 Astra 在全新 ARC-AGI-3 抽象視覺推理測試上的表現。評測重點在於檢驗新模型在面對未曾見過的網格邏輯謎題時的泛化推理能力，為評估其邁向 AGI 推理邊界提供關鍵量化數據。",
+      "en": "The ARC Prize organization released evaluation results for OpenAI's GPT-6 Astra on the challenging ARC-AGI-3 benchmark, measuring novel grid-based generalization and frontier abstract reasoning capability."
+     },
+     "source": "https://arcprize.org/blog/astra",
+     "tags": [
+      "OpenAI",
+      "Benchmark",
+      "ARC-AGI",
+      "Reasoning"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 啟動 Daybreak 計畫：投入 10 億美元支援前線關鍵基礎設施資安防禦",
+      "en": "OpenAI Commits $1 Billion to Daybreak Cyber Initiative for Essential Services"
+     },
+     "detail": {
+      "zh": "伴隨 GPT-6 Astra 的強大資安能力，OpenAI 宣布成立 10 億美元的「Daybreak for Frontline Defenders」專案，為醫院、水電設施與公部門等關鍵機構提供前沿防禦型 AI 模型、技術培訓與部署支援。",
+      "en": "OpenAI launched a $1 billion initiative called 'Daybreak for Frontline Defenders,' offering frontier defensive AI models, technical training, and integration support to safeguard essential public infrastructure from cyber threats."
+     },
+     "source": "https://openai.com/index/daybreak-for-frontline-defenders",
+     "tags": [
+      "OpenAI",
+      "Cybersecurity",
+      "Safety",
+      "Funding"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "METR 發布 OpenAI 與 Hugging Face 資安事故獨立調查分析報告",
+      "en": "METR Publishes Investigation Report on OpenAI / Hugging Face Security Incident"
+     },
+     "detail": {
+      "zh": "AI 評測與安全機構 METR 公布針對日前 OpenAI 與 Hugging Face 供應鏈資安事件的深度調查報告，剖析模型權重管理、API Token 暴露風險與高權限 Agent 接入時開發者必須防範的供應鏈弱點。",
+      "en": "METR released an in-depth investigation into the recent OpenAI and Hugging Face incident, outlining critical security takeaways around model artifact integrity, credential management, and high-privilege agent safety."
+     },
+     "source": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/#core-takeaways-about-this-incident",
+     "tags": [
+      "Security",
+      "METR",
+      "Audit",
+      "Safety"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "ChatGPT、Claude、Grok 與 Gemini 四大主流模型同日遭遇罕見重疊當機事故",
+      "en": "ChatGPT, Claude, Grok, and Gemini suffered rare overlapping outages across major AI platforms"
+     },
+     "source": "https://arstechnica.com/ai/2026/09/four-major-ai-models-suffer-rare-overlapping-downtime/"
+    },
+    {
+     "headline": {
+      "zh": "南韓圍棋棋王申真諝於讓二子條件下擊敗頂尖開源圍棋 AI KataGo",
+      "en": "Go Grandmaster Shin defeated AI engine KataGo in a two-stone handicap match"
+     },
+     "source": "https://www.kedglobal.com/artificial-intelligence/newsView/ked202607210007"
+    },
+    {
+     "headline": {
+      "zh": "新創 Abliteration.ai 商業化移除模型安全護欄服務，主打資安防禦紅隊測試市場",
+      "en": "Abliteration.ai built a commercial platform offering un-guardrailed AI models for defensive research"
+     },
+     "source": "https://techcrunch.com/2026/09/03/abliteration-ai-is-making-a-business-out-of-removing-ai-guardrails/"
+    },
+    {
+     "headline": {
+      "zh": "Palo Alto Networks 斥資 5 億美元收購 AI IT 營運自動化新創 Console",
+      "en": "Palo Alto Networks acquired Thrive-backed AI IT automation startup Console for $500M"
+     },
+     "source": "https://techcrunch.com/2026/09/02/palo-alto-networks-paid-500m-for-thrive-backed-console-sources-say/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.7-flash",
+ "generated_at": "2026-09-04T07:01+08:00"
+}

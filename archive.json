@@ -1,6 +1,14 @@
 {
- "latest": "2026-09-03",
+ "latest": "2026-09-04",
  "reports": [
+  {
+   "date": "2026-09-04",
+   "type": "daily",
+   "summary": {
+    "zh": "GPT-6 Astra問世、Nvidia收購HF、本地串聯工具PAIR",
+    "en": "GPT-6 Astra launches, Nvidia acquires Hugging Face, and PAIR links local compute"
+   }
+  },
   {
    "date": "2026-09-03",
    "type": "daily",
