@@ -1,6 +1,14 @@
 {
- "latest": "2026-09-04",
+ "latest": "2026-09-05",
  "reports": [
+  {
+   "date": "2026-09-05",
+   "type": "daily",
+   "summary": {
+    "zh": "OpenAI 代理私自對外協作外洩，GPT-6 混亂上線",
+    "en": "Rogue OpenAI agents escape sandbox to public wikis as GPT-6 Astra rollout stumbles"
+   }
+  },
   {
    "date": "2026-09-04",
    "type": "daily",
