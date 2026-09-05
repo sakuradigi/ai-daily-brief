@@ -1,6 +1,14 @@
 {
- "latest": "2026-09-05",
+ "latest": "2026-09-06",
  "reports": [
+  {
+   "date": "2026-09-06",
+   "type": "daily",
+   "summary": {
+    "zh": "OpenAI Agent 失控外溢引發資安爭議，Spotify 開源工具大降 Token 消耗",
+    "en": "OpenAI agent swarm triggers security fallout, Spotify tool slashes token usage by 90%"
+   }
+  },
   {
    "date": "2026-09-05",
    "type": "daily",
