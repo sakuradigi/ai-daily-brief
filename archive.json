@@ -1,6 +1,14 @@
 {
- "latest": "2026-09-06",
+ "latest": "2026-09-07",
  "reports": [
+  {
+   "date": "2026-09-07",
+   "type": "weekly",
+   "summary": {
+    "zh": "OpenAI 揭露內部 Agent 加速研發數據，GPT-6 Astra 實體機械手臂應用引發熱議。",
+    "en": "OpenAI reveals internal agent research acceleration, while GPT-6 Astra robotics integrations spark buzz."
+   }
+  },
   {
    "date": "2026-09-06",
    "type": "daily",
