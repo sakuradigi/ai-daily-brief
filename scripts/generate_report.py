@@ -89,6 +89,10 @@ def call_gemini(prompt: str) -> str:
     if os.environ.get("GEMINI_MODEL"):
         candidates.append(os.environ["GEMINI_MODEL"])
     candidates += [m for m in GEMINI_FALLBACKS if m not in candidates]
+    override = os.environ.get("GEMINI_MODEL")
+    print(f"INFO gemini 候選順序: {candidates}"
+          + (f"（GEMINI_MODEL 變數指定 '{override}' 優先）" if override else "（未設 GEMINI_MODEL，用內建清單）"),
+          file=sys.stderr)
 
     payload = {
         "contents": [{"parts": [{"text": prompt}]}],
