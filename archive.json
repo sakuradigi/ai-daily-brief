@@ -1,6 +1,14 @@
 {
- "latest": "2026-09-07",
+ "latest": "2026-09-08",
  "reports": [
+  {
+   "date": "2026-09-08",
+   "type": "daily",
+   "summary": {
+    "zh": "OpenAI 內研轉向 RSI，社群實驗揭示自主 AI 商業地雷",
+    "en": "OpenAI doubles down on RSI while autonomous agent business experiments stumble."
+   }
+  },
   {
    "date": "2026-09-07",
    "type": "weekly",

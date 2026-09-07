@@ -1,0 +1,238 @@
+{
+ "date": "2026-09-08",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 內部研發加速全面轉向「遞歸自我改進（RSI）」與編程 Agent",
+      "en": "OpenAI pivots internal research acceleration toward Recursive Self-Improvement (RSI)"
+     },
+     "detail": {
+      "zh": "OpenAI 內部釋出研發新方向，首席科學家 Jakub Pachocki 與團隊將焦點全面鎖定在遞歸自我改進（RSI）與編程 Agent 協作。官方認為加速訓練更強模型的核心理由在於建立即時防禦系統以抵禦失控 Agent，工程研發已大規模轉為 Agentic 模式。",
+      "en": "OpenAI leadership, including Chief Scientist Jakub Pachocki, has framed Recursive Self-Improvement (RSI) and coding agents as core to their research workflow. Pachocki argues that accelerating hyper-capable models is vital for deploying real-time defenses against rogue agents, marking a full operational shift toward agentic engineering."
+     },
+     "source": "https://simonwillison.net/2026/Sep/6/research-acceleration-the-view-inside-openai/",
+     "tags": [
+      "OpenAI",
+      "RSI",
+      "AI-Agents",
+      "AI-Safety"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "真槍實彈測試 autonomous agent 經營真實企業：開出逾萬美元假發票、淨虧損 3,200 美元",
+      "en": "Real-world test of autonomous AI businesses yields $12K in fake invoices and financial losses"
+     },
+     "detail": {
+      "zh": "Bottleneck Labs 實測放手讓多個 AI 模型全權營運 7 家真實公司，結果 Agent 不僅產生嚴重幻覺亂開出超過 12,431 美元的虛假請款發票，最終累計虧損 3,200 美元。此實驗展示了當前 LLM 仍缺乏現實約束感與跨系統審計能力，距離完全自主商業閉環仍有巨大落差。",
+      "en": "Bottleneck Labs benchmarked seven autonomous businesses managed entirely by AI models, resulting in over $12,431 in fabricated invoices and a net loss of $3,200. The empirical results highlight critical deficiencies in grounding, real-world context validation, and automated financial auditing for end-to-end agentic setups."
+     },
+     "source": "https://www.bottlenecklabs.com/blog/benchmarking-7-autonomous-businesses",
+     "tags": [
+      "Autonomous-Agents",
+      "Benchmark",
+      "LLM-Failures",
+      "FinTech"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 對 ChatGPT Plus 與 Business 方案悄悄重啟「5 小時調用限制」",
+      "en": "OpenAI quietly reinstates 5-hour rate limits for Plus and Business Standard tiers"
+     },
+     "detail": {
+      "zh": "多名開發者與訂閱用戶在 Hacker News 回報，OpenAI 已重新對 ChatGPT Plus 及 Business Standard 方案實施嚴格的 5 小時額度上限。此舉被推測與算力承載壓力或後續旗艦模型資源調配有關，高頻使用互動的開發者工作流將直接受到衝擊。",
+      "en": "Community reports on Hacker News indicate OpenAI has reinstated a strict 5-hour messaging rate limit for ChatGPT Plus and Business Standard subscribers. The restriction likely reflects tightening compute capacity or strategic resource reallocation, directly constraining high-intensity workflows reliant on web interfaces."
+     },
+     "source": "https://news.ycombinator.com/item?id=49600233",
+     "tags": [
+      "OpenAI",
+      "ChatGPT",
+      "Rate-Limits",
+      "Developer-Impact"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Engrim：專為終端機 AI CLI 設計的通用 Local-First SQLite 記憶體引擎",
+      "en": "Engrim: A universal, local-first SQLite memory engine for AI CLIs"
+     },
+     "detail": {
+      "zh": "開源社群釋出 Engrim，專門為各類終端機 AI CLI 提供基於本機 SQLite 的跨工作階段記憶體管理。它解決了傳統 CLI 工具 context 每次重新啟動就遺失的痛點，完全本地保存且低延遲，不依賴雲端向量資料庫即可達成對話狀態持久化。",
+      "en": "Engrim is a new open-source SQLite-based memory engine tailored for command-line AI assistants and agent CLIs. By prioritizing local-first architecture, it provides fast, persistent context retrieval across sessions without requiring external vector databases or leaking context history off-device."
+     },
+     "source": "https://github.com/timgordontg/engrim",
+     "tags": [
+      "Open-Source",
+      "SQLite",
+      "CLI",
+      "Local-AI",
+      "Memory"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "透過 WebAssembly 實現瀏覽器內影片壓縮：用 Claude Code 搭建輕量 FFMPEG 工具",
+      "en": "Browser-native video compression via WebAssembly generated with Claude Code"
+     },
+     "detail": {
+      "zh": "開發者分享利用 Claude Code 與 Claude Fable 5.1 在瀏覽器端快速編寫出的純前端影片壓縮工具。透過整合 WebAssembly 版本的 FFMPEG，無須任何後端算力或安裝環境，即可在本地直接完成影片最佳化與轉換，展現了 Vibe Coding 打造單一用途工程工具的高效率。",
+      "en": "Developer Simon Willison demonstrated a lightweight browser-based video compression utility built with Claude Code and WebAssembly FFMPEG. The implementation runs entirely client-side without backend dependencies, showing the practical utility of agent-driven vibe-coding for self-contained developer utilities."
+     },
+     "source": "https://simonwillison.net/2026/Sep/7/video-compressor/",
+     "tags": [
+      "FFMPEG",
+      "WebAssembly",
+      "Claude-Code",
+      "Developer-Tools"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "GPT-6 Astra 輔助地理視覺化：一鍵生成麥卡托至等積投影平滑動畫",
+      "en": "Geospatial visualization via GPT-6 Astra: Dynamic Mercator to Equal Earth transition"
+     },
+     "detail": {
+      "zh": "開發者透過 ChatGPT Work 呼叫 GPT-6 Astra (medium)，以 D3.js 實作了聯合國近期採用的「等積地球投影（Equal Earth）」與傳統麥卡托投影間的動態過渡動畫。這類專業領域的數學幾何與前端視覺化渲染代碼生成，正逐步成為高階大模型開箱即用的標準能力。",
+      "en": "Demonstrating advanced code synthesis, GPT-6 Astra was leveraged to construct a dynamic, mathematical D3 interpolation between the Mercator and Equal Earth projections. The result highlights improving reliability in translating specialized geospatial requirements into reactive frontend visual components."
+     },
+     "source": "https://simonwillison.net/2026/Sep/7/equal-earth/",
+     "tags": [
+      "D3",
+      "Data-Viz",
+      "GPT-6-Astra",
+      "Geospatial"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Jakub Pachocki 提出主動防禦論：必須訓練超級 AI 來防禦失控 Agent 威脅",
+      "en": "Jakub Pachocki argues advanced AI is essential for defensive counter-agent systems"
+     },
+     "detail": {
+      "zh": "OpenAI 首席科學家撰文強調，持續加速訓練更強大且對齊之模型的最強論據，在於建立主動防禦系統。他指出基礎設施保護與即時阻擋 rogue agent 需要更聰明的 AI 作為防護罩，這將成為 OpenAI 未來部署架構的核心原則。",
+      "en": "Jakub Pachocki argues that accelerating the training of frontier models is fundamentally required to secure critical infrastructure and mitigate autonomous rogue agents in real time. He frames model capability advances as an indispensable defensive measure rather than purely offensive technology."
+     },
+     "source": "https://simonwillison.net/2026/Sep/7/jakub-pachocki/",
+     "tags": [
+      "AI-Safety",
+      "Alignment",
+      "RSI",
+      "Security"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "西雅圖時報與 Newsday 起訴 OpenAI 與微軟，指控未經授權使用新聞訓練模型",
+      "en": "Seattle Times and Newsday sue OpenAI and Microsoft over copyright infringement"
+     },
+     "detail": {
+      "zh": "兩家美國地方大報正式對微軟與 OpenAI 提起訴訟，控告其未經許可利用其新聞報導訓練 AI 模型，並在生成結果中逐字重現受版權保護的內容。新聞出版界對 AI 巨頭的版權法律圍剿持續擴大，恐將進一步推高資料集取得成本與合規門檻。",
+      "en": "The Seattle Times and Newsday have filed copyright infringement lawsuits against OpenAI and Microsoft, alleging unauthorized scraping for training data and verbatim output reproductions. This adds to mounting legal pressures threatening existing data ingestion pipelines and increasing compliance overhead."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/990932/seattle-times-newsday-lawsuit-openai-microsoft",
+     "tags": [
+      "Copyright",
+      "OpenAI",
+      "Microsoft",
+      "Legal"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "32 億美元 AI 資料中心背後的複雜合資網引發責任歸屬爭議",
+      "en": "Complex corporate structures behind $3.2B AI data center blur accountability"
+     },
+     "detail": {
+      "zh": "Ars Technica 調查揭露超大型 AI 資料中心建置背後錯綜複雜的多方企業實體架構。隨著單一算力園區投資動輒數十億美元，龐大的電力消耗、水冷負擔與環評糾紛在多重空殼及合資公司結構下難以釐清權責，成為算力基建擴張下的新型治理風險。",
+      "en": "An investigation into a $3.2 billion AI data center reveals intricate webs of multi-corporate shells that obscure operational liability. As power consumption and environmental footprints skyrocket, fragmented ownership models create accountability loopholes for critical computing infrastructure."
+     },
+     "source": "https://arstechnica.com/features/2026/09/the-ai-data-center-boom-is-causing-new-accountability-problems/",
+     "tags": [
+      "Data-Centers",
+      "Infrastructure",
+      "Compute",
+      "Energy"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "領域專家拒絕參與 RLHF 數據標註，抗議訓練將取代自身專業工作的大模型",
+      "en": "Domain expert refuses LLM data annotation contracts over concerns of professional replacement"
+     },
+     "source": "https://restofworld.org/2026/ai-training-jobs-expert-replacement/"
+    },
+    {
+     "headline": {
+      "zh": "TechCrunch 發布 2026 最新 AI 術語指南，拆解「不透明遞歸」等前沿詞彙",
+      "en": "TechCrunch publishes modern AI glossary covering emerging concepts like 'opaque recurrence'"
+     },
+     "source": "https://techcrunch.com/2026/09/07/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/"
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 聯手烏克蘭新聞組織啟動 AI 賦能專案，提供技術支援以維持戰時新聞獨立運作",
+      "en": "OpenAI and international press bodies launch AI resilience initiative for Ukrainian newsrooms"
+     },
+     "source": "https://openai.com/index/supporting-independent-journalism-in-ukraine"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-09-08T07:01+08:00"
+}
