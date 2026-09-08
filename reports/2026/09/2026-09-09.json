@@ -1,0 +1,295 @@
+{
+ "date": "2026-09-09",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 宣稱以 AI 解開千禧難題 Navier-Stokes，並附 Lean 形式化證明",
+      "en": "OpenAI releases AI-generated solution to Navier-Stokes Millennium Prize Problem with Lean proof"
+     },
+     "detail": {
+      "zh": "OpenAI 發表論文與 Lean 程式碼，宣稱攻克懸宕近世紀的流體力學千禧難題，引發學界劇烈震盪與爭議。若形式化證明經社群完全驗證無誤，將象徵 AI 從輔助推理跨入推動前沿純數學突破的全新分水嶺。",
+      "en": "OpenAI published an AI-generated solution to the Navier-Stokes existence and smoothness problem alongside formal Lean code. If mathematically verified by the community, this marks a historical shift from LLM-assisted coding to solving century-old open problems in pure mathematics."
+     },
+     "source": "https://openai.com/index/navier-stokes-solution",
+     "tags": [
+      "OpenAI",
+      "Math",
+      "Lean",
+      "Research"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Mistral 完成 30 億歐元 D 輪融資，估值達 210 億歐元主打歐洲主權開源模型",
+      "en": "Mistral raises €3B Series D at €21B valuation to expand sovereign open-weight frontier models"
+     },
+     "detail": {
+      "zh": "法國 AI 獨角獸 Mistral 完成由三星及歐洲基金領投的巨額融資，持續堅持開源權重與歐洲主權 AI 路線。這筆資金將用於採購次世代算力集群，正面迎戰閉源巨頭並維持開發者社群的開源技術供給。",
+      "en": "French AI lab Mistral secured €3B in a Series D round led by Samsung and European scaleup funds at a €21B valuation. The capital will fuel massive compute buildouts, strengthening open-weight alternatives against proprietary closed-source giants for global developers."
+     },
+     "source": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/",
+     "tags": [
+      "Mistral",
+      "Funding",
+      "OpenSource",
+      "SovereignAI"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "DeepMind 發布 AlphaGenome Atlas，預測全人類基因體 90 億種 DNA 單點變異效應",
+      "en": "DeepMind unveils AlphaGenome Atlas mapping functional effects of 9B DNA variants"
+     },
+     "detail": {
+      "zh": "Google DeepMind 推出 AlphaGenome Atlas，針對人類基因體所有可能的 90 億個單鹼基置換進行全面分子效應預測。這項生物資訊學突破將直接提供 API 與資料集查詢，大幅加速致病基因篩查與標靶藥物開發管線。",
+      "en": "Google DeepMind introduced AlphaGenome Atlas, modeling the molecular impact of all 9 billion single-letter DNA mutations across the human genome. The platform offers direct scientific datasets and APIs to expedite rare-disease genomics and target discovery."
+     },
+     "source": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+     "tags": [
+      "DeepMind",
+      "AlphaGenome",
+      "BioTech",
+      "Genomics"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "CLI 工具 llm 發布 0.35 版本，第一時間支援 GPT-6 Astra 模型存取",
+      "en": "Simon Willison releases llm 0.35 with support for GPT-6 Astra"
+     },
+     "detail": {
+      "zh": "知名開源命令列 AI 工具 `llm` 發布 0.35 版，新增對 OpenAI `gpt-6-astra` 模型的直接呼叫介面。開發者可無縫透過 shell 腳本串接最新模型進行 prompt 實驗、管線自動化與本機快取評測。",
+      "en": "Simon Willison shipped `llm 0.35`, adding native CLI integration for OpenAI's `gpt-6-astra` model ID. Developers can now incorporate the newly surfaced endpoint directly into shell scripts, local workflows, and automation pipelines."
+     },
+     "source": "https://simonwillison.net/2026/Sep/7/llm/",
+     "tags": [
+      "CLI",
+      "OpenSource",
+      "Tooling",
+      "OpenAI"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "TradingAgents：基於多 Agent 協作的開源量化金融交易框架",
+      "en": "TradingAgents: Multi-agent LLM financial trading framework opensourced"
+     },
+     "detail": {
+      "zh": "TauricResearch 開源 TradingAgents 專案，利用多智慧體架構分工處理即時市場數據分析、風險控管與策略執行。該框架提供清晰的 Agent 角色定義與回測介面，適合作為客製化金融決策系統的基底。",
+      "en": "TauricResearch released TradingAgents on GitHub, applying multi-agent collaboration to market sentiment analysis, risk modeling, and trade execution. It provides an extensible baseline for quantitative engineers building agentic financial workflows."
+     },
+     "source": "https://github.com/TauricResearch/TradingAgents",
+     "tags": [
+      "GitHub",
+      "MultiAgent",
+      "Finance",
+      "Trading"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "前端實測：10 種模型與測試框架組合解決 Three.js 任務的效能與準確率對比",
+      "en": "Empirical benchmark: 10 model/harness combinations tested on complex Three.js tasks"
+     },
+     "detail": {
+      "zh": "開發者針對同一個 Three.js 場景建構任務，橫向評測 10 組主流模型與 harness 工具組合。結果揭示不同測試框架對程式碼補全長度與 3D 數學正確性的極大影響，為選擇程式碼 Agent 提供具體參考數據。",
+      "en": "An independent engineer benchmarked 10 model/harness pairings on an identical complex Three.js rendering prompt. The results show significant variance in spatial math handling and context management across different harnesses."
+     },
+     "source": "https://alvins82.github.io/hangar-harness-model-tests/",
+     "tags": [
+      "Benchmark",
+      "ThreeJS",
+      "CodeGeneration",
+      "DevTools"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 推出 ChatGPT Images 2.5，API 釋出 Sunburst 與 Flare 兩款新模型端點",
+      "en": "OpenAI announces ChatGPT Images 2.5 and API models gpt-image-2.5-sunburst and flare"
+     },
+     "detail": {
+      "zh": "新版本主打更精準的草圖轉圖（Sketch）、多輪對話指令依循以及對參考圖主體特徵的高保真還原。API 端提供高階版 Sunburst 與輕量高吞吐版 Flare，讓開發者在生圖品質與推理延遲之間更有彈性。",
+      "en": "OpenAI rolled out ChatGPT Images 2.5 with improved multi-turn consistency, reference photo preservation, and a new Sketch mode. In the API, developers can choose between `gpt-image-2.5-sunburst` for fidelity and `gpt-image-2.5-flare` for speed."
+     },
+     "source": "https://openai.com/index/introducing-chatgpt-images-2-5",
+     "tags": [
+      "OpenAI",
+      "ImageGen",
+      "API",
+      "Product"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Meta 正式亮相個人智慧體 Muse，深度整合系統權限以搶攻終端入口",
+      "en": "Meta debuts personal AI agent Muse with deep OS and service integrations"
+     },
+     "detail": {
+      "zh": "Meta 發布新一代個人 Assistant「Muse」，具備讀取信箱、行事曆、即時通訊及支付服務的自主操作能力。此舉象徵 Meta 企圖跨出純對話框，將 Agent 直接嵌入用戶日常工作流，但其隱私權限與資料授權亦面臨嚴格審視。",
+      "en": "Meta introduced Muse, an agentic personal assistant with permissions across mail, calendars, local device controls, and payment rails. The release highlights Meta's push into daily utility workflows while reigniting debates over user data privacy."
+     },
+     "source": "https://ai.meta.com/muse/",
+     "tags": [
+      "Meta",
+      "Agents",
+      "PersonalAssistant",
+      "Privacy"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "MIT 研究員結合 GPT-5.6 Sol 與 Codex 自主調校量子位元並完成物理實驗",
+      "en": "MIT and OpenAI demonstrate GPT-5.6 Sol autonomously running quantum computing calibration"
+     },
+     "detail": {
+      "zh": "案例展示研究員如何利用 GPT-5.6 Sol 驅動 Codex 自動編寫控制腳本、校準量子位元噪聲並分析實驗數據。這證實了具備強大科學知識的推理模型已能勝任昂貴硬體設備的閉環自動化操作與參數微調。",
+      "en": "A new MIT case study illustrates how GPT-5.6 Sol and Codex autonomously execute quantum experiments, calibrate qubit frequencies, and process telemetry. This proves frontier models can manage closed-loop operational workflows on complex laboratory hardware."
+     },
+     "source": "https://openai.com/index/codex-quantum-computing-experiments",
+     "tags": [
+      "QuantumComputing",
+      "Codex",
+      "OpenAI",
+      "Automation"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "針對性拒絕（Fine-Grained Refusal）：避免模型因安全對齊過度泛化引發「拒答綜合症」",
+      "en": "Safety for Whom? Multiverse Computing proposes fine-grained sub-topic refusal over broad filters"
+     },
+     "detail": {
+      "zh": "Multiverse Computing 提出新型安全對齊機制，專注於精確鎖定有害子領域而非直接遮蔽整個主題分類。這能有效解決現行 LLM 面臨合規安全審查時頻繁誤殺正常學術或技術提問的過度拒答問題。",
+      "en": "A new paper and blog post on Hugging Face presents a technique to restrict hazardous sub-topics without triggering false-positive refusals on adjacent technical discussions, addressing the persistent 'over-refusal' dilemma in aligned LLMs."
+     },
+     "source": "https://huggingface.co/blog/MultiverseComputingCAI/safety-for-whom",
+     "tags": [
+      "HuggingFace",
+      "AIAlignment",
+      "Safety",
+      "Research"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Devin 母公司 Cognition 估值飆至 480 億美元，AI 程式設計賽道競爭白熱化",
+      "en": "Cognition hits $48B valuation, signaling investor appetite for AI coding agents"
+     },
+     "detail": {
+      "zh": "打造自主程式設計代理 Devin 的 Cognition 估值達 480 億美元，超過此前 Cursor 被 SpaceX 收購前的倍數。這顯示市場堅信軟體工程 Agent 並非贏家通吃市場，專注深層自動化開發流程的新創依然獲得巨額資金押注。",
+      "en": "Cognition, the developer behind coding agent Devin, reached a $48B valuation in its latest round. The valuation multiple underscores massive investor conviction that software engineering automation remains an open, high-yield battleground."
+     },
+     "source": "https://techcrunch.com/2026/09/08/cognition-hits-48b-valuation-signaling-investors-believe-ai-coding-is-far-from-a-winner-take-all-market/",
+     "tags": [
+      "Cognition",
+      "Devin",
+      "VentureCapital",
+      "DevTools"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 遭遇高階訂閱用戶集體訴訟，指控其縮減用量額度與未符承諾",
+      "en": "Anthropic faces class-action lawsuit from power users over subscription quota throttling"
+     },
+     "detail": {
+      "zh": "部分高用量訂閱者向法院提起集體訴訟，控訴 Anthropic 在推銷頂級訂閱時涉嫌誇大可用額度與速率限制，甚至為保護伺服器負載單方面限縮連線。此案突顯各家 LLM 服務商在面對高運算成本與用戶期待間的承諾摩擦。",
+      "en": "Power users filed an expanded class-action lawsuit against Anthropic, alleging misleading marketing regarding high-tier subscription token caps and unexpected quota throttling, highlighting operational frictions in consumer LLM infrastructure."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/990313/anthropic-class-action-lawsuit-pricing-subscription-plans",
+     "tags": [
+      "Anthropic",
+      "Claude",
+      "Lawsuit",
+      "Subscriptions"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "開源辦公套件 LibreOffice 公開宣稱「絕無內建任何 AI 功能」後，全網下載量創歷史新高。",
+      "en": "LibreOffice breaks download records after officially declaring it includes zero AI features."
+     },
+     "source": "https://manualdousuario.net/en/libreoffice-download-record-no-ai/"
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 示警第三方外掛與惡意腳本正在竊取付費用戶的 Claude 認證 Token 與運算額度。",
+      "en": "Hackers are actively draining Claude subscriber tokens via compromised browser extensions and scripts."
+     },
+     "source": "https://techcrunch.com/2026/09/08/hackers-are-stealing-claude-tokens-from-subscribers/"
+    },
+    {
+     "headline": {
+      "zh": "Linux 核心官網維護者痛批 AI 爬蟲濫用，稱 14 顆伺服器 CPU 核心常態性僅為爬蟲渲染 Commit 網頁。",
+      "en": "Kernel maintainer warns aggressive AI scrapers consume 14 dedicated CPU cores rendering git commits."
+     },
+     "source": "https://simonwillison.net/2026/Sep/7/creepy-crawlies/"
+    },
+    {
+     "headline": {
+      "zh": "Arm 發布 Mali G2-Ultra NX 行動 GPU，主打硬體原生 AI 圖形超解析與桌機級渲染管線。",
+      "en": "Arm introduces Mali G2-Ultra NX GPU featuring AI-native neural graphics for high-end mobile gaming."
+     },
+     "source": "https://newsroom.arm.com/blog/arm-mali-g2-ultra-nx-ai-native-mobile-graphics"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-09-09T07:06+08:00"
+}

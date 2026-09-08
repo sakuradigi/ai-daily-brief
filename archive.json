@@ -1,6 +1,14 @@
 {
- "latest": "2026-09-08",
+ "latest": "2026-09-09",
  "reports": [
+  {
+   "date": "2026-09-09",
+   "type": "daily",
+   "summary": {
+    "zh": "OpenAI宣稱解開千禧數學難題；Mistral獲30億歐元融資；DeepMind推基因圖譜",
+    "en": "OpenAI claims Navier-Stokes breakthrough, Mistral raises €3B, and DeepMind unveils AlphaGenome Atlas."
+   }
+  },
   {
    "date": "2026-09-08",
    "type": "daily",
