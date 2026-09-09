@@ -1,6 +1,14 @@
 {
- "latest": "2026-09-09",
+ "latest": "2026-09-10",
  "reports": [
+  {
+   "date": "2026-09-10",
+   "type": "daily",
+   "summary": {
+    "zh": "GPT-6 Astra 登場；千禧難題引爆學界震撼",
+    "en": "OpenAI unveils GPT-6 Astra while its math breakthrough stirs academic turbulence."
+   }
+  },
   {
    "date": "2026-09-09",
    "type": "daily",
