@@ -1,6 +1,14 @@
 {
- "latest": "2026-09-10",
+ "latest": "2026-09-11",
  "reports": [
+  {
+   "date": "2026-09-11",
+   "type": "daily",
+   "summary": {
+    "zh": "DeepSeek釋出v4.1，OpenAI推Agents API並深陷數學訓練爭議",
+    "en": "DeepSeek drops v4.1 Flash, OpenAI launches Agents API amid academic data disputes"
+   }
+  },
   {
    "date": "2026-09-10",
    "type": "daily",

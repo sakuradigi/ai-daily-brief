@@ -1,0 +1,352 @@
+{
+ "date": "2026-09-11",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "DeepSeek 推出 v4.1 Flash，推升社群高度熱議",
+      "en": "DeepSeek Releases v4.1 Flash, Generating Massive Community Hype"
+     },
+     "detail": {
+      "zh": "DeepSeek 官方正式宣布推出 v4.1 Flash 版本，在 Hacker News 迅速突破 900 點高分。新版本主打更極致的推論速度與吞吐效率，再度對西方前緣商業模型施加開源與性價比壓力。",
+      "en": "DeepSeek has officially rolled out its v4.1 Flash model, instantly gaining massive traction on Hacker News. The release targets higher inference throughput and ultra-low latency, intensifying cost-performance competition against proprietary frontier models."
+     },
+     "source": "https://twitter.com/deepseek_ai/status/2097930608790167907",
+     "tags": [
+      "DeepSeek",
+      "LLM",
+      "OpenWeights"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 推出託管型 Agents API，支援長時間工作階段與工具呼叫",
+      "en": "OpenAI Introduces Agents API for Long-Running Managed Cloud Agents"
+     },
+     "detail": {
+      "zh": "OpenAI 正式發表 Agents API，由 Codex harness 提供底層編排能力。該 API 支援雲端長工作階段（long-running sessions）與自動化工具調用，大幅降低開發者自建 Agent 狀態機與執行環境的維護門檻。",
+      "en": "OpenAI launched its managed Agents API powered by the Codex harness. It natively supports cloud execution, orchestration, long-running sessions, and tool calling, significantly simplifying agentic workflow development without managing custom state machines."
+     },
+     "source": "https://openai.com/index/introducing-the-agents-api",
+     "tags": [
+      "OpenAI",
+      "API",
+      "Agents",
+      "DeveloperTools"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 數學突破引爆學界爭議，多位學者質疑未公開研究遭偷竊訓練",
+      "en": "OpenAI Navier-Stokes Proof Sparks Academic Outcry Over Training Data Transparency"
+     },
+     "detail": {
+      "zh": "在 OpenAI 釋出含 Lean 4 形式化驗證的 Navier-Stokes 解法後，多位數學家與社群開發者質疑其成果可能來自未公開論文或使用者對話資料，並直指其缺乏對數學成果由來的透明度。",
+      "en": "Following OpenAI's release of a Lean 4 formal proof for the Navier-Stokes problem, multiple mathematicians accused the company of potentially training on unpublished research and private prompts without adequate transparency or attribution."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/993263/where-does-openai-get-mathematics-training-data",
+     "tags": [
+      "OpenAI",
+      "Ethics",
+      "Math",
+      "Lean4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Hugging Face 以 Gradio Workflow 重構 AUTOMATIC1111",
+      "en": "Hugging Face Rebuilds AUTOMATIC1111 Using Gradio Workflow"
+     },
+     "detail": {
+      "zh": "Hugging Face 發布利用 Gradio Workflow 重建知名 Stable Diffusion WebUI (AUTOMATIC1111) 的架構方案。開發者可透過模組化管線串接生成式影像節點，大幅改善傳統 WebUI 龐大單體架構不易客製化與維護的問題。",
+      "en": "Hugging Face showcased a modern rebuild of the classic AUTOMATIC1111 Stable Diffusion WebUI using Gradio Workflow. The modular pipeline architecture makes customizing and scaling image generation nodes significantly cleaner than legacy monolithic scripts."
+     },
+     "source": "https://huggingface.co/blog/gradio-workflow-1111",
+     "tags": [
+      "Gradio",
+      "StableDiffusion",
+      "OpenSource",
+      "Tools"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "工程師僅花 998 美元完成 3.8B LLM 訓練並達 0.384 CORE",
+      "en": "Training a 3.8B LLM to 0.384 CORE Benchmark for Under $1,000"
+     },
+     "detail": {
+      "zh": "獨立開發者公布其實驗紀錄，僅耗費 998 美元運算預算，便將一款 3.8B 參數量模型訓練至 0.384 CORE 基準。該專案分享了精簡資料配方與高效率訓練配置，為低成本自訓特定模型提供了寶貴的實務工程參考。",
+      "en": "A developer detailed how to train a 3.8B parameter language model to a 0.384 CORE score with just $998 in compute. The post offers transparent data curation and training configurations, proving high-efficiency custom LLM pretraining is accessible to individual hackers."
+     },
+     "source": "https://hugovergnes.github.io/little-lm-3-8b/",
+     "tags": [
+      "LLM",
+      "Training",
+      "CostOptimization",
+      "Benchmarks"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Simon Willison 釋出 .blend URL Viewer，搭配 GPT-6 Astra 輔助 3D 生成",
+      "en": "Simon Willison Shares .blend URL Viewer for Fast 3D Asset Inspection"
+     },
+     "detail": {
+      "zh": "知名技術部落客 Simon Willison 分享了一款可直接透過 URL 預覽 Blender .blend 檔案的輕量工具，並展示如何搭配模型生成的素材快速檢視與除錯 3D 管線，提升多模態與 3D 視覺開發的迭代效率。",
+      "en": "Simon Willison unveiled a lightweight web utility to view .blend files directly from URLs. He demonstrated pairing it with AI-generated assets, creating a streamlined rapid prototyping pipeline for 3D modeling and multimodal workflows."
+     },
+     "source": "https://simonwillison.net/2026/Sep/9/blender-viewer/",
+     "tags": [
+      "Blender",
+      "Tools",
+      "WebDev",
+      "Multimodal"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 推出 GPT-Live-1 語音 API，支援全雙工與自訂音色",
+      "en": "OpenAI Ships GPT-Live-1 Voice Model in API with Telephony Support"
+     },
+     "detail": {
+      "zh": "GPT-Live-1 現已登陸 OpenAI API，提供低延遲自然全雙工（full-duplex）對話能力。更新包含更嚴謹的指令遵循、自訂音色以及對傳統電信通話協定的直接支援，適合構建即時客服與語音互動應用。",
+      "en": "OpenAI released GPT-Live-1 in its API, delivering full-duplex conversational voice with improved instruction following. The endpoint includes native telephony support and custom voice cloning capabilities for real-time agent architectures."
+     },
+     "source": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
+     "tags": [
+      "OpenAI",
+      "API",
+      "VoiceAI",
+      "Audio"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Slack 推出 Slackforce Surfaces，支援自然語言動態生成互動儀表板",
+      "en": "Slack Rolls Out Slackforce Surfaces for AI-Driven In-Chat Interactive Dashboards"
+     },
+     "detail": {
+      "zh": "Slack 發表新功能 Slackforce Surfaces，使用者能以自然語言提示詞讓 Slackbot 自動整合頻道歷史、Google Drive 與 Salesforce 數據，即時生成可操作的圖表、報表與微型工具介面。",
+      "en": "Slack introduced Slackforce Surfaces, allowing users to build interactive reports, polls, and mini dashboards inside channels via natural language. The feature synthesizes data across conversation history, Google Drive, and Salesforce on the fly."
+     },
+     "source": "https://www.theverge.com/tech/989853/slackforce-surfaces-launch",
+     "tags": [
+      "Slack",
+      "Enterprise",
+      "UI",
+      "Productivity"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 推出 ChatGPT Work 數據代理，支援自然語言儀表板建立",
+      "en": "OpenAI Introduces Data Agent in ChatGPT Work for Enterprise Analytics"
+     },
+     "detail": {
+      "zh": "OpenAI 針對企業工作空間發表 Data Agent，支援直接連結企業資料庫，透過自然語言對話進行探索性數據分析並動態產生互動儀表板，將商業智慧工具操作門檻進一步降平。",
+      "en": "OpenAI launched a specialized Data agent in ChatGPT Work that connects to enterprise databases. It allows teams to query raw business metrics and generate interactive reporting dashboards entirely through natural language prompts."
+     },
+     "source": "https://openai.com/index/put-data-to-work",
+     "tags": [
+      "OpenAI",
+      "Enterprise",
+      "DataAgent",
+      "Analytics"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Cognition 釋出 SWE-2 模型，程式碼評測直逼 GPT-Astra",
+      "en": "Cognition Unveils SWE-2 Coding Model to Challenge GPT-Astra"
+     },
+     "detail": {
+      "zh": "Devin 開發商 Cognition 正式發布新一代軟體工程特化模型 SWE-2。官方 benchmark 數據宣稱其表現可抗衡 Fable 5.1 與 GPT-Astra，專注於解決端到端長鏈路 GitHub issue 修復與代碼重構任務。",
+      "en": "Cognition released SWE-2, its latest software engineering foundation model designed to rival Fable 5.1 and GPT-Astra. The model optimizes for multi-file code refactoring and autonomous issue resolution across complex codebases."
+     },
+     "source": "https://cognition.com/blog/swe-2",
+     "tags": [
+      "SWE-bench",
+      "CodingAI",
+      "LLM",
+      "Cognition"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "研究團隊展示利用 AI 兩天內挖出微信零點擊 RCE 漏洞並建構蠕蟲",
+      "en": "Researchers Use AI to Discover Zero-Click WeChat RCE and Build 'WeWorm'"
+     },
+     "detail": {
+      "zh": "Calif Research 展示名為 WeWorm 的零點擊漏洞利用鏈，受害者無需接聽電話即可跨 iOS/Android 被植入惡意程式。研究團隊指出，在 AI 輔助下僅花費兩天便完成 RCE 漏洞挖掘，凸顯 LLM 正大幅縮短高階網攻開發週期。",
+      "en": "Calif Research detailed WeWorm, a zero-click WeChat exploit chain capable of remote code execution across iOS and Android without answering calls. The team highlighted that AI assistance shortened discovery and exploit weaponization to just days."
+     },
+     "source": "https://simonwillison.net/2026/Sep/10/calif-research/",
+     "tags": [
+      "Security",
+      "Vulnerability",
+      "Cybersecurity",
+      "ZeroClick"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 揭露利用 Lean 4 形式化驗證解決 Navier-Stokes 難題細節",
+      "en": "OpenAI Pairs Navier-Stokes Breakthrough with Formal Lean 4 Verification"
+     },
+     "detail": {
+      "zh": "數學家分析 OpenAI 日前宣稱解決 Navier-Stokes 千禧年難題的論文，指出該發布包含完整的 Lean 4 形式化程式碼。這標誌著自動定理證明（ITP/ATP）在頂尖前沿數學驗證上邁出關鍵實務步伐。",
+      "en": "Mathematician John D. Cook analyzed OpenAI's Navier-Stokes announcement, confirming the inclusion of machine-checked Lean 4 code. The approach highlights the accelerating convergence between generative reasoning and interactive theorem provers in pure math."
+     },
+     "source": "https://www.johndcook.com/blog/2026/09/09/formal-method-revolution/",
+     "tags": [
+      "Lean4",
+      "FormalMethods",
+      "Mathematics",
+      "Verification"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Anthropic 釋出報告，指控多家中國 AI 團隊持續進行蒸餾攻擊",
+      "en": "Anthropic Reports Persistent Model Distillation Campaigns from Chinese Labs"
+     },
+     "detail": {
+      "zh": "Anthropic 發布調查報告，指稱包括阿里巴巴、月之暗面（Moonshot AI）與 DeepSeek 在內的多個團隊長期透過 API 進行大量系統化蒸餾，意圖反向提取 Claude 模型能力以強化自家競品。",
+      "en": "Anthropic published a report documenting alleged persistent model distillation campaigns originating from Alibaba, Moonshot AI, and DeepSeek, accusing them of scraping Claude outputs at scale to train domestic models."
+     },
+     "source": "https://techcrunch.com/2026/09/10/anthropic-details-distillation-campaigns-from-alibaba-moonshot-ai-and-deepseek/",
+     "tags": [
+      "Anthropic",
+      "Distillation",
+      "AIPolicy",
+      "China"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Shopify 放棄 React Native，全面回歸 Swift 與 Kotlin 原生架構",
+      "en": "Shopify Abandons React Native in Favor of Separate Native Swift and Kotlin"
+     },
+     "detail": {
+      "zh": "Shopify 宣布終止自 2020 年採用的跨平台 React Native 技術路線，將行動應用全面拆分為獨立的 Swift 與 Kotlin 原生專案，主因在於追趕平台新特性與原生維護成本隨規模擴大已反超雙代碼庫開銷。",
+      "en": "Shopify is moving away from React Native after six years, returning to separate native iOS (Swift) and Android (Kotlin) codebases to eliminate platform parity overhead and unlock first-class native capabilities directly."
+     },
+     "source": "https://simonwillison.net/2026/Sep/10/shopify-react-native/",
+     "tags": [
+      "Shopify",
+      "MobileDev",
+      "ReactNative",
+      "Architecture"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 暫停 Pro 訂閱註冊，因 GPT-6 Astra 運算負載過載",
+      "en": "OpenAI Halts Pro Subscriptions Due to Heavy GPT-6 Astra Compute Demand"
+     },
+     "detail": {
+      "zh": "由於新架構模型 GPT-6 Astra 帶來空前的伺服器負載，OpenAI 宣布暫停 ChatGPT Pro 新用戶註冊，待叢集擴容完成後再行開放，反映出超大參數量模型推論成本與硬體缺口的現實挑戰。",
+      "en": "OpenAI paused new ChatGPT Pro tier subscriptions, citing severe infrastructure strain caused by the rollout of GPT-6 Astra. The company plans to reopen sign-ups once additional cluster capacity is brought online."
+     },
+     "source": "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/",
+     "tags": [
+      "OpenAI",
+      "Compute",
+      "Infrastructure",
+      "Subscriptions"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "HN 用戶反映 OpenAI 設定中「允許用於訓練」選項頻繁被系統自動重新開啟。",
+      "en": "HN users report OpenAI's 'allow data training' opt-out setting keeps silently re-enabling itself."
+     },
+     "source": "https://news.ycombinator.com/item?id=49643556"
+    },
+    {
+     "headline": {
+      "zh": "知名對齊研究學者 Paul Christiano 正式加入 OpenAI 基金會董事會。",
+      "en": "AI alignment researcher Paul Christiano officially joins the OpenAI Foundation board of directors."
+     },
+     "source": "https://techcrunch.com/2026/09/09/openai-adds-a-prominent-ai-doomer-to-its-board-of-directors/"
+    },
+    {
+     "headline": {
+      "zh": "Meta 全新推出的 Muse AI 助理衝上美國 App Store 榜單第 2 名，但伴隨搶奪樂團同名社群帳號爭議。",
+      "en": "Meta's new Muse AI agent hits No. 2 in US App Store charts amid backlash over taking the rock band's handles."
+     },
+     "source": "https://techcrunch.com/2026/09/10/metas-ai-agent-muse-is-now-the-no-2-app-in-the-us/"
+    },
+    {
+     "headline": {
+      "zh": "環球音樂攜手 ElevenLabs 簽署多年授權協議，共同打造合法版權 AI 音樂重製平台。",
+      "en": "Universal Music signs multiyear licensing deal with ElevenLabs to launch licensed AI music remix platform."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/993465/universal-music-elevenlabs-ai"
+    },
+    {
+     "headline": {
+      "zh": "破產航空公司 Spirit 擬將客戶數據出售給 Google 用於 AI 訓練，引發用戶與監管機構恐慌。",
+      "en": "Bankrupt Spirit Airlines' proposed sale of customer data to Google for AI training triggers privacy outcry."
+     },
+     "source": "https://arstechnica.com/tech-policy/2026/09/panic-builds-over-bankrupt-spirits-looming-data-sale-to-google/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-09-11T07:02+08:00"
+}
