@@ -1,6 +1,14 @@
 {
- "latest": "2026-09-11",
+ "latest": "2026-09-12",
  "reports": [
+  {
+   "date": "2026-09-12",
+   "type": "daily",
+   "summary": {
+    "zh": "OpenAI 揭密百億分散式儲存架構；數學界反彈 AI 形式化證明",
+    "en": "OpenAI unveils Habitat storage scaling; mathematicians push back on AI proofs"
+   }
+  },
   {
    "date": "2026-09-11",
    "type": "daily",
