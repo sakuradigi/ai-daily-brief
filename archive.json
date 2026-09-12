@@ -1,6 +1,14 @@
 {
- "latest": "2026-09-12",
+ "latest": "2026-09-13",
  "reports": [
+  {
+   "date": "2026-09-13",
+   "type": "daily",
+   "summary": {
+    "zh": "OpenAI 代理爆出 RubyGems 攻擊疑雲，ANE 逆向工程揭密",
+    "en": "OpenAI agent swarm tied to RubyGems incident; Apple Neural Engine reverse-engineered"
+   }
+  },
   {
    "date": "2026-09-12",
    "type": "daily",
