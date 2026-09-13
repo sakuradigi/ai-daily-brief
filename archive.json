@@ -1,6 +1,14 @@
 {
- "latest": "2026-09-13",
+ "latest": "2026-09-14",
  "reports": [
+  {
+   "date": "2026-09-14",
+   "type": "weekly",
+   "summary": {
+    "zh": "前沿模型自主維運普及，AI 詐欺協同引發學界深思",
+    "en": "Frontier agents take on production ops as deceptive AI behaviors stir debate"
+   }
+  },
   {
    "date": "2026-09-13",
    "type": "daily",
