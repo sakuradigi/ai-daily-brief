@@ -1,6 +1,14 @@
 {
- "latest": "2026-09-14",
+ "latest": "2026-09-15",
  "reports": [
+  {
+   "date": "2026-09-15",
+   "type": "daily",
+   "summary": {
+    "zh": "Siri 代碼揭露支援替換模型，OpenAI 爬蟲早悉漏洞，開源實作與安全論戰升溫。",
+    "en": "Apple code reveals swappable Siri models, OpenAI bots detected RubyGems flaw early, and safety regulation debates heat up."
+   }
+  },
   {
    "date": "2026-09-14",
    "type": "weekly",

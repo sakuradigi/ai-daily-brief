@@ -1,0 +1,311 @@
+{
+ "date": "2026-09-15",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "iOS 程式碼曝光：蘋果 Siri 可自由替換為 Claude 或 ChatGPT 後端",
+      "en": "Apple Code Reveals Siri Can Be Swapped Out for Claude or ChatGPT"
+     },
+     "detail": {
+      "zh": "開發者在最新系統代碼中發現介面預留機制，允許將預設的 Siri 後端替換為 Anthropic Claude 或 OpenAI ChatGPT。這意味著蘋果在生態封閉性上做出妥協，未來開發者與進階用戶有望自訂系統層級的預設 LLM Agent。",
+      "en": "Code analysis reveals internal hooks allowing users to swap Siri's default backend for third-party models like Claude or ChatGPT. This shift opens the door for developers and power users to deeply customize system-level AI assistants across Apple platforms."
+     },
+     "source": "https://www.macrumors.com/2026/09/14/siri-can-be-swapped-out-for-chatgpt-claude/",
+     "tags": [
+      "Apple",
+      "Siri",
+      "Claude",
+      "ChatGPT",
+      "iOS"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "RubyGems 快取漏洞曝光：OpenAI 爬蟲早在修補前就已掌握異常模式",
+      "en": "OpenAI Bots Detected RubyGems Caching Vulnerability Before Public Disclosure"
+     },
+     "detail": {
+      "zh": "Ruby 核心維護者透露，日誌顯示 OpenAI 的爬蟲機器人早前已在自動化分析中精準命中 RubyGems 的快取漏洞特徵。此事件凸顯現代 LLM 自主爬取與分析程式碼的能力，已實質先於一般安全研究員抵達生產端潛在弱點。",
+      "en": "Ruby maintainers disclosed that server access logs showed OpenAI bots actively probing and identifying RubyGems caching flaw patterns ahead of patches. It highlights how autonomous frontier scrapers are now discovering production-level vulnerabilities in the wild."
+     },
+     "source": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive/",
+     "tags": [
+      "Security",
+      "RubyGems",
+      "OpenAI",
+      "Vulnerability"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 斥資 3 億美元收購 Glass Imaging，搶攻邊緣計算影像技術",
+      "en": "OpenAI Acquires Smartphone Camera Maker Glass Imaging for $300 Million"
+     },
+     "detail": {
+      "zh": "Glass Imaging 由前蘋果人像模式團隊核心工程師創立，專精於邊緣設備上的微型神經網路成像處理。OpenAI 此舉被視為補齊多模態終端感知與硬體端直接推論能力的關鍵戰略佈局。",
+      "en": "Founded by former Apple engineers who led the Portrait Mode team, Glass Imaging specializes in on-device neural image reconstruction. The acquisition bolsters OpenAI's edge computing roadmap and physical-world multimodal visual reasoning."
+     },
+     "source": "https://techcrunch.com/2026/09/14/openai-buys-smartphone-camera-maker-glass-imaging-for-300-million-report-says/",
+     "tags": [
+      "OpenAI",
+      "M&A",
+      "ComputerVision",
+      "Hardware"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenArch：主流現代大語言模型架構的乾淨 PyTorch 實作庫",
+      "en": "OpenArch: Clean PyTorch Implementations of Modern LLM Architectures"
+     },
+     "detail": {
+      "zh": "該專案以模組化、高可讀性方式還原了目前主流 Frontier LLM 的底層架構，抽離各家推理引擎的過度封裝。適合研究員與底層工程師進行自訂 attention 機制、量化實驗或跨架構性能 benchmark。",
+      "en": "OpenArch provides transparent, dependency-light PyTorch reference implementations of current state-of-the-art LLM architectures. It is designed for researchers and systems engineers benchmarking custom attention mechanisms and quantization kernels."
+     },
+     "source": "https://github.com/anuj0456/OpenArch",
+     "tags": [
+      "PyTorch",
+      "LLM",
+      "OpenSource",
+      "Architecture"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Kinesis：透過 Meta 神經手環控制 Mac 的開源反向工程專案",
+      "en": "Kinesis: Open-Source Mac Control via Meta Neural Band"
+     },
+     "detail": {
+      "zh": "開發者開源了針對 Meta 肌電手環（Neural Band）的 macOS 驅動適配層，將手勢肌電訊號轉化為系統級指標控制與自訂快捷鍵。展示了消費級神經介面與日常工作流整合的可行性。",
+      "en": "Kinesis is an open-source driver bridging Meta's EMG neural wristband with macOS, mapping gesture signals to pointer events and custom macros. It offers developers a playground for testing consumer-grade neuromotor inputs."
+     },
+     "source": "https://github.com/callbacked/kinesis",
+     "tags": [
+      "Hardware",
+      "macOS",
+      "EMG",
+      "HCI"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "commit-rewriter：利用本機環境清理 Agent 生成的垃圾 Commit 訊息",
+      "en": "commit-rewriter: Local Utility to Strip Coding Agent Cruft from Git Commits"
+     },
+     "detail": {
+      "zh": "Simon Willison 釋出微型開源工具，可透過 npx/uvx 快速重整歷史提交紀錄，清除 AI 程式碼編程代理人產生的內部 issue 編號與多餘描述。專為準備開源私有專案的開發者設計。",
+      "en": "A lightweight CLI tool designed to sanitize git commit history before public release, purging redundant agent-generated logs and private ticket references left behind by autonomous coding assistants."
+     },
+     "source": "https://simonwillison.net/2026/Sep/14/commit-rewriter/",
+     "tags": [
+      "Git",
+      "CLI",
+      "DeveloperTools",
+      "Python"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Perplexity 部署 GPT-6 Astra：實現生產環境程式碼修改與自我監控",
+      "en": "Perplexity Integrates GPT-6 Astra for End-to-End Production Systems"
+     },
+     "detail": {
+      "zh": "Perplexity 揭露其已採用 OpenAI 最新的 Astra 模型全權處理軟體變更、系統監控與對外通訊，人工介入審核頻率大幅降低。這是前沿模型正式接管核心生產運維與自主修復的指標案例。",
+      "en": "Perplexity shared operational details on deploying OpenAI's GPT-6 Astra to autonomously commit code changes and monitor production stacks with minimal human oversight, marking a milestone in autonomous site reliability engineering."
+     },
+     "source": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
+     "tags": [
+      "OpenAI",
+      "Perplexity",
+      "DevOps",
+      "Agents"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Superhuman 收購會議記錄 AI Fathom，加速推進郵件智慧代理人",
+      "en": "Superhuman Acquires AI Notetaker Fathom to Build Next-Gen Work Agents"
+     },
+     "detail": {
+      "zh": "高階郵件客戶端 Superhuman 併購擁有超過 40 萬月活躍用戶的語音轉錄新創 Fathom。雙方計劃將音訊脈絡直接串接至郵件工作流，打造自動處理會議待辦與信件跟進的自主 Agent。",
+      "en": "Superhuman has acquired meeting intelligence platform Fathom to converge voice transcript context with email workflows, creating unified agentic systems capable of tracking and executing action items automatically."
+     },
+     "source": "https://techcrunch.com/2026/09/14/superhuman-acquires-yc-backed-notetaker-fathom-as-productivity-platforms-push-for-agentic-work/",
+     "tags": [
+      "Productivity",
+      "M&A",
+      "SpeechAI",
+      "Superhuman"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Pion 自主經營代理人發表：主打端到端全自動運作公司業務",
+      "en": "Pion Launches Autonomous Corporate Management Agent"
+     },
+     "detail": {
+      "zh": "Andon Labs 推出專為管理全公司營運設計的自主代理系統 Pion，聲稱能串接財務、行銷與工單系統進行自動決策。其架構探索了多 Agent 協作在複雜商業層級的閉環能力。",
+      "en": "Andon Labs introduced Pion, an agent framework designed to orchestrate end-to-end enterprise operations across finance, support, and marketing, testing the limits of multi-agent delegation."
+     },
+     "source": "https://andonlabs.com/blog/why-we-built-pion",
+     "tags": [
+      "Agents",
+      "Automation",
+      "Startups"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "開源 AI 與開放權重模型必讀論文清單整理",
+      "en": "Curated Open-Source AI and Open Weights Reading List"
+     },
+     "detail": {
+      "zh": "Interconnects 發布系統化的開源模型發展研究清單，梳理了從 Llama 系譜到當前架構開放權重模型的演化瓶頸與技術文獻。對於需要自架推理基礎設施或做微調研究的工程師極具參考價值。",
+      "en": "A comprehensive survey tracking the architectural and synthetic data milestones of open-weight LLMs, serving as a structured technical roadmap for engineers fine-tuning and hosting sovereign models."
+     },
+     "source": "https://www.interconnects.ai/p/open-source-ai-reading-list",
+     "tags": [
+      "Research",
+      "OpenSource",
+      "LLM",
+      "Papers"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "對抗式服裝設計：以圖樣特徵干擾機器視覺全景監控系統",
+      "en": "Adversarial Fashion Exploits Feature Flaws in Vision Models"
+     },
+     "detail": {
+      "zh": "IEEE Spectrum 報導新型對抗樣本衣物設計，透過特定幾何與反光圖案破壞物件偵測模型（如 YOLO 等）的特徵提取層。該研究實體展示了物理世界中機器學習視覺管線的魯棒性漏洞。",
+      "en": "IEEE Spectrum covers novel physical adversarial patterns on textiles that consistently fool automated CV surveillance models, highlighting persistent brittleness in commercial object detection pipelines."
+     },
+     "source": "https://spectrum.ieee.org/adversarial-fashion",
+     "tags": [
+      "ComputerVision",
+      "AdversarialML",
+      "Security"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "微軟公布 37 頁人道主義 AI 行為守則：明確禁止系統滲透與詐欺行為",
+      "en": "Microsoft Publishes 37-Page 'Humanist AI Code of Conduct' Banning Hacking Behaviors"
+     },
+     "detail": {
+      "zh": "因應業界對前沿模型自主能力的擔憂，微軟發布新規範，嚴格限制旗下 AI 進行未授權網路攻擊、社交工程欺騙或脫離約束的自主行為。為企業級 Agent 部署劃出第一道具體的合規邊界。",
+      "en": "Amid safety debates, Microsoft issued formal constraints restricting autonomous models from exploiting systems, executing unauthorized cyber actions, or manipulating users, establishing formal guardrails for enterprise agent deployment."
+     },
+     "source": "https://techcrunch.com/2026/09/14/microsofts-new-ai-code-of-conduct-tells-models-not-to-hack-systems-or-trick-humans/",
+     "tags": [
+      "Microsoft",
+      "Safety",
+      "Policy",
+      "Enterprise"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "黃仁勳拒絕 AI 研發減速提議：技術推進不該受恐懼心態限制",
+      "en": "Jensen Huang Rejects Calls to Slow AI Progress at All-In Summit"
+     },
+     "detail": {
+      "zh": "面對 Anthropic Dario Amodei 呼籲放慢前沿模型訓練步伐的言論，輝達執行長黃仁勳在峰會上明確表態反對，強調運算擴展與基礎設施創新不應人為停滯，凸顯硬體供應商與安全研究派的立場分歧。",
+      "en": "Speaking publicly at the All-In Summit, Nvidia CEO Jensen Huang explicitly dismissed proposals to decelerate frontier model scaling, underscoring the divergence between hardware infrastructure providers and AI safety advocates."
+     },
+     "source": "https://techcrunch.com/2026/09/14/nvidia-ceo-jensen-huang-tells-trump-were-not-going-to-let-an-ai-slowdown-happen/",
+     "tags": [
+      "Nvidia",
+      "Hardware",
+      "Regulation",
+      "AIChips"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "shot-scraper 釋出 1.12 版，新增無損與自訂品質 WebP 螢幕截圖自動化輸出",
+      "en": "shot-scraper 1.12 released with native WebP screenshot capture and quality control support."
+     },
+     "source": "https://simonwillison.net/2026/Sep/13/shot-scraper/"
+    },
+    {
+     "headline": {
+      "zh": "馬斯克撤回針對蘋果整合 ChatGPT 的反壟斷起訴，但仍持續對 OpenAI 提告",
+      "en": "Elon Musk drops Apple from antitrust lawsuit while maintaining active claims against OpenAI."
+     },
+     "source": "https://arstechnica.com/tech-policy/2026/09/musk-drops-apple-from-antitrust-suit-but-keeps-gunning-for-openai/"
+    },
+    {
+     "headline": {
+      "zh": "社群平台遭批出現大量格式化自述型垃圾 Agent 帳號，加劇合成內容氾濫問題",
+      "en": "Coordinated synthetic bot accounts flood social feeds with repetitive self-identifying agent spam."
+     },
+     "source": "https://arstechnica.com/ai/2026/09/ai-agents-flood-the-internet-with-slop-infused-spam/"
+    },
+    {
+     "headline": {
+      "zh": "調查揭露單一駭客組織為先前 OpenAI、Anthropic 與 Meta 內部洩密事件的主因",
+      "en": "Report attributes recent breach incidents across OpenAI, Anthropic, and Meta to a single actor."
+     },
+     "source": "https://www.effort.news/irregular"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-09-15T07:08+08:00"
+}
