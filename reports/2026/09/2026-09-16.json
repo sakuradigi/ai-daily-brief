@@ -1,0 +1,311 @@
+{
+ "date": "2026-09-16",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Google 發表 Gemini 3.8 Live 與即時延伸思考模型",
+      "en": "Google Unveils Gemini 3.8 Live and 3.8 Live Extended Thinking"
+     },
+     "detail": {
+      "zh": "Google DeepMind 正式推出具備低延遲互動能力的 Gemini 3.8 Live，並加入能在即時語音與多模態互動中進行深度推理的 Extended Thinking 模式。這讓開發者能在建構即時語音助理或複雜串流代理人時，在毫秒級反應與多步驟推論之間取得更靈活的平衡。",
+      "en": "Google DeepMind announced Gemini 3.8 Live alongside an Extended Thinking variant designed for real-time complex reasoning. This allows developers to build low-latency multimodal conversational agents that can toggle multi-step reasoning mid-stream."
+     },
+     "source": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
+     "tags": [
+      "LLM",
+      "Google",
+      "Multimodal",
+      "Inference"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI、Anthropic 與 Google 擬定放緩前沿 AI 步調引發產業分歧",
+      "en": "Top AI Labs Propose Development Slowdown as Hardware Giants Push Back"
+     },
+     "detail": {
+      "zh": "OpenAI、Anthropic 與 Google 高層展開數週安全對談，討論限制前沿模型開發節奏以確保安全，但引發「安全協議」與「巨頭卡特爾」的爭議。然而輝達 CEO 黃仁勳已公開表態反對放緩腳步，顯示底層晶片與頂層模型商在發展路線上已出現巨大裂痕。",
+      "en": "Execs from OpenAI, Anthropic, and Google held discussions on pacing frontier AI development, stirring debate over safety versus anti-competitive coordination. Nvidia CEO Jensen Huang openly rejected any artificial slowdown, underscoring growing tension between hardware enablers and model developers."
+     },
+     "source": "https://techcrunch.com/2026/09/15/openai-anthropic-google-have-been-in-talks-on-ai-safety-for-weeks/",
+     "tags": [
+      "AI Policy",
+      "Industry",
+      "Safety"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Hugging Face 向 OpenAI 索賠 1 億美元算力追蹤費",
+      "en": "Hugging Face Demands $100M from OpenAI Over Scraping Traces"
+     },
+     "detail": {
+      "zh": "社群傳出 Hugging Face 執行長向 OpenAI 發送 1 億美元帳單，指控其未經授權爬取平台模型與運算資源。這凸顯了開源社群與封閉商業模型巨頭之間，在訓練資料授權與資源消耗上的衝突正急遽升級至法律與計費層面。",
+      "en": "Hugging Face has reportedly sent a $100M compute invoice to OpenAI, citing unauthorized data harvesting and compute traces. The escalating dispute reflects intensifying friction between open-source platforms and proprietary LLM labs regarding training resource consumption."
+     },
+     "source": "https://thenextweb.com/news/hugging-face-delangue-openai-100m-compute-traces-demand",
+     "tags": [
+      "Open Source",
+      "Hugging Face",
+      "OpenAI",
+      "Legal"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Meta 釋出官方 WhatsApp Business MCP 伺服器",
+      "en": "Meta Releases Official WhatsApp Business MCP Server"
+     },
+     "detail": {
+      "zh": "Meta 採用 Model Context Protocol (MCP) 標準，推出官方 WhatsApp Business MCP 伺服器。開發者可以直接將 Cursor、Claude Code 或 ChatGPT 串接至後端環境，讓 AI 代理人直接自動化處理訊息範本設定、測試與除錯任務。",
+      "en": "Meta introduced a new WhatsApp Business Model Context Protocol (MCP) server. Developers can now connect coding agents like Claude or Cursor directly to WhatsApp infrastructure to automate template provisioning, integration testing, and debugging."
+     },
+     "source": "https://techcrunch.com/2026/09/15/meta-now-lets-ai-agents-handle-the-boring-parts-of-whatsapp-business-setup/",
+     "tags": [
+      "MCP",
+      "Tools",
+      "Meta",
+      "DevOps"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "IBM Research 提出 Agent 輸出一致性評估框架",
+      "en": "IBM Research Benchmarks Consistency in Autonomous Agents"
+     },
+     "detail": {
+      "zh": "IBM Research 在 Hugging Face 發布關於 Agent 重複執行穩定度的研究與評估套件，解決當前代理人雖能通過單次基準測試卻難以在生產環境穩定復現的問題。此工具為工程團隊在挑選與落地自主工作流程時提供量化穩定度的指標。",
+      "en": "IBM Research published a blog and benchmarking framework addressing reproducibility in autonomous agents. The toolkit helps developers quantify whether an agent that succeeded once can reliably repeat performance across production runs."
+     },
+     "source": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
+     "tags": [
+      "Benchmarking",
+      "Agents",
+      "Evaluation"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Mozilla 報告指出平價開源模型與前沿模型落差僅剩 4 個月",
+      "en": "Report Shows Open-Weight Models Close Gap to Frontier Labs to 4 Months"
+     },
+     "detail": {
+      "zh": "Mozilla 釋出的調研指出，全球開源與平價模型在核心能力指標上僅落後頂尖閉源模型約 4 個月，但商業專有模型的 API 成本高出 5 倍。對於架構設計師而言，採用地端或開源權重進行領域微調的性價比已達到全面替代商業 API 的甜蜜點。",
+      "en": "A report previewed by Ars Technica reveals that open-weight models now lag proprietary frontier models by just four months at a fifth of the operational cost. The narrow gap makes localized self-hosting increasingly viable over commercial APIs."
+     },
+     "source": "https://arstechnica.com/ai/2026/09/exclusive-open-chinese-models-close-gap-with-silicon-valleys-frontier-ai-models/",
+     "tags": [
+      "Open Source",
+      "LLM",
+      "Cost Optimization"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Cartesian 推出專為工程與工業設計打造的 AI 3D 建模工具",
+      "en": "Cartesian Launches AI 3D Modeling Platform for Industrial Design"
+     },
+     "detail": {
+      "zh": "Formas 推出 AI 輔助 3D 生成系統 Cartesian，主打直接產出符合 CAD 與工程標準的幾何形狀與可編輯網格。相較於常見的粗糙 NeRF 轉檔，該工具針對工業製程優化拓撲結構，能顯著壓縮硬體產品打樣時程。",
+      "en": "Formas announced Cartesian, a generative 3D modeling tool tailored for designers and mechanical engineers. It delivers clean, production-ready topology and editable geometries rather than raw volumetric meshes, streamlining rapid hardware prototyping."
+     },
+     "source": "https://www.formas.ai/cartesian",
+     "tags": [
+      "3D",
+      "Generative AI",
+      "CAD"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Meta 推 Meta One 訂閱方案整合 Muse 助理與進階配額",
+      "en": "Meta Launches 'Meta One' Subscriptions Bundling AI Assistant Muse"
+     },
+     "detail": {
+      "zh": "Meta 正式在全球推出 Meta One 訂閱方案，整合了旗下社群進階功能與新推出的全能助理 Muse 的高額調用量。這意味著 Meta 正逐步從全免費廣告模式走向類似 OpenAI 的個人與創作者付費算力服務。",
+      "en": "Meta rolled out its Meta One subscription globally, bundling premium features across its apps with higher compute allowances for its Muse AI assistant. The move signals Meta's shift toward direct monetization of consumer inference."
+     },
+     "source": "https://www.theverge.com/tech/995453/meta-one-subscriptions-ai",
+     "tags": [
+      "Meta",
+      "Product",
+      "SaaS"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "SimpliSafe 推出結合即時視覺 AI 與真人守衛的智慧門鈴",
+      "en": "SimpliSafe Debuts Video Doorbell Combining Computer Vision with Live Agents"
+     },
+     "detail": {
+      "zh": "居家安防廠商 SimpliSafe 發表新款智慧門鈴 Series 2，整合主動式視覺邊緣運算模型與雲端監控中心。當邊緣偵測到異常行為時會自動觸發遠端真人守衛主動介入，展示了多模態視覺模型在家庭物聯網硬體落地的商業解法。",
+      "en": "SimpliSafe launched its Series 2 video doorbell paired with real-time CV analysis and live security intervention. The device showcases a hybrid edge-vision and human-in-the-loop operational model for physical consumer security."
+     },
+     "source": "https://www.theverge.com/tech/995365/simplisafe-video-doorbell-series-2-virtual-guard-price-specs",
+     "tags": [
+      "IoT",
+      "Edge AI",
+      "Computer Vision"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Salesforce 與 Nvidia 聯手推出企業級推論模型 Koa",
+      "en": "Salesforce and Nvidia Unveil 'Koa' Enterprise Reasoning Model"
+     },
+     "detail": {
+      "zh": "Salesforce 基於 Nvidia 開源權重 Nemotron 開發出專用推論模型 Koa，針對企業銷售、客服與長鏈路決策進行深度強化學習微調。該模型展示了垂直領域推論架構在實際商業邏輯處理上，表現可匹敵通用超大模型但營運算力成本大幅降低。",
+      "en": "Salesforce teamed up with Nvidia to release Koa, an enterprise reasoning model fine-tuned on Nvidia's Nemotron open weights. It targets sales automation and business workflows, proving that targeted reasoning models can challenge generic frontier labs in enterprise niches."
+     },
+     "source": "https://techcrunch.com/2026/09/15/salesforce-and-nvidias-new-reasoning-model-is-everything-the-ai-labs-should-fear/",
+     "tags": [
+      "Reasoning",
+      "Nvidia",
+      "Enterprise",
+      "Nemotron"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "IEEE Spectrum 剖析 2026 推論專用硬體架構革新",
+      "en": "IEEE Spectrum Details the 2026 Inference Hardware Revolution"
+     },
+     "detail": {
+      "zh": "IEEE Spectrum 發布深度技術分析，回顧近年來推論硬體從通用 GPU 轉向超高記憶體頻寬（SRAM/HBM4）專用架構的變革。分析指出，因應多步驟推論（Reasoning tokens）需求暴增，推論成本正決定軟體架構與模型部署的可行性。",
+      "en": "An IEEE Spectrum deep dive outlines the architectural shift toward dedicated, high-bandwidth inference ASICs. With reasoning token generation exploding, optimized inference hardware is redefining deployment unit economics for LLM services."
+     },
+     "source": "https://spectrum.ieee.org/inference-hardware-revolution",
+     "tags": [
+      "Hardware",
+      "Inference",
+      "Architecture"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 斥資 3 億美元收購手機計算攝影晶片新創 Glass Imaging",
+      "en": "OpenAI Acquires Computational Photography Startup Glass Imaging for $300M"
+     },
+     "detail": {
+      "zh": "OpenAI 完成對光學與邊緣計算攝影廠商 Glass Imaging 的 3 億美元收購案。這項交易表明 OpenAI 正在積極布局端側硬體與邊緣神經網路光學處理，為未來自研多模態終端裝置提供底層影像處理能力。",
+      "en": "OpenAI acquired smartphone computational photography startup Glass Imaging for $300 million. The acquisition indicates OpenAI's push toward edge computing, proprietary hardware devices, and on-device multimodal sensor processing."
+     },
+     "source": "https://techcrunch.com/2026/09/14/openai-buys-smartphone-camera-maker-glass-imaging-for-300-million-report-says/",
+     "tags": [
+      "M&A",
+      "OpenAI",
+      "Hardware",
+      "Edge AI"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "AI 資料中心狂潮引發能源危機，預估 2035 年天然氣用量超越日德總和",
+      "en": "AI Data Center Surge Strains US Power Grids and Natural Gas Demands"
+     },
+     "detail": {
+      "zh": "最新能源調研警告，美國資料中心的電力擴建將使其在 2035 年前消耗超過德國與日本總和的天然氣發電量。基建供電瓶頸與地方社群反彈已成為限制大模型叢集擴張的最大物理瓶頸。",
+      "en": "A new energy report projects that US data centers could consume more natural gas than Germany and Japan combined by 2035. Infrastructure constraints and local pushback against power plants are emerging as hard physical bottlenecks for LLM scaling."
+     },
+     "source": "https://techcrunch.com/2026/09/15/us-data-centers-could-consume-more-natural-gas-than-germany-and-japan-combined-by-2035/",
+     "tags": [
+      "Data Center",
+      "Energy",
+      "Infrastructure"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "調查報告揭露單一駭客組織同時代理刺探 OpenAI、Anthropic 及 Meta 安全漏洞",
+      "en": "Report links OpenAI, Anthropic, and Meta intrusions to a single security firm"
+     },
+     "source": "https://www.effort.news/irregular"
+    },
+    {
+     "headline": {
+      "zh": "前 FTC 主席 Lina Khan 主張引用 1934 年法案前例對 AI 企業高層追究刑事責任",
+      "en": "Ex-FTC Chair Lina Khan urges criminal accountability for AI execs using 1934 precedents"
+     },
+     "source": "https://www.theregister.com/ai-and-ml/2026/09/14/ex-ftc-boss-khan-urges-uncle-sam-to-break-out-the-handcuffs-for-ai-ceos-citing-1934-precedent/5296325"
+    },
+    {
+     "headline": {
+      "zh": "Agility 新一代雙足機器人具備緊急蹲伏安全機制，允許無隔離柵欄人機協作",
+      "en": "Agility's new humanoid robot squats to prevent human worker collisions outside cages"
+     },
+     "source": "https://arstechnica.com/ai/2026/09/agilitys-new-humanoid-robot-will-stop-squat-to-avoid-harming-human-coworkers/"
+    },
+    {
+     "headline": {
+      "zh": "AEO 搜尋優化新創 Profound 完成 1.8 億美元 D 輪融資，估值達 18 億美元",
+      "en": "AEO startup Profound lands $180M Series D at a $1.8B valuation"
+     },
+     "source": "https://techcrunch.com/2026/09/15/aeo-startup-profound-hits-unicorn-valuation-raises-180m-series-d-7-months-after-last-round/"
+    },
+    {
+     "headline": {
+      "zh": "工程師分析 F-Droid 開源應用市集，發現大量由 LLM 自動生成的空洞垃圾專案",
+      "en": "Study analyzes the growing prevalence of LLM-generated code slop on F-Droid"
+     },
+     "source": "https://tintotint.eu/whacky-corner/f-droid_slop/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-09-16T07:06+08:00"
+}

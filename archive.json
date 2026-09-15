@@ -1,6 +1,14 @@
 {
- "latest": "2026-09-15",
+ "latest": "2026-09-16",
  "reports": [
+  {
+   "date": "2026-09-16",
+   "type": "daily",
+   "summary": {
+    "zh": "Gemini 3.8 發布即時深度思考，Meta 釋出 MCP 伺服器",
+    "en": "Gemini 3.8 Live debuts; Meta launches WhatsApp MCP server."
+   }
+  },
   {
    "date": "2026-09-15",
    "type": "daily",
