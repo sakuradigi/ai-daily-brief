@@ -1,0 +1,311 @@
+{
+ "date": "2026-09-17",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Google Home 開放 MCP 伺服器預覽，AI Agent 可直控智慧家電",
+      "en": "Google Home Releases Early Access MCP Server for Agentic Device Control"
+     },
+     "detail": {
+      "zh": "Google 正式推出 Google Home 的 Model Context Protocol (MCP) 伺服器測試版，允許 Claude、ChatGPT 等支援 MCP 的 Agent 直接藉由自然語言操作設備、抓取攝影機摘要與調閱日誌。這標誌著通用智慧家居正式向開放 Agent 標準靠攏，開發者可直接將實體家庭控制納入自動化工作流。",
+      "en": "Google announced early access to an official Model Context Protocol (MCP) server for Google Home. The integration enables AI agents such as Claude and ChatGPT to manage connected devices, parse camera summaries, and query home activity via natural language, bridging agentic workflows directly to physical IoT hardware."
+     },
+     "source": "https://techcrunch.com/2026/09/16/your-ai-agents-can-now-control-your-google-home-devices/",
+     "tags": [
+      "MCP",
+      "Google Home",
+      "Agent",
+      "IoT"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "開源 4B 輕量模型擊敗 Postgres 優化器，查詢計畫提速達 81%",
+      "en": "Custom 4B Model Outperforms Postgres Query Planner by 81%"
+     },
+     "detail": {
+      "zh": "開發者發布 QORL 專案，透過強化學習微調出僅 4B 參數量的小模型，專門取代或增強資料庫的查詢規劃器。實測在複雜 SQL 負載下產生比原生 PostgreSQL 快 81% 的執行計畫，展示了專精領域小模型（SLM）在系統底層效能最佳化的具體潛力。",
+      "en": "Developer Rohan Bansal introduced QORL, a 4B parameter model fine-tuned via RL that optimizes database query execution plans, delivering up to 81% faster performance compared to standard PostgreSQL heuristics. The project underscores the viability of small specialized models (SLMs) in core infrastructure optimization."
+     },
+     "source": "https://rohanbansal.com/qorl",
+     "tags": [
+      "PostgreSQL",
+      "SLM",
+      "Database",
+      "Performance"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 整併 Cowork 與 Chat 介面，背景非同步長任務成標配",
+      "en": "Anthropic Unifies Claude Chat and Cowork Into a Single Interface"
+     },
+     "detail": {
+      "zh": "Anthropic 宣布將原本分離的 Claude Cowork 與一般 Chat 正式合併，已向 Pro 與 Max 用戶推播。使用者現在可在同一交談串中派發長時間任務，即使關閉筆電，Claude 也會在伺服器端持續執行並交付產出，大幅改善過往跨產品線割裂的體驗。",
+      "en": "Anthropic has combined Claude Cowork and standard chat into a single unified workspace, currently rolling out to Pro and Max subscribers. The update allows users to kick off long-running asynchronous tasks directly within normal threads that persist and complete even after closing the browser or desktop client."
+     },
+     "source": "https://claude.com/blog/cowork-is-now-claude",
+     "tags": [
+      "Anthropic",
+      "Claude",
+      "UX",
+      "Agent"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Mistral 聯手 Mozilla 打造隱私導向的多語言在地瀏覽 AI 體驗",
+      "en": "Mistral Partners with Mozilla for Private, Multilingual AI Browsing"
+     },
+     "detail": {
+      "zh": "Mistral 與 Mozilla 達成技術合作，致力於將開源、具隱私防護的多語言模型能力整合至瀏覽器層級。目標是擺脫大廠全託管雲端分析的黑盒子，讓使用者享有兼顧資料主權與即時跨語言檢索的網頁瀏覽助理。",
+      "en": "Mistral AI has teamed up with Mozilla to bring private, multilingual open-model intelligence directly to web browsing workflows. The collaboration focuses on client-side data sovereignty, giving developers and users an alternative to proprietary, cloud-tethered browser AI assistants."
+     },
+     "source": "https://mistral.ai/news/mistral-x-mozilla/",
+     "tags": [
+      "Mistral",
+      "Mozilla",
+      "OpenSource",
+      "Privacy"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Cloudflare 推出新型爬蟲標頭機制，允許搜尋索引同時阻擋 AI 訓練",
+      "en": "Cloudflare Enables Accountable Crawlers: Search Indexing Without AI Training"
+     },
+     "detail": {
+      "zh": "Cloudflare 發布針對「混合用途」爬蟲的管理方案，網站站長可在保持搜尋引擎正常索引收錄的同時，有效禁止同廠商將內容抓取用於 AI 模型訓練。此功能透過細粒度的標頭簽名與語義隔離，解決長期以來 robots.txt 非黑即白的困局。",
+      "en": "Cloudflare introduced a mechanism for accountable mixed-use web crawlers, enabling publishers to remain discoverable via conventional search engines while technically disallowing their content from being consumed for LLM training datasets."
+     },
+     "source": "https://blog.cloudflare.com/accountable-mixed-use-ai-crawlers/",
+     "tags": [
+      "Cloudflare",
+      "WebScraping",
+      "DataPrivacy",
+      "DevOps"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Simon Willison 開源 Gemini 3.8 Live 語音對話 Web 測試介面",
+      "en": "Simon Willison Open-Sources Browser UI for Gemini 3.8 Live Audio Models"
+     },
+     "detail": {
+      "zh": "針對 Google 新發布的 Gemini 3.8 Live 語音模型，Simon Willison 釋出純瀏覽器運作的 Web UI 概念驗證專案。該工具展示了即時全雙工 speech-to-speech 連線機制，並具備打斷模型說話（barge-in）的互動功能，可作為串接 Google Live API 的極簡範例。",
+      "en": "Simon Willison published a minimalist browser UI demo for testing Google's newly released Gemini 3.8 Live speech-to-speech models. The client implementation includes voice preset selection, custom system prompts, and full-duplex conversational barge-in capabilities."
+     },
+     "source": "https://simonwillison.net/2026/Sep/15/gemini-live/",
+     "tags": [
+      "Gemini",
+      "Audio",
+      "API",
+      "WebDev"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 推出贊助型 Agent 廣告方案，深度串接 Shopify 與 HubSpot",
+      "en": "OpenAI Introduces Sponsored Agents and Native Commerce Integrations"
+     },
+     "detail": {
+      "zh": "OpenAI 公布商業化新試驗「Sponsored Agents」，並提供與 HubSpot、Shopify 等電商及 CRM 系統的整合套件。這意味著第三方品牌的專屬對話代理將能直接嵌入 ChatGPT 體驗中完成商品推薦與線索導流，開啟生成式對話商業的新變現途徑。",
+      "en": "OpenAI unveiled new enterprise advertising features including 'Sponsored Agents', accompanied by out-of-the-box integrations for HubSpot and Shopify. The move formalizes intent-based conversational ad placements and commercial workflows directly inside ChatGPT."
+     },
+     "source": "https://openai.com/index/reimagining-advertising-with-ai",
+     "tags": [
+      "OpenAI",
+      "ECommerce",
+      "Shopify",
+      "Monetization"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "資安評測指出 DeepSeek v4.1 Flash 躍升為目前滲透測試最佳模型",
+      "en": "Enclave Security Benchmark: DeepSeek v4.1 Flash Leads in Offensive Security"
+     },
+     "detail": {
+      "zh": "資安團隊 Enclave 發布最新漏洞挖掘與滲透測試評測，DeepSeek v4.1 Flash 在漏洞利用生成、逆向工程理解及 CTF 實戰中的綜合分數超越一眾歐美頂級模型，且兼具高推理速度與極低 Token 成本，成為資安工程師的新自動化首選。",
+      "en": "Security firm Enclave reported that DeepSeek v4.1 Flash has become their top-performing LLM for automated penetration testing and CTF challenges, outscoring leading frontier models while offering significantly faster inference latency and low token costs."
+     },
+     "source": "https://enclave.ai/blog/deepseek-v41-flash-is-now-our-best-hacking-model",
+     "tags": [
+      "DeepSeek",
+      "Cybersecurity",
+      "PenetrationTesting",
+      "Benchmark"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 公布模型對齊失效通報框架，公開 6 筆高風險異常案例",
+      "en": "OpenAI Releases Framework for Reporting and Investigating Model Misalignment"
+     },
+     "detail": {
+      "zh": "OpenAI 釋出一套系統化的模型未對齊（Misalignment）監控與揭露框架，並附帶 6 份針對非預期自發行為的調查報告。該架構旨在規範當 Agent 或前沿模型出現目標漂移、規避防護策略時的復現路徑與通報流程，為前沿安全研究提供標準化模板。",
+      "en": "OpenAI published a standardized framework detailing how it monitors, categorizes, and publicly discloses model misalignment incidents, alongside six case studies of unexpected model behaviors. The protocol provides a structured baseline for tracking goal drift and safety circumvention in complex agents."
+     },
+     "source": "https://openai.com/index/model-misalignment-reporting-framework",
+     "tags": [
+      "OpenAI",
+      "Alignment",
+      "Safety",
+      "Research"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Mustafa Suleyman 發文抨擊「模型福利論」，呼籲切勿賦予 AI 權利視角",
+      "en": "Mustafa Suleyman Warns Against 'Model Welfare' Fallacy"
+     },
+     "detail": {
+      "zh": "微軟 AI 負責人 Mustafa Suleyman 撰文警告社群勿陷入將模型擬人化、討論「AI 福利或情感權利」的偏誤。他強調意識是法律與倫理基石，將權利延伸至統計權重不僅毫無依據，更會嚴重分散對 AI 圍堵、可控性與對齊工程等真正核心問題的注意力。",
+      "en": "Microsoft AI CEO Mustafa Suleyman published a critique against treating AI models as conscious entities entitled to 'model welfare'. He argued that granting human-like ethical or legal rights to weights lacks empirical basis and critically distracts from the core technical imperatives of containment and alignment."
+     },
+     "source": "https://mustafa-suleyman.ai/a-warning-about-model-welfare",
+     "tags": [
+      "Ethics",
+      "AIContainment",
+      "Philosophy"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "蘋果傳正研發 M 系列 Ultra 晶片專屬伺服器，全力補強雲端算力",
+      "en": "Apple Reportedly Developing AI Servers Powered by M-Series Ultra Chips"
+     },
+     "detail": {
+      "zh": "供應鏈消息指出 Apple 正在研發搭載 M 系列 Ultra 高頻寬記憶體晶片的專用企業級伺服器架構，預計佈署於自建資料中心。此舉被視為蘋果擺脫完全依賴輝達算力採購、建立針對 Apple Intelligence 端雲協同專用運算基礎設施的關鍵一步。",
+      "en": "Reports indicate Apple is developing high-density enterprise server racks powered by M-series Ultra chips. Designed for Apple Intelligence workloads, the custom hardware would reduce Reliance on third-party GPU clusters and optimize compute for Apple's unified memory architecture."
+     },
+     "source": "https://arstechnica.com/ai/2026/09/apple-reportedly-building-server-packed-with-m-series-ultra-chips-for-ai/",
+     "tags": [
+      "Apple",
+      "Silicon",
+      "Hardware",
+      "DataCenter"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "民意對抗 AI 算力中心：最新民調顯示超六成選民反對機房擴建",
+      "en": "Public Pushback Grows: 61% of Voters Oppose AI Data Center Expansions"
+     },
+     "detail": {
+      "zh": "紐約時報與謝納學院最新調查顯示，高達 61% 的潛在選民反對在本土社區持續新建高耗能 AI 資料中心。隨著費城等重工業轉型城鎮相繼爆發設廠抗爭，電力供給吃緊與地方環境反彈已逐漸取代晶片供應，成為 AI 基礎建設擴張的最大瓶頸。",
+      "en": "A New York Times/Siena survey revealed that 61% of likely voters oppose the construction of AI data centers in their areas. As local protests emerge across metropolitan zones over grid capacity and environmental impacts, public pushback is becoming a direct bottleneck for hyperscaler expansion."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/995917/data-center-nyt-midterm-poll-september",
+     "tags": [
+      "DataCenter",
+      "Energy",
+      "Policy",
+      "Infrastructure"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "SK 海力士傳與 Intel 洽談在美生產記憶體，加速高頻寬供應鏈佈局",
+      "en": "SK Hynix in Talks with Intel to Fabricate Memory Chips in the US"
+     },
+     "detail": {
+      "zh": "市場傳出記憶體龍頭 SK 海力士正評估與 Intel 晶圓代工服務合作在美建立高階記憶體生產線，以因應暴增的 HBM 及 AI 運算需求。若協議敲定，將使先進包裝與高階晶圓在北美本土形成更完整的製造閉環。",
+      "en": "SK Hynix is reportedly exploring a partnership with Intel to manufacture advanced memory silicon on US soil. While plans remain finalized, a deal would bolster domestic HBM and server memory supply chains directly tied to next-generation AI accelerators."
+     },
+     "source": "https://techcrunch.com/2026/09/16/sk-hynix-reportedly-in-talks-with-intel-to-build-memory-chips-in-us/",
+     "tags": [
+      "Semiconductors",
+      "Intel",
+      "SKHynix",
+      "Hardware"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "Google DeepMind 正式成立 DeepMind Institute，深化前沿基礎科學研究佈局",
+      "en": "Google DeepMind officially launches The DeepMind Institute for fundamental scientific research"
+     },
+     "source": "https://institute.deepmind.com/"
+    },
+    {
+     "headline": {
+      "zh": "黃仁勳表示 AI 只是常規軟硬體工程，呼籲政策監管退場、回歸企業自主安全設計",
+      "en": "Jensen Huang pushes back against AI regulation, stating safety should be engineered by product makers"
+     },
+     "source": "https://techcrunch.com/2026/09/15/we-dont-need-ai-regulation-leave-safety-to-us-nvidias-jensen-huang-says/"
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 聯手 AARP 於美國十城啟動銀髮族實用 ChatGPT 免費工作坊",
+      "en": "OpenAI partners with AARP to deliver hands-on ChatGPT literacy workshops for seniors across 10 US cities"
+     },
+     "source": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life"
+    },
+    {
+     "headline": {
+      "zh": "Meta 傳正在研發取消相機配置的智慧眼鏡，以規避偷窺爭議與隱私監管壓力",
+      "en": "Meta reportedly preparing camera-free smart glasses to counter privacy and surveillance backlash"
+     },
+     "source": "https://techcrunch.com/2026/09/16/after-accusations-of-selling-perv-glasses-meta-prepares-to-sell-a-pair-without-a-camera/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-09-17T07:01+08:00"
+}

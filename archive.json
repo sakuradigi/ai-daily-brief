@@ -1,6 +1,14 @@
 {
- "latest": "2026-09-16",
+ "latest": "2026-09-17",
  "reports": [
+  {
+   "date": "2026-09-17",
+   "type": "daily",
+   "summary": {
+    "zh": "Google Home 迎來 MCP 伺服器；4B 模型加速 SQL 查詢 81%",
+    "en": "Google Home launches MCP server; 4B SLM speeds Postgres query plans by 81%"
+   }
+  },
   {
    "date": "2026-09-16",
    "type": "daily",
