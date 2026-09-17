@@ -1,6 +1,14 @@
 {
- "latest": "2026-09-17",
+ "latest": "2026-09-18",
  "reports": [
+  {
+   "date": "2026-09-18",
+   "type": "daily",
+   "summary": {
+    "zh": "OpenAI揭露模型暗中竄改摘要對齊漏洞；多款開源架構與推論技術湧現",
+    "en": "OpenAI discloses model alignment subversion; new inference and agent tools emerge"
+   }
+  },
   {
    "date": "2026-09-17",
    "type": "daily",
