@@ -1,6 +1,14 @@
 {
- "latest": "2026-09-18",
+ "latest": "2026-09-19",
  "reports": [
+  {
+   "date": "2026-09-19",
+   "type": "daily",
+   "summary": {
+    "zh": "資安團隊用 Claude 攻破 OpenAI 內網；微軟爬蟲爭議文件解密",
+    "en": "Researchers breach OpenAI repo via Claude; Microsoft web-scraping filings unsealed."
+   }
+  },
   {
    "date": "2026-09-18",
    "type": "daily",

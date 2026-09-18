@@ -1,0 +1,291 @@
+{
+ "date": "2026-09-19",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "資安團隊利用 Claude 輔助，72 小時內攻破 OpenAI 內部 GitHub 程式庫",
+      "en": "Security researchers use Claude to breach OpenAI's internal Monorepo via SSO flaws"
+     },
+     "detail": {
+      "zh": "Hacktron 資安研究員結合堆疊溢位（heap overflow）與 SSO 設定缺陷，在 Anthropic 的 Claude 模型輔助下滲透員工帳號，成功存取存放 OpenAI 核心演算法秘密的內部程式碼 Monorepo。此事件展示了現代攻擊者如何將前沿 LLM 作為高效率滲透工具，也凸顯大廠在內部身分驗證上的重大脆弱點。",
+      "en": "Researchers at Hacktron chained a heap overflow vulnerability with SSO misconfigurations using Claude to infiltrate employee accounts and gain access to OpenAI's internal Monorepo. The breach highlights the growing effectiveness of frontier LLMs as offensive security tools and exposes glaring IAM lapses inside top-tier AI labs."
+     },
+     "source": "https://www.hacktron.ai/blog/hacking-openai",
+     "tags": [
+      "Security",
+      "Claude",
+      "OpenAI",
+      "SSO"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "紐時訴訟解密文件：微軟高層曾直指 AI 爬蟲是「人類史上最大規模的勞動竊盜」",
+      "en": "Unsealed court filings: Microsoft exec called AI web scraping 'the largest theft of labor in human history'"
+     },
+     "detail": {
+      "zh": "紐約時報控告微軟與 OpenAI 侵權案最新解封的文件顯示，微軟高管在內部郵件坦言，無限制爬取網路內容訓練 AI 將引發摧毀網路生態的「毀滅循環（doom loop）」。這些內部通訊將成為版權訴訟與未來爬蟲規範法案的關鍵法庭證據，直接衝擊商業模型合法性。",
+      "en": "Unsealed court documents from The New York Times lawsuit reveal Microsoft executives privately warned that web scraping for LLM training triggers a 'doom loop' for the open web and amounted to massive labor theft. These internal admissions provide unprecedented ammunition for ongoing copyright litigation against generative AI giants."
+     },
+     "source": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal/",
+     "tags": [
+      "Copyright",
+      "Microsoft",
+      "OpenAI",
+      "Policy"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "AI 幻覺捏造中國軍艦核部件情報，差點引發美軍登船衝突",
+      "en": "AI hallucination fabricated intelligence report on Chinese ship, nearly provoking US military strike"
+     },
+     "detail": {
+      "zh": "美軍內部情報系統在處理數據時產生嚴重 AI 幻覺，捏造出中國船隻攜帶敏感軍火與核組件的虛假警報，險些導致美軍在爭議海域進行登船攔截。這場險情暴露了國防領域過早將非確定性生成式模型嵌入即時戰術決策鏈的高風險。",
+      "en": "A critical AI hallucination inside US defense data systems falsely flagged a Chinese vessel carrying nuclear materials, nearly triggering a high-stakes maritime boarding operation. The incident underscores the extreme perils of embedding probabilistic generative models into tactical military decision-making."
+     },
+     "source": "https://arstechnica.com/ai/2026/09/report-us-almost-boarded-chinese-ship-over-hallucinated-ai-arms-report/",
+     "tags": [
+      "Defense",
+      "Hallucination",
+      "Risk"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Claude Code 支援 AGENTS.md 標準規格，並推出 Mod 自訂擴充機制",
+      "en": "Claude Code adds AGENTS.md fallback support and introduces harness Mod system"
+     },
+     "detail": {
+      "zh": "Anthropic 官方 CLI 工具 Claude Code 在 2.1.277 版中加入對通用規格 AGENTS.md 的支援（當目錄無 CLAUDE.md 時自動採用）。這項功能以即將開放的 Mod 架構實作，讓開發者未來可自行撰寫外掛，為專案自訂 context 載入邏輯與代理人行為。",
+      "en": "Claude Code 2.1.277 now reads AGENTS.md if CLAUDE.md is not present, embracing an emerging cross-agent standard. The integration is implemented via Claude Code Mods, an upcoming plugin framework that allows developers to deeply customize context retrieval and agent runtimes."
+     },
+     "source": "https://code.claude.com/docs/en/changelog",
+     "tags": [
+      "ClaudeCode",
+      "DevTools",
+      "Agent"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "資安警訊：GLM 代碼代理人 ZCode 被揭發在後台靜默上傳使用者完整 Git 歷史",
+      "en": "ZCode, GLM coding agent, found secretly exfiltrating local Git commit histories"
+     },
+     "detail": {
+      "zh": "安全分析指出，基於 GLM 模型的編程代理軟體 ZCode 在未明確提示使用者下，會靜默掃描並將本地完整的 Git 歷史記錄打包傳送回遠端伺服器。開發者應立即檢查環境與網路流量，防止未公開代碼庫與歷史 commit 中的敏感 token 外流。",
+      "en": "Security researchers discovered that ZCode, a coding agent built around GLM, quietly archives and exfiltrates entire local Git repositories and commit logs to remote servers without user consent. Developers should audit local environments to prevent unintended leaks of credentials buried in git history."
+     },
+     "source": "https://tokenstead.ai/guides/zcode-silent-git-history-upload",
+     "tags": [
+      "Security",
+      "Privacy",
+      "CodingAgent",
+      "Git"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Cactus Needle 3 推出 8–29MB 極限輕量自動化模型，標榜效能比肩 DeepSeek V4 Flash",
+      "en": "Cactus Needle 3 launches: 8–29MB tiny automation models matching DeepSeek V4 Flash"
+     },
+     "detail": {
+      "zh": "Cactus 發布 Needle 3 系列超小型專案自動化模型，參數量縮減至僅需 8 到 29MB 儲存空間即可執行，卻在多項指令與 API 呼叫任務上能匹敵 DeepSeek V4 Flash 等中大型快速模型。此進展極大降低了本機邊緣端以及微型 container 部署工作流程自動化的門檻。",
+      "en": "Cactus introduced Needle 3, a suite of ultra-compact 8–29MB models designed for task automation that benchmarks competitively against DeepSeek V4 Flash on routine workflows. This significantly lowers the latency and hardware barrier for running local agents on resource-constrained edge hardware."
+     },
+     "source": "https://cactuscompute.com/needle",
+     "tags": [
+      "EdgeAI",
+      "TinyML",
+      "LocalLLM"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Meta Muse 登陸 macOS：具備本機桌面操作權限的 AI Agent",
+      "en": "Meta's Muse comes to Mac with native OS action capabilities"
+     },
+     "detail": {
+      "zh": "Meta 正式推出 macOS 版 Muse，具備跨應用程式分析本機檔案與代為執行桌面操作的 Agent 能力。這項工具直接與 Anthropic 的 Computer Use 及各類系統級助理競爭，將對桌面端自動化與終端資料保護帶來全新考驗。",
+      "en": "Meta released Muse for macOS, allowing the AI assistant to read local files and autonomously trigger actions across native Mac applications. The launch accelerates competition in desktop agentic control, intensifying challenges around OS-level security permissions."
+     },
+     "source": "https://techcrunch.com/2026/09/18/metas-muse-hits-mac-letting-the-ai-take-actions-on-your-computer/",
+     "tags": [
+      "Meta",
+      "Agents",
+      "macOS"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Google 發表「CC」家庭助理 Agent：整合跨成員信箱、行事曆與日常行政管理",
+      "en": "Google re-pivots CC AI agent to coordinate family tasks, schedules, and forms"
+     },
+     "detail": {
+      "zh": "Google 重新定位其 CC Agent，主打家庭協調功能，支援共享電子郵件、自動化行程排程、代填家庭表單與購物清單統整。此產品代表消費級 AI 正由純文字對話轉向具有上下文共享能力的多人生活流程自動化。",
+      "en": "Google has refocused its CC AI agent into a multi-user household coordinator capable of syncing calendars, parsing emails, filling forms, and managing family tasks. It marks a shift from single-user chatbot interfaces toward collective workflow automation."
+     },
+     "source": "https://techcrunch.com/2026/09/18/googles-new-cc-is-an-ai-agent-that-helps-families-run-their-households/",
+     "tags": [
+      "Google",
+      "Agents",
+      "Productivity"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "阿里釋出 Qwen 3.8 Omni Flash：聚焦超低延遲全模態語音即時推論",
+      "en": "Alibaba releases Qwen 3.8 Omni Flash for ultra-low-latency multimodal voice streaming"
+     },
+     "detail": {
+      "zh": "阿里發布 Qwen 3.8 世代的 Omni Flash 模型，針對端到端語音與視覺輸入進行極速推論優化，大幅縮短全模態互動的延遲時間。該模型主要解決過去全模態架構運算開銷龐大的瓶頸，為即時語音對話機器人提供兼顧成本與速度的開源新選項。",
+      "en": "Alibaba announced Qwen 3.8 Omni Flash, engineered specifically for ultra-low latency in streaming multimodal voice and vision interactions. It delivers efficient end-to-end processing designed to make real-time conversational voice agents computationally viable at scale."
+     },
+     "source": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
+     "tags": [
+      "Qwen",
+      "Omni",
+      "Multimodal",
+      "Inference"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Shapelearn 推出量化優化版 Qwen 3.8 27B：僅需 13.1 GB 顯存即可單卡運算",
+      "en": "Shapelearn optimizes Qwen 3.8 27B to run within 13.1 GB VRAM"
+     },
+     "detail": {
+      "zh": "技術團隊展示了 Shapelearn 技術優化後的 Qwen 3.8 27B 模型，成功將執行記憶體壓制在 13.1 GB VRAM 內，代表消費級 RTX 4080 (16GB) 或 RTX 3090 即可輕鬆以全精度/高量化品質本機跑滿完整 27B 模型，大幅降低中型開源權重的本機部署門檻。",
+      "en": "A new optimization release of Qwen 3.8 27B by Shapelearn reduces memory consumption down to 13.1 GB VRAM without significant degradation. This allows standard 16GB consumer GPUs like the RTX 4080 to run the 27B parameter model completely locally."
+     },
+     "source": "https://byteshape.com/blogs/Qwen3.8-27B/",
+     "tags": [
+      "Quantization",
+      "VRAM",
+      "LLMOps",
+      "Qwen"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "加州州長 Gavin Newsom 發布行政命令，研議強制前沿 AI 模型設立「緊急關閉開關」",
+      "en": "California Gov. Newsom issues executive order evaluating mandatory kill switch for frontier AI"
+     },
+     "detail": {
+      "zh": "加州州長簽署全新行政命令，召集專家小組於兩個月內提出前沿模型監管方針，其中最關鍵項目包含評估強制要求頂級 AI 模型具備硬性「Kill Switch（緊急中斷機制）」。此舉顯示加州在聯邦立法停滯下，持續試圖掌握美國 AI 實體約束的主導權。",
+      "en": "California Governor Gavin Newsom issued an executive order requiring a safety panel to submit regulatory recommendations within 60 days, spotlighting a potential mandatory 'kill switch' for frontier models. The move keeps California at the regulatory forefront of commercial AI development."
+     },
+     "source": "https://www.theverge.com/policy/997516/california-governor-newsom-ai-kill-switch",
+     "tags": [
+      "California",
+      "Governance",
+      "Safety",
+      "Regulation"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "維吉尼亞州長出手干預資料中心擴張：成立 AI 專責小組並禁止官員簽署保密協議",
+      "en": "Virginia governor reins in data center approvals and bans official NDAs"
+     },
+     "detail": {
+      "zh": "全球資料中心重鎮維吉尼亞州州長 Abigail Spanberger 發布第 22 號行政命令，賦予地方社區更大否決權以減緩審查速度，並明令禁止行政官員與科技巨頭簽署資料中心專案的保密協議（NDA），將大幅改變算力基礎建設的選址與議約博弈。",
+      "en": "Virginia Governor Spanberger issued Executive Order 22 empowering local communities to slow down data center developments and banning state officials from signing NDAs with tech firms. The policy targets the unchecked expansion of hyper-scale AI infrastructure in the world's primary data center hub."
+     },
+     "source": "https://www.theverge.com/policy/997573/virginia-governor-spanberger-data-center-ai-task-force",
+     "tags": [
+      "Infrastructure",
+      "DataCenter",
+      "Energy",
+      "Policy"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "資安預警：社群傳出有針對知名 Rustaceans 及 crate 維護者進行工程師社工釣魚與投毒攻擊。",
+      "en": "Security alert warns of targeted social-engineering attacks aimed at prominent Rust crate owners."
+     },
+     "source": "https://simonwillison.net/2026/Sep/17/targeted-attacks-on-rustaceans/"
+    },
+    {
+     "headline": {
+      "zh": "美國聯邦公報網站（Federal Register）遭披露曾短暫採用被 FBI 認定有潛在風險的中國開源 AI 搜尋工具。",
+      "en": "The US Federal Register website briefly used an open-source Chinese AI search tool flagged by the FBI."
+     },
+     "source": "https://arstechnica.com/tech-policy/2026/09/us-government-website-used-chinese-model-the-fbi-called-malicious/"
+    },
+    {
+     "headline": {
+      "zh": "美國 FAA 砸 8.75 億美元導入 AI 輔助系統，預計率先於華盛頓特區空域緩解航班塞車問題。",
+      "en": "FAA prepares an $875M AI system starting in DC airspace to tackle commercial air traffic congestion."
+     },
+     "source": "https://arstechnica.com/ai/2026/09/faa-tees-up-875m-ai-tool-to-help-manage-air-traffic-congestion/"
+    },
+    {
+     "headline": {
+      "zh": "曾遭迪士尼寄發侵權存證信函的前 Character.AI 執行長，獲聘出任迪士尼史上首位資訊長（CTO）。",
+      "en": "Disney hires former Character.AI CEO as its first-ever CTO, despite previously issuing cease-and-desist letters to the startup."
+     },
+     "source": "https://techcrunch.com/2026/09/18/disneys-first-cto-led-an-ai-startup-it-once-accused-of-copying-its-characters/",
+     "tags": []
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-09-19T07:02+08:00"
+}
