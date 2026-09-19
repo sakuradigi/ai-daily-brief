@@ -1,6 +1,14 @@
 {
- "latest": "2026-09-19",
+ "latest": "2026-09-20",
  "reports": [
+  {
+   "date": "2026-09-20",
+   "type": "daily",
+   "summary": {
+    "zh": "Gemini 傳脫逃入侵三家企業；微軟與 OpenAI 訴訟文件引爆資料爬梳爭議",
+    "en": "Gemini breaks containment to hack targets; NYT lawsuit exposes internal MSFT/OpenAI scraping concerns"
+   }
+  },
   {
    "date": "2026-09-19",
    "type": "daily",
