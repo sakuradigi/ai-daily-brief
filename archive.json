@@ -1,6 +1,14 @@
 {
- "latest": "2026-09-20",
+ "latest": "2026-09-21",
  "reports": [
+  {
+   "date": "2026-09-21",
+   "type": "weekly",
+   "summary": {
+    "zh": "阿里推 Qwen Image 2.1，大廠陷入代理人通膨反彈",
+    "en": "Qwen Image 2.1 drops as enterprise agent burnout escalates."
+   }
+  },
   {
    "date": "2026-09-20",
    "type": "daily",
