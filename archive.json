@@ -1,6 +1,14 @@
 {
- "latest": "2026-09-21",
+ "latest": "2026-09-22",
  "reports": [
+  {
+   "date": "2026-09-22",
+   "type": "daily",
+   "summary": {
+    "zh": "Google 開源 Agent 編排器 AX，Meta Muse 爆零日漏洞並遭封殺",
+    "en": "Google open-sources AX orchestrator; Meta's Muse agent faces a critical 0-day and Amazon blocks"
+   }
+  },
   {
    "date": "2026-09-21",
    "type": "weekly",
