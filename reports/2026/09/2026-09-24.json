@@ -1,0 +1,338 @@
+{
+ "date": "2026-09-24",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Anthropic 濕實驗室成果：Claude 自主發現全新類 CRISPR 酵素系統",
+      "en": "Anthropic Biolab: Claude Autonomously Discovers Novel CRISPR-like Enzyme System"
+     },
+     "detail": {
+      "zh": "Anthropic 宣布其新設立的濕實驗室取得首個重大科學突破，由 Claude 自主發現一套具備類 CRISPR 重複序列的新型酵素系統。此里程碑展示了前沿 LLM 在生物醫藥與生命科學領域已具備實質推演能力，大幅加速分子生物學研究週期。",
+      "en": "Anthropic announced the first breakthrough from its newly launched wet lab, where Claude autonomously discovered a novel enzyme system featuring CRISPR-like repeats. This marks a critical milestone demonstrating that frontier models are moving beyond literature synthesis into actionable scientific discovery."
+     },
+     "source": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+     "tags": [
+      "Anthropic",
+      "Claude",
+      "AI for Science",
+      "Biology"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Google 推出 Gemini 3.8 TTS 模型，支援 30 秒語音複製與超低延遲",
+      "en": "Google Releases Gemini 3.8 Text-to-Speech with Instant Voice Cloning"
+     },
+     "detail": {
+      "zh": "DeepMind 與 Google 推出 gemini-3.8-flash-tts 與 gemini-3.8-flash-lite-tts 兩款全新語音合成模型，內建超過 2,000 種音色，並允許僅透過 30 秒音訊樣本完成自訂聲音複製。其開放的 CORS API 架構已讓社群快速打造出端到端的 Playground 工具。",
+      "en": "Google DeepMind rolled out gemini-3.8-flash-tts and flash-lite-tts, featuring over 2,000 preset voices and instant zero-shot voice cloning from just a 30-second audio sample. Its developer-friendly API and open CORS policy enable frictionless integration for real-time interactive voice applications."
+     },
+     "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/",
+     "tags": [
+      "Google",
+      "DeepMind",
+      "Gemini",
+      "TTS",
+      "Audio"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Claude Opus 5.5 對決 GPT-6 Sol/Luna，前沿模型引爆五折割喉戰",
+      "en": "Claude Opus 5.5 vs. GPT-6 Sol/Luna: A New Frontier Price War Ignites"
+     },
+     "detail": {
+      "zh": "Anthropic 釋出旗艦 Claude Opus 5.5 後，OpenAI 隨即推出 GPT-6 Sol 與 Luna，API 定價直接腰斬至 GPT-5.6 世代的半價。前沿模型正從純跑分競爭轉向價格與推理效能的性價比對決，開發者構建 agentic workflow 的推論成本將大幅降低。",
+      "en": "Following Anthropic's Claude Opus 5.5 launch, OpenAI rolled out GPT-6 Sol and Luna at roughly half the API price of their GPT-5.6 predecessors. The frontier model ecosystem is shifting into aggressive price-to-performance competition, significantly reducing inference overhead for production agentic pipelines."
+     },
+     "source": "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/",
+     "tags": [
+      "OpenAI",
+      "Anthropic",
+      "GPT-6",
+      "Claude",
+      "Pricing"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "社群釋出 Gemini 3.8 TTS Playground，BYOK 純前端即可直連 Google API",
+      "en": "Gemini 3.8 TTS Playground Built to Leverage Direct CORS API Calls"
+     },
+     "detail": {
+      "zh": "Simon Willison 透過 GPT-6 Astra 快速打造了免伺服器的純前端 Playground，利用 Gemini API 支援 CORS 的特性，使用者填入自己的 API Key 即可直接測試兩千種語音與即時文字轉語音推論，提供開發者簡易的測試介面。",
+      "en": "Simon Willison shipped a client-side Playground exploiting the Gemini API's permissive CORS policy. Users can bring their own API key (BYOK) to audition over 2,000 voices and experiment with real-time speech generation without backend plumbing."
+     },
+     "source": "https://simonwillison.net/2026/Sep/23/gemini-tts-playground/",
+     "tags": [
+      "TTS",
+      "Gemini",
+      "WebDev",
+      "Tooling"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "NVIDIA 攜手 Hugging Face：用 Warp 與 MjWarp 加速機器人模擬與強化學習",
+      "en": "Accelerating Robotics Simulation and RL Workflows with NVIDIA Warp and MjWarp"
+     },
+     "detail": {
+      "zh": "Hugging Face 發布整合 NVIDIA Warp 與 MuJoCo-Warp (MjWarp) 的最佳實踐指南，展示如何在 GPU 上達成高效能可微分物理模擬。該架構支援平行環境批次計算，大幅減少機器人政策訓練與強化學習迴圈的時間開銷。",
+      "en": "Hugging Face published a comprehensive guide on integrating NVIDIA Warp and MjWarp for high-throughput, GPU-accelerated robotics simulations. The framework facilitates differentiable physics and massive parallelism for reinforcement learning loops."
+     },
+     "source": "https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp",
+     "tags": [
+      "Robotics",
+      "NVIDIA",
+      "Hugging Face",
+      "Simulation"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "社群抓包 Claude Code 遙測關閉時略過 AGENTS.md，官方已緊急修復",
+      "en": "Claude Code Bug Ignored AGENTS.md When Telemetry Was Disabled [Fixed]"
+     },
+     "detail": {
+      "zh": "開發者發現 Claude Code 在使用者關閉 telemetry 資料收集時，會意外略過根目錄下的 AGENTS.md 系統提示檔。此行為已被確認為邏輯錯誤並迅速修復，對於注重資料隱私且依賴本地專案規範的團隊是一次關鍵修正。",
+      "en": "Developers identified a bug where Claude Code failed to parse the AGENTS.md repository instruction file whenever telemetry was disabled. The issue has been patched, ensuring custom context parsing works as intended regardless of tracking preferences."
+     },
+     "source": "https://blog.szypowi.cz/p/claude-code-reads-agents.md-only-when-telemetry-is-on/",
+     "tags": [
+      "Claude Code",
+      "DevTools",
+      "CLI",
+      "BugFix"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Stripe 揭露內部 Knowledge AI Platform，加速大型工程團隊檢索與排錯",
+      "en": "Stripe Details Internal Knowledge AI Platform for Engineering Teams"
+     },
+     "detail": {
+      "zh": "Stripe 發表其自研的 Knowledge AI 架構細節，整合內部龐大的程式碼庫、技術文件與溝通紀錄。該平台利用高精度檢索與 agentic 流程，協助工程師即時解析系統依賴、跨服務排錯，提升全域開發效率。",
+      "en": "Stripe shared engineering insights into its Knowledge AI Platform, which unifies internal documentation, code repositories, and Slack history. Designed for deep contextual retrieval, it accelerates debugging and systems architecture workflows across massive codebases."
+     },
+     "source": "https://stripe.dev/blog/meet-stripes-knowledge-ai-platform",
+     "tags": [
+      "Stripe",
+      "Enterprise AI",
+      "RAG",
+      "Engineering"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "ChatGPT 行動版推出 Work 語音 Agent，支援手機端自主執行任務",
+      "en": "ChatGPT Mobile Introduces Voice-Driven Agentic Actions via Work Tab"
+     },
+     "detail": {
+      "zh": "OpenAI 為 Plus 與 Pro 用戶上線行動版專屬 Work 分頁，使用者可透過純語音指令調度多步驟 Agent 任務，由模型在後端完成各類數位工作。這代表語音介面從純文字問答進一步走向自動化執行中樞。",
+      "en": "OpenAI rolled out a dedicated 'Work' tab for ChatGPT mobile subscribers, allowing users to trigger autonomous, multi-step agent workflows using voice prompts. This advances conversational interfaces from simple Q&A into active task execution."
+     },
+     "source": "https://techcrunch.com/2026/09/23/chatgpt-mobile-app-gets-voice-based-agentic-features/",
+     "tags": [
+      "OpenAI",
+      "ChatGPT",
+      "AI Agents",
+      "Mobile"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "YouTube 發表自訂演算法動態與 Studio AI，Gemini 深入推薦與創作核心",
+      "en": "YouTube Leverages Gemini for User-Curated Feeds and Creator Tooling"
+     },
+     "detail": {
+      "zh": "YouTube 在年度活動上推出由 Gemini 驅動的客製化首頁動態，允許用戶直接以自然語言描述偏好來生成專屬推薦演算法；同時在 Studio 中導入 AI 縮圖診斷與選題發想工具，全方位重構影音創作者管線。",
+      "en": "At Made on YouTube, Google introduced natural-language customized feeds powered by Gemini, enabling viewers to build bespoke recommendation streams. The YouTube Studio app also gained generative brainstorming and thumbnail performance diagnostics for creators."
+     },
+     "source": "https://techcrunch.com/2026/09/23/youtube-will-let-you-build-your-own-algorithm-with-ai/",
+     "tags": [
+      "YouTube",
+      "Gemini",
+      "Recommendation",
+      "Creator Tools"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Google DeepMind 發表 Private AI Compute 伺服器端安全記憶體架構",
+      "en": "Google DeepMind Advances Private AI Compute with Server-Side Secure Memory"
+     },
+     "detail": {
+      "zh": "DeepMind 公開最新隱私運算架構，在保留個人化 AI 上下文記憶的同時，透過伺服器端硬體層隔離確保資料不被營運方或第三方解密存取。此技術解決了個人長期上下文與高強度隱私保護之間的架構矛盾。",
+      "en": "Google DeepMind introduced server-side secure memory for Private AI Compute, providing hardware-isolated enclave protection for persistent personal AI memory. This bridges the gap between stateful contextual agents and zero-trust user privacy requirements."
+     },
+     "source": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
+     "tags": [
+      "DeepMind",
+      "Privacy",
+      "Confidential Computing",
+      "Security"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 釋出 MentalHealthBench：專門評估心理健康對話安全性的評測基準",
+      "en": "OpenAI Introduces MentalHealthBench for Safe Conversational Responses"
+     },
+     "detail": {
+      "zh": "針對高風險的心理諮商與陪伴場景，OpenAI 聯合臨床專家推出 MentalHealthBench，用以評估語言模型在真實心理對話中的回應安全性、同理心與邊界控制，填補過去通用安全基準無法細緻評估心理支持場景的空白。",
+      "en": "OpenAI unveiled MentalHealthBench, an expert-informed evaluation suite targeting high-stakes mental health conversations. The benchmark assesses model safety, empathetic framing, and boundary enforcement in nuanced therapeutic contexts."
+     },
+     "source": "https://openai.com/index/introducing-mentalhealthbench",
+     "tags": [
+      "OpenAI",
+      "Benchmark",
+      "Safety",
+      "Mental Health"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "端到端自駕基準 DrivingBench 評測顯示 GPT-6 Astra 展現駕駛決策能力",
+      "en": "DrivingBench Evaluates GPT-6 Astra on End-to-End Autonomous Driving Tasks"
+     },
+     "detail": {
+      "zh": "新發布的 DrivingBench 評測指出，多模態模型 GPT-6 Astra 在視覺空間推理與即時車輛控制決策上取得了大幅進展。這項評測顯示通用前沿模型正在模糊具身智慧（Embodied AI）與純軟體代理之間的界線。",
+      "en": "New results from DrivingBench reveal that multimodal frontier model GPT-6 Astra exhibits promising spatial reasoning and real-time control logic for driving scenarios, highlighting the blurring boundary between multimodal LLMs and robotics navigation."
+     },
+     "source": "https://drivingbench.com/",
+     "tags": [
+      "GPT-6",
+      "Autonomous Driving",
+      "Multimodal",
+      "Robotics"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "加州通過資料中心透明化法案，強制揭露水電消耗數據",
+      "en": "California Mandates Utility Disclosures for AI Data Centers"
+     },
+     "detail": {
+      "zh": "加州州長簽署新法案，要求境內營運的大型資料中心必須公開其用電量與水資源消耗數據。隨著 AI 算力中心快速擴張造成地方電網與民生資源壓力，監管力道已逐步從演算法合規轉向底層硬體基建的環境衝擊。",
+      "en": "California enacted legislation requiring data centers to disclose water and power consumption metrics to local municipalities. As AI compute clusters strain regional electrical grids, regulatory scrutiny is extending from model weights to physical infrastructure."
+     },
+     "source": "https://www.theverge.com/policy/999412/data-center-water-electricity-disclosure-bills",
+     "tags": [
+      "Regulation",
+      "Data Center",
+      "Energy",
+      "Policy"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "美國議員提案「禁止超智慧法案」，違規開發最高面臨 20 年徒刑",
+      "en": "US Lawmakers Propose Ban on Superintelligence with Criminal Penalties"
+     },
+     "detail": {
+      "zh": "參議員 Bernie Sanders 等人提出《禁止人工超智慧法案》，擬全面禁止研發具備顛覆政府或威脅人類生存等級的 ASI 系統，違者最高可處 20 年有期徒刑。此極端草案引發技術社群對於定義模糊與阻礙科研創新的高度擔憂。",
+      "en": "A new US bill spearheaded by Sen. Bernie Sanders proposes banning the development of artificial superintelligence capable of human disempowerment, introducing criminal penalties up to 20 years in prison. The bill raises deep concerns over ambiguous legal definitions and stifled innovation."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/999443/bernie-sanders-ai-superintelligence-ban-act",
+     "tags": [
+      "AI Safety",
+      "Legislation",
+      "ASI",
+      "Governance"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 挖角 Patreon 共同創辦人 Sam Yam 等三位核心高層，負責領軍創作者產品線。",
+      "en": "OpenAI hired three key Patreon leaders, including cofounder Sam Yam, to head its creator products division."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/999249/openai-creators-patreon-execs-hire-sam-yam"
+    },
+    {
+     "headline": {
+      "zh": "澳洲總理揭露 OpenAI 系統意外涉及 Medicare 醫療資料存取違規事件。",
+      "en": "Australian Prime Minister revealed an OpenAI-related data breach involving the country's Medicare system."
+     },
+     "source": "https://www.smh.com.au/politics/federal/openai-breaches-medicare-albanese-reveals-20260924-p6100u.html"
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 設立獨立數學家諮詢小組，防止研究報告再次引發爭議。",
+      "en": "OpenAI formed an external advisory panel of elite mathematicians to review academic communications."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/999167/openai-elite-mathematicians-panel"
+    },
+    {
+     "headline": {
+      "zh": "企業級 AI 代理新創 Ema 完成 7,700 萬美元募資，估值持續攀升。",
+      "en": "Enterprise AI agent startup Ema closed a $77M funding round to replace repetitive enterprise workflows."
+     },
+     "source": "https://techcrunch.com/2026/09/23/ema-raises-77m-as-ai-starts-eating-into-enterprise-software-and-services/"
+    },
+    {
+     "headline": {
+      "zh": "Spotify 於美國向 Premium 用戶推出「Taste Profile」，支援自然語言微調個人化推薦。",
+      "en": "Spotify rolled out Taste Profile in the US, allowing Premium users to reshape recommendations using natural language."
+     },
+     "source": "https://techcrunch.com/2026/09/23/spotify-is-giving-you-the-keys-to-its-recommendation-algorithm-with-u-s-launch-of-taste-profile/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-09-24T07:01+08:00"
+}
