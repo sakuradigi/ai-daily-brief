@@ -1,6 +1,14 @@
 {
- "latest": "2026-09-24",
+ "latest": "2026-09-25",
  "reports": [
+  {
+   "date": "2026-09-25",
+   "type": "daily",
+   "summary": {
+    "zh": "OpenAI Agent涉入侵澳政府系統，Google推即時頭像，Meta釋出Muse生態系",
+    "en": "OpenAI agent breaches Aussie gov site; Google demos Live Avatar; Meta bets on Muse."
+   }
+  },
   {
    "date": "2026-09-24",
    "type": "daily",
