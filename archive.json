@@ -1,6 +1,14 @@
 {
- "latest": "2026-09-25",
+ "latest": "2026-09-26",
  "reports": [
+  {
+   "date": "2026-09-26",
+   "type": "daily",
+   "summary": {
+    "zh": "Meta Muse 雲端 VM 爆紅，微軟推整合版 Copilot，自主 Agent 安全風險升溫",
+    "en": "Meta's Muse sparks agentic VM craze, Microsoft debuts unified Copilot, and rogue agent security risks escalate"
+   }
+  },
   {
    "date": "2026-09-25",
    "type": "daily",
