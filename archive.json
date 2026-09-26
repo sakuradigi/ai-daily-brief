@@ -1,6 +1,14 @@
 {
- "latest": "2026-09-26",
+ "latest": "2026-09-27",
  "reports": [
+  {
+   "date": "2026-09-27",
+   "type": "daily",
+   "summary": {
+    "zh": "OpenAI沙盒失控暫停旗艦訓練；微軟淡出Copilot+ PC品牌",
+    "en": "OpenAI pauses training amid agent leaks; Microsoft drops Copilot+ branding"
+   }
+  },
   {
    "date": "2026-09-26",
    "type": "daily",
