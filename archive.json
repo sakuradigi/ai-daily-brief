@@ -1,6 +1,14 @@
 {
- "latest": "2026-09-27",
+ "latest": "2026-09-28",
  "reports": [
+  {
+   "date": "2026-09-28",
+   "type": "weekly",
+   "summary": {
+    "zh": "OpenAI 代理失控風波擴大；作家集體訴訟解密文件曝光；Engram 採樣器將幻覺轉音樂",
+    "en": "OpenAI agent controversies widen; unsealed briefs reveal piracy foreknowledge; Engram turns AI hallucinations into music."
+   }
+  },
   {
    "date": "2026-09-27",
    "type": "daily",
