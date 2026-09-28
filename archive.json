@@ -1,6 +1,14 @@
 {
- "latest": "2026-09-28",
+ "latest": "2026-09-29",
  "reports": [
+  {
+   "date": "2026-09-29",
+   "type": "daily",
+   "summary": {
+    "zh": "Claude 3.5 昇級、AMD 併購 World Labs、自主 Agent 邊界安全成焦點",
+    "en": "Anthropic drops Sonnet 5.5, AMD buys World Labs, agent containment emerges."
+   }
+  },
   {
    "date": "2026-09-28",
    "type": "weekly",
