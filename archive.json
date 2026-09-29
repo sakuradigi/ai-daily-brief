@@ -1,6 +1,14 @@
 {
- "latest": "2026-09-29",
+ "latest": "2026-09-30",
  "reports": [
+  {
+   "date": "2026-09-30",
+   "type": "daily",
+   "summary": {
+    "zh": "OpenAI 發表 GPT-6.1 Sol，Anthropic 釋出 Sonnet 5.5",
+    "en": "OpenAI drops GPT-6.1 Sol while Anthropic releases Sonnet 5.5"
+   }
+  },
   {
    "date": "2026-09-29",
    "type": "daily",
