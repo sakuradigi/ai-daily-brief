@@ -1,6 +1,14 @@
 {
- "latest": "2026-09-30",
+ "latest": "2026-10-01",
  "reports": [
+  {
+   "date": "2026-10-01",
+   "type": "daily",
+   "summary": {
+    "zh": "Google 發表 Gemini 4 Argon；Reddit 封殺 RSS 與公開 API；開源 Rust 非 Transformer 架構亮相",
+    "en": "Google unveils Gemini 4 Argon, Reddit cuts off RSS and public API access, and open-source Rust non-transformer LLM emerges."
+   }
+  },
   {
    "date": "2026-09-30",
    "type": "daily",

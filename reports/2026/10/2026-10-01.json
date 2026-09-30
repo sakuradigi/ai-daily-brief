@@ -1,0 +1,299 @@
+{
+ "date": "2026-10-01",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Google DeepMind 發表新一代旗艦模型 Gemini 4 Argon，初期僅限資安防禦者使用",
+      "en": "Google DeepMind Unveils Frontier Model Gemini 4 Argon with Gated Access"
+     },
+     "detail": {
+      "zh": "Google 跳過 3.5 系列直接推出 Gemini 4 Argon，強調在真實軟體工程、企業級知識處理及資安防衛上具備前沿表現。不過由於能力躍升帶來潛在風險，目前僅對「受信任的資安防禦團隊」開放，一般開發者 API 尚未全面釋出。",
+      "en": "Google bypassed Gemini 3.5 to introduce Gemini 4 Argon, boasting state-of-the-art capabilities in software engineering, legal and financial analysis, and cyber defense. Citing safety concerns, access is currently restricted to trusted cybersecurity teams rather than available via general API access."
+     },
+     "source": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
+     "tags": [
+      "Gemini",
+      "Google",
+      "LLM"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Reddit 全面關閉 RSS feeds 與公開 API 存取，防堵 AI 爬蟲搜刮資料",
+      "en": "Reddit Kills RSS Feeds and Closes Public API Access to Block AI Crawlers"
+     },
+     "detail": {
+      "zh": "為了防止 AI 業者未授權抓取社群內容進行模型訓練，Reddit 正式停止提供 RSS feeds 並關閉剩餘的公開 API 管道。這項措施將重創仰賴公開接口的第三方監控工具、社群機器人與獨立開發者生態。",
+      "en": "Reddit has ceased RSS support and terminated its remaining public API access to protect user-generated content from unauthorized scraping by AI training scrapers. The shutdown directly affects third-party developer tools, automation bots, and open data aggregators."
+     },
+     "source": "https://techcrunch.com/2026/09/30/reddit-is-killing-rss-feeds-ending-public-api-access-because-of-ai-bots/",
+     "tags": [
+      "Reddit",
+      "API",
+      "Scraping"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 攔截針對模型推論鏈的協同蒸餾攻擊，加強對抗性防禦",
+      "en": "OpenAI Disrupts Coordinated Distillation Attacks Targeting Model Reasoning"
+     },
+     "detail": {
+      "zh": "OpenAI 發布報告指出，近期偵測並封鎖了一場大規模、有組織的模型蒸餾活動，攻擊者試圖系統性地抽取旗艦模型的內部 reasoning 與思考過程。官方已針對高頻異常推論呼叫導入防禦機制，這可能進一步影響開發者對推理模型輸出的逆向分析空間。",
+      "en": "OpenAI published findings on thwarting a large-scale, coordinated adversarial distillation campaign aimed at extracting proprietary reasoning paths from its models. The company has implemented heightened telemetry and behavioral defenses against automated reasoning extraction."
+     },
+     "source": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
+     "tags": [
+      "OpenAI",
+      "Security",
+      "Distillation"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "PSSA：用 Rust 純手工打造的非 Transformer 架構開源語言模型",
+      "en": "PSSA: A Non-Transformer Language Model Written from Scratch in Rust"
+     },
+     "detail": {
+      "zh": "PSSA 完全以 Rust 撰寫，不依賴傳統 Attention 機制與現成框架，嘗試探索新型態序列建模與記憶機制。專案為尋求脫離標準 Transformer 架構與極致底層推論效能的研究者提供了乾淨的可實驗基底。",
+      "en": "PSSA is an experimental language model implemented entirely in pure Rust without standard attention layers or heavy deep learning frameworks. It targets researchers investigating alternative sequence modeling architectures and bare-metal runtime efficiency."
+     },
+     "source": "https://github.com/Sparticle62ops/pssa",
+     "tags": [
+      "Rust",
+      "OpenSource",
+      "Architecture"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Magnitude 開源：專為 AI Agent 設計的自適應推論優化引擎",
+      "en": "Magnitude: Self-Optimizing Inference Engine Built for Autonomous Agents"
+     },
+     "detail": {
+      "zh": "YC S25 孵化的 Magnitude 釋出開源引擎，針對 Agent 系統常見的多輪對話、工具呼叫與長上下文進行動態 batching 與快取調度。能有效壓低多步推理任務的延遲與 token 成本，解決複雜 Agent 架構的運算瓶頸。",
+      "en": "Magnitude (YC S25) launched its open-source inference runtime tailored for agentic workloads. By dynamically managing multi-turn prompt caching and tool-call batching, it significantly reduces latency and token consumption during iterative reasoning loops."
+     },
+     "source": "https://github.com/magnitudedev/magnitude",
+     "tags": [
+      "Inference",
+      "Agent",
+      "OpenSource"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Hugging Face 推出 Open TTS Leaderboard，建立多語言語音合成新基準",
+      "en": "Hugging Face Launches Open TTS Leaderboard for Multilingual Voice Evaluation"
+     },
+     "detail": {
+      "zh": "Hugging Face 上線開放式 TTS 基準榜單，統一評估多語言文字轉語音以及 Voice Cloning 模型的音質、自然度與可辨識度。該基準有助於開源社群對比不同架構語音合成模型的推論成本與落地品質。",
+      "en": "Hugging Face introduced the Open TTS Leaderboard, offering an objective benchmark suite for evaluating multilingual text-to-speech synthesis and zero-shot voice cloning. It helps developers assess audio fidelity, naturalness, and inference costs across open weights."
+     },
+     "source": "https://huggingface.co/blog/open-tts-leaderboard",
+     "tags": [
+      "TTS",
+      "HuggingFace",
+      "Benchmark"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Restate 獲 2000 萬美元融資，專注構建 Agent 必備的耐久狀態執行引擎",
+      "en": "Restate Raises $20M to Build Durable Execution Infrastructure for Agents"
+     },
+     "detail": {
+      "zh": "Restate 自建儲存與複製層，打造輕量級耐久執行（durable execution）架構，而非依賴外部關聯式資料庫。這套系統能在 Agent 遭遇網路崩潰或步驟超時時自動重試與接續上下文，大幅降低撰寫分散式 Agent 應用的複雜度。",
+      "en": "Restate secured $20M to scale its purpose-built durable execution runtime designed without external database dependencies. The platform provides automatic state recovery, execution replay, and timeout handling for mission-critical autonomous agents."
+     },
+     "source": "https://techcrunch.com/2026/09/30/restate-lands-20m-as-the-need-for-durable-infrastructure-increases-with-ai-agents/",
+     "tags": [
+      "Infrastructure",
+      "Agent",
+      "DeveloperTools"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 推出 Decisions API，提供輕量快速的決策級推論能力",
+      "en": "OpenAI Introduces Decisions API for Fast, Low-Cost Agent Routing"
+     },
+     "detail": {
+      "zh": "OpenAI 推出專為快速判斷設計的 Decisions API，提供低延遲、平價的端點來處理 Agent 群流轉與決策分支。此舉旨在降低將所有路由邏輯都交付高階推理模型所產生的巨額成本與等待時間。",
+      "en": "OpenAI has rolled out a specialized Decisions API engineered for swift, economical decision branching across agent swarms. The endpoint aims to cut down token latency and compute costs by avoiding heavy frontier model calls for simple flow arbitration."
+     },
+     "source": "https://techcrunch.com/2026/09/30/openais-jev-clone-could-help-the-frontier-lab-stop-its-swarming-agents/",
+     "tags": [
+      "OpenAI",
+      "API",
+      "Agent"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "社區反思 Model Context Protocol 趨勢：開發者探討「不用 MCP」的技術取捨",
+      "en": "Architectural Reflection on MCP: Why Some Developers Are Saying No"
+     },
+     "detail": {
+      "zh": "隨著 Anthropic 倡導的 MCP 協議受到大量關注，開發社群開始反思其在簡單任務中引入的過度抽象與維護負擔。分析指出，針對特定工作流，維持精簡的 direct function calling 或專有 RPC 往往比通用 MCP 更加穩固且容易除錯。",
+      "en": "Amid the industry push for Anthropic's Model Context Protocol (MCP), engineers are critically debating its protocol overhead and abstraction costs. The piece highlights trade-offs where direct function calling and lean custom RPCs remain more reliable than full MCP implementations."
+     },
+     "source": "https://earendil.com/posts/you-said-no-mcp/",
+     "tags": [
+      "MCP",
+      "Architecture",
+      "Engineering"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Google DeepMind 發表 SynthID Bio，為生成式蛋白質加入不可見浮水印",
+      "en": "DeepMind Introduces SynthID Bio to Watermark Generative Proteins"
+     },
+     "detail": {
+      "zh": "DeepMind 將 SynthID 技術延伸至生物分子領域，成功在維持蛋白質生物活性的同時嵌入數位標記。該技術相容於現有主流 AI 蛋白質設計流程，旨在為合成生物學與生物安全提供溯源機制。",
+      "en": "Google DeepMind demonstrated SynthID Bio, a proof-of-concept system that embeds verifiable watermarks into AI-generated protein sequences without compromising their biological functions. The tool addresses biosafety and attribution challenges in computational biology."
+     },
+     "source": "https://deepmind.google/blog/introducing-synthid-bio/",
+     "tags": [
+      "DeepMind",
+      "Biology",
+      "SynthID"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 紅隊測試揭露前沿模型二進位漏洞利用能力已突破關鍵門檻",
+      "en": "Anthropic Red Team Report Reveals Models Crossing Critical Cyber Exploit Thresholds"
+     },
+     "detail": {
+      "zh": "Anthropic 公布 Frontier Red Team 最新二進位利用（Binary Exploitation）基準測試，GLM-5.3 與 Claude Mythos Preview 分別在 4% 與 6% 的測試中成功劫持控制流程（Control Flow Hijacking）。相較於早期模型（Opus 4.6）的完全掛零，顯示前沿模型已具備自主挖掘實用漏洞的雛形。",
+      "en": "Anthropic's red team released evaluation results indicating Claude Mythos Preview and GLM-5.3 achieved 6% and 4% success rates in developing full control-flow hijacks on binary exploitation benchmarks. Earlier generation models failed completely, marking a critical leap in offensive cyber capabilities."
+     },
+     "source": "https://simonwillison.net/2026/Sep/29/anthropic-frontier-red-team/",
+     "tags": [
+      "Security",
+      "Anthropic",
+      "RedTeaming"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "白宮推行「前沿責任聯合承諾」，大廠簽署自律協議換取彈性監管",
+      "en": "White House Signs Frontier Responsibility Pact Relying on Tech Self-Regulation"
+     },
+     "detail": {
+      "zh": "美國政府與多家大型科技公司達成「前沿責任聯合承諾」（Joint Commitment on Frontier Responsibilities），協議以自主安全審查為主體架構。此外白宮簽署行政命令要求官方公文將 AI 全面改稱為「Super Intelligence」，反映聯邦監管路線的重大風格轉向。",
+      "en": "The Trump administration formalized a voluntary self-regulation accord signed by major AI leaders, establishing framework commitments on safety testing. Concurrently, an executive order directed federal agencies to rebrand references to artificial intelligence as 'Super Intelligence'."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1002584/trump-us-ai-safety-deal-self-regulation-tech-execs",
+     "tags": [
+      "Regulation",
+      "Policy",
+      "US"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 暫緩 IPO 計畫，Sam Altman 稱需先解決前沿模型安全認證",
+      "en": "OpenAI Delays IPO Plans Citing Frontier Safety Validation"
+     },
+     "detail": {
+      "zh": "OpenAI 執行長 Sam Altman 明確表示在模型安全性取得具體保證前不會啟動公開上市程序。市場傳出 OpenAI 轉向尋求新一輪 300 億美元私募資金，以支撐高昂的算力集群投入與下一代模型訓練開銷。",
+      "en": "OpenAI CEO Sam Altman stated the company will defer its initial public offering until stronger safety guarantees can be established for its frontier models. Reports indicate OpenAI is exploring another $30B private financing round to fund continuing infrastructure scale."
+     },
+     "source": "https://arstechnica.com/ai/2026/09/openai-delays-ipo-over-ai-safety-concerns/",
+     "tags": [
+      "OpenAI",
+      "IPO",
+      "Finance"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "語音生成新星 ElevenLabs 透過 3 億美元員工股權要約收購，估值翻倍達 220 億美元",
+      "en": "Voice synthesis startup ElevenLabs hits $22B valuation following a $300M employee tender offer"
+     },
+     "source": "https://techcrunch.com/2026/09/30/ai-voice-startup-elevenlabs-doubles-valuation-to-22b/"
+    },
+    {
+     "headline": {
+      "zh": "硬體設計 Agent 新創 Flow Engineering 獲 Sequoia 與 Valor 投資，估值達 7.5 億美元",
+      "en": "Hardware design agent startup Flow Engineering secures funding from Sequoia and Valor at a $750M valuation"
+     },
+     "source": "https://techcrunch.com/2026/09/30/valor-atreides-and-sequoia-back-ai-startup-flow-engineering-at-750m-valuation/"
+    },
+    {
+     "headline": {
+      "zh": "Google 試驗向百家內容發行商支付 AI 搜尋摘要引用費，但金額過於微薄遭質疑",
+      "en": "Google tests revenue sharing with ~100 publishers for AI Overviews, but payouts yield negligible revenue"
+     },
+     "source": "https://arstechnica.com/google/2026/09/google-is-paying-100-websites-for-contributions-to-ai-overviews-but-the-amounts-are-tiny/"
+    },
+    {
+     "headline": {
+      "zh": "非營利組織因 Hugging Face 遭入侵事件起訴 OpenAI，主張不得以「AI 所為」規避資安責任",
+      "en": "Nonprofit sues OpenAI over Hugging Face breach, arguing 'an AI did it' is no legal defense for software harm"
+     },
+     "source": "https://arstechnica.com/tech-policy/2026/09/lawsuit-demands-openai-halt-unsafe-development-that-caused-hugging-face-hack/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-10-01T07:01+08:00"
+}
