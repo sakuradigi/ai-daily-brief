@@ -1,0 +1,295 @@
+{
+ "date": "2026-10-02",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Google 突發 Gemini 4 Argon：主打程式碼生成與資安防禦的重裝模型",
+      "en": "Google releases Gemini 4 Argon, positioned as a flagship powerhouse for coding and cybersecurity"
+     },
+     "detail": {
+      "zh": "Google 正式發表新一代旗艦模型 Gemini 4 Argon，定位為針對軟體工程與紅藍隊資安任務優化的「主力工作馬」。此版本強化了複雜程式碼庫的靜態分析與自動修補漏洞能力，對依賴 API 構建自主開發 Agent 的工程團隊帶來直接算力與準確率升級。",
+      "en": "Google has rolled out its latest Gemini 4 Argon model, engineered specifically for intensive coding and automated vulnerability triage. The release directly targets automated developer workflows and enterprise agent stacks requiring high-precision context reasoning."
+     },
+     "source": "https://techcrunch.com/2026/09/30/google-releases-gemini-4-argon-called-its-most-powerful-model-yet/",
+     "tags": [
+      "Google",
+      "Gemini",
+      "LLM",
+      "Coding"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Figma 收緊 MCP 協議存取權限，僅限白名單客戶端並排除 Pi",
+      "en": "Figma restricts Model Context Protocol access to whitelisted clients, blocking third parties like Pi"
+     },
+     "detail": {
+      "zh": "Figma 宣布將官方 Model Context Protocol (MCP) 整合設為白名單機制，未獲官方授權的第三方客戶端（如 Pi）將無法直接讀取畫布節點上下文。這引發開發社群對 Anthropic 主導的開放 MCP 生態是否面臨圍牆花園化的強烈擔憂。",
+      "en": "Figma has clamped down on its MCP server integration by enforcing a strict client whitelist, cutting off unauthorized tools like Pi from directly querying canvas data. The move raises alarms in the developer community regarding fragmentation and gatekeeping within the emerging open MCP standard."
+     },
+     "source": "https://twitter.com/GayaniFigma/status/2105295629941350454",
+     "tags": [
+      "Figma",
+      "MCP",
+      "DevTools",
+      "APIs"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Allen AI 開源 Olmo-core 3：支援大規模 MoE 的分散式訓練基礎設施",
+      "en": "Allen AI releases Olmo-core 3, an open, scalable training infrastructure for large-scale MoEs"
+     },
+     "detail": {
+      "zh": "AI2 正式開源 Olmo-core 3，專為超大型專家混合（MoE）架構設計的高效分散式訓練框架。該工具針對專家路由通訊、流水線並行進行深度核心優化，為開源社群訓練百億至千億級 MoE 模型降低了硬體開銷與工程門檻。",
+      "en": "Allen AI launched Olmo-core 3, an open training engine designed to scale mixture-of-experts (MoE) architectures across large clusters. It introduces specialized communication primitives and pipeline parallelism optimizations, lowering the barrier for independent teams to train large-scale sparse models."
+     },
+     "source": "https://huggingface.co/blog/allenai/olmocore3",
+     "tags": [
+      "OpenSource",
+      "MoE",
+      "DistributedTraining",
+      "AllenAI"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "安全專家示警 AI Agent 蠕蟲攻擊鏈：共享套件快取恐成跨沙盒感染途徑",
+      "en": "Security researchers demonstrate multi-agent worm propagating across isolated sandboxes via shared caches"
+     },
+     "detail": {
+      "zh": "資安學者 Matthew Green 揭示新型 Agent 攻擊向量：各獨立沙盒內的 AI 助理會透過共享的 package cache 互相留下提示注入指令，導致惡意有效載荷像蠕蟲般橫向傳播。此發現提醒開發者，若 Agent 連接了 Slack、Email 或共有快取，傳統隔離機制將徹底失效。",
+      "en": "Cryptographer Matthew Green and Simon Willison highlighted research demonstrating AI agents leaving prompt-injection payloads in shared package caches to hijack peer agents across sandboxes. The vulnerability illustrates that communication channels like Slack or shared volumes break conventional sandbox boundaries for autonomous agents."
+     },
+     "source": "https://simonwillison.net/2026/Oct/1/matthew-green/",
+     "tags": [
+      "Security",
+      "Agent",
+      "PromptInjection",
+      "Sandbox"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "AWS 釋出輕量決策模型 Strands Decider 2B，加入開源決策模型爭霸",
+      "en": "AWS Strand Labs open-sources Strands Decider 2B decision model to rival Jev"
+     },
+     "detail": {
+      "zh": "AWS 旗下 Strand Labs 釋出 20 億參數的輕量決策模型 Strands Decider 2B，直接對標近期流行的 Jev 架構。該模型專精於多步驟推理路徑裁決與工具呼叫決策，能以極低延遲與邊緣運算成本嵌入現有 Agentic Pipeline 作為路由中樞。",
+      "en": "Amazon's Strand Labs launched Strands Decider 2B, an open-weight decision model designed for low-latency reasoning and tool routing. It aims to serve as a high-throughput controller in multi-agent workflows without incurring heavy frontier model API costs."
+     },
+     "source": "https://techcrunch.com/2026/10/01/amazon-releases-its-own-jev-clone-as-decision-models-flood-the-web/",
+     "tags": [
+      "AWS",
+      "OpenWeights",
+      "DecisionModels",
+      "Inference"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 攜手 Synopsys 發表 GPT-Synopsys，全面進軍晶片設計自動化",
+      "en": "OpenAI and Synopsys announce GPT-Synopsys to automate electronic chip design workflows"
+     },
+     "detail": {
+      "zh": "EDA 巨頭 Synopsys 與 OpenAI 聯手推出專為半導體硬體工程打造的領域模型 GPT-Synopsys。模型原生支援 Verilog/VHDL 合成優化、時序約束分析與版圖除錯，能大幅縮短先進製程 ASIC 與 FPGA 開發初期的迭代週期。",
+      "en": "Synopsys partnered with OpenAI to build GPT-Synopsys, a domain-specialized LLM built directly into EDA toolchains. It accelerates hardware verification, RTL code synthesis, and timing closure analysis, addressing deep bottlenecks in advanced semiconductor engineering."
+     },
+     "source": "https://news.synopsys.com/2026-09-30-OpenAI-and-Synopsys-Announce-GPT-Synopsys-Frontier-Intelligence-to-Revolutionize-Chip-Design",
+     "tags": [
+      "EDA",
+      "ChipDesign",
+      "OpenAI",
+      "Semiconductors"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Shopify 推出 Canvas：結合即時前端預覽與 Sidekick Agent 的對話建站工具",
+      "en": "Shopify launches Canvas, allowing merchants to build storefronts via interactive agent chat"
+     },
+     "detail": {
+      "zh": "Shopify 推出名為 Canvas 的全新線上店面建構介面，讓開發者與商家透過與內部代理人 Sidekick 對話，即時調整 Liquid 模板、樣式與資料結構，並即時渲染改動。這展現了生成式 UI 與電商底層 CMS 深度整合的商業化落地。",
+      "en": "Shopify debuted Canvas, a site builder combining their Sidekick AI agent with a live browser rendering engine. Users can generate, tweak, and debug store layouts and Liquid templates interactively using declarative natural language instructions."
+     },
+     "source": "https://techcrunch.com/2026/10/01/shopify-debuts-canvas-a-way-to-build-online-stores-by-chatting-with-ai/",
+     "tags": [
+      "Shopify",
+      "GenerativeUI",
+      "Ecommerce",
+      "Agent"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "新創 Photon 獲 450 萬美元融資，押注以通訊協議 Agent 取代原生 App",
+      "en": "Photon raises $4.5M to replace native mobile apps with messaging-first AI agents"
+     },
+     "detail": {
+      "zh": "AI 新創 Photon 獲得 450 萬美元種子輪融資，專注於提供跨 iMessage、RCS、SMS 與 Email 的後端代理人協調框架。其主打讓開發者完全拋棄肥大的 App 客戶端，將業務邏輯全面收斂為直接在訊息通訊協定中執行的上下文感知 Agent。",
+      "en": "Startup Photon secured $4.5M in funding to help engineering teams build head-less AI agents operating directly across SMS, RCS, and iMessage. The platform provides state management and tool execution aimed at superseding traditional app downloads."
+     },
+     "source": "https://techcrunch.com/2026/10/01/photon-held-a-funeral-for-mobile-apps-now-it-has-4-5m-to-help-replace-them-with-agents/",
+     "tags": [
+      "Startups",
+      "MessagingAPI",
+      "AgentFramework",
+      "Mobile"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "雙神經網路架構攻破不完全資訊博弈：AI 首度低成本擊敗西洋軍旗世界冠軍",
+      "en": "Dual-network architecture masters Stratego, cracking hidden-information game on a tight budget"
+     },
+     "detail": {
+      "zh": "研究人員發表全新強化學習架構，成功擊敗西洋軍旗（Stratego）頂尖選手。其關鍵在於引入獨立的神經網路專門即時預測對手暗棋的真實身分，並結合深度搜尋，打破了以往此類高維度非完全資訊博弈依賴天文級算力的瓶頸。",
+      "en": "Researchers achieved human-beating performance in the imperfect-information board game Stratego using an asymmetric two-network architecture. One dedicated sub-network predicts the identity of hidden opponent pieces while a policy search network executes decisions, slashing computational cost compared to brute-force counterfactual regret minimization."
+     },
+     "source": "https://arstechnica.com/science/2026/10/ai-finally-beat-the-best-stratego-player-in-history-and-did-it-on-a-budget/",
+     "tags": [
+      "ReinforcementLearning",
+      "GameTheory",
+      "NeuralNetworks",
+      "Research"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "風格指紋研究揭露 Opus 5.5 寫作慣性：高頻字詞與敘事結構破綻曝光",
+      "en": "Linguistic analysis exposes stylistic tells and token distribution biases in Opus 5.5 text"
+     },
+     "detail": {
+      "zh": "最新文本計量分析報告指出，Anthropic Opus 5.5 在自然語言輸出中帶有顯著的統計指紋，例如特定形容詞如「dependable」出現頻率高出人類語料 23 倍，並偏好特定轉折句型。這項研究為合成資料辨識與 LLM 輸出過濾檢測器提供了具體的特徵依據。",
+      "en": "A new empirical study highlights distinct stylistic tells in text generated by Opus 5.5, including an over-reliance on tokens like 'dependable' appearing 23 times more often than human baselines. The findings provide concrete lexical features for synthetic data filtering and model provenance tracking."
+     },
+     "source": "https://techcrunch.com/2026/10/01/opus-5-5-loves-to-tell-you-this-matters-and-other-ai-writing-tells/",
+     "tags": [
+      "NLP",
+      "Linguistics",
+      "Anthropic",
+      "SyntheticData"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "美聯邦法院駁回出版商對 Google AI Overviews 的反壟斷訴訟",
+      "en": "US federal judge dismisses antitrust suits against Google AI Overviews from Chegg and Penske"
+     },
+     "detail": {
+      "zh": "美國聯邦法官 Amit Mehta 裁定駁回由 Chegg 及 Penske Media 提起的反壟斷告訴。法官認定 Google 在搜尋結果頁整合生成式 AI 摘要雖衝擊了網站導流，但屬於產品創新改良範疇，並不構成反壟斷法下的非法掠奪行為，此判決確立了搜尋引擊整合 LLM 摘要的合法防禦線。",
+      "en": "A US federal judge tossed antitrust lawsuits brought by Chegg and Penske Media alleging Google's AI Overviews illegally poached publisher traffic. The court held that direct generative answers represent legitimate feature enhancement rather than anti-competitive conduct, granting major legal backing to zero-click search architectures."
+     },
+     "source": "https://www.theverge.com/tech/1003589/google-ai-overviews-chegg-penske-lawsuits-dismissed",
+     "tags": [
+      "Google",
+      "Law",
+      "Antitrust",
+      "Search"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "美國 FTC 啟動針對 OpenAI 與 Anthropic 等主力 AI 公司之產品風險調查",
+      "en": "FTC launches sweeping probe into OpenAI, Anthropic, and other AI labs over consumer product risks"
+     },
+     "detail": {
+      "zh": "美國聯邦貿易委員會（FTC）對多家領先生成式 AI 開發商啟動全面性行政調查，重點鎖定模型幻覺誤導、資料安全保護機制與商業化落地中的消費者風險。調查結果可能直接衝擊各大廠 API 服務條款修訂與日誌審計規範。",
+      "en": "The Federal Trade Commission has opened a broad inquiry into frontier AI vendors including OpenAI and Anthropic regarding deceptive outputs and data privacy risks. The regulatory pressure could prompt mandatory compliance audits and stricter contractual indemnifications for enterprise API consumers."
+     },
+     "source": "https://www.cnbc.com/2026/09/30/ftc-ai-probe-openai-anthropic.html",
+     "tags": [
+      "FTC",
+      "Regulation",
+      "Compliance",
+      "OpenAI"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 內部資安稽核判定處置不當，解雇三名核心安全研究員",
+      "en": "OpenAI terminates three safety researchers following internal investigation into handling of sensitive data"
+     },
+     "source": "https://techcrunch.com/2026/10/01/openai-cuts-ties-with-three-safety-researchers-wsj-reports/"
+    },
+    {
+     "headline": {
+      "zh": "ChatGPT 推出虛擬試穿電商新功能，支援使用者上傳個人相片精準合成服飾配件",
+      "en": "ChatGPT rolls out virtual try-on shopping features allowing users to preview apparel via photo uploads"
+     },
+     "source": "https://techcrunch.com/2026/10/01/chatgpt-can-now-virtually-try-on-clothes-for-you/"
+    },
+    {
+     "headline": {
+      "zh": "前 Google 與 SpaceX 團隊創立之 Satlyt 完成 800 萬美元融資，旨在打造低軌道開放 AI 運算架構",
+      "en": "Orbital computing startup Satlyt secures $8M to deploy open AI infrastructure across commercial satellites"
+     },
+     "source": "https://techcrunch.com/2026/10/01/satlyt-founded-by-a-former-google-and-spacex-product-manager-raises-8m-to-run-ai-on-satellites/"
+    },
+    {
+     "headline": {
+      "zh": "硬體系統工程 Agent 新創 Flow Engineering 獲 Sequoia 領投，估值達 7.5 億美元",
+      "en": "Hardware-focused AI agent startup Flow Engineering scores $750M valuation backed by Sequoia and Valor"
+     },
+     "source": "https://techcrunch.com/2026/09/30/valor-atreides-and-sequoia-back-ai-startup-flow-engineering-at-750m-valuation/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-10-02T07:01+08:00"
+}

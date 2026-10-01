@@ -1,6 +1,14 @@
 {
- "latest": "2026-10-01",
+ "latest": "2026-10-02",
  "reports": [
+  {
+   "date": "2026-10-02",
+   "type": "daily",
+   "summary": {
+    "zh": "Gemini 4 Argon登場、Olmo開源MoE架構、Figma收緊MCP",
+    "en": "Google drops Gemini 4 Argon, Olmo-core 3 scales MoE training, and Figma restricts MCP."
+   }
+  },
   {
    "date": "2026-10-01",
    "type": "daily",
