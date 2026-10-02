@@ -1,6 +1,14 @@
 {
- "latest": "2026-10-02",
+ "latest": "2026-10-03",
  "reports": [
+  {
+   "date": "2026-10-03",
+   "type": "daily",
+   "summary": {
+    "zh": "GPT-6 開發指南釋出，本機推理與 Agent 安全成焦點",
+    "en": "OpenAI drops GPT-6 guide; local LLM tools and agent security take center stage."
+   }
+  },
   {
    "date": "2026-10-02",
    "type": "daily",
