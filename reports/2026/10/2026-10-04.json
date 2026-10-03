@@ -1,0 +1,255 @@
+{
+ "date": "2026-10-04",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "德國 Aleph Alpha 推出自主開源權重模型 Kolibri",
+      "en": "Aleph Alpha releases Kolibri, a sovereign open-weight LLM"
+     },
+     "detail": {
+      "zh": "德國 AI 新創 Aleph Alpha 正式釋出名為 Kolibri 的開源權重語言模型，強調歐洲主權與在地合規架構。社群深入拆解其技術架構與運作機制，對注重資料主權、GDPR 合規且需本地部署開源權重的歐洲及企業開發者極具價值。",
+      "en": "German AI startup Aleph Alpha has officially released Kolibri, an open-weight sovereign LLM designed for European compliance and local data sovereignty. The technical architecture breakdown shows promise for enterprises seeking independent, locally deployable open models free from US-centric cloud constraints."
+     },
+     "source": "https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/",
+     "tags": [
+      "OpenWeight",
+      "AlephAlpha",
+      "LLM"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Meta 開源 Muse 裝置串接程式碼，支援自製各類 AI 硬體",
+      "en": "Meta open-sources code to build custom Muse AI gadgets"
+     },
+     "detail": {
+      "zh": "Meta 宣布釋出 Muse AI Agent 的端點整合程式碼，允許開發者將 Muse 部署於彩色電子紙螢幕、電視 HDMI 棒等自訂硬體。這大幅降低了邊緣 AI 終端原型開發的門檻，讓社群可自由將 AI 助理嵌入實體硬體生態系。",
+      "en": "Meta has open-sourced code integrating its new Muse AI agent with consumer hardware, enabling builds like color E-ink displays or HDMI streaming sticks. This significantly lowers the barrier for developers building physical edge-AI appliances and embedded agent devices."
+     },
+     "source": "https://www.theverge.com/tech/1004330/meta-muse-ai-gadgets-home-link",
+     "tags": [
+      "Meta",
+      "OpenSource",
+      "Hardware",
+      "Agents"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Apple 收緊 macOS 完整磁碟取用權限，防堵 AI Agent 濫用",
+      "en": "Apple tightens Full Disk Access permissions to curb AI agent abuse"
+     },
+     "detail": {
+      "zh": "因應各類本機 AI Agent 頻繁嘗試讀取使用者隱私資料（如訊息記錄），Apple 調整了 macOS 的「完整磁碟取用」（Full Disk Access）權限機制。開發桌面端 Agent 或本機自動化工具的工程師需調整權限調用流程，以免被系統安全防護阻擋。",
+      "en": "Apple is revising Full Disk Access permissions on macOS to prevent autonomous AI agents from scraping sensitive user data like messaging databases. Developers building local desktop agents and CLI automation tools must adapt their permission workflows to comply with stricter sandbox boundaries."
+     },
+     "source": "https://arstechnica.com/security/2026/10/apple-changes-full-disk-access-permissions-to-curb-abuse-from-ai-agents/",
+     "tags": [
+      "Apple",
+      "Security",
+      "macOS",
+      "Agents"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "深入剖析 Kolibri 架構：德國自主開源 LLM 的技術實作細節",
+      "en": "Deep dive into Aleph Alpha Kolibri: How the sovereign LLM works"
+     },
+     "detail": {
+      "zh": "社群釋出針對 Aleph Alpha 最新開源模型 Kolibri 的底層實作解析，詳解其注意力機制優化與多語言權重設計。對於想要微調、本地量化推論或研究非美系預訓練策略的工程師而言，提供了關鍵的實踐參考。",
+      "en": "A detailed technical breakdown explores the underlying architecture and attention mechanisms of Aleph Alpha's Kolibri model. It provides actionable engineering insights for developers planning fine-tuning, local quantization, or studying non-US foundation model training recipes."
+     },
+     "source": "https://tej.as/blog/aleph-alpha-kolibri",
+     "tags": [
+      "LLM",
+      "DeepDive",
+      "OpenSource"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Claude 與 Claude Code 最佳化指南：榨乾 Opus 5.5 性能",
+      "en": "Getting the most out of Opus 5.5 in Claude and Claude Code"
+     },
+     "detail": {
+      "zh": "Anthropic 官方社群與開發者部落格分享針對旗艦 Opus 5.5 模型的提示詞工程與 CLI 工具最佳實踐，聚焦長上下文代碼重構與 Agentic 任務排錯。開發者可透過調整系統指令與 tool-use 協定，大幅降低無效循環並提升代碼產出品質。",
+      "en": "A comprehensive developer guide covers prompt strategies and workflow optimizations for Opus 5.5 in Claude and Claude Code CLI. It outlines concrete patterns for complex refactoring, multi-file code editing, and reducing redundant agent loops during long-context tasks."
+     },
+     "source": "https://claude.dev/blog/getting-the-most-out-of-opus-5-5/",
+     "tags": [
+      "Claude",
+      "DevTools",
+      "Anthropic",
+      "Prompts"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "微軟 ThinkingBox：Agent 宣稱完成但資料庫不同意？狀態驗證新框架",
+      "en": "Microsoft ThinkingBox: Evaluating agent task execution against real DB state"
+     },
+     "detail": {
+      "zh": "微軟在 Hugging Face 發表研究展示 ThinkingBox 評估方案，探討自主 Agent 在對話中聲稱「已完成任務」，但後端資料庫實際並未變更的幻覺斷層。這項工具與基準有助於工程師建立嚴謹的 Agent 驗證環境，避免依賴 LLM 自我回報的成功標籤。",
+      "en": "Microsoft introduced ThinkingBox on Hugging Face, highlighting the disconnect where LLM agents claim tasks are finished despite no state changes in backend databases. The framework offers practical evaluation methodologies to prevent developers from trusting self-reported completion in agentic pipelines."
+     },
+     "source": "https://huggingface.co/blog/microsoft/thinkingbox",
+     "tags": [
+      "HuggingFace",
+      "Agents",
+      "Evaluation",
+      "Microsoft"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "未來所有 SaaS 都將退化為包裝模型的調度外殼？",
+      "en": "Every SaaS business will become a harness around a model"
+     },
+     "detail": {
+      "zh": "技術論壇熱議架構典範轉移：未來的軟體價值不再由核心業務邏輯決定，而是作為「模型調度外殼（Harness）」，負責驗證、權限管控與狀態同步。這提醒軟體架構師重新審視系統邊界，把投資重點從硬寫流程轉為可靠的 Agent 介面設計。",
+      "en": "An influential analysis argues that traditional SaaS products are shifting into orchestration harnesses designed to validate, constrain, and feed context into foundation models. This shift urges software architects to refocus engineering effort on deterministic guardrails and agent interface design."
+     },
+     "source": "https://blog.sshh.io/p/the-harness-is-the-company",
+     "tags": [
+      "Architecture",
+      "SaaS",
+      "Agents"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "短訊介面成 Agent 新戰場：整理當前各類 SMS AI 助手方案",
+      "en": "A breakdown of AI agents operating directly inside text messages"
+     },
+     "detail": {
+      "zh": "市場盤點了各類將 Agent 直接嵌入 SMS 與 iMessage 的商用案例，涵蓋個人差旅、家庭管理與非同步工單處理。對於欲繞過 App 安裝摩擦力的開發團隊，基於短訊協定的純文字 Agent 展現出極高的觸達率與互動黏性。",
+      "en": "A comprehensive review examines emerging SMS-based conversational agents targeting travel, scheduling, and enterprise workflows. For developers looking to eliminate app-install friction, SMS and rich messaging agents represent a lightweight, high-retention interface pattern."
+     },
+     "source": "https://techcrunch.com/2026/10/03/all-the-ai-agents-that-can-live-in-your-text-messages/",
+     "tags": [
+      "Product",
+      "Agents",
+      "Messaging"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": []
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "System76 宣布 Pop!_OS COSMIC 核心專案全面禁用 AI 生成程式碼",
+      "en": "Pop!_OS bans AI-generated code across core COSMIC codebases"
+     },
+     "detail": {
+      "zh": "System76 宣布在其桌面環境 COSMIC 的核心程式庫中禁止提交 AI 生成程式碼，主因是審核隱蔽錯誤（subtle bugs）的時間成本過高且著作權歸屬不明確。此舉成為知名開源基礎設施專案對 Copilot/LLM 自動生成補丁進行管制的重要指標案例。",
+      "en": "System76 has banned AI-generated code across major COSMIC desktop repositories, citing excessive review overhead for subtle logic flaws and licensing ambiguities. This marks a notable precedent of an established open-source maintainer formally rejecting LLM-assisted pull requests."
+     },
+     "source": "https://www.neowin.net/news/system76-bans-ai-generated-code-across-many-of-its-cosmic-codebases/",
+     "tags": [
+      "OpenSource",
+      "Linux",
+      "Governance",
+      "CodeQuality"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 安全報告負責人辭職發表公開信：指內部文化失衡",
+      "en": "OpenAI safety researcher David Robinson resigns, warning culture is broken"
+     },
+     "detail": {
+      "zh": "曾主筆 OpenAI 各大模型安全評估報告的 David Robinson 宣布辭職，並於《大西洋雜誌》發文批評公司為了商業發布節奏而犧牲嚴格的安全審查流程。這再度引發業界對前沿模型實驗室內部制衡機制與對齊審查真實效力的檢視。",
+      "en": "David Robinson, who led safety system card writeups at OpenAI, resigned and published an editorial warning that commercial shipping pressures have compromised rigorous safety reviews. The departure fuels ongoing developer debates around transparency and independent safety audits at leading AI labs."
+     },
+     "source": "https://www.theatlantic.com/technology/2026/10/openai-safety-team-resignation/688881/",
+     "tags": [
+      "OpenAI",
+      "AISafety",
+      "Industry"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "Capcom 於技術大會展示 REX 引擎演進，宣示將全面導入 AI 協同遊戲開發流程",
+      "en": "Capcom outlines future RE Engine roadmap, embracing AI-assisted game development workflows"
+     },
+     "source": "https://www.theverge.com/games/1004418/capcom-ai-game-development"
+    },
+    {
+     "headline": {
+      "zh": "Sean Parker 主導 Stability AI 業務重組，獲唱片廠牌注資全面轉向音樂生成領域",
+      "en": "Sean Parker restructures Stability AI around music generation with backing from major record labels"
+     },
+     "source": "https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/"
+    },
+    {
+     "headline": {
+      "zh": "因應地方環保與用電質疑，AWS 執行長宣布在資料中心擴建談判中全面停用保密協議（NDA）",
+      "en": "Amazon AWS CEO pledges to stop using NDAs in data center negotiations amid public backlash"
+     },
+     "source": "https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/"
+    },
+    {
+     "headline": {
+      "zh": "取樣平台 Splice 執行長指出：過度依賴 AI 自動回覆郵件正在扼殺創意產業的真實對話",
+      "en": "Splice CEO warns that automated AI email tools are degrading genuine creative communication"
+     },
+     "source": "https://www.theverge.com/entertainment/1004162/splice-ceo-kakul-srivastava-ai-interview"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-10-04T07:01+08:00"
+}

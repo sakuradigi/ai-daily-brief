@@ -1,6 +1,14 @@
 {
- "latest": "2026-10-03",
+ "latest": "2026-10-04",
  "reports": [
+  {
+   "date": "2026-10-04",
+   "type": "daily",
+   "summary": {
+    "zh": "德國開源模型 Kolibri 登場，Meta 開源 Muse 硬體串接碼",
+    "en": "Aleph Alpha releases Kolibri open weights, and Meta open-sources Muse agent code"
+   }
+  },
   {
    "date": "2026-10-03",
    "type": "daily",
