@@ -1,6 +1,14 @@
 {
- "latest": "2026-10-04",
+ "latest": "2026-10-05",
  "reports": [
+  {
+   "date": "2026-10-05",
+   "type": "weekly",
+   "summary": {
+    "zh": "RTX 4090 飆速跑 125B，AI 垃圾報告癱瘓 Google 漏洞懸賞",
+    "en": "Strata runs 125B on RTX 4090; AI slop halts Google's OSS bug bounty."
+   }
+  },
   {
    "date": "2026-10-04",
    "type": "daily",
