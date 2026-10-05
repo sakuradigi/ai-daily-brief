@@ -1,6 +1,14 @@
 {
- "latest": "2026-10-05",
+ "latest": "2026-10-06",
  "reports": [
+  {
+   "date": "2026-10-06",
+   "type": "daily",
+   "summary": {
+    "zh": "Reflection釋出501B模型，MCP爆通訊漏洞",
+    "en": "Reflection drops 501B open model Beam; critical security flaws emerge in MCP agent protocol."
+   }
+  },
   {
    "date": "2026-10-05",
    "type": "weekly",
