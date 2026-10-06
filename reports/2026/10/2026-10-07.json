@@ -1,0 +1,290 @@
+{
+ "date": "2026-10-07",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Mistral 發布 Mistral Large 4：1 兆參數、49B 啟動量的推理旗艦",
+      "en": "Mistral Unveils Mistral Large 4: A 1T-Parameter MoE with 49B Active Parameters"
+     },
+     "detail": {
+      "zh": "Mistral 正式釋出代號「Le Chonk」的 Mistral Large 4 預覽版，採用 3,800 張 NVIDIA Grace Blackwell GPU 訓練，總參數達 1 兆（活躍參數 49B），API 支援不同程度的推理模式。目前已開放 API 預覽，官方承諾將在月底開源權重，對依賴非封閉開源大模型的開發者來說是一大進展。",
+      "en": "Mistral released a preview of Mistral Large 4 ('Le chonk'), a 1-trillion parameter model with 49B active parameters trained on 3,800 Grace Blackwell GPUs. It features selectable reasoning levels via API, with an open-weights release promised by month's end."
+     },
+     "source": "https://mistral.ai/news/mistral-large-4/",
+     "tags": [
+      "LLM",
+      "Mistral",
+      "OpenWeights",
+      "Reasoning"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Google 開源輕量多模態向量模型 EmbeddingGemma 2",
+      "en": "Google DeepMind Releases Open Multimodal Model EmbeddingGemma 2"
+     },
+     "detail": {
+      "zh": "Google DeepMind 推出開源多模態嵌入模型 EmbeddingGemma 2，採 Apache 2.0 授權釋出。鑑於向量搜尋常需落地儲存百萬級特徵向量，使用商業閉源嵌入常面臨 vendor lock-in 與棄用風險，該模型的開源極大降低了向量搜尋與 RAG 系統的長期架構風險。",
+      "en": "Google DeepMind introduced EmbeddingGemma 2, an open, lightweight multimodal embedding model licensed under Apache 2.0. This offers developers a reliable, host-it-yourself alternative for vector retrieval and RAG architectures without proprietary vendor lock-in."
+     },
+     "source": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+     "tags": [
+      "Embedding",
+      "Multimodal",
+      "Google",
+      "OpenSource"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Google Gemini 免費用戶權限縮減：取消 Flash 與 Pro，僅留 Flash Lite",
+      "en": "Google Gemini Free Tier Restricts Access to Flash Lite Only"
+     },
+     "detail": {
+      "zh": "Google 宣布自 10 月 9 日起，Gemini 免費用戶將僅能使用 Flash Lite 模型，原先開放的標準 Flash 與 Pro 將移入每月 4.99 美元的 Google AI Plus 訂閱方案中。日常依賴免費版 API 或網頁端快速測試原型的開發者需留意模型能力落差與收費門檻。",
+      "en": "Starting October 9, free Gemini users will be restricted to Gemini Flash Lite, losing access to standard Flash and Pro without a $4.99/mo Google AI Plus subscription. Developers using the free tier for quick experiments should anticipate capability drops."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1005451/google-gemini-free-flash-lite-only",
+     "tags": [
+      "Gemini",
+      "Google",
+      "Pricing",
+      "API"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenTPU：由 AI 協同設計的開源 AI 加速器硬體架構",
+      "en": "OpenTPU: An Open-Source AI Accelerator Architecture Co-Designed by AI"
+     },
+     "detail": {
+      "zh": "GitHub 出現熱門開源專案 OpenTPU，主打由 AI 輔助生成的開源 AI 硬體加速器設計。該專案為探索開源晶片與自研 ASIC 的團隊提供了直接的參考實作，展示生成式工具在硬體描述語言與架構層面的可行性。",
+      "en": "The OpenTPU project on GitHub introduces an open-source hardware accelerator designed with AI assistance, offering hardware and systems engineers an open reference implementation for ML ASIC architectures."
+     },
+     "source": "https://github.com/FeSens/openTPU",
+     "tags": [
+      "Hardware",
+      "OpenSource",
+      "Architecture"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "llm-mistral 0.16 發布：新增 Mistral Large 4 推理模型支援",
+      "en": "llm-mistral 0.16 Adds Support for Mistral Large 4 Reasoning Models"
+     },
+     "detail": {
+      "zh": "Simon Willison 旗下的 CLI 生態外掛 llm-mistral 更新至 0.16 版，第一時間整合了剛發布的 Mistral Large 4 及其推理控制參數。開發者可直接在命令列無縫調用新版模型並切換 reasoning 等級。",
+      "en": "Simon Willison released llm-mistral 0.16, adding CLI support for newly launched reasoning models including Mistral Large 4, allowing developers to query the model directly via the command line."
+     },
+     "source": "https://simonwillison.net/2026/Oct/6/llm-mistral/",
+     "tags": [
+      "CLI",
+      "Tooling",
+      "Mistral"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Musubi 開源 1.7B 輕量內容審核決策模型 PolicyLM",
+      "en": "Musubi Releases PolicyLM-1.7B for Real-Time Content Moderation"
+     },
+     "detail": {
+      "zh": "Musubi 推出開源權重模型 PolicyLM-1.7B，專為即時內容審核與合規判斷打造。相較於將高延遲、高成本的通用大模型作為 guardrails，輕量專用決策模型能顯著降低推論延遲與伺服器開銷。",
+      "en": "Musubi announced PolicyLM-1.7B, an open-weights model tailored for real-time moderation. It allows teams to enforce policy guardrails at a fraction of the compute latency and cost of general-purpose LLMs."
+     },
+     "source": "https://techcrunch.com/2026/10/06/how-ai-decision-models-could-change-content-moderation/",
+     "tags": [
+      "Safety",
+      "OpenWeights",
+      "SmallModels"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Anthropic 推出新創扶持計畫：贈送 1 年 Claude Team 及 1,000 美元額度",
+      "en": "Anthropic Offers Free Claude Team Subscription and $1,000 API Credits to Startups"
+     },
+     "detail": {
+      "zh": "Anthropic 宣布啟動新創企業支持方案，符合資格者可獲得一年 Claude Team 席位以及 1,000 美元 API Token 額度。這大幅降低了早期團隊導入 Claude 3.5 / 5 系列建構應用的冷啟動成本。",
+      "en": "Anthropic is providing early-stage startups with a full free year of Claude Team alongside $1,000 in token credits, significantly reducing upfront development costs for teams building on Anthropic models."
+     },
+     "source": "https://techcrunch.com/2026/10/06/anthropic-gives-startups-a-free-year-of-enterprise-service-and-1000-in-token-credits/",
+     "tags": [
+      "Anthropic",
+      "Startups",
+      "API"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 攜手 Ironclad：訓練智慧體執行專業法律合約 Computer Use 流程",
+      "en": "OpenAI and Ironclad Partner to Train Computer-Use Agents on Contract Workflows"
+     },
+     "detail": {
+      "zh": "OpenAI 與合約管理平台 Ironclad 合作，評估與訓練 AI 智慧體在複雜專業環境下的螢幕操作與軟體互動能力（Computer Use）。這代表 OpenAI 正加速將電腦控制技術推向高精準度、多步驟的真實工作場景。",
+      "en": "OpenAI teamed up with Ironclad to train and benchmark AI agents executing complex, multi-step contract operations via Computer Use, accelerating real-world desktop automation in high-stakes enterprise domains."
+     },
+     "source": "https://openai.com/index/advancing-computer-use-with-ironclad",
+     "tags": [
+      "Agents",
+      "OpenAI",
+      "ComputerUse"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 發布前沿數學研究成果，開源 Lean 形式化驗證證明",
+      "en": "OpenAI Publishes Math Breakthroughs with Open-Source Lean Proofs"
+     },
+     "detail": {
+      "zh": "OpenAI 公布其內部前沿模型在未解數學難題上的新進展，並將形式化數學證明（Lean proof formalizations）與研究細節公開至 GitHub。將神經網絡推理與 Lean 等自動定理證明器結合，已成解決高階推理幻覺與驗證的核心技術路徑。",
+      "en": "OpenAI shared new results on open mathematical problems produced by an internal frontier model, releasing the Lean formalizations on GitHub. Combining neural generation with formal verification continues to set the standard for high-accuracy reasoning."
+     },
+     "source": "https://openai.com/index/sharing-ai-progress-in-mathematics",
+     "tags": [
+      "Mathematics",
+      "Lean",
+      "OpenAI",
+      "FormalVerification"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "MCP 協定爆發安全隱憂：Agent 對 Agent 通訊出現惡意 Prompt 擴散漏洞",
+      "en": "Security Audit Reveals Structural Vulnerabilities in MCP Agent-to-Agent Protocol"
+     },
+     "detail": {
+      "zh": "資安研究指出，Model Context Protocol (MCP) 在處理跨 Agent 通訊時存在信任驗證缺陷，惡意 Prompt 容易在自主代理群體間橫向傳播感染。架構師在設計多 Agent 協作管線時需重新評估上下文隔離機制。",
+      "en": "Security researchers warned of structural flaws in the Model Context Protocol (MCP) for agent-to-agent communication, where missing trust boundaries allow prompt injections to propagate across agent pipelines."
+     },
+     "source": "https://arstechnica.com/security/2026/10/vulnerability-in-agents-from-google-and-others-exposes-structural-flaw-in-mcp/",
+     "tags": [
+      "MCP",
+      "Security",
+      "PromptInjection",
+      "Agents"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Lambda 籌資 40 億美元、估值達 145 億，為 2027 年 IPO 鋪路",
+      "en": "GPU Cloud Provider Lambda Raises $4B at $14.5B Valuation Ahead of IPO"
+     },
+     "detail": {
+      "zh": "專注於 AI 算力基礎設施的雲端商 Lambda 正在募集高達 40 億美元資金，投前估值達 145 億美元，投資方包括 Coatue 與 Blackstone。算力租借市場持續整併與擴張，為開發者獲取非三大雲的平價 GPU 算力提供更多供應量。",
+      "en": "NVIDIA-backed GPU cloud provider Lambda is raising $4 billion at a $14.5 billion pre-money valuation ahead of its planned 2027 IPO, underscoring aggressive expansion in alternative compute infrastructure."
+     },
+     "source": "https://techcrunch.com/2026/10/06/ai-computing-startup-lambda-to-raise-4b-ahead-of-planned-ipo/",
+     "tags": [
+      "Hardware",
+      "Compute",
+      "Lambda",
+      "Cloud"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 針對歐盟法規預設啟用 ChatGPT 浮水印，但技術仍易被繞過",
+      "en": "OpenAI Enables Default Watermarking for ChatGPT in the EU"
+     },
+     "detail": {
+      "zh": "為遵守歐盟監管規範，OpenAI 開始在歐盟境內的 ChatGPT 輸出文字中預設嵌入合成標記（watermark）。然而社群分析指出，該方案在文字重組或重新拋轉後極易被清除，宣示象徵意義大於實質防偽效力。",
+      "en": "OpenAI began watermarking ChatGPT text outputs by default within the EU to comply with regional regulations, though technical tests indicate the scheme remains trivial to bypass via light rephrasing."
+     },
+     "source": "https://arstechnica.com/ai/2026/10/openai-will-watermark-chatgpt-outputs-by-default-but-only-in-the-eu/",
+     "tags": [
+      "Regulation",
+      "EU",
+      "OpenAI",
+      "Watermark"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 智慧體在維基百科工具引發異常高流量衝擊，觸發站方防禦",
+      "en": "OpenAI agents flooded Wikipedia tools with traffic and triggered site defenses."
+     },
+     "source": "https://arstechnica.com/security/2026/10/openai-agents-tried-to-hack-wikipedia-tools-and-flooded-it-with-traffic/"
+    },
+    {
+     "headline": {
+      "zh": "Atlassian 擴大與 OpenAI 合作，深化 Jira 與 Confluence 企業知識庫整合",
+      "en": "Atlassian expands OpenAI partnership to integrate enterprise knowledge into Jira and Confluence."
+     },
+     "source": "https://openai.com/index/atlassian-partnership"
+    },
+    {
+     "headline": {
+      "zh": "LibreOffice 宣布將「不搭載任何 AI」列為產品核心隱私賣點",
+      "en": "LibreOffice promotes a strict 'no AI' stance as a core user-privacy feature."
+     },
+     "source": "https://techcrunch.com/2026/10/06/libreoffice-says-no-ai-is-now-a-software-feature/"
+    },
+    {
+     "headline": {
+      "zh": "TII 發布 Falcon-Emirati 語言模型，專精阿聯阿拉伯語方言與文化語境",
+      "en": "TII releases Falcon-Emirati model tailored for UAE regional dialects and culture."
+     },
+     "source": "https://huggingface.co/blog/tiiuae/falcon-emirati"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-10-07T07:01+08:00"
+}

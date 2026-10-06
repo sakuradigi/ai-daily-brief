@@ -1,6 +1,14 @@
 {
- "latest": "2026-10-06",
+ "latest": "2026-10-07",
  "reports": [
+  {
+   "date": "2026-10-07",
+   "type": "daily",
+   "summary": {
+    "zh": "Mistral發布萬億參模型，Google推開源向量模型",
+    "en": "Mistral debuts 1T-param model; Google drops EmbeddingGemma 2."
+   }
+  },
   {
    "date": "2026-10-06",
    "type": "daily",
