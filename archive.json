@@ -1,6 +1,14 @@
 {
- "latest": "2026-10-07",
+ "latest": "2026-10-08",
  "reports": [
+  {
+   "date": "2026-10-08",
+   "type": "daily",
+   "summary": {
+    "zh": "GPT-6與Intelligent UI登場，Claude Haiku 5.5大降價",
+    "en": "GPT-6 rolls out with Intelligent UI; Anthropic launches aggressive Claude Haiku 5.5 pricing"
+   }
+  },
   {
    "date": "2026-10-07",
    "type": "daily",

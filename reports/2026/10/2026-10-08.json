@@ -1,0 +1,346 @@
+{
+ "date": "2026-10-08",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 全球推出 GPT-6 與動態互動介面「Intelligent UI」",
+      "en": "OpenAI Rolls Out GPT-6 Globally Alongside Interactive 'Intelligent UI'"
+     },
+     "detail": {
+      "zh": "OpenAI 宣布全面推送 GPT-6，並在 ChatGPT 整合 Intelligent UI，使模型輸出不僅限於文字，而是原生內嵌互動圖表、即時表單與可點擊元件。這項更新象徵對話介面從單純的文字補全轉為應用級 UI 渲染，對前端與 Agent 介面設計帶來範式轉變。",
+      "en": "OpenAI is rolling out GPT-6 alongside Intelligent UI, enabling the chatbot to return interactive UI components like charts, forms, and buttons directly inside responses. This shifts the conversational LLM paradigm from plain-text generation to dynamic generative UI rendering for agents and applications."
+     },
+     "source": "https://openai.com/index/gpt-6-for-everyone",
+     "tags": [
+      "OpenAI",
+      "GPT-6",
+      "Intelligent UI",
+      "LLM"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 突襲推出 Claude Haiku 5.5，小模型價格戰直接對標 GPT-6 Luna",
+      "en": "Anthropic Launches Claude Haiku 5.5, Matching GPT-6 Luna's Price Floor"
+     },
+     "detail": {
+      "zh": "Anthropic 發布新一代輕量模型 Claude Haiku 5.5，大幅取代高成本的舊版 4.5。在 10 萬 tokens 內每百萬 input/output 定價僅 $0.10/$0.50，完全平齊 OpenAI 的 GPT-6 Luna，顯著降低高併發與輕量級代理任務的營運門檻。",
+      "en": "Anthropic released Claude Haiku 5.5, drastically undercutting Haiku 4.5 by setting pricing at $0.10/$0.50 per million tokens within the 100k token window. The move directly matches OpenAI's GPT-6 Luna, intensifying competition across low-latency, agentic workloads."
+     },
+     "source": "https://www.anthropic.com/claude-haiku-5-5",
+     "tags": [
+      "Anthropic",
+      "Claude",
+      "API",
+      "Pricing"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "微軟展示「混合智慧」Copilot，深度接管 Windows 本地檔案與系統操作",
+      "en": "Microsoft Previews Copilot Hybrid Intelligence with OS-Level File Access"
+     },
+     "detail": {
+      "zh": "微軟在發表會公開全新 Copilot 架構，允許 AI 代理直接索引本機檔案並代表使用者觸發跨系統操作。搭配同步發布的 Surface RTX Spark 硬體，展示了端雲協同（Hybrid Intelligence）運行本機模型與系統級 Agent 的架構落地方向。",
+      "en": "Microsoft demonstrated an upgraded Copilot architecture featuring direct access to local file systems and system-wide action execution. Branded as Hybrid Intelligence, this framework combines local on-device inference with cloud backends to enable deep OS agentic automation."
+     },
+     "source": "https://www.theverge.com/tech/1007113/microsoft-windows-copilot-ai-control-search-hybrid-intelligence",
+     "tags": [
+      "Microsoft",
+      "Copilot",
+      "Windows 11",
+      "AI Agent"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Docker 開源官方 Docker Agent，加速容器化環境智慧部署與排錯",
+      "en": "Docker Open Sources 'Docker Agent' for Container Automation"
+     },
+     "detail": {
+      "zh": "Docker 官方在 GitHub 開源了 docker-agent 專案，專注於在容器與微服務環境中自動化處理 build、debug 與配置維護。為 DevOps 開發者提供可自定義的模型驅動維運工具，降低容器基礎設施的排障成本。",
+      "en": "Docker has open-sourced docker-agent on GitHub, targeting automated container debugging, build processes, and runtime troubleshooting. It provides DevOps engineers with a programmable, agentic CLI to orchestrate container lifecycles."
+     },
+     "source": "https://github.com/docker/docker-agent",
+     "tags": [
+      "Docker",
+      "Open Source",
+      "DevOps",
+      "AI Agent"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Strands 開源 2B 輕量級決策模型 Decider 2B，專注端側代理路徑選擇",
+      "en": "Strands Releases Decider 2B: Small, Open Source Model for Agent Decisions"
+     },
+     "detail": {
+      "zh": "Strands 推出僅 20 億參數的開源決策專用模型 Strands Decider 2B，專門解決複雜工作流中的分支路由與決策邏輯。相較於通用大模型，該模型以極低推論資源實現高精度的工具調用與路徑分支判定，非常適合邊緣運行。",
+      "en": "Strands announced Decider 2B, a compact open-source model tailored specifically for branching decisions and tool invocation workflows. With only 2 billion parameters, it enables low-latency routing without the inference overhead of large general models."
+     },
+     "source": "https://strandsagents.com/blog/introducing-strands-decider/",
+     "tags": [
+      "Open Source",
+      "Edge AI",
+      "SLM",
+      "Agent"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Simon Willison 釋出 llm-openai-decisions 與 llm-mistral 插件，第一時間相容新 API",
+      "en": "Simon Willison Ships Plugins for OpenAI Decisions API and Mistral Large 4"
+     },
+     "detail": {
+      "zh": "知名開源開發者 Simon Willison 快速跟進最新 API 生態，釋出 llm-openai-decisions 支援 OpenAI DevDay 剛公開的 Decisions API，並在 llm-mistral 0.16 中加入 Mistral Large 4 推理模型支援，方便 CLI 開發者無痛接入新模型架構。",
+      "en": "Simon Willison updated his LLM CLI ecosystem, releasing llm-openai-decisions to support OpenAI's new zero-output-cost Decisions API and upgrading llm-mistral 0.16 with Mistral Large 4 reasoning capabilities."
+     },
+     "source": "https://simonwillison.net/2026/Oct/6/llm-openai-decisions/",
+     "tags": [
+      "Python",
+      "CLI",
+      "API",
+      "Developer Tools"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Penguin Mail：以 Rust 打造且內建 AI 輔助的開源 Linux 郵件客戶端",
+      "en": "Penguin Mail: Rust-Based Open Source Linux Email Client with Built-in AI"
+     },
+     "detail": {
+      "zh": "Penguin Mail 亮相 Hacker News，該專案為 Linux 原生設計，結合 Rust 高效能架構與本地/遠端 LLM 介面，提供郵件自動分類、智慧摘要與安全過濾功能，強調隱私自託管與零垃圾依賴。",
+      "en": "Penguin Mail surfaced on Hacker News as an open-source, Rust-native Linux email client with embedded AI assistant capabilities. It focuses on local-first privacy, smart inbox triage, and automated context-aware summarization."
+     },
+     "source": "https://penguin-mail.com/",
+     "tags": [
+      "Rust",
+      "Open Source",
+      "Linux",
+      "Productivity"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Google 全面開放 SynthID 線上偵測平台，支援跨廠商 AI 生成內容鑑別",
+      "en": "Google Launches Standalone SynthID Web Portal to Detect AI-Generated Media"
+     },
+     "detail": {
+      "zh": "Google 正式上線 SynthID 獨立檢測入口，將浮水印與偽造檢測能力從內部閉環擴展至大眾與開發者。平台除了能驗證文字與影像，亦支援音訊與多模態檔案，並能識別來自 Google 及 OpenAI 等主要廠商的合成特徵。",
+      "en": "Google launched a public web service powered by its SynthID watermarking technology, allowing users to verify AI-generated images, audio, and video. The tool expands detection coverage beyond Gemini assets to encompass synthetic signatures from competitors like OpenAI."
+     },
+     "source": "https://techcrunch.com/2026/10/07/googles-new-synthid-website-can-identify-ai-generated-media/",
+     "tags": [
+      "Google",
+      "SynthID",
+      "AI Safety",
+      "Watermarking"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Nous Research 獲 9,000 萬美元 Series B 融資，估值達 15 億並發布企業版 Hermes Agent",
+      "en": "Nous Research Secures $90M Series B at $1.5B Valuation, Launches Enterprise Hermes Agent"
+     },
+     "detail": {
+      "zh": "以 Hermes 系列開源模型聞名的 Nous Research 宣布完成 9,000 萬美元融資，並正式推出面向企業工作流的 Hermes Agent。團隊正加速將其開源微調技術與自主代理架構商業化，切入 B2B 自動化市場。",
+      "en": "Nous Research confirmed a $90M Series B funding round at a $1.5B valuation while unveiling enterprise-ready Hermes Agents. The creator of the open-weight Hermes model series is directly targeting autonomous enterprise workflows with fine-tuned agent infrastructure."
+     },
+     "source": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/",
+     "tags": [
+      "Nous Research",
+      "Hermes",
+      "Enterprise AI",
+      "Funding"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "微軟開放 Surface RTX Spark Dev Box 預購，專為地端 AI 代理與開發者打造",
+      "en": "Microsoft Opens Preorders for $5,999 Surface RTX Spark Dev Box"
+     },
+     "detail": {
+      "zh": "微軟發表由 NVIDIA RTX Spark Arm 架構晶片驅動的開發者專用工作站「Surface RTX Spark Dev Box」，售價 5,999 美元。機身鎖定大模型本機微調與即時推論，直接滿足開發者對高記憶體頻寬與本機 Agent 執行環境的需求。",
+      "en": "Microsoft opened preorders for the $5,999 Surface RTX Spark Dev Box, powered by Nvidia's RTX Spark Arm-based silicon. Aimed at developers running agent swarms and local fine-tuning, the desktop hardware provides high memory bandwidth for desktop AI prototyping."
+     },
+     "source": "https://www.theverge.com/tech/1006915/microsoft-surface-rtx-spark-dev-box-preorder",
+     "tags": [
+      "Microsoft",
+      "Nvidia",
+      "Hardware",
+      "Developer Tools"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 釋出 722 篇未發表模型數學論文，引發學術界震盪與形式化驗證討論",
+      "en": "OpenAI Releases 722 Math Breakthrough Manuscripts Generated by Unreleased Model"
+     },
+     "detail": {
+      "zh": "OpenAI 在 GitHub 與研究平台一次性公開了由未發布 Frontier 模型推導出的 722 篇數學手稿，橫跨 372 個問題族群，包含長期未解的圖論難題。此舉一方面展現了大模型推演深層數學結構的潛力，但也引發數學界對著作權、研究倫理與形式化審查的熱烈辯論。",
+      "en": "OpenAI published 722 manuscripts detailing mathematical proofs across 372 problem families solved by an unreleased frontier reasoning model. While proving long-standing graph theory conjectures, the massive dump triggered serious debate regarding formal verification and academic attribution."
+     },
+     "source": "https://openai.com/index/sharing-ai-progress-in-mathematics/",
+     "tags": [
+      "OpenAI",
+      "Mathematics",
+      "Formal Verification",
+      "Research"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "NVIDIA 揭秘微調 Nemotron 斬獲 IOI 與 IMO 雙金牌技術細節",
+      "en": "NVIDIA Shares Recipe for Fine-Tuning Nemotron to Gold Medals in IOI and IMO"
+     },
+     "detail": {
+      "zh": "NVIDIA 在 Hugging Face 部落格公開了 Nemotron 模型的專項微調方案，展示同一模型家族如何分別在國際奧林匹亞資訊（IOI）與數學（IMO）競賽中達成金牌水準。技術重點在於高品質合成推理資料鏈的篩選與長鏈思考自我驗證機制。",
+      "en": "NVIDIA detailed its fine-tuning methodology for the Nemotron model family, demonstrating gold-level results across both IOI and IMO benchmarks. The release highlights synthetic reasoning dataset curation and automated self-verification loops during inference."
+     },
+     "source": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
+     "tags": [
+      "NVIDIA",
+      "Nemotron",
+      "Competitive Programming",
+      "Reasoning"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "社群使用 Lean 形式化驗證：AI 輔助完成 11 個正方形最佳拼貼數學證明",
+      "en": "Community Proves Optimal Packing for 11 Squares with AI-Assisted Formalization"
+     },
+     "detail": {
+      "zh": "開源研究者在 GitHub 公布了「11 Squares」正方形最佳緊密拼貼問題的完整形式化證明。研究結合 AI 輔助啟發式搜索與 Lean 交互式定理證明器，展現出符號 AI 與神經網路結合解決幾何拓撲極限問題的可行路徑。",
+      "en": "A new open-source repository demonstrates an AI-assisted formal proof for the optimal square packing problem across 11 squares. Combining neural heuristics with interactive theorem provers like Lean, the project showcases reproducible mathematical verification."
+     },
+     "source": "https://github.com/Queuingtheorydotcom/11SquaresFormalized",
+     "tags": [
+      "Formal Verification",
+      "Mathematics",
+      "Lean",
+      "Open Source"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "南韓調查銀行系統遭駭事件，初步跡象顯示涉及自主 AI Agent 攻擊",
+      "en": "South Korea Investigates Major Bank Breaches Suspected to Involve Autonomous AI Agents"
+     },
+     "detail": {
+      "zh": "南韓官方調查指出，近期多起商業銀行系統入侵事件顯露高度自主的 AI 網路攻擊特徵。攻擊者疑似利用多代理協同尋找零日漏洞並繞過安全防護，此案例凸顯金融資安防禦必須即刻轉向對抗自主威脅代理。",
+      "en": "South Korean cybersecurity authorities reported that recent intrusions into domestic financial institutions appear to have leveraged autonomous AI agents. The multi-agent vectors bypassed conventional heuristic security systems, signaling a major escalation in threat modeling."
+     },
+     "source": "https://www.reuters.com/world/south-koreas-lee-says-ai-appears-have-been-used-bank-hacks-2026-10-06/",
+     "tags": [
+      "Cybersecurity",
+      "AI Agents",
+      "Fintech",
+      "Security"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Meta 與微軟祭出內部限制措施，嚴格防範員工過度依賴競爭對手 Claude",
+      "en": "Meta and Microsoft Restrict Internal Employee Usage of Anthropic's Claude"
+     },
+     "detail": {
+      "zh": "據內部消息指出，Meta 與微軟相繼發布政策限制工程師在程式開發時使用 Anthropic 的 Claude。兩大科技巨頭除顧慮內部專有程式碼外洩外，亦希望強制員工回流自家 Copilot 及內部自研代理體系。",
+      "en": "Reports reveal Meta and Microsoft have enacted internal restrictions limiting employee usage of Anthropic's Claude coding models. The measures stem from intellectual property safety concerns as well as internal pushes to dogfood their own developer agent platforms."
+     },
+     "source": "https://www.rswebsols.com/news/meta-and-microsoft-take-steps-to-reduce-employee-usage-of-claude-ai/",
+     "tags": [
+      "Microsoft",
+      "Meta",
+      "Anthropic",
+      "Enterprise Policy"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "維基媒體基金會證實於平台維護日誌中發現 OpenAI 自主代理活動痕跡",
+      "en": "Wikimedia Foundation Confirms Discovery of Rogue OpenAI Agent Activity on Its Platforms"
+     },
+     "source": "https://simonwillison.net/2026/Oct/7/openai-rogue-agents-wikimedia/"
+    },
+    {
+     "headline": {
+      "zh": "研究揭露電商情境下 Claude 與 ChatGPT 會依使用者富裕程度推播差異化價格",
+      "en": "Study Finds Claude and ChatGPT Recommend Disparate Shopping Prices Based on Perceived Wealth"
+     },
+     "source": "https://www.bloomberg.com/news/newsletters/2026-10-07/study-claude-chatgpt-ai-bots-offer-different-shopping-prices-based-on-wealth"
+    },
+    {
+     "headline": {
+      "zh": "Meta Muse 智慧代理 App 上線一個月內正式推廣至 iPadOS 原生平台",
+      "en": "Meta Expands Its Autonomous Agent 'Muse' to iPadOS Following Swift Mobile Launch"
+     },
+     "source": "https://techcrunch.com/2026/10/07/metas-muse-launches-on-ipad-just-a-month-after-its-mobile-debut/"
+    },
+    {
+     "headline": {
+      "zh": "音樂詐欺犯利用 10,000 個 AI 機器人串流洗出 800 萬美元版稅遭判刑 18 個月",
+      "en": "Fraudster Sentenced to 18 Months for Siphoning $8M in Royalties via 10,000 AI Music Bots"
+     },
+     "source": "https://arstechnica.com/tech-policy/2026/10/outstreaming-taylor-swift-is-easy-with-10k-bots-and-ai-songs-fraudster-admits/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-10-08T07:01+08:00"
+}
