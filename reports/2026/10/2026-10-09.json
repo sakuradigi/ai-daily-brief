@@ -1,0 +1,336 @@
+{
+ "date": "2026-10-09",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 遭爆年化營收較預期低 200 億美元，高估值泡沫受檢視",
+      "en": "OpenAI Annualized Revenue Reportedly Falls $20B Short of Projections"
+     },
+     "detail": {
+      "zh": "CNBC 與 TechCrunch 最新報導指出，OpenAI 當前的年化營收數字比原先向投資人釋出的預期低了約 200 億美元。這項差距在市場引起廣泛討論，特別是在基礎設施資本支出暴增的背景下，投資界對生成式 AI 的商業變現步伐開始重新定價。",
+      "en": "Reports from CNBC and TechCrunch reveal that OpenAI's annualized revenue is approximately $20 billion below earlier market projections. The discrepancy is prompting renewed scrutiny from investors over generative AI unit economics amid surging infrastructure capex."
+     },
+     "source": "https://www.cnbc.com/2026/10/08/open-ai-revenue-nvidia-oracle-coreweave.html",
+     "tags": [
+      "OpenAI",
+      "Revenue",
+      "Finance",
+      "LLM"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 撤回三篇數學研究成果，遭社群質疑未達同行審查標準",
+      "en": "OpenAI Withdraws Three Mathematics Papers Following Peer Scrutiny"
+     },
+     "detail": {
+      "zh": "OpenAI 官方 GitHub 倉庫公告撤回三項數學研究證明與論文。先前前沿實驗室發布的模型輔助證明被數學家指出偏離了專業研究規範與嚴謹度，顯示即使是頂尖 Reasoning 模型，在缺乏形式化驗證工具前，於高等數學符號推理領域仍具顯著幻覺風險。",
+      "en": "OpenAI has officially withdrawn three mathematical papers and proofs from its repository after math researchers highlighted critical deviations from academic standards. The incident highlights that LLM-driven reasoning in formal mathematics remains fragile without rigorous symbolic verification."
+     },
+     "source": "https://github.com/openai/math/blob/main/history.md",
+     "tags": [
+      "OpenAI",
+      "Research",
+      "Math",
+      "Reasoning"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 推出免費開源專案資安掃描服務「OSS Scanner」",
+      "en": "Anthropic Launches Free 'OSS Scanner' for Open-Source Repositories"
+     },
+     "detail": {
+      "zh": "Anthropic 宣布開放開源專案免費接入 OSS Scanner，利用其旗艦模型定期對程式庫進行深度安全漏洞檢測。開發者可藉此提早捕獲複雜的邏輯缺陷與依賴漏洞，此舉預計將大幅強化軟體供應鏈安全。",
+      "en": "Anthropic has rolled out OSS Scanner, offering open-source maintainers periodic and automated security vulnerability audits powered by its flagship Claude models at zero cost. The initiative provides free proactive auditing for developers managing critical software supply chain components."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner",
+     "tags": [
+      "Anthropic",
+      "OpenSource",
+      "Security",
+      "DevTools"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "社群利用 LLM 完整將 TypeScript 編譯器、型別檢查器與 LSP 移植至 Rust",
+      "en": "TypeScript Compiler, Checker, and LSP Ported to Rust via LLM"
+     },
+     "detail": {
+      "zh": "開源專案 pingdotgg/ts-rust 展示了由 LLM 協同將龐大的 TypeScript 核心工具鏈移植為 Rust 的成果。該專案意在提供極致效能的解析與型別分析能力，成為展示大模型在大型代碼庫跨語言重構潛力的指標性實踐。",
+      "en": "The pingdotgg/ts-rust repository showcases an LLM-driven port of TypeScript's compiler, type checker, and LSP to Rust. The project highlights the viability of modern code-generation agents in executing massive, language-to-language toolchain refactorings for better performance."
+     },
+     "source": "https://github.com/pingdotgg/ts-rust",
+     "tags": [
+      "Rust",
+      "TypeScript",
+      "Compiler",
+      "OpenSource"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Goodfire 發表「由內而外」監控架構，大幅降低 AI Agent 運行監控成本",
+      "en": "Goodfire Unveils Inside-Out Monitoring for Rogue AI Agents"
+     },
+     "detail": {
+      "zh": "傳統 Agent 稽核通常需要部署另一個 LLM 進行全程審查，成本高昂；Goodfire 透過直接讀取模型推論時的內部神經元表徵，僅在發現異常向量時觸發警報，使 Agent 安全防護成本降至原本的數分之一。",
+      "en": "Rather than routing complete interaction logs through expensive auxiliary models, Goodfire's internal inspectability system monitors agent activation states directly during inference, firing alarms only on anomalies to slash runtime overhead."
+     },
+     "source": "https://techcrunch.com/2026/10/08/goodfire-says-its-new-inside-out-monitors-catch-rogue-ai-agents-at-a-fraction-of-the-cost/",
+     "tags": [
+      "Agent",
+      "Safety",
+      "Observability",
+      "DevTools"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "開發者發起開放式 Creative Cloud 替代品專案，喊出「軟體時代已終結」",
+      "en": "Open-Source Adobe Clones Built with AI Stir Debate on Software Economics"
+     },
+     "detail": {
+      "zh": "有開發者運用 Claude 等前沿模型快速生成整套 Adobe 設計套件的開源替代克隆版，引發社群熱議。雖然目前功能尚未成熟，但其極低的邊際開發成本證明了自然語言直接驅動全功能桌面應用原型構建的可行性。",
+      "en": "An independent developer has released early open-source alternatives to Adobe Creative Cloud built primarily with LLMs, sparking discussions on whether generative tooling will permanently collapse the engineering moat of monolithic legacy software."
+     },
+     "source": "https://arstechnica.com/ai/2026/10/software-is-over-bold-ai-developer-takes-aim-at-adobe-with-open-source-clones/",
+     "tags": [
+      "OpenSource",
+      "Design",
+      "DevTools",
+      "AI-Coding"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Google 釋出 AI Edge Foresight：完全地端離線運行的會議摘要 Mac App",
+      "en": "Google Releases AI Edge Foresight: Fully Offline On-Device Note App"
+     },
+     "detail": {
+      "zh": "Google 推出 macOS 實驗性筆記工具 Foresight，在本地端執行專屬的 EmbeddingGemma 2 模型完成轉錄與摘要，不需要任何雲端 API 連線。此產品直接與 Granola 等工具競爭，滿足注重機密資料隱私的企業開發者需求。",
+      "en": "Google launched AI Edge Foresight for macOS, leveraging local EmbeddingGemma 2 weights to handle meeting transcription and audio indexing entirely offline. The local-first architecture offers a privacy-preserving alternative to cloud meeting assistants like Granola."
+     },
+     "source": "https://www.theverge.com/tech/1007985/google-ai-notetaking-app-transcribe-offline",
+     "tags": [
+      "Google",
+      "OnDevice",
+      "LocalAI",
+      "macOS"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Google 升級 Gemini Enterprise，支援多模型跨應用任務委派的通才 Agent",
+      "en": "Google Launches Agentic Work Capabilities in Gemini Enterprise"
+     },
+     "detail": {
+      "zh": "在 Gemini at Work 活動中，Google 推出企業級通用 Agent。該 Agent 具備獨立的工作身分與電子郵件信箱，能在背景分解工作流程、呼叫子 Agent 並排程跨 Workspace 應用的複雜自動化任務。",
+      "en": "At its Gemini at Work showcase, Google upgraded Gemini Enterprise into an orchestrator agent that receives an organizational identity and inbox, enabling it to decompose complex background workflows and delegate subtasks across business software."
+     },
+     "source": "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/",
+     "tags": [
+      "Google",
+      "Gemini",
+      "Agents",
+      "Enterprise"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "用戶宣稱利用 Claude Code 輔助天文數據分析發現未登錄系外行星",
+      "en": "Developer Claims Discovery of Uncataloged Exoplanet via Claude Code"
+     },
+     "detail": {
+      "zh": "Reddit 社群有開發者分享其使用 Anthropic 的 Claude Code 終端工具，自動化撰寫與除錯天文光變曲線分析腳本，最終在公開觀測數據集中辨識出疑似未被記錄的系外行星訊號，展示了代碼 Agent 在科學探索中的加速效果。",
+      "en": "An independent developer reported using Anthropic's Claude Code CLI to rapidly script astronomical light curve pipelines, resulting in the detection of a candidate uncataloged exoplanet and validating agentic CLI workflows in scientific computing."
+     },
+     "source": "https://www.reddit.com/r/ClaudeAI/s/mbe5IY2LF9",
+     "tags": [
+      "Anthropic",
+      "ClaudeCode",
+      "Science",
+      "CLI"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "DeepSeek 4.1 Flash 引發極致推論效率與性價比技術探討",
+      "en": "Community Analyses the Architectural Efficiency of DeepSeek 4.1 Flash"
+     },
+     "detail": {
+      "zh": "開發者社群針對 DeepSeek 4.1 Flash 展現的驚人性價比與推論速度展開深入討論。該模型在高吞吐量與低延遲場景下的表現，讓業界再次審視架構優化（如極致量化與稀疏注意力）如何打破西方前沿實驗室的單純擴展定律（Scaling Laws）定價壁壘。",
+      "en": "Hacker News engineers are dissecting the performance-per-dollar of DeepSeek 4.1 Flash, discussing how its architectural optimizations and low-latency throughput continue to disrupt the pricing dynamics set by proprietary frontier providers."
+     },
+     "source": "https://www.dgt.is/blog/2026-10-07-deepseek-freek-out/",
+     "tags": [
+      "DeepSeek",
+      "Inference",
+      "Efficiency",
+      "LLM"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Hugging Face 分享工程團隊從零自建定制化 ML Intern 模型的經驗",
+      "en": "Hugging Face Explains 'Building the Model That Didn't Exist' for Engineering Workflows"
+     },
+     "detail": {
+      "zh": "Hugging Face 技術專欄深入解析當開源或通用商業模型無法契合特定邊界條件時，工程團隊如何透過微調與合成數據管線自製輕量型專用模型。文章強調針對單一任務構建小模型在延遲與可控性上的長期優勢。",
+      "en": "A new Hugging Face technical write-up documents how developers can build and fine-tune specialized internal task models when off-the-shelf options fall short, highlighting the latency, cost, and maintainability benefits of small task-specific architectures."
+     },
+     "source": "https://huggingface.co/blog/building-with-ml-intern",
+     "tags": [
+      "HuggingFace",
+      "FineTuning",
+      "MachineLearning",
+      "OpenSource"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Anthropic 更新使用條款：正式禁止對 Claude 進行「持續性虐待或殘酷行為」",
+      "en": "Anthropic Amends Usage Policy to Prohibit Model Mistreatment and Abuse"
+     },
+     "detail": {
+      "zh": "Anthropic 更新一年多未改版的使用規範，除了嚴格禁止選舉干預與武器研發外，首度明文禁止用戶針對模型進行無端且長期的虐待或殘酷對待。雖然正常批判被允許，但官方此舉引發了關於合成心智倫理與提示詞邊界的廣泛論辯。",
+      "en": "Anthropic updated its safety policies to restrict election tampering, autonomous weapons, and uniquely, 'sustained and needless abusive or cruel behavior' toward Claude. The change has reignited philosophical and practical engineering debates over prompt policies and synthetic ethics."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1008100/anthropic-new-usage-policy-abuse-claude",
+     "tags": [
+      "Anthropic",
+      "Policy",
+      "Safety",
+      "Ethics"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "AI 評測平台 LM LMSYS Arena 估值跳升至 31 億美元，並完成 2 億融資",
+      "en": "Evaluation Benchmark LMSYS Arena Reaches $3.1B Valuation in $200M Round"
+     },
+     "detail": {
+      "zh": "運營知名大模型天梯榜 LMSYS Arena 的背後團隊獲得由 Lightspeed 與 Khosla 領投的 2 億美元融資。隨著基礎模型能力差距收窄，該平台正將評測維度擴展至對齊穩定性、模型欺騙等深層指標，凸顯客觀評估工具在產業鏈中的核心價值。",
+      "en": "The team behind LMSYS Chatbot Arena secured $200 million in venture funding led by Lightspeed and Khosla at a $3.1 billion valuation. As base models converge, the platform is expanding benchmarks to cover deceptive alignment and reliability testing."
+     },
+     "source": "https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/",
+     "tags": [
+      "LMSYS",
+      "Benchmarks",
+      "VentureCapital",
+      "Evaluation"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "遭開除之 OpenAI 安全研究員發表公開信，警告內部安全審查文化受壓制",
+      "en": "Fired OpenAI Researchers Release Open Letter Warning of Safety Chilling Effect"
+     },
+     "detail": {
+      "zh": "三名遭 OpenAI 解雇的對齊與安全研究員發布公開信，否認管理層指控其不當處理機密資訊的說法，並警告當前的清洗行動正對公司內部的安全風險吹哨機制造成嚴重寒蟬效應，引發外部監管機構的高度關注。",
+      "en": "Three safety researchers dismissed by OpenAI published an open letter disputing misconduct allegations, arguing their firing creates a chilling effect on internal whistleblowing and AI risk assessment prior to next-generation deployments."
+     },
+     "source": "https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/",
+     "tags": [
+      "OpenAI",
+      "Safety",
+      "Governance",
+      "Ethics"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "《今日美國》（USA Today）母公司起訴 OpenAI 侵權，求償金額超過 2.5 億美元",
+      "en": "USA Today owner files $250M copyright infringement lawsuit against OpenAI"
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1008198/usa-today-openai-copyright-lawsuit"
+    },
+    {
+     "headline": {
+      "zh": "中國 Manus 完成與 Meta 分拆後首輪 5 億美元融資，博裕與 IDG 領投",
+      "en": "China's Manus raises over $500M in first funding round since Meta separation"
+     },
+     "source": "https://techcrunch.com/2026/10/08/chinas-manus-raises-over-500m-in-first-funding-round-since-split-with-meta/"
+    },
+    {
+     "headline": {
+      "zh": "SpaceXAI 向 DHH 的 Omarchy Linux 提供價值 150 萬美元的 Grok 運算資源",
+      "en": "SpaceXAI backs DHH's Omarchy Linux with $1.5M in Grok compute credits"
+     },
+     "source": "https://www.theverge.com/tech/1008148/spacexai-omarchy-grok-david-heinemeier-hansson"
+    },
+    {
+     "headline": {
+      "zh": "NVIDIA 發表具身智慧與實體 AI 全端安全解決方案，進軍機器人計程車市場",
+      "en": "Nvidia introduces full-stack physical AI safety suite for humanoid robotics and robotaxis"
+     },
+     "source": "https://arstechnica.com/ai/2026/10/nvidias-big-bet-on-physical-ai-aims-for-safer-robotaxis-humanoid-robots/"
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 揭露並阻斷兩起利用虛構智庫與假記者的 AI 協同虛假影響力行動",
+      "en": "OpenAI disrupts state-linked influence campaigns employing AI-generated journalists"
+     },
+     "source": "https://openai.com/index/disrupting-ai-enabled-false-front-operations"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-10-09T07:02+08:00"
+}

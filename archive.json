@@ -1,6 +1,14 @@
 {
- "latest": "2026-10-08",
+ "latest": "2026-10-09",
  "reports": [
+  {
+   "date": "2026-10-09",
+   "type": "daily",
+   "summary": {
+    "zh": "OpenAI 撤回數學成果與營收下修，開源工具與地端模型持續爆發",
+    "en": "OpenAI retracts math papers and faces revenue questions, while OSS and local AI surge"
+   }
+  },
   {
    "date": "2026-10-08",
    "type": "daily",
