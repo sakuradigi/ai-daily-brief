@@ -1,6 +1,14 @@
 {
- "latest": "2026-10-09",
+ "latest": "2026-10-10",
  "reports": [
+  {
+   "date": "2026-10-10",
+   "type": "daily",
+   "summary": {
+    "zh": "Cloudflare收購Deno；數學界震盪；開源安全與調度工具更新",
+    "en": "Cloudflare acquires Deno, math community faces OpenAI dump, new OSS tools launch"
+   }
+  },
   {
    "date": "2026-10-09",
    "type": "daily",

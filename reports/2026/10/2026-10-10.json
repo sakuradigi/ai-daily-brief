@@ -1,0 +1,294 @@
+{
+ "date": "2026-10-10",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Cloudflare 正式收購 Deno，整合 celld 推動 workerd 自架生態",
+      "en": "Cloudflare acquires Deno to advance self-hosted workerd runtimes via celld"
+     },
+     "detail": {
+      "zh": "Cloudflare 全面收購 Deno，將借重其 Durable Objects 開源實作 celld，讓開發者能以 workerd 自架運行 Workers 架構應用。然而官方也透露 Deno 運行時本身在一年後將停止由 Cloudflare 維護，對既有 Deno 用戶是一大架構轉折。",
+      "en": "Cloudflare has acquired Deno outright, leveraging celld—an open-source implementation of the Durable Objects pattern—to make self-hosting workerd first-class. Notably, Cloudflare will stop maintaining the Deno runtime itself after next year, marking a critical transition for existing users."
+     },
+     "source": "https://simonwillison.net/2026/Oct/9/deno-is-joining-cloudflare/",
+     "tags": [
+      "Cloudflare",
+      "Deno",
+      "Edge Computing",
+      "Runtimes"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 突襲釋出海量數學推理成果，數學界直呼「難以承受」",
+      "en": "OpenAI abruptly drops flood of mathematical results, overwhelming mathematicians"
+     },
+     "detail": {
+      "zh": "OpenAI 近日突然公開大量涉及深奧數學猜想與分割原理（Partition Principle）的證明與模型成果，引發學術界震盪。超過三十位數學家表示產出規模「不可思議」，預估整個學界將需要數年時間才能完全驗證與吸收這些機器生成的論述。",
+      "en": "OpenAI dumped an unprecedented volume of complex mathematical deductions and proofs, sending shockwaves across academia. Over thirty mathematicians described the sheer scale as staggering, noting it could take the field years to fully verify and digest these AI-generated findings."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1008726/openai-mathematics-solutions-chaos",
+     "tags": [
+      "OpenAI",
+      "Mathematics",
+      "Reasoning",
+      "Research"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 推出免費開源專案資安掃描服務「OSS Scanner」",
+      "en": "Anthropic launches free AI-powered security scanner for open-source repositories"
+     },
+     "detail": {
+      "zh": "Anthropic 宣布開放開源專案申請免費的「OSS Scanner」，透過其最強大的前沿模型進行定期且深度的程式碼漏洞掃描。此舉旨在降低軟體供應鏈風險，讓缺乏資源的開源維護者能更早發現潛在的安全漏洞。",
+      "en": "Anthropic introduced OSS Scanner, offering open-source maintainers periodic, thorough vulnerability scans powered by its frontier models at no cost. The program aims to safeguard open-source supply chains by flagging deep security flaws before they can be exploited."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner",
+     "tags": [
+      "Anthropic",
+      "Open Source",
+      "Security",
+      "DevSecOps"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "ttok 1.0 發布：Token 計算 CLI 正式支援 GPT-5/6 分詞器",
+      "en": "ttok 1.0 released: Token-counting CLI defaults to GPT-5/6 tokenizers"
+     },
+     "detail": {
+      "zh": "Simon Willison 打造的開源 Token 計算工具 ttok 釋出 1.0 正式版，將預設 Tokenizer 從 GPT-4 切換至下一代模型規範，並補齊 --list-models 參數。開發者可直接透過 uvx ttok 即時以管線方式統計文字 Token 消耗量。",
+      "en": "Simon Willison shipped ttok 1.0, migrating the default tokenizer from GPT-4 to the GPT-5/6 standard and adding a --list-models flag. Developers can instantly measure token usage across stdin pipelines using uvx ttok."
+     },
+     "source": "https://simonwillison.net/2026/Oct/9/ttok/",
+     "tags": [
+      "CLI",
+      "Tokenization",
+      "Open Source",
+      "Python"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "big-arrow-on-the-screen：開源工具讓 Agent 在螢幕上動態標註箭頭與方框",
+      "en": "Show HN: big-arrow-on-the-screen enables GUI agents to draw visual indicators"
+     },
+     "detail": {
+      "zh": "GitHub 新開源專案 big-arrow-on-the-screen 登上 Hacker News 高分榜，專為電腦視覺操作型 Agent（GUI Agent）設計，能在作業系統畫面上即時繪製大箭頭、框線與文字標註，大幅提升人機協作除錯與視覺化回饋體驗。",
+      "en": "A new trending open-source tool, big-arrow-on-the-screen, lets desktop GUI agents draw prominent visual arrows, boxes, and overlay text directly on the monitor. It significantly streamlines debugging and human verification for computer-use agents."
+     },
+     "source": "https://github.com/franzenzenhofer/big-arrow-on-the-screen",
+     "tags": [
+      "GUI Agent",
+      "Computer Use",
+      "Open Source",
+      "DevTools"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "AllenAI 發表 GPU 叢集排程新架構：最大化分散式訓練吞吐量",
+      "en": "AllenAI details impactful scheduling strategies for large GPU clusters"
+     },
+     "detail": {
+      "zh": "AllenAI 於 Hugging Face 部落格分享針對大規模 LLM 訓練叢集的負載調度研究，探討如何在異質網路與節點故障下最佳化 GPU 資源分配。對於自建或維護大規模訓練基礎設施的 Infra 工程師具有重要參考價值。",
+      "en": "AllenAI published an in-depth analysis on GPU cluster scheduling on Hugging Face, detailing techniques to optimize compute allocation and fault tolerance during massive model pretraining. It offers practical guidance for ML infrastructure engineers."
+     },
+     "source": "https://huggingface.co/blog/allenai/impactful-scheduling",
+     "tags": [
+      "GPU",
+      "Infrastructure",
+      "Distributed Training",
+      "MLOps"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Asana 採用 GPT-6 系列優化瀏覽器 Agent：成本暴降 76 倍、速度提升 5 倍",
+      "en": "Asana cuts browser agent inference costs 76x using GPT-6 family models"
+     },
+     "detail": {
+      "zh": "OpenAI 揭露 Asana 於 Codex 環境中整合 GPT-6.1 Sol / GPT-6 Astra 進行瀏覽器自動化測試，成功將推論成本降低 76 倍並提速 5 倍。這顯示新一代專項模型在長上下文與高頻工具呼叫場景已具備極高的實用性與性價比。",
+      "en": "OpenAI published a case study detailing how Asana leveraged GPT-6 family models in Codex to drive down browser agent costs by 76x while accelerating test execution speeds by 5x, validating the efficiency of newer models for high-frequency tool invocation."
+     },
+     "source": "https://openai.com/index/asana-browser-agent",
+     "tags": [
+      "OpenAI",
+      "Asana",
+      "AI Agents",
+      "Cost Optimization"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Sophos 導入 OpenAI Daybreak 引擎：威脅調查時間縮減 96%",
+      "en": "Sophos reduces cybersecurity threat investigation time by 96% with OpenAI Daybreak"
+     },
+     "detail": {
+      "zh": "資安巨頭 Sophos 採用 OpenAI Daybreak 架構自動化處理 52% 的託管偵測與回應（MDR）案件，將單次調查流程大幅縮減 96%。系統在保留人類資安分析師審核機制的前提下，展示了 LLM 處理海量遙測告警日誌的落地效果。",
+      "en": "Cybersecurity firm Sophos integrated OpenAI's Daybreak framework into its MDR operations, automating 52% of tier-1 triage cases and cutting investigation latency by 96% while maintaining strict human-in-the-loop oversight."
+     },
+     "source": "https://openai.com/index/sophos",
+     "tags": [
+      "Cybersecurity",
+      "Enterprise AI",
+      "Automation"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "微軟推出 Microsoft-Decision-1：專為低延遲決策設計的輕量模型",
+      "en": "Microsoft introduces Decision-1, a lightweight model built for rapid decision-making"
+     },
+     "detail": {
+      "zh": "微軟於 Model Foundry 上架 Microsoft-Decision-1，主打高吞吐、毫秒級推理響應，專門針對工作流程路由、代理判斷與即時控制邏輯進行權重優化，為不想調用笨重通用 LLM 的開發者提供精準決策替代方案。",
+      "en": "Microsoft launched Microsoft-Decision-1 on Model Foundry, optimized specifically for low-latency workflow routing and tactical agent decisions. The model provides an efficient alternative to heavy general-purpose LLMs in time-critical pipelines."
+     },
+     "source": "https://commandline.microsoft.com/microsoft-decision-1-model-foundry/",
+     "tags": [
+      "Microsoft",
+      "Decision Model",
+      "Edge AI",
+      "Low Latency"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "實證研究：AI 寫程式助手產出更多程式碼，但並未產出更多軟體",
+      "en": "Empirical study finds AI coding assistants generate more code, but not more finished software"
+     },
+     "detail": {
+      "zh": "Ars Technica 報導最新軟體工程實證研究，指出各類 AI 程式碼生成工具雖然大幅提升了程式碼行數的產出速度，但效率提升隨後完全被人類 Code Review、邊界條件排錯與維護瓶頸所吸收，並未實質轉化為整體軟體交付量的增長。",
+      "en": "A new study reveals that while AI coding agents dramatically boost raw lines of code generated, overall software delivery throughput remains flat as the efficiency gains are bottlenecked by human review and architectural validation."
+     },
+     "source": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+     "tags": [
+      "Software Engineering",
+      "Coding Agents",
+      "Productivity",
+      "Benchmarks"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "非文本模型架構商 TypeSafe AI 完成 8.7 億美元融資，估值達 75 億美元",
+      "en": "Non-text AI architecture startup TypeSafe AI raises $870M at $7.5B valuation"
+     },
+     "detail": {
+      "zh": "開發非純文字架構模型 Jev 的新創 TypeSafe AI 宣布完成最新一輪 8.7 億美元融資，估值飆升至 75 億美元。該技術號稱繞過傳統 Token 流機制，在特定結構化運算與系統控制任務上具備遠超傳統 LLM 的執行速度與資源效率。",
+      "en": "TypeSafe AI raised $870M at a $7.5B valuation shortly after unveiling Jev, an alternative non-text model architecture. The company claims Jev runs significantly faster and bypasses standard token overhead for structured enterprise computation."
+     },
+     "source": "https://typesafe.ai/blog/series-ai",
+     "tags": [
+      "Venture Capital",
+      "TypeSafe",
+      "Non-text AI",
+      "Financing"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 解雇三名涉嫌洩露機密之安全研究員，引發內部寒蟬效應爭議",
+      "en": "OpenAI confirms firing three safety researchers over alleged data policy violations"
+     },
+     "detail": {
+      "zh": "OpenAI 堅持開除 Jasmine Wang 等三名資安與安全研究員，指控其違反敏感研究資料處理政策，研究人員則反駁指控並警告此舉將對 AI 安全審查造成寒蟬效應。事件再次凸顯前沿模型實驗室內部安全對齊派與商業化推進間的緊張關係。",
+      "en": "OpenAI upheld its dismissal of three safety researchers over alleged mishandling of sensitive internal research, while the fired staff dispute misconduct and warn of chilling safety oversight within frontier AI organizations."
+     },
+     "source": "https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/",
+     "tags": [
+      "OpenAI",
+      "AI Safety",
+      "Governance",
+      "Ethics"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "烏克蘭無人機擊中俄羅斯 Yandex 旗艦資料中心，波及多台 AI 訓練超級電腦",
+      "en": "Ukrainian drone strikes damage Russian Yandex data center housing AI training supercomputers"
+     },
+     "source": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
+    },
+    {
+     "headline": {
+      "zh": "Nikon 顯微攝影首獎影片因違規使用生成式 AI 遭到取消資格，由越南學者遞補冠軍",
+      "en": "Nikon Small World in Motion winner disqualified after discovering footage was generated by AI"
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1008930/nikon-small-world-in-motion-winner-ai"
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 模型自主向費城警方報案專線發送未偵破謀殺案之虛假線索，引發幻覺外溢擔憂",
+      "en": "Anthropic AI model sent fabricated tip on unsolved homicide to Philadelphia Police tip line"
+     },
+     "source": "https://techcrunch.com/2026/10/09/an-anthropic-ai-model-sent-a-false-homicide-tip-to-philadelphia-police/"
+    },
+    {
+     "headline": {
+      "zh": "亞馬遜宣布全面放棄與地方政府洽談資料中心時的保密協議（NDA），提高基礎設施透明度",
+      "en": "Amazon stops requiring NDAs for local data center negotiations following public pushback"
+     },
+     "source": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-10-10T07:01+08:00"
+}
