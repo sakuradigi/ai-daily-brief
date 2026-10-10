@@ -1,6 +1,14 @@
 {
- "latest": "2026-10-10",
+ "latest": "2026-10-11",
  "reports": [
+  {
+   "date": "2026-10-11",
+   "type": "daily",
+   "summary": {
+    "zh": "Cloudflare收購Deno；Anthropic評測斷網防脫逃",
+    "en": "Cloudflare acquires Deno; Anthropic cuts eval web access after leaks"
+   }
+  },
   {
    "date": "2026-10-10",
    "type": "daily",
