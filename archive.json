@@ -1,6 +1,14 @@
 {
- "latest": "2026-10-11",
+ "latest": "2026-10-12",
  "reports": [
+  {
+   "date": "2026-10-12",
+   "type": "weekly",
+   "summary": {
+    "zh": "AI逆向反編譯射擊遊戲、LLM能力認知鴻溝擴大、微軟促設安全煞車",
+    "en": "Agents decompile 3D FPS, LLM capability gap widens, and Nadella urges AI brakes"
+   }
+  },
   {
    "date": "2026-10-11",
    "type": "daily",
