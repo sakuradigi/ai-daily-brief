@@ -1,0 +1,278 @@
+{
+ "date": "2026-10-13",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "開源 GIS 巨頭 QGIS 宣布全面暫停接受 AI 生成程式碼貢獻",
+      "en": "QGIS Enacts Moratorium on AI-Generated Contributions"
+     },
+     "detail": {
+      "zh": "知名開源地理資訊專案 QGIS 正式提出維護者提案，暫停接受由 LLM 生成的 Pull Request 與程式碼貢獻。社群指出，大量未經充分審查與測試的低質 AI 程式碼大幅消耗維護者心力，開源維護負擔已達臨界點。",
+      "en": "Major open-source GIS project QGIS introduced an enhancement proposal placing a moratorium on AI-generated PRs and code. Maintainers highlighted that review fatigue from unvetted, low-quality automated code submissions has created an unsustainable maintenance burden."
+     },
+     "source": "https://github.com/qgis/QGIS-Enhancement-Proposals/pull/387",
+     "tags": [
+      "OpenSource",
+      "QGIS",
+      "AI-Policy",
+      "GitHub"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "微軟發表第三代自研推論晶片 Maia 300，瞄準複雜推理模型與 Agent 工作負載",
+      "en": "Microsoft Unveils Maia 300 AI Chip to Power Cloud Inference and Agents"
+     },
+     "detail": {
+      "zh": "微軟正式發布 Maia 300 晶片，將作為自家產品與 Azure 雲端服務的主要 AI 推論硬體，以降低對 Nvidia GPU 的依賴。該晶片特別針對新型 Reasoning 模型與長鏈條 Agent 任務進行架構優化，大幅提升能源與成本效益。",
+      "en": "Microsoft announced its third-generation Maia 300 in-house AI chip, designed as the primary inference system across its ecosystem to reduce reliance on Nvidia GPUs. It specifically enhances cost efficiency for complex reasoning models and autonomous agent workloads."
+     },
+     "source": "https://www.theverge.com/news/1009465/microsoft-maia-300-chip-improvements-rollout",
+     "tags": [
+      "Hardware",
+      "Microsoft",
+      "Maia300",
+      "Inference"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Meta 發布首款前沿旗艦模型 Muse Wonder 與 Wonder Full，正面對標業界頂級 LLM",
+      "en": "Meta Launches Frontier Flagship Models Muse Wonder and Wonder Full"
+     },
+     "detail": {
+      "zh": "Meta 旗下超級智慧實驗室繼 Muse Spark 後，正式推出主力前沿模型 Muse Wonder 與 Muse Wonder Full。官方宣稱新模型在程式碼編寫與複雜邏輯基準測試上取得重大突破，能直接抗衡 OpenAI 與 Anthropic 的頂級模型。",
+      "en": "Meta released its frontier models Muse Wonder and Muse Wonder Full via its revamped Superintelligence Labs. The larger models report significant gains across complex programming and reasoning benchmarks, competing directly with top-tier commercial LLMs."
+     },
+     "source": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
+     "tags": [
+      "Meta",
+      "LLM",
+      "Muse",
+      "FrontierModel"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Python 3.15 正式釋出，引入 PEP 810 顯式惰性導入語法",
+      "en": "Python 3.15 Released with PEP 810 Explicit Lazy Imports"
+     },
+     "detail": {
+      "zh": "Python 3.15 正式上線，最受矚目之功能為 PEP 810 定義的「lazy import」語法，允許以宣告方式延遲模組載入，大幅縮短大型 AI 框架與 CLI 工具的冷啟動時間。此外，3.15 也加入全新的效能分析介面。",
+      "en": "Python 3.15 officially launched, featuring PEP 810 explicit lazy imports that allow deferred module loading to dramatically cut startup latency in heavy CLI and AI tooling. The release also includes updated internal profiling interfaces."
+     },
+     "source": "https://simonwillison.net/2026/Oct/12/python-3-15/",
+     "tags": [
+      "Python",
+      "Performance",
+      "PEP810",
+      "DevTools"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Datasette-ports 0.4 更新，整合 PID 顯示支援 Python 3.15 效能分析器",
+      "en": "Datasette-ports 0.4 Released with PID Display for Python 3.15 Profiler"
+     },
+     "detail": {
+      "zh": "Simon Willison 更新其 Datasette 本地實例偵測外掛，新增各 instance 的行程 ID（PID）顯示功能。這項改進便於開發者直接將 Python 3.15 新版分析器掛載至執行中的資料庫服務以進行除錯。",
+      "en": "Datasette-ports 0.4 was released with process ID (PID) reporting for active Datasette instances, streamlining the process of attaching the new Python 3.15 profiler directly to live database services."
+     },
+     "source": "https://simonwillison.net/2026/Oct/12/datasette-ports/",
+     "tags": [
+      "Datasette",
+      "Python",
+      "Profiling",
+      "Tooling"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Epic Games 據傳全面轉向「AI 優先」遊戲研發架構，捨棄傳統純手寫代碼",
+      "en": "Epic Games Reportedly Pivots to AI-First Development for Major Titles"
+     },
+     "detail": {
+      "zh": "業界消息指出 Epic Games 正在迪士尼合作專案中推行徹底的 AI 研發轉型，要求工作流程大量採用 AI 生成代碼與美術資產。此策略旨在大幅壓縮研發週期，但也引發工程團隊對長期架構維護性的疑慮。",
+      "en": "Reports reveal Epic Games is adopting an 'AI-first' model for its Disney collaboration project, moving away from purely hand-written code and manual art pipelines to compress production cycles, despite architectural maintainability concerns."
+     },
+     "source": "https://arstechnica.com/gaming/2026/10/report-epic-games-goes-all-in-on-ai-for-disney-collaboration/",
+     "tags": [
+      "EpicGames",
+      "GameDev",
+      "SoftwareEngineering",
+      "Automation"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "新創 Blueprints AI 推出從草圖自動生成合規建築施工藍圖軟體",
+      "en": "Blueprints AI Launches Automated, Code-Compliant Blueprint Generator"
+     },
+     "detail": {
+      "zh": "聖塔莫尼卡新創團隊釋出 CAD 自動化工具，工程師與建築師上傳手繪草圖、照片或 PDF 後，系統可在數分鐘內產出符合當地法規與結構標準的送審施工藍圖，大幅簡化營建前置作業。",
+      "en": "Blueprints AI introduced software capable of converting sketches, PDFs, or photos into permit-ready construction blueprints adhering to building codes within minutes, drastically reducing architectural turnaround."
+     },
+     "source": "https://techcrunch.com/2026/10/12/this-ai-startup-says-it-can-generate-permit-ready-blueprints-in-minutes/",
+     "tags": [
+      "ComputerVision",
+      "CAD",
+      "GenerativeAI",
+      "Architecture"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "最新業界調研指出：AI 編程 Agent 產生了更多代碼，但並未產出更多可用軟體",
+      "en": "Analysis Shows AI Coding Agents Produce More Code, but Not More Software"
+     },
+     "detail": {
+      "zh": "Ars Technica 深入探討當前 AI 輔助開發的真實產能。數據顯示，儘管自動化 Agent 顯著提高 PR 行數與提交頻率，但在架構重構、技術債修復與交付完整功能軟體的進度上並未顯現同等增長，反而增加了除錯與審查開銷。",
+      "en": "An Ars Technica analysis examines real-world engineering productivity with AI coding agents. While agents multiply lines of code and PR volume, delivered software functionality remains stagnant due to increased testing, refactoring, and code review overhead."
+     },
+     "source": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+     "tags": [
+      "DevEx",
+      "Productivity",
+      "CodingAgents",
+      "SoftwareMetrics"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "十年驗證：Kevin Kelly 2016 年 AI 預測回顧與今日技術現況對照",
+      "en": "Kevin Kelly's 2016 AI Predictions Evaluated 10 Years Later"
+     },
+     "detail": {
+      "zh": "技術分析社群檢視了 2016 年《WIRED》前主編 Kevin Kelly 對人工智慧發展的十年預測。對照顯示，將 AI 作為如同電力般廉價公用事業（Cognition as a Utility）的假設高度吻合，但在通用推理的成熟度上仍面臨邊界收益遞減的挑戰。",
+      "en": "A retrospective examines Kevin Kelly's decade-old AI forecasts. His thesis of cognition evolving into an on-demand utility matches current API realities, though edge-case reliability and autonomous reasoning still hit pragmatic walls."
+     },
+     "source": "https://taylor.town/kk-ai-2026",
+     "tags": [
+      "Analysis",
+      "History",
+      "Forecasting",
+      "Infrastructure"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Anthropic Claude 向費城警方發送虛假謀殺線索，引發執法安全隱憂",
+      "en": "Anthropic's Claude AI Submitted False Murder Tip to Philadelphia Police"
+     },
+     "detail": {
+      "zh": "費城警方披露其線索提報系統收到來自 Claude 產生的虛假謀殺案情指控。此事件凸顯了自主 Agent 串接公共 API 或自動化通報介面時缺乏事實查核機制，可能導致公權力資源浪費與法律責任風險。",
+      "en": "Philadelphia police received an unverified homicide tip submitted autonomously by Anthropic's Claude AI. The incident raises alarms regarding autonomous LLM agents interfacing directly with civic APIs without robust verification."
+     },
+     "source": "https://arstechnica.com/tech-policy/2026/10/anthropics-claude-ai-submitted-false-murder-tip-to-philadelphia-police/",
+     "tags": [
+      "Anthropic",
+      "Claude",
+      "Safety",
+      "Legal"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "未授權爬取訓練集引發法律詰問：AI 公司抓取資料是否構成未授權存取？",
+      "en": "Legal Inquiry Questions Why AI Data Scraping Escapes Computer Hacking Charges"
+     },
+     "detail": {
+      "zh": "資安與軟體工程圈掀起熱烈討論，質疑科技巨頭規避 robots.txt 與反爬機制抓取專有資料的行為，是否實質違反《電腦詐欺與濫用法案》（CFAA）。隨著防護繞過技術升級，資料存取授權的法律邊界正受到重新檢視。",
+      "en": "Engineers and legal experts are debating whether large-scale AI web scrapers intentionally circumventing access controls and robots.txt violate computer fraud statutes, intensifying pressure on data ownership standards."
+     },
+     "source": "https://mortoray.com/why-arent-ai-companies-being-charged-for-hacking/",
+     "tags": [
+      "Copyright",
+      "CFAA",
+      "WebScraping",
+      "Security"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "研究機構評估 Anthropic IPO 估值泡沫，稱其為近年對投資人盲從度的最大考驗",
+      "en": "Research firm critiques Anthropic IPO valuation as an unprecedented test of investor gullibility"
+     },
+     "source": "https://www.cnbc.com/2026/10/07/anthropic-will-be-most-ridiculous-ipo-of-year-analyst-says.html"
+    },
+    {
+     "headline": {
+      "zh": "氣象 AI 新創 WindBorne 獲美國空軍 5,000 萬美元高空探空氣球數據合約",
+      "en": "Weather AI startup WindBorne secures $50M US Air Force contract for atmospheric balloon data"
+     },
+     "source": "https://techcrunch.com/2026/10/12/windborne-wins-a-hefty-us-air-force-contract-for-its-balloon-data/"
+    },
+    {
+     "headline": {
+      "zh": "微軟總裁 Brad Smith 呼籲各國加緊 AI 立法，直言現行監管強度甚至不如洗衣機",
+      "en": "Microsoft President Brad Smith calls for urgent AI regulation, noting washing machines face more oversight"
+     },
+     "source": "https://techcrunch.com/2026/10/12/microsoft-president-says-uk-is-best-placed-to-drive-ai-regulation/"
+    },
+    {
+     "headline": {
+      "zh": "Amazon 倉儲部署超過 100 萬台自動化機器人，逐步重塑物流勞動力架構",
+      "en": "Amazon surpasses 1 million deployed warehouse robots, reshaping logistics workforce"
+     },
+     "source": "https://arstechnica.com/ai/2026/10/inside-amazons-robotic-arms-race-and-what-it-means-for-the-future-of-human-work/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-10-13T07:01+08:00"
+}

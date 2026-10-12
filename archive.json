@@ -1,6 +1,14 @@
 {
- "latest": "2026-10-12",
+ "latest": "2026-10-13",
  "reports": [
+  {
+   "date": "2026-10-13",
+   "type": "daily",
+   "summary": {
+    "zh": "Meta推前沿模型Muse，微軟自研晶片Maia 300，QGIS禁AI貢獻",
+    "en": "Meta unveils Muse Wonder, Microsoft reveals Maia 300 chip, QGIS pauses AI PRs"
+   }
+  },
   {
    "date": "2026-10-12",
    "type": "weekly",
