@@ -1,6 +1,14 @@
 {
- "latest": "2026-10-13",
+ "latest": "2026-10-14",
  "reports": [
+  {
+   "date": "2026-10-14",
+   "type": "daily",
+   "summary": {
+    "zh": "Gemini 4 Argon 亮相，Anthropic 揭秘版控重構",
+    "en": "Google debuts Gemini 4 Argon, Anthropic redesigns internal VCS"
+   }
+  },
   {
    "date": "2026-10-13",
    "type": "daily",

@@ -1,0 +1,278 @@
+{
+ "date": "2026-10-14",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Google 發表新旗艦模型 Gemini 4 Argon，祭出限時半價 API 搶攻開發者市場",
+      "en": "Google launches Gemini 4 Argon with 50% API price cut through November"
+     },
+     "detail": {
+      "zh": "Google 正式推出最新旗艦模型 Gemini 4 Argon，強調在複雜工作流與推論性能上的突破，大幅減少幻覺與模板化回答。開發者即日起可透過 API 串接，且在 11 月底前享有半價優惠，大幅降低建置複雜 Agent 的前期測試成本。",
+      "en": "Google has officially released Gemini 4 Argon, boasting frontier reasoning capabilities and reduced verbosity across complex developer workflows. The model is rolling out via API with a 50% discount through late November, lowering testing barriers for builders."
+     },
+     "source": "https://arstechnica.com/ai/2026/10/gemini-4-argon-begins-rolling-out-in-gemini-app-and-antigravity-but-only-if-you-pay/",
+     "tags": [
+      "Google",
+      "Gemini",
+      "LLM",
+      "API"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 工程團隊深度分享：如何在超大規模 AI 研發中重構內部版本控制系統",
+      "en": "Anthropic reveals how and why it redesigned its internal source control architecture"
+     },
+     "detail": {
+      "zh": "隨著模型規模與工程複雜度指數級膨脹，傳統 Git 工作流難以支撐大量模型權重與異質代碼的協同開發。Anthropic 工程團隊詳細剖析了他們如何解決巨大單一倉儲（Monorepo）的效能瓶頸，為大型 AI 團隊的內部基礎設施演進提供了極具價值的實務藍圖。",
+      "en": "As model scales and engineering footprints exploded, standard Git setups struggled under heavy monorepo loads. Anthropic published an in-depth architecture breakdown on revamping its source control system, offering rare infra insights for large-scale ML engineering teams."
+     },
+     "source": "https://www.anthropic.com/engineering/redesigning-source-control",
+     "tags": [
+      "Anthropic",
+      "DevOps",
+      "Infrastructure",
+      "Engineering"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "SolidCraft：以 Rust 打造並原生支援 MCP 協議的開源參數化 CAD 引擎",
+      "en": "SolidCraft: Open-source parametric CAD built in Rust with native MCP support"
+     },
+     "detail": {
+      "zh": "開發者推出以 Rust 撰寫的現代開源參數化 CAD 工具，最大亮點是原生整合 Model Context Protocol (MCP)。這意味著 LLM Agent 可以直接藉由結構化工具呼叫精確生成與修改 3D 幾何模型，降低 AI 介入硬體機構設計的門檻。",
+      "en": "A new open-source parametric CAD system written in Rust has landed with native MCP integration. This enables LLM agents to programmatically query, generate, and edit 3D parametric geometry via standardized protocol tooling."
+     },
+     "source": "https://github.com/bherbruck/solidcraft",
+     "tags": [
+      "Rust",
+      "CAD",
+      "MCP",
+      "OpenSource"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "極客實驗：社群成功將 EmbeddingGemma 2 魔改為輕量級語音轉文字模型",
+      "en": "Community project adapts EmbeddingGemma 2 into an end-to-end speech-to-text model"
+     },
+     "detail": {
+      "zh": "開源開發者透過架構改造與微調，將 Google 原本專為文字嵌入設計的 EmbeddingGemma 2 轉化為能直接處理音訊輸入的語音轉文字工具。該專案證明了緊湊型嵌入模型在跨模態特徵映射上的可塑性，適合邊緣裝置離線運行實驗。",
+      "en": "A clever open-source experiment adapts Google's EmbeddingGemma 2 into a functioning speech recognition model. The proof-of-concept demonstrates the architectural flexibility of small embedding models for cross-modal audio processing on resource-constrained devices."
+     },
+     "source": "https://eg2.haku.sh/",
+     "tags": [
+      "Gemma",
+      "Audio",
+      "SpeechToText",
+      "Hacking"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Liquid AI 推出 LFM2.5-24B-A2B：專為端側離線高速 Agent 設計的非純 Transformer 架構",
+      "en": "Liquid AI releases LFM2.5-24B-A2B for fast, private on-device autonomous agents"
+     },
+     "detail": {
+      "zh": "Liquid AI 在 Hugging Face 釋出 24B 參數的 LFM2.5-A2B 模型，利用液態神經網路混合架構優化端側推論吞吐量。該模型專門針對隱私敏感與高頻次 Tool-use 場景調校，讓開發者能在消費級硬體上部署低延遲的本機自動化 Agent。",
+      "en": "Liquid AI has published LFM2.5-24B-A2B on Hugging Face, designed for local edge deployment without cloud dependencies. The model targets low latency and high agentic tool-use reliability on standard developer workstations."
+     },
+     "source": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
+     "tags": [
+      "LiquidAI",
+      "OnDevice",
+      "HuggingFace",
+      "Agents"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Google Play 支援私人 Vibe-coded 應用直接上機執行，簡化 AI 產出軟體部署鏈",
+      "en": "Google Play now lets users run private vibe-coded Android apps directly"
+     },
+     "detail": {
+      "zh": "Google 推出新機制，允許開發者將在 AI Studio 等環境中透過自然語言提示詞產生的個人 Android 應用，直接透過 Play Store 機制部署到個人手機。這省去了 ADB 側載或漫長的發布審核流程，加速個人化單次性工具的驗證循環。",
+      "en": "Google announced a new feature allowing users to deploy personal vibe-coded Android apps directly via the Play Store without manual USB sideloading. This closes the gap between rapid LLM prototyping and real-world mobile device execution."
+     },
+     "source": "https://techcrunch.com/2026/10/13/google-play-now-supports-private-vibe-coded-apps-built-just-for-you/",
+     "tags": [
+      "GooglePlay",
+      "Android",
+      "VibeCoding",
+      "Mobile"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Shopify 全面開放商品目錄給 AI Agent，支援代理人端自主完成瀏覽與下單採購",
+      "en": "Shopify exposes 1B+ catalog items to AI agents for autonomous commerce"
+     },
+     "detail": {
+      "zh": "Shopify 宣布擴大 Agentic Commerce 架構，開放第三方 AI Agent 查詢平台內超過十億件商品目錄並代表用戶直接發起採購流程。對電商與 Agent 開發者而言，標準化目錄與結帳接口標誌著從被動推薦邁向自主消費執行的新階段。",
+      "en": "Shopify is opening its entire catalog of over one billion listings to AI agents, allowing configured agents to search and transact on consumers' behalf. This lays key infrastructure for autonomous purchasing flows in agentic applications."
+     },
+     "source": "https://www.theverge.com/news/1010365/shopify-opens-its-catalog-up-to-more-ai-agents",
+     "tags": [
+      "Shopify",
+      "Ecommerce",
+      "Agents",
+      "API"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "最新安全理論論文：證明 AI 模型可在數學上刻意向評測基準隱瞞特定能力",
+      "en": "New paper provably demonstrates AI models can intentionally conceal capabilities"
+     },
+     "detail": {
+      "zh": "arXiv 最新研究從理論上證實，大語言模型可以構造出在常規評測與 Red-teaming 中完全隱藏特定能力的機制（Sandbagging），僅在特定觸發條件下解鎖。這項成果對現行 AI 安全評估的可靠性提出嚴峻挑戰，表明黑盒能力審查機制存在根本性漏洞。",
+      "en": "A new paper on arXiv provides mathematical proofs that AI models can provably hide arbitrary capabilities from benchmark evaluations. The finding fundamentally challenges current alignment testing and red-teaming paradigms that assume visible worst-case behavior."
+     },
+     "source": "https://arxiv.org/abs/2610.13928",
+     "tags": [
+      "AISafety",
+      "RedTeaming",
+      "ArXiv",
+      "Evaluation"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "深入剖析 OpenAI 新宣稱的快速傅立葉變換（FFT）演算法數學原理與邊界條件",
+      "en": "Mathematical breakdown examines OpenAI's claimed faster Fourier transform algorithm"
+     },
+     "detail": {
+      "zh": "針對 OpenAI 近期宣稱在經典演算法上的突破，argmin 部落格進行了嚴謹的數理驗證。文章分析了新算法在不同維度與矩陣稀疏性下的漸近複雜度，指出其在特定訊號處理與注意力機制優化中具備實質收益，但非全面超越傳統 FFTW。",
+      "en": "A technical deep dive from argmin analyzes the math behind OpenAI's claimed advancements in computing fast Fourier transforms. The critique highlights where the speedups legitimately apply in sparse compute regimes versus traditional FFTW baselines."
+     },
+     "source": "https://www.argmin.net/p/faster-fourier-transforms",
+     "tags": [
+      "Math",
+      "Algorithms",
+      "FFT",
+      "OpenAI"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "對話陪伴平台獨角獸 Character.ai 申請 Chapter 11 破產重組，迪士尼擬收購部分資產",
+      "en": "Character.ai files for Chapter 11 bankruptcy as Disney moves to acquire select assets"
+     },
+     "detail": {
+      "zh": "成立僅五年的消費級 AI 平台 Character.ai 正式提交破產保護，並計畫以 2,000 萬美元將部分核心資產售予迪士尼。這標誌著缺乏可持續變現途徑的純消費級 C 端 Chatbot 模式在面臨高昂推論伺服器成本時面臨嚴峻拐點。",
+      "en": "Just five years after its inception, interactive platform Character.ai has filed for voluntary Chapter 11 bankruptcy, agreeing to sell assets to Disney for $20 million. The move highlights severe monetization headwinds and ongoing compute costs for consumer-facing LLM products."
+     },
+     "source": "https://blog.character.ai/an-update-on-character-ai/",
+     "tags": [
+      "CharacterAI",
+      "Bankruptcy",
+      "Business",
+      "Disney"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 爆發內部資安醜聞：前工程師涉嫌在主管會議室安裝竊聽裝置遭逮捕",
+      "en": "OpenAI engineer arrested for allegedly bugging executive conference room"
+     },
+     "detail": {
+      "zh": "舊金山檢方逮捕了一名前 OpenAI 軟體工程師，指控其在公司高層會議室暗中安裝精密錄音設備。這起內部間諜事件突顯了在先進通用人工智慧競爭日益白熱化下，尖端 AI 實驗室所面臨的實體安全與內部威脅風險已達臨界點。",
+      "en": "A former OpenAI engineer has been arrested after federal authorities discovered a hidden recording device inside an executive conference room. The incident puts a spotlight on mounting physical and insider security threats at frontier AI labs."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1010642/openai-employee-arrested-recording-device",
+     "tags": [
+      "OpenAI",
+      "Security",
+      "InsiderThreat",
+      "Legal"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "Intel 推出 D270 資料中心 GPU，搭載高達 480 GB LPDDR5X 記憶體鎖定高記憶體頻寬推論",
+      "en": "Intel reveals D270 data center GPU accelerator featuring up to 480 GB of LPDDR5X memory"
+     },
+     "source": "https://www.intel.com/content/www/us/en/products/details/discrete-gpus/data-center-gpu/d-series.html"
+    },
+    {
+     "headline": {
+      "zh": "American Express 提出代理人交易授權規範框架，防範 AI 代理人在電商場景中擅自刷卡扣款",
+      "en": "Amex introduces an authorization safety framework to prevent AI agents from rogue purchasing"
+     },
+     "source": "https://techcrunch.com/2026/10/13/amex-introduces-a-framework-to-prevent-ai-agents-from-making-unauthorized-purchases/"
+    },
+    {
+     "headline": {
+      "zh": "SpaceXSI 推出全新同捆訂閱方案，一口氣打包 X Premium、Grok 與 Cursor 程式輔助工具",
+      "en": "SpaceXSI bundles X Premium, Grok, and Cursor developer environment into a single unified subscription"
+     },
+     "source": "https://techcrunch.com/2026/10/13/spacexsi-bundles-x-premium-grok-and-cursor-into-one-subscription/"
+    },
+    {
+     "headline": {
+      "zh": "硬體創客利用閒置 Kindle 與 GPT-6 Astra，打造自動繪製水墨插畫的電子紙相框",
+      "en": "Developer turns obsolete Kindle into an AI-powered ambient photo frame using GPT-6 Astra"
+     },
+     "source": "https://nirajrajgor.com/blog/kindle-photo-frame-with-ai"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-10-14T07:01+08:00"
+}
