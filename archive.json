@@ -1,6 +1,14 @@
 {
- "latest": "2026-10-14",
+ "latest": "2026-10-15",
  "reports": [
+  {
+   "date": "2026-10-15",
+   "type": "daily",
+   "summary": {
+    "zh": "Linus首用LLM修補核心；Anthropic自研VCS",
+    "en": "Linus merges first LLM patch; Anthropic ditches Git for Scion."
+   }
+  },
   {
    "date": "2026-10-14",
    "type": "daily",

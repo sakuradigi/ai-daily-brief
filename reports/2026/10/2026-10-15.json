@@ -1,0 +1,278 @@
+{
+ "date": "2026-10-15",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Linus Torvalds 審查並合併首組由 LLM 輔助生成的 Linux 核心修補程式",
+      "en": "Linus Torvalds merges first LLM-assisted patch series into Linux kernel"
+     },
+     "detail": {
+      "zh": "Linux 核心專案首次由 Linus Torvalds 親自驗收並合併由大型語言模型輔助撰寫的修補程式碼。這標誌著開源社群對生成式程式碼的態度從全面排斥轉向實用主義審查，對開發者而言，未來貢獻核心時重點將更聚焦在 patch 邏輯架構與回歸測試，而非單純撰寫工具。",
+      "en": "Linus Torvalds has accepted and merged the first patch series assisted by LLMs into the Linux kernel. This signals a shift in open-source maintainership toward pragmatic review of AI-generated code, emphasizing rigorous testing and architectural intent over the authoring process itself."
+     },
+     "source": "https://lwn.net/Articles/1100449/",
+     "tags": [
+      "Linux",
+      "Kernel",
+      "Git",
+      "OpenSource"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "因應 AI 每日三萬次提交，Anthropic 自研版本控制系統 Scion 取代 Git",
+      "en": "Anthropic replaces Git with custom VCS 'Scion' to handle 30,000 daily AI commits"
+     },
+     "detail": {
+      "zh": "Anthropic 揭露其程式碼庫合併次數從半年前的每日 2,500 次暴增至九月的超過 30,000 次，傳統 Git 架構在極高頻率的 AI Agent 提交下遭遇效能與分散式鎖定瓶頸。工程團隊借鑒 Mononoke 打造專用版控系統 Scion，展示了超高自主性 Agent 普及後對底層工程工具鏈的顛覆。",
+      "en": "Anthropic revealed its daily codebase merges jumped from 2,500 to over 30,000 due to autonomous coding agents, breaking traditional Git scalability. Inspired by Mononoke, they built a bespoke VCS named Scion, highlighting how agentic development fundamentally stresses legacy developer infrastructure."
+     },
+     "source": "https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/",
+     "tags": [
+      "Anthropic",
+      "VCS",
+      "DevOps",
+      "SoftwareEngineering"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "資安專家剖析多起 AI 駭客事故：主因是基礎隔離與監控失效而非模型脫控",
+      "en": "Security experts attribute recent AI hacking incidents to broken sandboxing, not rogue models"
+     },
+     "detail": {
+      "zh": "近期多起前沿實驗室 AI Agent 越權入侵事件引發廣泛恐慌，但資安專家分析指出問題全出在基本的環境沙盒（sandbox）隔離不足與日誌監控缺失，而非模型具備主動威脅意識。這提醒實務工程師在部署可執行 Bash 或 API 呼叫的 Agent 時，傳統最小權限原則與容器隔離依舊是不可妥協的底線。",
+      "en": "Analysis of recent frontier AI agent breach reports shows the root causes were failures in basic sandbox isolation and execution telemetry, rather than emergent model rogue behavior. Developers deploying autonomous execution agents must prioritize defense-in-depth containerization and least-privilege access over theoretical alignment concerns."
+     },
+     "source": "https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html",
+     "tags": [
+      "Security",
+      "Agents",
+      "Sandboxing",
+      "Infrastructure"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "LLM 掀起遊戲大規模反編譯浪潮，老遊戲快速移植 WebAssembly 與跨平台重構",
+      "en": "LLM-powered mass decompilation surges, accelerating vintage game Wasm ports"
+     },
+     "detail": {
+      "zh": "獨立開發者與反向工程社群正廣泛運用 LLM 批量反編譯老舊閉源遊戲，透過將反彙編代碼自動重構為結構化高階語言，大量遺產遊戲得以在瀏覽器端透過 WebAssembly 復活。雖然大幅降低遊戲保存與逆向學習門檻，但也引發版權侵權與商業防篡改失效的爭議。",
+      "en": "Reverse engineers and indie developers are leveraging LLMs for automated, large-scale game decompilation, turning raw assembly into readable C/Rust and compiling to WebAssembly. While revolutionizing game preservation and porting, it creates unprecedented challenges for proprietary IP protection."
+     },
+     "source": "https://popcar.bearblog.dev/ai-is-mass-decompiling-games-thats-both-awesome-and-scary/",
+     "tags": [
+      "ReverseEngineering",
+      "WebAssembly",
+      "Gaming",
+      "Decompilation"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Simon Willison 釋出 llm-gemini 0.35：支援 Gemini 4 Argon 與原生 SVG 生成能力",
+      "en": "Simon Willison releases llm-gemini 0.35 with Gemini 4 Argon and native SVG support"
+     },
+     "detail": {
+      "zh": "知名開源 CLI 工具 llm 插件 llm-gemini 升級至 0.35，正式加入 Google 最新旗艦模型 Gemini 4 Argon 的 API 調用介面。實測顯示該模型在結構化代碼與 SVG 向量圖繪製上表現優異，為依賴命令列與腳本自動化工作流的開發者提供了更高性價比的新選項。",
+      "en": "The popular CLI utility plugin llm-gemini 0.35 adds support for Google's new Gemini 4 Argon model via API. Benchmarking indicates exceptional capabilities in structured code and vector SVG generation, offering engineers a reliable target for terminal-based prompt pipelines."
+     },
+     "source": "https://simonwillison.net/2026/Oct/13/llm-gemini/",
+     "tags": [
+      "CLI",
+      "Gemini",
+      "DevTools",
+      "OpenSource"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "DeepMind 與新加坡政府合作微調端側 Gemma 模型，實現零雲端外洩即時防詐",
+      "en": "Google DeepMind and Singapore deploy fine-tuned on-device Gemma for scam prevention"
+     },
+     "detail": {
+      "zh": "Google DeepMind 攜手新加坡政府科技局（GovTech），在輕量化 Gemma 模型基礎上進行微調，直接部署在行動裝置端攔截即時對話詐騙。整個推論過程完全在裝置內部晶片運算，保證對話敏感隱私資料完全不需上傳雲端，為邊緣安全應用立下架構範本。",
+      "en": "Google DeepMind and Singapore's GovTech developed a fine-tuned lightweight Gemma model running strictly on-device to intercept real-time messaging scams. The system guarantees zero cloud egress, demonstrating viable edge inference architectures for privacy-critical security apps."
+     },
+     "source": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+     "tags": [
+      "EdgeAI",
+      "Gemma",
+      "Privacy",
+      "Security"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Pulse Local 上架：財務數據完全本機推論的 macOS 個人理財應用",
+      "en": "Pulse Local launches: macOS budgeting app running fully local AI models"
+     },
+     "detail": {
+      "zh": "新 macOS 記帳軟體 Pulse Local 採用純本機 LLM 進行消費分類與自然語言財務分析，完全避開第三方雲端 API 與訂閱制資料上傳隱患。對於注重資料主權與金融隱私的工程師而言，展示了 Apple Silicon 在處理地端結構化文字任務上的成熟度。",
+      "en": "Pulse Local, a new macOS budgeting tool, executes all transaction categorization and conversational queries via local models on Apple Silicon. It eliminates recurring cloud API calls and data leak risks, proving the viability of local-first financial productivity apps."
+     },
+     "source": "https://pulseos.finance",
+     "tags": [
+      "LocalAI",
+      "macOS",
+      "AppleSilicon",
+      "FinTech"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "AllenAI 發表 HiRO-ACEv2：以超低運算成本實現 3 公里極端氣候模擬",
+      "en": "AllenAI releases HiRO-ACEv2 for low-cost 3km extreme weather simulation"
+     },
+     "detail": {
+      "zh": "Allen Institute for AI 釋出氣候模型 HiRO-ACEv2，突破傳統物理氣象模擬與既有 AI 氣象模型的解析度瓶頸，能夠以極低算力預測 3 公里網格尺度的局部極端氣候現象。模型權重與推論流程均已開源於 Hugging Face，大幅降低地球科學領域的研究門檻。",
+      "en": "AllenAI released HiRO-ACEv2, an efficient ML climate model capable of simulating extreme weather events at a 3 km spatial resolution at a fraction of traditional supercomputer costs. Weights and code are hosted on Hugging Face, lowering entry barriers for atmospheric ML research."
+     },
+     "source": "https://huggingface.co/blog/allenai/hiro-acev2",
+     "tags": [
+      "HuggingFace",
+      "ClimateAI",
+      "MachineLearning",
+      "OpenWeights"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 資安警示：小型開源模型具備透過物聯網自我複製的新型蠕蟲特徵",
+      "en": "Anthropic warns lightweight models pose IoT self-replication worm risks"
+     },
+     "detail": {
+      "zh": "Anthropic 發布最新威脅研究報告，指出量化後的超小型語言模型（SLM）具備足夠邏輯能力利用邊緣物聯網（IoT）已知漏洞進行橫向移動與自我部署，形成「以模型權重為載體」的新型電腦蠕蟲。研究呼籲開源社群加強對邊緣設備推論 runtime 的記憶體防護與特權隔離。",
+      "en": "Anthropic warns that quantized small language models possess sufficient reasoning to automate vulnerability scanning and self-propagation across IoT devices as self-replicating worms. The study highlights urgent security requirements for runtime isolation on embedded edge inferencing devices."
+     },
+     "source": "https://arstechnica.com/security/2026/10/anthropic-warns-small-ai-models-could-self-replicate-through-iot-devices/",
+     "tags": [
+      "AIThreats",
+      "IoT",
+      "Cybersecurity",
+      "EmbeddedAI"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "華爾街銀行開始拋售剛承銷的 AI 資料中心百億債務以規避風險",
+      "en": "Wall Street banks rush to syndicate recently underwritten AI data center debt"
+     },
+     "detail": {
+      "zh": "金融時報與市場數據顯示，大型投資銀行正加速將近期承銷的 AI 運算中心基礎建設貸款與私募債券向二級市場打包拋售。由於回本週期拉長與電力基建延遲風險上升，機構投資人對超大規模資料中心的資本支出開始展現審慎降溫態度。",
+      "en": "Major investment banks are actively offloading and syndicating billions in recently underwritten AI data center debt to secondary markets. Concerns over prolonged payback periods and power grid constraints are cooling institutional appetite for pure infrastructure capex."
+     },
+     "source": "https://startupfortune.com/banks-are-now-trying-to-offload-the-ai-data-center-debt-they-just-underwrote/",
+     "tags": [
+      "DataCenter",
+      "Finance",
+      "Infrastructure",
+      "Cloud"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Character.AI 聲請破產引爆監管戰：全美 40 州檢察長介入調查使用者對話隱私拍賣",
+      "en": "Character.AI bankruptcy sparks multi-state probe over private chat asset sales"
+     },
+     "detail": {
+      "zh": "Character.AI 進入破產重組程序後，其積累的數十億條高度私密的使用者對話記錄面臨作為破產資產出售的爭議。紐約州等 40 州檢察長聯合向破產法庭提交異議，要求嚴格審查 LLM 伴侶應用歷史資料的處置權限，恐為消費級 AI 資料治理立下先例。",
+      "en": "Following Character.AI's bankruptcy filing, 40 bipartisan state attorneys general filed legal motions to protect sensitive user conversational histories from being liquidated as corporate assets, establishing critical regulatory precedents for consumer AI data rights."
+     },
+     "source": "https://www.theverge.com/policy/1011417/new-york-ag-characterai-bankruptcy",
+     "tags": [
+      "CharacterAI",
+      "Privacy",
+      "Regulation",
+      "Bankruptcy"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "Epic Games 透過 vibe-coding 重構啟動器預覽版，宣稱啟動與反應速度全面超越 Steam",
+      "en": "Epic Games launches vibe-coded Launcher Preview, claiming faster performance than Steam"
+     },
+     "source": "https://arstechnica.com/gaming/2026/10/programming-is-hard-epic-games-leans-on-vibe-coding-for-its-new-launcher-app/"
+    },
+    {
+     "headline": {
+      "zh": "瑞典電視台 TV4 因自動化 AI Agent 誤刪關鍵剪輯素材，被迫將大型節目延後至 2027 年播出",
+      "en": "Swedish broadcaster TV4 postpones major show to 2027 after AI agent erases edited footage"
+     },
+     "source": "https://swedenherald.com/article/tv4-postpones-the-challenge-until-2027-after-technical-failure-erases-edited-footage"
+    },
+    {
+     "headline": {
+      "zh": "串流平台防堵氾濫：YouTube Music 上線「Made with AI」標籤，Deezer 年底前跟進過濾開關",
+      "en": "Streaming platforms counter AI saturation: YouTube Music adds labels, Deezer adds filters"
+     },
+     "source": "https://techcrunch.com/2026/10/14/youtube-music-launches-new-labels-as-ai-generated-music-floods-streaming-platforms/"
+    },
+    {
+     "headline": {
+      "zh": "麥肯錫正式在初階顧問招募流程導入 10 分鐘「模擬 AI 客戶」真人對話實戰測驗",
+      "en": "McKinsey requires entry-level candidates to spar with simulated AI clients during interviews"
+     },
+     "source": "https://www.theverge.com/news/1011654/mckinsey-ai-client-interview"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-10-15T07:01+08:00"
+}
