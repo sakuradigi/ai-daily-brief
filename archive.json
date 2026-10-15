@@ -1,6 +1,14 @@
 {
- "latest": "2026-10-15",
+ "latest": "2026-10-16",
  "reports": [
+  {
+   "date": "2026-10-16",
+   "type": "daily",
+   "summary": {
+    "zh": "Meta開源Muse多模態MoE模型；Anthropic Q3營收衝上168億美元；FLUX.3入駐Diffusers",
+    "en": "Meta opens weights for Muse Spark MoE; Anthropic Q3 revenue hits $16.8B ahead of IPO; FLUX.3 lands in Diffusers."
+   }
+  },
   {
    "date": "2026-10-15",
    "type": "daily",
