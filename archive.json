@@ -1,6 +1,14 @@
 {
- "latest": "2026-10-16",
+ "latest": "2026-10-17",
  "reports": [
+  {
+   "date": "2026-10-17",
+   "type": "daily",
+   "summary": {
+    "zh": "Postgres 因 AI 審查延期，PS5 支援本地 LLM，開源 501B 模型釋出",
+    "en": "Postgres 19 delayed by AI bug flood; PS5 runs GGUF natively; Beam 501B open model released."
+   }
+  },
   {
    "date": "2026-10-16",
    "type": "daily",
