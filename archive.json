@@ -1,6 +1,14 @@
 {
- "latest": "2026-10-17",
+ "latest": "2026-10-18",
  "reports": [
+  {
+   "date": "2026-10-18",
+   "type": "daily",
+   "summary": {
+    "zh": "DeepSeek釋出新模型，Replit切換預設至OpenAI",
+    "en": "DeepSeek launches v4.1-Flash; Replit defaults to OpenAI over Anthropic"
+   }
+  },
   {
    "date": "2026-10-17",
    "type": "daily",

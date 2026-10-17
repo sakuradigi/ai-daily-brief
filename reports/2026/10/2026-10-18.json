@@ -1,0 +1,212 @@
+{
+ "date": "2026-10-18",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "DeepSeek 正式開源釋出 DeepSeek-V4.1-Flash-1017 模型權重",
+      "en": "DeepSeek Releases DeepSeek-V4.1-Flash-1017 Model Weights on Hugging Face"
+     },
+     "detail": {
+      "zh": "DeepSeek 於 Hugging Face 釋出最新的輕量高速模型 V4.1-Flash-1017。該版本主打極致推論延遲與高吞吐量，適合需要邊緣運算或對 API 回應速度極度敏感的 Agent 與即時推理場景。",
+      "en": "DeepSeek has uploaded the weights for DeepSeek-V4.1-Flash-1017 to Hugging Face. The model optimizes inference latency and throughput for high-concurrency and latency-critical agent workflows."
+     },
+     "source": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+     "tags": [
+      "LLM",
+      "DeepSeek",
+      "OpenSource"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Replit 宣布更換預設底層模型，由 Anthropic 轉向 OpenAI",
+      "en": "Replit Switches Default AI Provider from Anthropic to OpenAI"
+     },
+     "detail": {
+      "zh": "Replit 執行長證實其平台預設程式碼生成模型已換成 OpenAI，但仍保留 Claude 作為付費用戶的備選選項。這代表主流 AI 程式編輯工具在成本、程式碼補全延遲與合約談判上的重要版圖移轉。",
+      "en": "Replit CEO announced that OpenAI is now the default model provider across the platform, replacing Anthropic, though Claude remains available as an optional toggle for users."
+     },
+     "source": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
+     "tags": [
+      "Replit",
+      "OpenAI",
+      "Anthropic",
+      "DevTools"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "全球網站大規模封殺自主 AI Agent，網路自動化面臨嚴苛存取限制",
+      "en": "Websites Broadly Block Autonomous AI Agents Amid Scraping and Load Concerns"
+     },
+     "detail": {
+      "zh": "隨著各家推出能代客訂位、掃描全網的自主 Agent，愈來愈多主流網站開始透過更新 robots.txt 與部署反爬蟲偵測機制阻擋自主代理請求。開發者在構建跨站 Web Agent 時需注意阻斷率大幅上升的架構挑戰。",
+      "en": "Major web platforms are actively barring autonomous AI agents from accessing services. As developers ship agents for cross-site tasks, bot defenses and restrictive robots.txt policies are posing massive reliability hurdles."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+     "tags": [
+      "AIAgents",
+      "WebScraping",
+      "Infrastructure"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Llmspeed：採購 GPU 前預覽本地 LLM 實際推論速度的模擬工具",
+      "en": "Llmspeed: Benchmark and Feel Local LLM Speeds Before Buying Hardware"
+     },
+     "detail": {
+      "zh": "Llmspeed 讓開發者在購買硬體前，直接在瀏覽器模擬不同顯示卡（如 RTX 4090、Mac Studio）跑各尺寸量化模型時的每秒 token 吞吐量與體感延遲，解決地端部署硬體選型的試錯痛點。",
+      "en": "Llmspeed simulates the actual token throughput and generation latency of various quantized LLMs across different hardware setups, helping developers assess performance before hardware investment."
+     },
+     "source": "https://llmspeed.dev/",
+     "tags": [
+      "LocalLLM",
+      "Hardware",
+      "Benchmark"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenRouter 快速上線 DeepSeek-v4.1-Flash-1017 API 託管存取點",
+      "en": "OpenRouter Adds DeepSeek-v4.1-Flash-1017 API Support"
+     },
+     "detail": {
+      "zh": "OpenRouter 在 DeepSeek 釋出模型後迅速跟進，提供統一 API 介面供開發者即時呼叫與切換，省去自建推論伺服器或多雲部署的初期成本。",
+      "en": "OpenRouter has integrated DeepSeek-v4.1-Flash-1017, offering standardized API endpoints for developers to test and deploy without self-hosting infrastructure."
+     },
+     "source": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
+     "tags": [
+      "OpenRouter",
+      "API",
+      "DeepSeek"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "軟體工程工作流演進：AI Code Review 正從 PR 守門員轉變為即時拼字檢查",
+      "en": "The Evolution of AI Code Review: From PR Gatekeepers to Continuous In-Editor Checks"
+     },
+     "detail": {
+      "zh": "業界團隊分享 AI 輔助開發典範轉移：程式碼審查不再只是開 PR 後由同事批改，而是由 Claude 等模型在編輯器端以持續修正（如即時拼字檢查）的形式運作，大幅減少 PR 往返反覆審查的認知負擔。",
+      "en": "Engineering teams report a workflow shift where AI code review acts as a continuous background linter rather than a post-PR bottleneck, addressing errors before human engineers even review the pull request."
+     },
+     "source": "https://simonwillison.net/2026/Oct/16/code-review/",
+     "tags": [
+      "CodeReview",
+      "Claude",
+      "Workflow"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": []
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "引發媒體反彈後，Meta 撤除商業條款中暗示抓取新聞網站訓練 AI 的文字",
+      "en": "Meta Removes Contract Clause Suggesting Unrestricted Web Scraping for AI Training"
+     },
+     "detail": {
+      "zh": "Meta 更新其商業使用條款，移除了允許其使用網域內容改善與開發 AI 系統的爭議性條款。此舉是為平息出版業與新聞媒體對於未授權爬取內容進行基礎模型訓練的反對浪潮。",
+      "en": "Following significant industry pushback, Meta amended its commercial terms, deleting wording that permitted scraping domain content to develop and improve its AI models."
+     },
+     "source": "https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites",
+     "tags": [
+      "Meta",
+      "Copyright",
+      "Scraping"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 揭露四起涉及敏感財務、醫療與政府資料的非授權異常存取事件",
+      "en": "OpenAI Discloses Four Security Incidents Involving Financial, Medical, and Government Data"
+     },
+     "detail": {
+      "zh": "OpenAI 證實近期發生多起內部異常事件，涉及敏感用戶資料的外洩或未授權存取風險。這對依賴 OpenAI API 處理高合規性企業應用（如 HIPAA/金融資料）的架構師帶來資料治理警訊。",
+      "en": "OpenAI reported four rogue access incidents impacting sensitive financial, medical, and governmental data, raising data compliance and security considerations for enterprise API consumers."
+     },
+     "source": "https://fortune.com/2026/10/16/openai-discloses-four-more-rogue-incidents-involving-financial-medical-and-government-data/",
+     "tags": [
+      "OpenAI",
+      "Security",
+      "DataPrivacy"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "Amazon 於英國倉庫運用 AI 監視系統評估工人組織工會之風險",
+      "en": "Amazon deploys AI surveillance to assess union activity risks across UK warehouses."
+     },
+     "source": "https://www.opendemocracy.net/amazon-ai-surveillance-monitor-union-activity-uk-warehouses-birmingham-coventry-atlas-sutton-coldfield/"
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 團隊結構轉向資深化，內部工程師花費於會議的時間顯著增長",
+      "en": "Anthropic reports an increasingly senior workforce that spends significantly more time in meetings."
+     },
+     "source": "https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/"
+    },
+    {
+     "headline": {
+      "zh": "Meta 發言人澄清條款文字變更並未改變其現行的公開網路爬蟲機制",
+      "en": "Meta spokesperson insists updated terms do not represent changes to its current web crawling operations."
+     },
+     "source": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-10-18T07:01+08:00"
+}
