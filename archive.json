@@ -1,6 +1,14 @@
 {
- "latest": "2026-10-18",
+ "latest": "2026-10-19",
  "reports": [
+  {
+   "date": "2026-10-19",
+   "type": "weekly",
+   "summary": {
+    "zh": "DeepSeek推低價檢索API；Anthropic安全門檻惹議",
+    "en": "DeepSeek unveils cheap Search API; Anthropic safety bill draws debate"
+   }
+  },
   {
    "date": "2026-10-18",
    "type": "daily",

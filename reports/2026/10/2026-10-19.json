@@ -1,0 +1,241 @@
+{
+ "date": "2026-10-19",
+ "type": "weekly",
+ "weekly": {
+  "zh": "本週 AI 領域聚焦於三大趨勢：第一，工程工作流面臨「AI 程式碼通膨」，從 Anthropic 自研 Scion 取代 Git，到 PostgreSQL 19 因 AI 抓蟲過量而延期，代碼生成速度已徹底超越人類審查極限；第二，自主 Agent 落地遭遇實體與網路雙重阻力，全球網站開始集體阻擋 Agent 存取，資安與越權風險急速升溫；第三，開源模型與硬體生態持續推進，DeepSeek-V4.1、Meta Muse Spark 與 PS5/Arm 終端推論百花齊放。本週最重要三件事：Google 發表旗艦 Gemini 4 Argon 並祭出腰斬定價；Linus Torvalds 首度合併 LLM 輔助的 Linux 核心補丁；陪伴型 AI 獨角獸 Character.AI 申請破產重組並由迪士尼接收團隊。",
+  "en": "This week highlighted three macro trends: First, software engineering entered an era of 'AI code inflation'—from Anthropic building Scion to replace Git to PostgreSQL 19 delaying release under massive AI-reported bugs, code generation has outpaced review bandwidth. Second, autonomous agents faced heavy friction across the web as sites aggressively blocked automated traffic amid rising security and over-permission incidents. Third, the open-weight and edge ecosystem surged with DeepSeek-V4.1, Meta's Muse Spark, and native inference on PS5/Arm. The top three events were: Google releasing Gemini 4 Argon with aggressive half-price API rates; Linus Torvalds merging the first LLM-assisted patch into Linux; and Character.AI filing for bankruptcy with Disney absorbing its core talent."
+ },
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "DeepSeek 推出官方聯網檢索 API：每千次成功請求僅需 0.75 美元",
+      "en": "DeepSeek launches official Search & Fetch API at $0.75 per 1,000 requests"
+     },
+     "detail": {
+      "zh": "DeepSeek 正式公開 Search 與 Fetch 專用 API 服務，允許開發者以每千次成功請求 0.75 美元的極低成本完成即時網路檢索與網頁內容抓取。這項服務能大幅降低自建無頭瀏覽器與代理 IP 集群的維運負擔，加速為 Agent 賦予實時外部聯網與研調能力。",
+      "en": "DeepSeek officially released its Search and Fetch API endpoints, charging a flat $0.75 per 1,000 successful queries for real-time web search and page content extraction. This drastically cuts the operational cost of managing headless browser clusters and residential proxies for retrieval-augmented agent workflows."
+     },
+     "source": "https://api-docs.deepseek.com/guides/search/",
+     "tags": [
+      "DeepSeek",
+      "API",
+      "Web Search",
+      "Agent"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 提議聯邦 AI 安全法規草案：門檻高達「50 人死亡或 10 億美元損害」引發爭議",
+      "en": "Anthropic proposes AI safety bill kicking in only at 50 deaths or $1B in damages"
+     },
+     "detail": {
+      "zh": "Anthropic 向美國立法機構遞交 AI 安全框架草案，明定主管機關介入暫停或管制模型的強制門檻為「引發至少 50 人喪生或超過 10 億美元重大實體損害」，並提議將商務部設為唯一有權叫停模型的機構。社群與業界對此超高門檻反應兩極，質疑其在防範實質系統性風險時形同虛設。",
+      "en": "Anthropic submitted a draft federal AI safety bill requiring catastrophic triggers—specifically at least 50 deaths or $1 billion in damages—before regulators can mandate model shutdowns. The proposal also designates the Department of Commerce as the sole authority able to pause models, sparking debate over whether the enforcement bar is set impractically high."
+     },
+     "source": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model",
+     "tags": [
+      "Anthropic",
+      "AI Safety",
+      "Regulation",
+      "Policy"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Sphinx：在提交前隨機抽考 AI 生成程式碼細節的 Git 檢查工具",
+      "en": "Sphinx: A pre-commit hook that quizzes developers on their AI-generated code"
+     },
+     "detail": {
+      "zh": "針對日益氾濫的「Vibe Coding」與無腦複製貼上，開源專案 Sphinx 實作了一套 Git pre-push hook。它會在提交前分析變更，由 LLM 隨機向開發者提出關於這段代碼的邏輯與邊界條件問題，若無法答對便阻擋推送，強制工程師必須徹底理解提交的每行代碼。",
+      "en": "To combat reckless 'vibe coding', open-source tool Sphinx introduces a pre-push Git hook that inspects diffs and dynamically quizzes the committer on logic and edge cases using an LLM. Commits are blocked if the developer fails to explain the code, re-establishing personal accountability over AI commits."
+     },
+     "source": "https://sphinx-six-theta.vercel.app/",
+     "tags": [
+      "Git",
+      "Developer Tools",
+      "Code Review",
+      "Productivity"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Simon Willison 示範原生 document.currentScript 輕量動態渲染技巧",
+      "en": "Simon Willison demonstrates lightweight inline rendering via document.currentScript"
+     },
+     "detail": {
+      "zh": "獨立開發者 Simon Willison 探討了利用現代瀏覽器原生 `document.currentScript` 屬性構建微型行內樣板的技巧。透過單行函式定義，開發者能在零前端依賴、零編譯步驟的情況下就地自替換 DOM 節點，為小型靜態儀表板或 LLM 產生的 HTML 提供極度輕量化的動態插入方案。",
+      "en": "Simon Willison showcased an elegant trick using browser-native `document.currentScript.replaceWith()` to implement a zero-dependency, build-free inline templating mechanism. The pattern offers a lightweight approach for dynamically interpolating runtime values inside LLM-generated static HTML payloads."
+     },
+     "source": "https://simonwillison.net/2026/Oct/17/document-currentscript/",
+     "tags": [
+      "JavaScript",
+      "Web Dev",
+      "DOM",
+      "Frontend"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "全球網站啟動嚴苛存取限制，全面對自主 AI Agent 關閉大門",
+      "en": "Websites close their doors as webmasters aggressively block autonomous AI agents"
+     },
+     "detail": {
+      "zh": "多家主流網站與內容平台開始在大規模邊緣網路（如 Cloudflare）強化防護策略，主動阻擋各類自主瀏覽型 AI Agent 訪問。站方指出高頻率爬取造成龐大伺服器頻寬負擔且未帶來有效導流，迫使 Agent 產品必須轉向付費資料合作或尋求授權 API。",
+      "en": "Mainstream web publishers and SaaS platforms are heavily locking down access against autonomous AI agents using edge rate-limiting and behavioral blockers. With unmonitored scraping driving up infrastructure bills without generating human traffic, agent builders are increasingly pressured to rely on official paid data APIs."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+     "tags": [
+      "AI Agents",
+      "Web Scraping",
+      "Infrastructure",
+      "Bot Detection"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "arXiv 提出混合推理 Agent：在潛在空間思考、在文字空間執行",
+      "en": "Hybrid Reasoning Agents: Thinking in latent space while acting via text"
+     },
+     "detail": {
+      "zh": "新論文《Hybrid Reasoning Agents》提出結合連續潛在空間（Latent Space）推理與離散文字行動的新型 Agent 架構。該架構允許模型在隱式空間完成高密度邏輯規劃，避開逐字自回歸吐出冗長思考鏈的延遲與 Token 消耗，僅在需要工具呼叫與外部互動時轉譯為文字。",
+      "en": "A new arXiv preprint introduces Hybrid Reasoning Agents, decoupling internal reasoning from autoregressive text emission. By conducting complex multi-step planning within continuous latent vector representations and only decoding to text for environment interaction, the approach drastically reduces latency and token overhead."
+     },
+     "source": "https://arxiv.org/abs/2610.18861",
+     "tags": [
+      "arXiv",
+      "Agent",
+      "Latent Reasoning",
+      "LLM Architecture"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "迪士尼敲定假馬競標協議，全面接收 Character.AI 核心團隊",
+      "en": "Disney signs stalking-horse bid to acquire majority of Character.AI workforce"
+     },
+     "detail": {
+      "zh": "在對話型伴侶獨角獸 Character.AI 申請破產保護後，法院文件揭露迪士尼已作為首選買家簽署「假馬競標」（Stalking-horse bid），承諾吸收其大部分研發與工程人員。此舉代表娛樂巨頭將直接接掌該團隊的對話角色與邊緣多模態互動技術儲備。",
+      "en": "Bankruptcy filings reveal Disney has stepped in as the stalking-horse bidder for bankrupt AI avatar pioneer Character.AI, securing agreements to hire the vast majority of its engineering and research staff. The move gives Disney immediate custody of the startup's conversational character infrastructure and technical talent."
+     },
+     "source": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
+     "tags": [
+      "Disney",
+      "Character.AI",
+      "M&A",
+      "Bankruptcy"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 宣布撥出 5% 股權設立「公共利益基金」",
+      "en": "Anthropic commits 5% of its equity to a dedicated public benefit fund"
+     },
+     "detail": {
+      "zh": "Anthropic 正式對外公布一項長期治理舉措，承諾將公司 5% 的股份永久投入獨立的「公共利益基金」（Public Benefit Fund）。該基金將專注於贊助前沿安全研究、評測工具開發與降低先進模型對社會造成的外部性風險，為未來的上市布局奠定合規基礎。",
+      "en": "Anthropic announced a structural governance pledge to allocate 5% of its total equity into an independent Public Benefit Fund. The capital will directly sponsor independent AI safety evaluations, alignment research, and mitigations for technological disruption as the firm paves its road toward an IPO."
+     },
+     "source": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
+     "tags": [
+      "Anthropic",
+      "Governance",
+      "Public Benefit",
+      "IPO"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 發布內部就業報告：工程師會議時長倍增，開發轉向全 AI 協作",
+      "en": "Anthropic report details internal workplace shift: Meetings surge as AI writes code"
+     },
+     "detail": {
+      "zh": "Anthropic 發布關於自身內部工作型態演進的調查報告。數據顯示，隨著內部日常程式碼已全面交由 Claude 等模型生成，資深工程師花費在純手寫代碼的時間驟降，反之用於高階系統設計、架構協同與會議溝通的時間呈現翻倍成長。",
+      "en": "A research report by Anthropic dissects how internal engineering workflows transformed after deeply embedding Claude into daily operations. With automated agents handling bulk implementation, senior engineers spend significantly less time writing raw code and over twice as much time in cross-functional architecture reviews and sync meetings."
+     },
+     "source": "https://www.anthropic.com/research/employment-at-anthropic",
+     "tags": [
+      "Anthropic",
+      "Workplace",
+      "Software Engineering",
+      "AI Productivity"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "因抗議外送機器人搶走真人工作並肉身擋道，費城一名女子遭警方逮捕並控以妨害治安罪。",
+      "en": "A Philadelphia woman was arrested for disorderly conduct after physically blocking an Uber delivery robot to protest job displacement."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot"
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 授予外部獨立 AI 安全監管機構 METR「類員工」內部系統存取權，且研究報告發布免受官方事前審查。",
+      "en": "Anthropic granted outside safety watchdog METR employee-level access to internal model environments with unconditional publishing rights."
+     },
+     "source": "https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/"
+    },
+    {
+     "headline": {
+      "zh": "在引發全球出版商強烈反彈後，Meta 悄悄撤回商業條款中疑似允許自由抓取網站資料訓練 AI 的爭議文字。",
+      "en": "Meta quietly removed contentious phrasing from its commercial terms that had implied broad rights to scrape web data for model training."
+     },
+     "source": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-10-19T07:01+08:00"
+}
