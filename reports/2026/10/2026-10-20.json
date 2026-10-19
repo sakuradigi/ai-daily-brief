@@ -1,0 +1,284 @@
+{
+ "date": "2026-10-20",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Mistral 發布首款時序基礎模型「Timestral」",
+      "en": "Mistral Releases Timestral, Its First Time-Series Foundation Model"
+     },
+     "detail": {
+      "zh": "Mistral 將大模型架構擴展至時序資料分析領域，推出專用基礎模型 Timestral。此模型鎖定預測、異常檢測與感測器資料分析，試圖為工業與金融量化等高頻結構化資料場景提供標準化開源解法。",
+      "en": "Mistral expanded its architecture into time-series analysis with Timestral, a dedicated foundation model. It targets forecasting, anomaly detection, and sensor telemetry, offering a standardized open approach for quantitative and industrial workflows."
+     },
+     "source": "https://mistral.ai/news/timestral/",
+     "tags": [
+      "Mistral",
+      "Time-Series",
+      "Foundation Model"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "AWS 聯手 Hugging Face 推出 TorchNeuron，開源模型直上 Trainium 晶片",
+      "en": "Hugging Face and AWS Streamline Deployments on Trainium via TorchNeuron"
+     },
+     "detail": {
+      "zh": "Hugging Face 與 AWS 合作優化 TorchNeuron 工具鏈，大幅降低將 PyTorch 權重編譯至 AWS 自研 Trainium 與 Inferentia 晶片的難度。此舉旨在降低對 Nvidia CUDA 生態的依賴，為生產環境提供更低成本的推論與訓練替代硬體。",
+      "en": "Hugging Face partnered with AWS to optimize TorchNeuron, significantly simplifying PyTorch compilation for Trainium and Inferentia ASICs. The initiative provides teams with a cost-effective hardware alternative while reducing tight dependency on Nvidia's CUDA ecosystem."
+     },
+     "source": "https://huggingface.co/blog/hf-torchneuron",
+     "tags": [
+      "AWS",
+      "Hugging Face",
+      "Trainium",
+      "Hardware"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "DeepSeek V4.1 Flash 1017 (Max) 基準測試亮相，主打極致推論延遲",
+      "en": "DeepSeek V4.1 Flash 1017 (Max) Benchmarked with Focus on Ultra-Low Latency"
+     },
+     "detail": {
+      "zh": "Artificial Analysis 上線 DeepSeek 最新輕量化架構 V4.1 Flash 1017 (Max) 評測數據。該模型在維持頂級程式碼與數學推理表現的同時，進一步壓低推論延遲與 Token 成本，適合高頻率的即時 Agent 調用場景。",
+      "en": "Artificial Analysis published benchmark results for DeepSeek V4.1 Flash 1017 (Max). The architecture optimizes inference latency and token pricing while maintaining high coding and reasoning performance, making it ideal for high-throughput real-time agent loops."
+     },
+     "source": "https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017",
+     "tags": [
+      "DeepSeek",
+      "LLM",
+      "Benchmarks"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Harness Engineering 101：解構「LLM 為大腦、線束為軀幹」的 Agent 架構",
+      "en": "Harness Engineering 101: Architectural Deep Dive into LLM Agent Harnesses"
+     },
+     "detail": {
+      "zh": "該開源專案梳理了當前建構強健 AI Agent 的工程模式，強調模型本身僅是推理引擎，外部的「線束（Harness）」才是決定狀態管理、錯誤復原與工具呼叫穩定度的核心。適合正在自建自主代理框架的開發者參考。",
+      "en": "This project formalizes engineering patterns for production AI agents, framing the LLM as the processing core and the external harness as state management and tool orchestration. It provides practical patterns for teams moving beyond simple wrapper abstractions."
+     },
+     "source": "https://github.com/IsuruMaduranga/harness-engineering-101",
+     "tags": [
+      "AI Agents",
+      "System Design",
+      "Architecture"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "WhatsApp MCP：基於 Cloudflare 免費方案運行的通訊協議代理",
+      "en": "WhatsApp MCP: Run an Open-Source Model Context Protocol Server on Cloudflare"
+     },
+     "detail": {
+      "zh": "開發者開源了支援 Anthropic MCP 規格的 WhatsApp 整合服務，可完全部署在 Cloudflare Workers 免費額度上。它能讓支援 MCP 的開發者環境或自建 Agent 直接讀寫 WhatsApp 訊息，實作個人自動化助理。",
+      "en": "An open-source implementation of Anthropic's Model Context Protocol (MCP) for WhatsApp, deployable entirely within Cloudflare Workers' free tier. It allows local coding agents to read and send messages without running local server infrastructure."
+     },
+     "source": "https://github.com/finereli/whatsapp-mcp",
+     "tags": [
+      "MCP",
+      "Cloudflare",
+      "DevTools"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Tmux 搭配 Claude Code 實踐指南：利用 send-keys 突破 Agent 終端限制",
+      "en": "Tmux and Claude Code: Driving Terminal Agents via Send-Keys Workflows"
+     },
+     "detail": {
+      "zh": "針對 CLI Coding Agent 長時間運行與互動中斷問題，該教學詳解如何透過 Tmux session 與 send-keys 指令對 Claude Code 進行外部驅動。此方案可在 headless 伺服器上實現可靠的多 Agent 並行調度與監控。",
+      "en": "A practical guide addressing terminal persistence and interactive timeouts when running Claude Code. It demonstrates managing agent processes via Tmux sessions and programmatic send-keys, enabling headless multitasking and automation pipelines."
+     },
+     "source": "https://crystl.dev/guides/tmux-for-ai-agents/",
+     "tags": [
+      "Claude Code",
+      "Tmux",
+      "DevOps"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "開源編碼工具 OpenCode 雲端服務遭入侵，部分使用者 API Key 洩漏",
+      "en": "OpenCode AI Coding Agent Breached, Leaking User API Keys and Runaway Spend"
+     },
+     "detail": {
+      "zh": "作為 Claude Code 與 Cursor 的熱門開源替代方案，OpenCode 的線上組件遭到未授權存取，攻擊者竊取多名使用者的 LLM API 金鑰並產生高額帳單。團隊已緊急修補漏洞，並呼籲自託管使用者立即撤銷舊金鑰。",
+      "en": "A cloud platform component of OpenCode, an open-source alternative to Cursor, was compromised, leading to unauthorized extraction of users' LLM API keys and unexpected usage charges. Self-hosters and cloud users are urged to rotate upstream provider credentials immediately."
+     },
+     "source": "https://techcrunch.com/2026/10/19/hackers-hit-ai-coding-tool-opencode-running-up-charges-on-users-ai-accounts/",
+     "tags": [
+      "Security",
+      "Coding Agent",
+      "Postmortem"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Nvidia 發布系列開源模型，鎖定企業內網與 PC 邊緣 Agent 部署",
+      "en": "Nvidia Unveils New Open Models Targeted at Enterprise and On-Device Agents"
+     },
+     "detail": {
+      "zh": "Nvidia 推出針對在地化隱私部署的小型開源模型，優化在 RTX PC 與企業專用叢集上的推論效能。該系列專為企業在無外網環境下執行自主 Agent 設計，加強與自家 TensorRT-LLM 堆疊的整合。",
+      "en": "Nvidia launched a suite of lightweight open-weight models optimized for local privacy and on-premise infrastructure. Designed to run on RTX workstations and local clusters using TensorRT-LLM, the models target air-gapped enterprise agent deployments."
+     },
+     "source": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
+     "tags": [
+      "Nvidia",
+      "On-Device",
+      "Enterprise"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 強化低資源程式語言能力，發布遺留系統代碼遷移評測",
+      "en": "OpenAI Enhances Low-Resource Language Performance and Migration Benchmarks"
+     },
+     "detail": {
+      "zh": "OpenAI 揭露針對 SQLite、COBOL 與各類利基 DSL 等低資源程式語言的最新訓練成果與基準測試。此舉著重解決大型企業將傳統老舊代碼庫自動化現代化重構時，大模型缺乏精確語義理解的痛點。",
+      "en": "OpenAI published new evaluation methods and performance benchmarks for low-resource languages, including SQLite internals and legacy COBOL. The effort targets real-world enterprise modernization, improving translation accuracy and refactoring reliability for legacy codebases."
+     },
+     "source": "https://openai.com/index/low-resource-programming-languages",
+     "tags": [
+      "OpenAI",
+      "Software Engineering",
+      "Benchmarking"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Qwen3-4B 去除「AI 腔」微調實驗：消除廢話並提升代碼純度",
+      "en": "Deslop Fine-Tuning on Qwen3-4B: Training Out Sycophancy and AI Writing Tics"
+     },
+     "detail": {
+      "zh": "獨立開發者針對 Qwen3-4B 進行定向「去油（deslop）」微調，成功移除了 LLM 常見的過度說教、行銷套話與客套前綴。模型在大幅縮減輸出冗餘 Token 的同時，提升了命令列指令與純代碼生成的可用性。",
+      "en": "An independent fine-tuning experiment stripped Qwen3-4B of common generative tics, boilerplate apologies, and conversational fluff. The resulting checkpoint reduces extraneous tokens and outputs cleaner, more deterministic bash commands and code snippets."
+     },
+     "source": "https://100toolkit.com/blog/deslop-model/",
+     "tags": [
+      "Qwen",
+      "Fine-Tuning",
+      "Open Weights"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Tenstorrent 完成 15 億美元融資，估值達 62 億美元堅持開源硬體路線",
+      "en": "Tenstorrent Reaches $6.2B Valuation with $1.5B Round to Challenge Nvidia"
+     },
+     "detail": {
+      "zh": "由晶片傳奇 Jim Keller 領導的 Tenstorrent 拒絕潛在收購要約，完成 15 億美元新融資。該公司堅持 RISC-V 架構與開源軟體堆疊路線，專注為開源權重模型提供高性價比、無專利綁定的推論晶片解決方案。",
+      "en": "Led by Jim Keller, Tenstorrent raised $1.5 billion at a $6.2 billion valuation after declining acquisition bids. The company remains committed to its open-source RISC-V hardware architecture, targeting commodity infrastructure for running open-weight models."
+     },
+     "source": "https://techcrunch.com/2026/10/19/tenstorrent-hits-6-2b-valuation-to-scale-open-weight-ai-chips/",
+     "tags": [
+      "Tenstorrent",
+      "RISC-V",
+      "Semiconductors"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "CoreWeave 債券殖利率大幅飆升，AI 基礎設施融資槓桿引發隱憂",
+      "en": "CoreWeave Bonds Slip into Distressed Spread as AI Credit Concerns Mount"
+     },
+     "detail": {
+      "zh": "專門提供 GPU 算力租借的 CoreWeave 其債券利差突破千點進入不良債務區間，引發金融市場對算力中心過度借貸與泡沫化的質疑。這反映出算力供應商面臨高昂折舊與硬體更新週期的沉重資本支出壓力。",
+      "en": "Yields on CoreWeave debt surged past the 1,000-basis-point distressed threshold, reigniting debate over the sustainability of private-credit-fueled GPU infrastructure buildouts. The selloff highlights high capital depreciation and margin compression risks among neocloud providers."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1014045/coreweave-stock-debt-sector-ai",
+     "tags": [
+      "CoreWeave",
+      "Compute",
+      "Cloud"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "Simon Willison 釋出 llm-echo 0.5 測試套件，補齊 Reasoning Tokens 與工具調用計費模擬",
+      "en": "Simon Willison updates llm-echo plugin to simulate reasoning tokens and tool-call usage for local testing."
+     },
+     "source": "https://simonwillison.net/2026/Oct/18/llm-echo/"
+    },
+    {
+     "headline": {
+      "zh": "CERN 與 Mistral 簽署合作備忘錄，探索將開源大模型整合至高能物理資料分析",
+      "en": "CERN and Mistral sign intent to explore foundation models for particle physics and scientific research."
+     },
+     "source": "https://home.cern/cern-and-mistral-join-forces-to-accelerate-ai-for-science/"
+    },
+    {
+     "headline": {
+      "zh": "微軟資安團隊警示：前沿模型仍無法完全信任，企業自主任務 Agent 應視同內部人威脅等級管理",
+      "en": "Microsoft warns enterprises that untrusted AI agents executing system actions should be treated as insider threats."
+     },
+     "source": "https://techcrunch.com/2026/10/19/microsoft-says-ai-agents-are-like-insider-threats-as-frontier-models-cant-be-trusted/"
+    },
+    {
+     "headline": {
+      "zh": "前 OpenAI 工程師涉嫌為沙烏地阿拉伯竊取內部機密，遭美國司法部以間諜罪嫌正式起訴",
+      "en": "FBI charges former OpenAI engineer for allegedly exfiltrating proprietary documents to Saudi officials."
+     },
+     "source": "https://arstechnica.com/tech-policy/2026/10/accused-openai-spy-had-folder-called-saudi-gov-docs-fbi-says/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-10-20T07:01+08:00"
+}

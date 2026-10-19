@@ -1,6 +1,14 @@
 {
- "latest": "2026-10-19",
+ "latest": "2026-10-20",
  "reports": [
+  {
+   "date": "2026-10-20",
+   "type": "daily",
+   "summary": {
+    "zh": "Mistral 推時序模型、AWS 降低 Trainium 門檻",
+    "en": "Mistral debuts Timestral, AWS eases Trainium deployment, and DeepSeek releases Flash 1017."
+   }
+  },
   {
    "date": "2026-10-19",
    "type": "weekly",
