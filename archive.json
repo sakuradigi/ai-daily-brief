@@ -1,6 +1,14 @@
 {
- "latest": "2026-10-20",
+ "latest": "2026-10-21",
  "reports": [
+  {
+   "date": "2026-10-21",
+   "type": "daily",
+   "summary": {
+    "zh": "DeepInfer開源、TPU原生支援與對話洩漏事件",
+    "en": "DeepInfer launches, PyTorch embraces native TPUs, and AI privacy leaks emerge."
+   }
+  },
   {
    "date": "2026-10-20",
    "type": "daily",

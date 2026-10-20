@@ -1,0 +1,295 @@
+{
+ "date": "2026-10-21",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "DeepSeek 開源高效能推論框架 DeepInfer，社群熱度突破兩千星",
+      "en": "DeepSeek Open-Sources DeepInfer, a High-Performance Inference Framework for Its Models"
+     },
+     "detail": {
+      "zh": "DeepSeek 正式推出專為自家模型打造的高效能推論引擎 DeepInfer，著重於吞吐量與低延遲最佳化。這降低了社群在自建基礎設施上部署大規模 MoE 模型的門檻，是目前除 vLLM 與 TensorRT-LLM 外備受關注的專用解決方案。",
+      "en": "DeepSeek has open-sourced DeepInfer, an optimized inference framework tailored for its open models to maximize throughput and reduce latency. It provides developers deploying large MoE architectures with a purpose-built alternative to existing engines like vLLM and TensorRT-LLM."
+     },
+     "source": "https://github.com/deepseek-ai/DeepInfer",
+     "tags": [
+      "OpenSource",
+      "Inference",
+      "DeepSeek",
+      "LLMOps"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Hugging Face 宣布原生整合 TorchTPU，助開發者擺脫 CUDA 生態綁定",
+      "en": "Hugging Face Integrates TorchTPU for Native PyTorch Execution on TPUs"
+     },
+     "detail": {
+      "zh": "Hugging Face 釋出 TorchTPU 原生支援，使開發者無須大幅改寫 PyTorch 程式碼即可直接利用 Google TPU 進行訓練與推論。此舉進一步降低非 Nvidia 硬體的使用摩擦力，對面臨 GPU 算力瓶頸的團隊是實質替代方案。",
+      "en": "Hugging Face announced native TorchTPU support, enabling PyTorch workflows on Google TPUs without complex code rewrites. This significantly lowers migration friction away from CUDA and offers teams a viable escape valve from GPU supply constraints."
+     },
+     "source": "https://huggingface.co/blog/hf-torchtpu",
+     "tags": [
+      "PyTorch",
+      "TPU",
+      "HuggingFace",
+      "Hardware"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Meta 緊急關閉 Muse 對話分享功能：數千筆私密對話遭公開索引",
+      "en": "Meta Suspends Muse AI Chat Sharing After Thousands of Private URLs Exposed Online"
+     },
+     "detail": {
+      "zh": "資安研究團隊在公開 DNS 記錄中發現超過 6,800 條 Meta Muse 共享對話連結，內容涵蓋用戶敏感個資與商業機密。Meta 已緊急停用該分享功能，再次敲響大型語言模型服務分享端點設計不當的資安警鐘。",
+      "en": "Security researchers discovered over 6,800 public Meta Muse conversation links exposed via DNS records, leaking sensitive personal and corporate data. Meta has paused the sharing feature, highlighting persistent authorization and indexing pitfalls in LLM web interfaces."
+     },
+     "source": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/",
+     "tags": [
+      "Security",
+      "Meta",
+      "Privacy",
+      "LLM"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "PyTorch 2.15 強化 MPS 後端：持續提升 Apple Silicon 本地推論表現",
+      "en": "PyTorch 2.15 Upgrades MPS Backend for Apple Silicon Performance"
+     },
+     "detail": {
+      "zh": "PyTorch 2.15 針對 Metal Performance Shaders (MPS) 引入多項算子優化與記憶體管理改善。對於習慣在 Mac 進行本地微調或邊緣端推論驗證的開發者而言，執行效能與穩定度將有顯著提升。",
+      "en": "PyTorch 2.15 introduces key operator optimizations and memory management improvements to the Metal Performance Shaders (MPS) backend. Developers running local prototyping or edge inference on Apple Silicon will see better memory stability and faster execution."
+     },
+     "source": "https://huggingface.co/blog/mps-pytorch-2-15",
+     "tags": [
+      "PyTorch",
+      "AppleSilicon",
+      "MPS",
+      "LocalAI"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "AnyLanguageModel 迎來 1.0 版本：總結 Apple 生態系本地模型整合經驗",
+      "en": "AnyLanguageModel Reaches 1.0 Milestone for Local Models on Apple Platforms"
+     },
+     "detail": {
+      "zh": "AnyLanguageModel 正式發布 1.0 版，彙整了過去一年在 iOS 與 macOS 上運行開源 LLM 的輕量化中介層架構。該工具大幅簡化 Swift 與本地模型權重（如 CoreML、GGUF）之間的調用介面，降低跨平台客戶端應用的開發難度。",
+      "en": "AnyLanguageModel 1.0 has launched, packaging a year of architectural learnings for running local LLMs on iOS and macOS. It streamlines the Swift bridge between consumer apps and local backends like CoreML or GGUF."
+     },
+     "source": "https://huggingface.co/blog/anylanguagemodel-1-0",
+     "tags": [
+      "Apple",
+      "CoreML",
+      "LocalLLM",
+      "DevTools"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Simon Willison 實驗 Battle Drones：展示音訊狀態同步的 Vibe Coded 即時戰略遊戲",
+      "en": "Simon Willison Demonstrates Battle Drones: A Vibe-Coded RTS Using Audio Sync"
+     },
+     "detail": {
+      "zh": "技術專家 Simon Willison 分享了一款以 Claude 全程協作（Vibe Coding）完成的 RTS 網頁遊戲。該專案特別之處在於利用近場音訊在鄰近設備間同步遊戲狀態，展現了 LLM 協助探索非傳統網路同步機制的敏捷原型能力。",
+      "en": "Simon Willison showcased an RTS browser game built through vibe coding with Claude. The project uniquely synchronizes multiplayer game states across nearby devices via audio signals, highlighting rapid prototyping capabilities of AI coding assistants."
+     },
+     "source": "https://simonwillison.net/2026/Oct/20/battledrones/",
+     "tags": [
+      "VibeCoding",
+      "WebDev",
+      "Claude",
+      "Prototypes"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "ChatGPT 正式加入「對話鎖定」功能，提升共用裝置上的隱私隔離",
+      "en": "ChatGPT Introduces Locked Chats to Protect Sensitive Conversations on Shared Devices"
+     },
+     "detail": {
+      "zh": "OpenAI 為 ChatGPT 推出單一對話鎖定功能，用戶可將敏感對話或個人專案設密保護。此更新能避免在將手機或平板借給他人檢視特定內容時，曝露其他包含機密資料或個人偏好的歷程記錄。",
+      "en": "OpenAI launched a chat locking feature for ChatGPT, allowing users to secure individual conversation threads behind device authentication. This prevents accidental exposure of sensitive prompts when sharing screens or devices with others."
+     },
+     "source": "https://techcrunch.com/2026/10/20/chatgpt-now-lets-you-lock-your-chats/",
+     "tags": [
+      "ChatGPT",
+      "Privacy",
+      "UIUX",
+      "Product"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Spotify 下架 5,000 萬首 AI 垃圾歌曲，演算法策略轉向保障真實創作者",
+      "en": "Spotify Purges 50 Million AI Slop Tracks and Tweaks Recommendation Algorithms"
+     },
+     "detail": {
+      "zh": "Spotify 宣布在過去一年內已清除超過 5,000 萬首被判定為機器批次生成的低質垃圾歌曲，並重構推薦系統權重。這顯示內容平台正在建立對抗生成式內容濫用（AI slop）的過濾工程機制，遏制串流刷量行為。",
+      "en": "Spotify revealed it has removed over 50 million AI-generated low-quality spam tracks over the past year and adjusted its algorithms to favor human artists. The move demonstrates how platforms are engineering defensive filters to counter automated spam and streaming fraud."
+     },
+     "source": "https://www.theverge.com/entertainment/1014284/spotify-ai-slop-spam-songs-removed",
+     "tags": [
+      "Spotify",
+      "AntiAbuse",
+      "AIContent",
+      "Algorithms"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Anthropic 驗證 Claude 具備設計抗蠍毒神經毒素蛋白質結合劑之能力",
+      "en": "Anthropic Demonstrates Claude Designing Functional Protein Binders for Scorpion Neurotoxins"
+     },
+     "detail": {
+      "zh": "Anthropic 最新研究展示通用模型 Claude 能參與分子設計，成功生成針對蠍毒神經毒素的結合蛋白。這意味著高階模型已開始從單純文本分析跨入計算生物學與去偏蛋白質結構生成，對生物科技自動化具實務啟發。",
+      "en": "Anthropic published findings showing Claude successfully designing protein binders targeting complex scorpion neurotoxins. This indicates frontier models are transitioning from text synthesis to functional biocomputational modeling and structural de novo design."
+     },
+     "source": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
+     "tags": [
+      "Anthropic",
+      "BioAI",
+      "ProteinDesign",
+      "FrontierResearch"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "IBM 提出 ALTK-Evolve：無須頂尖前線模型即可靠習得記憶奪下 τ²-bench 榜首",
+      "en": "IBM Research Unveils ALTK-Evolve: Outperforming Frontier Models via Learned Memory"
+     },
+     "detail": {
+      "zh": "IBM Research 釋出 ALTK-Evolve 架構，透過演化式學習記憶機制，在 τ²-bench 客服評測中擊敗眾多昂貴的前線巨量模型。該研究表明良好的架構記憶設計與任務特化能有效降低對極大參數量模型的依賴，具備高性價比商業化潛力。",
+      "en": "IBM Research introduced ALTK-Evolve, an architecture using evolved memory representations that topped the τ²-bench customer service leaderboard without frontier LLMs. The work highlights how memory mechanics can outperform brute-force scale in domain tasks."
+     },
+     "source": "https://huggingface.co/blog/ibm-research/altk-evolve-bc",
+     "tags": [
+      "IBM",
+      "Memory",
+      "Evaluation",
+      "Architecture"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 收購 Orchestra Bio，全面加速生技研發模型 Rosalind 開發",
+      "en": "OpenAI Acquires Orchestra Bio to Accelerate Life Sciences Operations"
+     },
+     "detail": {
+      "zh": "OpenAI 宣布併購生技運算新創 Orchestra Bio，將其團隊與工作流整合至自家生命科學模型 Rosalind 及 Rosalind Workbench 工具中。此併購顯示大型 AI 實驗室正在由橫向通用模型轉向深度的垂直領域基礎設施佈局。",
+      "en": "OpenAI is acquiring Orchestra Bio to merge its specialized biotechnology workflow systems into its Rosalind life sciences model and workbench. The acquisition signals frontier AI labs expanding vertically into dedicated enterprise R&D infrastructure."
+     },
+     "source": "https://openai.com/index/openai-to-acquire-orchestra-bio",
+     "tags": [
+      "OpenAI",
+      "M&A",
+      "BioTech",
+      "Enterprise"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "微軟將不可控 AI 代理人定調為內部人威脅：示警前線模型自主風險",
+      "en": "Microsoft Flags Autonomous AI Agents as Insider Threats in Enterprise Environments"
+     },
+     "detail": {
+      "zh": "微軟資安部門警告，在未受嚴格控管的系統中執行的第三方 AI 代理人應被視同「惡意或易受騙的內部員工」。報告強調前線模型不可盲目信任，企業在為 Agent 開放 API 存取權限前必須建立零信任架構與沙盒邊界。",
+      "en": "Microsoft security warned that autonomous AI agents operating on third-party models resemble insider threats due to prompt injection risks and unpredictable execution. The company urges enterprises to enforce zero-trust boundaries before granting agents broad API privileges."
+     },
+     "source": "https://techcrunch.com/2026/10/19/microsoft-says-ai-agents-are-like-insider-threats-as-frontier-models-cant-be-trusted/",
+     "tags": [
+      "Microsoft",
+      "AgentSecurity",
+      "ZeroTrust",
+      "Enterprise"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "WhatsApp 說明頁面洩露隱藏提示詞：明確要求 LLM 迴避向用戶提及主管機關",
+      "en": "WhatsApp Help Pages Found Containing Leaked Prompts Instructing AI Not to Mention Regulators"
+     },
+     "source": "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions"
+    },
+    {
+     "headline": {
+      "zh": "Steam Next Fest 充斥粗製濫造的 Vibe Coding 遊戲，玩家連署要求新增「無 AI」篩選器",
+      "en": "Steam Users Demand 'No AI' Filter as Vibe-Coded Slop Floods Steam Next Fest"
+     },
+     "source": "https://www.ign.com/articles/steam-fans-are-begging-for-a-no-ai-filter-as-steam-next-fest-is-filled-with-slop"
+    },
+    {
+     "headline": {
+      "zh": "Figma 創辦人 Dylan Field 指出 MCP 協定尚未成熟，呼籲謹慎評估全域資料暴露風險",
+      "en": "Figma Co-Founder Dylan Field Criticizes MCP as Imperfect Protocol for Broad Data Exposure"
+     },
+     "source": "https://techcrunch.com/2026/10/20/figma-co-founder-dylan-field-thinks-mcp-is-not-a-perfect-protocol/"
+    },
+    {
+     "headline": {
+      "zh": "美國聯邦機構接獲行政命令，要求全面清查並限期移除 DeepSeek 相關技術系統",
+      "en": "US Government Orders Federal Civilian Agencies to Remove DeepSeek AI Systems"
+     },
+     "source": "https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-10-21T07:01+08:00"
+}
