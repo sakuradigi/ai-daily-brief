@@ -1,6 +1,14 @@
 {
- "latest": "2026-10-21",
+ "latest": "2026-10-22",
  "reports": [
+  {
+   "date": "2026-10-22",
+   "type": "daily",
+   "summary": {
+    "zh": "PHP 爆發重大 RCE，Mistral Large 4 與 Claude Duet 連袂登場",
+    "en": "Critical PHP RCE uncovered by AI; Mistral Large 4 and Claude Duet launch"
+   }
+  },
   {
    "date": "2026-10-21",
    "type": "daily",
