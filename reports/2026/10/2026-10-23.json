@@ -1,0 +1,295 @@
+{
+ "date": "2026-10-23",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 推出 Decisions API：專為低延遲、確定性決策設計的輕量端點",
+      "en": "OpenAI Unveils Decisions API for Fast, Low-Cost Structured App Logic"
+     },
+     "detail": {
+      "zh": "OpenAI 正式推出 Decisions API，專門處理路由、條件判定與結構化輸出等決策任務，大幅降低一般大型 LLM 推論的延遲與成本。這讓開發者在構建複雜 Agent 工作流或條件分支時，不再需要耗費高昂代價呼叫通用模型，能直接提升應用的反應速度。",
+      "en": "OpenAI launched the Decisions API, targeting fast, focused, and low-cost deterministic decisions such as routing and structured classification. Developers can now offload high-frequency branching logic from massive LLMs, significantly slashing latency and token expenses in production agentic workflows."
+     },
+     "source": "https://openai.com/index/decisions-api",
+     "tags": [
+      "OpenAI",
+      "API",
+      "Agents",
+      "Infrastructure"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "NVIDIA 開源 OpenShell：專為自主 AI Agent 集群打造的安全沙盒環境",
+      "en": "NVIDIA Open-Sources OpenShell: A Secure, Private Runtime for Agent Fleets"
+     },
+     "detail": {
+      "zh": "NVIDIA 釋出開源專案 OpenShell，提供輕量、隔離且具備細緻權限控制的執行環境，專門用來運行具備系統操作能力的自主 AI Agent。該專案解決了長期以來讓 Agent 直接執行 Shell 指令的安全隱憂，為多代理人系統的本機與雲端部署提供標準防護基底。",
+      "en": "NVIDIA open-sourced OpenShell, offering an isolated, fine-grained runtime environment built specifically for autonomous AI agents requiring shell access. The tool addresses the critical attack vectors of letting agents execute raw system commands, laying secure infrastructure for multi-agent clusters."
+     },
+     "source": "https://github.com/NVIDIA/OpenShell",
+     "tags": [
+      "NVIDIA",
+      "OpenSource",
+      "Agents",
+      "Security"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 將 Agent Skills 規範捐贈予 Linux 基金會旗下的 AAIF",
+      "en": "Anthropic Donates Agent Skills Standard to the Linux Foundation's AAIF"
+     },
+     "detail": {
+      "zh": "Anthropic 宣布將 Agent Skills 標準正式捐給其與 Block、OpenAI 共同發起的 Agentic AI Foundation（AAIF）。繼去年捐贈 Model Context Protocol（MCP）後，此舉進一步推動工具調用與 Agent 技能格式的廠商中立化，避免生態系破碎。",
+      "en": "Anthropic announced the donation of its Agent Skills standard to the Agentic AI Foundation (AAIF) under the Linux Foundation. Following MCP's donation, this move reinforces vendor-neutral interoperability for tool-calling protocols across competing LLM ecosystems."
+     },
+     "source": "https://simonwillison.net/2026/Oct/22/donating-agent-skills/",
+     "tags": [
+      "Anthropic",
+      "AAIF",
+      "OpenStandards",
+      "Agents"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI CLI 正式釋出：終端機原生管理模型、評測與 API 資源",
+      "en": "OpenAI CLI Released: Manage Models, Evals, and APIs Directly from the Terminal"
+     },
+     "detail": {
+      "zh": "OpenAI 在 GitHub 釋出官方命令列工具 openai-cli，讓工程師能在終端機直接測試 Prompt、觸發 Fine-tuning 與跑自動化 Eval。該工具易於整合進 CI/CD 流水線，顯著降低開發者日常與 OpenAI API 互動的操作負擔。",
+      "en": "OpenAI published its official openai-cli tool on GitHub, allowing developers to execute prompts, kick off fine-tuning runs, and run evals right from the terminal. The CLI integrates smoothly into existing CI/CD pipelines for programmatic LLMOps management."
+     },
+     "source": "https://github.com/openai/openai-cli",
+     "tags": [
+      "OpenAI",
+      "CLI",
+      "DeveloperTools",
+      "LLMOps"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "WorldTUI：以 360M 小模型模擬完整 Linux 終端機行為",
+      "en": "WorldTUI: A 360M Parameter World Model Simulating a Full Terminal"
+     },
+     "detail": {
+      "zh": "開發者訓練了一個僅 360M 參數的小型語言模型 WorldTUI，使其直接扮演 Linux Bash 終端機的世界模型，無需底層作業系統即可預測各類指令輸出。此實驗展示了極小模型在特定符號狀態機模擬上的潛力，對邊緣端沙盒評測具備啟發性。",
+      "en": "A developer released WorldTUI, a 360M parameter model trained to simulate a Linux terminal as a world model without an actual OS backend. The project highlights how compact models can act as stateful symbolic simulators, offering a lightweight path for sandbox evaluation."
+     },
+     "source": "https://simedw.com/2026/10/21/world-model-terminal/",
+     "tags": [
+      "OpenSource",
+      "SmallModels",
+      "Terminal",
+      "Research"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "1Password 推出代理人登入機制：不洩漏明文密碼授權 Agent 操作",
+      "en": "1Password Lets AI Agents Log In Securely Without Seeing Raw Credentials"
+     },
+     "detail": {
+      "zh": "1Password 推出全新 Agent 專用身分驗證層，允許自主 AI Agent 代表使用者自動登入各類第三方服務，但模型本身無法讀取原始帳密明文。這為自動化代理人在 Web 環境執行真實任務時，補足了最關鍵的安全與權限隔離缺口。",
+      "en": "1Password unveiled a credential delegation feature enabling AI agents to log into third-party sites autonomously without exposing actual secrets to the model context. This resolves a massive security hurdle for web-browsing agent frameworks handling authenticated sessions."
+     },
+     "source": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+     "tags": [
+      "1Password",
+      "Security",
+      "Auth",
+      "Agents"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Claude 正式支援 Google Docs、Sheets 與 Slides 原生檔案讀寫",
+      "en": "Claude Integrates Native Support for Google Docs, Sheets, and Slides"
+     },
+     "detail": {
+      "zh": "Anthropic 宣布 Claude 現可直接連接 Google Workspace，無縫讀取與編輯文件、試算表與簡報內容。相較於過往純文字複製貼上，原生連線大幅改善格式解析與複雜試算表公式的上下文保留能力。",
+      "en": "Anthropic rolled out direct Google Workspace integration, enabling Claude to natively parse and manipulate Docs, Sheets, and Slides. This removes manual export/import friction and preserves formatting and formula integrity during analytical tasks."
+     },
+     "source": "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides",
+     "tags": [
+      "Claude",
+      "Anthropic",
+      "GoogleWorkspace",
+      "Productivity"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 推出獨立應用 Claude Duet，主打多步驟背景 Agent 協作",
+      "en": "Anthropic Launches Claude Duet App for Persistent Background Agent Tasks"
+     },
+     "detail": {
+      "zh": "Anthropic 針對 Pro 與 Max 用戶釋出 Claude Duet 預覽版，專門用於在背景執行長時程的多步驟研究與程式碼重構任務。此產品象徵 Anthropic 從純 Chat 介面跨入具備異步執行與狀態追蹤的常駐型 Agent 生態。",
+      "en": "Anthropic opened a waitlist for Claude Duet, a dedicated application designed for asynchronous, multi-step research and development workflows. The release signals Anthropic's transition from chat interfaces toward autonomous, persistent task orchestrators."
+     },
+     "source": "https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/",
+     "tags": [
+      "Claude",
+      "Anthropic",
+      "Agents",
+      "UI"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "微軟開源 ThinkingBox：將資料庫驗證轉為強化學習獎勵的 Agent 訓練法",
+      "en": "Microsoft ThinkingBox: Converting DB Verifications into RL Rewards for Agents"
+     },
+     "detail": {
+      "zh": "微軟在 Hugging Face 介紹 ThinkingBox 框架，利用確定性資料庫查詢結果作為後訓練（Post-Training）的 RL 獎勵訊號，有效提升 Agent 在複雜資料分析與代碼推理中的可驗證性。這提供了一種無需依賴人工標註的低成本客觀獎勵機制。",
+      "en": "Microsoft detailed ThinkingBox on Hugging Face, turning deterministic database validation checks into reinforcement learning reward signals for agent post-training. This creates a scalable, objective RL environment for text-to-SQL and data reasoning without manual reward engineering."
+     },
+     "source": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+     "tags": [
+      "Microsoft",
+      "ReinforcementLearning",
+      "HuggingFace",
+      "PostTraining"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "AllenAI 發表 OlmoEarth v1.3：全球尺度的地理遙測基礎嵌入模型",
+      "en": "AllenAI Releases OlmoEarth v1.3: Planet-Scale Geospatial Embeddings"
+     },
+     "detail": {
+      "zh": "Allen Institute for AI 發布開源遙測模型 OlmoEarth v1.3，支援多光譜衛星影像的高維特徵提取與跨區域分析。其在環境監測與氣候模式識別評測中刷新開源基準，權重與程式碼均已公開。",
+      "en": "AllenAI released OlmoEarth v1.3, an open foundational embedding model trained on global multispectral satellite imagery. It sets new open-source benchmarks for environmental classification and geospatial pattern detection."
+     },
+     "source": "https://huggingface.co/blog/allenai/olmoearth-v1-3",
+     "tags": [
+      "AllenAI",
+      "Embeddings",
+      "Geospatial",
+      "OpenWeights"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 傳出 IPO 前籌備 300 億美元新融資，估值挑戰 1.25 兆美元",
+      "en": "OpenAI Prepares $30B Pre-IPO Funding Round at $1.25T Valuation Target"
+     },
+     "detail": {
+      "zh": "據 TechCrunch 報導，OpenAI 正洽談一輪規模達 300 億美元的新融資，目標推升估值至 1.25 兆美元，將創下全球私營科技企業歷史新高。這筆資本主要將用於鎖定次世代算力基礎設施，並為後續公開上市鋪平道路。",
+      "en": "Reports indicate OpenAI is actively working on a massive $30 billion financing round targeting a record-setting $1.25 trillion valuation ahead of its anticipated IPO. The capital injection is slated to secure next-gen compute clusters and long-term cloud commitments."
+     },
+     "source": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/",
+     "tags": [
+      "OpenAI",
+      "Funding",
+      "Valuation",
+      "Business"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "DeepSeek 在美限制令後完成 150 億美元融資，展現強勁本土資本支撐",
+      "en": "DeepSeek Reportedly Closes $15B Round Days After New U.S. Federal Curbs"
+     },
+     "detail": {
+      "zh": "在美國政府限制聯邦機構使用其技術數天後，中國開源模型團隊 DeepSeek 傳出迅速完成 150 億美元融資。這顯示即便面臨地緣政治封鎖與晶片供應限制，高性價比模型架構的研發團隊依然獲得極大資本奧援。",
+      "en": "DeepSeek reportedly secured $15 billion in new funding shortly after facing U.S. federal procurement bans, marking one of the largest domestic rounds in China's AI sector. The financing underscores massive capital appetite for cost-efficient open-weight model architectures."
+     },
+     "source": "https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions/",
+     "tags": [
+      "DeepSeek",
+      "China",
+      "Funding",
+      "Geopolitics"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "Canva 正式推出自家首款自研圖像生成模型，主打低成本與高自訂性整合。",
+      "en": "Canva launches its first in-house image generation model, focusing on cost-effective enterprise customization."
+     },
+     "source": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/"
+    },
+    {
+     "headline": {
+      "zh": "Uber 宣布將 ChatGPT Work 全面部署給全球超過 3 萬名內部員工。",
+      "en": "Uber expands ChatGPT Work company-wide to more than 30,000 employees for day-to-day operations."
+     },
+     "source": "https://openai.com/index/uber-chatgpt-work-rollout"
+    },
+    {
+     "headline": {
+      "zh": "Discord 更新修復 Markdown 即時預覽渲染，解決 LLM Agent 指令檔格式混亂問題。",
+      "en": "Discord rolls out native Markdown preview fixes, improving prompt and system context readability."
+     },
+     "source": "https://www.theverge.com/news/1017012/discord-markdown-previews-organize-servers-channels"
+    },
+    {
+     "headline": {
+      "zh": "美國遊說支出揭露：Nvidia、Anthropic 與 OpenAI 上季遊說花費皆創各自歷史新高。",
+      "en": "Nvidia, Anthropic, and OpenAI each recorded all-time high quarterly lobbying expenditures in Washington."
+     },
+     "source": "https://www.theverge.com/policy/1016585/openai-anthropic-nvidia-lobbying-records"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-10-23T07:02+08:00"
+}

@@ -1,6 +1,14 @@
 {
- "latest": "2026-10-22",
+ "latest": "2026-10-23",
  "reports": [
+  {
+   "date": "2026-10-23",
+   "type": "daily",
+   "summary": {
+    "zh": "OpenAI 推決策 API、NVIDIA 開源 OpenShell，Agent 生態加速標準化",
+    "en": "OpenAI drops Decisions API, NVIDIA open-sources OpenShell, and Agent ecosystems standardize"
+   }
+  },
   {
    "date": "2026-10-22",
    "type": "daily",
