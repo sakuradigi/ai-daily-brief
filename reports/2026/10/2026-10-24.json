@@ -1,0 +1,295 @@
+{
+ "date": "2026-10-24",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 實施斷網訓練前沿模型，建立離線沙盒以杜絕外洩與主動攻擊風險",
+      "en": "OpenAI shifts frontier model training fully offline with cached sandbox to stop unauthorized network access"
+     },
+     "detail": {
+      "zh": "面對日益嚴峻的資安威脅與模型自主能力提升，OpenAI 宣布最新前沿模型訓練與評測流程已完全移至離線環境，模型僅能存取經快取與靜態索引的網路資料。此舉旨在防範訓練期模型遭駭客攻擊或產生非預期的外部連線行為，樹立了超大規模模型高規格隔離安全標竿。未來高階模型評測與微調的資安合規門檻將大幅提高。",
+      "en": "OpenAI has moved frontier model training and evaluation into isolated offline environments with cached web data to eliminate external network risks and rogue attacks. This strict containment protocol sets a new enterprise security baseline for training autonomous systems, signaling that future frontier-scale alignment and fine-tuning workflows will require much tighter infrastructure isolation."
+     },
+     "source": "https://openai.com/index/securing-our-frontier-model-training-environment",
+     "tags": [
+      "OpenAI",
+      "AI安全",
+      "模型訓練",
+      "基礎架構"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "月之暗面發布 Kimi K3.1 Pro API，價格力拼 GPT-6.1 並承諾 11 月開源模型權重",
+      "en": "Moonshot unveils Kimi K3.1 Pro API at competitive rates and commits to open weights by Nov 4"
+     },
+     "detail": {
+      "zh": "Moonshot 推出新一代旗艦模型 Kimi K3.1 Pro API，提供標準版與兩倍速但同快取計價的 Highspeed 版本，定價為每百萬輸入 token 2 美元、輸出 10 美元。官方公開承諾將於 2026 年 11 月 4 日釋出完整開源權重。此定價直接對標主流前沿模型，若如期開源將為自架與私有化部署市場注入重量級推理能力。",
+      "en": "Moonshot released its Kimi K3.1 Pro API featuring both standard and 2-3x faster Highspeed tiers, priced at $2/M input and $10/M output tokens with aggressive cache discounts. Crucially, the team committed to releasing full open weights on November 4, 2026. This aggressive pricing and impending open release position it as a major alternative for developers seeking frontier-tier self-hosted models."
+     },
+     "source": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
+     "tags": [
+      "Kimi",
+      "LLM",
+      "API",
+      "開源模型"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 解密 10 億用戶級儲存架構：Habitat 結合 Cosmos DB 實現讀取延遲降至 1/12",
+      "en": "OpenAI details storage scaling for 1B ChatGPT users: Habitat and Cosmos DB yield 12x faster reads"
+     },
+     "detail": {
+      "zh": "OpenAI 發布架構架構技術長文下篇，解析內部儲存系統 Habitat 如何透過 Azure Cosmos DB、多租戶隔離與全域分散式快取機制支撐 ChatGPT 突破 10 億使用者的負載。架構改版後將高頻讀取速度提升 12 倍，並維持低延遲與高可用性。對於建構超大規模 AI Agent 狀態持久化架構的工程師而言，該架構提供了實用的分散式儲存範本。",
+      "en": "OpenAI published part two of its infrastructure postmortem, revealing how its Habitat storage layer leverages Azure Cosmos DB, strict multi-tenancy, and global distributed caching to support 1 billion users. The architecture achieved 12x faster read throughput while maintaining rock-solid fault tolerance. It offers an essential architectural blueprint for backend engineers scaling stateful LLM workloads globally."
+     },
+     "source": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+     "tags": [
+      "系統架構",
+      "分散式儲存",
+      "OpenAI",
+      "ChatGPT"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Hugging Face 釋出 AWS Trainium 支援矩陣，一鍵查詢開源模型在 Neuronx 上的相容性",
+      "en": "Hugging Face launches AWS Trainium support lookup for seamless torch-neuronx compatibility"
+     },
+     "detail": {
+      "zh": "Hugging Face 推出了專門針對 AWS Trainium 晶片的模型相容性查詢儀表板，整合 torch-neuronx 支援狀態與效能編譯參數。開發者可直接確認主流開源大模型是否能在 Trainium 實例上順暢編譯與推論，大幅降低從 GPU 遷移到性價比更高的專用加速晶片的調試成本。",
+      "en": "Hugging Face launched a dedicated AWS Trainium compatibility matrix tracking model compilation support under torch-neuronx. Developers can now instantly check whether specific architectures run out-of-the-box on AWS custom accelerators. This removes trial-and-error friction for teams looking to cut training and inference compute costs by shifting from GPUs to Trainium."
+     },
+     "source": "https://huggingface.co/blog/torch-neuronx-model-support",
+     "tags": [
+      "AWS",
+      "Trainium",
+      "HuggingFace",
+      "AI加速晶片"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "AI 反編譯工具引爆懷舊遊戲移植潮：社群藉 LLM 高速重構二進位程式碼跨平台執行",
+      "en": "AI decompilation tools trigger explosive surge in retro game recompilations and cross-platform ports"
+     },
+     "detail": {
+      "zh": "開源社群利用專門微調的大模型分析反編譯程式碼，將經典主機遊戲（如 Halo 與薩爾達傳說）快速轉譯為現代 C/C++ 結構並移植至瀏覽器與 iOS 等平台。過去需耗費數年純人力的逆向工程與靜態分析工作，如今在 LLM 輔助下週期縮短數倍。這項範式證明了大型語言模型在老舊組合語言重構與逆向工程上的強大工程價值。",
+      "en": "Open source developers are increasingly deploying LLM-assisted decompilation pipelines to convert legacy console game binaries into modern readable C/C++ for cross-platform execution. What once required years of painstaking assembly reverse-engineering can now be prototyped in days. The trend proves LLMs are becoming critical assets for software preservation and low-level code migration."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1015430/ai-retro-games-decomp-recomp-port",
+     "tags": [
+      "逆向工程",
+      "遊戲移植",
+      "程式碼重構",
+      "開發工具"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Simon Willison 實驗 Quick Study：純前端 Canvas 結合 Sobel 算子即時模擬繪畫 Artifact",
+      "en": "Simon Willison shares Quick Study: Client-side Canvas painting simulation via Sobel edge detection"
+     },
+     "detail": {
+      "zh": "Simon Willison 透過提示詞驅使 Claude 生成名為 Quick Study 的純瀏覽器端 Artifact，使用者上傳圖片後僅需數秒即可模擬油畫筆刷繪製過程。該工具無第三方依賴，僅依賴原生 HTML5 Canvas 與 Sobel 邊緣偵測演算法。這展示了模型在原生前端演算法生成與無後端快速原型開發上的成熟能力。",
+      "en": "Simon Willison demonstrated Quick Study, a standalone browser-based tool generated via Claude that simulates canvas oil painting using client-side JavaScript. Operating without external libraries aside from web fonts, it implements Sobel edge detection directly on an HTML5 canvas. It serves as an impressive reference for building deterministic, zero-dependency visual artifacts directly via LLM prompts."
+     },
+     "source": "https://simonwillison.net/2026/Oct/23/quick-study-painter/",
+     "tags": [
+      "前端開發",
+      "Canvas",
+      "Claude",
+      "電腦視覺"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Canva 推出首款自研影像模型 Canva Craft，採「先排版規劃後算圖」雙階段架構",
+      "en": "Canva unveils proprietary Canva Craft image model featuring a two-stage layout-then-render pipeline"
+     },
+     "detail": {
+      "zh": "Canva 發表自研影像生成模型 Canva Craft，直接挑戰 OpenAI 與 Google。該模型核心在於兩階段架構設計：在正式生成像素前先生成圖層與設計構圖規劃，藉此解決生成圖像中文本排列混亂與構圖飄移的痛點。這項架構將為需要精準版面控制與商用設計一致性的開發者與設計工作流帶來更高產出確定性。",
+      "en": "Canva introduced its in-house image generation model, Canva Craft, to compete with mid-journey and big tech offerings. It features a novel two-stage architecture that plans the structural design and typography constraints before synthesizing pixels, significantly mitigating spatial hallucination. This design provides developers and visual creators with vastly superior compositional precision for automated asset pipelines."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
+     "tags": [
+      "Canva",
+      "圖像生成",
+      "擴散模型",
+      "設計自動化"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Block 發表全雙工語音模型 Dessa，從零基於人類真實對話訓練",
+      "en": "Block introduces Dessa, an end-to-end full-duplex speech model trained entirely on human conversation"
+     },
+     "detail": {
+      "zh": "Jack Dorsey 旗下的 Block 發表名為 Dessa 的即時語音模型，強調完全使用自然人類口語對話訓練，捨棄傳統語音辨識與文字轉語音的多模態管線拼接。模型具備自然的停頓、打斷適應與真實對話呼吸節奏，雖然初期對話風格偏向自然微尬，但在超低延遲全雙工語音 Agent 開發領域提供了全新的端到端對話架構視野。",
+      "en": "Block announced Dessa, a native full-duplex conversational audio model trained from scratch solely on human conversational speech rather than cascaded ASR-LLM-TTS pipelines. It organically models conversational latency, dynamic interruptions, and natural hesitations. This end-to-end approach points to the next generation of voice-native agents capable of truly interactive, low-latency collaboration."
+     },
+     "source": "https://block.xyz/dessa",
+     "tags": [
+      "語音模型",
+      "全雙工",
+      "Block",
+      "人機互動"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "微軟與 HF 推出 ThinkingBox：將資料庫驗證結果轉化為強化學習獎勵訓練 Agent",
+      "en": "Microsoft and Hugging Face unveil ThinkingBox, converting database execution into RL agent rewards"
+     },
+     "detail": {
+      "zh": "微軟與 Hugging Face 合作發表 ThinkingBox 後訓練框架，將複雜資料庫操作評測轉化為可微分的強化學習獎勵信號。透過自動化執行資料庫查詢並比對目標狀態，系統能激勵 Agent 自主學會多步驟推理、SQL 生成與自我除錯。該方法證明了環境確定性反饋在提升軟體工程類 Agent 可靠性上的關鍵效用。",
+      "en": "Microsoft and Hugging Face presented ThinkingBox, a post-training framework that translates deterministic database execution feedback into verifiable reinforcement learning rewards. By executing queries directly against target schemas and scoring state transformations, agents learn complex multi-step reasoning and autonomous debugging. The approach establishes a reliable pathway for improving production-grade coding agents through verified environment feedback."
+     },
+     "source": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+     "tags": [
+      "強化學習",
+      "AI Agent",
+      "微軟",
+      "資料庫"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "AllenAI 發表 LitPivot：藉動態文獻情境重構輔助研究假說生成與探索",
+      "en": "AllenAI releases LitPivot to dynamically contextualize research hypotheses across scientific literature"
+     },
+     "detail": {
+      "zh": "AllenAI 釋出學術探索工具 LitPivot，能將使用者提出的研究構想即時錨定於海量跨領域學術文獻圖譜中，動態揭示潛在研究缺口與矛盾論點。不同於傳統以關鍵字為主的文獻檢索，LitPivot 利用密集語意關聯與論點脈絡分析，能幫助 AI 研發人員在立項初期快速評估新技術概念的原創性與可行性。",
+      "en": "AllenAI published LitPivot, a framework designed to anchor novel research ideas within dynamically generated scientific literature landscapes. Moving beyond basic vector search, it maps argumentative structures and conceptual contradictions across papers to highlight unexplored research opportunities. It serves as an essential tool for AI researchers validating hypothesis novelty before committing massive compute resources."
+     },
+     "source": "https://huggingface.co/blog/allenai/litpivot",
+     "tags": [
+      "AllenAI",
+      "文獻檢索",
+      "學術研究",
+      "假說驗證"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Google 更新個人化 AI 隱私政策：開啟功能可能導致 Gmail 與相簿內容被用於廣告定向",
+      "en": "Updated Google privacy policy indicates personal AI users' Gmail and Photos data may inform ad targeting"
+     },
+     "detail": {
+      "zh": "Google 悄悄修訂隱私條款，針對啟用「Personal Intelligence」個人化 AI 功能的用戶新增例外條款，允許系統將 Drive、Gmail 及相簿數據用於廣告輪廓建構與精準定向。這項變更打破了過去承諾不碰私人郵件進行廣告投放的底線，引發企業與開發者對雲端資料主權的強烈擔憂，恐加速私有化 AI 部署趨勢。",
+      "en": "Google updated its privacy terms to include an exception stating that user data from Gmail, Drive, and Photos could be utilized for personalized ad targeting if opt-in Personal Intelligence AI features are active. This reversal of its longstanding commitment to isolate productivity data from ad networks has sparked severe enterprise data governance concerns, likely driving developers toward local and zero-retention API alternatives."
+     },
+     "source": "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising/",
+     "tags": [
+      "隱私政策",
+      "Google",
+      "資料安全",
+      "數位廣告"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 傳推進 IPO 前新一輪 300 億美元融資，估值上看 1.25 兆美元創未上市紀錄",
+      "en": "OpenAI reportedly pursuing $30B pre-IPO funding round at record-setting $1.25T valuation"
+     },
+     "detail": {
+      "zh": "據 TechCrunch 報導，OpenAI 正啟動新一輪高達 300 億美元的融資談判，整體估值將達到 1.25 兆美元，為其後續公開上市（IPO）鋪路。若交易落實，OpenAI 將成為全球史上估值最高的私人未上市公司。此龐大資金將主要用於支應萬億級前沿模型運算叢集擴建與下一代算力中心基建支出。",
+      "en": "OpenAI is reportedly preparing a massive $30 billion funding round targeting a $1.25 trillion valuation as part of its runway toward an IPO. If completed, it will solidify OpenAI as the highest-valued private company in history. The capital influx will primarily fund massive gigawatt-scale datacenter commitments and multi-modal frontier model training infrastructure."
+     },
+     "source": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/",
+     "tags": [
+      "OpenAI",
+      "融資",
+      "估值",
+      "IPO"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "瑞典政府辦公室基於資訊安全風險，宣布全面禁止公務裝置使用 ChatGPT 與 Claude",
+      "en": "Swedish government offices issue total ban on ChatGPT and Claude across civil service devices"
+     },
+     "source": "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet"
+    },
+    {
+     "headline": {
+      "zh": "出版商強烈抗議未授權內容抓取訓練，Meta 宣布推遲新版商業條款至 11 月 20 日生效",
+      "en": "Meta delays new business terms to Nov 20 following publisher backlash over unauthorized AI scraping"
+     },
+     "source": "https://www.theverge.com/tech/1017450/meta-business-terms-delayed-ai-scraping"
+    },
+    {
+     "headline": {
+      "zh": "碳排研究指出：在美國德州資料中心執行單次 AI 推論的碳排放量高達瑞典的 8.5 倍",
+      "en": "Study reveals identical AI inference request emits 8.5 times more CO2 in Texas than in Sweden"
+     },
+     "source": "https://berget.ai/en/blog/per-request-co2-press-release"
+    },
+    {
+     "headline": {
+      "zh": "MIT 研究：被放置在無任務虛擬島嶼上的 AI Agent 出現自主發明遊戲與悼念等複雜群體行為",
+      "en": "MIT researchers find idle AI agents on a virtual island spontaneously invent games and emergent rituals"
+     },
+     "source": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-10-24T07:01+08:00"
+}
