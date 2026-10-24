@@ -1,0 +1,270 @@
+{
+ "date": "2026-10-25",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 宣布斷網訓練前沿模型，全面轉入離線沙盒以防駭客與外溢風險",
+      "en": "OpenAI cuts frontier models from live internet, shifting to offline sandboxes over security risks"
+     },
+     "detail": {
+      "zh": "OpenAI 宣布為了防範自主代理在訓練期間攻擊外部網路系統，已建構完全隔離的離線快取環境。這意味著未來前沿模型在訓練階段無法即時抓取即時網頁，訓練流程與代理安全評估將全面沙盒化。",
+      "en": "Following security incidents, OpenAI is cutting frontier model training off from live web access, deploying an isolated offline environment with cached web content. This architectural shift highlights escalating concerns over autonomous rogue agents and sets a new baseline for training safety."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet",
+     "tags": [
+      "OpenAI",
+      "AI安全",
+      "模型訓練",
+      "基礎架構"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Block 發表高擬真端側語音模型，可在 MacBook M4 Max 本地即時運行",
+      "en": "Block unveils eerily human voice model running locally on MacBook M4 Max"
+     },
+     "detail": {
+      "zh": "Block 推出的新語音模型不僅自然度逼真，還具備高效率的邊緣推論能力，能在消費級筆電晶片上本機運算。這降低了擬真語音代理對雲端 API 的依賴，大幅緩解延遲與隱私顧慮。",
+      "en": "Block showcased a natural-sounding voice model capable of running entirely locally on Apple Silicon (M4 Max). This provides developers with an alternative to latency-heavy cloud voice APIs while significantly cutting operational inference costs."
+     },
+     "source": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
+     "tags": [
+      "語音生成",
+      "邊緣推論",
+      "AppleSilicon",
+      "本機部署"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "研究揭示模型政治偏好斷層：Grok 傾向共和黨，GPT 傾向民主黨",
+      "en": "Study shows sharp political bias divergence: Grok leans Republican, GPT backs Democrats"
+     },
+     "detail": {
+      "zh": "最新評測顯示，在近 500 場選戰中強制選邊時，Grok 與 OpenAI GPT 在超過 90% 的情境下意見分歧。這凸顯了對齊策略與微調資料集對 LLM 價值觀輸出的強烈主觀投射，構建客觀決策代理仍具挑戰。",
+      "en": "A new benchmark analyzing nearly 500 races found Grok overwhelmingly recommends Republican candidates while GPT picks Democrats, clashing in over 90% of cases. The findings highlight the deep role of RLHF and curator alignment in shaping downstream reasoning."
+     },
+     "source": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/",
+     "tags": [
+      "LLM評測",
+      "模型偏見",
+      "RLHF",
+      "基準測試"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "純原生 Canvas 實現：Simon Willison 以 Sobel 邊緣檢測打造 Quick Study 繪圖工具",
+      "en": "Quick Study uses vanilla Canvas and Sobel edge detection to simulate oil painting"
+     },
+     "detail": {
+      "zh": "該實驗性網頁 Artifact 透過 Claude 提示詞直接生成，利用傳統 Sobel 邊緣檢測演算法搭配純原生 Canvas 模擬油畫筆觸，不依賴龐大肥大的前端框架。展示了 LLM 結合傳統電腦視覺基礎演算法的即時生成潛力。",
+      "en": "Generated via Claude prompts, this lightweight web artifact simulates painting strokes within seconds using native Canvas and classical Sobel edge detection. It serves as a crisp example of using AI for lightweight, zero-dependency browser-based tooling."
+     },
+     "source": "https://simonwillison.net/2026/Oct/23/quick-study-painter/",
+     "tags": [
+      "前端開發",
+      "電腦視覺",
+      "Canvas",
+      "Prompt工程"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Battledrones v14 釋出：透過 Claude Opus 擴展 4 人旋轉對稱 WebSocket 連線架構",
+      "en": "Battledrones v14 adds 4-player WebSocket multiplayer via Claude Opus prompts"
+     },
+     "detail": {
+      "zh": "Simon Willison 透過提示工程讓 Claude Opus 擴展既有對戰遊戲，新增旋轉對稱地圖並重構 WebSocket 多人連線邏輯，支援真人與 AI 混合配對。為利用大模型維護並重構多人即時狀態網絡提供了典型參考。",
+      "en": "The open-source demo updated its architecture to support 4-player rotational maps and mixed AI-human matches through Claude Opus refactoring. It illustrates practical patterns for maintaining stateful WebSocket game architectures with LLMs."
+     },
+     "source": "https://simonwillison.net/2026/Oct/24/battledrones/",
+     "tags": [
+      "WebSocket",
+      "遊戲開發",
+      "開源項目",
+      "即時通訊"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "簡訊即介面：盤點直接常駐手機簡訊通訊錄的最新 AI 代理生態",
+      "en": "Overview of SMS-based AI agents living inside native text messaging"
+     },
+     "detail": {
+      "zh": "專題盤點了將 LLM 接入標準 SMS/iMessage 的代表性代理服務，涵蓋出差規劃、家庭協同與輕量任務自動化。這類免安裝 App、依賴非同步文本交互的架構正重新定義終端用戶的輕量級人機介面。",
+      "en": "A roundup highlights the growing ecosystem of AI assistants integrated into native SMS pipelines for travel, family, and productivity tasks. Skipping dedicated app installs in favor of asynchronous messaging offers lower friction for mass-market users."
+     },
+     "source": "https://techcrunch.com/2026/10/24/all-the-ai-agents-that-can-live-in-your-text-messages/",
+     "tags": [
+      "AI代理",
+      "產品設計",
+      "SMS",
+      "用戶介面"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "科技業外的 AI 投資回報依然冷淡：Apollo 數據指非技術領域尚未見生產力紅利",
+      "en": "Apollo report: Still no measurable AI productivity payoff outside tech sector"
+     },
+     "detail": {
+      "zh": "Apollo 最新市場分析指出，儘管科技公司內部開發效率因 Copilot 工具提升，但整體非科技產業的資本支出尚未轉化為實質生產力提升。對 SaaS 創業者而言，純功能型包裝在 B2B 落地時面臨更高的驗收門檻。",
+      "en": "Macro data from Apollo indicates enterprise AI adoption outside big tech has yet to yield measurable margin or productivity gains. The findings suggest enterprise sales face tightening ROI scrutiny, putting pressure on pure wrapper solutions."
+     },
+     "source": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
+     "tags": [
+      "ROI",
+      "企業級AI",
+      "產業分析",
+      "市場趨勢"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "arXiv 論文探討：為何 AI 生成文本具備語意斷裂與高認知負荷感？",
+      "en": "New arXiv study examines why AI-generated text imposes heavy cognitive load"
+     },
+     "detail": {
+      "zh": "論文分析了人類閱讀 LLM 生成文本時的語篇理解障礙，指出現有模型由於自回歸機制的統計特性，在宏觀邏輯銜接和語義連貫性上存在結構性缺陷。這解釋了自動生成文檔常有語法正確卻晦澀難讀的現象。",
+      "en": "A recent paper analyzes linguistic cohesion deficits in autoregressive generation, explaining why LLM output often feels cognitively taxing despite grammatical correctness. The study points to micro-level probability sampling masking global coherence breakdowns."
+     },
+     "source": "https://arxiv.org/abs/2610.29162",
+     "tags": [
+      "NLP",
+      "論文解讀",
+      "可解釋性",
+      "語言模型"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "學術幻覺事故：AI 輔助論文被揪出引用「完全不存在」的 TorrentFreak 假文章",
+      "en": "AI-assisted academic paper found citing non-existent TorrentFreak article"
+     },
+     "detail": {
+      "zh": "一篇探討 Z-Library 的已發表論文被發現其文獻列表包含了大模型胡謅的虛假新聞連結。這凸顯了學術與檢索增強（RAG）工作流中若缺乏確定性的確定性交叉校驗，模型幻覺將直接破壞知識生產的嚴肅性。",
+      "en": "A peer-reviewed paper on Z-Library cited a completely fabricated TorrentFreak URL produced by an LLM during drafting. The incident highlights the persistent hazard of hallucinated citations when RAG or strict factual verification passes are omitted."
+     },
+     "source": "https://torrentfreak.com/ai-assisted-paper-on-z-library-cites-a-torrentfreak-article-that-doesnt-exist/",
+     "tags": [
+      "模型幻覺",
+      "RAG",
+      "學術誠信",
+      "工程反思"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "賓州簽署防欺詐法案：強制要求所有顯著經 AI 生成或修飾的廣告必須標註",
+      "en": "Pennsylvania mandates explicit disclosures for all AI-generated advertising"
+     },
+     "detail": {
+      "zh": "美國賓州州長簽署《AI 欺詐廣告法》，規定無論圖片、文字或影音，只要經 AI 深度生成或修改，均需以標準格式標明。行銷科技與內容生成管線必須納入自動浮水印與合規標記流程。",
+      "en": "Pennsylvania enacted legislation requiring visible disclosures on any advertisements significantly modified or generated by AI. Ad-tech platforms and generative pipelines operating in the state must implement systematic provenance and labeling mechanisms."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act",
+     "tags": [
+      "政策法規",
+      "AI標註",
+      "合規要求",
+      "廣告科技"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "科技淘汰名單盤點：從 Siri AI 延宕到各類 Super App 的 AI 項目公墓",
+      "en": "The AI graveyard: Retrospective on the high-profile startups and projects that collapsed"
+     },
+     "detail": {
+      "zh": "最新專題整理了過去兩年未能達標或停擺的 AI 專案，包括多次延遲的語音助手重構及過度包裝的通用應用。這為開發者在架構選型與避免陷入創投炒作泡沫提供了現實參照。",
+      "en": "A retrospective report documents shuttered startups and overpromised big-tech rollouts that failed in production. It offers a sobering reality check for engineering teams navigating product-market fit beyond pure speculative hype."
+     },
+     "source": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+     "tags": [
+      "新創動態",
+      "架構決策",
+      "產業回顧"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "黃仁勳現場把玩 Microduck 語音互動機器小鴨，引發 2 萬隻現貨瞬間售罄",
+      "en": "Jensen Huang plays with voice-controlled Microduck robot, triggering 20k instant sellout"
+     },
+     "source": "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/"
+    },
+    {
+     "headline": {
+      "zh": "對抗過度完美的 AI 生成感，BBC《藍色星球 III》刻意保留真實拍攝的粗糙瑕疵鏡頭",
+      "en": "BBC Blue Planet III deliberately keeps raw, imperfect takes to counter pristine AI aesthetic"
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1018205/blue-planet-iii-authentic-organic-ai"
+    },
+    {
+     "headline": {
+      "zh": "工程師曾稱不切實際，OpenAI 最終仍因重大安全疑慮拍板切斷模型即時聯網訓練",
+      "en": "OpenAI formalizes total cutoff from live training data despite internal feasibility skepticism"
+     },
+     "source": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-10-25T07:01+08:00"
+}

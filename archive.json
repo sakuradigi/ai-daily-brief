@@ -1,6 +1,14 @@
 {
- "latest": "2026-10-24",
+ "latest": "2026-10-25",
  "reports": [
+  {
+   "date": "2026-10-25",
+   "type": "daily",
+   "summary": {
+    "zh": "OpenAI斷網訓練前沿模型，本地語音新突破",
+    "en": "OpenAI cuts live web training as local audio models advance"
+   }
+  },
   {
    "date": "2026-10-24",
    "type": "daily",
