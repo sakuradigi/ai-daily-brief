@@ -1,6 +1,14 @@
 {
- "latest": "2026-10-25",
+ "latest": "2026-10-26",
  "reports": [
+  {
+   "date": "2026-10-26",
+   "type": "weekly",
+   "summary": {
+    "zh": "Cerebras 攻克兆級模型推論；開源社群對 AI 築起高牆",
+    "en": "Cerebras runs trillion-parameter models; open source pushes back on AI."
+   }
+  },
   {
    "date": "2026-10-25",
    "type": "daily",
