@@ -1,6 +1,14 @@
 {
- "latest": "2026-10-26",
+ "latest": "2026-10-27",
  "reports": [
+  {
+   "date": "2026-10-27",
+   "type": "daily",
+   "summary": {
+    "zh": "Anthropic 提交 S-1 招股書；OpenAI 推出 GPT-6.1 Terra 強化電腦操作能力。",
+    "en": "Anthropic files S-1 for IPO; OpenAI introduces GPT-6.1 Terra for computer use."
+   }
+  },
   {
    "date": "2026-10-26",
    "type": "weekly",
