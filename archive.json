@@ -1,6 +1,14 @@
 {
- "latest": "2026-10-27",
+ "latest": "2026-10-28",
  "reports": [
+  {
+   "date": "2026-10-28",
+   "type": "daily",
+   "summary": {
+    "zh": "Genie 4 釋出、GPT-6.1 Terra 強化電腦操作、Cloudflare 爆發快取洩漏危機",
+    "en": "Genie 4 world model debuts, GPT-6.1 Terra upgrades computer use, and Cloudflare mitigates KV cache exposure"
+   }
+  },
   {
    "date": "2026-10-27",
    "type": "daily",

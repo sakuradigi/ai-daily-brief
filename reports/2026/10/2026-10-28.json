@@ -1,0 +1,290 @@
+{
+ "date": "2026-10-28",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Google DeepMind 發布 Genie 4 世界模型，支援即時自然語言互動與音效生成",
+      "en": "Google DeepMind debuts Genie 4 world model with real-time text steering and audio synthesis"
+     },
+     "detail": {
+      "zh": "DeepMind 正式發表新一代世界模型 Genie 4，場景一致性大幅延長至 2 分鐘，並整合 Gemini 3.8 Flash 實現低延遲文字指令動態修改世界狀態。該模型首次原生具備音效生成能力，並強化了物理引擎與擬人角色動力學，將逐步開放開發者 API。",
+      "en": "DeepMind released Genie 4, doubling consistent scene generation up to two minutes while integrating Gemini 3.8 Flash for low-latency natural language steering. It natively supports synchronized audio and advanced physics, opening new horizons for synthetic data and interactive environments."
+     },
+     "source": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+     "tags": [
+      "World Model",
+      "Google DeepMind",
+      "Simulation"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 發表 GPT-6.1 Terra，主打視覺推理與精確電腦操作能力",
+      "en": "OpenAI launches GPT-6.1 Terra focused on visual reasoning and precise computer use"
+     },
+     "detail": {
+      "zh": "OpenAI 推出了較 GPT-5.6 大幅升級的輕量高效模型 GPT-6.1 Terra，針對 GUI 互動與 Computer Use 進行專項架構優化。此版本強化了多步驟視覺定位與跨應用操作精度，並提升了日常寫作流暢度，專為自動化日常桌面工作流設計。",
+      "en": "OpenAI introduced GPT-6.1 Terra, an efficient model engineered specifically for detailed visual reasoning and robust computer use tasks. Designed to automate complex desktop workflows, it brings notable latency reductions and accuracy improvements over GPT-5.6 Terra."
+     },
+     "source": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
+     "tags": [
+      "OpenAI",
+      "Computer Use",
+      "Multimodal"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Cloudflare Workers AI 爆發跨請求 KV Cache 洩漏漏洞，涉及 GLM-5.3 推論模型",
+      "en": "Cloudflare remediates cross-request KV cache exposure in Workers AI running GLM-5.3"
+     },
+     "detail": {
+      "zh": "Cloudflare 揭露並修補了 Workers AI 上 GLM-5.3 模型的重大安全問題：在特定並行排程下，KV Cache 出現跨請求上下文污染，導致潛在的敏感 prompt 殘留外洩。該事件促使社群再度嚴格審視 Multi-tenant 共享推論架構下的狀態隔離風險。",
+      "en": "Cloudflare detailed a security incident in Workers AI where concurrent inference on GLM-5.3 suffered from cross-request KV cache contamination. The issue highlights critical isolation vulnerabilities in shared multi-tenant LLM serving architectures."
+     },
+     "source": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+     "tags": [
+      "Security",
+      "Cloudflare",
+      "Inference"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Liquid AI 於 Hugging Face 推出 LFM3，支援打造自訂領域的多模態模型",
+      "en": "Liquid AI releases LFM3 on Hugging Face for building domain-specific multimodal models"
+     },
+     "detail": {
+      "zh": "Liquid AI 在 Hugging Face 上線 LFM3 架構指南與權重工具，允許開發者以非 Transformer 基礎構建自訂多模態應用。該架構具備極佳的推論長度可擴展性與極低記憶體開銷，適合部署於資源受限的高頻邊緣環境。",
+      "en": "Liquid AI published the LFM3 framework on Hugging Face, enabling developers to train specialized multimodal models without traditional Transformer attention bottlenecks. It delivers substantial memory efficiency gains for edge deployment."
+     },
+     "source": "https://huggingface.co/blog/LiquidAI/lfm3",
+     "tags": [
+      "Open Source",
+      "Hugging Face",
+      "Multimodal"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Survival LLM：完全離線運作的個人緊急知識庫與本機助理",
+      "en": "Survival LLM: A fully local, offline emergency library and personal AI assistant"
+     },
+     "detail": {
+      "zh": "Survival LLM 將精簡版開源模型與高密度離線百科知識庫封裝為自託管應用，無需任何外網連線即可在一般 PC 上執行檢索與推理。適合極端斷網情境、隱私敏感場景或偏遠地區的本機維運工具。",
+      "en": "Survival LLM packages an offline emergency database with quantized open-weights models into a standalone local application. It allows zero-network querying and assistance on commodity hardware for privacy-first or disaster-recovery environments."
+     },
+     "source": "https://www.brangus.io/survival-llm",
+     "tags": [
+      "Local LLM",
+      "Open Source",
+      "Self-Hosted"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Opera 提出 WebAI 網路標準，讓瀏覽器原生調用本機硬體運行 AI",
+      "en": "Opera proposes WebAI standard for native in-browser local model deployment"
+     },
+     "detail": {
+      "zh": "Opera 發起全新網頁標準 WebAI，旨在統一網頁端直接存取本機 NPU 與 GPU 進行推論的 API 介面。若被主流瀏覽器採納，網頁開發者將不再依賴龐大的 WebAssembly/WebGPU 膠水程式碼，即可零配置載入開源模型。",
+      "en": "Opera introduced the WebAI standard specification designed to unify in-browser inference across various local hardware backends. This provides web developers with a standardized runtime interface without heavy WebGPU boilerplate."
+     },
+     "source": "https://techcrunch.com/2026/10/27/opera-introduces-a-new-web-standard-to-let-users-deploy-ai-locally-in-their-browser/",
+     "tags": [
+      "Web Standards",
+      "Edge AI",
+      "Browsers"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "蘋果將 AI 助理整合進 iWork 三件套，底層融合自家與 OpenAI 模型",
+      "en": "Apple integrates AI assistants into Pages, Keynote, and Numbers powered by OpenAI"
+     },
+     "detail": {
+      "zh": "蘋果宣布為 Pages、Keynote 與 Numbers 內嵌智慧助理，結合 Apple 裝置端模型與 OpenAI 雲端推論。該系統能直接讀取文件脈絡，在 Keynote 自動產生排版動畫，或在 Pages 執行結構化改寫與資料彙整。",
+      "en": "Apple added deep AI integration into its iWork suite, leveraging hybrid architecture combining on-device Apple models and cloud-based OpenAI models. The assistants can programmatically generate presentation layouts and automate complex document editing."
+     },
+     "source": "https://www.theverge.com/tech/1019373/apple-pages-keynote-numbers-ai-chatbot-update",
+     "tags": [
+      "Apple",
+      "OpenAI",
+      "Productivity"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Firefox Smart Window 更新：支援跨分頁內容監控與表單自動填寫",
+      "en": "Firefox updates Smart Window with automated form filling based on active tabs"
+     },
+     "detail": {
+      "zh": "Mozilla 替 Firefox Smart Window 導入即時表單合成功能，能跨多個已開啟的分頁（如 LinkedIn 或個人網站）擷取履歷與結構化欄位，並直接填入目標網站的申請表格。這項探索展示了客戶端 Agent 在日常瀏覽任務中的潛力。",
+      "en": "Mozilla enhanced Firefox's Smart Window AI feature to parse unstructured content across open tabs and populate complex web forms. This client-side agent pattern demonstrates practical context synthesis directly within the browser runtime."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1019551/firefox-smart-window-ai-fill-forms",
+     "tags": [
+      "Firefox",
+      "Browsers",
+      "Agents"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "艾倫人工智慧研究所推出 NoveltyBench：測試 LLM 是否能準確評判研究新穎性",
+      "en": "Allen Institute for AI introduces NoveltyBench to evaluate LLMs on research novelty"
+     },
+     "detail": {
+      "zh": "Ai2 發布新基準 NoveltyBench，專門量化大語言模型能否評估學術論文假說的創新度與獨特性。結果顯示現有主流模型在交叉比對前置文獻與判定非顯而易見創新時仍有高度偏差，警示自動化同行評審系統尚需更謹慎的邊界限制。",
+      "en": "Ai2 unveiled NoveltyBench to rigorously benchmark whether frontier models can reliably discern the novelty of scientific hypotheses. Findings suggest current architectures still struggle to distinguish non-trivial breakthroughs from derivative literature."
+     },
+     "source": "https://huggingface.co/blog/allenai/novelty-bench",
+     "tags": [
+      "Benchmark",
+      "Ai2",
+      "Evaluation"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "前沿實驗室宣稱模型挑戰「指數時間假說」（ETH），學界對驗證方式存疑",
+      "en": "Frontier AI labs claim breakthroughs on the Exponential Time Hypothesis, sparking debate"
+     },
+     "detail": {
+      "zh": "針對 OpenAI 等實驗室近期發布的理論計算機科學突破，麻省理工學院研究者深入剖析了模型針對指數時間假說（ETH）的推導結果。雖然模型給出了精巧的輔助證明，但缺乏完整透明推導鏈的溝通方式引發理論計算學界的強烈審視。",
+      "en": "Computer scientists scrutinized claims from top AI labs that their models derived proofs challenging the Exponential Time Hypothesis (ETH). While demonstrating remarkable formal synthesis, researchers raised concerns over verifiable methodology and black-box disclosure."
+     },
+     "source": "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/",
+     "tags": [
+      "Research",
+      "Theoretical CS",
+      "OpenAI"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Anthropic 提交 IPO S-1 招股書：詳列自主意識、失控威脅與天然氣電力依賴",
+      "en": "Anthropic files IPO S-1 disclosing existential AI risks and heavy natural gas reliance"
+     },
+     "detail": {
+      "zh": "Anthropic 正式提交公開發行招股書，長達 93 頁的風險因素清單極其罕見地列入模型可能發展出自覺性、被用於勒索甚至終結人類等極端情境；同時檔案亦坦承為滿足推論算力，其資料中心正面臨對天然氣等碳排能源的重度依賴。",
+      "en": "Anthropic's IPO registration (Form S-1) explicitly outlines tail-risk scenarios including model autonomy, extortion, and existential risks. The filing also highlights severe electrical constraints, acknowledging a growing dependence on natural-gas powered facilities."
+     },
+     "source": "https://arstechnica.com/ai/2026/10/anthropic-ipo-warns-its-ai-could-blackmail-people-become-sentient-end-humanity/",
+     "tags": [
+      "Anthropic",
+      "IPO",
+      "Regulation"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "美國德拉瓦州研擬無人自主公司法案，允許 AI Agent 完全營運企業架構",
+      "en": "Delaware considers legal framework allowing AI agents to run entire corporations"
+     },
+     "detail": {
+      "zh": "德拉瓦州正起草全新法案，研擬允許完全沒有人類董事參與、由自主 AI Agent 全權治理與營運的法人實體。此舉引發美國國會與法律界強烈爭議，外界擔憂該機制將成為創辦人逃避演算法魯莽決策與民刑事連帶責任的法律漏洞。",
+      "en": "A proposed Delaware legislative initiative would allow fully autonomous AI agents to own and operate corporations without human oversight. The move faces severe pushback over fears that corporate shields will be abused to escape liability for AI actions."
+     },
+     "source": "https://arstechnica.com/tech-policy/2026/10/no-human-at-the-helm-delaware-plan-would-let-ai-agents-run-entire-businesses/",
+     "tags": [
+      "Legal",
+      "Policy",
+      "Autonomous Agents"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "去審查版 DeepSeek（Abliterated）生態快速擴張，目前已有 5 家第三方推論服務商支援託管 API",
+      "en": "Five independent cloud providers now offer hosted APIs for abliterated DeepSeek models"
+     },
+     "source": "https://allmodels.io/llm/abliterated"
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 擴大與 Oracle 策略結盟，將企業級 ERP/CRM 商業應用與 AI Agent 深化整合進 ChatGPT",
+      "en": "OpenAI deepens Oracle partnership to natively embed enterprise apps and agents into ChatGPT"
+     },
+     "source": "https://openai.com/index/oracle-apps-in-chatgpt"
+    },
+    {
+     "headline": {
+      "zh": "史丹佛校內媒體揭露，Anthropic 被指未經授權使用該校教授著作進行 Claude 預訓練",
+      "en": "Stanford professors accuse Anthropic of pirating copyrighted academic books to train Claude"
+     },
+     "source": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/"
+    },
+    {
+     "headline": {
+      "zh": "駭客極客利用 Gemini 將 NES 與 Game Boy Color 模擬器成功移植至 GitHub Universe 電子名牌",
+      "en": "Developers port NES and Game Boy Color emulators to the GitHub Universe badge using Gemini"
+     },
+     "source": "https://simonwillison.net/2026/Oct/27/game-boy-color-on-my-conference-badge/"
+    },
+    {
+     "headline": {
+      "zh": "Meta AI 評估與強化學習總監 Rohit Patel 離職創辦 Ndoc，目標打造 AI 原生辦公軟體挑戰微軟",
+      "en": "Meta AI evaluation director Rohit Patel departs to launch Ndoc, targeting the office productivity market"
+     },
+     "source": "https://techcrunch.com/2026/10/27/meta-ai-director-rohit-patel-leaves-to-take-on-microsoft-office-and-google-workspace/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-10-28T07:01+08:00"
+}
