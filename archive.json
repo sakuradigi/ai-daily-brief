@@ -1,6 +1,14 @@
 {
- "latest": "2026-10-28",
+ "latest": "2026-10-29",
  "reports": [
+  {
+   "date": "2026-10-29",
+   "type": "daily",
+   "summary": {
+    "zh": "Google 發布 Gemini 4 Carbon；NVIDIA 開源 Nemotron 語音模型；Cursor 推 Agent SDK。",
+    "en": "Google drops Gemini 4 Carbon, NVIDIA open-sources Nemotron transcription, and Cursor launches Agent SDK."
+   }
+  },
   {
    "date": "2026-10-28",
    "type": "daily",

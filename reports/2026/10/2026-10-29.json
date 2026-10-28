@@ -1,0 +1,277 @@
+{
+ "date": "2026-10-29",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Google 突襲發布次世代前沿模型 Gemini 4 Carbon，主打程式碼與資安跳躍式升級",
+      "en": "Google Unveils Frontier Model Gemini 4 Carbon, Touting Major Leaps in Coding and Cybersecurity"
+     },
+     "detail": {
+      "zh": "Google DeepMind 正式公開新旗艦模型 Gemini 4 Carbon，聲稱在 Artificial Analysis v5.0 等基準超越 Claude Opus 5.5 與 GPT-6 Astra，特別強化 Agent 任務執行與資安防禦。不過開發者社群指出該模型目前釋出節奏與實裝細節仍有限，多數外部開發者尚無法直接在生產端調用。",
+      "en": "Google DeepMind introduced Gemini 4 Carbon, topping the Artificial Analysis v5.0 index over rivals like Claude Opus 5.5. The model emphasizes agentic workflows and cybersecurity capabilities, though widespread developer access remains restricted at launch."
+     },
+     "source": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+     "tags": [
+      "Gemini",
+      "Google",
+      "LLM",
+      "Cybersecurity"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "NVIDIA 開源 Nemotron 3.5 Transcribe 與 Granary v2：支援 40 國語言之可提示語音轉錄模型",
+      "en": "NVIDIA Open-Sources Nemotron 3.5 Transcribe & Granary v2: Promptable Multilingual ASR"
+     },
+     "detail": {
+      "zh": "NVIDIA 在 Hugging Face 發布免費開源的語音辨識模型 Nemotron 3.5 Transcribe，涵蓋 40 種語言並支援 Prompt 引導以適應專業領域術語。該模型專注於錄音檔批次轉錄，適用於會議記錄、醫療聽寫等本地端部署場景，大幅降低自建 Whisper 替代方案的門檻。",
+      "en": "NVIDIA dropped open-weights for Nemotron 3.5 Transcribe alongside Granary v2 on Hugging Face, enabling promptable speech-to-text across 40 languages. Geared toward batch processing of long recordings, it offers self-hosters a robust alternative for domain-specific transcription pipelines."
+     },
+     "source": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+     "tags": [
+      "NVIDIA",
+      "OpenSource",
+      "Audio",
+      "HuggingFace"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Cursor 釋出 The Agent SDK，推動智慧代理底層架構標準化",
+      "en": "Cursor Launches 'The Agent SDK' to Standardize AI Agent Development"
+     },
+     "detail": {
+      "zh": "AI 編輯器 Cursor 正式發布專門構建軟體開發 Agent 的開源工具套件 The Agent SDK，將其內部打磨成熟的上下文感知、工具調用與編輯回滾機制模組化。此舉讓工程師能在自己的專案內直接復刻類似 Cursor 的自動化編程代理能力，加速 Agentic 應用的工程化落地。",
+      "en": "Cursor released The Agent SDK, modularizing its core infrastructure for context management, tool calling, and autonomous code generation. This gives developers battle-tested building blocks to build reliable, editor-grade coding agents inside custom workflows."
+     },
+     "source": "https://cursor.com/blog/agent-sdk",
+     "tags": [
+      "Cursor",
+      "Agent",
+      "DeveloperTools",
+      "SDK"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "GitHub 2026 Octoverse 發布：Agentic Engineering 爆發帶動合併 PR 激增三倍",
+      "en": "GitHub Octoverse 2026: Merged PRs Triple Driven by Agentic Engineering Surge"
+     },
+     "detail": {
+      "zh": "GitHub Universe 公布最新年度數據，全球月合併 PR 數突破 2.2 億次、月 commit 數達 73.8 億次，皆在不到一年內增長三倍。數據證實 2026 年下半年程式編寫 Agent 已由輔助生成全面轉型為主動提交工程代碼的主力驅動者。",
+      "en": "GitHub's Octoverse 2026 report reveals that monthly merged PRs surged to 220 million and commits hit 7.38 billion, both tripling within a year. The dramatic jump highlights the systemic transition of coding agents from autocomplete to autonomous PR authors."
+     },
+     "source": "https://simonwillison.net/2026/Oct/28/github-octoverse-2026/",
+     "tags": [
+      "GitHub",
+      "AgenticEngineering",
+      "DevOps"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Akai 擁抱 Vibe Coding 浪潮，將為新 MPC 採樣器開放開源韌體與改裝",
+      "en": "Akai Embraces Vibe-Coded Mods with Open-Source Firmware for Upcoming MPC"
+     },
+     "detail": {
+      "zh": "音樂硬體大廠 Akai 針對尚未正式發布的 MPC Sample Key 硬體採取新策略，主動向駭客與自訂韌體社群開放架構。官方藉由提供早期測試支援與開放源始碼韌體，直接接納開發者社群利用 AI Vibe Coding 快速構建音訊處理擴充套件的趨勢。",
+      "en": "Akai is officially backing the vibe-coding modder community by introducing open-source firmware for its upcoming MPC Sample Key. The initiative allows audio hackers to rapidly develop and run community-built DSP plugins and firmware tweaks directly on the hardware."
+     },
+     "source": "https://www.theverge.com/gadgets/1021405/akai-open-source-mpc-sample-key",
+     "tags": [
+      "OpenSource",
+      "Hardware",
+      "Audio",
+      "VibeCoding"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Google 開放 Gemini 與 Search 代理生態系，全新開發者平台允許外部 App 接入",
+      "en": "Google Launches Developer Platform to Plug Third-Party Apps into Gemini and Search"
+     },
+     "detail": {
+      "zh": "面對 Agent 時代對傳統搜尋入口的重塑，Google 推出新開發者平台，允許第三方企業與 SaaS 將自身服務串接進 Gemini 及 AI Search 中。這意味著開發者可直接向 Google 的原生 AI 助理暴露 API 行為，重構行動與網頁應用的獲客模式。",
+      "en": "Google unveiled a developer platform enabling businesses to integrate services directly into Gemini and AI Search. The move lets developers surface agentic actions inside Google's conversational surfaces, redefining traditional app discovery."
+     },
+     "source": "https://techcrunch.com/2026/10/28/as-ai-agents-reshape-the-web-google-opens-gemini-and-search-to-more-apps/",
+     "tags": [
+      "Google",
+      "Gemini",
+      "API",
+      "Agents"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 擴大 ServiceNow 戰略合作：整合 Codex 至企業工作流程與 ChatGPT",
+      "en": "OpenAI and ServiceNow Deepen Tie-Up to Integrate Agentic Workflows into ChatGPT and Codex"
+     },
+     "detail": {
+      "zh": "OpenAI 宣布深化與 ServiceNow 的企業級結盟，除了將 OpenAI 前沿模型與 Agent 架構導入 ServiceNow 系統，也把 ServiceNow 的 ITSM 與審批流程反向接入 ChatGPT 及 Codex。此合作大幅降低企業內部系統自建 Tool-use 橋接器的開發成本。",
+      "en": "OpenAI and ServiceNow expanded their alliance to embed frontier models inside ServiceNow while integrating enterprise workflows directly into ChatGPT and Codex, streamlining internal tool-use integrations for engineering and IT teams."
+     },
+     "source": "https://openai.com/index/openai-servicenow-partnership-expansion",
+     "tags": [
+      "OpenAI",
+      "ServiceNow",
+      "Enterprise",
+      "Codex"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 推出企業 AI 成本可視化工具，協助團隊精準追蹤 Token 支出",
+      "en": "Anthropic Launches Cost Visibility Tools for Granular Model Spending Analytics"
+     },
+     "detail": {
+      "zh": "Anthropic 針對企業用戶上線全新儀表板工具，可細緻拆解各專案在 Claude 模型上的 API 呼叫成本與算力價值回報。隨著團隊自建 Agent 流程導致 Token 消耗劇增，該工具提供了開發團隊進行 Prompt 優化與防範預算爆表的監控方案。",
+      "en": "Anthropic introduced enterprise spending analytics tools to give organizations granular visibility into Claude model consumption. As agentic usage inflates token volume, the dashboard helps engineering leads audit ROI and monitor cost regressions."
+     },
+     "source": "https://techcrunch.com/2026/10/28/anthropic-just-launched-tools-to-show-companies-what-their-ai-spending-is-buying/",
+     "tags": [
+      "Anthropic",
+      "API",
+      "FinOps",
+      "DeveloperTools"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Dayjob: Tax 基準測試出爐：評估 AI Agent 處理 50 道高難度專業稅務實戰",
+      "en": "Dayjob: Tax Benchmark Tests AI Agents on 50 Real-World Professional Tax Tasks"
+     },
+     "detail": {
+      "zh": "Surge AI 發布 Dayjob: Tax 基準測試，專門衡量各家 LLM Agent 在 50 項複雜且具備真實法律約束力的專業報稅與會計任務中的實操表現。該測試凸顯了純語言模型在多層邏輯推理、跨表對照與專業法規解讀時的幻覺痛點，為垂直領域 Agent 提供具體評估標竿。",
+      "en": "Surge AI introduced Dayjob: Tax, an evaluation suite assessing autonomous agents against 50 rigorous, real-world tax preparation assignments. The benchmark exposes key failure modes in multi-step numeric reasoning and regulatory compliance for production agents."
+     },
+     "source": "https://surgehq.ai/blog/dayjob-tax",
+     "tags": [
+      "Benchmark",
+      "Evaluation",
+      "Agents",
+      "Reasoning"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "微軟首度揭露 Azure 季度營收達 332 億美元，單季自 OpenAI 分得百億收入",
+      "en": "Microsoft Discloses $33.2B Quarterly Azure Revenue, Logged $10B from OpenAI Alliance"
+     },
+     "detail": {
+      "zh": "微軟最新財報歷史性公布 Azure 單季營收為 332 億美元，逼近 AWS 龍頭地位；同時揭示其從與 OpenAI 的商業與收益分潤合約中單季認列 100 億美元營收。數據明確呈現出前沿模型算力基礎設施與商業合作對雲端巨頭營收的決定性拉抬效果。",
+      "en": "Microsoft broken out Azure revenue in exact dollars for the first time at $33.2 billion, while revealing $10 billion in quarterly revenue derived from commercial pacts with OpenAI. The disclosures underscore the sheer scale of compute monetization sustaining the cloud sector."
+     },
+     "source": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/",
+     "tags": [
+      "Microsoft",
+      "Azure",
+      "OpenAI",
+      "Cloud"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "德拉瓦州研擬修法允許 AI Agent 全權經營企業，引發責任歸屬爭議",
+      "en": "Delaware Weighs Proposal to Let Autonomous AI Agents Run Entire Businesses"
+     },
+     "detail": {
+      "zh": "美國德拉瓦州正評估法律修訂案，允許完全無人類參與的純 AI Agent 登記並營運公司法人。此舉引發法律界與國會質疑，批評者擔憂這將為演算法的魯莽行為開脫責任，使實際持有人藉由無人實體規避民事與刑事追訴。",
+      "en": "Delaware is considering legislation that would permit autonomous AI agents to legally incorporate and operate entire businesses without human executives. The initiative has drawn backlash over concerns that owners could shield themselves from liability behind rogue algorithms."
+     },
+     "source": "https://arstechnica.com/tech-policy/2026/10/no-human-at-the-helm-delaware-plan-would-let-ai-agents-run-entire-businesses/",
+     "tags": [
+      "Legal",
+      "Policy",
+      "Governance",
+      "Agents"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "微軟宣布全面終止智慧電視端 Copilot 支援，LG 與三星電視 AI 助手服務正式退場。",
+      "en": "Microsoft is officially pulling the plug on Copilot on LG and Samsung smart TVs."
+     },
+     "source": "https://www.theverge.com/tech/1021143/microsoft-lg-samsung-copilot-ai-assistant-smart-tvs-ending"
+    },
+    {
+     "headline": {
+      "zh": "Chrome 擴充 AI 自動填表功能，允許經用戶授權直接從 Gmail 信箱提取訂單與行程資料。",
+      "en": "Chrome's enhanced autofill now leverages Gemini to securely parse forms using Gmail inbox data."
+     },
+     "source": "https://www.theverge.com/tech/1020626/chrome-enhanced-autofill-gmail-forms-gemini-personal-intelligence"
+    },
+    {
+     "headline": {
+      "zh": "美肯塔基州男子以個人人文主義信念為由，獲批首例拒絕職場使用 AI 的宗教豁免權。",
+      "en": "A Kentucky humanist has been granted the first religious exemption from workplace AI usage."
+     },
+     "source": "https://religionnews.com/2026/10/26/in-a-first-a-humanist-granted-a-religious-exemption-from-using-ai/"
+    },
+    {
+     "headline": {
+      "zh": "xAI 密西西比超級資料中心因發電機噪音挨告，傳出公司正逐戶收購房產以換取撤訴協議。",
+      "en": "An xAI subsidiary is offering home buyouts in Mississippi to head off data center noise lawsuits."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1020596/xai-mississippi-neighborhood-data-center-lawsuit"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-10-29T07:01+08:00"
+}
