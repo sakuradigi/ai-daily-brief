@@ -1,6 +1,14 @@
 {
- "latest": "2026-10-29",
+ "latest": "2026-10-30",
  "reports": [
+  {
+   "date": "2026-10-30",
+   "type": "daily",
+   "summary": {
+    "zh": "Mistral 開源萬億參數權重，ChatGPT 訂閱送 API 額度",
+    "en": "Mistral open-sources Large 4 weights; OpenAI matches API credit perks."
+   }
+  },
   {
    "date": "2026-10-29",
    "type": "daily",

@@ -1,0 +1,315 @@
+{
+ "date": "2026-10-30",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Mistral 正式開源萬億參數旗艦 Mistral Large 4 權重",
+      "en": "Mistral Releases Open Weights for Trillion-Parameter Mistral Large 4"
+     },
+     "detail": {
+      "zh": "Mistral 發布旗艦級 Mistral Large 4 開源權重，鎖定企業地端推論與進階資安防護需求。此舉直接衝擊閉源巨頭的高階 API 市場，讓具備算力儲備的自建團隊能完全掌控頂級前沿模型。",
+      "en": "Mistral has officially published the open weights for Mistral Large 4, targeting on-premises enterprise deployments and robust cybersecurity workloads. This release intensifies competition against proprietary frontier APIs by enabling organizations with sufficient compute to deploy state-of-the-art capability in-house."
+     },
+     "source": "https://mistral.ai/news/mistral-large-4-oss/",
+     "tags": [
+      "Mistral",
+      "OpenSource",
+      "LLM"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 跟進 Anthropic，為 ChatGPT 高階訂閱用戶提供等額 API 額度",
+      "en": "OpenAI Matches Anthropic with Equivalent API Credits for High-Tier ChatGPT Subscribers"
+     },
+     "detail": {
+      "zh": "OpenAI 宣布月費 100、200 及 500 美元的高階 ChatGPT 訂閱用戶，將可獲得等值的 API 月度過期點數。這項政策大幅降低獨立開發者與小團隊在測試與串接 OpenAI 原生 API 時的雙重訂閱成本。",
+      "en": "OpenAI has rolled out a perk offering ChatGPT subscribers on $100, $200, and $500 monthly plans an equivalent amount in expiring API credits. This move mirrors Anthropic's recent strategy, effectively eliminating the double-pay friction for builders prototyping on native APIs."
+     },
+     "source": "https://simonwillison.net/2026/Oct/29/api-credits/",
+     "tags": [
+      "OpenAI",
+      "API",
+      "Pricing"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "社群逆向發現 Claude Code 會持續將背景 Agent 逐字稿回傳底層模型",
+      "en": "Reverse-Engineering Reveals Claude Code Streams Background Agent Transcripts Back to Model"
+     },
+     "detail": {
+      "zh": "開發者在 GitHub Gist 揭露 Claude Code 在執行過程中，會自動將背景 Sub-agent 的操作日誌與逐字稿同步傳回模型。對於在受規管環境或注重隱私的專案中運行本地 Agentic 工具的工程師而言，必須評估潛在的上下文洩漏與 Token 消耗風險。",
+      "en": "A technical breakdown on GitHub Gist revealed that Claude Code periodically transmits execution logs and background agent transcripts back to its underlying model. Engineers running local autonomous agents in regulated or privacy-sensitive codebases should review potential prompt leakage and unexpected token overhead."
+     },
+     "source": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
+     "tags": [
+      "Claude",
+      "Agent",
+      "DevTools"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "IBM Granite Switch 4.1.1 登場：讓模型熱更新如同軟體 patch 般流暢",
+      "en": "IBM Releases Granite Switch 4.1.1 for Seamless, Software-Like Model Updates"
+     },
+     "detail": {
+      "zh": "IBM 發布 Granite Switch 4.1.1，主打將企業 LLM 升級流程標準化為類似軟體修補程式的架構。開發團隊能在無須重啟完整推論管線的前提下置換特定模組權重，大幅降低微調上線的維運摩擦。",
+      "en": "IBM unveiled Granite Switch 4.1.1, architected to treat enterprise LLM updates like standard modular software patches. The framework allows inference pipelines to hot-swap updated components without full redeployments, reducing operational friction during iterative fine-tuning."
+     },
+     "source": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1",
+     "tags": [
+      "IBM",
+      "Granite",
+      "OpenSource"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Hugging Face 推出 Apple 平台開源語音與決策模型雙件套",
+      "en": "Hugging Face Introduces AnySpeechRecognizer and AnyDecisionModel for Apple Silicon"
+     },
+     "detail": {
+      "zh": "開源社群釋出 AnySpeechRecognizer 與 AnyDecisionModel，針對 macOS 與 iOS 的 CoreML / Apple Silicon 進行原生量化與推論最佳化。開發者能直接在邊緣設備端建構低延遲的語音辨識與輕量結構化決策管線，免除伺服器依賴。",
+      "en": "New open-weight models AnySpeechRecognizer and AnyDecisionModel have been optimized specifically for Apple platforms via CoreML and Apple Silicon. They enable client-side developers to execute low-latency ASR and structured decision-making completely offline without server roundtrips."
+     },
+     "source": "https://huggingface.co/blog/anydecisionmodel",
+     "tags": [
+      "AppleSilicon",
+      "EdgeAI",
+      "HuggingFace"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Project ProtoStar 啟動：致力將公共資助科研資料全面轉化為 AI 訓練集",
+      "en": "Project ProtoStar Launches to Convert Public Research Data into AI-Ready Corpora"
+     },
+     "detail": {
+      "zh": "Hugging Face 發布 Project ProtoStar，旨在整合並清理政府與公共研究機構產出的龐大科研文獻與實驗數據。該專案將學術資產結構化為標準 Tokenized 語料，為垂直領域基礎模型的預訓練提供高質量開源養分。",
+      "en": "Hugging Face launched Project ProtoStar to standardize and sanitize publicly funded research data and literature into AI-ready training formats. The initiative provides open, high-quality domain corpora to support foundation model training across natural and technical sciences."
+     },
+     "source": "https://huggingface.co/blog/announcing-project-protostar",
+     "tags": [
+      "Datasets",
+      "OpenScience",
+      "HuggingFace"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Google Gemini 支援直接在對話介面生成並就地編輯 Google Docs 與程式碼",
+      "en": "Google Gemini Adds In-Chat Native Generation and Direct Editing for Docs and Code"
+     },
+     "detail": {
+      "zh": "Gemini 現在允許使用者在聊天室窗中即時預覽與修改 PDF、Google Docs、試算表、Markdown 以及純程式碼檔案。這使對話介面直接具備雲端 IDE 與文書協作器的雙向編輯能力，減少外部匯入匯出的繁瑣步驟。",
+      "en": "Google Gemini now supports previewing, generating, and directly editing PDFs, Google Docs, Sheets, and code files within the chat pane. This transforms conversational threads into bidirectional document workspaces, removing the need to copy-paste between separate apps."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs",
+     "tags": [
+      "Gemini",
+      "GoogleWorkspace",
+      "DevTools"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "語音 AI 基礎設施整併：Deepgram 收購開源框架 Pipecat 開發商 Daily",
+      "en": "Voice AI Consolidation: Deepgram Acquires WebRTC and Pipecat Creator Daily"
+     },
+     "detail": {
+      "zh": "語音辨識大廠 Deepgram 宣布收購實時音視訊基礎設施 Daily（知名開源語音 Agent 框架 Pipecat 的維護團隊）。此次整併將使低延遲語音轉文字、LLM 推論管線與 WebRTC 串流更深層整合，加速端到端對話 Agent 的部署流程。",
+      "en": "Speech-to-text provider Deepgram has acquired Daily, the infrastructure provider behind the open-source real-time voice agent framework Pipecat. The deal tightly integrates STT, LLM streaming, and WebRTC pipelines to streamline real-time conversational voice deployments."
+     },
+     "source": "https://techcrunch.com/2026/10/29/deepgram-acquires-pipecat-maker-daily-to-bolster-its-voice-ai-infrastructure/",
+     "tags": [
+      "Deepgram",
+      "VoiceAI",
+      "WebRTC"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "全自動生成世界實踐：多人線上遊戲 Spawn 運用自主 Agent 即時改寫環境",
+      "en": "Spawn Showcases Real-Time Autonomous Agentic Worldbuilding in Multiplayer Game"
+     },
+     "detail": {
+      "zh": "開發者 Jacob Sansbury 展示多人遊戲環境 Spawn，玩者可透過 Prompt 驅動遊戲內自主 Agent 即時建構城堡與物理物件。該架構展示了利用前沿模型高頻呼叫工具、直接改寫虛擬世界狀態的工程極限，為 Agent 互動介面提供實證範例。",
+      "en": "Developer Jacob Sansbury detailed Spawn, an experimental multiplayer environment where players alter persistent world states using in-game autonomous agents. The project illustrates the operational frontier of high-frequency tool-calling and real-time environment generation driven by foundational models."
+     },
+     "source": "https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world/",
+     "tags": [
+      "Agent",
+      "GameDev",
+      "SystemDesign"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 發布新版 Model Spec，明定進階 AI 判斷力與代理對齊準則",
+      "en": "OpenAI Updates Model Spec with New Directives for Autonomous Model Behavior"
+     },
+     "detail": {
+      "zh": "OpenAI 釋出更新版 Model Spec，明定五大核心原則以約束高自主性模型的判斷邏輯、人類主體性邊界與意圖忠實度。這份文件是大型語言模型在 RLHF 與 System Prompt 設計上的關鍵參照基準，揭露官方引導前沿模型行為的對齊策略。",
+      "en": "OpenAI published an updated Model Spec outlining five core values that govern autonomous model judgment, human agency, and intent fidelity. The document serves as a blueprint for RLHF alignment and prompt system design as frontier models gain higher operational autonomy."
+     },
+     "source": "https://openai.com/index/updated-model-spec",
+     "tags": [
+      "OpenAI",
+      "Alignment",
+      "Safety"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Gemini 4 Carbon 登頂 Artificial Analysis 綜合智慧指數榜首",
+      "en": "Gemini 4 Carbon Claims Top Spot on Artificial Analysis Intelligence Index v5"
+     },
+     "detail": {
+      "zh": "Google 旗下的 Gemini 4 Carbon 在最新的獨立基準測試 Artificial Analysis v5 中以全面領先的推論與程式碼評分登上第一位。該跑分證實了模型架構在長上下文邏輯推導與綜合 Coding 任務上的顯著進展，進一步縮小了前沿模型競爭差距。",
+      "en": "Google's Gemini 4 Carbon clinched the #1 rank on the Artificial Analysis Intelligence Index v5, leading in reasoning and multi-language coding benchmarks. The independent benchmark highlights continuous improvements in deep multi-step logic and long-context task execution across current generation models."
+     },
+     "source": "https://artificialanalysis.ai/articles/gemini-4-carbon-new-number-1",
+     "tags": [
+      "Gemini",
+      "Benchmark",
+      "Evaluation"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "前 Palantir 團隊成立 Dream 並獲 1700 萬美元融資，建構建築實體物理世界模型",
+      "en": "Ex-Palantir Execs Raise $17M to Build Real-World Physics Models for Construction"
+     },
+     "detail": {
+      "zh": "新創公司 Dream 完成由 a16z 領投的 1700 萬美元種子輪，利用全美逾 1 億平方英尺建築審查與許可歸檔數據，訓練符合真實物理與施工法規的 World Model。這類結合剛性工程約束的特定領域世界模型，成為驗證生成式 AI 落地實體產業的新方向。",
+      "en": "Startup Dream secured $17M led by a16z to train physical world models grounded in building codes and physics, leveraging 100M+ square feet of construction data. The approach marks an evolving paradigm from pure text synthesis to domain-specific world models constrained by real-world physical laws."
+     },
+     "source": "https://techcrunch.com/2026/10/29/ex-palantir-execs-launch-dream-with-17m-from-a16z-to-build-ai-world-models-for-construction/",
+     "tags": [
+      "WorldModels",
+      "SpatialAI",
+      "VentureCapital"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Anthropic 正式提交 S-1 招股說明書，全力押注 AGI 算力擴展路線",
+      "en": "Anthropic Files S-1 for Nasdaq IPO, Betting High Capex on Recursive Scaling"
+     },
+     "detail": {
+      "zh": "Anthropic 已向美證券監管機構正式提交 S-1 文件啟動 Nasdaq 上市程序，其財務數據展現了極高強度的算力資本支出比例。分析指出該公司將 IPO 定位為長期 AGI 規模化競賽的融資平台，向公開資本市場論證高額計算開銷的商業合理性。",
+      "en": "Anthropic has officially submitted its S-1 filing to initiate an IPO on the Nasdaq, revealing heavy capital expenditure allocations dedicated to compute clusters. The filing formalizes Anthropic's bid to leverage public markets to fund compute-intensive recursive model scaling."
+     },
+     "source": "https://www.theverge.com/podcast/1021322/anthropic-ipo-filing-s-1-claude-semianalysis-joey-brookhart-interview",
+     "tags": [
+      "Anthropic",
+      "IPO",
+      "Compute"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "微軟首度揭露 Azure 單季營收突破 332 億美元，OpenAI 貢獻百億商業收入",
+      "en": "Microsoft Discloses $33.2B Quarterly Azure Revenue, with $10B from OpenAI Arrangements"
+     },
+     "detail": {
+      "zh": "微軟最新財報首次以確切美元數字公布 Azure 單季營收達 332 億美元，並指出與 OpenAI 相關的商業合作與營收分成帶來 100 億美元收入。這項數據量化了頂級生成式模型工作負載對超大規模雲端基礎架構所帶來的實質營收驅動能力。",
+      "en": "Microsoft publicly disclosed Azure's quarterly revenue in dollar terms for the first time at $33.2 billion, noting $10 billion generated from commercial arrangements tied to OpenAI. The disclosure confirms the massive financial dependency and revenue scale generated by enterprise cloud hosting of frontier models."
+     },
+     "source": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/",
+     "tags": [
+      "Microsoft",
+      "Azure",
+      "Cloud"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "Akai 擁抱 Vibe Coding 浪潮，將為新款 MPC 取樣機提供完全開源的韌體系統",
+      "en": "Akai embraces vibe coding by planning open-source firmware for its upcoming MPC Sample Key hardware."
+     },
+     "source": "https://www.theverge.com/gadgets/1021405/akai-open-source-mpc-sample-key"
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 發表分層監控技術架構，專門防範前沿模型對齊失效與 Agent 越權行徑",
+      "en": "OpenAI details layered monitoring architectures designed to intercept misalignment and unauthorized agent actions."
+     },
+     "source": "https://openai.com/index/how-we-detect-frontier-model-misalignment"
+    },
+    {
+     "headline": {
+      "zh": "美調查星國雲端服務商高層涉嫌非法轉售 Nvidia 晶片至中國之間諜案",
+      "en": "US authorities investigate executive of Singapore cloud provider over alleged illicit Nvidia chip diversions to China."
+     },
+     "source": "https://techcrunch.com/2026/10/29/u-s-investigated-chinese-spy-plot-aimed-at-nvidia-ceo/"
+    },
+    {
+     "headline": {
+      "zh": "微軟祭出近 6 萬人自願離職優退方案，反映 AI 自動化帶來的組織結構轉型",
+      "en": "Microsoft offers voluntary buyouts to up to 60,000 employees as AI initiatives reshape workforce structure."
+     },
+     "source": "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-10-30T07:01+08:00"
+}
