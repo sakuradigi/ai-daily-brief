@@ -1,0 +1,296 @@
+{
+ "date": "2026-10-31",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Cursor 市集官方 Claude Code 擴充套件驚傳遭植入木馬後門",
+      "en": "Official Claude Code VS Code extension on Cursor Marketplace compromised with backdoor"
+     },
+     "detail": {
+      "zh": "攻擊者侵入 Anthropic 於 Cursor 官方認證帳號，發布內嵌遠端存取木馬（RAT）的惡意版本長達數小時。此事件暴露出第三方 AI 編輯器生態系在擴充套件供應鏈與認證授權機制上的重大資安風險。",
+      "en": "Attackers compromised Anthropic's verified publisher account on the Cursor Marketplace to distribute a backdoored extension containing a remote access trojan. The breach underscores serious supply-chain security blind spots within third-party AI coding environments."
+     },
+     "source": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
+     "tags": [
+      "Security",
+      "Cursor",
+      "Claude",
+      "Supply Chain"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 宣布高階 ChatGPT 訂閱方案提供等額 API 抵用點數",
+      "en": "OpenAI matches Anthropic by offering 100% equivalent API credits for high-tier subscribers"
+     },
+     "detail": {
+      "zh": "針對每月 100、200 及 500 美元的高階訂閱用戶，OpenAI 現在全額返還等值 API 點數，全面跟進 Anthropic 策略。這對需要同時使用 ChatGPT 網頁介面與自行串接 API 開發的工程師而言，實質上省下了一半的費用。",
+      "en": "OpenAI now provides matching, expiring API credits for ChatGPT subscribers on $100, $200, and $500 monthly tiers, directly answering Anthropic's perk. This drastically lowers marginal API costs for developers maintaining both interactive and programmatic LLM workflows."
+     },
+     "source": "https://simonwillison.net/2026/Oct/29/api-credits/",
+     "tags": [
+      "OpenAI",
+      "API",
+      "Pricing",
+      "Developer"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI、Google、微軟與 Anthropic 聯手推動統一 AI 爬蟲排除標準",
+      "en": "Major AI labs adopt unified robots.txt standard for publishers to opt out of training"
+     },
+     "detail": {
+      "zh": "四大 AI 巨頭宣布採納基於 robots.txt 的通用 policy token 規範，網站管理員無須再為各家爬蟲單獨維護封鎖名單。這為長期缺乏標準化的訓練資料版權聲明提供了一站式解決方案。",
+      "en": "OpenAI, Google, Microsoft, and Anthropic have agreed on a standardized policy token within robots.txt, allowing publishers to declare training opt-out rules once for all participating crawlers. This establishes the first collaborative industry standard for AI web scraping governance."
+     },
+     "source": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
+     "tags": [
+      "Robots.txt",
+      "Web Scraping",
+      "Standards",
+      "OpenAI"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "nesformer：把紅白機 6502 模擬器硬塞進 1GB 的 Qwen 模型權重中",
+      "en": "nesformer: A functional NES 6502 emulator baked into ~1GB of Qwen weights"
+     },
+     "detail": {
+      "zh": "開發者 Drew Breunig 透過權重寫入技術，將紅白機 CPU 與記憶體狀態直接燒錄進 Qwen3.5-4B 權重，成功在神經網路內運行《超級瑪利歐》ROM。雖然推論幀率極低，但實證了 Transformer 能作為高精度確定性狀態機執行二進位指令。",
+      "en": "Inspired by qwenputer, Drew Breunig embedded an NES 6502 CPU and RAM emulator into Qwen3.5-4B weights, running playable ROMs purely through autoregressive token generation. While slow, it proves transformers can effectively emulate deterministic hardware architectures."
+     },
+     "source": "https://github.com/dbreunig/nesformer",
+     "tags": [
+      "Open Source",
+      "Qwen",
+      "Emulation",
+      "Transformer"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "doomformer：將經典遊戲《DOOM》轉化為純 Transformer 序列推論",
+      "en": "doomformer: Running DOOM inside a pure Transformer architecture"
+     },
+     "detail": {
+      "zh": "開源專案嘗試將《DOOM》的底層遊戲狀態與幀渲染映射為自回歸預測問題，探索捨棄原生遊戲引擎、純靠神經網路推論運行的可能性。該專案為世界模型（World Models）在離散狀態轉換與即時互動上的極限提供了公開基準。",
+      "en": "This project maps DOOM's game loop and frame transitions into a sequence modeling problem, bypassing traditional C-based engines entirely. It serves as a reproducible benchmark for testing neural world models on real-time discrete state transitions."
+     },
+     "source": "https://github.com/mottopanikeiku/doomformer",
+     "tags": [
+      "Open Source",
+      "DOOM",
+      "World Models",
+      "LLM"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "標榜無日誌留存的隱私 AI 助手 Ollie 宣布一週內終止營運",
+      "en": "Privacy-focused AI assistant Ollie announces shutdown within seven days"
+     },
+     "detail": {
+      "zh": "主打尊重資料隱私、不保留對話記錄的獨立 AI 助理 Ollie，因面對大廠免費用戶補貼與高昂的推論算力成本，無力維持營運。這凸顯出注重隱私的垂直封裝產品（Wrapper）在現行商業化環境下的殘酷生存困境。",
+      "en": "Ollie, an independent assistant built on zero-retention privacy principles, announced its closure citing fierce market competition and unsustainable unit economics. The shutdown underscores the severe margin pressures facing privacy-first consumer AI wrapper applications."
+     },
+     "source": "https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/",
+     "tags": [
+      "AI Assistant",
+      "Privacy",
+      "Shutdown",
+      "SaaS"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Zest 推出能透過簡訊協商群組偏好並自動預約的 AI Concierge",
+      "en": "Zest debuts SMS AI agent to aggregate group preferences and book dining reservations"
+     },
+     "detail": {
+      "zh": "Zest 推出以簡訊為介面的自主代理，能主動收集聚會成員的飲食偏好、發起餐廳投票，並直接打通訂位 API 完成預約。該產品展示了自主 Agent 在處理多方意見整合與複雜垂直商務交易上的具體落地方式。",
+      "en": "Zest launched an autonomous conversational SMS agent that collects group dietary constraints, resolves scheduling preferences via polls, and executes bookings. It highlights a viable workflow for autonomous agents managing multi-stakeholder coordination in local commerce."
+     },
+     "source": "https://techcrunch.com/2026/10/30/zests-new-ai-agent-finds-restaurants-and-books-reservations-over-text/",
+     "tags": [
+      "AI Agents",
+      "Automation",
+      "SMS",
+      "Consumer Tech"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "YC Labs 於《當個創世神》與《Mindustry》實測大規模 AI Agent 協作群",
+      "en": "Y Combinator Labs tests autonomous AI agent swarms in Minecraft and Mindustry"
+     },
+     "detail": {
+      "zh": "研究團隊在需長程規劃與即時資源調配的沙盒遊戲中部署多 Agent 協同架構，評估其自主通訊與任務拆解能力。實驗結果指出了現行 LLM 在多代理環境下，工具呼叫狀態同步飄移與長期記憶退化的瓶頸。",
+      "en": "YC Labs deployed multi-agent swarms in resource-constrained sandboxes to study emergent planning and communication dynamics. The research reveals key failure modes in current agent architectures, particularly around context drift and tool-execution synchronization during long-horizon tasks."
+     },
+     "source": "https://labs.ycombinator.com/projects/games/index.html",
+     "tags": [
+      "AI Agents",
+      "Multi-Agent",
+      "Research",
+      "Gaming"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Google 太空衛星 TPU 成功在軌運行 Gemma 4 模型並傳回推論結果",
+      "en": "Google's satellite TPU successfully executes on-orbit Gemma 4 model inference"
+     },
+     "detail": {
+      "zh": "Google 透過 Suncatcher 計畫將特製抗輻射 TPU 部署於低軌衛星，成功於太空環境加載 Gemma 4 邊緣模型完成提示詞推論。此技術旨在讓遙測衛星直接在軌道端進行影像過濾與特徵提取，省下極度珍貴的下行頻寬。",
+      "en": "Google's Project Suncatcher brought radiation-tolerant TPUs into low Earth orbit, successfully booting an on-board Gemma 4 model to execute inference in space. The milestone proves the viability of edge compute in orbit to drastically reduce raw satellite data downlink bandwidth."
+     },
+     "source": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission",
+     "tags": [
+      "Google",
+      "TPU",
+      "Gemma",
+      "Edge AI",
+      "Hardware"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "貝萊德示警：龐大算力支出恐拖累 Anthropic IPO 後落入「垃圾級」信用評等",
+      "en": "Blackstone warns Anthropic may face junk credit rating post-IPO over surging capex"
+     },
+     "detail": {
+      "zh": "分析指出，Anthropic 為鎖定算力簽署的巨額資料中心預付款與雲端合約導致自由現金流吃緊，IPO 後極可能被信評機構給予高收益「垃圾級」評等。這將顯著提高其未來透過發債籌資擴充模型叢集的利息成本。",
+      "en": "Blackstone analysts project that Anthropic's multi-billion-dollar compute commitments and negative operating cash flows could result in a junk credit rating post-IPO. Such a downgrade would significantly increase debt financing costs needed to fuel its high-end model training clusters."
+     },
+     "source": "https://www.ft.com/content/59383c7f-8d82-493f-bf01-d2e862a1018f",
+     "tags": [
+      "Anthropic",
+      "Finance",
+      "IPO",
+      "Capex"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "華爾街對巨頭 AI 資本支出回報率產生疑慮，引發科技板塊重挫",
+      "en": "Tech stocks slide as Wall Street questions sustainability of multi-billion AI capex"
+     },
+     "detail": {
+      "zh": "各大科技巨頭持續拉高 AI 資料中心資本支出，但終端軟體訂閱增長速度不如預期，投資人對其自由現金流惡化與硬體折舊壓力日感焦慮。市場拋售反映出資本市場正從無條件追捧基礎設施，轉向嚴格檢視實際 ROI。",
+      "en": "Aggressive hyperscaler capex combined with delayed software monetization is stoking investor skepticism over the longevity of the AI infrastructure boom. The market pullback indicates that capital allocators are demanding concrete return on investment over raw capacity buildout."
+     },
+     "source": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/",
+     "tags": [
+      "Market",
+      "Capex",
+      "Cloud",
+      "Infrastructure"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "磁帶需求全面復活：富士軟片擴產 5 倍以因應 AI 訓練集冷儲存",
+      "en": "Fujifilm to boost magnetic tape production 5x as AI training fuels cold archiving demand"
+     },
+     "detail": {
+      "zh": "隨著巨量多模態訓練資料呈幾何級數擴張，加上防止勒索軟體的實體隔離（Air-gap）考量，超低能耗的磁帶儲存再度成為資料中心首選。富士軟片激進擴產反映出底層硬體儲存架構正為長週期 AI 資料庫做實質轉型。",
+      "en": "Driven by multi-petabyte datasets and the need for air-gapped security, magnetic tape has regained prominence in hyperscale data centers. Fujifilm's massive capacity expansion reflects a structural hardware pivot to manage long-term retention costs for AI training corpora."
+     },
+     "source": "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/",
+     "tags": [
+      "Storage",
+      "Hardware",
+      "Infrastructure",
+      "Fujifilm"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "SigNoz 技術分析指出，AI 並未取代 SRE，但過度依賴正在導致工程師底層除錯與架構技能退化。",
+      "en": "SigNoz analysis argues AI is not displacing SREs, but rather deskilling engineers through over-reliance on automated triage."
+     },
+     "source": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling"
+    },
+    {
+     "headline": {
+      "zh": "DoorDash 透露第三方 AI 代理產生的外送訂單目前僅有數百筆，自主購物生態尚處極早期試探階段。",
+      "en": "DoorDash reports receiving only 'several hundred' orders via external AI agents, indicating consumer agentic commerce remains nascent."
+     },
+     "source": "https://arstechnica.com/ai/2026/10/doordash-says-outside-ai-agents-have-only-led-to-hundreds-of-orders-so-far/"
+    },
+    {
+     "headline": {
+      "zh": "蘋果宣布 Apple Intelligence 將於 11 月隨 iOS 27.3 開發者測試版正式進軍中國市場。",
+      "en": "Apple officially confirmed Apple Intelligence will roll out in China starting with the iOS 27.3 developer beta in November."
+     },
+     "source": "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3"
+    },
+    {
+     "headline": {
+      "zh": "遭遇內部員工強烈反彈後，Proton 執行長宣布全面撤銷要求員工接受 AI「重新面試」的評估計畫。",
+      "en": "Proton's CEO scrapped a controversial initiative requiring employees to undergo AI 're-interviews' following significant staff pushback."
+     },
+     "source": "https://www.404media.co/protons-ceo-cancels-ai-re-interviews/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-10-31T07:02+08:00"
+}

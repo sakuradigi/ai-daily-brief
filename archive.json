@@ -1,6 +1,14 @@
 {
- "latest": "2026-10-30",
+ "latest": "2026-10-31",
  "reports": [
+  {
+   "date": "2026-10-31",
+   "type": "daily",
+   "summary": {
+    "zh": "Claude外掛驚傳後門；OpenAI反補API額度",
+    "en": "Claude extension backdoored; OpenAI matches subscription API credits."
+   }
+  },
   {
    "date": "2026-10-30",
    "type": "daily",
