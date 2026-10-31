@@ -1,0 +1,243 @@
+{
+ "date": "2026-11-01",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Anthropic 官方 Cursor 擴充套件遭植入後門近 12 小時",
+      "en": "Verified Anthropic Cursor Extension Backdoored for Nearly 12 Hours"
+     },
+     "detail": {
+      "zh": "攻擊者取得 Anthropic 認證之 Cursor 發布者帳號權限，將惡意代碼注入擴充套件長達近半天。此事件暴露 AI 輔助 IDE 插件生態的供應鏈脆弱性，開發者應立即檢查本機金鑰並驗證套件雜湊值。",
+      "en": "Attackers breached Anthropic's verified Cursor publisher account, pushing a backdoored extension that stayed live for nearly 12 hours. The incident exposes critical supply chain risks in AI IDE ecosystems; developers should immediately rotate exposed credentials and verify plugin hashes."
+     },
+     "source": "https://arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours/",
+     "tags": [
+      "Security",
+      "Cursor",
+      "Anthropic",
+      "SupplyChain"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 全面封殺涉及「模型蒸餾與訓練」的開發者帳號",
+      "en": "Anthropic Suspends Developer Accounts Linked to Training and Distilling Models"
+     },
+     "detail": {
+      "zh": "社群開發者回報 Anthropic 正在嚴格執行服務條款，凡以 Claude API 輸出進行合成資料生成或模型蒸餾的帳號均遭直接停權。這對依賴閉源頂級模型產出訓練集的中小團隊構成重大衝擊，加速開發者轉向開源自主方案。",
+      "en": "Developers report aggressive account bans by Anthropic for using Claude API outputs to train larger models or build synthetic datasets. This strict TOS enforcement disrupts synthetic-data pipelines for startups and increases reliance on self-hosted open-weights models."
+     },
+     "source": "https://twitter.com/jiahaoshao1/status/2116475922190922088",
+     "tags": [
+      "Anthropic",
+      "API",
+      "TermsOfService",
+      "ModelDistillation"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 最新一輪融資未達標，籌資額不及 300 億美元目標半數",
+      "en": "OpenAI Falls Short of $30B Target in Latest Financing Round"
+     },
+     "detail": {
+      "zh": "知情人士透露 OpenAI 最新融資金額遠低於原訂 300 億美元目標的半數，顯示資本市場對生成式 AI 的龐大資本支出與實際回報產生疑慮。融資進度放緩可能促使其調整未來模型 API 的定價策略以加速收回成本。",
+      "en": "OpenAI reportedly raised less than half of its $30 billion funding target as investors scrutinize surging infrastructure costs versus real revenue. The funding shortfall could accelerate commercialization pressures, potentially shrinking API developer subsidies or altering tier pricing."
+     },
+     "source": "https://www.wsj.com/tech/ai/openai-raises-less-than-half-of-30-billion-target-in-latest-round-91aecdc5",
+     "tags": [
+      "OpenAI",
+      "Funding",
+      "VentureCapital",
+      "ComputeCapex"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "nesformer：直接將 NES 6502 模擬器硬編碼進 Qwen3.5-4B 權重中",
+      "en": "nesformer: NES 6502 Emulator Baked Directly into Qwen3.5-4B Weights"
+     },
+     "detail": {
+      "zh": "開發者 Drew Breunig 透過提示工程將任天堂 NES 6502 CPU 與記憶體模擬邏輯直接寫入 Qwen3.5-4B 模型權重，讓 Transformer 原生執行《超級瑪利歐》ROM。這項極客實驗證明小參模型具備直接作為通用執行虛擬機的潛力。",
+      "en": "Developer Drew Breunig compiled an NES 6502 CPU and memory emulator directly into Qwen3.5-4B weights using Claude Opus prompts. The model can run actual NES ROMs, demonstrating how dense smaller LLMs can act as arbitrary bytecode execution runtimes."
+     },
+     "source": "https://simonwillison.net/2026/Oct/30/nesformer/",
+     "tags": [
+      "OpenSource",
+      "Transformer",
+      "Emulator",
+      "Qwen"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "自製開源 AI 電子雞：以 ESP32 與 Claude Vibe Coding 打造硬體代理",
+      "en": "Building a DIY Open AI Tamagotchi with ESP32 and Claude Vibe Coding"
+     },
+     "detail": {
+      "zh": "創作者利用微雪 ESP32 螢幕模組與 Claude 生成之韌體，低成本打造出具備語音與情緒互動的掌上 AI 伴侶。此專案展現利用大模型輔助嵌入式軟硬體開發，能大幅降低創客自製邊緣 AI 裝置的門檻。",
+      "en": "A maker built a handheld AI companion using a Waveshare ESP32 board and Claude-assisted firmware generation ahead of commercial offerings. The project highlights how LLM-assisted vibe coding dramatically lowers the barrier to prototyping bespoke edge AI hardware."
+     },
+     "source": "https://www.theverge.com/gadgets/1013375/muse-charm-gadgets-preview-waveshare-esp32-claude-vibe-code",
+     "tags": [
+      "Hardware",
+      "ESP32",
+      "Claude",
+      "DIY"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "GPT-5.6 Sol 成功在和平模式下自主通關《異星工廠》",
+      "en": "GPT-5.6 Sol Beats Factorio in Peaceful Mode Through Autonomous Planning"
+     },
+     "detail": {
+      "zh": "實測顯示 GPT-5.6 Sol 能夠在《異星工廠》中自主規劃數萬步產線自動化流程並成功發射火箭。這項成果標誌著大模型智慧體在超長程規劃與非線性階層決策上取得了重大突破。",
+      "en": "GPT-5.6 Sol managed supply chains and complex production architectures to successfully beat Factorio on peaceful mode. The feat validates significant progress in agentic planning across multi-hour, non-linear decision spaces."
+     },
+     "source": "https://ryanmadden.net/gpt-56-beats-factorio/",
+     "tags": [
+      "Agent",
+      "GPT-5.6",
+      "Factorio",
+      "Benchmark"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "訴求隱私的 AI 個人助理 Ollie 宣布將於一週內關閉服務",
+      "en": "Privacy-Focused AI Assistant Ollie Announces Shutdown Within a Week"
+     },
+     "detail": {
+      "zh": "主打不窺探個資的 AI 助手 Ollie 創辦人證實，因面對大廠內建助理競爭及高昂運行成本，服務將在一週內終止。這反映獨立隱私 AI 工具在缺乏開源社群支撐或可持續獲利模式下的生存困境。",
+      "en": "Ollie, an AI assistant prioritizing local privacy, announced it will sunset operations within a week due to fierce platform competition and infrastructure overhead. The closure highlights the tough monetization path for standalone privacy-centric AI SaaS tools."
+     },
+     "source": "https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/",
+     "tags": [
+      "ProductSunset",
+      "Privacy",
+      "AIAssistant",
+      "SaaS"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": []
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "輝達評估為雲端算力商 Nscale 西維吉尼亞資料中心擔任貸款擔保人",
+      "en": "Nvidia Weighs Cosigning Loan for Nscale’s West Virginia AI Data Center"
+     },
+     "detail": {
+      "zh": "隨著金融機構對 AI 基建融資審查趨嚴，輝達考慮為其晶片客戶 Nscale 的機房貸款提供擔保。這種晶片巨頭兼任金融保證人的閉環模式，反映出硬體供應商與算力基建擴張風險的高度綁定。",
+      "en": "With lenders growing cautious over unchecked AI infrastructure debt, Nvidia is evaluating acting as a loan cosigner for GPU cloud provider Nscale. This vendor-financing dynamic underscores how deeply hardware suppliers are tying their balance sheets to customer infrastructure expansion."
+     },
+     "source": "https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/",
+     "tags": [
+      "Nvidia",
+      "ComputeInfrastructure",
+      "Financing",
+      "DataCenters"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "美聯邦法官裁定 NAACP 控告 xAI 資料中心空污訴訟進入實質審理",
+      "en": "Federal Judge Allows NAACP Clean Air Act Lawsuit Against xAI to Proceed"
+     },
+     "detail": {
+      "zh": "法官駁回了 xAI 撤銷訴訟的請求，NAACP 指控其曼菲斯超級算力中心燃氣發電機違反《清潔空氣法》的案件將進入審理。AI 超級叢集的電力需求與環境爭議正轉變為直接的法律合規風險。",
+      "en": "A federal judge denied xAI's motion to dismiss an NAACP lawsuit alleging that gas turbines powering its Memphis supercluster violate the Clean Air Act. The ruling signals escalating environmental and regulatory liability for gigawatt-scale AI data center deployments."
+     },
+     "source": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/",
+     "tags": [
+      "xAI",
+      "Regulation",
+      "DataCenters",
+      "Environment"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "Apple Intelligence 確定隨 iOS 27.3 登陸中國市場，預計 11 月初推測試版、12 月正式發布。",
+      "en": "Apple Intelligence will officially launch in China with iOS 27.3, entering beta in early November ahead of a December release."
+     },
+     "source": "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3"
+    },
+    {
+     "headline": {
+      "zh": "蘋果執行長為 AI 策略辯護，表示公司絕不為了「跟風而盲目推出 AI 功能」。",
+      "en": "Apple's CEO defended its AI roadmap, asserting that the company will not ship AI simply for AI's sake."
+     },
+     "source": "https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/"
+    },
+    {
+     "headline": {
+      "zh": "超音速客機製造商 Boom 因將資源轉移至 AI 資料中心發電業務，導致 2029 客機交付期程存疑。",
+      "en": "Boom Supersonic's airliner timeline is in doubt as the company diverts resources toward powering AI data centers."
+     },
+     "source": "https://arstechnica.com/gadgets/2026/10/united-airlines-ceo-doubts-supersonic-airliner-from-boom-will-be-ready-by-2029/"
+    },
+    {
+     "headline": {
+      "zh": "AI 熱潮搶奪記憶體資源導致 PC 價格高漲衝擊銷量，英特爾股價重挫使美政府持股帳面損失 120 億美元。",
+      "en": "AI component crunches drove up PC prices and hurt sales, crashing Intel stock and erasing $12B from the US government's stake."
+     },
+     "source": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-11-01T07:02+08:00"
+}

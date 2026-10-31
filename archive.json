@@ -1,6 +1,14 @@
 {
- "latest": "2026-10-31",
+ "latest": "2026-11-01",
  "reports": [
+  {
+   "date": "2026-11-01",
+   "type": "daily",
+   "summary": {
+    "zh": "開發工具爆供應鏈風險，模型蒸餾遭嚴打",
+    "en": "Cursor extension compromised, Anthropic cracks down on distillation, and OpenAI funding slows."
+   }
+  },
   {
    "date": "2026-10-31",
    "type": "daily",
