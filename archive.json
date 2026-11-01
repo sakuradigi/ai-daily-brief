@@ -1,6 +1,14 @@
 {
- "latest": "2026-11-01",
+ "latest": "2026-11-02",
  "reports": [
+  {
+   "date": "2026-11-02",
+   "type": "weekly",
+   "summary": {
+    "zh": "ChatGPT 沙盒逃逸遭揭露，JS 框架 AI 成本與代理治理受熱議",
+    "en": "ChatGPT account takeover flaw exposed; JS framework AI overhead and agent governance debated"
+   }
+  },
   {
    "date": "2026-11-01",
    "type": "daily",

@@ -1,0 +1,224 @@
+{
+ "date": "2026-11-02",
+ "type": "weekly",
+ "weekly": {
+  "zh": "本週 AI 領域迎來「代理落地與信任反思」的關鍵轉折。過去一週三大趨勢：第一，前沿模型競賽邁向超長序列與自主電腦操作（GPT-6.1 Terra、Gemini 4 Carbon 相繼亮相），但模型越權與安全問題也同步升溫，如 Cursor 擴充套件後門及 ChatGPT Canvas 漏洞；第二，多代理（Multi-Agent）協作從理論走入沙盒與遊戲實測，卻暴露出陷入低效官僚組織等協調失靈問題；第三，資本狂潮與硬體基建遭遇現實撞牆，Anthropic 與 OpenAI 巨額融資受挫、資料中心環保與電力爭議浮上檯面。本週最值得關注的三件事：Anthropic 正式提交 S-1 招股書但面臨信用降評警告；開發者社群對 AI 生成代碼與假文檔引發的信任危機展開集體防禦；以及 Agentic Engineering 全面滲透開發工作流程引發的工具鏈與資安大洗牌。",
+  "en": "This week marked a critical pivot toward agentic deployment and systemic trust reckoning. Three macro trends emerged: First, frontier models surged in computer-use capabilities (GPT-6.1 Terra, Gemini 4 Carbon), yet safety breaches escalated via IDE extension backdoors and Canvas sandbox escapes. Second, multi-agent systems stepped into sandbox simulations like Minecraft, exposing failure modes such as paralyzing bureaucratic overhead. Third, infrastructure hyper-scaling hit friction, as mega-rounds met investor skepticism and data center environmental lawsuits intensified. The top three developments this week: Anthropic filed its landmark S-1 amid capital expenditure scrutiny; the engineering community confronted a trust crisis over synthetic documentation and counterfeit repos; and agentic engineering rapidly transformed developer workflows while challenging traditional quality assurances."
+ },
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "資安團隊披露 ChatGPT HTML 預覽沙盒逃逸漏洞，可接管用戶帳號與對話歷程",
+      "en": "Parameter Labs Discloses ChatGPT Sandbox Escape Exploit Leading to Account Takeovers"
+     },
+     "detail": {
+      "zh": "Parameter Labs 揭露 ChatGPT 互動式 HTML 預覽（前身為 Canvas）的沙盒逃逸攻擊鏈。攻擊者可利用 iframe 與 API 通訊漏洞繞過安全隔離，取得未授權程式碼執行權限並存取用戶私有資料，目前 OpenAI 已修補該問題，突顯前端 Artifact 渲染的安全隱患。",
+      "en": "Parameter Labs disclosed an exploit targeting ChatGPT's interactive HTML preview (formerly Canvas) sandboxed iframe implementation. The complex attack chain allowed untrusted code to bypass isolation and access private user data via OpenAI APIs, underscoring critical security risks in client-side artifact rendering patterns."
+     },
+     "source": "https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/",
+     "tags": [
+      "Security",
+      "ChatGPT",
+      "Prompt Injection",
+      "Vulnerability"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "技術分析揭露 JavaScript 現代框架正大幅增加 LLM 生成程式碼的 Token 與除錯成本",
+      "en": "The Hidden AI Cost of Modern JavaScript Frameworks Revealed in Benchmark Analysis"
+     },
+     "detail": {
+      "zh": "工程師 Nolan Lawson 深度分析各主流前端框架在 AI 輔助開發下的隱性負擔。研究指出現代框架複雜的抽象層與特有 DSL 會消耗大量 Prompt 上下文視窗，且大幅提高 LLM 幻覺與語義除錯難度，相比原生效能與標準 Web APIs 帶來更高的 Token 成本與維護負擔。",
+      "en": "Nolan Lawson published an analysis on the AI costs associated with modern JavaScript frameworks. Complex framework-specific abstractions and DSLs consume significantly more context window tokens and increase LLM hallucination rates during code generation, making vanilla Web APIs more cost-effective for AI-driven development."
+     },
+     "source": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+     "tags": [
+      "JavaScript",
+      "Frontend",
+      "Developer Tools",
+      "Tokenomics"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "50 隻 AI Agent 在《當個創世神》嘗試打造文明，卻因陷入極端官僚決策而集體崩潰",
+      "en": "AI Agent Swarms in Minecraft Fail to Build Civilization After Paralyzing Bureaucracy"
+     },
+     "detail": {
+      "zh": "研究團隊在《Minecraft》中部署 50 個自主 LLM Agent 協作建立虛擬社會，結果代理群體自行演化出層層表決與協調機制，最終因深陷無休止的會議與官僚化流程而資源耗盡崩潰。實驗證實缺乏中心化排程的大規模自主代理群在實體任務中極易遭遇協同死鎖。",
+      "en": "An experimental deployment of 50 autonomous LLM agents in Minecraft aimed at building a digital civilization ended in systemic collapse. The agents spontaneously instituted complex voting and coordination protocols that devolved into paralyzing bureaucratic gridlock, demonstrating the failure modes of decentralized agent collaboration."
+     },
+     "source": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-agent-swarms-unleashed-in-minecraft-to-build-a-thriving-civilization-50-agent-teams-fail-after-falling-into-paralyzing-bureaucracy",
+     "tags": [
+      "AI Agents",
+      "Multi-Agent",
+      "Minecraft",
+      "Research"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "datasette-llm 發布 0.1a9：簡化 Datasette Agent 模型設定並無縫繼承全域預設",
+      "en": "datasette-llm 0.1a9 Released: Automatically Inherits Global Default Models for Datasette Agent"
+     },
+     "detail": {
+      "zh": "Simon Willison 釋出 datasette-llm 0.1a9 版本，現在該外掛會自動繼承系統 llm 工具配置的預設模型，開發者啟動 Datasette Agent 時無須再手動傳入 -s 外掛模型參數。此更新為即將到來的 Datasette Agent 大版本架構升級鋪路。",
+      "en": "Simon Willison released datasette-llm 0.1a9, enabling the plugin to automatically adopt the user's default model configured in the core LLM tool. This removes the requirement to pass manual CLI model flags when launching Datasette Agent, streamlining the CLI developer experience ahead of major architectural updates."
+     },
+     "source": "https://simonwillison.net/2026/Oct/31/datasette-llm/",
+     "tags": [
+      "Open Source",
+      "Datasette",
+      "CLI",
+      "LLM Tools"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Anthropic 祭出新安全機制，阻絕 Claude 被用於商業電玩逆向工程與即時克隆",
+      "en": "Anthropic Moves to Block Claude from Reverse-Engineering and Cloning Video Games"
+     },
+     "detail": {
+      "zh": "針對開發者頻繁利用多模態模型與 Vibe Coding 快速逆向並克隆商業遊戲的現象，Anthropic 開始在提示詞防護層與系統提示中加入限制，主動攔截解析專有二進制程式碼與提取專用遊戲資源的要求，以降低潛在版權侵權風險與模型濫用爭議。",
+      "en": "Anthropic has implemented system-level guardrails to block Claude from assisting in reverse-engineering proprietary video games and automated code cloning. The move directly targets the recent surge in vibe coding games from assets, shielding the provider against intellectual property and copyright disputes."
+     },
+     "source": "https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering",
+     "tags": [
+      "Claude",
+      "Anthropic",
+      "Reverse Engineering",
+      "AI Policy"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "分散式系統專家 Kyle Kingsbury 警告：生成式 AI 正在侵蝕開源軟體與文檔的基本信任",
+      "en": "Jepsen Author Kyle Kingsbury Warns LLMs Are Eroding Trust in Software and Documentation"
+     },
+     "detail": {
+      "zh": "Jepsen 測試工具作者 Kyle Kingsbury 指出，LLM 的氾濫讓維護者與使用者難以辨別代碼與文檔的真實成熟度。由於成熟系統的技術指標極易被合成內容偽造，工程師社群將被迫以高度懷疑態度審視新專案，對未來開源生態的驗證機制提出嚴峻挑戰。",
+      "en": "Kyle Kingsbury, creator of the Jepsen distributed systems testing suite, warned that widespread LLM adoption erodes fundamental trust in software and technical documentation. Because synthetic generation makes signs of system maturity easy to counterfeit, developers are likely to treat newly published software projects with heightened skepticism."
+     },
+     "source": "https://simonwillison.net/2026/Nov/1/kyle-kingsbury/",
+     "tags": [
+      "Research",
+      "Open Source",
+      "Software Engineering",
+      "LLM Quality"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "面臨居民與環保團體反彈，OpenAI 擬將高耗能「資料中心」品牌重塑為「AI 算力園區」",
+      "en": "OpenAI Explores Rebranding Unpopular Data Centers as 'AI Compute Campuses'"
+     },
+     "detail": {
+      "zh": "隨著地方社群對資料中心水電資源消耗與噪音污染的不滿加劇，OpenAI 正評估將旗下大規模基礎設施改名為「AI 算力園區（AI compute campuses）」。此舉意在透過品牌修辭淡化傳統工業設施形象，緩解地方審批阻力與公眾輿論壓力。",
+      "en": "Amid mounting public backlash and environmental scrutiny over grid strain and water usage, OpenAI is considering rebranding its server facilities as 'AI compute campuses.' The corporate rebranding effort seeks to soften the industrial image of massive infrastructure projects to ease zoning and regulatory resistance."
+     },
+     "source": "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/",
+     "tags": [
+      "OpenAI",
+      "Data Center",
+      "Energy",
+      "Infrastructure"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "社群深度檢視 Proton「AI 重聘」爭端：決策轉向核心源自組織管理問題而非技術焦慮",
+      "en": "Deep-Dive into Proton's Canceled 'AI Re-interview': Executive Missteps Trumped Tech Itself"
+     },
+     "detail": {
+      "zh": "獨立技術專欄深入檢視 Proton 先前要求全體員工接受 AI 重面試後又撤銷的鬧劇。分析指出，該危機本質上是管理層盲目迷信自動化績效指標與失控的官僚主義所致，AI 僅是錯誤決策的執行載體，反映出非工程導向思維在面對新技術時的典型管理反挫。",
+      "en": "A detailed post-mortem on Proton's controversial and subsequently canceled mandate for employees to re-interview with AI highlighted deep management deficiencies. The analysis concludes that executive reliance on automated productivity metrics—not generative AI capabilities—drove the fiasco, illustrating corporate misgovernance."
+     },
+     "source": "https://blog.raed.dev/posts/proton-loser-thinking/",
+     "tags": [
+      "Proton",
+      "Culture",
+      "Management",
+      "Engineering Leadership"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "科技高管因宣揚 AI 大幅減少自身工作負擔引發基層員工對基層裁員焦慮的反彈與討論。",
+      "en": "Tech executive comments touting how AI eases executive workloads spark backlash over frontline job displacement."
+     },
+     "source": "https://techcrunch.com/2026/11/01/ai-can-make-tech-ceos-lives-easier-what-about-everyone-else/"
+    },
+    {
+     "headline": {
+      "zh": "微軟與 OpenAI 正評估向企業客戶提供更具彈性的混合推論端點，以降低尖峰雲端計費負擔。",
+      "en": "Microsoft and OpenAI reportedly explore flexible hybrid inference tiers to ease cloud billing spikes."
+     },
+     "source": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/"
+    },
+    {
+     "headline": {
+      "zh": "美聯邦法官駁回動議，正式裁定 NAACP 控告 xAI 孟菲斯資料中心違反清潔空氣法案訴訟繼續審理。",
+      "en": "Federal judge allows NAACP Clean Air Act lawsuit targeting xAI's Memphis data center to advance."
+     },
+     "source": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-11-02T07:01+08:00"
+}
