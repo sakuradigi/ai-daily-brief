@@ -1,6 +1,14 @@
 {
- "latest": "2026-11-02",
+ "latest": "2026-11-03",
  "reports": [
+  {
+   "date": "2026-11-03",
+   "type": "daily",
+   "summary": {
+    "zh": "Astra權重直寫調優現身，Anthropic直逼自我遞歸改進臨界",
+    "en": "Astra enables direct weight programming, and Anthropic nears RSI milestones."
+   }
+  },
   {
    "date": "2026-11-02",
    "type": "weekly",

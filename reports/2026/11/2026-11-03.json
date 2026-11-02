@@ -1,0 +1,334 @@
+{
+ "date": "2026-11-03",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Astra 展示權重空間編程：繞過微調直接讀寫 Qwen 權重優化效能",
+      "en": "Astra introduces weight-space programming to directly inspect and edit Qwen weights"
+     },
+     "detail": {
+      "zh": "開發者發布 Astra 工具，展示直接在權重空間進行讀寫以增強 Qwen 模型的機制，繞過傳統反向傳播微調管道。這種可解釋性兼參數直改架構，為開源模型客製化與輕量對齊提供了全新的極速實驗路徑。",
+      "en": "The Astra project demonstrates weight-space programming, enabling developers to directly read and mutate Qwen model weights without traditional fine-tuning runs. This introduces a novel avenue for surgical model edits, mechanistic interpretability, and ultra-fast model steerability."
+     },
+     "source": "https://rikiyat.github.io/blog/weight-space-programming/",
+     "tags": [
+      "OpenSource",
+      "LLM",
+      "Weights",
+      "Qwen"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 警告已高度接近遞歸自我改進（RSI）臨界點",
+      "en": "Anthropic warns of approaching recursive self-improvement (RSI) thresholds"
+     },
+     "detail": {
+      "zh": "Anthropic 指出旗下模型在自身開發流程中的自主能力大幅躍升，已極度接近模型自主訓練並加速下一代能力的 RSI 節點。內部對算力與程式自主產生的依賴飆升，成為評估智慧奇點與防護機制的重要風向球。",
+      "en": "Anthropic has warned that its models are edging remarkably close to recursive self-improvement (RSI), where agents autonomously accelerate training pipelines. This shift signals rapid capability leaps while posing critical safety questions for continuous autonomous agent deployment."
+     },
+     "source": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
+     "tags": [
+      "Anthropic",
+      "RSI",
+      "AI Safety",
+      "AGI"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 內部模型調用成本依市價計算已正式超越全體員工薪資",
+      "en": "Anthropic's internal Claude token consumption now surpasses its payroll at retail rates"
+     },
+     "detail": {
+      "zh": "商業內幕揭露，Anthropic 內部員工日常研發與代碼生成消耗的 Claude Token 若按市價計算，帳面價值已超越公司總薪資支出。這項指標具體反映出頂級實驗室工程流程高度「AI 代理化」的現況。",
+      "en": "Anthropic’s internal Claude usage—evaluated at retail API pricing—now exceeds the company's total payroll expenditure. The metric highlights an engineering paradigm shift where synthetic labor and internal automated agent runs dominate core product workflows."
+     },
+     "source": "https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11",
+     "tags": [
+      "Anthropic",
+      "TokenEconomics",
+      "DevOps"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Simon Willison 實務踩坑指引：升級 Python 3.15 遇依賴死結直接刪除 uv.lock",
+      "en": "Simon Willison's rule of thumb for Python 3.15 upgrades: When in doubt, delete uv.lock"
+     },
+     "detail": {
+      "zh": "知名開源開發者 Simon Willison 分享升級至 Python 3.15 時的套件除錯經驗，指出在 library 本地開發中 uv run 常生成殘留的 uv.lock，易引發版本解析衝突。建議開發者遇到詭異依賴故障時，優先刪除本地 lockfile 重建環境。",
+      "en": "Developer Simon Willison notes that switching to Python 3.15 frequently triggers confusing dependency conflicts when local uv.lock files linger. For library maintainers whose repos shouldn't track lockfiles, wiping uv.lock locally before rebuilding resolves most upstream resolution quirks."
+     },
+     "source": "https://simonwillison.net/2026/Nov/1/delete-uv-lock-first/",
+     "tags": [
+      "Python",
+      "uv",
+      "Tooling",
+      "DevOps"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Qodo 推出 Codex 專屬外掛：將內部架構標準注入 AI 代碼審查流程",
+      "en": "Qodo integrates enterprise standards into Codex for automated repo-wide code review"
+     },
+     "detail": {
+      "zh": "Qodo 整合企業代碼規範與倉庫上下文至 OpenAI Codex 體系，能在工程師發起 PR 前跨儲存庫掃描阻斷性（P0）缺陷。這為大型單一倉庫與複雜微服務架構提供了高規格的自動化 CI 防線。",
+      "en": "Qodo announced deep context integration for Codex, embedding repo architecture patterns and coding conventions into review workflows. The plugin automatically intercepts P0 issues and style regressions across distributed repos before pull requests are opened."
+     },
+     "source": "https://openai.com/index/qodo-codex-plugin",
+     "tags": [
+      "Codex",
+      "CodeReview",
+      "Testing",
+      "DeveloperTools"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Anthropic 更新 Claude Code 系統提示詞：全面封鎖複製既有電玩代碼行為",
+      "en": "Anthropic updates Claude Code system prompt to block video game decompilation and clones"
+     },
+     "detail": {
+      "zh": "因應復古遊戲反編譯與無授權重製風潮，Anthropic 針對 Claude Code 加入系統級防護，主動阻絕逆向工程與遊戲克隆指令。此舉直接衝擊以此加速重構經典專案的獨立開發者，並劃定程式碼著作權紅線。",
+      "en": "Anthropic has updated Claude Code's system prompt to reject user prompts designed to recreate or decompile existing copyrighted video games. While game prototyping remains viable, direct replication pipelines for retro titles are now hard-blocked at the model policy layer."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1024632/anthropic-claude-ai-video-game-clones",
+     "tags": [
+      "Anthropic",
+      "ClaudeCode",
+      "PromptEngineering",
+      "Copyright"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 合併 ChatGPT 與 Codex 額度池：Chat 與 Work 頁籤整合一體",
+      "en": "OpenAI merges ChatGPT and Codex usage limits across Chat and Work workspaces"
+     },
+     "detail": {
+      "zh": "OpenAI 宣布統一 ChatGPT 內部的對話與工作區分頁，Codex 產生的編程調用將與一般對話共享統一配額。高強度寫代碼的重度使用者需留意速率限制（Rate Limits）將更容易觸頂。",
+      "en": "OpenAI is consolidating ChatGPT's Chat and Work interfaces into a unified experience, drawing token usage for both standard conversations and Codex code sessions from the same allocation pool. Power users will need to monitor consolidated hourly rate limits."
+     },
+     "source": "https://techcrunch.com/2026/11/02/openai-is-finally-merging-chatgpts-chat-and-work-tabs/",
+     "tags": [
+      "OpenAI",
+      "ChatGPT",
+      "Codex",
+      "DeveloperExperience"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "xAI 限制 Grok Bot 調用上限：馬斯克稱算力營運成本過高難以維持",
+      "en": "Elon Musk throttles Grok Bot rate limits citing unsustainable infrastructure costs"
+     },
+     "detail": {
+      "zh": "Elon Musk 宣布縮減 Grok Bot 的使用額度，表示其暴增的推理硬體與算力開銷已達不可持續的水準。此舉顯示即使背靠巨型叢集，前沿大模型的高併發即時推論仍面臨嚴峻的單位經濟效益考驗。",
+      "en": "Elon Musk announced tighter query caps on Grok Bot, pointing to soaring inference infrastructure expenses driven by rapid user uptake. The constraint highlights the fragile unit economics behind scaling state-of-the-art conversational agents for broad consumer access."
+     },
+     "source": "https://techcrunch.com/2026/11/02/elon-musk-throttles-grok-bot-limits-due-to-unsustainably-high-costs/",
+     "tags": [
+      "xAI",
+      "Grok",
+      "InferenceCost",
+      "API"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 推出 LifeVal 基準測試：量化評估 AI 處理真實日常事務的解決率",
+      "en": "OpenAI introduces LifeVal benchmark to evaluate everyday real-world task handling"
+     },
+     "detail": {
+      "zh": "OpenAI 發布新基準 LifeVal，評估指標從學術解題轉向生活實務，涵蓋托育安排、個人稅務及政府規章文件填報等複合流程。該基準能有效衡量多步驟自主 Agent 在高度雜訊輸入下的落地可行性。",
+      "en": "OpenAI unveiled LifeVal, a benchmark designed to evaluate how AI agents complete multi-step domestic and bureaucratic tasks like financial paperwork and public services. It shifts agent evaluation from synthetic reasoning benchmarks to messy, real-world utility."
+     },
+     "source": "https://openai.com/index/lifeval",
+     "tags": [
+      "Benchmark",
+      "OpenAI",
+      "Agent",
+      "LifeVal"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "42AI 融資 6,250 萬美元脫離潛行：推出預測人類複雜行為的世界模型",
+      "en": "42AI emerges from stealth with $62.5M to train behavioral world models"
+     },
+     "detail": {
+      "zh": "新創公司 42AI 完成 6,250 萬美元募資，主打具備「預測人類未發生行為」能力的決策世界模型。該研究嘗試跳脫純文字自回歸範式，透過模擬環境下的動態機率場來預判人類在全新情境中的反應。",
+      "en": "42AI announced a $62.5M raise alongside a behavioral world model engineered to anticipate human actions in unseen environments. The architecture moves beyond text-only autoregression toward dynamic simulation of human intention and interaction."
+     },
+     "source": "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/",
+     "tags": [
+      "WorldModels",
+      "AIResearch",
+      "PredictiveAI"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "陶哲軒撰文探討「無我數學」：AI 工具普及正在重構現代數學合作典範",
+      "en": "Terence Tao explores 'Egoless Mathematics' and collaborative shifts driven by AI tools"
+     },
+     "detail": {
+      "zh": "數學家陶哲軒指出，隨著形式化驗證工具與 AI 輔助推導落地，數學研究正從單一學者英雄主義轉向去中心化、模組化的集體工程協作。這對形式化程式語言（如 Lean）與符號推理生態帶來深遠啟發。",
+      "en": "Field Medalist Terence Tao analyzes how AI-driven formal proof checkers and LLM reasoning are shifting mathematical discovery toward distributed, ego-free engineering models. The transformation mirrors modular open-source software collaboration within pure mathematics."
+     },
+     "source": "https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era/",
+     "tags": [
+      "TerenceTao",
+      "FormalMath",
+      "Lean",
+      "Research"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "紐約時報聯合主流媒體控告 Brave 瀏覽器：涉嫌違法抓取內容供 AI 訓練並繞過付費牆",
+      "en": "The New York Times sues Brave browser over AI web scraping and paywall bypassing"
+     },
+     "detail": {
+      "zh": "《紐約時報》等多家出版集團對隱私瀏覽器 Brave 提起訴訟，指控其未經授權抓取受著作權保護的內文，並分發給 Anthropic 與 Perplexity 作為訓練或檢索資料。此案將進一步確立瀏覽器邊界與 RAG 爬蟲合法性爭議。",
+      "en": "Major publishers including The New York Times have filed lawsuits against Brave, alleging its crawler illegitimately harvested copyrighted articles and redistributed content to downstream AI vendors like Anthropic and Perplexity. The case targets third-party RAG pipelines and search index scraping."
+     },
+     "source": "https://techcrunch.com/2026/11/02/new-york-times-and-other-outlets-sue-web-browser-brave-over-alleged-content-scraping/",
+     "tags": [
+      "Brave",
+      "Copyright",
+      "Lawsuit",
+      "WebScraping"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "中國發布商務部 48 號公告：首次針對前沿尖端 AI 技術實施出口管制",
+      "en": "China imposes frontier AI export controls via Mofcom Announcement No. 48"
+     },
+     "detail": {
+      "zh": "中國商務部正式祭出 48 號公告，首度將前沿 AI 演算法與特定大型模型權重納入技術出口管制清單。跨國開源協作與跨國界算力部署恐將面臨更高規的合規審查與地緣政治壁壘。",
+      "en": "China's Ministry of Commerce issued Announcement No. 48, establishing export controls targeting proprietary frontier AI architectures and weight distribution. The mandate erects new regulatory friction for cross-border research partnerships and open-weights distribution pipelines."
+     },
+     "source": "https://labs.cloudsecurityalliance.org/research/csa-research-note-china-ai-export-controls-announcement-48-2/",
+     "tags": [
+      "China",
+      "ExportControl",
+      "Policy",
+      "Governance"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Oracle 申請發行 200 億美元股債融資：全力擴充 AI 雲端資料中心基建",
+      "en": "Oracle files for $20B stock and bond offering to fund ongoing AI cloud expansion"
+     },
+     "detail": {
+      "zh": "甲骨文（Oracle）遞交高達 200 億美元的融資申請，主要用於支撐龐大 GPU 算力叢集採購與高密度資料中心擴建。顯示頭部雲端基礎設施商面對前沿模型算力需求，持續以超大規模資本支出競逐產能。",
+      "en": "Oracle announced plans to raise up to $20B across debt and equity to aggressively expand its OCI data center and cluster infrastructure. The massive capital raise reflects intense infrastructure spending required to supply capacity for frontier model builders."
+     },
+     "source": "https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html",
+     "tags": [
+      "Oracle",
+      "Cloud",
+      "DataCenter",
+      "Hardware"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "Anthropic S-1 修訂文件曝光：Q3 營收達 170 億美元，長期承諾總額累計高達 8,950 億美元",
+      "en": "Anthropic's revised S-1 discloses $17B Q3 revenue alongside $895B in aggregate future commitments"
+     },
+     "source": "https://www.cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html"
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 啟動電網保護計畫，承諾緊急情況下可調度 1,000 MW 運算園區電力支援民生",
+      "en": "OpenAI launches Grid Protectors Program to curtail up to 1,000 MW of campus power during regional grid peaks"
+     },
+     "source": "https://openai.com/index/grid-protectors-program"
+    },
+    {
+     "headline": {
+      "zh": "自律神經與精密操作突破：研究團隊展示由 AI Agent 成功執行的小鼠腦部外科手術",
+      "en": "Autonomous AI agent successfully performs complex micro-brain surgery on a mouse"
+     },
+     "source": "https://twitter.com/OcanaSantero/status/2115442964574908902"
+    },
+    {
+     "headline": {
+      "zh": "阿波羅首席經濟學家指出多數企業導入 AI 至今仍未獲取實質財務回報",
+      "en": "Apollo chief economist reports majority of enterprise AI implementations show near-zero financial return"
+     },
+     "source": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/"
+    },
+    {
+     "headline": {
+      "zh": "Omen AI 以 1,600 萬美元收購 Aquatic Labs，聚焦高密度 AI 資料中心液冷散熱技術",
+      "en": "Omen AI acquires Aquatic Labs in $16M deal to optimize liquid cooling for AI data centers"
+     },
+     "source": "https://techcrunch.com/2026/11/02/omen-ai-adds-liquid-know-how-in-16-million-aquatic-labs-acquisition/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-11-03T07:01+08:00"
+}
