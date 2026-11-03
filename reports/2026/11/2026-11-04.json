@@ -1,0 +1,335 @@
+{
+ "date": "2026-11-04",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Postman 遭爆靜默安裝 AI 套件並嘗試回傳所有 API 敏感數據，社群炸鍋",
+      "en": "Postman faces developer backlash for silently auto-installing AI plugins and scraping API payloads"
+     },
+     "detail": {
+      "zh": "開發者在 GitHub Issue 踢爆最新版 Postman 預設靜默啟用 AI 外掛，甚至嘗試上傳請求與 Payload 資料進行處理。這對手握內部金鑰與機密端點的工程團隊構成極大資安風險，引發 HN 狂飆 900+ 積分並促成大批工程師轉向開源替代品。",
+      "en": "A GitHub issue with over 900 upvotes revealed that Postman quietly auto-installed AI features and attempted to sync API traffic and payloads. For engineering teams handling sensitive endpoints and credentials, this poses severe security compliance risks, prompting calls to migrate to open-source alternatives."
+     },
+     "source": "https://github.com/postmanlabs/postman-app-support/issues/14370",
+     "tags": [
+      "Postman",
+      "DevTools",
+      "Privacy",
+      "Security"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "LLM 真的能「直接讀寫權重」自我迭代？社群掀起嚴苛質疑與辯論",
+      "en": "Debate erupts over claims that frontier LLMs can natively interpret and write neural weights"
+     },
+     "detail": {
+      "zh": "針對熱門論文《Sparks of Weight-Space Programming》宣稱模型能讀寫自身浮點數權重自我強化的說法，spaCy 作者 Matthew Honnibal 與業界研究者發文反駁，指出該結論極度具誤導性，實質只是特定提示工程與統計關聯，離真正「超人類代碼改寫權重」相去甚遠。",
+      "en": "Following claims from the 'Sparks of Weight-Space Programming' post alleging models like Astra can read and modify floating-point weights to improve performance, Matthew Honnibal and other researchers strongly pushed back, arguing the experiments are methodologically flawed and far from actual superhuman weight synthesis."
+     },
+     "source": "https://honnibal.dev/blog/astra-read-write-misleading",
+     "tags": [
+      "LLM",
+      "Research",
+      "WeightSpace",
+      "MechanisticInterpretability"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "全有或全無：Google 宣布若 K-12 學校禁用 AI 摘要，將直接停用搜尋服務",
+      "en": "Google Search to be fully disabled in K-12 schools that opt out of AI integration"
+     },
+     "detail": {
+      "zh": "Google 更新教育版政策，若學區選擇在學生帳號停用 Gemini 等 AI 工具，系統將連帶徹底關閉 Google Search 存取權限。官方表示因 AI 與搜尋技術架構已深度綁定無法拆分，引發教育界與反壟斷倡議者強烈反彈。",
+      "en": "Google confirmed that schools restricting Gemini and related AI features will lose access to Google Search entirely on student accounts, citing deep architectural coupling between the engine and AI summaries. The hardline stance has drawn fierce criticism from educators and privacy advocates."
+     },
+     "source": "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html",
+     "tags": [
+      "Google",
+      "Search",
+      "Policy",
+      "Education"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Simon Willison 發布 llm 0.37：預設模型改為 gpt-6-luna，大幅簡化自訂端點綁定",
+      "en": "Simon Willison releases llm 0.37 with gpt-6-luna default and simplified custom endpoint tooling"
+     },
+     "detail": {
+      "zh": "知名開源 CLI 工具 `llm` 迎來 0.37 更新，預設模型改為成本減半的 gpt-6-luna，並加入 `llm openai endpoint add` 命令，方便開發者一鍵接軌任何相容 OpenAI 格式的自架或第三方推論伺服器（如 vLLM、Ollama）。",
+      "en": "The popular CLI and Python utility `llm` updated to v0.37, slashing default query costs by switching to gpt-6-luna. It introduces a dedicated `llm openai endpoint add` command to streamline connecting self-hosted vLLM/Ollama and third-party OpenAI-compatible endpoints."
+     },
+     "source": "https://simonwillison.net/2026/Nov/2/llm/",
+     "tags": [
+      "CLI",
+      "OpenAI",
+      "DevTools",
+      "Python"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Hugging Face 推出 Transformers 模型整合合約（MIC）以標準化新架構接入",
+      "en": "Hugging Face introduces Transformers Model Integration Contracts (MIC)"
+     },
+     "detail": {
+      "zh": "為了解決每逢新型號開源時程式庫相容混亂的問題，Hugging Face 提出了規範模型介面與測試流程的 MIC 協議，確保社群貢獻的新模型架構能在 Hugging Face 生態中維持零阻力的相容性與可維護性。",
+      "en": "To combat implementation fragmentation across rapidly evolving architectures, Hugging Face rolled out Model Integration Contracts (MIC). This initiative formalizes standardized interface specifications and validation pipelines for onboarding community models into the Transformers ecosystem."
+     },
+     "source": "https://huggingface.co/blog/transformers-mic",
+     "tags": [
+      "Transformers",
+      "HuggingFace",
+      "Standards",
+      "OpenSource"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 分享內部單一儲存庫（Monorepo）擴展 Git 基礎架構的實戰經驗",
+      "en": "OpenAI documents architectural lessons scaling Git for massive internal monorepos"
+     },
+     "detail": {
+      "zh": "OpenAI 發表技術長文，拆解其在模型訓練程式碼庫暴增的情況下，如何藉由自製快取層、稀疏檢出（Sparse Checkout）及虛擬化物件存儲，解決萬人等級並行 Git 操作時的伺服器負載瓶頸。",
+      "en": "OpenAI published an engineering deep-dive on scaling its Git monorepo infrastructure under massive parallel workloads, detailing the use of aggressive virtual file caching, sparse checkouts, and custom object stores to mitigate high-concurrency Git performance walls."
+     },
+     "source": "https://openai.com/index/scaling-git-at-openai/",
+     "tags": [
+      "Git",
+      "Infra",
+      "OpenAI",
+      "DevOps"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Apple 正式開放 Siri AI 深度串接第三方 App，釋出全域螢幕感知 API",
+      "en": "Apple opens Siri AI cross-app orchestration and on-screen awareness APIs to third parties"
+     },
+     "detail": {
+      "zh": "隨著 iOS 27.3 開發者測試版釋出，蘋果允許所有第三方 App 開發者接入 Siri AI。外掛可調用使用者的個人上下文、自然語言語意解析，並具備即時讀取螢幕內容執行動態動作的權限，象徵跨應用 Agent 架構正式落地消費級行動裝置。",
+      "en": "In the latest iOS developer beta, Apple expanded Siri AI to interact directly across third-party applications. Developers can now leverage APIs that expose on-screen context, natural language intent resolution, and system-level cross-app agent execution."
+     },
+     "source": "https://www.theverge.com/tech/1025694/apple-siri-ai-third-party-apps",
+     "tags": [
+      "Apple",
+      "iOS",
+      "Siri",
+      "Agents"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Google DeepMind 發表 Antigravity：結合代理架構的計算化學與藥物設計管線",
+      "en": "Google DeepMind unveils Google Antigravity for agentic cheminformatics"
+     },
+     "detail": {
+      "zh": "DeepMind 展示了一套名為 Antigravity 的化學資訊代理系統，讓大模型結合特定化學工具鏈（Cheminformatics Skills），能自主檢索分子資料庫、設計剛性大環化合物（Rigidified Macrocycles），加速生技領域的早期藥物發現流程。",
+      "en": "DeepMind introduced Google Antigravity, an agentic framework paired with Cheminformatics Skills designed to automate molecular retrieval, optimize property validation, and design novel rigidified macrocycles for computational drug discovery."
+     },
+     "source": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+     "tags": [
+      "DeepMind",
+      "Biotech",
+      "Agents",
+      "DrugDiscovery"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Netflix 測試「AI Discover」自訂氛圍推薦分頁，淘汰傳統靜態分類",
+      "en": "Netflix tests mood-based 'AI Discover' feed on TV apps to replace static carousels"
+     },
+     "detail": {
+      "zh": "Netflix 開始在電視客戶端灰度測試「AI Discover」介面，捨棄傳統靜態類別標籤，改用動態生成的語意化主題（如「輕鬆無負擔」、「家庭電影夜」）與即時對話推薦，探索更直覺的內容發現模式。",
+      "en": "Netflix is rolling out an experimental 'AI Discover' interface on TV clients that replaces rigid genre carousels with conversational, intent-driven thematic recommendations such as 'Quick Watches' or specific viewer mood prompts."
+     },
+     "source": "https://www.theverge.com/streaming/1025029/netflix-ai-discover-recommendations",
+     "tags": [
+      "Netflix",
+      "Recommendation",
+      "UIUX"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "StateBench 基準釋出：全面檢驗語言模型在超長文本中的狀態追蹤能力",
+      "en": "StateBench released to benchmark LLM state tracking across long-context documents"
+     },
+     "detail": {
+      "zh": "艾倫人工智慧研究所（AI2）推出 StateBench 評測集，專門測試模型在數萬至數十萬字長文本中，精確追蹤實體狀態變更、變數賦值與條件演進的能力，直指當前 Needle-in-a-Haystack 評測過於單純的痛點。",
+      "en": "The Allen Institute for AI released StateBench, a benchmark designed to evaluate how robustly models maintain and update variable entity states over long-context sequences, addressing the shallow retrieval limitations of standard needle-in-a-haystack tests."
+     },
+     "source": "https://huggingface.co/blog/allenai/statebench",
+     "tags": [
+      "Evaluation",
+      "LongContext",
+      "Benchmarking",
+      "NLP"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "IBM Research 發表 Palette：用小模型學會企業內部設計語言自動產出投影片",
+      "en": "IBM Research unveils Palette: training small models on proprietary design languages"
+     },
+     "detail": {
+      "zh": "IBM 團隊展示如何透過微調輕量級模型（Small Language Models），使其精準理解複雜的企業品牌規範與組件結構代碼，在不需要呼叫昂貴閉源旗艦模型的情況下自動生成嚴格合規的簡報排版。",
+      "en": "IBM Research presented Palette, demonstrating that targeted small language models can effectively internalize strict visual design DSLs and corporate layout guidelines to generate branded slide decks without relying on frontier-scale LLMs."
+     },
+     "source": "https://huggingface.co/blog/ibm-research/palette-deck-building",
+     "tags": [
+      "SLM",
+      "IBM",
+      "FineTuning",
+      "UI"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 投入開發 FlashProve，旨在密碼學層面驗證 AI 輸出真實性",
+      "en": "Anthropic develops FlashProve to cryptographically verify model output authenticity"
+     },
+     "detail": {
+      "zh": "Anthropic 正著手建立代號 FlashProve 的驗證架構，提供第三方客戶透過密碼學簽章驗證特定推論輸出確實來自指定的權重模型，避免 API 中間人攻擊、模型降級或未授權蒸餾欺詐。",
+      "en": "Anthropic is prototyping FlashProve, an attestation framework aimed at cryptographically proving an inference output originated from a certified model checkpoint, protecting against model spoofing, silent downgrades, and proxy tampering."
+     },
+     "source": "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/",
+     "tags": [
+      "Anthropic",
+      "Cryptography",
+      "Security",
+      "Inference"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "電力荒無解：超大規模資料中心為縮短併網等待，改裝退役噴射發動機發電",
+      "en": "Data centers deploy decommissioned jet engines for on-site power amid grid interconnection backlogs"
+     },
+     "detail": {
+      "zh": "因公用電網審批與變電站建造動輒耗時數年，部分 AI 資料中心營運商開始收購二手飛機噴射引擎改裝為燃氣輪機提供離網自備電力。儘管效率較低且碳排爭議極大，但凸顯了算力基建對即時能源的渴求已達極限。",
+      "en": "Confronted by multi-year grid interconnection delays, AI data center operators are resorting to retrofitted decommissioned jet engines as aeroderivative turbines. While carbon-intensive and inefficient, it underscores extreme desperation for immediate megawatts."
+     },
+     "source": "https://techcrunch.com/2026/11/03/data-centers-are-turning-to-old-jet-engines-as-the-wait-for-power-grows/",
+     "tags": [
+      "DataCenter",
+      "Energy",
+      "Infrastructure",
+      "Hardware"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "推論基礎設施新創 Fal 估值翻倍至 160 億美元，完成 13 億美元新一輪融資",
+      "en": "Inference infra startup Fal doubles valuation to $16B in $1.3B funding round"
+     },
+     "detail": {
+      "zh": "專注於提供極低延遲媒體生成與模型推論架構的 Fal 宣布由 Bessemer 領投新一輪融資。隨著企業端對邊緣推論速度與吞吐量需求暴增，推論基礎設施服務商的估值溢價正在快速追趕傳統雲端巨頭。",
+      "en": "Developer-focused AI inference provider Fal secured $1.3B in a funding round led by Bessemer, valuing the company at $16B. The massive valuation highlights skyrocketing enterprise demand for optimized inference pipelines and edge media generation."
+     },
+     "source": "https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/",
+     "tags": [
+      "Inference",
+      "VentureCapital",
+      "Cloud",
+      "Fal"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "開發者抓包 OpenAI 疑似在 Codex 聊天介面中靜默重新啟用訓練資料收集選項",
+      "en": "OpenAI reportedly caught silently re-enabling training data collection on Codex user sessions"
+     },
+     "source": "https://news.ycombinator.com/item?id=50352757"
+    },
+    {
+     "headline": {
+      "zh": "Apple Watch 釋出 watchOS 27.3 測試版，內建環境常駐監聽與通話自動回放摘要功能",
+      "en": "watchOS 27.3 beta brings ambient Audio Intelligence features with Live Rewind and Siri Recap"
+     },
+     "source": "https://www.theverge.com/tech/1025002/apple-watch-audio-intelligence-watchos-beta"
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 宣稱 ChatGPT 搜尋量已達到 Google 全球搜尋體量的 20%",
+      "en": "OpenAI claims ChatGPT search query volume has reached 20 percent of Google Search"
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1025482/openai-says-chatgpt-is-catching-up-to-google-in-search"
+    },
+    {
+     "headline": {
+      "zh": "CWE-bench v2 發布，擴大軟體弱點檢測的真實場景覆蓋率與透明度評估",
+      "en": "CWE-bench v2 launches with broader coverage and transparency for software vulnerability benchmarking"
+     },
+     "source": "https://huggingface.co/blog/cwe-bench"
+    },
+    {
+     "headline": {
+      "zh": "為降低民眾對高能耗機房的反彈，OpenAI 將資料中心對外更名為「運算園區（Compute Campuses）」",
+      "en": "OpenAI quietly rebrands controversial data center projects as 'compute campuses'"
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1025242/openai-quietly-renames-data-centers-as-compute-campuses"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-11-04T07:01+08:00"
+}

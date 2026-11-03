@@ -1,6 +1,14 @@
 {
- "latest": "2026-11-03",
+ "latest": "2026-11-04",
  "reports": [
+  {
+   "date": "2026-11-04",
+   "type": "daily",
+   "summary": {
+    "zh": "Postman 隱私爭議發酵；權重空間編程論戰；Google 封殺反 AI 校園搜尋",
+    "en": "Postman sparks API privacy uproar, debate heats up over weight-space programming, and Google cuts Search for anti-AI schools."
+   }
+  },
   {
    "date": "2026-11-03",
    "type": "daily",
