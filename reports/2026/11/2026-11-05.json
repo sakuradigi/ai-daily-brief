@@ -1,0 +1,317 @@
+{
+ "date": "2026-11-05",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 打造自主管線，修補 Linux 核心 948 個提權漏洞",
+      "en": "OpenAI Autonomous Pipeline Patches 948 Linux Kernel Vulnerabilities"
+     },
+     "detail": {
+      "zh": "OpenAI 發表一套全自主系統，成功挖掘、驗證並生成修補程式，解決了 Linux 核心中 948 個本地端提權（LPE）漏洞。這標誌著 AI 驅動的自動化逆向工程與漏洞修補進入實用階段，大幅縮短重大基礎架構的除錯週期。",
+      "en": "OpenAI revealed an autonomous pipeline capable of discovering, validating, and generating patches for 948 local privilege-escalation vulnerabilities in the Linux kernel. This marks a pivotal milestone for AI-assisted binary analysis and infrastructure-level automated vulnerability patching."
+     },
+     "source": "https://openai.com/index/a-thousand-fewer-paths-to-root",
+     "tags": [
+      "Security",
+      "Linux",
+      "AI-Agents"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Nvidia RTX Spark 韌體加密導致 Linux 推論速度暴跌至 35%",
+      "en": "Nvidia RTX Spark Encrypted Firmware Throttles Linux Inference to 35%"
+     },
+     "detail": {
+      "zh": "社群實測發現 Nvidia RTX Spark 在 Linux 環境下因新版加密韌體限制，模型推論速度僅剩原有效能的 35%。這引發 Linux 開發者與本地端 AI 部署者的強烈反彈，可能促使更多工作負載轉移或倒逼社群尋找繞過方案。",
+      "en": "Community benchmarks show that encrypted firmware in Nvidia RTX Spark slows inference speeds to 35% on Linux systems. The move has triggered major pushback from open-source developers and self-hosters relying on local hardware for LLM workloads."
+     },
+     "source": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
+     "tags": [
+      "Hardware",
+      "Nvidia",
+      "Linux",
+      "Performance"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 提出可驗證推論系統 FlashProve，杜絕模型身分造假",
+      "en": "Anthropic Introduces FlashProve for Cryptographically Verifiable LLM Inference"
+     },
+     "detail": {
+      "zh": "Anthropic 釋出 FlashProve 研究進展，透過密碼學證明機制讓終端使用者確認生成內容確實出自特定模型，防止 API 供應商暗中降級或模型被冒名。這項技術對需要高合規性、審計驗證的高價值 API 整合場景極為關鍵。",
+      "en": "Anthropic published research on FlashProve, a verifiable inference system designed to cryptographically confirm that an LLM output originated from a specific claimed model. This prevents silent API downgrades and provides necessary auditability for high-assurance enterprise deployments."
+     },
+     "source": "https://www.anthropic.com/research/provable-inference",
+     "tags": [
+      "Cryptography",
+      "LLM",
+      "Inference"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "月之暗面開源 Kimi K3.1 Pro 模型權重",
+      "en": "Moonshot AI Releases Weights for Kimi K3.1 Pro"
+     },
+     "detail": {
+      "zh": "Moonshot AI 於 Hugging Face 上傳釋出 Kimi K3.1 Pro 完整模型權重，主打強悍的長文本與推理表現。對於追求自行託管（self-hosted）且不想受閉源 API 限制的開發團隊來說，提供了一個新的高階開源替代方案。",
+      "en": "Moonshot AI has officially published model weights for Kimi K3.1 Pro on Hugging Face, highlighting superior long-context processing. It provides self-hosting engineering teams with an alternative open foundation model against proprietary APIs."
+     },
+     "source": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+     "tags": [
+      "OpenWeights",
+      "LLM",
+      "HuggingFace"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Ripple-65B 預覽版釋出：主打代理編程的開源 SOTA",
+      "en": "Ripple-65B Preview Released: US Open-Weight SOTA for Agentic Coding"
+     },
+     "detail": {
+      "zh": "Ricursive 發表 Ripple-65B 預覽版，宣稱為美國開源權重中代理編程（Agentic Coding）的 SOTA 水準。此模型專注於自主任務規劃與多檔案程式碼編輯，有望大幅降低建構本地端 Coding Agent 的難度。",
+      "en": "Ricursive launched the preview of Ripple-65B, claiming open-weight state-of-the-art benchmarks in agentic coding tasks. The architecture focuses on multi-step software engineering workflows and autonomous file manipulation."
+     },
+     "source": "https://www.ricursive.com/ripple",
+     "tags": [
+      "OpenWeights",
+      "CodeLLM",
+      "Agents"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Datasette Agent 0.5a0 發布，支援並排面板即時生成 DB 應用",
+      "en": "Datasette Agent 0.5a0 Introduces Side-by-Side Panel for App Prototyping"
+     },
+     "detail": {
+      "zh": "Simon Willison 推出 Datasette Agent 0.5a0，最大特色是新增側邊面板，讓 Agent 與資料庫視圖或查詢結果並排顯示。結合 datasette-apps，工程師可以直接透過自然語言對話即時生成並修改資料庫驅動的 HTML 應用程式。",
+      "en": "Datasette Agent 0.5a0 adds a native side-by-side panel that embeds chat directly alongside Datasette tables and query pages. Paired with datasette-apps, developers can prompt database-backed web applications into existence and iteratively refine them in real-time."
+     },
+     "source": "https://simonwillison.net/2026/Nov/3/datasette-agent/",
+     "tags": [
+      "OpenSource",
+      "Datasette",
+      "Tools"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Dharma Field Extractor：任意文件零配置轉 JSON 結構化資料",
+      "en": "Dharma Field Extractor Converts Arbitrary Docs into Structured JSON"
+     },
+     "detail": {
+      "zh": "Dharma AI 於 Hugging Face 推出專門的文件抽取工具模型，主打輸入任意雜亂文件即可穩定輸出規範的 JSON 欄位。這解決了傳統 RAG 與資料管線中最繁瑣的文件前處理與 schema 轉換成本。",
+      "en": "Dharma AI unveiled Dharma Field Extractor, a dedicated model designed to convert unstructured documents directly into schema-compliant JSON fields. It aims to eliminate brittle document preprocessing scripts in enterprise data pipelines."
+     },
+     "source": "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor",
+     "tags": [
+      "JSON",
+      "DocumentAI",
+      "DataPipeline"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 宣布收購 Pierre，強化 Codex 程式碼審查與分析工具鏈",
+      "en": "OpenAI Acquires Pierre to Supercharge Codex Code Intelligence Tools"
+     },
+     "detail": {
+      "zh": "OpenAI 宣布收購軟體工具公司 Pierre Computer Company，預計將其整合至 Codex 架構中。此舉旨在補足程式碼建構、全域依賴理解與自動化 Code Review 的工程工具鏈，直接推進下一代程式設計 Agent 的能力。",
+      "en": "OpenAI has agreed to acquire Pierre Computer Company to integrate its deep tooling for code understanding and review into the Codex ecosystem. This move targets end-to-end autonomous software development and advanced repository-wide code review."
+     },
+     "source": "https://openai.com/index/openai-to-acquire-pierre",
+     "tags": [
+      "OpenAI",
+      "Codex",
+      "M&A",
+      "DevTools"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "ChatGPT 整合 Images 2.6，支援原生動態 GIF 生成與分鏡編輯",
+      "en": "ChatGPT Adds Native GIF Generation and Frame Editing via Images 2.6"
+     },
+     "detail": {
+      "zh": "OpenAI 推出 Images 2.6 模型，使 ChatGPT 具備原生單步驟生成動態 GIF 的能力。使用者不僅能自訂播放速率，還能針對特定影格進行細部微調，為輕量級視覺內容生成省去外部轉檔工具的麻煩。",
+      "en": "Powered by the new Images 2.6 model, ChatGPT now supports native single-prompt GIF creation with frame-by-frame editing controls. Users can adjust animation speeds and export clips directly without auxiliary post-processing pipelines."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1026474/openai-chatgpt-animated-gifs-images-2-6",
+     "tags": [
+      "ChatGPT",
+      "Multimodal",
+      "Product"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "DevRev 採用 GPT-6.1 Sol 推出自律型企業客服系統",
+      "en": "DevRev Powers Autonomous Self-Service Support with GPT-6.1 Sol"
+     },
+     "detail": {
+      "zh": "DevRev 整合 OpenAI 的 GPT-6.1 Sol 模型推出 Computer 與 Operator 功能，在推論速度、多步驟邏輯能力與 API 成本之間取得平衡，實現企業端全自動工單分派與複雜問題自主處理解決方案。",
+      "en": "DevRev integrated GPT-6.1 Sol into its Computer and Operator architectures to deliver enterprise autonomous customer support. The implementation leverages optimized reasoning-to-cost profiles for handling complex multi-system workflow resolution."
+     },
+     "source": "https://openai.com/index/devrev-enterprise-self-service",
+     "tags": [
+      "Enterprise",
+      "GPT-6",
+      "CustomerService"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "產生式 AI 數學基礎入門書釋出，直觀解構前沿模型架構",
+      "en": "New Primer on Generative AI Foundations Bridges Intuition and Math"
+     },
+     "detail": {
+      "zh": "arXiv 上架新論文《The Little Book of Generative AI Foundations》，以直觀且嚴謹的數學推導梳理現代 LLM 與擴散模型的理論核心。推薦給想搞懂底層 Transformer 注意力矩陣、流匹配（Flow Matching）與最佳化本質的工程師深入研讀。",
+      "en": "A new open paper titled 'The Little Book of Generative AI Foundations' appeared on arXiv, offering an intuitive mathematical treatment of generative architectures. It serves as a concise, mathematically rigorous guide for practitioners examining loss surfaces and diffusion mechanics."
+     },
+     "source": "https://arxiv.org/abs/2605.29713",
+     "tags": [
+      "Paper",
+      "MachineLearning",
+      "Theory"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "IEEE Spectrum 調查：AI 正在迫使產業償還累積 40 年的技術債",
+      "en": "IEEE Spectrum: AI Is Forcing Tech to Repay 40 Years of Technical Debt"
+     },
+     "detail": {
+      "zh": "調查指出，攻擊者利用 AI 自動化挖掘出大量如 php2shell 等深埋數十年的老舊漏洞，迫使傳統軟體架構必須徹底重構。AI 使得安全攻防維度失衡，開發團隊無法再忽視歷史遺留程式碼帶來的邊界風險。",
+      "en": "An IEEE Spectrum deep dive illustrates how automated AI exploitation tools are excavating decades-old legacy vulnerabilities across the web. The asymmetry of AI attack surfaces is effectively mandating full refactors of foundational legacy codebases."
+     },
+     "source": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
+     "tags": [
+      "Cybersecurity",
+      "TechnicalDebt",
+      "Analysis"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Meta 收購 AI 編程新創 Conductor，加速多代理團隊部署",
+      "en": "Meta Acquires AI Coding Startup Conductor for Multi-Agent Workflows"
+     },
+     "detail": {
+      "zh": "Meta 正式收購致力於讓工程師同時部署多個代理人協作開發的新創 Conductor。這項併購直接展現科技巨頭將內部工程全面轉向「多代理平行協作（Multi-agent Parallelism）」軟體架構的決心。",
+      "en": "Meta has acquired AI programming startup Conductor, whose platform allows engineers to orchestrate multiple concurrent coding agents on distinct project modules. The acquisition highlights the tech sector's pivot toward multi-agent parallel developer environments."
+     },
+     "source": "https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/",
+     "tags": [
+      "Meta",
+      "M&A",
+      "DevTools"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "美國期中選舉反彈聲浪高漲，AI 資料中心建設面臨多州禁建令",
+      "en": "Voters Approve Local Moratoriums Halting AI Data Center Expansions"
+     },
+     "detail": {
+      "zh": "美國多個地方選區在期中選舉通過針對資料中心的禁建令與公投限制，重挫超大規模運算中心的擴張計畫。地方選民對電力網負荷與高昂水資源消耗的抵觸，將使未來算力基建的審批與營運成本進一步攀升。",
+      "en": "US midterm election results revealed sweeping local ballot approvals restricting data center development, targeting grid strain and water usage. The growing civic resistance introduces substantial regulatory bottlenecks and power acquisition hurdles for AI hyperscalers."
+     },
+     "source": "https://www.theverge.com/policy/1026365/data-centers-midterms-results",
+     "tags": [
+      "DataCenter",
+      "Policy",
+      "Infrastructure"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "Hacker News 爆料：Gemini 個人付費用戶之對話紀錄仍會被用於模型訓練",
+      "en": "HN Thread Reveals Gemini Trains on Chat History Even for Paid Personal Accounts"
+     },
+     "source": "https://news.ycombinator.com/item?id=50363461"
+    },
+    {
+     "headline": {
+      "zh": "Uber Q3 財報揭露：全季僅有 4 筆叫車行程是透過 AI Agent 完成",
+      "en": "Uber Reports Only 4 Rides Were Booked via Third-Party AI Agents in Q3"
+     },
+     "source": "https://www.theverge.com/transportation/1026306/uber-ai-agents-q3-earnings-disintermediation"
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 推出 Daybreak Red，透過 Bedrock 上架 AWS GovCloud",
+      "en": "OpenAI Deploys Daybreak Red with GPT-5.6 Cyber to AWS GovCloud"
+     },
+     "source": "https://openai.com/index/daybreak-red-aws-govcloud"
+    },
+    {
+     "headline": {
+      "zh": "Simon Willison 發布 llm 0.37.1 修正版本",
+      "en": "Simon Willison Releases llm 0.37.1 Bugfix Release"
+     },
+     "source": "https://simonwillison.net/2026/Nov/3/llm/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-11-05T07:01+08:00"
+}
