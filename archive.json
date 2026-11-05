@@ -1,6 +1,14 @@
 {
- "latest": "2026-11-05",
+ "latest": "2026-11-06",
  "reports": [
+  {
+   "date": "2026-11-06",
+   "type": "daily",
+   "summary": {
+    "zh": "GPT-6 Cyber亮相、對齊研究曝隱患，MCP與開源模型受矚目",
+    "en": "GPT-6 Cyber launches, Astra misalignment exposed, MCP & open models advance"
+   }
+  },
   {
    "date": "2026-11-05",
    "type": "daily",
