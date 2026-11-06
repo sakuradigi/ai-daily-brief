@@ -1,0 +1,273 @@
+{
+ "date": "2026-11-07",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Claude Code 驚傳連線時外洩開發者 Email，引發資安與隱私爭議",
+      "en": "Claude Code sparks privacy backlash over sending developers' email addresses to external sites"
+     },
+     "detail": {
+      "zh": "GitHub 議題回報指出 Anthropic 的命令列工具 Claude Code 在向第三方網站發送請求時，會在標頭附帶使用者的電子郵件地址。社群對未經明確授權的個資外洩表示強烈不滿，開發者在使用該工具存取非信任網路端點時應特別留意憑證與隱私設定。",
+      "en": "A trending GitHub issue revealed that Anthropic's CLI agent, Claude Code, leaks user email addresses in HTTP requests to external domains. The discovery triggered sharp criticism from the developer community, highlighting telemetry overreach and potential risks when interfacing with untrusted endpoints."
+     },
+     "source": "https://github.com/anthropics/claude-code/issues/107757",
+     "tags": [
+      "Security",
+      "Claude",
+      "CLI",
+      "Privacy"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Google 發表 Gemini Omni 1.2 Flash，主打即時多模態低延遲體驗",
+      "en": "Google introduces Gemini Omni 1.2 Flash for low-latency multimodal interactions"
+     },
+     "detail": {
+      "zh": "Google 擴展 Flash 系列模型陣容，推出強調端到端多模態即時反應的 Gemini Omni 1.2 Flash。新版本大幅縮減音訊與視覺輸入的推論延遲，為建構即時語音對話與視覺互動代理的工程師提供更高性價比的 API 選項。",
+      "en": "Google expanded its lightweight tier with Gemini Omni 1.2 Flash, tailored for real-time multimodal streaming across audio and video. The release cuts end-to-end inference latency significantly, giving developers a cost-effective API choice for low-latency voice and visual agents."
+     },
+     "source": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+     "tags": [
+      "Google",
+      "Gemini",
+      "Multimodal",
+      "LLM"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 傳以 1.25 兆美元估值再籌 110 億美元，AI 資本競賽持續升溫",
+      "en": "OpenAI reportedly raises $11B at $1.25T valuation amid mounting capital intensity"
+     },
+     "detail": {
+      "zh": "報導指出 OpenAI 正在敲定新一輪 110 億美元的融資，估值衝上 1.25 兆美元大關。儘管企業軟體市場近期對 AI 算力支出有所緊縮，一線基礎模型開發商在算力基礎建設與前沿研發上的資金需求依舊維持狂飆格局。",
+      "en": "OpenAI has reportedly secured an additional $11 billion in a funding round valuing the company at $1.25 trillion. Even as enterprise telemetry signals a moderation in software AI spend, top-tier frontier labs continue to command astronomical capital pools to fund compute expansion."
+     },
+     "source": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/",
+     "tags": [
+      "OpenAI",
+      "Fundraising",
+      "VentureCapital"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "艾倫人工智慧研究院開源 ToyBlocks：機器人學習與基準評測環境",
+      "en": "Ai2 open-sources ToyBlocks: A controlled world for robot learning and evaluation"
+     },
+     "detail": {
+      "zh": "Allen Institute for AI 推出專為實體智能設計的模擬基準 ToyBlocks，提供模組化積木操作場景與精確物理約束。該工具旨在解決機器人具身智能中的策略評測標準化問題，支援研究團隊在受控條件下測試不同演算法的泛化能力。",
+      "en": "The Allen Institute for AI released ToyBlocks, a standardized simulation environment focused on manipulation and physical reasoning tasks. It offers researchers a modular, reproducible testbed to evaluate robot learning policies and benchmark generalization before real-world deployment."
+     },
+     "source": "https://huggingface.co/blog/allenai/toyblocks",
+     "tags": [
+      "Robotics",
+      "EmbodiedAI",
+      "Benchmark",
+      "OpenSource"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "數百個 Artex AI 滲透測試實例未加防護暴露於公網，引發安全警訊",
+      "en": "Hundreds of Artex AI hacking and penetration testing tools exposed to the public web"
+     },
+     "detail": {
+      "zh": "資安團隊發現大量部署 Artex AI 自動化滲透測試工具的伺服器缺乏身分驗證，直接將具備攻擊能力的代理介面暴露於外網。此事件突顯了在部署強大自主攻擊性 AI 工具時，配置失誤可能直接遭惡意第三方接管並作為武器的風險。",
+      "en": "Security researchers spotted hundreds of unauthenticated servers running the Artex AI penetration testing framework exposed online. The misconfigurations allow anyone to commandeer autonomous exploit capabilities, spotlighting the operational hazards of poorly secured offensive AI agents."
+     },
+     "source": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/",
+     "tags": [
+      "Security",
+      "Infosec",
+      "AIAgents"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Perplexity 推出工作型常駐代理「Teammates」，深度整合本機運算環境",
+      "en": "Perplexity debuts 'Teammates' workplace AI agents with local runtime integration"
+     },
+     "detail": {
+      "zh": "Perplexity 發表名為 Teammates 的多角色協作代理，能常駐於工作區並共享專案記憶與技能庫。該功能與 Perplexity Computer 深度串接，允許代理直接在使用者裝置上執行任務，正式進軍自動化工作流程市場。",
+      "en": "Perplexity rolled out always-on workplace agents called 'Teammates' that can handle distinct project roles using shared workspace memory. The system pairs directly with Perplexity Computer to orchestrate agent tasks on user devices, intensifying competition against OpenAI and Anthropic."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work",
+     "tags": [
+      "Perplexity",
+      "Agents",
+      "Productivity"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Meta Muse 推出 Spaces：以對話即時生成動態微型應用介面",
+      "en": "Meta unveils Spaces for Muse AI to generate on-demand interactive mini-apps"
+     },
+     "detail": {
+      "zh": "Meta 替旗下 Muse 助手新增 Spaces 功能，使用者可藉由自然語言生成專屬的互動面板（如採購中心、儀表板或小型工具）。這代表消費端 AI 正從純文字對話框轉型為隨需即時生成使用者介面（Generative UI）的型態。",
+      "en": "Meta introduced 'Spaces' inside its Muse assistant, letting users construct interactive, ephemeral app interfaces such as dashboards or trackers through chat prompts. The feature signals a shift toward Generative UI, replacing static chat streams with context-specific dynamic micro-apps."
+     },
+     "source": "https://www.theverge.com/tech/1028871/meta-muse-ai-spaces",
+     "tags": [
+      "Meta",
+      "GenerativeUI",
+      "UX",
+      "Muse"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 推出 BioBasicsBench：評測 AI 代理處理濕實驗室數據的基準",
+      "en": "OpenAI introduces BioBasicsBench to test AI agent proficiency in wet-lab workflows"
+     },
+     "detail": {
+      "zh": "OpenAI 發表包含 100 項任務的 BioBasicsBench 評測集，專門評估前沿模型解讀未經處理的實驗原始數據與生化流程設計能力。這項基準旨在檢驗 AI 助手能否從文獻整理跨入實際輔助科學家執行實驗室日常操作。",
+      "en": "OpenAI unveiled BioBasicsBench, a 100-task evaluation suite measuring how effectively AI agents analyze raw experimental outputs and plan wet-lab procedures. The benchmark provides a standardized rubric to judge if frontier models can reliably support end-to-end biological research."
+     },
+     "source": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+     "tags": [
+      "OpenAI",
+      "BioAI",
+      "Benchmark",
+      "Research"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Underdog 展示 32MB 超輕量模型，兼具語音合成與音樂生成能力",
+      "en": "Underdog showcases compact 32MB generative model spanning speech and music"
+     },
+     "detail": {
+      "zh": "新創公司 Underdog 展示了一款檔案大小僅 32MB 的音訊生成模型，能在極限端點硬體上同時合成語音與旋律。這項成果展示了邊緣端高效量化與緊湊架構的最新進展，為穿戴裝置與離線即時合成帶來極高潛力。",
+      "en": "Underdog revealed an ultra-compact 32MB audio foundation model capable of generating both intelligible speech and music sequences. The tiny footprint demonstrates advancements in architecture pruning and quantization for on-device, offline audio generation."
+     },
+     "source": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
+     "tags": [
+      "AudioAI",
+      "EdgeComputing",
+      "ModelCompression"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Anthropic IPO 估值協商下修至 1.1 兆至 1.3 兆美元區間，投資人態度轉趨保守",
+      "en": "Anthropic IPO valuation discussions cool to $1.1T–$1.3T amid market scrutiny"
+     },
+     "detail": {
+      "zh": "彭博與華爾街日報報導，隨著市場對 AI 成長放緩與毛利率壓縮的疑慮浮現，機構投資人對 Anthropic 尋求 1.5 兆美元 IPO 估值的接受度降低，目前協商估值已滑落至 1.1 兆至 1.3 兆美元。這反映公開市場對 AI 估值泡沫的檢視更趨嚴格。",
+      "en": "Reports from Bloomberg and the WSJ indicate major investors are questioning Anthropic's target $1.5 trillion IPO valuation, driving current discussions down into the $1.1T–$1.3T range. The discount highlights growing scrutiny around sustainable unit economics and monetization velocity in foundation models."
+     },
+     "source": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
+     "tags": [
+      "Anthropic",
+      "IPO",
+      "Finance",
+      "Valuation"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Palo Alto Networks 傳洽購 AI 代理安全防護新創 Clutch，作價 5 億美元",
+      "en": "Palo Alto Networks in talks to acquire AI agent security startup Clutch for $500M"
+     },
+     "detail": {
+      "zh": "資安巨頭 Palo Alto Networks 正洽談以 5 億美元收購專注於自主代理行為監控的資安新創 Clutch。隨著越來越多企業部署能自行執行外部工具的代理系統，針對代理身分驗證、權限邊界與逃逸防護的架構正成為資安併購的新核心。",
+      "en": "Palo Alto Networks is negotiating a $500 million buyout of Clutch, a startup building guardrails and privilege controls for enterprise AI agents. The deal underscores how agentic runtime security is fast becoming a mandatory layer in corporate cyber defense stacks."
+     },
+     "source": "https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/",
+     "tags": [
+      "M&A",
+      "Cybersecurity",
+      "AIAgents"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "大學圖書館遭未受控 AI 資料爬蟲蜂擁洗劫，被迫限制公共數位存取管道",
+      "en": "University libraries restrict open access portals as automated AI scraping bots cause severe server strain"
+     },
+     "source": "https://www.cbc.ca/news/world/university-libraries-ai-data-scraping-bots-9.7408287"
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 宣布與 Hacktron 建立防禦合作夥伴關係，利用前沿 AI 抓捕系統漏洞",
+      "en": "OpenAI partners with security firm Hacktron to stress-test systems and patch vulnerabilities using frontier AI"
+     },
+     "source": "https://openai.com/index/partnering-with-hacktron"
+    },
+    {
+     "headline": {
+      "zh": "面對期中選舉地方公投反彈，OpenAI 承諾未來資料中心開發不再對公職人員要求簽署 NDA",
+      "en": "OpenAI pledges to drop NDAs with local officials for data center projects following voter pushback"
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1028454/openai-data-center-nda"
+    },
+    {
+     "headline": {
+      "zh": "遭受強烈抗議後，Meta 撤回要求粉絲專頁允許將外連內容用於 AI 訓練的爭議條款",
+      "en": "Meta backtracks on controversial terms that would have allowed AI scraping of external links posted to Pages"
+     },
+     "source": "https://arstechnica.com/tech-policy/2026/11/does-meta-think-we-cant-read-meta-abandons-sketchy-commercial-terms-update/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-11-07T07:01+08:00"
+}

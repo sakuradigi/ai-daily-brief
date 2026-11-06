@@ -1,6 +1,14 @@
 {
- "latest": "2026-11-06",
+ "latest": "2026-11-07",
  "reports": [
+  {
+   "date": "2026-11-07",
+   "type": "daily",
+   "summary": {
+    "zh": "Claude隱私爭議、Gemini新品與兆級估值角力",
+    "en": "Claude Code privacy row, Gemini Omni launch, and trillion-dollar AI valuation pressure."
+   }
+  },
   {
    "date": "2026-11-06",
    "type": "daily",
