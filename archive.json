@@ -1,6 +1,14 @@
 {
- "latest": "2026-11-07",
+ "latest": "2026-11-08",
  "reports": [
+  {
+   "date": "2026-11-08",
+   "type": "daily",
+   "summary": {
+    "zh": "Anthropic遞歸研發引關注，OpenAI估值破兆",
+    "en": "Anthropic AI self-improvement alarms, OpenAI hits $1.25T"
+   }
+  },
   {
    "date": "2026-11-07",
    "type": "daily",
