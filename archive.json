@@ -1,6 +1,14 @@
 {
- "latest": "2026-11-08",
+ "latest": "2026-11-09",
  "reports": [
+  {
+   "date": "2026-11-09",
+   "type": "weekly",
+   "summary": {
+    "zh": "黃仁勳涉諜報風暴受查，高盛棄用 Claude Code",
+    "en": "Jensen Huang under probe; Goldman halts Claude Code."
+   }
+  },
   {
    "date": "2026-11-08",
    "type": "daily",

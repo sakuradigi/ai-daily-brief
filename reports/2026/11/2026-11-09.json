@@ -1,0 +1,291 @@
+{
+ "date": "2026-11-09",
+ "type": "weekly",
+ "weekly": {
+  "zh": "本週 AI 領域迎來劇烈震盪：首先是地緣政治與核心高層醜聞引爆晶片圈，黃仁勳遭爆涉入中國間諜案引發董事會獨立調查；其次，OpenAI 完成 110 億美元巨額融資（估值 1.25 兆美元），但地方電力限制與期中選舉後反彈讓資料中心擴建受阻；最後，開發者生態出現務實轉向，Claude Code 隱私外洩遭高盛禁用，開源社群則力推極致量化（如 llama-modchip）與自主推論工具。本週最重要的三件事：1. 黃仁勳深陷情報刺探與婚外情風暴，NVIDIA 啟動調查；2. OpenAI 敲定 110 億美元融資，但基礎設施面臨電網阻力；3. Claude Code 資安隱患引爆企業警戒，高盛全面撤下內部試點。",
+  "en": "This week witnessed dramatic turbulence across the AI industry: geopolitical and executive scandals rocked the hardware sector as Nvidia launched an investigation into Jensen Huang's ties to a Chinese intelligence operative; OpenAI closed an $11B round at a $1.25T valuation despite mounting post-midterm pushback against mega data centers; and developer mindshare showed a pragmatic pivot toward local inference (e.g., llama-modchip) following Claude Code privacy lapses and enterprise pullbacks. The top three events of the week: 1. Nvidia's board initiated an independent inquiry into Jensen Huang over alleged espionage ties; 2. OpenAI secured $11B in new funding amid grid capacity bottlenecks; 3. Security and privacy concerns triggered Goldman Sachs to pull Claude Code from internal deployment."
+ },
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "NVIDIA 董事會對執行長黃仁勳啟動獨立調查，涉與中國情報人員關係及婚外情",
+      "en": "Nvidia Board Launches Independent Probe into CEO Jensen Huang Over Affair with Suspected Chinese Operative"
+     },
+     "detail": {
+      "zh": "NVIDIA 董事會宣布對執行長黃仁勳展開獨立調查，涉及其與涉嫌為中國國安部工作的科技高層 Alice Huang 之間的私人關係。黃仁勳已向全體員工發出內部備忘錄承認婚外情，此事件正值先進晶片出口管制敏感期，可能嚴重衝擊這家市值兆級晶片巨頭的治理穩定與政府信任度。",
+      "en": "Nvidia's board has opened an independent investigation into CEO Jensen Huang regarding his relationship with Megaspeed executive Alice Huang, who US intelligence notes was recruited by China's Ministry of State Security. Huang admitted to the affair in an internal memo, raising severe governance, regulatory, and national security questions for the AI hardware giant."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1029562/nvidia-investigating-jensen-huang-relationship-chinese-spy",
+     "tags": [
+      "Nvidia",
+      "Jensen Huang",
+      "Geopolitics",
+      "Hardware"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "資安疑慮發酵：高盛全面撤回向銀行家與交易員配發的 Claude Code",
+      "en": "Goldman Sachs Pulls Claude Code from Bankers and Traders Citing Security Concerns"
+     },
+     "detail": {
+      "zh": "繼日前 Claude Code 被爆出 CLI 工具在對外請求中靜默洩漏使用者 Email 隱私後，華爾街投行高盛決定正式停止交易員與投資銀行部門對 Claude Code 的使用。此舉凸顯高度監管金融機構在導入自主型編程代理時，對資料外洩與未受控網路外連的零容忍態度。",
+      "en": "Following recent revelations that Claude Code's CLI silently leaked user email addresses during network requests, Goldman Sachs has pulled the tool from its trading and investment banking teams. The rollback highlights wall street's strict zero-tolerance stance toward unregulated agentic networking in high-compliance environments."
+     },
+     "source": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+     "tags": [
+      "Anthropic",
+      "Claude Code",
+      "Security",
+      "Enterprise"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "llama-modchip 開源：僅需 64GB 記憶體即可在無 GPU 環境跑 284B DeepSeek",
+      "en": "llama-modchip Released: Run 284B DeepSeek on 64GB RAM with Zero GPU Footprint"
+     },
+     "detail": {
+      "zh": "開源社群釋出 llama-modchip 專案，透過極致分層卸載與自訂記憶體映射演算法，讓 284B 規模的 DeepSeek 大模型能夠僅靠 64GB 系統 RAM 於純 CPU 環境執行。雖然推論 Token 輸出速度有所取捨，但它大幅壓低了超大參數量模型在本機環境下除錯與檢驗的硬體門檻。",
+      "en": "The open-source project llama-modchip enables running a massive 284B DeepSeek model on just 64GB of system RAM without any GPU acceleration via dynamic memory-mapped layer offloading. While token generation speed is constrained, it radically lowers the barrier for running and inspecting flagship weights on commodity machines."
+     },
+     "source": "https://github.com/synchopate/llama-modchip",
+     "tags": [
+      "OpenSource",
+      "DeepSeek",
+      "LLM",
+      "LocalAI"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "呼籲「Agent 記憶體格式」標準化：社群推動 OpenTelemetry 級別通用架構",
+      "en": "Advocating for Open Agent Memory: Developer Call for an OpenTelemetry-Style Standard"
+     },
+     "detail": {
+      "zh": "Lorekit 部落格發文指出，現行各家 AI 代理架構的長期記憶與狀態儲存格式高度破碎，開發者在不同框架間遷移成本極高。文章提倡應建立如同 OpenTelemetry 般的開放標準，定義通用的上下文拓撲與記憶持久化介面，避免單一雲端代理廠商的生態綁定。",
+      "en": "A new industry critique argues that fragmented agent memory and context serialization architectures are locking developers into walled gardens. The author calls for an open, vendor-neutral memory standard analogous to OpenTelemetry to unify cross-framework state persistence and observability."
+     },
+     "source": "https://www.lorekit.io/blog/open-agent-memory-format",
+     "tags": [
+      "Agents",
+      "OpenTelemetry",
+      "Architecture",
+      "Tooling"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Simon Willison 實測 SQLite 擴充套件：比較 C 與 Rust 實作 parse_number()",
+      "en": "Simon Willison Explores SQLite Extensions: C vs. Rust for parse_number()"
+     },
+     "detail": {
+      "zh": "Simon Willison 藉由 Claude Opus 5.5 輔助撰寫自訂 SQLite 外掛，以清理並解析貨幣符號、百分比與負號數值，並對比了 C 語言與 Rust 實作擴充套件的工程體驗與編譯痛點。此實驗展示了 AI 結對編程在編寫低階原生資料庫延伸模組時的高效能力。",
+      "en": "Simon Willison evaluated writing a custom SQLite parse_number() function using Claude Opus 5.5 to compare developer ergonomics and tooling friction between C and Rust extensions. The experiment demonstrates the practical effectiveness of LLM pair programming for low-level database extensions."
+     },
+     "source": "https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust/",
+     "tags": [
+      "SQLite",
+      "Rust",
+      "C",
+      "LLM-Assisted"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Datasette 修復預先擷取問題：停止對 HTML 頁面發送 rel=next 標頭以減輕負載",
+      "en": "Datasette Fix #3046: Drops link: rel=next Headers for HTML Pages to Stop Unnecessary Prefetches"
+     },
+     "detail": {
+      "zh": "Datasette 於最新修正中移除了傳送給 Firefox 等瀏覽器的 HTTP `link: rel=\"next\"` 標頭。調查發現該標頭觸發了瀏覽器對大型資料表分頁的自動預取（prefetch），造成伺服器產生大量無效推論與查詢負載。",
+      "en": "A targeted fix in Datasette eliminates HTTP link: rel=next headers for HTML responses after discovering that Firefox network prefetching was triggering costly next-page queries, needlessly loading underlying SQLite engines."
+     },
+     "source": "https://simonwillison.net/2026/Nov/7/link-rel-next/",
+     "tags": [
+      "Datasette",
+      "WebDev",
+      "Performance",
+      "Optimization"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "彭博爆料：蘋果高層施壓加速 Siri Agent 化，力抗 OpenAI 與 Meta",
+      "en": "Apple Pushes to Accelerate Siri's Agentic Roadmap to Match OpenAI and Meta"
+     },
+     "detail": {
+      "zh": "消息指出蘋果執行長接班呼聲甚高的 John Ternus 正對軟體團隊施壓，要求加速 Siri 的全自動代理功能研發，以縮小與 OpenAI Dots 及 Meta Muse 等新一代常駐代理的落差。此舉意味著蘋果未來幾季將把更多重心從終端被動問答轉向跨應用多步驟自主執行。",
+      "en": "Bloomberg reports Apple leadership is aggressively pressing AI teams to fast-track Siri's agentic roadmap to close the gap with competitors like OpenAI Dots and Meta Muse, signaling a major strategic push toward autonomous multi-step execution across native apps."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic",
+     "tags": [
+      "Apple",
+      "Siri",
+      "AI Agents",
+      "Ecosystem"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "開發者捨棄 Claude 改轉獨立端點：反思過度代理化的認知疲勞",
+      "en": "Developer Journey: Migrating from Claude to Local Pi to Combat Agentic Fatigue"
+     },
+     "detail": {
+      "zh": "一位資深開發者發表長文分享其從全能型 Claude 遷移至極簡 Pi 模型的歷程，指出高自主度 AI 工具在產出海量代碼的同時，反而大幅增加了人類開發者的審查與認知負荷（AI Brain Fry），主張應回歸以精確意圖引導為主的互動模式。",
+      "en": "A widely circulated post highlights a developer moving away from heavyweight agentic assistants like Claude to lightweight, focused models, arguing that autonomous code deluge induces severe cognitive review fatigue ('brain fry') rather than true productivity gains."
+     },
+     "source": "https://caleb.software/posts/claude-to-pi.html",
+     "tags": [
+      "DeveloperExperience",
+      "Productivity",
+      "Workflow"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "藥廠高層澆冷水：AI 治癒百病承諾與濕實驗室落地仍存在巨大研發鴻溝",
+      "en": "Pharma CEOs Push Back Against Silicon Valley's Promises of AI Disease Cures"
+     },
+     "detail": {
+      "zh": "《華爾街日報》調查指出，儘管科技巨頭不斷標榜計算化學與生成式模型已顛覆新藥開發，多位頂尖跨國製藥公司執行長卻直言，AI 在靶點識別到真實人體臨床試驗的轉化率上仍極具挑戰，無法完全取代冗長的生物學驗證流程。",
+      "en": "Major pharmaceutical executives are pushing back against aggressive Silicon Valley claims regarding AI-designed drugs, highlighting that high-throughput generative chemical design still faces massive bottlenecks in real-world biological and clinical validation."
+     },
+     "source": "https://www.wsj.com/tech/ai/silicon-valley-promises-ai-will-cure-disease-drugmaker-ceos-arent-buying-it-5218511c",
+     "tags": [
+      "BioAI",
+      "DrugDiscovery",
+      "Healthcare",
+      "Research"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 完成 110 億美元融資，估值 1.25 兆美元但略低於預期目標",
+      "en": "OpenAI Closes $11B Financing at $1.25T Valuation, Below Initial $1.4T Target"
+     },
+     "detail": {
+      "zh": "OpenAI 宣布完成新一輪高達 110 億美元的募資案，將其估值推升至 1.25 兆美元，為其下一代旗艦推理模型與龐大基建計畫補充電力。然而，此最終定價略低於先前預期的 1.4 兆美元，顯示公開市場與創投在近週科技股修正後，估值態度趨於審慎。",
+      "en": "OpenAI has officially closed an $11 billion funding round at a $1.25 trillion valuation to support ongoing training infrastructure. While massive, the figure sits slightly below its initial $1.4 trillion target, reflecting recent macro corrections and stricter investor scrutiny."
+     },
+     "source": "https://247wallst.com/investing/2026/11/07/openai-just-raised-11-billion-at-a-1-25-trillion-valuation-below-the-1-4-trillion-it-first-sought/",
+     "tags": [
+      "OpenAI",
+      "VentureCapital",
+      "Valuation",
+      "Business"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "貓王與阿姆版權方提告 Suno：指控其非法複製藝術家聲音風格與旋律",
+      "en": "Rights Holders of Elvis Presley and Eminem Sue Suno Over AI Audio Mimicry"
+     },
+     "detail": {
+      "zh": "知名生成式音樂新創 Suno 再度面臨重大版權訴訟，貓王（Elvis Presley）遺產管理方與阿姆（Eminem）音樂發行商共同提起訴訟，指控其模型非法利用未授權作品進行訓練並生成高度仿冒的聲音特徵，觸犯田納西州最新的聲音肖像保護法規。",
+      "en": "Suno has been hit with major copyright and likeness lawsuits from publishers representing Elvis Presley and Eminem, alleging unauthorized training on protected catalogs to generate synthetic voice clones and infringing compositional styles."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit",
+     "tags": [
+      "Suno",
+      "Copyright",
+      "MusicAI",
+      "Legal"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "期中選舉落幕後資料中心面臨地方政策卡關，馬斯克旗下基建首當其衝",
+      "en": "Post-Midterm Energy Regs and Local Backlash Pose Stiff Headwinds for Musk's Data Centers"
+     },
+     "detail": {
+      "zh": "分析指出隨著美國期中選舉地方公投與環保法規塵埃落定，多州收緊了對高負載資料中心的用電與排碳許可。馬斯克旗下 xAI 及相關算力擴展計畫因電網容量吃緊面臨強大地方反對，恐直接影響下一代叢集的點火時程。",
+      "en": "Following the US midterm elections, local opposition and tighter regulatory scrutiny around power consumption are creating severe roadblocks for mega-scale compute campuses, directly hitting expansion timelines for Elon Musk's xAI infrastructure."
+     },
+     "source": "https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers/",
+     "tags": [
+      "DataCenter",
+      "xAI",
+      "Regulation",
+      "Energy"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "黃仁勳發給全體員工備忘錄全文流出，坦承私人關係並承諾配合獨立調查",
+      "en": "Full text of Jensen Huang's Nvidia memo leaked acknowledging personal affair and pledging cooperation with probe."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1029595/full-text-jensen-huang-affair-memo-nvidia"
+    },
+    {
+     "headline": {
+      "zh": "美國情報備忘錄稱中國國安部策劃 Megaspeed 女性高層刺探黃仁勳獲取晶片情報",
+      "en": "US intelligence memo details alleged Chinese state security plot recruiting Megaspeed executive to spy on Nvidia CEO."
+     },
+     "source": "https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/"
+    },
+    {
+     "headline": {
+      "zh": "面對持續由代理人產生的資訊過載，工程師社群興起對抗「AI 腦霧（Brain Fry）」的自律作法討論",
+      "en": "Developer community explores mental hygiene routines to combat 'AI Brain Fry' caused by autonomous agent code inundation."
+     },
+     "source": "https://sergeykuhne.com/blog/fighting-ai-brain-fry"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-11-09T07:01+08:00"
+}
