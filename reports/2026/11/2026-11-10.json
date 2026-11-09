@@ -1,0 +1,312 @@
+{
+ "date": "2026-11-10",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Anthropic 推出 Claude Fable 5.2 與 Mythos 5.2，刷新基準測試紀錄",
+      "en": "Anthropic Launches Claude Fable 5.2 and Mythos 5.2, Topping Benchmark Leaderboards"
+     },
+     "detail": {
+      "zh": "Anthropic 正式推出 Claude Fable 5.2 與 Mythos 5.2，主打程式碼撰寫、邏輯推理與視覺理解能力提升，推理速度亦高於 5.1 版本。Claude Fable 5.2 在 Artificial Analysis 跑出 65 分的當前最高分，展現應對高難度技術工作流的實力。",
+      "en": "Anthropic announced Claude Fable 5.2 and Mythos 5.2, bringing substantial upgrades in coding, reasoning, and multimodal performance with faster token generation than 5.1. Fable 5.2 scored 65 on Artificial Analysis, marking the highest score recorded to date."
+     },
+     "source": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+     "tags": [
+      "Anthropic",
+      "Claude",
+      "LLM",
+      "Benchmark"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Meta 發布輕量級代理模型 Muse Ember，每百萬輸入 token 僅 0.1 美元",
+      "en": "Meta Unveils Muse Ember, an Ultra-Efficient Lightweight Model for Agents"
+     },
+     "detail": {
+      "zh": "Meta AI 推出專為 Agent 工具調用與輕量任務設計的模型 Muse Ember。其百萬輸入 token 定價僅 0.1 美元，大幅低於同級市場競爭對手（如 Haiku），為需要高頻繁調用的自動化代理架構提供了極高性價比的選擇。",
+      "en": "Meta AI introduced Muse Ember, its smallest and most efficient model optimized for agentic execution. Priced at just $0.10 per million input tokens, it drastically undercuts competitors like Haiku, offering massive cost savings for high-frequency workflows."
+     },
+     "source": "https://research.meta.ai/blog/muse-ember",
+     "tags": [
+      "Meta",
+      "Agent",
+      "Cost-Optimization",
+      "Small-Models"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "黃仁勳深陷涉中間諜疑雲與內部調查，輝達股價震盪並面臨訴訟",
+      "en": "Jensen Huang Faces Espionage Probe Over Affair, Nvidia Hits Market Turmoil"
+     },
+     "detail": {
+      "zh": "輝達董事會正調查執行長黃仁勳與涉嫌為中國政府代理人之間的關係，黃已向內部發送備忘錄說明並退出多項公開活動。此事件引發國家安全層級審查與投資人訴訟風險，並可能對美國晶片出口管制政策及輝達供應鏈治理帶來變數。",
+      "en": "Nvidia's board has launched an investigation into CEO Jensen Huang's relationship with an executive suspected of acting for Chinese intelligence. Huang has withdrawn from public tech summits as the company faces potential investor lawsuits and intensified national security scrutiny."
+     },
+     "source": "https://arstechnica.com/tech-policy/2026/11/ceo-jensen-huang-admits-affair-as-nvidia-probes-possible-chinese-espionage/",
+     "tags": [
+      "Nvidia",
+      "Hardware",
+      "Policy",
+      "Industry"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Claude Code 預設設定檔遭爆料：開發者金鑰外洩至 GitHub",
+      "en": "Claude Code Configuration Files Leaking Secrets and API Keys Across GitHub"
+     },
+     "detail": {
+      "zh": "資安調查指出，開發者在使用 Claude Code CLI 時勾選「不要再詢問」等便捷設定，導致本機敏感資訊與憑證被寫入專案目錄並意外 push 到公開倉庫。使用 AI 程式碼輔助工具的團隊應立即檢查 .gitignore 與歷史 commit，防止金鑰外洩。",
+      "en": "Reports reveal that Claude Code users persisting 'do not ask again' settings are inadvertently committing local config files containing API keys and credentials to public GitHub repositories. Teams using AI CLI coding agents should immediately verify their .gitignore configurations."
+     },
+     "source": "https://arstechnica.com/ai/2026/11/claude-code-settings-files-expose-thousands-of-secrets-on-github/",
+     "tags": [
+      "Security",
+      "CLI",
+      "ClaudeCode",
+      "DevSecOps"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Automattic 推出 Spacefast，搶攻 Vibe-Coding 應用託管與部署平台",
+      "en": "Automattic Launches Spacefast to Host and Deploy Vibe-Coding Applications"
+     },
+     "detail": {
+      "zh": "看準自然語言提示生成全端應用的「vibe coding」趨勢，Automattic 正式推出 Spacefast 平臺，主打免基礎設施配置、一鍵上線 AI 生成的 web 應用，直接與 Lovable 等現代原型工具展開競爭。",
+      "en": "Riding the wave of AI-assisted 'vibe coding', Automattic debuted Spacefast, a deployment and hosting platform tailored for spinning up AI-generated applications with minimal configuration, competing head-to-head with platforms like Lovable."
+     },
+     "source": "https://techcrunch.com/2026/11/09/automattic-debuts-a-platform-to-deploy-vibe-coding-apps-amid-a-changing-internet/",
+     "tags": [
+      "DevOps",
+      "VibeCoding",
+      "WebDev",
+      "Automattic"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "亞馬遜提出 HOPE 技術：以更高階剪枝保持 MoE 專家協作能力",
+      "en": "Amazon Introduces HOPE: Preserving Expert Synergy During MoE Pruning"
+     },
+     "detail": {
+      "zh": "亞馬遜在 Hugging Face 發表 HOPE（Higher-Order Pruning of Experts）剪枝策略，旨在解決混合專家模型（MoE）剪枝時拆散協同專家導致效能驟降的問題。該方法讓邊緣部署的大型 MoE 模型在壓縮權重時能維持多專家協作的推理品質。",
+      "en": "Amazon published research on HOPE (Higher-Order Pruning of Experts), a novel MoE pruning methodology that keeps paired expert subnetworks intact, minimizing performance degradation during aggressive model compression for production serving."
+     },
+     "source": "https://huggingface.co/blog/amazon/higher-order-pruning-experts",
+     "tags": [
+      "MoE",
+      "Model-Compression",
+      "HuggingFace",
+      "Pruning"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 揭秘內部安全系統 Control Room：集中監控並可強制終止模型工作負載",
+      "en": "OpenAI Unveils Control Room: Centralized Telemetry and Emergency Kill-Switch for Model Workloads"
+     },
+     "detail": {
+      "zh": "OpenAI 公開內部基礎設施系統 Control Room 的架構細節，該系統能集中追蹤跨集群的模型推理與訓練任務，並在觸發安全或防護紅線時實施秒級中斷，為大規模 AI 叢集維運提供了架構範本。",
+      "en": "OpenAI detailed Control Room, its internal infrastructure management platform that tracks model workloads across compute clusters and enables rapid emergency termination when security or alignment safeguards are breached."
+     },
+     "source": "https://openai.com/index/control-room",
+     "tags": [
+      "OpenAI",
+      "MLOps",
+      "AI-Safety",
+      "Infrastructure"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "蘋果推出 50 美元「智慧用量包」，擴增 Logic Pro 等專業軟體 AI 額度",
+      "en": "Apple Launches $50 Intelligence Usage Packs for Pro Software Workflows"
+     },
+     "detail": {
+      "zh": "繼公布 Apple Intelligence 額度限制後，蘋果在 Logic Pro 等專業套件中新增一次性 49.99 美元的「Buy More Usage」機制，用以擴增內建 AI 助理額度，確立了裝置端與雲端混合 AI 功能的單次加購變現模型。",
+      "en": "Apple has added a $49.99 'Buy More Usage' in-app option inside Logic Pro to lift usage ceilings on its generative music features, signaling Apple's monetization roadmap for cloud-reliant Apple Intelligence capabilities."
+     },
+     "source": "https://www.theverge.com/tech/1030084/apple-intelligence-usage-packs-ai-features-creator-studio-logic-pro",
+     "tags": [
+      "Apple",
+      "AppleIntelligence",
+      "Monetization",
+      "LogicPro"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 企業版正式登陸 AWS Marketplace，簡化雲端採購與出帳流程",
+      "en": "ChatGPT Enterprise Arrives on AWS Marketplace for Consolidated Billing"
+     },
+     "detail": {
+      "zh": "OpenAI 與 AWS 合作將 ChatGPT Enterprise 上架至 AWS Marketplace，企業客戶可直接抵扣既有的 AWS 雲端預算契約（EDP），省去漫長的採購合約審核流程，有助於加速大型企業採用。",
+      "en": "OpenAI has made ChatGPT Enterprise available via AWS Marketplace, allowing enterprise customers to streamline procurement by drawing down existing AWS commitments and consolidating billing within a single cloud account."
+     },
+     "source": "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
+     "tags": [
+      "OpenAI",
+      "AWS",
+      "Enterprise",
+      "Cloud"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "DeepX 發布二代 LPDDR5X-PIM 晶片：宣稱 5W 以下即可推論 100B 參數模型",
+      "en": "DeepX Tapes Out Gen-2 PIM Chip: Claims 100B Parameter Inference Under 5 Watts"
+     },
+     "detail": {
+      "zh": "晶片設計新創 DeepX 完成第二代處理器流片，結合 LPDDR5X 記憶體內運算（PIM）技術，將性能提升 6 至 7 倍，號稱能在小於 5 瓦功耗下驅動高達 100B 參數的 LLM，瞄準邊緣 AI 推論市場。",
+      "en": "DeepX taped out its second-generation AI processor featuring LPDDR5X Processing-in-Memory (PIM), projecting a 6-7x performance leap capable of running up to 100B parameter models at under 5W power consumption for edge devices."
+     },
+     "source": "https://www.eetimes.com/deepx-tapes-out-second-gen-chip-projects-6-7x-performance-gain-with-lpddr5x-pim/",
+     "tags": [
+      "Hardware",
+      "EdgeAI",
+      "Inference",
+      "PIM"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Nvidia 開源 Nemotron-Personas-Finance-Japan 合成資料集",
+      "en": "Nvidia Releases Nemotron-Personas-Finance-Japan Synthetic Dataset"
+     },
+     "detail": {
+      "zh": "Nvidia 於 Hugging Face 發布專為日本人口結構與金融語境設計的合成資料集 Nemotron-Personas-Finance-Japan，展示以結構化合成資料訓練特定地域垂直領域 LLM 的最新實踐。",
+      "en": "Nvidia published a domain-specific synthetic dataset on Hugging Face targeting Japanese demographic and financial contexts, highlighting advances in synthetic data engineering for localized enterprise LLMs."
+     },
+     "source": "https://huggingface.co/blog/nvidia/nemotron-personas-finance-japan",
+     "tags": [
+      "Nvidia",
+      "Datasets",
+      "SyntheticData",
+      "Finance"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Anthropic 砸 34 億美元採購天然氣渦輪機，自建資料中心供電韌性",
+      "en": "Anthropic Inks $3.4B Gas Turbine Deal to Secure Independent AI Compute Power"
+     },
+     "detail": {
+      "zh": "為解決電網擴建遲緩與 AI 運算電力瓶頸，Anthropic 斥資 34 億美元直接購買天然氣發電機組。這標誌著領先 AI 實驗室正在加速從純軟體研發轉型向能源與實體基礎設施重資產佈局。",
+      "en": "In an aggressive move to counter grid power shortages, Anthropic committed $3.4 billion to procure natural gas turbines, highlighting AI hyperscalers' race to vertically integrate dedicated on-site power generation."
+     },
+     "source": "https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines/",
+     "tags": [
+      "Anthropic",
+      "Energy",
+      "Infrastructure",
+      "DataCenter"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "迪士尼攜手 Adobe 打造生成式 AI 工具，直接整合入主題樂園與製作管線",
+      "en": "Disney and Adobe Partner to Develop In-House Generative AI Production Tools"
+     },
+     "detail": {
+      "zh": "迪士尼在 Adobe MAX 大會宣布與 Adobe 展開多年合作，共同訓練強調以創作者為中心的專有生成模型，並導入迪士尼樂園、郵輪及影視特效的日常製作管線中。",
+      "en": "The Walt Disney Company announced a multi-year deal with Adobe to co-develop artist-led generative AI models tailored for Disney's production pipelines across studios, streaming, and theme parks."
+     },
+     "source": "https://www.theverge.com/tech/1029773/disney-adobe-generative-ai-partnership",
+     "tags": [
+      "Adobe",
+      "Disney",
+      "GenerativeAI",
+      "Enterprise"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "社群爆料 ChatGPT macOS 桌面端在執行時會私自將 SSH-Agent 轉發至遠端主機，引發工程師資安疑慮。",
+      "en": "HN discussions highlight security risks as ChatGPT Desktop client is reported forwarding local SSH agents to remote hosts."
+     },
+     "source": "https://news.ycombinator.com/item?id=50422628"
+    },
+    {
+     "headline": {
+      "zh": "外媒披露 Google Gemini 會將個人 Google Drive 檔案與信件路由至外部人工標註員進行審閱。",
+      "en": "Reports reveal Google Gemini may route personal Drive files and emails to third-party human annotators."
+     },
+     "source": "https://github.com/thisisme6598/gemini_files/"
+    },
+    {
+     "headline": {
+      "zh": "外媒爆料蘋果對內部工程師設下每人每日 200 美元的 AI API 調用預算上限。",
+      "en": "Apple reportedly enforces a strict $200 daily AI budget cap per engineer to curb internal compute expenses."
+     },
+     "source": "https://www.stork.ai/newsletter/2026-11-08-apple-capped-engineers-at-a-200-daily-ai-budget"
+    },
+    {
+     "headline": {
+      "zh": "Medium 發表全新寫作工具 TK App，正式將 AI 生成輔助融入創作者編輯流程。",
+      "en": "Medium launched its new TK writing app, integrating native AI assistance into authoring workflows."
+     },
+     "source": "https://techcrunch.com/2026/11/09/mediums-new-tk-app-brings-ai-assistance-directly-into-the-writing-process/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-11-10T07:01+08:00"
+}

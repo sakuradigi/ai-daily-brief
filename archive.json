@@ -1,6 +1,14 @@
 {
- "latest": "2026-11-09",
+ "latest": "2026-11-10",
  "reports": [
+  {
+   "date": "2026-11-10",
+   "type": "daily",
+   "summary": {
+    "zh": "Anthropic發布5.2新模型，Meta推輕量Ember，黃仁勳風波震動業界",
+    "en": "Anthropic drops 5.2 models, Meta introduces Muse Ember, and Jensen Huang scandal shakes tech"
+   }
+  },
   {
    "date": "2026-11-09",
    "type": "weekly",
