@@ -1,6 +1,14 @@
 {
- "latest": "2026-11-10",
+ "latest": "2026-11-11",
  "reports": [
+  {
+   "date": "2026-11-11",
+   "type": "daily",
+   "summary": {
+    "zh": "Gemini 4 Carbon 全面上線；Anthropic 挑戰 1.4 兆美元 IPO；AI 生成程式碼維護危機受矚。",
+    "en": "Gemini 4 Carbon goes public, Anthropic eyes a $1.4T IPO, and AI code fragility concerns mount."
+   }
+  },
   {
    "date": "2026-11-10",
    "type": "daily",

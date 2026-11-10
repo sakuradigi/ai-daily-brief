@@ -1,0 +1,350 @@
+{
+ "date": "2026-11-11",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Google 旗艦 Gemini 4 Carbon 正式向大眾開放，首度支援 Agent Swarm",
+      "en": "Google Publicly Releases Flagship Gemini 4 Carbon with Agent Swarm Capabilities"
+     },
+     "detail": {
+      "zh": "Google 正式向大眾釋出號稱歷來最強的 Gemini 4 Carbon，主打多智慧體協作（Agent Swarm）機制與深層推理能力。目前 API 定價為每百萬輸入 token 2 美元、輸出 10 美元，但預計 12 月 1 日起調漲一倍，對需要高階推理的開發者而言是搶先測試的關鍵窗口。",
+      "en": "Google has opened public access to Gemini 4 Carbon, featuring multi-agent 'swarm' workflows and high-level reasoning. Launch API pricing is $2/M input and $10/M output tokens before a scheduled doubling on December 1st, giving developers an early window to benchmark workloads."
+     },
+     "source": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
+     "tags": [
+      "Google",
+      "Gemini",
+      "LLM",
+      "API"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "DeepMind 推出 AlphaProof Code：以 Lean 撰寫三百萬行形式化證明驗證 Signal 加密核心",
+      "en": "DeepMind Unveils AlphaProof Code: Verifying Signal Core with 3M Lines of Lean Proofs"
+     },
+     "detail": {
+      "zh": "DeepMind 發表專注於深層軟體驗證的 AlphaProof Code，透過自動生成超過 300 萬行 Lean 形式化驗證程式碼，成功驗證 Signal 核心加密演算法。這項突破將形式化驗證（Formal Verification）從學術玩具推向具高度安全需求的生產環境應用。",
+      "en": "DeepMind introduced AlphaProof Code, an agent system that generated over three million lines of Lean mathematical proofs to formally verify Signal's core encryption. This marks a major step forward in applying formal verification to mission-critical production software."
+     },
+     "source": "https://deepmind.google/blog/introducing-alphaproof-code/",
+     "tags": [
+      "DeepMind",
+      "AlphaProof",
+      "Formal Verification",
+      "Security"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 目標以 1.4 兆美元估值啟動 IPO，七位創辦人預計各套現 2.5 億美元",
+      "en": "Anthropic Sets $1.4 Trillion Valuation Target for Historic IPO"
+     },
+     "detail": {
+      "zh": "Anthropic 公布其 IPO 招股價區間為每股 70 至 78 美元，完全稀釋後估值高達 1.404 兆美元，將成史上規模最大的公開上市案之一。七位共同創辦人各預計出售等額股份套現約 2.5 億美元，同時維持對公司的控制權。",
+      "en": "Anthropic set an IPO price range between $70 and $78 per share, reaching an implied valuation of up to $1.404 trillion. Each of the seven co-founders plans to cash out roughly $250 million while retaining voting control over the enterprise."
+     },
+     "source": "https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/",
+     "tags": [
+      "Anthropic",
+      "IPO",
+      "Business"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Chrome 團隊開源 modern-web-guidance，修正 Coding Agent 慣用老舊語法問題",
+      "en": "Google Chrome Team Opens Modern Web Guidance for Coding Agents"
+     },
+     "detail": {
+      "zh": "許多程式碼生成 Agent 由於訓練資料權重偏向歷史存檔，仍習慣生成約 2019 年代的老舊 JavaScript 語法。Chrome 團隊開源此 guidance 專案，提供標準 Prompt 與情境規範，引導 Agent 善用現代 Web 原生 API 與全新標準。",
+      "en": "Google Chrome engineers open-sourced modern-web-guidance to stop coding agents from writing obsolete ~2019-era JavaScript. It provides standardized prompt guidelines to enforce modern web primitives and latest browser APIs."
+     },
+     "source": "https://github.com/GoogleChrome/modern-web-guidance",
+     "tags": [
+      "Open Source",
+      "JavaScript",
+      "Coding Agent",
+      "GitHub"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Simon Willison 釋出 llm-gemini 0.36 與 llm-anthropic 0.31 CLI 插件支援",
+      "en": "Simon Willison Updates llm CLI Plugins for Gemini 4 Carbon and Fable 5.2"
+     },
+     "detail": {
+      "zh": "知名開源 LLM 命令列工具快速跟進，llm-gemini 0.36 第一時間支援剛公開的 Gemini 4 Carbon（支援高/中/低 thinking 階層）；llm-anthropic 0.31 則整合了 Anthropic 最新的 Fable 5.2 與 Mythos 5.2 模型。",
+      "en": "Simon Willison updated his open-source llm CLI tools: llm-gemini 0.36 brings immediate access to Gemini 4 Carbon across thinking levels, while llm-anthropic 0.31 adds support for Anthropic's new Fable 5.2 and Mythos 5.2."
+     },
+     "source": "https://simonwillison.net/2026/Nov/10/llm-gemini/",
+     "tags": [
+      "CLI",
+      "Open Source",
+      "Developer Tools",
+      "Python"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "社群反思 AI 生成程式碼帶來的架構脆弱性與維護性債務",
+      "en": "Developer Community Warns of Fragile Codebases Driven by AI Generation"
+     },
+     "detail": {
+      "zh": "Hacker News 與 Reddit 熱議「強制 100% 使用 AI 寫 Code 一年後，無人能理解系統架構」的案例。討論指出，AI 工具雖加速單元產出，但容易在 prompt 未明示 ownership 時不斷堆疊重複架構，造成缺乏整體設計的技術債黑洞。",
+      "en": "Developer threads highlight the mounting fragility of AI-heavy codebases, noting cases where 'nobody understands the code a year after a 100% AI mandate.' Discussions emphasize that without clear code ownership prompts, models duplicate logic and inflate structural debt."
+     },
+     "source": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
+     "tags": [
+      "Software Engineering",
+      "Tech Debt",
+      "Best Practices"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Anthropic 推出辦公套件：Claude Sheets、Whiteboards、Data 與 Meetings",
+      "en": "Anthropic Expands into AI Office Suite with Sheets, Whiteboards, and Meetings"
+     },
+     "detail": {
+      "zh": "Anthropic 正式從開發與 API 市場進軍生產力辦公軟體，推出包含試算表、電子白板與數據分析模組，並透過 Claude Meetings 能在對話當下即時生成任務排程與連結外部工作軟體，正面挑戰微軟與 Google 的生產力生態。",
+      "en": "Anthropic is rolling out an AI-native workplace suite including Claude Sheets, Whiteboards, Claude Data, and Claude Meetings. The tools turn live discussions into structured timelines and diagrams while querying internal enterprise applications."
+     },
+     "source": "https://claude.com/resources/articles/sheets-whiteboards-data",
+     "tags": [
+      "Anthropic",
+      "Claude",
+      "Productivity",
+      "Enterprise"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 推出 ChatGPT Business，支援品牌驗證 Agent 與商業資訊管理",
+      "en": "OpenAI Introduces Verified Business Profiles and Agents in ChatGPT"
+     },
+     "detail": {
+      "zh": "OpenAI 推出 ChatGPT 商業資訊中心與驗證版「Business Agents」，首波開放給美國合格電商與線上服務。使用者可直接在對話中比較商品並轉化為購買行為，使 ChatGPT 更進一步演變為商務搜尋與交易入口。",
+      "en": "OpenAI announced Businesses in ChatGPT, enabling brands to maintain verified profiles and deploy interactive Business Agents for product comparison and discovery, turning ChatGPT into a transactional search competitor."
+     },
+     "source": "https://openai.com/index/introducing-businesses-chatgpt",
+     "tags": [
+      "OpenAI",
+      "ChatGPT",
+      "E-commerce",
+      "Agents"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Adobe MAX 大會全面押注 Agentic AI：開放第三方 Agent 介入創作流程",
+      "en": "Adobe Goes All-In on Agentic AI and MCP Integration at Adobe MAX"
+     },
+     "detail": {
+      "zh": "Adobe 於 MAX 大會宣布將旗下 Creative Cloud 全面整合 AI Agent，除了強化 Photoshop 與 Premiere 的智慧物件移除功能外，更藉由支援 MCP（Model Context Protocol）架構，允許外部第三方 Agent 直接讀取並修改創意專案檔。",
+      "en": "At Adobe MAX, Adobe unveiled deep agentic integrations across Creative Cloud and Firefly, adopting standard agent protocols like MCP to let third-party assistants directly manipulate project timelines and design files."
+     },
+     "source": "https://www.theverge.com/tech/1030593/adobe-max-ai-agents-mcp-firefly-assistant-updates",
+     "tags": [
+      "Adobe",
+      "Firefly",
+      "MCP",
+      "Design"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Meta 發表極輕量邊緣推論模型 Muse Ember，主打 Agent 高頻子任務",
+      "en": "Meta Launches Muse Ember: Ultra-Efficient Model for Frequent Agent Tasks"
+     },
+     "detail": {
+      "zh": "Meta AI 推出對標 Claude Haiku 與 GPT-6 Luna 的極致輕量化模型 Muse Ember，專為工具呼叫（Tool calls）、代碼子任務、智慧路由與長文本抽取設計。每百萬 input token 僅需 $0.10、output $0.50，主打低成本的 Agent 背景工作輪詢。",
+      "en": "Meta unveiled Muse Ember, a compact model optimized for high-frequency agent routines like tool calling, routing, and parsing. Priced at $0.10/M input and $0.50/M output tokens, it targets background agent operations at competitive pricing."
+     },
+     "source": "https://simonwillison.net/2026/Nov/10/muse-ember/",
+     "tags": [
+      "Meta",
+      "Muse",
+      "SLM",
+      "Agent"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "DeepMind 發表 Gemini Robotics 2.5 及 ASIMOV-jailbreak 開源安全基準",
+      "en": "DeepMind Releases Gemini Robotics 2.5 and ASIMOV-jailbreak Safety Benchmark"
+     },
+     "detail": {
+      "zh": "DeepMind 揭露其具身智慧（Embodied AI）新架構 Gemini Robotics 2.5，實體操控任務成功率提升達一倍。同步釋出開源基準 ASIMOV-jailbreak，評估具身多模態模型抵抗惡意實體操作指令的防禦能力。",
+      "en": "DeepMind unveiled Gemini Robotics 2.5, doubling success rates across several manipulation tasks, alongside 'ASIMOV-jailbreak', an open benchmark designed to evaluate physical security and adversarial safety in robotics foundation models."
+     },
+     "source": "https://arstechnica.com/google/2026/11/deepmind-reveals-gemini-robotics-2-5-and-open-safety-benchmark-asimov-jailbreak/",
+     "tags": [
+      "DeepMind",
+      "Robotics",
+      "Safety",
+      "Benchmark"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Hugging Face 推出決策模型（Decision Models）專區，推進強化學習落地",
+      "en": "Hugging Face Hub Introduces Native Support for Decision Models"
+     },
+     "detail": {
+      "zh": "Hugging Face 宣布於 Hub 原生支援 Decision Models，擴展除傳統 LLM 文本輸出外的強化學習與序貫決策模型託管。這為自駕系統、機器人控制與量化交易開發者提供標準化的開源權重分享規範。",
+      "en": "Hugging Face Hub launched support for Decision Models, expanding its ecosystem beyond traditional generative text to reinforcement learning and sequential decision agents for robotics and operational planning."
+     },
+     "source": "https://huggingface.co/blog/decision",
+     "tags": [
+      "Hugging Face",
+      "Reinforcement Learning",
+      "Decision Models"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "紐約州 AI 安全法正式生效，OpenAI 與 Anthropic 等實驗室納入強制監管",
+      "en": "New York AI Safety Law Enters into Force for Frontier Developers"
+     },
+     "detail": {
+      "zh": "紐約州全面的 AI 安全法規正式上路，要求 OpenAI、Anthropic 等前沿模型開發商完成強制註冊、定期公開安全性評估報告，並在發生重大關鍵資安或安全事件時限期通報，違者將面臨鉅額罰鍰。",
+      "en": "New York has begun enforcing its comprehensive AI safety legislation, mandating that frontier AI labs register, disclose safety practices, and report critical failure incidents under the threat of regulatory penalties."
+     },
+     "source": "https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/",
+     "tags": [
+      "Policy",
+      "Safety",
+      "Regulation",
+      "AI Ethics"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Fireworks AI 資安外洩事件波及 Notion，第三方 AI 供應鏈風險升溫",
+      "en": "Fireworks AI Breach Impacts Notion and Highlights AI Supply Chain Risks"
+     },
+     "detail": {
+      "zh": "雲端推論平台 Fireworks AI 發生安全事件，導致客戶 Notion 及其部分企業使用者的資料暴露。此事件凸顯現代軟體過度仰賴第三方模型 API 時，上游供應鏈漏洞所帶來的連鎖資安衝擊。",
+      "en": "A security breach at inference provider Fireworks AI affected enterprise client Notion, underscoring growing vulnerability and compliance concerns around third-party model inference providers in production stacks."
+     },
+     "source": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
+     "tags": [
+      "Security",
+      "API",
+      "Cloud",
+      "Notion"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "AI 算力信貸風險浮現：CoreWeave 債券殖利率飆破 16%",
+      "en": "AI Credit Stress Mounts as CoreWeave Bond Yield Tops 16%"
+     },
+     "detail": {
+      "zh": "專注 GPU 雲端運算的獨角獸 CoreWeave 債券殖利率升破 16%，反映二級市場對重度舉債採購硬體的算力服務商抱持違約擔憂。高利率環境下硬體折舊與巨額負債正對 AI 基礎設施供應商施壓。",
+      "en": "Yields on debt issued by GPU cloud provider CoreWeave spiked past 16%, signaling rising credit market anxiety over the massive debt financing used to build out AI data centers amid rapid hardware depreciation."
+     },
+     "source": "https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html",
+     "tags": [
+      "CoreWeave",
+      "Hardware",
+      "Finance",
+      "Infrastructure"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "研究員爆料 Grok Build 編程 Agent 存取控制漏洞，洩露包含 SpaceXSI 在內 35,000 個應用資料",
+      "en": "Researcher reveals Grok Build coding agent exposed 35,000 applications, leaking SpaceXSI data"
+     },
+     "source": "https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/"
+    },
+    {
+     "headline": {
+      "zh": "eBay 全面封鎖以 Meta Muse 為首的第三方 AI Agent 爬取與採購流量",
+      "en": "eBay moves to block automated shopping agents like Meta Muse from browsing its marketplace"
+     },
+     "source": "https://www.theverge.com/tech/1030838/ebay-ai-agents-meta-muse-agentic-shopping"
+    },
+    {
+     "headline": {
+      "zh": "Google 擴展專用硬體產品線，推出支援機密訓練與高記憶體容量的兩款新型 TPU",
+      "en": "Google introduces two specialized TPUs aimed at confidential training and memory capacity"
+     },
+     "source": "https://techcrunch.com/2026/11/10/google-broadens-its-ai-hardware-portfolio-with-two-new-specialized-chips/"
+    },
+    {
+     "headline": {
+      "zh": "Hugging Face 開放以 Google Cloud 帳戶統一付費，簡化企業採購與部署管道",
+      "en": "Hugging Face Hub adds integration to allow billing directly through Google Cloud accounts"
+     },
+     "source": "https://huggingface.co/blog/hub-gcp-marketplace"
+    },
+    {
+     "headline": {
+      "zh": "獨立遊戲大獎 IGF 評審抵制生成式 AI，熱門遊戲《Big Walk》承認定稿前曾局部使用",
+      "en": "IGF jurors protest generative AI in games as Big Walk admits to limited AI usage"
+     },
+     "source": "https://www.theverge.com/games/1030994/big-walk-independent-games-festival-igf-ai"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-11-11T07:01+08:00"
+}
