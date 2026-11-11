@@ -1,6 +1,14 @@
 {
- "latest": "2026-11-11",
+ "latest": "2026-11-12",
  "reports": [
+  {
+   "date": "2026-11-12",
+   "type": "daily",
+   "summary": {
+    "zh": "Google推Decisions API，AWS釋出Rust仿真器，黃仁勳遭傳面臨董事會罷免",
+    "en": "Google launches Decisions API, AWS drops Rust emulator, and Nvidia faces leadership turmoil"
+   }
+  },
   {
    "date": "2026-11-11",
    "type": "daily",

@@ -1,0 +1,351 @@
+{
+ "date": "2026-11-12",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Google 發表 Gemini Decisions API：專注二選一與評判任務，每百萬輸入 token 僅 0.1 美元且輸出免費",
+      "en": "Google Launches Gemini Decisions API: Low-Cost Structured Evaluation with Free Output Tokens"
+     },
+     "detail": {
+      "zh": "Google 正式進軍決策專用模型領域，推出「Gemini Decision 1」，與 Jev 和 OpenAI 直接競爭。該 API 專門針對 Yes/No 判斷、選項選擇及 Rubric 評分進行最佳化，定價為每百萬輸入 Token 0.10 美元（輸出完全免費），顯著降低了 Agent 路由與工作流判定節點的執行成本。",
+      "en": "Google entered the specialized decision model category with 'Gemini Decision 1', competing directly with OpenAI and Jev. Designed specifically for boolean choices, categorical routing, and rubric-based evaluations, the API charges $0.10 per million input tokens with free output tokens, dramatically reducing cost overhead for agentic routing logic."
+     },
+     "source": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+     "tags": [
+      "Google",
+      "Gemini",
+      "API",
+      "LLM Routing"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "外媒傳 Nvidia 董事會準備撤換黃仁勳，遭捲入雙重不倫與國安疑雲風暴",
+      "en": "Nvidia Board Reportedly Preparing to Dismiss CEO Jensen Huang Amid Growing Scandal"
+     },
+     "detail": {
+      "zh": "華爾街日報引述消息指稱，Nvidia 董事會正評估撤換執行長黃仁勳，起因於近期連環爆出的不倫戀醜聞，其中更牽涉疑似中國間諜的國安指控。美國國會眾議院已要求黃仁勳出席閉門聽證會，若高層人事動盪成真，恐將對全球 AI 算力供應鏈帶來劇烈衝擊。",
+      "en": "The Wall Street Journal reports Nvidia's board is preparing to dismiss CEO Jensen Huang following multiple allegations of extramarital affairs, including one involving an alleged Chinese intelligence operative. With US House Republicans demanding a closed-door briefing, the leadership turmoil threatens unprecedented instability across the global AI hardware supply chain."
+     },
+     "source": "https://www.theverge.com/tech/1031652/jensen-huang-rumor",
+     "tags": [
+      "Nvidia",
+      "Hardware",
+      "Industry",
+      "Governance"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "聯合航空全面封殺自主 AI Agent 代訂機票，開打旅客代理人阻擋第一槍",
+      "en": "United Airlines Bans AI Agents from Booking Flights on Behalf of Travelers"
+     },
+     "detail": {
+      "zh": "聯合航空宣布正式禁止個人 AI Agent 代表旅客直接訂票，主要擔憂涉及隱私、合規與機器人濫用風險。這是首批主流航空公司公開封殺自主消費型 Agent 的重大案例，顯示當前消費端自主 Agent 在落地時將面臨服務供應商防爬與法律條款的嚴峻壁壘。",
+      "en": "United Airlines has officially banned personal AI assistants and autonomous agents from purchasing tickets on behalf of consumers, citing privacy and regulatory compliance. It marks one of the first major enterprise crackdowns on consumer-facing autonomous agents, exposing mounting friction between agentic automation and platform terms of service."
+     },
+     "source": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
+     "tags": [
+      "AI Agents",
+      "Regulation",
+      "Automation"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "AWS 官方釋出 aws-emulator：以 Rust 開發的本地雲端服務測試仿真器",
+      "en": "AWS Releases Official aws-emulator: A Local Rust-Powered Cloud Mocking Suite"
+     },
+     "detail": {
+      "zh": "AWS 推出官方本地服務模擬器 aws-emulator，允許開發者在本地完整測試多種 AWS 服務，免去付費 API Key 與雲端成本負擔。該專案由龐大的內部 Agent 群在 3 週內產出近 3 萬次 Commit、以 Rust 撰寫完成，目前需在 Docker 環境下執行。",
+      "en": "AWS introduced aws-emulator, an official tool allowing engineers to run integration tests against local clones of AWS services without live cloud API credentials. Written in Rust through a massive agentic swarm that generated nearly 30,000 commits over three weeks, it currently runs containerized via Docker on macOS and Windows."
+     },
+     "source": "https://simonwillison.net/2026/Nov/11/aws-emulator/",
+     "tags": [
+      "AWS",
+      "Rust",
+      "Testing",
+      "DevOps"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Atuin 推出 Threads：跨設備同步與持久化終端 Agent 會話",
+      "en": "Atuin Announces Threads: Sync and Resume Terminal Agent Sessions Across Machines"
+     },
+     "detail": {
+      "zh": "知名終端歷程管理工具 Atuin 釋出全新「Threads」功能，支援跨機器無縫保存與恢復各類 CLI AI Agent 的會話紀錄。開發者能像同步 shell history 一樣同步 Agent 上下文，解決在筆電與伺服器之間切換開發時的 Agent 工作流中斷問題。",
+      "en": "Shell history tool Atuin released 'Threads', enabling developers to synchronize and resume terminal-based AI agent sessions across different environments. The feature treats agent interactions as first-class CLI artifacts, solving context fragmentation when hopping between local machines and remote development servers."
+     },
+     "source": "https://blog.atuin.sh/threads-agent-sessions/",
+     "tags": [
+      "Atuin",
+      "CLI",
+      "Developer Tools",
+      "AI Agents"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Simon Willison 發布 llm 0.37.2 緊急修補：修正第三方端點可能外洩 OpenAI Key 之漏洞",
+      "en": "Simon Willison Ships llm 0.37.2 Patching Potential OpenAI API Key Leakage"
+     },
+     "detail": {
+      "zh": "開源命令列 LLM 工具釋出 0.37.2 安全更新，修復了在配置第三方 OpenAI 相容 endpoint 時可能意外洩漏原始 OpenAI API Key 的兩處安全性缺陷（GHSA-v9h7-jj4g-f862 及 GHSA-r639-rr7r-x72w），有使用自訂 endpoint 的用戶應立即升級。",
+      "en": "CLI utility llm received an urgent 0.37.2 security update addressing two advisories (GHSA-v9h7-jj4g-f862 and GHSA-r639-rr7r-x72w). The vulnerabilities could inadvertently transmit a user's OpenAI API key to third-party OpenAI-compatible endpoints when managing multiple providers."
+     },
+     "source": "https://simonwillison.net/2026/Nov/11/llm/",
+     "tags": [
+      "Security",
+      "CLI",
+      "Open Source",
+      "BugFix"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "蘋果傳將推出原生 Mac App，降低本地端 LLM 部署與推論門檻",
+      "en": "Apple Developing Dedicated Mac App to Streamline Local AI Model Deployment"
+     },
+     "detail": {
+      "zh": "外媒披露蘋果內部正在打造一款全新的 macOS 應用程式，專門讓使用者在 Apple Silicon Mac 上一鍵下載並運行本地開放權重模型。此舉預期將直接整合 Core ML 與 Metal 最佳化，提供媲美 LM Studio 或 Ollama 但更具系統原生級體驗的本地推論環境。",
+      "en": "Reports reveal Apple is working on a first-party Mac utility to dramatically simplify running local open weights on Apple Silicon. Leveraging native Core ML and Metal pipelines, the app aims to deliver an out-of-the-box local inference interface competing directly with tools like Ollama and LM Studio."
+     },
+     "source": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/",
+     "tags": [
+      "Apple",
+      "Mac",
+      "Local LLM",
+      "On-Device"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Google 實驗專案 Tabletop：以自然語言提示即時生成客製化協作工具",
+      "en": "Google Unveils Tabletop: AI-Generated Collaborative Hubs Built via Natural Language"
+     },
+     "detail": {
+      "zh": "Google 展開名為 Tabletop 的新 AI 實驗，定位類似 Asana 與 Monday 等專案管理工具，但核心支援以「Vibe Coding」方式直接用自然語言提示即時生成各類互動式小工具與協作面板，降低團隊自訂內部工作流的技術負擔。",
+      "en": "Google announced Tabletop, an experimental collaboration platform that allows users to generate custom productivity workspaces and interactive widgets purely through natural language prompts. It brings automated vibecoding directly into team coordination and project tracking environments."
+     },
+     "source": "https://www.theverge.com/tech/1031526/google-tabletop-ai-experiment-waitlist-availability",
+     "tags": [
+      "Google",
+      "Workspace",
+      "Vibecoding",
+      "Productivity"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "考古研究人員藉由自主 AI Agent 叢集，成功在未測繪雨林中尋獲失落馬雅遺址",
+      "en": "Autonomous AI Agent Swarm Discovers Unmapped Ancient Maya Settlement"
+     },
+     "detail": {
+      "zh": "獨立研究員利用多個 AI Agent 分析大量光學雷達（LiDAR）與衛星遙測圖資，成功在地形複雜且未標記的叢林區域中定位出未知的馬雅遺址。該案例展示了自主 Agent 在處理非結構化地理資訊系統（GIS）資料與異常特徵檢測上的巨大潛力。",
+      "en": "An independent researcher demonstrated how autonomous agent swarms can analyze massive volumes of LiDAR and satellite data to locate previously unmapped Maya archaeological sites. The experiment validates multi-agent workflows in non-traditional spatial analysis and automated anomaly detection."
+     },
+     "source": "https://pietromiotti.com/latest/maya-site",
+     "tags": [
+      "AI Agents",
+      "Research",
+      "Computer Vision"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Google DeepMind 發表 AlphaGenome 2：精準預測 DNA 變異對特定細胞機制之影響",
+      "en": "Google DeepMind Introduces AlphaGenome 2 for Cell-Specific Genetic Variant Prediction"
+     },
+     "detail": {
+      "zh": "DeepMind 正式發布 AlphaGenome 2，專注於解析非編碼區 DNA 序列如何調控特定人類細胞類型的基因表達。該模型可高精度預測單個 DNA 突變對致病機制的連鎖反應，標誌著生物 AI 從單純蛋白質摺疊進一步邁向複雜功能基因組學預測。",
+      "en": "Google DeepMind unveiled AlphaGenome 2, an advanced model predicting how non-coding DNA sequences and regulatory variations alter gene expression in specific cell types. The breakthrough advances biological AI beyond protein structure into deciphering the precise mechanistic roots of human disease."
+     },
+     "source": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+     "tags": [
+      "DeepMind",
+      "AlphaGenome",
+      "BioAI",
+      "Genomics"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Apple 釋出 Faster Retrieval 研究：大幅精簡檢索延遲以實現高效率 RAG",
+      "en": "Apple Research Proposes Faster Retrieval Techniques to Accelerate Production RAG"
+     },
+     "detail": {
+      "zh": "Apple 機器學習團隊發表最新檢索技術論文，針對向量檢索階段的延遲瓶頸提出演算法最佳化架構。研究顯示能在顯著減少計算與儲存開銷的同時維持召回率，為資源受限的端側設備與大規模生產端 RAG 系統提供了實用改進路徑。",
+      "en": "Apple's ML research team published a new retrieval method tailored to minimize latency bottlenecks in high-throughput RAG pipelines. By optimizing index traversal and representation compaction, the approach preserves recall accuracy while drastically lowering compute overhead for resource-constrained architectures."
+     },
+     "source": "https://machinelearning.apple.com/research/faster-retrieval",
+     "tags": [
+      "Apple",
+      "RAG",
+      "Information Retrieval",
+      "Embeddings"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "BotPsy 發表：具備 Agentic 行為架構之 1B 以下端側個人助理模型",
+      "en": "BotPsy Debuts: Sub-1B Parameter Agentic Language Model Tailored for On-Device Use"
+     },
+     "detail": {
+      "zh": "開源社群釋出 BotPsy 模型與訓練方法，驗證在參數量低於 10 億（Sub-Billion）的極限條件下，透過強化推論軌跡與工具調用訓練，依然能賦予小型模型穩定的任務分解與 Agent 行為能力，為邊緣端個人助理運算帶來可行性。",
+      "en": "BotPsy demonstrated that an agentic language model scaled under 1 billion parameters can still execute dependable tool calls and multi-step reasoning. The methodology offers a concrete blueprint for deploying responsive, privacy-preserving personal agents natively on low-power consumer edge hardware."
+     },
+     "source": "https://huggingface.co/blog/qvac/botpsy",
+     "tags": [
+      "HuggingFace",
+      "Edge AI",
+      "SLM",
+      "Agents"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Anthropic IPO 路演揭露底層算力架構：跨 AWS、Google、Nvidia 與 AMD 混合調度",
+      "en": "Anthropic IPO Roadshow Details Multi-Vendor Infrastructure Across Trainium, TPUs, and GPUs"
+     },
+     "detail": {
+      "zh": "Anthropic 正式展開 IPO 路演，共同創辦人 Tom Brown 在簡報中罕見披露其運算架構策略：Claude 模型的預訓練與推論已完整跨足 AWS Trainium、Google TPU、Nvidia GPU 以及 AMD GPU，以多供應商調度策略規避單一硬體供應鏈被卡脖子的風險。",
+      "en": "Anthropic launched its IPO roadshow with technical disclosures highlighting its resilient infrastructure diversification. Co-founder Tom Brown explained how Claude is trained and served across a heterogeneous mix of AWS Trainium, Google TPUs, Nvidia GPUs, and AMD hardware, minimizing single-vendor supply dependencies."
+     },
+     "source": "https://simonwillison.net/2026/Nov/11/anthropic-ipo-roadshow/",
+     "tags": [
+      "Anthropic",
+      "IPO",
+      "Compute",
+      "Hardware"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "傳台積電擬注資 10 億美元入股 Anthropic 與 OpenAI，引發循環投資疑慮",
+      "en": "TSMC Reportedly Plans $1B Investment into Anthropic and OpenAI"
+     },
+     "detail": {
+      "zh": "晶圓代工巨頭台積電傳將向 Anthropic 與 OpenAI 分別注資，總金額達 10 億美元。此舉被市場視為半導體製造端對下游頂尖 AI 實驗室的戰略綁定，但也引發分析師對於 AI 生態系內部相互持股「循環融資」膨脹估值的擔憂。",
+      "en": "Semiconductor giant TSMC is reportedly in talks to deploy $1B across OpenAI and Anthropic. While solidifying strategic commitments between the leading chip foundry and top model developers, the deal sparks renewed debate over circular financing structures inflating current AI capital expenditures."
+     },
+     "source": "https://arstechnica.com/ai/2026/11/taiwans-chipmaking-giant-tsmc-to-invest-1b-in-anthropic-openai/",
+     "tags": [
+      "TSMC",
+      "OpenAI",
+      "Anthropic",
+      "Finance"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 傳單季營收首度突破百億美元大關，較上一季跳增近五成",
+      "en": "OpenAI Quarterly Revenue Crosses $10B for the First Time in Dramatic Growth"
+     },
+     "detail": {
+      "zh": "消息指出 OpenAI 單季營業收入首度突破 100 億美元，較上一季度的 67 億美元大幅增長近 50%。企業端 API 採用率的激增以及訂閱用戶規模的持續擴大，成為支撐其持續採購龐大算力設施的主要營收引擎。",
+      "en": "OpenAI reportedly generated over $10 billion in quarterly revenue, marking an almost 50% surge from $6.7 billion in Q2. Surging enterprise API consumption and strong consumer subscription numbers continue to propel its rapid top-line expansion despite staggering infrastructure burn rates."
+     },
+     "source": "https://techcrunch.com/2026/11/11/openais-quarterly-revenue-reportedly-crosses-10b-for-the-first-time/",
+     "tags": [
+      "OpenAI",
+      "Revenue",
+      "Enterprise",
+      "Business"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "xAI 的 Grok Build 傳出權限設定漏洞，多達 3.5 萬個自動化應用暴露機密數據",
+      "en": "Security researcher discovers 35,000 Grok Build apps exposed online due to access misconfigurations"
+     },
+     "source": "https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/"
+    },
+    {
+     "headline": {
+      "zh": "Google DeepMind 利用 AI 在 4 週內完成 Signal 端到端加密協議關鍵模組之形式化驗證",
+      "en": "Google DeepMind successfully completes mathematical formal verification of key Signal encryption code using AI"
+     },
+     "source": "https://arstechnica.com/ai/2026/11/signals-encryption-just-passed-an-ai-powered-mathematical-checkup/"
+    },
+    {
+     "headline": {
+      "zh": "Hugging Face 釋出多向量檢索技術：結合 Token Pooling-Aware 訓練提升 Embedding 檢索效率",
+      "en": "Hugging Face introduces Token Pooling-Aware Training to boost multi-vector embedding efficiency"
+     },
+     "source": "https://huggingface.co/blog/token-pooling"
+    },
+    {
+     "headline": {
+      "zh": "獨立遊戲《Big Walk》因使用 AI 修復 Bug 遭裁判嚴格審查，獨立遊戲節引發 AI 生成界限論戰",
+      "en": "Indie game Big Walk sparks controversy across IGF judges after admitting to using AI for bug patching"
+     },
+     "source": "https://arstechnica.com/gaming/2026/11/big-walk-used-ai-to-fix-a-bug-now-the-indie-gaming-world-is-having-a-reckoning/"
+    },
+    {
+     "headline": {
+      "zh": "專用 AI 晶片新創 Fractile 完成 7.2 億美元融資，力拚挑戰既有 GPU 霸權",
+      "en": "UK AI chip startup Fractile secures $720M in new funding to accelerate purpose-built AI accelerators"
+     },
+     "source": "https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-11-12T07:01+08:00"
+}
