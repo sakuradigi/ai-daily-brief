@@ -1,6 +1,14 @@
 {
- "latest": "2026-11-12",
+ "latest": "2026-11-13",
  "reports": [
+  {
+   "date": "2026-11-13",
+   "type": "daily",
+   "summary": {
+    "zh": "黃仁勳辭職震動晶片界，Google推Gemini 4 Hydrogen",
+    "en": "Jensen Huang resigns amid turmoil, Google debuts Gemini 4 Hydrogen"
+   }
+  },
   {
    "date": "2026-11-12",
    "type": "daily",

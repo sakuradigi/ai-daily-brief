@@ -1,0 +1,312 @@
+{
+ "date": "2026-11-13",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "黃仁勳辭去輝達執行長職位，CFO Colette Kress 暫代交接",
+      "en": "Jensen Huang Resigns as Nvidia CEO, CFO Colette Kress Named Interim Head"
+     },
+     "detail": {
+      "zh": "輝達創辦人暨執行長黃仁勳因涉及多起婚外情風波及國會調查壓力正式請辭，由財務長 Colette Kress 暫代職務。由於輝達未設立明確接班梯隊，此變動引發市場對高階 GPU 供應鏈、AI 基礎設施資本支出及該公司開源戰略連續性的高度疑慮。",
+      "en": "Nvidia co-founder and CEO Jensen Huang has resigned following board inquiries into personal misconduct and impending Congressional scrutiny, leaving CFO Colette Kress to take over as interim chief. The abrupt departure casts uncertainty over AI infrastructure supply chains, roadmap stability, and Nvidia's ongoing open-source commitments."
+     },
+     "source": "https://techcrunch.com/2026/11/12/jensen-huang-is-out-at-nvidia-who-is-colette-kress-his-interim-replacement/",
+     "tags": [
+      "Nvidia",
+      "Jensen Huang",
+      "Hardware",
+      "Leadership"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Google 發表 Gemini 4 Hydrogen，全面取代 3.8 Flash 並整合搜尋",
+      "en": "Google Introduces Gemini 4 Hydrogen to Replace 3.8 Flash Across Ecosystem"
+     },
+     "detail": {
+      "zh": "Google 正式發表新一代 Gemini 4 Hydrogen 模型，即日起上線 Google Search AI Mode、Gemini App 及開發者平台，大幅強化多步驟推理與複雜長查詢解析能力。新模型不僅在多層次問題拆解上顯著提升，也直接整合進 Antigravity Orchestrator 架構中。",
+      "en": "Google DeepMind unveiled Gemini 4 Hydrogen, an upgraded model designed to handle complex, multi-part queries and nuanced instructions with reduced latency. The model is immediately replacing 3.8 Flash across consumer search, Gemini apps, and developer orchestrators in Google Antigravity."
+     },
+     "source": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
+     "tags": [
+      "Google",
+      "Gemini",
+      "LLM",
+      "Search"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 正式遞交美國 IPO 申請，估值與商業化進程加速",
+      "en": "Anthropic Files for US Initial Public Offering"
+     },
+     "detail": {
+      "zh": "AI 研發機構 Anthropic 正式提交公開發行（IPO）相關文件，開啟大型前沿模型實驗室公開上市的先例。這項資本動作預期將改寫生成式 AI 領域的模型研發融資模式，並為高算力訓練競賽注入公開市場資金。",
+      "en": "Anthropic has formally initiated proceedings for a US public listing, marking one of the first major foundation model labs to tap public equity markets. The IPO is anticipated to recalibrate capital structures across frontier model developers racing for cluster compute scale."
+     },
+     "source": "https://ipo.anthropic.com/us/",
+     "tags": [
+      "Anthropic",
+      "IPO",
+      "Finance",
+      "Industry"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "AWS 官方推出開源本地模擬器 aws-emulator，由 Rust 與 Agent Swarm 打造",
+      "en": "AWS Releases Official 'aws-emulator' in Rust for Local Cloud Testing"
+     },
+     "detail": {
+      "zh": "AWS 釋出官方本機模擬工具 aws-emulator，允許開發者在本地端驗證雲端服務邏輯，無需支付 API 費用或配置憑證。該專案主要由 Rust 編寫，初期透過大量自主 Coding Agent 協同生成近 3 萬次 commit，目前支援 macOS 與 Windows 的 Docker 執行環境。",
+      "en": "AWS launched aws-emulator, an official tool allowing developers to run tests locally against clones of AWS services without paid API credentials. Built primarily in Rust using a high-density agent swarm during early development, it currently runs in Docker on macOS and Windows."
+     },
+     "source": "https://simonwillison.net/2026/Nov/11/aws-emulator/",
+     "tags": [
+      "AWS",
+      "DevOps",
+      "Rust",
+      "Open Source"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "IBM 釋出 LLMON 標記語言並原生內建於 Granite 4.1 3B/8B 模型",
+      "en": "IBM Unveils LLMON Markup Language in Granite 4.1 3B and 8B Weights"
+     },
+     "detail": {
+      "zh": "IBM 在 Hugging Face 發布專為大型語言模型設計的標記語言 LLMON，並直接整合進開源的 Granite 4.1 3B 與 8B 參數量模型中。此規格旨在提升結構化輸出與上下文推理效率，為小參數量模型的邊緣端與地端調度提供標準化資料解析格式。",
+      "en": "IBM introduced LLMON, an LLM-native markup language now natively embedded within the newly released Granite 4.1 3B and 8B models on Hugging Face. The format optimizes structured output handling and token parsing efficiency specifically for compact open-weight models."
+     },
+     "source": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+     "tags": [
+      "IBM",
+      "Granite",
+      "Open Source",
+      "NLP"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Hugging Face 發布 3D 生成模型 LoRA 完整微調指南",
+      "en": "Hugging Face Publishes Comprehensive LoRA Fine-Tuning Guide for 3D Models"
+     },
+     "detail": {
+      "zh": "Hugging Face 社群釋出 3D 生成架構的端到端 LoRA 微調教學，詳述如何使用低資源管線針對網格與神經輻射場模型進行風格與形狀適配。這份指南降低了遊戲開發者與 3D 工作流程工程師將生成模型整合進現有資產流程的門檻。",
+      "en": "Hugging Face published an in-depth technical guide covering parameter-efficient fine-tuning via LoRA for 3D generative architectures. The resource details memory-efficient pipelines, mesh optimization, and practical dataset preprocessing for game developers and 3D pipelines."
+     },
+     "source": "https://huggingface.co/blog/3d-lora-finetuning",
+     "tags": [
+      "Hugging Face",
+      "LoRA",
+      "3D GenAI",
+      "Fine-Tuning"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Google 釋出 Gemini Decisions API，以低成本主打二元決策與準則評分",
+      "en": "Google Launches Gemini Decisions API for Low-Cost Binary and Rubric Scoring"
+     },
+     "detail": {
+      "zh": "Google 推出專門處理確定性決策的 Gemini Decision 1 API，支援是非判斷（Noul）、多選與自訂評分標準。定價對標 GPT-6 Luna 決策模型，每百萬輸入 Token 僅收 0.1 美元且輸出完全免費，顯著降低高吞吐分類與過濾管線的運行成本。",
+      "en": "Google introduced Gemini Decision 1, an API optimized strictly for classification, binary decisions, and rubric scoring without open-ended generation overhead. Priced at $0.10 per million input tokens with free output, it targets high-volume verification and routing pipelines."
+     },
+     "source": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
+     "tags": [
+      "Google",
+      "API",
+      "Developer Tools",
+      "Pricing"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "聯合航空全面封鎖 AI Agent 自主訂票，祭出網路安全防禦規則",
+      "en": "United Airlines Blocks Automated AI Booking Agents Citing Security Risks"
+     },
+     "detail": {
+      "zh": "聯合航空（United Airlines）宣布禁止第三方 AI 代理透過爬蟲或模擬介面替旅客預訂航班與修改行程，並啟動反機器人防護。此舉凸顯以 Agentic Workflow 為核心的自動化消費應用在面對既有商業基礎設施與身分驗證時遭遇的第一波合規阻力。",
+      "en": "United Airlines has officially blocked autonomous AI agents from booking flights or modifying itineraries on behalf of passengers, citing cybersecurity and bot-traffic concerns. The move marks growing enterprise pushback against uncoordinated consumer-facing agentic automations."
+     },
+     "source": "https://techcrunch.com/2026/11/12/united-airlines-blocks-ai-agents-from-booking-flights-citing-cybersecurity-risks/",
+     "tags": [
+      "AI Agents",
+      "Cybersecurity",
+      "API",
+      "Aviation"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Fireworks AI 遭遇網路攻擊，導致 Notion 內部對話紀錄外洩",
+      "en": "Cyberattack on Fireworks AI Exposes Notion Customer Chat Transcripts"
+     },
+     "detail": {
+      "zh": "模型託管服務 Fireworks AI 發生安全性入侵事件，駭客藉此存取了使用該推論端點的 Notion 用戶 AI 對話紀錄。這是該平台近期第二度傳出資安漏洞，對採用第三方推論託管 API 的企業架構敲響隱私與資料隔離的警鐘。",
+      "en": "A breach at inference provider Fireworks AI granted attackers unauthorized access to Notion customer chat logs routed through the platform. This marks Fireworks AI's second security breach in two months, raising scrutiny around data privacy and tenancy isolation in hosted API stacks."
+     },
+     "source": "https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts/",
+     "tags": [
+      "Fireworks AI",
+      "Notion",
+      "Security",
+      "Infra"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Gemini 4 Hydrogen 強化語意拆解，專門解決多子題與拼寫模糊查詢",
+      "en": "Gemini 4 Hydrogen Architecture Enhances Complex Multi-Intent Parsing"
+     },
+     "detail": {
+      "zh": "根據 DeepMind 與 Google 釋出的技術細節，Gemini 4 Hydrogen 針對含有多層提問、筆誤及高專門術語的提示詞進行了語意分解優化。評測顯示其能在單次推論週期內自動剖析複合意圖並依序驗證，顯著降低長尾查詢中的幻覺比例。",
+      "en": "Technical updates from DeepMind indicate Gemini 4 Hydrogen employs refined internal sub-query decomposition to resolve multi-intent, typo-heavy, and domain-dense prompts. The architecture reduces hallucinations in complex search prompts by validating component claims sequentially."
+     },
+     "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+     "tags": [
+      "Google DeepMind",
+      "Gemini 4",
+      "Architecture",
+      "NLP"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "資安研究指主要 LLM 購物查詢易遭操縱，常推薦釣魚與仿冒網站",
+      "en": "Study Finds Mainstream Chatbots Frequently Surface Imposter Shopping Links"
+     },
+     "detail": {
+      "zh": "IP 保護組織 Podqi 發布測試指出，當要求 ChatGPT、Gemini 與 Perplexity 等助理提供購物建議時，模型引用的網址中高頻率出現仿冒品牌與釣魚頁面。這顯示目前的 RAG 與搜尋檢索整合機制在網址權威性驗證上仍存在系統性資安漏洞。",
+      "en": "A research study by IP protection firm Podqi reveals that popular conversational engines (ChatGPT, Gemini, Perplexity) regularly cite imposter and high-risk domains when handling product search queries. The findings highlight persistent validation flaws in real-time RAG and search-grounded pipelines."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1032020/gemini-chatgpt-perplexity-shopping-test-risky-fake-websites-citations",
+     "tags": [
+      "RAG",
+      "Safety",
+      "Evaluation",
+      "Security"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "黃仁勳同意赴美會聽證，輝達對開源界承諾引發投資人關注",
+      "en": "Jensen Huang Agrees to Testify Before Congress Amid Succession Scramble"
+     },
+     "detail": {
+      "zh": "前輝達執行長黃仁勳已同意就晶片出口審查與個人涉入事件出席美國國會聽證。此外，市場分析普遍擔憂黃仁勳離職後，輝達過去推動的 Hugging Face 併購案及開源權重政策是否會面臨新管理層的戰略收縮。",
+      "en": "Following threats of Congressional subpoenas, former Nvidia CEO Jensen Huang has agreed to testify regarding technology exports and executive oversight. The sudden leadership vacuum also prompts questions regarding Nvidia's acquisition of Hugging Face and its long-term support for open-weights initiatives."
+     },
+     "source": "https://techcrunch.com/2026/11/12/jensen-huang-agrees-to-testify-before-congress/",
+     "tags": [
+      "Nvidia",
+      "Regulation",
+      "Open Source",
+      "Hardware"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "軟銀天然氣發電投資虧損 30 億美元，AI 資料中心能源供給策略受挫",
+      "en": "SoftBank Books $3B Loss on Gas Turbines, Exposing AI Power Bottlenecks"
+     },
+     "detail": {
+      "zh": "軟銀為支撐大規模 AI 資料中心建設預訂天然氣渦輪機，卻因電網接入延遲與市場波動認列逾 30 億美元損失。此事件突顯新一代超大規模算力叢集在脫離既有電網進行自建能源時，面臨著極高的基礎設施資本風險。",
+      "en": "SoftBank incurred over $3 billion in losses after preordering natural gas turbines for dedicated AI datacenter power, underscoring severe utility interconnect delays. The setback highlights the massive capital and physical infrastructure risks confronting hyperscalers pursuing off-grid compute solutions."
+     },
+     "source": "https://techcrunch.com/2026/11/12/softbanks-billion-dollar-loss-may-have-put-a-cap-on-ais-natural-gas-ambitions/",
+     "tags": [
+      "SoftBank",
+      "Datacenter",
+      "Energy",
+      "Compute"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "Google 聯合三星與眼鏡品牌推出搭載 Gemini 的智慧眼鏡，定價 395 美元起跳",
+      "en": "Google partners with Samsung, Gentle Monster, and Warby Parker for $395 Gemini smartglasses."
+     },
+     "source": "https://arstechnica.com/google/2026/11/google-pushes-privacy-angle-as-gemini-powered-smartglasses-debut-starting-at-395/"
+    },
+    {
+     "headline": {
+      "zh": "美國聯邦航空總署（FAA）擴大導入 AI 流量預測系統以管理全美空域壅塞",
+      "en": "FAA expands AI-driven congestion management across entire US national airspace."
+     },
+     "source": "https://arstechnica.com/ai/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/"
+    },
+    {
+     "headline": {
+      "zh": "Nebius 規劃高達 400 億美元基礎設施支出，透過客戶預付款押注新雲端運算模式",
+      "en": "Nebius plans $40B AI infrastructure buildout funded via customer prepayments and debt."
+     },
+     "source": "https://techcrunch.com/2026/11/12/nebius-tests-the-neocloud-playbook-with-40-billion-in-planned-spending/"
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 承諾出資 200 萬美元專項基金，用於研發青少年與兒童 AI 安全防護工具",
+      "en": "OpenAI commits $2M to fund child safety research and risk evaluation tooling in AI models."
+     },
+     "source": "https://openai.com/index/children-first-declaration"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-11-13T07:01+08:00"
+}
