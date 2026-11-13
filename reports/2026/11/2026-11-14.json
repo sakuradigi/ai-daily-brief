@@ -1,0 +1,319 @@
+{
+ "date": "2026-11-14",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "llama.cpp 正式推出 v1.0.0，確立本機推論生態長期基礎",
+      "en": "llama.cpp releases v1.0.0, establishing a solid foundation for local AI"
+     },
+     "detail": {
+      "zh": "作為本機 LLM 推論核心基礎設施，llama.cpp 歷經長期演化終於迎來 v1.0.0 里程碑，代表架構進入穩定成熟期。此版本預期帶來更穩定的 API、記憶體優化以及更強大的多硬體支援，對本地端開發者與邊緣部署是重大定心丸。",
+      "en": "As core infrastructure for local LLM inference, llama.cpp has officially reached its v1.0.0 milestone. This release signals architectural maturity and API stability, offering developers a more predictable foundation for edge deployments and local AI development."
+     },
+     "source": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+     "tags": [
+      "llama.cpp",
+      "LocalAI",
+      "OpenSource",
+      "Inference"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "黃仁勳辭任輝達執行長引爆震盪，AI 新創融資與晶片地緣政治面臨洗牌",
+      "en": "Jensen Huang resigns as Nvidia CEO, rattling AI startup funding and chip geopolitics"
+     },
+     "detail": {
+      "zh": "黃仁勳閃電辭職震撼科技圈，不僅引發美國國會針對其晶片外銷的調查，更直接衝擊依賴輝達資金與 GPU 配額的廣大 AI 新創生態。創投界預警未來融資支票金額將縮減、估值承壓，硬體算力分配與地緣政治審查將進入嚴格調整期。",
+      "en": "Jensen Huang's sudden departure from Nvidia has triggered deep concern across the ecosystem, amid growing Congressional scrutiny over export-controlled chip sales to China. Investors warn that AI startups may face tightened capital and lower valuations without Huang's aggressive strategic backing."
+     },
+     "source": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
+     "tags": [
+      "Nvidia",
+      "Hardware",
+      "VC",
+      "Geopolitics"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "ChatGPT Wallet 與 Brave x402 協議登場，AI Agent 自主消費與付費成真",
+      "en": "Agentic payments go live: OpenAI launches ChatGPT Wallet while Brave adopts x402"
+     },
+     "detail": {
+      "zh": "OpenAI 推出 ChatGPT Wallet 支援 Dots 與 Codex 代理人自主結帳；同時 Brave Search API 亦支援 x402 協議讓 Agent 進行微額支付。這標誌著自主智慧體從「產生內容」跨入「具備金融支付能力」，開發者建構自主服務的工作流即將迎來變革。",
+      "en": "OpenAI rolled out ChatGPT Wallet to let autonomous agents complete purchases with user authorization, while Brave Search API integrated the x402 protocol for agentic micropayments. These launches mark a major shift enabling AI agents to autonomously handle financial transactions."
+     },
+     "source": "https://openai.com/index/introducing-chatgpt-wallet",
+     "tags": [
+      "AIAgents",
+      "Payments",
+      "OpenAI",
+      "APIs"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Edge0-145B 發布：標榜可在個人電腦運行的前沿規模開源模型",
+      "en": "Edge0-145B released, bringing frontier-scale capabilities to local hardware"
+     },
+     "detail": {
+      "zh": "Edge0 團隊開源了 145B 參數量級的 Frontier 模型，專門針對個人硬體推論進行極限優化。該模型旨在打破頂級能力僅能依賴雲端 API 的現狀，讓本機端開發者能在受控環境下運行高階複雜邏輯任務。",
+      "en": "The Edge0 team released Edge0-145B, an open-weight model engineered to run frontier-scale workloads directly on local machines. It targets developers seeking cloud-level reasoning without external API dependency or privacy compromises."
+     },
+     "source": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
+     "tags": [
+      "OpenWeights",
+      "LLM",
+      "LocalInference"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "llm-gemini 0.37 發布，全面支援 Google 最平價模型 Gemini 4 Hydrogen",
+      "en": "Simon Willison releases llm-gemini 0.37 with Gemini 4 Hydrogen support"
+     },
+     "detail": {
+      "zh": "知名開源 CLI 工具外掛 llm-gemini 更新至 0.37 版，第一時間整合 Google 新推出的 Gemini 4 Hydrogen。開發者可透過命令列或 Python 介面快速呼叫這款主打多層次提問解析、成本顯著降低的新模型。",
+      "en": "The llm-gemini plugin has been updated to version 0.37, adding support for Google's newly released Gemini 4 Hydrogen. Developers can immediately integrate Google's low-cost, multi-turn reasoning model through the CLI and Python library."
+     },
+     "source": "https://simonwillison.net/2026/Nov/12/llm-gemini/",
+     "tags": [
+      "CLI",
+      "Gemini",
+      "DeveloperTools"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "NVIDIA 釋出 SimReady 資產教學，手把手打造機器人夾取模擬環境",
+      "en": "NVIDIA details robot pick-and-place simulation using SimReady assets on Hugging Face"
+     },
+     "detail": {
+      "zh": "Hugging Face 與 NVIDIA 合作釋出技術教學，展示如何利用物理屬性完整的 SimReady 3D 資產建立機器人 Pick-and-Place 模擬環境。這為具身智慧（Embodied AI）與強化學習工程師大幅降低了 Synthetic Data 生成與模擬環境建構門檻。",
+      "en": "NVIDIA and Hugging Face published a technical walkthrough for building robotic pick-and-place pipelines with physically accurate SimReady assets. It simplifies synthetic dataset creation and environment setup for embodied AI practitioners."
+     },
+     "source": "https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place",
+     "tags": [
+      "Robotics",
+      "Simulation",
+      "EmbodiedAI"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Google 推出 Gemini 4 Hydrogen：拆解複雜複合提問的低成本模型",
+      "en": "Google launches Gemini 4 Hydrogen to tackle complex multi-part questions"
+     },
+     "detail": {
+      "zh": "Google 正式上線 Gemini 4 Hydrogen，專長在於將包含錯字、多重子問題與高特異性要求的複雜查詢自動拆解處理。該模型已同步整合至 Search AI 模式及 Gemini App，並以親民的定價策略降低開發者呼叫負擔。",
+      "en": "Google rolled out Gemini 4 Hydrogen, optimized for decomposing complicated, multi-part prompts and deciphering challenging queries. It is integrated across Google Search and the Gemini app, offering competitive pricing for developer API access."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1032505/google-search-ai-mode-gemini-4-hydrogen",
+     "tags": [
+      "Gemini",
+      "Google",
+      "Search"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 推出消費者端 Agent「Claude Duet」，主打非程式人員工作流",
+      "en": "Anthropic rolls out Claude Duet, a consumer-focused AI agent"
+     },
+     "detail": {
+      "zh": "Anthropic 正在測試消費型 AI Agent 產品 Claude Duet，嘗試將原本專注於 Claude Code 的自動化能力延伸至一般非程式碼寫作與日常生產力場景。外媒實測認為其行為表現細膩主動，但仍帶有明顯的嚴謹與謹慎特質。",
+      "en": "Anthropic is expanding beyond Claude Code with Claude Duet, an agent tailored for non-technical consumers and general workflow automation. Early hands-on testing highlights its proactive assistance while retaining Anthropic's signature safety-first guardrails."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on",
+     "tags": [
+      "Anthropic",
+      "Claude",
+      "AIAgents"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "ElevenLabs 跨足企業會議協作，推出 ElevenAI 筆記與聽寫工具",
+      "en": "ElevenLabs enters enterprise collaboration with ElevenAI notetaker and dictation app"
+     },
+     "detail": {
+      "zh": "以語音合成聞名的 ElevenLabs 推出 ElevenAI，正式跨入團隊與企業端的會議即時轉錄、摘要及語音聽寫市場。這顯示該團隊正在將底層語音辨識與生成優勢整合為垂直辦公產品，直接與現有會議摘要工具競爭。",
+      "en": "ElevenLabs launched ElevenAI, a dedicated meeting transcription and dictation application aimed at enterprise teams. The move signals its ambition to leverage proprietary speech models into direct competition with established productivity platforms."
+     },
+     "source": "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/",
+     "tags": [
+      "ElevenLabs",
+      "Audio",
+      "Productivity"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "AllenAI 發表 XYBench：針對「真正背後意圖」評估 LLM 解題能力",
+      "en": "AllenAI introduces XYBench to evaluate models on underlying user intent"
+     },
+     "detail": {
+      "zh": "開發者常面臨「XY Problem」——使用者詢問解決方案 X，但實質需要解決的是背後核心 Y。AllenAI 推出 XYBench 基準測試，專門衡量模型能否洞察使用者真實痛點而非盲目遵從表面提問，為評估對話模型架構提供全新維度。",
+      "en": "AllenAI published XYBench, a benchmark designed to evaluate whether models can identify the real problem behind a user prompt instead of merely answering the surface-level query (the classic XY problem). It provides a new rubric for dialogue and agent reasoning."
+     },
+     "source": "https://huggingface.co/blog/allenai/xybench",
+     "tags": [
+      "Evaluation",
+      "Benchmark",
+      "AllenAI",
+      "Research"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "研究揭露中國前沿模型權重留存受出口管制 GPU 訓練之底層特徵",
+      "en": "Research detects export-controlled GPU training fingerprints in Chinese frontier models"
+     },
+     "detail": {
+      "zh": "資安與 AI 鑑識報告指出，透過對模型 Checkpoint 運算殘差與浮點特性進行逆向分析，發現部分中國頂級開源與商業模型帶有受美國管制之高階 NVIDIA GPU 的訓練指紋。此研究將對開源權重合規與供應鏈透明度引發新一波檢驗。",
+      "en": "A technical report suggests that numerical fingerprints in model checkpoints reveal the use of banned Nvidia hardware in training advanced Chinese frontier models. The forensic method could impact open-weight regulatory audits and chip export enforcement."
+     },
+     "source": "https://unemploymentlabs.com/checkpoint-forensics",
+     "tags": [
+      "AIResearch",
+      "Hardware",
+      "Security"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "歷史數學手稿破譯：AI 成功解讀哥德爾筆記中數百個未發表定理",
+      "en": "AI deciphers Kurt Gödel's notebooks, uncovering hundreds of proved theorems"
+     },
+     "detail": {
+      "zh": "研究團隊運用專用 OCR 與符號推理模型，成功辨識並破譯邏輯學巨擘哥德爾（Kurt Gödel）生前留下的速記筆記。初步成果整理出數百個過去未曾面世的證明與定理，展示了幾何與符號模型在科學史料挖掘上的強大實用性。",
+      "en": "Researchers leveraged OCR and symbolic reasoning models to transcribe Kurt Gödel's dense historical shorthand notebooks. The effort has unlocked hundreds of previously unread theorems, highlighting AI's growing utility in scientific historical preservation."
+     },
+     "source": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
+     "tags": [
+      "Science",
+      "Reasoning",
+      "Mathematics"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 宣布解散專屬機器人團隊，轉向依賴通用多模態大模型驅動硬體",
+      "en": "OpenAI disbands dedicated robotics team as general foundation models take over"
+     },
+     "detail": {
+      "zh": "OpenAI 調整組織策略，解散原先的機器人硬體與專用研發小組。管理層認為現行通用前沿模型的泛化推理能力已足夠直接賦能第三方機器人平台，未來將聚焦於模型端而非自行研發物理實體整合。",
+      "en": "OpenAI has dissolved its dedicated robotics team, shifting strategy toward enabling third-party robotics hardware directly through generalized multimodal foundation models rather than maintaining a bespoke internal hardware effort."
+     },
+     "source": "https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/",
+     "tags": [
+      "OpenAI",
+      "Robotics",
+      "Industry"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "LangChain 估值達 30 億美元，LangSmith 企業客戶規模突破 7,000 家",
+      "en": "LangChain reaches $3B valuation fueled by LangSmith's 7,000 enterprise customers"
+     },
+     "detail": {
+      "zh": "以 LLM 應用框架聞名的 LangChain 完成新一輪融資，估值衝上 30 億美元。核心商業化引擎 LangSmith 透過跨模型可觀測性、追蹤與 Evaluation 工具成功吸引超過 7,000 家企業客戶，坐穩 Agent 開發堆疊關鍵生態位。",
+      "en": "AI framework creator LangChain has achieved a $3 billion valuation on the back of its agent observability platform, LangSmith, which now counts over 7,000 enterprise customers across the model-agnostic tooling ecosystem."
+     },
+     "source": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
+     "tags": [
+      "LangChain",
+      "LLMOps",
+      "Startups"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "Anthropic 服務遭遇大範圍異常，claude.ai 與 Claude Code API 發生持續錯誤",
+      "en": "Anthropic reports elevated error rates across claude.ai, Claude Code, and developer APIs"
+     },
+     "source": "https://status.claude.com/incidents/nn11wk485zfn"
+    },
+    {
+     "headline": {
+      "zh": "芝加哥公立學校系統拒絕強制綁定 AI 搜尋功能，揚言全面停用 Google Search",
+      "en": "Chicago schools push back against forced AI Overviews, willing to drop Google Search"
+     },
+     "source": "https://www.techspot.com/news/114532-chicago-schools-tell-google-they-can-live-without.html"
+    },
+    {
+     "headline": {
+      "zh": "Nebius 規劃斥資 400 億美元擴建 GPU 算力雲基礎設施，測試新型雲端融資模型",
+      "en": "Nebius targets $40B AI infrastructure expansion via debt and customer prepayments"
+     },
+     "source": "https://techcrunch.com/2026/11/12/nebius-tests-the-neocloud-playbook-with-40-billion-in-planned-spending/"
+    },
+    {
+     "headline": {
+      "zh": "社群發起「拒絕 AI 劣質垃圾內容（No AI Slop）」宣言，抗議無意義合成資訊氾濫",
+      "en": "The 'No AI Slop Manifesto' gains traction among developers pushing back against low-quality synthetic content"
+     },
+     "source": "https://www.slopmanifesto.com/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-11-14T07:01+08:00"
+}

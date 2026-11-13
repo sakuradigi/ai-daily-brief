@@ -1,6 +1,14 @@
 {
- "latest": "2026-11-13",
+ "latest": "2026-11-14",
  "reports": [
+  {
+   "date": "2026-11-14",
+   "type": "daily",
+   "summary": {
+    "zh": "llama.cpp 邁入 1.0；黃仁勳辭職引發產業震盪；Agent 支付落地",
+    "en": "llama.cpp hits v1.0, Jensen Huang departs Nvidia, and AI agent payments arrive."
+   }
+  },
   {
    "date": "2026-11-13",
    "type": "daily",
