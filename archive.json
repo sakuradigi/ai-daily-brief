@@ -1,6 +1,14 @@
 {
- "latest": "2026-11-14",
+ "latest": "2026-11-15",
  "reports": [
+  {
+   "date": "2026-11-15",
+   "type": "daily",
+   "summary": {
+    "zh": "黃仁勳去職震撼 AI 圈，Claude 推平行工作者升級",
+    "en": "Jensen Huang's exit shakes AI industry; Anthropic upgrades Claude Projects with parallel workers."
+   }
+  },
   {
    "date": "2026-11-14",
    "type": "daily",

@@ -1,0 +1,277 @@
+{
+ "date": "2026-11-15",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "黃仁勳突發去職重擊生態系，創投擔憂新創估值縮水與斷炊",
+      "en": "Jensen Huang's sudden departure leaves a funding void for AI startups"
+     },
+     "detail": {
+      "zh": "Nvidia 執行長黃仁勳去職引發產業大地震。在黃任內，Nvidia 曾對 AI 新創注入數百億美元資金，如今各界憂心投資規模將大幅縮水，亞洲各國政府也緊急確認晶片供應協議。",
+      "en": "The departure of Nvidia CEO Jensen Huang sends shockwaves through the tech ecosystem. Under his leadership, Nvidia poured tens of billions into AI startups, and founders and VCs now brace for lower valuations and smaller funding checks."
+     },
+     "source": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
+     "tags": [
+      "Nvidia",
+      "JensenHuang",
+      "Hardware",
+      "VC"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 升級 Claude Projects，支援多個平行 AI 工作者",
+      "en": "Anthropic upgrades Claude Code Projects to run parallel AI workers"
+     },
+     "detail": {
+      "zh": "Anthropic 重新設計 Projects 架構，讓使用者能在同一專案中同時調度多個平行運作的 AI agent。這大幅改善了複雜程式碼庫的重構與跨檔案分析效率，正式將專案管理推進至平行非同步執行階段。",
+      "en": "Anthropic has revamped Claude Code Projects to allow users to orchestrate multiple parallel AI workers simultaneously. This shift toward concurrent, agentic workflows significantly improves throughput for large-scale codebase refactoring and analysis."
+     },
+     "source": "https://claude.com/resources/articles/projects-redesigned",
+     "tags": [
+      "Anthropic",
+      "Claude",
+      "Agent",
+      "DevTools"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "社群爆料 Nvidia 涉嫌透過資助 AI 新創「回購 GPU」製造人工短缺",
+      "en": "Nvidia allegedly engineered GPU scarcity by funding startups to purchase its hardware"
+     },
+     "detail": {
+      "zh": "社群熱議爆料指控 Nvidia 透過旗下創投基金注資特定 AI 新創，並綑綁要求其將資金用於採購高階 GPU，進而人為維持市場供不應求與高毛利。此舉若屬實，恐面臨更嚴峻的反壟斷與金融審查。",
+      "en": "Reports alleging that Nvidia engineered artificial hardware scarcity by funding AI startups with mandates to buy its GPUs gained massive traction on Hacker News. If substantiated, these circular financing practices could trigger heightened regulatory and antitrust scrutiny."
+     },
+     "source": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
+     "tags": [
+      "Nvidia",
+      "Hardware",
+      "Regulation"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "開源社群用 ~200 行純 JAX 實現 DeepSeek V3 核心架構",
+      "en": "DeepSeek V3 implemented in ~200 lines of pure JAX"
+     },
+     "detail": {
+      "zh": "開發者 Vaibhaav Tiwari 開源了極簡版 DeepSeek V3，以約 200 行純 JAX 程式碼完整呈現 MLA（Multi-head Latent Attention）與 MoE 架構。極度適合研究員快速驗證算法與理解底層計算圖構建。",
+      "en": "Developer Vaibhaav Tiwari released a minimal DeepSeek V3 implementation written in roughly 200 lines of pure JAX, demonstrating Multi-head Latent Attention (MLA) and MoE components. It provides an accessible, clean codebase for researchers exploring modern LLM architectures."
+     },
+     "source": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax",
+     "tags": [
+      "OpenSource",
+      "DeepSeek",
+      "JAX",
+      "Architecture"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Datasette 發布 cluster-map 與 leaflet 更新，修正 OSM Referrer 限制",
+      "en": "Datasette updates cluster-map and leaflet plugins to comply with OSM referrer policies"
+     },
+     "detail": {
+      "zh": "Simon Willison 釋出 datasette-cluster-map 0.19 與 datasette-leaflet 0.3。主要修復舊版預設 no-referrer 導致 OpenStreetMap 圖資請求失敗的相容性問題，並適配 Datasette 1.0a42 分面篩選介面。",
+      "en": "Simon Willison released updates to datasette-cluster-map (0.19) and datasette-leaflet (0.3). The updates resolve OpenStreetMap tile-loading issues by correctly handling referrer headers and ensuring full compatibility with Datasette 1.0a42."
+     },
+     "source": "https://simonwillison.net/2026/Nov/13/datasette-cluster-map/",
+     "tags": [
+      "Datasette",
+      "Python",
+      "GIS",
+      "WebDev"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Amazon 啟動「世界產品圖譜」計畫，全面索引全網電商資料",
+      "en": "Amazon plans 'World Product Graph' to index global e-commerce data"
+     },
+     "detail": {
+      "zh": "路透指出 Amazon 正在建構涵蓋全網所有電商商品的 World Product Graph，即使自家未販售的商品亦會建構語意索引。此舉旨在利用生成式 AI 搜尋將消費者鎖在 Amazon 生態系內。",
+      "en": "Amazon is developing the 'World Product Graph,' a massive repository indexing goods sold across the entire internet, including items not offered on Amazon. The AI-driven search initiative aims to retain consumers within Amazon's interface during purchase discovery."
+     },
+     "source": "https://www.theverge.com/tech/1033697/amazon-world-product-graph-ai-search",
+     "tags": [
+      "Amazon",
+      "Ecommerce",
+      "AI-Search",
+      "KnowledgeGraph"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "美國 FAA 全面擴大導入 AI 航線決策系統以緩解全美空域擁塞",
+      "en": "FAA expands AI advisory tooling across all US airspace to manage air traffic"
+     },
+     "detail": {
+      "zh": "美國聯邦航空總署（FAA）正式將 AI 流量管理輔助系統推廣至全美空域。航空公司讚許其在惡劣天氣下的航路重規劃效率，然而航管人員工會抗議其決策黑箱且缺乏一線管制員的參與評估。",
+      "en": "The FAA has rolled out AI-driven traffic management tools across the entire US airspace to optimize routing and ease congestion. While airlines praise the operational efficiency, the air traffic controllers' union voiced strong concerns over the lack of frontline consultation."
+     },
+     "source": "https://arstechnica.com/features/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/",
+     "tags": [
+      "FAA",
+      "Aviation",
+      "AppliedAI",
+      "Infrastructure"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 推出 Claude Meetings，鎖定會議紀錄與行動追蹤",
+      "en": "Anthropic introduces Claude Meetings for workplace context and transcription"
+     },
+     "detail": {
+      "zh": "Anthropic 發布 Claude Meetings 功能，深入辦公協作場景，能將通話紀錄轉化為具備專案脈絡的結構化摘要與待辦清單，進一步與企業專案知識庫整合。",
+      "en": "Anthropic unveiled Claude Meetings, expanding Claude's enterprise presence by automatically structuring transcriptions, extracting action items, and syncing them directly into project knowledge bases."
+     },
+     "source": "https://claude.com/resources/articles/claude-meetings",
+     "tags": [
+      "Anthropic",
+      "Claude",
+      "Productivity",
+      "Enterprise"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "深度反思「Claude 幻覺」：盲目信任模型對工程除錯帶來的隱形代價",
+      "en": "Analysis examines 'The Claude Delusion' and the hidden costs of over-relying on LLM code generation"
+     },
+     "detail": {
+      "zh": "工程師 Jan Schaumann 撰文剖析「Claude 幻覺」，指出開發者往往被流暢的語法與看似自信的架構說理所蒙蔽，反而花費更多時間排查微妙的幽靈邏輯錯誤，強調代碼審查與測試驗證在 AI 時代更顯關鍵。",
+      "en": "A detailed post titled 'The Claude Delusion' analyzes the cognitive trap of over-trusting confident LLM outputs. The author highlights that debugging plausible-sounding yet subtly broken logic generated by models can ultimately consume more engineering cycles than writing code from scratch."
+     },
+     "source": "https://www.netmeister.org/blog/claude-delusion.html",
+     "tags": [
+      "LLM",
+      "SoftwareEngineering",
+      "Debugging",
+      "CodeQuality"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "馬斯克等科技巨頭發起聯署，逾 11 萬人要求 Nvidia 讓黃仁勳復職",
+      "en": "Elon Musk and tech executives petition Nvidia board to reinstate Jensen Huang"
+     },
+     "detail": {
+      "zh": "包含馬斯克在內的多位科技界高層發起公開請願書，要求 Nvidia 董事會撤銷決策並讓黃仁勳回任執行長，短短一天內已獲超過 11.5 萬名業界人士聯署。",
+      "en": "A coalition of tech executives including Elon Musk launched a petition urging Nvidia's board to reinstate ousted CEO Jensen Huang, amassing over 115,000 signatures in its first day."
+     },
+     "source": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/",
+     "tags": [
+      "Nvidia",
+      "JensenHuang",
+      "ElonMusk",
+      "Governance"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "前 OpenAI 董事 Helen Toner 訪談：AI 企業領導者治理與誠信問題仍未解決",
+      "en": "Former OpenAI board member Helen Toner warns that AI CEOs still lack effective governance"
+     },
+     "detail": {
+      "zh": "曾在 2023 年解僱 Sam Altman 的前 OpenAI 董事 Helen Toner 受訪指出，即便經過多次治理架構重組，當前頂尖 AI 巨頭的權力過度集中於少數 CEO 手中，外部監督與安全把關依然脆弱。",
+      "en": "In a recent interview, former OpenAI board member Helen Toner reflected on AI leadership dynamics, arguing that board-level checks on frontier AI CEOs remain inadequate despite past governance crises."
+     },
+     "source": "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview",
+     "tags": [
+      "OpenAI",
+      "Governance",
+      "AISafety",
+      "Policy"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "亞洲多國政府針對黃仁勳去職緊急應對，密切追蹤先進晶片供貨進度與在途訂單。",
+      "en": "Asian governments monitor supply chain exposure and pending GPU commitments following Jensen Huang's exit."
+     },
+     "source": "https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit/"
+    },
+    {
+     "headline": {
+      "zh": "外媒盤點「AI 墳場」名單，自延宕的 Apple Siri 到未竟全功的新創專案全數收錄。",
+      "en": "A new industry retrospective chronicles failed AI initiatives and high-profile misses across Big Tech and startups."
+     },
+     "source": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/"
+    },
+    {
+     "headline": {
+      "zh": "科技媒體評論黃仁勳去職象徵「搖滾巨星式願景創辦人 CEO」時代走向黃昏。",
+      "en": "Analysis argues Jensen Huang's departure marks the twilight of the charismatic, visionary showman founder-CEO."
+     },
+     "source": "https://www.theverge.com/tech/1033781/nvidia-jensen-huang-last-visionary-showman-founder-ceo"
+    },
+    {
+     "headline": {
+      "zh": "datasette-leaflet 0.3 發布，強制使用 strict-origin-when-cross-origin 修訂圖資來源標頭。",
+      "en": "datasette-leaflet 0.3 enforces strict-origin-when-cross-origin to satisfy tile provider HTTP headers."
+     },
+     "source": "https://simonwillison.net/2026/Nov/13/datasette-leaflet/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-11-15T07:01+08:00"
+}
