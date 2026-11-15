@@ -1,6 +1,14 @@
 {
- "latest": "2026-11-15",
+ "latest": "2026-11-16",
  "reports": [
+  {
+   "date": "2026-11-16",
+   "type": "weekly",
+   "summary": {
+    "zh": "GPT-6 攻克物理難題，輝達風暴促美收緊出口",
+    "en": "GPT-6 tackles lattice physics as Nvidia fallout spurs tighter US export controls."
+   }
+  },
   {
    "date": "2026-11-15",
    "type": "daily",

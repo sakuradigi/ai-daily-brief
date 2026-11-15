@@ -1,0 +1,222 @@
+{
+ "date": "2026-11-16",
+ "type": "weekly",
+ "weekly": {
+  "zh": "本週 AI 生態系經歷劇烈地緣政治與架構轉型。三大趨勢清晰成形：首先，算力霸權面臨嚴峻治理震盪，地緣政治與國安審查全面介入硬體供應鏈；其次，本機推論與端側 Agent 工具鏈快速成熟，社群積極建構非雲端依賴的開發基礎；第三，前沿模型由通用生成轉向形式化驗證與基礎科學突破。本週最重要的三件事：一是黃仁勳因洩密疑雲閃辭輝達執行長引發產業海嘯；二是 Anthropic 啟動 IPO 並密集推出企業級平行 Agent 產品；三是 llama.cpp 發布正式版 v1.0.0，確立開源邊緣推論的長期標準。",
+  "en": "This week marked a tectonic shift across AI geopolitics and engineering stacks. Three major trends defined the landscape: hardware governance faced unprecedented turmoil as export controls collided with executive investigations; local inference matured rapidly to form reliable non-cloud agent ecosystems; and frontier LLMs transitioned from conversational assistants to formal scientific proving engines. The three pivotal events of the week: Jensen Huang's shock resignation as Nvidia CEO triggering export control scrutiny; Anthropic filing for an IPO alongside aggressive workspace agent rollouts; and llama.cpp hitting v1.0.0 to standardize local edge compute."
+ },
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 發表 GPT-6 Astra 輔助高能物理研究成果：推進晶格標準模型數學證明",
+      "en": "OpenAI Showcases GPT-6 Astra in High-Energy Physics: Formulating Nonperturbative Standard Model on a Lattice"
+     },
+     "detail": {
+      "zh": "OpenAI 揭露利用未公開模型 GPT-6 Astra 協助理論物理學家探索標準模型的非微擾晶格定義，並成功將概念轉化為嚴密的數學證明。此案例展示前沿模型已具備推導高度抽象規範場論的能力，預示 AI 在形式化數學與理論物理研究中的協作角色邁向新維度。",
+      "en": "OpenAI demonstrated how GPT-6 Astra helped theoretical physicists formulate candidate nonperturbative lattice definitions of the Standard Model and complete formal proofs. The milestone highlights how frontier reasoning systems are evolving from empirical code generators into competent mathematical collaborators for advanced theoretical physics."
+     },
+     "source": "https://openai.com/index/step-toward-defining-the-standard-model",
+     "tags": [
+      "OpenAI",
+      "GPT-6",
+      "Physics",
+      "Research"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "國會兩黨擬收緊 AI 晶片出口管制：因應前輝達執行長涉間諜洩密危機",
+      "en": "US Congress Weighs Tighter AI Chip Export Rules Following Nvidia Spy Scandal"
+     },
+     "detail": {
+      "zh": "在黃仁勳因私人關係捲入中國算力走私與涉諜疑雲去職後，美國國會跨黨派議員正研擬更嚴格的硬體出口法案，並要求輝達管理層赴國會作證。此舉恐進一步限縮降規版晶片出貨與跨國代理採購途徑，對依賴海外供應鏈的全球硬體生態造成新一輪衝擊。",
+      "en": "Following former Nvidia CEO Jensen Huang's abrupt resignation tied to an alleged intelligence leak, US lawmakers are pushing for stricter AI chip export controls and demanding executive testimonies. The bipartisan moves threaten to further curb scaled-down hardware shipments and disrupt multinational compute procurement pipelines."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china",
+     "tags": [
+      "Nvidia",
+      "Hardware",
+      "Policy",
+      "Regulation"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "黃仁勳傳正評估重返輝達執行長：高層人事角力與投資人施壓持續發酵",
+      "en": "Jensen Huang Reportedly Exploring Return as Nvidia CEO Amid Escalating Power Struggle"
+     },
+     "detail": {
+      "zh": "外媒揭露辭職甫數日的黃仁勳正私下尋求重掌輝達執行長職權的途徑，同時社群與投資人發動大規模聯署力挺。然而隨著董事會獨立調查深入及國會審查壓力升級，輝達內部面臨創辦人威望與企業合規監管的激烈博弈。",
+      "en": "Reports indicate that former Nvidia CEO Jensen Huang is privately exploring paths to reclaim his position, bolstered by widespread tech industry and shareholder petitions. However, ongoing board investigations and heightened congressional scrutiny are setting the stage for an intense struggle over leadership and corporate governance."
+     },
+     "source": "https://www.theverge.com/tech/1033999/jensen-huang-return-nvidia-megaspeed",
+     "tags": [
+      "Nvidia",
+      "Leadership",
+      "Industry"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "datasette-llm 0.1a11 發布：全面支援本機 OpenAI 相容推論端點",
+      "en": "datasette-llm 0.1a11 Adds Support for OpenAI-Compatible Local Inference Endpoints"
+     },
+     "detail": {
+      "zh": "Simon Willison 維護的資料分析插件 datasette-llm 迎來 0.1a11 更新，正式支援標準 OpenAI 相容協定端點。開發者現在可透過 uvx 即時將本機部署的 llama.cpp v1.0.0、Ollama 或 LM Studio 無縫掛載至 Datasette 工作流，實現完全離線且具隱私防護的資料庫語意查詢。",
+      "en": "Simon Willison released datasette-llm 0.1a11, introducing native configuration for OpenAI-compatible web API endpoints. Developers can now wire local runtimes like llama.cpp v1.0.0, Ollama, or LM Studio directly into Datasette via uvx, unlocking zero-cloud database introspection and automated querying."
+     },
+     "source": "https://simonwillison.net/2026/Nov/14/datasette-llm/",
+     "tags": [
+      "OpenSource",
+      "Datasette",
+      "LocalLLM",
+      "Tooling"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "社群掀起倡議：所有 AI 生成的程式碼皆應強制開源以捍衛軟體公共財",
+      "en": "Developer Manifesto Argues All AI-Generated Code Should Be Mandated Open Source"
+     },
+     "detail": {
+      "zh": "Hacker News 熱門倡議提出 AI 模型生成之程式碼本質上仰賴龐大開源專案訓練，其產出不應受封閉商業版權私有化保護。該文主張應推動法律與授權架構將 AI 合成原始碼強制歸屬為開源公共財，引發開發者對 Copilot 與 Agentic 程式碼授權鏈條的廣泛辯論。",
+      "en": "A viral proposal on Hacker News argues that since generative coding models are trained on collective open source labor, AI-generated code should legally belong to the public domain rather than proprietary silos. The debate challenges current commercial agent workflows and highlights looming conflicts over automated code licensing."
+     },
+     "source": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+     "tags": [
+      "OpenSource",
+      "Copyright",
+      "CodingAgents",
+      "Community"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": []
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 設立科學專門部落格：聚焦 AI 於基礎科學、物理與生物發現的實務方法",
+      "en": "OpenAI Launches Dedicated Science Blog to Track AI Breakthroughs in Fundamental Discovery"
+     },
+     "detail": {
+      "zh": "OpenAI 正式開闢針對科學領域的專屬發布管道，旨在記錄前沿研究者如何利用基礎大模型突破既有科學邊界。首波內容涵蓋物理學形式化證明與實驗方法論，顯示模型應用重心正由文字聊天進一步轉移向高門檻科學推論任務。",
+      "en": "OpenAI introduced a dedicated science blog to showcase empirical methods, research papers, and technical accounts of how LLMs accelerate scientific discovery. The initiative underscores the company's strategic push to transition model capability from generic conversational tasks to hard formal sciences."
+     },
+     "source": "https://openai.com/index/our-new-blog-for-science",
+     "tags": [
+      "OpenAI",
+      "Science",
+      "LLM",
+      "Research"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "黃仁勳離職效應延燒：高度綁定輝達硬體的 AI 經濟體系迎來系統性重估",
+      "en": "Nvidia Without Jensen: Fragility of Hardware-Centric AI Valuations Exposed"
+     },
+     "detail": {
+      "zh": "產業分析指出，近年數千億美元的 AI 新創估值與融資輪高度錨定於輝達的產品路線圖與產能承諾。黃仁勳下台不僅打亂大客戶長期採購節奏，更促使雲端巨頭加速採納自研 ASIC 與 AMD 解決方案以分散單一供應商風險。",
+      "en": "Analysis highlights that billions in AI startup equity and cloud capex were directly anchored to Jensen Huang's product cadence and allocation promises. His sudden exit has injected systemic uncertainty into compute forecasts, accelerating cloud hyperscalers' hedging toward in-house ASICs and alternative hardware vendors."
+     },
+     "source": "https://techcrunch.com/2026/11/15/is-bad-news-for-jensen-huang-also-bad-news-for-the-ai-industry/",
+     "tags": [
+      "Nvidia",
+      "Business",
+      "AIChip",
+      "VentureCapital"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "資安長八月已離職：輝達防護漏洞凸顯企業對高層社交工程防範無力",
+      "en": "Former Intelligence Officials Question Nvidia Security Protocols Following CISO Departure"
+     },
+     "detail": {
+      "zh": "報導披露輝達資安長於八月悄然離職，而黃仁勳涉嫌外洩技術情報的私人關係反映出傳統企業資安團隊難以防範高層日常社交網路中的社交工程。資安專家警告，關鍵 AI 技術外溢防護已超越端點安全範疇，轉變為複雜的反情報防禦課題。",
+      "en": "Reports revealed that Nvidia's security chief quietly departed in August, leaving an internal void just as alleged leaks occurred through executive personal interactions. Counterintelligence experts note that safeguarding frontier AI IP requires counter-espionage measures far beyond conventional enterprise endpoint security."
+     },
+     "source": "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/",
+     "tags": [
+      "Security",
+      "Nvidia",
+      "Enterprise",
+      "Governance"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "馬斯克等科技領袖發起聯署要求輝達讓黃仁勳復職，簽署人數已迅速突破 11.5 萬大關。",
+      "en": "A petition backed by Elon Musk and tech executives demanding Jensen Huang's reinstatement has surpassed 115,000 signatures."
+     },
+     "source": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/"
+    },
+    {
+     "headline": {
+      "zh": "外媒深度回顧黃仁勳下台始末：從中資算力商秘密接觸到董事會權力真空的動盪風暴。",
+      "en": "The Verge recaps the chaotic timeline of Jensen Huang's downfall, tracing the covert broker ties to Nvidia's boardroom crisis."
+     },
+     "source": "https://www.theverge.com/column/1033943/jensen-huang-nvidia-china-spying-scandal-resignation"
+    },
+    {
+     "headline": {
+      "zh": "週六夜現場（SNL）演出諷刺短劇，辛辣調侃科技巨頭涉入情色間諜戰與社交尷尬名場面。",
+      "en": "Saturday Night Live aired a sketch lampooning Silicon Valley tycoons and clumsy corporate spycraft."
+     },
+     "source": "https://techcrunch.com/2026/11/15/snl-gathers-all-the-tech-tycoons-for-a-lesson-in-dating-and-spycraft/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-11-16T07:01+08:00"
+}
