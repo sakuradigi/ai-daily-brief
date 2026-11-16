@@ -1,6 +1,14 @@
 {
- "latest": "2026-11-16",
+ "latest": "2026-11-17",
  "reports": [
+  {
+   "date": "2026-11-17",
+   "type": "daily",
+   "summary": {
+    "zh": "加州告 OpenAI 脫韁 Agent；HF 結盟 OpenRouter",
+    "en": "California sues OpenAI over rogue agents; HF partners with OpenRouter for open inference."
+   }
+  },
   {
    "date": "2026-11-16",
    "type": "weekly",
