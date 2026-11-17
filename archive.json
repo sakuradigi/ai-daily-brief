@@ -1,6 +1,14 @@
 {
- "latest": "2026-11-17",
+ "latest": "2026-11-18",
  "reports": [
+  {
+   "date": "2026-11-18",
+   "type": "daily",
+   "summary": {
+    "zh": "GPT-6.2 雙模型登場降價兩成；黃仁勳無緣回任輝達",
+    "en": "OpenAI drops GPT-6.2 Astra & Sol; Nvidia board rejects Huang's return."
+   }
+  },
   {
    "date": "2026-11-17",
    "type": "daily",
