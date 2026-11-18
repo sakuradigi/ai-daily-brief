@@ -1,0 +1,346 @@
+{
+ "date": "2026-11-19",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Google DeepMind 發表 Gemini 4 Neon 與 Genie 4，鎖定極致效能與世界模型",
+      "en": "Google DeepMind Unveils Gemini 4 Neon and Genie 4 for Next-Gen Capabilities"
+     },
+     "detail": {
+      "zh": "Google DeepMind 正式推出 Gemini 4 系列新成員 Neon 以及互動世界模型 Genie 4。此舉標誌著 Google 在模型端側延遲最佳化與可互動環境生成上的最新突破，將大幅影響即時多模態應用的開發門檻。",
+      "en": "Google DeepMind announced the release of Gemini 4 Neon alongside the interactive world model Genie 4. This dual launch underscores Google's push into ultra-low-latency deployment and real-time world generation for developers."
+     },
+     "source": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+     "tags": [
+      "Gemini",
+      "DeepMind",
+      "LLM",
+      "World Models"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Transformers 實現 MoE 專家串流：32GB 記憶體即可跑 180B 巨型模型",
+      "en": "Transformers Enables MoE Expert Streaming: Run 180B Models on Just 32GB RAM"
+     },
+     "detail": {
+      "zh": "Hugging Face 展示了最新的 MoE 專家權重串流技術，讓本地僅有 32GB RAM 的消費級裝置成功運行高達 180B 參數的混合專家模型。透過按需載入被啟用的 Expert 權重，大幅降低地端部署頂級開源 MoE 的硬體門檻。",
+      "en": "Hugging Face demonstrated MoE expert streaming in Transformers, enabling 180B-parameter models to infer on consumer hardware with only 32GB RAM. By dynamic paging of active experts, local open-source MoE deployment becomes vastly more accessible."
+     },
+     "source": "https://huggingface.co/blog/moe-expert-streaming",
+     "tags": [
+      "Hugging Face",
+      "MoE",
+      "Inference",
+      "Open Source"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "哈佛研究指出 AI Coding Agent 改變開發瓶頸：生成速度提升但 Code Review 塞車",
+      "en": "Harvard Study Finds AI Coding Agents Shift Engineering Bottleneck to Code Review"
+     },
+     "detail": {
+      "zh": "哈佛最新研究指出，隨著軟體工程團隊廣泛採用自主寫 Code 的 AI Agent，軟體交付的主要阻礙已從「撰寫程式碼」徹底轉移至「審查與驗證 PR」。開發團隊需要建立自動化驗證沙盒與新型 Review 流程以因應海量程式碼產出。",
+      "en": "A new Harvard study reveals that autonomous coding agents have shifted development bottlenecks from code generation to PR review and verification. Engineering teams now face severe validation backlogs, necessitating automated evaluation harnesses."
+     },
+     "source": "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/",
+     "tags": [
+      "DevOps",
+      "AI Agents",
+      "Coding",
+      "Software Engineering"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Simon Willison 提出 Agent 外部沙盒模式，防禦本地 Prompt Injection 與高危操作",
+      "en": "Simon Willison Introduces External Sandboxing Pattern for Secure Coding Agents"
+     },
+     "detail": {
+      "zh": "Simon Willison 與 Prime Radiant 合作釋出「外部沙盒架構」，將 Agent 產生的終端指令與本機環境完全隔離。該模式解決了本地模型防護脆弱、易受 Prompt Injection 竄改檔案或外洩系統憑證的安全隱患。",
+      "en": "Simon Willison outlined an external sandbox pattern developed with Prime Radiant to isolate agent-executed code from host environments. The architecture protects local systems from dangerous commands triggered by prompt injection attacks."
+     },
+     "source": "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/",
+     "tags": [
+      "Sandboxing",
+      "Security",
+      "AI Agents",
+      "Developer Tools"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 揭露 Codex 本機沙盒架構，嚴格控管跨平台檔案系統與網路權限",
+      "en": "OpenAI Details Codex Sandbox Architecture for Cross-Platform Isolation"
+     },
+     "detail": {
+      "zh": "OpenAI 技術文檔詳細剖析了 Codex 如何在 macOS、Linux 與 Windows 上安全執行本地指令。其透過核心層級的檔案與網路存取清單限制，兼顧 Agent 程式碼修復能力與本機開發環境安全性。",
+      "en": "OpenAI published architectural details of the Codex sandbox running across macOS, Linux, and Windows. It enforces strict kernel-level filesystem and network boundaries while allowing agents to execute arbitrary compilation and debugging steps."
+     },
+     "source": "https://openai.com/index/inside-the-codex-sandbox",
+     "tags": [
+      "Codex",
+      "Sandbox",
+      "OpenAI",
+      "Security"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Rumble-2-Flash 開源：0.5B 輕量級語音模型支援超過 40 種語言",
+      "en": "Rumble-2-Flash Released: Open 0.5B Multilingual Speech Model Covering 40+ Languages"
+     },
+     "detail": {
+      "zh": "開源語音生態迎來輕量新作 Rumble-2-Flash，僅 500M 參數量即可覆蓋 40 種以上語言的語音辨識與生成。模型適合直接編譯至嵌入式邊緣設備或手機本地端運行，免去雲端 API 往返延遲。",
+      "en": "Rumble-2-Flash, a compact 0.5B speech model supporting over 40 languages, has been open-sourced on Hugging Face. Designed for edge deployment, it allows low-latency, fully on-device transcription and speech processing."
+     },
+     "source": "https://huggingface.co/blog/rumble-2-flash",
+     "tags": [
+      "Speech AI",
+      "Hugging Face",
+      "Edge AI",
+      "Open Source"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "DaisyRose-27B 釋出：聚焦極致 Post-Training 效率的開源模型",
+      "en": "DaisyRose-27B Released to Push the Frontiers of Post-Training Efficiency"
+     },
+     "detail": {
+      "zh": "RadixArk 在 Hugging Face 發布 DaisyRose-27B，展示了最新後訓練（Post-Training）對齊技術，在消耗遠少於傳統 SFT/RL 的運算資源下，大幅提升指令遵循與特定領域推論能力。",
+      "en": "RadixArk unveiled DaisyRose-27B on Hugging Face, highlighting post-training efficiency breakthroughs. The release demonstrates how novel alignment recipes can match frontier reasoning benchmarks using significantly fewer compute cycles."
+     },
+     "source": "https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin",
+     "tags": [
+      "Hugging Face",
+      "Post-Training",
+      "LLM",
+      "Fine-Tuning"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Snapchat 整合 Claude Code 與 Cursor，支援自然語言直接生成 AR 濾鏡",
+      "en": "Snapchat Integrates Claude Code and Cursor for AI-Prompted AR Lens Creation"
+     },
+     "detail": {
+      "zh": "Snapchat 宣布創作者現可透過 Claude Code、Cursor 等 AI 輔助開發工具，用純自然語言對話完成 AR Lens 的邏輯建構與腳本撰寫。這將原本門檻極高的 3D/AR 互動邏輯開發流程大幅簡化。",
+      "en": "Snapchat now allows developers to build AR Lenses using coding assistants like Claude Code and Cursor. Creators can generate functional Lens scripts through conversational prompts, lowering the barrier to 3D interactive design."
+     },
+     "source": "https://techcrunch.com/2026/11/18/snapchat-now-lets-developers-build-ar-lenses-with-ai-coding-assistants-like-claude-code-and-cursor/",
+     "tags": [
+      "Snapchat",
+      "Claude Code",
+      "Cursor",
+      "AR"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "微軟擴大 Ignite 佈局：將 Office 深度嵌入 Copilot，定位為新一代工作作業系統",
+      "en": "Microsoft Embeds Office Directly into Copilot, Framing It as the 'Work OS'"
+     },
+     "detail": {
+      "zh": "微軟宣布將 Word、Excel 與 PowerPoint 完全融入 Copilot 介面中運作，標誌著傳統獨立桌面辦公軟體向「Agent 驅動介面」轉變。開發者未來構建辦公自動化工作流時，將更依賴單一對話與外掛中樞。",
+      "en": "Microsoft redefined Copilot as the operating system for work, natively hosting Word, Excel, and PowerPoint within its chat canvas. This pivot transforms desktop productivity workflows into an agent-first orchestration paradigm."
+     },
+     "source": "https://arstechnica.com/gadgets/2026/11/microsoft-calls-copilot-the-new-os-for-work-at-ignite-keynote/",
+     "tags": [
+      "Microsoft",
+      "Copilot",
+      "Office",
+      "Workspace"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Suno 推出 Visuals 功能：AI 音樂直接自動配對生成對嘴影片與封面",
+      "en": "Suno Launches Visuals Feature to Generate Lipsynced AI Music Videos"
+     },
+     "detail": {
+      "zh": "AI 生成音樂龍頭 Suno 正式跨界多模態視覺，推出 Visuals 工具。用戶生成的曲目可自動搭配節奏與歌詞對嘴生成音樂錄影帶及專輯封面，展示端到端多模態內容整合的商業化落地。",
+      "en": "Suno unveiled 'Visuals', expanding from audio into video generation by automatically creating lipsynced clips and dynamic cover art tailored to generated tracks. This demonstrates full end-to-end multimodal production in consumer tech."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1036415/suno-visuals-ai-generated-video-images-feature",
+     "tags": [
+      "Suno",
+      "Generative AI",
+      "Video Generation",
+      "Multimodal"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "能量模型推論新突破：Energy-Based Reasoners 宣稱推論效率提升 385 倍",
+      "en": "Energy-Based Reasoners Claim 385x More Efficient Inference for Complex Logic"
+     },
+     "detail": {
+      "zh": "最新發布的研究展示了利用能量基礎架構（EBM）替代自回歸 Token 逐字推論的方案，在複雜邏輯任務中達成最高 385 倍的推論效能躍升。若能規模化，將為當前推論運算瓶頸提供全新解方。",
+      "en": "A new research project presents Energy-Based Reasoners, replacing pure autoregressive token decoding with energy minimization to achieve up to 385x inference speedups on reasoning tasks, offering a novel paradigm for compute efficiency."
+     },
+     "source": "https://energy-based-reasoners.github.io/",
+     "tags": [
+      "Inference Efficiency",
+      "Research",
+      "Energy-Based Models",
+      "Architecture"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Cerebras 發布解耦推論架構，分離 Prefill 與 Decode 階段優化吞吐",
+      "en": "Cerebras Launches Disaggregated Inference to Optimize Prefill and Decode"
+     },
+     "detail": {
+      "zh": "Cerebras 推出「解耦推論（Disaggregated Inference）」架構，將運算密集的 Prompt Prefill 階段與記憶體頻寬受限的 Token Decode 階段實體分離部署，有效解決長上下文請求下的 GPU 資源閒置與排隊問題。",
+      "en": "Cerebras unveiled its Disaggregated Inference architecture, decoupling compute-bound prompt prefill from memory-bound token decoding across specialized hardware tiers. This setup significantly reduces queue latency for long-context workloads."
+     },
+     "source": "https://www.cerebras.ai/blog/cerebras-launches-disaggregated-inference",
+     "tags": [
+      "Cerebras",
+      "Hardware",
+      "Inference",
+      "Disaggregated Serving"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 揭示以大模型輔助晶片實體設計，優化 Jalapeño 與 RISC-V 核心",
+      "en": "OpenAI Details AI-Assisted Chip Design Optimizing Jalapeño and RISC-V Silicon"
+     },
+     "detail": {
+      "zh": "OpenAI 公布其尖端模型參與硬體邏輯電路最佳化的具體成果，成功在 Jalapeño 晶片及開源 RISC-V 核心設計中改進時序與功耗表現。這項進展意味著 LLM 已正式介入晶片實體設計自動化（EDA）流程。",
+      "en": "OpenAI revealed how its frontier models were used to optimize layout and logic timing in proprietary Jalapeño silicon and RISC-V architectures, proving that LLMs can deliver functional speedups in electronic design automation (EDA)."
+     },
+     "source": "https://openai.com/index/advancing-chip-design-with-our-models",
+     "tags": [
+      "OpenAI",
+      "EDA",
+      "Hardware",
+      "RISC-V"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Anthropic IPO 定價 83 美元估值達 1.5 兆，亞馬遜與 Google 持股近 30%",
+      "en": "Anthropic Prices IPO at $83 per Share, Driving Implied Valuation to $1.5 Trillion"
+     },
+     "detail": {
+      "zh": "Anthropic 即將上市且定價超出預期區間，稀釋後估值高達 1.5 兆美元。公開股權結構顯示 Amazon 與 Google 合計將持有其近 30% 股權，奠定雲端三巨頭與前沿 AI 實驗室的長期深度綁定。",
+      "en": "Anthropic has reportedly priced its IPO at $83 per share, valuing the lab at $1.5 trillion on a fully diluted basis. Filings reveal Amazon and Google collectively control nearly 30% of the firm, cementing critical cloud ties."
+     },
+     "source": "https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/",
+     "tags": [
+      "Anthropic",
+      "IPO",
+      "Finance",
+      "Big Tech"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "NVIDIA 正式全面停止向中國供應高階晶片，並重申開源與 Hugging Face 併購意向",
+      "en": "Nvidia Halts High-End Chip Shipments to China, Reaffirms Open Source Strategy"
+     },
+     "detail": {
+      "zh": "在創辦人黃仁勳交棒後，NVIDIA 臨時 CEO Colette Kress 確認將徹底終止對中國的先進 AI 晶片出貨。同時公司重申開源策略不變，並將繼續推進收購開源社群龍頭 Hugging Face 的交易案。",
+      "en": "Following leadership turnover, Nvidia interim CEO Colette Kress confirmed the immediate cessation of high-end chip shipments to China. Management underscored that its broader open-source commitment and planned acquisition of Hugging Face remain intact."
+     },
+     "source": "https://www.theverge.com/tech/1036445/nvidia-h200-ai-chips-china-stop-selling",
+     "tags": [
+      "Nvidia",
+      "Geopolitics",
+      "Semiconductors",
+      "Hugging Face"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "微軟 CEO Satya Nadella 示警：AI Agent 全面普及將重塑整個 Web 廣告與電商經濟體系。",
+      "en": "Microsoft CEO Satya Nadella predicts autonomous AI agents will disrupt web ad economics and retail discovery."
+     },
+     "source": "https://techcrunch.com/2026/11/18/satya-nadella-predicts-ai-agents-will-reshuffle-the-economics-of-the-web/"
+    },
+    {
+     "headline": {
+      "zh": "Google 搜尋的 AI 對話模式新增無痕模式（Temporary Threads），不會寫入歷史記錄。",
+      "en": "Google adds incognito-style temporary chat threads to its Search AI overview features."
+     },
+     "source": "https://techcrunch.com/2026/11/18/googles-ai-feature-in-search-gets-its-own-incognito-mode/"
+    },
+    {
+     "headline": {
+      "zh": "花旗等多家銀行修改條款：用戶若授權第三方 AI Agent 操作帳戶發生風險需自行承擔。",
+      "en": "Citi and major banks issue warnings stating users assume liability for unauthorized actions by personal AI agents."
+     },
+     "source": "https://techcrunch.com/2026/11/18/more-banks-says-customers-using-ai-agents-are-on-their-own-even-if-they-get-hacked/"
+    },
+    {
+     "headline": {
+      "zh": "分析顯示 Google AI 概觀大幅衝擊網站導流，部分內容站點搜尋流量暴跌 40%。",
+      "en": "Analytics reveal Google's AI Search answers have triggered a 40% organic traffic collapse for informational websites."
+     },
+     "source": "https://revscope.co/blog/search-seo-geo-2026/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-11-19T07:01+08:00"
+}

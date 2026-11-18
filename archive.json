@@ -1,6 +1,14 @@
 {
- "latest": "2026-11-18",
+ "latest": "2026-11-19",
  "reports": [
+  {
+   "date": "2026-11-19",
+   "type": "daily",
+   "summary": {
+    "zh": "Gemini 4 Neon問世；MoE串流破局，開源推論門檻大降",
+    "en": "Gemini 4 Neon launches; MoE expert streaming slashes local inference barriers."
+   }
+  },
   {
    "date": "2026-11-18",
    "type": "daily",
