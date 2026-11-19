@@ -100,11 +100,11 @@
 const T = {
   zh: { title: "⚡ AI 時事快報", daily: "日報", weekly: "週報", expand: "全部展開", collapse: "全部收合",
         archive: "📁 封存", latest: "← 最新一期", source: "→ 原文", weeklyTitle: "本週綜觀",
-        foot: "每日自動更新 · 週一為週報", err: "讀取失敗。若在本機開啟，請先啟動本地伺服器：python3 -m http.server",
+        foot: "隔日更新 · 週一為週報", err: "讀取失敗。若在本機開啟，請先啟動本地伺服器：python3 -m http.server",
         weekdays: ["週日","週一","週二","週三","週四","週五","週六"] },
   en: { title: "⚡ AI Daily Brief", daily: "Daily", weekly: "Weekly", expand: "Expand all", collapse: "Collapse all",
         archive: "📁 Archive", latest: "← Latest", source: "→ Source", weeklyTitle: "Week in Review",
-        foot: "Updated daily · Weekly edition on Mondays", err: "Failed to load. If opening locally, run: python3 -m http.server",
+        foot: "Updated every other day · Weekly edition on Mondays", err: "Failed to load. If opening locally, run: python3 -m http.server",
         weekdays: ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"] }
 };
 let lang = localStorage.getItem('lang') || 'zh';

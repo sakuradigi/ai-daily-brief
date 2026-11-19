@@ -17,19 +17,27 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # 當日報告若已存在，整個 job 綠燈跳過（避免重複觸發造成紅叉）
-      - name: Skip if today already done
+      # 出報節奏：距上期滿 INTERVAL_DAYS 天才出（預設 2＝隔日出），週一一律出週報。
+      # 未到期就整個 job 綠燈跳過。抓取時間窗自動涵蓋「自上期以來」。
+      # 想改回每天出：Settings → Variables 新增 INTERVAL_DAYS=1
+      - name: Cadence check
         id: guard
+        env:
+          INTERVAL_DAYS: ${{ vars.INTERVAL_DAYS || '2' }}
         run: |
-          DATE=$(TZ=Asia/Taipei date +%F)
-          F="reports/${DATE:0:4}/${DATE:5:2}/${DATE}.json"
-          if [ -f "$F" ]; then
-            echo "已存在 $F，跳過本次生成"
-            echo "skip=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "尚無 $F，繼續生成"
-            echo "skip=false" >> "$GITHUB_OUTPUT"
-          fi
+          python3 - <<'EOF' >> "$GITHUB_OUTPUT"
+          import datetime, json, os, sys, zoneinfo
+          today = datetime.datetime.now(zoneinfo.ZoneInfo("Asia/Taipei")).date()
+          latest = datetime.date.fromisoformat(json.load(open("archive.json"))["latest"])
+          gap = (today - latest).days
+          interval = int(os.environ["INTERVAL_DAYS"])
+          monday = today.weekday() == 0
+          run = gap >= interval or (monday and gap >= 1)
+          cutoff = min(max(gap, 1) * 24 + 2, 74)
+          print(f"今天 {today}，上期 {latest}（相隔 {gap} 天，間隔設定 {interval}，週一={monday}）→ {'出報' if run else '跳過'}，抓取窗 {cutoff}h", file=sys.stderr)
+          print(f"skip={'false' if run else 'true'}")
+          print(f"cutoff_hours={cutoff}")
+          EOF
 
       - uses: actions/setup-python@v5
         if: steps.guard.outputs.skip == 'false'
@@ -42,6 +50,8 @@ jobs:
 
       - name: Fetch sources
         if: steps.guard.outputs.skip == 'false'
+        env:
+          CUTOFF_HOURS: ${{ steps.guard.outputs.cutoff_hours }}
         run: python scripts/fetch_sources.py
 
       - name: Generate report

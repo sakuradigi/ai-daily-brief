@@ -63,7 +63,7 @@ PROMPT_TEMPLATE = """你是「AI 時事快報」的主編，為技術宅讀者�
 - 雙語皆為完整撰寫（正體中文、English），不是互譯腔；中文用台灣用語
 
 {weekly_instructions}
-## 原始素材（過去 24 小時，含來源權重與社群分數）
+## 原始素材（自上期以來，含來源權重與社群分數）
 {sources}
 """
 
@@ -85,6 +85,8 @@ TRANSIENT = {429, 500, 502, 503, 504}
 
 def call_gemini(prompt: str) -> str:
     key = os.environ["GEMINI_API_KEY"]
+    # 只印末四碼（與 AI Studio 列表顯示一致），方便對照用的是哪把 key
+    print(f"INFO GEMINI_API_KEY 末四碼: ...{key[-4:]}", file=sys.stderr)
     candidates = []
     if os.environ.get("GEMINI_MODEL"):
         candidates.append(os.environ["GEMINI_MODEL"])
