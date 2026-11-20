@@ -1,6 +1,14 @@
 {
- "latest": "2026-11-19",
+ "latest": "2026-11-21",
  "reports": [
+  {
+   "date": "2026-11-21",
+   "type": "daily",
+   "summary": {
+    "zh": "Gemini 4 Neon 登場；AI 跨入晶片設計與純數證明",
+    "en": "Gemini 4 Neon drops as AI tackles CPU design and math proofs."
+   }
+  },
   {
    "date": "2026-11-19",
    "type": "daily",

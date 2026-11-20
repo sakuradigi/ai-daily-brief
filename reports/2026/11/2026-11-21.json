@@ -1,0 +1,299 @@
+{
+ "date": "2026-11-21",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Google 發表 Gemini 4 Neon，登頂工程能力跑分榜",
+      "en": "Google Unveils Gemini 4 Neon, Taking Top Spot on Models Engineering Index"
+     },
+     "detail": {
+      "zh": "Google 與 DeepMind 正式推出 Gemini 4 Neon 模型，社群實測顯示其具備挑戰頂級前沿模型的代碼與工程實力，並迅速登上 Models Engineering Index 第一名。開發者需留意其計費策略變更，定價梯次隨著架構演進出現顯著調整。",
+      "en": "Google and DeepMind introduced Gemini 4 Neon, immediately capturing the #1 position on the Models Engineering Index with strong engineering capabilities. Developers should note the shifting pricing structure across the Gemini 4 lineup as token tiers evolve."
+     },
+     "source": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+     "tags": [
+      "Gemini",
+      "LLM",
+      "Google"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "全由 AI 設計驗證：全新 CPU 微架構 Frostbite 發表",
+      "en": "Frostbite: A New CPU Architecture Discovered, Designed, and Verified by AI"
+     },
+     "detail": {
+      "zh": "Architect Labs 發表名為 Frostbite 的全新 CPU 架構，從指令集探索、微架構設計到邏輯驗證全程由 AI 自主推導完成。這代表硬體 EDA 領域迎來重大範式轉移，AI 正從單純輔助 RTL 編寫邁向端到端的微處理器合成。",
+      "en": "Architect Labs introduced Frostbite, an entirely new CPU architecture discovered, designed, and formally verified by AI agents. This marks a paradigm shift in EDA, proving autonomous AI systems can synthesize functional processors end-to-end."
+     },
+     "source": "https://architectlabs.com/blog/frostbite",
+     "tags": [
+      "Hardware",
+      "EDA",
+      "AI Architecture"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "純數學重大突破：數學家宣稱藉由 Claude 協助破解黎曼猜想",
+      "en": "Anthropic Mathematician Claims Proof of Riemann Hypothesis with Claude"
+     },
+     "detail": {
+      "zh": "數學家 Levent Alpöge 表示在 Claude 輔助下推導出黎曼猜想及廣義黎曼猜想的無假設形式化證明，引發學界高度關注。儘管學界目前正在嚴格審查該手稿，此舉已展示大語言模型在極限符號推演與高階數學發現上的實質潛力。",
+      "en": "Mathematician Levent Alpöge announced a purported formal proof of the Riemann Hypothesis and its generalized form developed alongside Claude. While peer review is ongoing, the result highlights the accelerating role of LLMs in advancing frontier pure mathematics."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem",
+     "tags": [
+      "Anthropic",
+      "Claude",
+      "Mathematics"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Hugging Face 釋出端側專用模型 Inkling 2 Mini 與 Harness Adapters",
+      "en": "Hugging Face Releases Inkling 2 Mini for Local Deployments and Harness Adapters"
+     },
+     "detail": {
+      "zh": "Hugging Face 發布適合本地部署的輕量級 Inkling 2 Mini，主打極低延遲與邊緣設備推論效能；同步推出的 Harness Adapters 則允許開發者動態調適評測線程，在不重載模型權重下降低跑分與微調成本。",
+      "en": "Hugging Face unveiled Inkling 2 Mini, an edge-ready compact model optimized for local developer rigs, alongside Harness Adapters designed to streamline benchmark harness integration and reduce evaluation overhead at scale."
+     },
+     "source": "https://huggingface.co/blog/inkling2mini",
+     "tags": [
+      "OpenSource",
+      "LocalAI",
+      "HuggingFace"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "llm-gemini 擴充套件更新至 0.38，全面支援 Gemini 4 Neon",
+      "en": "llm-gemini CLI Plugin Reaches 0.38 with Native Gemini 4 Neon Support"
+     },
+     "detail": {
+      "zh": "Simon Willison 維護的 CLI 工具 llm-gemini 發布 0.38 版，第一時間整合 Gemini 4 Neon API。此版本協助開發者在命令列直接呼叫新模型，並處理了複雜的計費端點映射問題。",
+      "en": "Simon Willison updated the open-source llm-gemini CLI plugin to v0.38, bringing instant terminal access to Gemini 4 Neon while abstracting new API endpoints and complex tier structures for developers."
+     },
+     "source": "https://simonwillison.net/2026/Nov/18/llm-gemini/",
+     "tags": [
+      "CLI",
+      "Tools",
+      "DeveloperTools"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Gemini macOS 版支援電腦操作（Computer Use），執行跨應用自動化",
+      "en": "Google Gemini for Mac Enables Native Computer Use for Desktop Automation"
+     },
+     "detail": {
+      "zh": "Google 正式為 macOS 版 Gemini 加入電腦控制權限，AI 代理可直接瀏覽檔案、跨應用填寫表單並完成多步驟工作流。此舉標誌著桌面端原生 Agent 競爭白熱化，直接對標 Anthropic 的 Computer Use 機制。",
+      "en": "Google rolled out Computer Use capabilities in the Gemini macOS client, allowing the agent to parse files, fill forms, and automate multi-step desktop tasks natively across operating system environments."
+     },
+     "source": "https://www.theverge.com/tech/1037902/google-gemini-macos-ai-computer-use",
+     "tags": [
+      "Gemini",
+      "ComputerUse",
+      "Agents"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 揭露「Performance Factory」架構，利用 Codex 自主修復推論延遲",
+      "en": "OpenAI Details 'Performance Factory' Using Codex to Automate ChatGPT Optimization"
+     },
+     "detail": {
+      "zh": "OpenAI 公布其內部維護 ChatGPT 服務低延遲的系統架構，透過 Codex 驅動的工作流自動捕捉生產環境效能瓶頸、剖析 trace 並提出修復補丁，大幅縮短工程師排查系統回歸的時間。",
+      "en": "OpenAI revealed the architecture behind Performance Factory, a Codex-powered continuous profiling pipeline that autonomously detects backend latency regressions and submits optimization PRs to keep ChatGPT responsive."
+     },
+     "source": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
+     "tags": [
+      "OpenAI",
+      "Codex",
+      "DevOps"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "隱私反制：Signal 全面禁止 Android 與 iOS 螢幕擷圖以阻絕 AI Agent 讀取",
+      "en": "Signal Restricts OS Screenshots to Block AI Agents from Ingesting Private Chats"
+     },
+     "detail": {
+      "zh": "為防止各家作業系統深度整合的視覺 AI Agent 掃描螢幕外洩聊天隱私，Signal 在雙行動平台全面啟用截圖阻擋。這突顯了作業系統層級多模態 Agent 與端對端加密通訊工具之間的架構衝突。",
+      "en": "Signal enforced mobile screenshot restrictions on iOS and Android to prevent OS-level multimodal AI agents like Gemini and Siri from scanning user conversations, setting boundaries against intrusive ambient agents."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1038390/signal-blocking-ai-agent-screenshots-mobile-app",
+     "tags": [
+      "Security",
+      "Privacy",
+      "Signal"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "無需反向傳播：研究提出將 CPU 邏輯電路直接編譯進 LLM 權重",
+      "en": "A CPU Inside an LLM: Zero-Gradient Compilation of Deterministic Circuits"
+     },
+     "detail": {
+      "zh": "論文提出零梯度電路嫁接技術（circuit-grafting），直接以閉合形式將多位元算術等精確離散計算編譯進預訓練權重，完全無需樣本訓練或額外工具調用，且不損壞語言理解能力。",
+      "en": "Researchers demonstrated zero-gradient compilation that grafts exact multi-digit logic circuits directly into pretrained LLM weights without SGD, bridging discrete arithmetic guarantees with natural language representations."
+     },
+     "source": "https://arxiv.org/abs/2611.26450v1",
+     "tags": [
+      "ArXiv",
+      "Architecture",
+      "Interpretability"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "TideCache：針對 CPU-GPU 混合架構的大模型階層式快取調度系統",
+      "en": "TideCache: Transparent Cache Management and Layer Streaming for Hybrid LLM Serving"
+     },
+     "detail": {
+      "zh": "針對新型混合結構（如全域注意力結合狀態空間模型）在長文本下的顯存膨脹，TideCache 藉由固定虛擬地址在 CPU-GPU 異質記憶體間動態流轉 Page，大幅改善高併發服務輸送量。",
+      "en": "TideCache introduces an OS-level transparent cache pool for heterogeneous CPU-GPU superchips, paging complex key-value and recurrence states across memory hierarchies to scale concurrent LLM serving."
+     },
+     "source": "https://arxiv.org/abs/2611.26619v1",
+     "tags": [
+      "Inference",
+      "Systems",
+      "MemoryOptimization"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 釋出 MedChemBench：評測大模型早期藥物分子探索能力",
+      "en": "OpenAI Introduces MedChemBench for Molecular Reasoning in Drug Discovery"
+     },
+     "detail": {
+      "zh": "OpenAI 發布 MedChemBench 評測基準，專門衡量 AI 模型解讀分子 3D 結構、從生化實驗反饋中進行因果推演及挑選候選化合物的實戰能力，彌補過去僅依賴文字問答的不足。",
+      "en": "OpenAI launched MedChemBench to rigorously test how frontier models interpret stereochemistry, synthesize wet-lab experimental evidence, and prioritize viable candidates during early-stage medicinal chemistry."
+     },
+     "source": "https://openai.com/index/introducing-medchembench",
+     "tags": [
+      "DrugDiscovery",
+      "Benchmark",
+      "BioAI"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Anthropic 登陸那斯達克募資破紀錄，但未能阻止科技板塊震盪",
+      "en": "Anthropic Debuts on Nasdaq Under 'ANT' Amid High Compute Capital Demands"
+     },
+     "detail": {
+      "zh": "Anthropic 正式在那斯達克掛牌上市（代號 ANT），首日開盤價達 111.5 美元，募資規模突破千億美元。然而受限於硬體基建龐大承諾與市場對 AI 資本循環槓桿的擔憂，後續交易帶動了科技股的大幅拋售。",
+      "en": "Anthropic made its public market debut on Nasdaq at $111.50 per share, raising record funds, but global markets faced sharp volatility over rising infrastructure spending and circular cloud financing commitments."
+     },
+     "source": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
+     "tags": [
+      "Anthropic",
+      "IPO",
+      "Finance"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "川普警告將對赴海外興建 AI 資料中心的美國企業課徵重稅",
+      "en": "Trump Threatens Heavy Tariffs on AI Data Centers Built Outside the US"
+     },
+     "detail": {
+      "zh": "面對美國本土各州因電網承載與環保法規對超大型算力中心審批收緊，川普表態將對出走海外建置資料中心的美國科技巨頭課徵重稅，為雲端廠商的跨國分散式算力布局帶來重大政策變數。",
+      "en": "Donald Trump threatened heavy taxes against tech firms deploying data center infrastructure overseas, creating significant regulatory uncertainty as hyperscalers navigate domestic grid constraints."
+     },
+     "source": "https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax",
+     "tags": [
+      "Regulation",
+      "DataCenters",
+      "Infrastructure"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 發表分層防護架構，主動反制第三方透過提示詞對前沿模型進行對抗性蒸餾",
+      "en": "OpenAI detailed a multi-layered defense pipeline combining safety checks and runtime anomaly detection to prevent adversarial model distillation."
+     },
+     "source": "https://openai.com/index/combatting-adversarial-distillation"
+    },
+    {
+     "headline": {
+      "zh": "安全研究員在 AI 供應鏈植入追蹤 Canary，證實用戶私有提示詞正遭廣泛洩漏",
+      "en": "Security researchers placed canary tokens across AI platforms, revealing alarming data leakage throughout upstream model supply chains."
+     },
+     "source": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/"
+    },
+    {
+     "headline": {
+      "zh": "Google 搜尋首頁改版測試：移除傳統搜尋按鈕，直接整合側邊欄 AI 對話歷程",
+      "en": "Google tested a redesigned homepage eliminating the classic search button in favor of a collapsible AI chat sidebar."
+     },
+     "source": "https://arstechnica.com/ai/2026/11/googles-latest-search-page-redesign-drops-the-search-button-adds-ai-sidebar/"
+    },
+    {
+     "headline": {
+      "zh": "微軟執行長 Nadella 直指多數關鍵基礎設施「根本無法打補丁」，呼籲正視 AI 網路威脅",
+      "en": "Microsoft CEO Satya Nadella cautioned that vast portions of critical global infrastructure remain fundamentally unpatchable against AI-driven cyber threats."
+     },
+     "source": "https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-11-21T07:01+08:00"
+}
