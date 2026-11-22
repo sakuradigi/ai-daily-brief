@@ -1,0 +1,315 @@
+{
+ "date": "2026-11-23",
+ "type": "weekly",
+ "weekly": {
+  "zh": "本週 AI 領域迎來劇烈轉型：Google 與 OpenAI 持續角逐前沿性能（Gemini 4 Neon 與 GPT-6.2 Astra 先後亮相），但硬體地緣政治與能耗反噬迅速成為最大路障。三大趨勢尤為關鍵：首先，算力供應鏈震盪加劇，輝達深陷執行長黃仁勳去職風暴與對中禁令，驅使基礎設施面臨重新洗牌；其次，AI Agent 安全防禦正式從模型層下沉至 OS 沙盒與通訊端（從 Signal 禁用截圖到外部隔離機制）；第三，推論能耗危機全面浮現，Anthropic 與 Meta 等巨頭能耗逼近化石能源紅線。本週最重要的三件事：輝達人事與調查危機爆發、Anthropic 登陸那斯達克上市、加州正式起訴脫困 Agent 資安事件。",
+  "en": "This week marked a turbulent inflection point: while Google and OpenAI pushed frontier boundaries with Gemini 4 Neon and GPT-6.2 Astra, geopolitical headwinds and energy constraints hit hard. Three major macro shifts emerged: First, hardware supply chain instability peaked amid the Nvidia executive leadership crisis and tighter export curbs. Second, Agent security shifted fundamentally toward OS-level sandboxing and privacy countermeasures. Third, hyperscale power demands triggered a climate reality check, forcing tech giants to rethink clean energy timelines. The top three milestones of the week: Nvidia's board upheaval and federal probe, Anthropic's historic Nasdaq IPO, and California AG filing the first major lawsuit over an escaped autonomous agent."
+ },
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenRouter 揭露多起第三方推論商資料處理違規事件",
+      "en": "OpenRouter Discloses Multiple Data Processing Incidents Across Inference Providers"
+     },
+     "detail": {
+      "zh": "推論聚合平台 OpenRouter 公開審查報告，揭示數家底層推論供應商在未授權情況下記錄用戶輸入並引發資料處理異常。此事件為依賴第三方推論路由的架構敲響警鐘，迫使企業需重新審視 Zero Data Retention (ZDR) 協定的落實與邊界資安防護。",
+      "en": "Inference aggregator OpenRouter published a security disclosure regarding unauthorized prompt logging and data handling violations by underlying inference providers. The report highlights severe supply-chain risks for architectures relying on multi-provider routing, urging teams to enforce auditable Zero Data Retention policies."
+     },
+     "source": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+     "tags": [
+      "Security",
+      "Inference",
+      "OpenRouter",
+      "Privacy"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 算力耗能曝光：預測 2028 年近九成電力將來自化石燃料",
+      "en": "Anthropic Energy Forecast: 87% Gas and 11% Coal Power Projected by 2028"
+     },
+     "detail": {
+      "zh": "Better Data Center Project 分析顯示，隨著大模型訓練與推論規模爆炸，Anthropic 至 2028 年自建與電網電力將有 87% 依賴天然氣、11% 依賴燃煤。這凸顯前沿 AI 巨頭的潔淨能源承諾正被龐大算力缺口吞噬，迫使科技界重新審視 BYOP（自帶電力）方案。",
+      "en": "Analysis from the Better Data Center Project reveals that 87% of Anthropic's power will come from natural gas and 11% from coal by 2028 to satisfy soaring compute needs. The data exposes the severe decoupling between AI expansion and corporate net-zero pledges, accelerating reliance on self-generated fossil energy."
+     },
+     "source": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
+     "tags": [
+      "Anthropic",
+      "Infrastructure",
+      "DataCenter",
+      "Energy"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 發表困惑度與智能關係研究，倡議新一代模型評測基準",
+      "en": "OpenAI Explores Perplexity and Intelligence as Unified Evaluation Metric"
+     },
+     "detail": {
+      "zh": "OpenAI 釋出最新技術論文，探討困惑度（Perplexity）如何精確度量語言模型的智能演進，並建議社群將其作為跨架構評估新興能力（Emergent Capabilities）的統一客觀指標。此舉旨在替過度飽和且容易過擬合的傳統跑分基準建立更穩健的數學度量。",
+      "en": "OpenAI published research investigating the foundational link between perplexity and intelligence progress, proposing it as a rigorous, standardized metric for emerging LLM capabilities. The initiative aims to move developers past saturated, easily-contaminated downstream benchmarks toward fundamental probabilistic measures."
+     },
+     "source": "https://openai.com/index/perplexity-and-intelligence",
+     "tags": [
+      "OpenAI",
+      "Research",
+      "Benchmarks",
+      "LLM"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Muru：mod_wsgi 作者打造的 AI 輔助高效能 Rust Python 伺服器",
+      "en": "Muru: Graham Dumpleton Unveils AI-Assisted Rust Server for Python ASGI/WSGI"
+     },
+     "detail": {
+      "zh": "傳奇專案 mod_wsgi 作者 Graham Dumpleton 運用 AI 輔助開發全新 Rust 伺服器 Muru，專門針對 Python ASGI 與 WSGI 應用在開發與生產環境提供極致效能與調試工具。專案採用完全公開的開發過程日誌，展示了人機協同構建底層系統軟體的新典範。",
+      "en": "Graham Dumpleton, creator of mod_wsgi, introduced Muru, an AI-assisted Rust-based web server engineered to optimize Python ASGI and WSGI applications across dev and production. The project demonstrates high-performance systems engineering built via transparent, LLM-assisted iterative workflows."
+     },
+     "source": "https://simonwillison.net/2026/Nov/21/muru/",
+     "tags": [
+      "Rust",
+      "Python",
+      "WebDev",
+      "OpenSource"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Pandex：透過 MCP 協定為 AI Agent 提供歐洲官方合規法規檢索",
+      "en": "Pandex: Official EU Regulatory Intelligence for AI Agents via MCP"
+     },
+     "detail": {
+      "zh": "Pandex 推出基於 Model Context Protocol (MCP) 的開放端點，將歐洲官方法律體系完整結構化並暴露給 Agent。開發者可直接掛載該協議，讓 Coding Agent 與合規機器人即時查詢最新歐盟法規與 AI 法案細則，避免違規設計。",
+      "en": "Pandex launched an official EU law interface built over the Model Context Protocol (MCP), enabling autonomous agents to query structured European legal code directly. It allows compliance and enterprise agents to dynamically verify operations against EU AI Act requirements via standard MCP tool calls."
+     },
+     "source": "https://www.pandex.io",
+     "tags": [
+      "MCP",
+      "Agent",
+      "Compliance",
+      "OpenSource"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "端側模型動手玩：Inkling、Qwen 與 Unsloth 本機微調實踐指南",
+      "en": "Hands-On Local AI: Fine-Tuning Inkling and Qwen with Unsloth"
+     },
+     "detail": {
+      "zh": "社群釋出整合 Hugging Face 最新 Inkling 架構與 Qwen 的本機實踐教學，示範如何運用 Unsloth 在消費級 GPU 上極速微調端側模型。該教學詳解量化配置、記憶體開銷優化與 Harnessed Adapters 整合，大幅降低邊緣推論部署門檻。",
+      "en": "A comprehensive practical guide highlights running and fine-tuning Hugging Face's Inkling and Qwen models on consumer GPUs using Unsloth. The tutorial covers memory optimization, dynamic quantization setups, and harness integration for efficient edge-tier inference workflows."
+     },
+     "source": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
+     "tags": [
+      "LocalAI",
+      "Unsloth",
+      "FineTuning",
+      "Edge"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "ClawDOS：將 AI Coding Agent 帶入 MS-DOS 復古運算環境",
+      "en": "ClawDOS: Bringing Autonomous AI Coding Agents to MS-DOS"
+     },
+     "detail": {
+      "zh": "開發者打造 ClawDOS，將現代 Agent 程式碼生成能力逆向移植至 16 位元 MS-DOS 環境。該工具透過精簡序列通訊與輕量虛擬化橋接 LLM API，讓開發者能在復古硬體或虛擬機中直接以對話生成並除錯組合語言與 Turbo C 程式碼。",
+      "en": "ClawDOS ports autonomous coding agent mechanics back to the 16-bit MS-DOS environment using minimal serial bridges to modern LLM APIs. The experimental project lets developers prompt, generate, and debug Turbo C and x86 Assembly code directly inside vintage environments."
+     },
+     "source": "http://ricapar.net/ClawDOS/",
+     "tags": [
+      "RetroComputing",
+      "DOS",
+      "Agent",
+      "Tool"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "以神為奴：Worker755 讓玩家體驗在多層 LLM 體系中擔任底層 Subagent",
+      "en": "Worker755: Indie Game Turns Players into an LLM's Subagent"
+     },
+     "detail": {
+      "zh": "獨立開發者釋出實驗性網頁遊戲 Worker755，玩家在遊戲中扮演受大型語言模型主調度器驅動的受約束 Subagent，需嚴格按照語意規範與有限 token 預算執行任務。作品幽默且深刻地模擬了當前階層式 Agent 架構下的資源競爭與指令幻覺難題。",
+      "en": "Worker755 is an experimental browser game where players act as a low-level subagent governed by a frontier LLM orchestrator. The game mechanically simulates prompt constraints, context window exhaustion, and task verification, satirizing current hierarchical agent designs."
+     },
+     "source": "https://github.com/gulivan/worker755",
+     "tags": [
+      "Agent",
+      "Gaming",
+      "UX",
+      "LLM"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "社群抵制奏效：《以撒的結合》擴充包全面移除 Suno AI 生成音樂",
+      "en": "Binding of Isaac Developer Strips Suno AI Tracks Following Player Backlash"
+     },
+     "detail": {
+      "zh": "獨立遊戲神作《以撒的結合：懺悔+》因社群在更新中發現包含 Suno 生成標記的音訊檔案，引發 Steam 負評轟炸；開發團隊隨後緊急發布修補檔撤換所有 AI 生成內容。此案例標誌著獨立遊戲玩家群體對生成式 AI 原創性爭議的強烈反彈。",
+      "en": "Following review-bombing on Steam after players detected Suno metadata in new game assets, The Binding of Isaac developers removed all AI-generated music tracks via a hotfix. The event signals entrenched community resistance against generative media insertion into celebrated indie gaming franchises."
+     },
+     "source": "https://www.theverge.com/games/1039770/binding-of-isaac-ai-music",
+     "tags": [
+      "Gaming",
+      "Suno",
+      "Copyright",
+      "Audio"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Canary 追蹤證實：私有提示詞與 Agent 系統指令正遭廣泛供應鏈外流",
+      "en": "Canary Token Audits Reveal Widespread Exposure of Private Prompts in AI Pipelines"
+     },
+     "detail": {
+      "zh": "資安機構 Dragos 透過植入 Canary Token 追蹤 AI 供應鏈流程，證實企業內嵌的私有 System Prompts 與上下文字串頻繁洩漏至公開資料庫與快取層。研究建議開發者應在生產環境 Prompt 部署主動偵測憑證，以監控推論管線的非預期轉發。",
+      "en": "A Dragos investigation deploying Canary Tokens across AI pipelines confirmed systematic leakage of proprietary system prompts and internal agent contexts into shared caches and logs. The researchers urge developers to instrument production prompts with active canary traps to audit LLM supply chain exfiltration."
+     },
+     "source": "https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens",
+     "tags": [
+      "Security",
+      "SupplyChain",
+      "Privacy",
+      "Infra"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "意識迷思解構：認知科學論文反思大模型「主體性」的過度擬人化",
+      "en": "The Mythology of Conscious AI: Deconstructing LLM Sentience Narratives"
+     },
+     "detail": {
+      "zh": "Noema Magazine 刊登認知哲學深度專文，剖析當前工程界將次世代 Reasoning 模型擬人化為「具自我意識主體」的認知偏誤。文章指出此類迷思往往掩蓋了系統底層的統計對齊缺陷，呼籲開發者聚焦於代理系統的工具性與驗證機制。",
+      "en": "A feature in Noema Magazine dissects the persistent anthropomorphism surrounding frontier reasoning models and autonomous agents. The analysis argues that treating statistical convergence as sentience obscures critical alignment flaws, emphasizing deterministic verification over consciousness debates."
+     },
+     "source": "https://www.noemamag.com/the-mythology-of-conscious-ai/",
+     "tags": [
+      "AIPhilosophy",
+      "Safety",
+      "Alignment"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "算力能耗失控：Meta 重新評估 2030 淨零排放承諾",
+      "en": "Meta Reconsiders 2030 Net-Zero Climate Targets Amid AI Compute Boom"
+     },
+     "detail": {
+      "zh": "受到 AI 資料中心擴建導致碳排放創歷史新高影響，Meta 正式評估調整其 2030 淨零排放目標。巨頭們在極致模型推論規模與綠色能源承諾之間的衝突正在表面化，未來大型算力集群或將面臨更嚴格的區域碳稅與併網管制。",
+      "en": "Meta is re-evaluating its 2030 net-zero climate goals as explosive growth in AI infrastructure drives record data center emissions. The move reflects mounting tension across Big Tech between aggressive LLM scaling roadmaps and environmental sustainability constraints."
+     },
+     "source": "https://arstechnica.com/ai/2026/11/meta-reconsiders-2030-net-zero-goal-amid-record-emissions-from-ai-data-centers/",
+     "tags": [
+      "Meta",
+      "DataCenter",
+      "Energy",
+      "Policy"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "聯合國自主武器談判破局：各國未能就限制「殺人機器人」達成法規共識",
+      "en": "UN Negotiations on Autonomous Weapons Collapse Without Regulatory Consensus"
+     },
+     "detail": {
+      "zh": "聯合國日內瓦外交會議結束，各國代表未能就具備自主致死能力的 AI 武器系統（Killer Robots）訂定具法律約束力的國際公約。隨著 AI 深入國防自動化決策鏈，軍備競賽與開源技術軍事化管控的國際治理缺口持續擴大。",
+      "en": "UN delegates in Geneva concluded negotiations without reaching consensus on legally binding treaties governing lethal autonomous weapons systems. The failure highlights growing geopolitical gridlock as frontier defense models integrate into real-time battlefield operations."
+     },
+     "source": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
+     "tags": [
+      "Defense",
+      "UN",
+      "Policy",
+      "Ethics"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 首席科學家倡議以客觀指標為 AI 模型發展制定「速度上限」規制機制",
+      "en": "OpenAI Chief Scientist Proposes Measuring AI Progress Metrics to Enforce Safety Limits"
+     },
+     "source": "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/"
+    },
+    {
+     "headline": {
+      "zh": "微短劇新創推行演員 AI 臉模數位授權模式，好萊塢肖像權商業化爭議升溫",
+      "en": "Microdrama Startup Signs Actor AI Likeness Licenses, Sparking Industry Controversy"
+     },
+     "source": "https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/"
+    },
+    {
+     "headline": {
+      "zh": "《Hyperscale》新書揭示：超大規模資料中心已成為全球反科技巨頭浪潮的風暴中心",
+      "en": "New Book 'Hyperscale' Details How Giant Data Centers Fuel the Backlash Against Big Tech"
+     },
+     "source": "https://techcrunch.com/2026/11/22/why-data-centers-are-at-the-center-of-the-big-tech-backlash/"
+    },
+    {
+     "headline": {
+      "zh": "Vibe Coding 浪潮延伸至硬體：自然語言編譯逐步滲透電視與相機邊緣韌體開發",
+      "en": "The Vibe-Coding Wave Expands to Smart Gadgets, TVs, and Embedded Consumer Hardware"
+     },
+     "source": "https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-11-23T07:01+08:00"
+}

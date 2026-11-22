@@ -1,6 +1,14 @@
 {
- "latest": "2026-11-21",
+ "latest": "2026-11-23",
  "reports": [
+  {
+   "date": "2026-11-23",
+   "type": "weekly",
+   "summary": {
+    "zh": "推論服務資料外洩頻傳，能源危機逼退減碳承諾",
+    "en": "Inference providers leak data; AI energy crisis derails net-zero."
+   }
+  },
   {
    "date": "2026-11-21",
    "type": "daily",
