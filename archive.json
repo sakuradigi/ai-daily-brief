@@ -1,6 +1,14 @@
 {
- "latest": "2026-11-23",
+ "latest": "2026-11-25",
  "reports": [
+  {
+   "date": "2026-11-25",
+   "type": "daily",
+   "summary": {
+    "zh": "GLM-5.4 引入循環架構，Claude 實現自修 PR，亞馬遜收購 Decart。",
+    "en": "GLM-5.4 loops transformers, Claude Ship automates PR fixes, and Amazon buys Decart."
+   }
+  },
   {
    "date": "2026-11-23",
    "type": "weekly",

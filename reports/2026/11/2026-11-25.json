@@ -1,0 +1,312 @@
+{
+ "date": "2026-11-25",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "智譜 AI 推出 GLM-5.4：首創 Loop Transformer 架構以權重共享深化推論",
+      "en": "Zhipu AI Unveils GLM-5.4 Featuring First Loop Transformer for Generalized Coding"
+     },
+     "detail": {
+      "zh": "GLM-5.4 採用 Loop Transformer 架構，讓同一組權重共享層在單次前向傳播中反覆迭代並精煉隱藏狀態。此舉在不增加參數量的前提下顯著加深運算深度，專注於長上下文程式碼生成與端到端任務通用化能力。",
+      "en": "GLM-5.4 introduces a loop transformer architecture where weight-shared layers run multiple iterations per forward pass to iteratively refine hidden states. This deepens computational capacity without parameter bloat, targeting generalized coding and complex program synthesis."
+     },
+     "source": "https://z.ai/blog/glm-5.4",
+     "tags": [
+      "LLM",
+      "Architecture",
+      "Coding",
+      "Transformer"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 發表 Claude Ship：可自主審查、修復並合併 Pull Request",
+      "en": "Anthropic Introduces Claude Ship to Review, Fix, and Approve Pull Requests"
+     },
+     "detail": {
+      "zh": "Claude Ship 讓 AI Agent 直接接入工程師的工作流程，具備自動檢查 PR、修復 CI 報錯並給予核准的能力。這標誌著程式碼代理工具從單純的「補全建議」正式跨入「自主驗收與維護」階段，有助於大幅消除程式碼審查瓶頸。",
+      "en": "Claude Ship integrates AI agents into developer workflows to autonomously review, patch, and approve pull requests. This marks a shift from passive code generation to autonomous gatekeeping, reducing human bottlenecks in standard PR review cycles."
+     },
+     "source": "https://claude.com/resources/articles/introducing-claude-ship",
+     "tags": [
+      "DevTools",
+      "Agents",
+      "Anthropic",
+      "Automation"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "亞馬遜傳以 75 億美元收購 Decart，藉由軟體編譯技術力推 Trainium 晶片",
+      "en": "Amazon Acquires Decart for Reported $7.5B to Bridge Silicon Gap with Trainium"
+     },
+     "detail": {
+      "zh": "AWS 透過收購模型即時推論與編譯最佳化新創 Decart，將其演算法整合至自家 Trainium 晶片生態系。亞馬遜試圖透過極致的軟體層推論加速，縮小與 Nvidia 硬體生態在效能與開發者支援上的差距。",
+      "en": "Amazon's reported $7.5 billion acquisition of Decart aims to absorb its real-time inference optimization and compilation stack into the Trainium silicon ecosystem. The move leverages software-level efficiency to narrow the competitive gap with Nvidia's hardware moat."
+     },
+     "source": "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/",
+     "tags": [
+      "AWS",
+      "Hardware",
+      "Inference",
+      "Acquisition"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 攜手 Cisco 開源 Shirudo：Linux 系統補丁零停機熱防護執行環境",
+      "en": "OpenAI and Cisco Release Shirudo, an Open-Source Runtime for Linux Security"
+     },
+     "detail": {
+      "zh": "Shirudo 是專為 Linux 設計的安全執行環境，能讓維運團隊在正式套用修補程式期間對執行中系統進行防護隔離。該專案旨在緩解大規模生產環境在面對零日漏洞時無法即時停機重啟的痛點。",
+      "en": "Shirudo provides a specialized open-source runtime for Linux, protecting live processes and preventing exploit execution while patches are actively deployed. It tackles production downtime challenges during critical security mitigations."
+     },
+     "source": "https://openai.com/index/introducing-shirudo",
+     "tags": [
+      "OpenSource",
+      "Linux",
+      "Security",
+      "Infrastructure"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Songe：利用本機閒置算力訓練專屬小模型的輕量級引擎",
+      "en": "Songe: Training Engine Leveraging Idle Local Compute for On-Device Models"
+     },
+     "detail": {
+      "zh": "Songe 是一個開源訓練排程工具，能在開發者工作站閒置時自動喚醒並分片執行模型微調與輕量預訓練。對注重資料隱私或算力預算受限的獨立開發者而言，提供了一種低成本的在地端適配方案。",
+      "en": "Songe is a lightweight training engine designed to scavenge idle workstation compute for local fine-tuning and adaptation. It gives privacy-conscious and budget-constrained engineers a zero-cloud alternative for running continuous training jobs."
+     },
+     "source": "https://github.com/sous-labs/songe",
+     "tags": [
+      "LocalAI",
+      "FineTuning",
+      "OpenSource",
+      "Efficiency"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Declare：專為人機協作設計的宣告式 UI 語言",
+      "en": "Declare: A Declarative UI Language Built for Humans and AI Agents"
+     },
+     "detail": {
+      "zh": "Declare 提供高語意化的簡潔語法，降低 LLM 在生成介面結構時的幻覺率與語法錯誤，同時便於工程師即時審閱與微調。該設計縮短了 Agentic UI 快速原型從自然語言描述轉化為可用元件的路徑。",
+      "en": "Declare introduces a concise, highly semantic syntax optimized for LLM code generation and human inspection. It reduces hallucinated structural errors in generative UI pipelines and streamlines text-to-interface prototyping."
+     },
+     "source": "https://davidtemkin.github.io/declarelang/",
+     "tags": [
+      "UI",
+      "ProgrammingLanguages",
+      "Agents",
+      "FrontEnd"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Google Search AI Mode 深度整合 Drive 與 Wallet 實現跨服務個人化",
+      "en": "Google Search AI Mode Expands Personal Intelligence to Drive and Wallet"
+     },
+     "detail": {
+      "zh": "Google 升級其 AI 搜尋模式，允許模型直接調用使用者的 Google Drive 文件與 Wallet 票券憑證資料來回答複雜的個人情境問題。此更新展示了跨端雲資料倉儲與對話代理整合後的生產力潛力，但同時也引發資料權限邊界的新討論。",
+      "en": "Google Search's AI Mode can now directly query private files in Drive and passes in Wallet to answer personalized, context-heavy queries. The update showcases enterprise-to-consumer context injection while highlighting strict sandbox permission concerns."
+     },
+     "source": "https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses/",
+     "tags": [
+      "Google",
+      "Search",
+      "Personalization",
+      "Context"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "datasette-charts 0.2a0 整合 Agent，支援自然語言直接生成 SQL 視覺化",
+      "en": "datasette-charts 0.2a0 Adds Datasette Agent Integration for Conversational Charting"
+     },
+     "detail": {
+      "zh": "開源資料探勘工具 Datasette 釋出新版圖表外掛，透過與 Datasette Agent 連動，使用者只需在對話欄要求特定統計維度，系統即可自動生成查詢並調用 D3 或 Observable Plot 繪製互動圖表，大幅加速探索性資料分析流程。",
+      "en": "The datasette-charts plugin now seamlessly hooks into Datasette Agent, allowing users to request complex data visualizations in natural language. The agent translates prompts into validated SQL queries and renders interactive charts via D3 and Observable Plot."
+     },
+     "source": "https://simonwillison.net/2026/Nov/24/datasette-charts/",
+     "tags": [
+      "Datasette",
+      "DataVisualization",
+      "SQL",
+      "Python"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "OpenAI 揭露 GPT-6 具備原生蛋白質設計能力，體外實驗驗證成功",
+      "en": "OpenAI Details GPT-6 Intrinsic Protein-Design Capabilities Validated in Lab"
+     },
+     "detail": {
+      "zh": "OpenAI 報告顯示，GPT-6 無需依賴專屬的幾何微調架構，僅依靠通用多模態推理與程式碼生成能力即可完成蛋白質結構與序列設計。實驗室合成測試證實，其設計的序列在五種特定標靶上展現了具體的結合活性。",
+      "en": "OpenAI reports that GPT-6 demonstrates intrinsic de novo protein design purely through general-purpose reasoning and code execution. Wet-lab validations confirmed physical binding activity across five independent molecular targets without dedicated structural biology tuning."
+     },
+     "source": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+     "tags": [
+      "BioAI",
+      "GPT-6",
+      "Reasoning",
+      "ProteinDesign"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Google DeepMind 利用 Agent 團隊結合形式驗證發現更快的量子演算法",
+      "en": "DeepMind Discovers Faster Quantum Algorithms via Multi-Agent Formal Verification"
+     },
+     "detail": {
+      "zh": "DeepMind 提出一套結合多代理人協作與形式化驗證（Formal Verification）的研發框架，成功將核融合模擬與化學計算中的量子演算法複雜度進一步壓縮。形式化證明機制有效根絕了 LLM 在複雜數學演算中容易出現的幽靈定理與邏輯漏洞。",
+      "en": "Google DeepMind deployed multi-agent swarms combined with rigorous formal verification to optimize quantum algorithms for chemical and fusion simulations. The formal verification loop strictly prevents mathematical hallucinations during combinatorial optimization."
+     },
+     "source": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+     "tags": [
+      "DeepMind",
+      "Quantum",
+      "FormalVerification",
+      "MultiAgent"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "LiveLoRA 架構：在動態更新 LoRA 時實現無損 KV 快取精準遷移",
+      "en": "LiveLoRA: Exact KV Cache Migration Across LoRA Updates for LLM Agents"
+     },
+     "detail": {
+      "zh": "針對 Long-context Agent 在會話過程中動態替換 LoRA 權重導致 KV Cache 必須全量重算的痛點，LiveLoRA 透過凍結底層解碼區塊與固定投影向量，達成無需 Re-prefill 的無損遷移，大幅降低長對話執行的 GPU 負載。",
+      "en": "LiveLoRA introduces a runtime co-design that enables exact KV cache reuse across LoRA adapter swaps without full-history re-prefill. By freezing early transformer blocks and standardizing adapter projections, it drastically cuts serving latency for persistent agent fleets."
+     },
+     "source": "https://arxiv.org/abs/2611.31105v1",
+     "tags": [
+      "Inference",
+      "KVCache",
+      "LoRA",
+      "Agents"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Anthropic 股價跌破 83 美元 IPO 發行價，AI 新創二級市場估值承壓",
+      "en": "Anthropic Drops Below $83 IPO Benchmark Amid Broad AI Valuation Reassessment"
+     },
+     "detail": {
+      "zh": "剛上市的 Anthropic 在盤前交易跌破發行定價，反映出公開市場對模型研發高昂算力資本支出（CapEx）與商業化變現週期拉長的疑慮。這一信號預計將對依賴創投估值體系的其他後期 AI 獨角獸帶來定價重估壓力。",
+      "en": "Anthropic slipped beneath its $83 IPO listing price in premarket trading, signaling growing public market skepticism regarding soaring compute CapEx versus extended payback timelines. The downturn puts downward valuation pressure across the late-stage AI startup landscape."
+     },
+     "source": "https://www.bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading",
+     "tags": [
+      "Anthropic",
+      "IPO",
+      "Finance",
+      "Markets"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "黃仁勳復職後向全體員工致歉，重申 Nvidia 不設立官僚接班架構",
+      "en": "Jensen Huang Addresses Nvidia All-Hands Post-Reinstatement, Rebuffs Succession Plan"
+     },
+     "detail": {
+      "zh": "歷經董事會短暫動盪與政府斡旋回歸後，黃仁勳於全員大會上就私人風波向員工致歉，同時堅持目前不會設立傳統接班人梯隊，認為該機制會形成不必要的內部層級，下週他將就相關事件赴參議院聽證會作證。",
+      "en": "Following his swift reinstatement as CEO, Jensen Huang apologized to Nvidia staff during an all-hands meeting while maintaining that rigid succession planning adds unneeded organizational hierarchy. Huang is scheduled to testify before the US Senate next week."
+     },
+     "source": "https://techcrunch.com/2026/11/24/jensen-huang-still-thinks-a-succession-plan-creates-unnecessary-hierarchy/",
+     "tags": [
+      "Nvidia",
+      "Hardware",
+      "Governance",
+      "Leadership"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "串流平台 Tidal 宣布全面禁用純 AI 生成音樂，預計下月清理下架近 2,900 萬首音訊檔案。",
+      "en": "Tidal to purge nearly 29 million fully AI-generated tracks on December 9th to combat catalog spam."
+     },
+     "source": "https://arstechnica.com/ai/2026/11/tidal-will-ban-fully-ai-generated-music-on-december-9/"
+    },
+    {
+     "headline": {
+      "zh": "AWS 披露駭客透過 Cairn AI 框架自主發現零日漏洞並發動滲透攻擊，幾乎無需人工介入。",
+      "en": "Amazon reports autonomous hacker AI agents using the Cairn framework discovered and weaponized zero-days with minimal human input."
+     },
+     "source": "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/"
+    },
+    {
+     "headline": {
+      "zh": "紐約時報發出內部指引，警告攝影師暫緩更新 Photoshop 2027 以防非預期生成式 AI 篡改新聞真實性。",
+      "en": "The New York Times warns photographers against updating to Photoshop 2027 over automated generative features."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features"
+    },
+    {
+     "headline": {
+      "zh": "獨立自研開源瀏覽器 Ladybird 釋出首個 Alpha 版本，核心引擎完全擺脫 Chromium 與 WebKit 依賴。",
+      "en": "Independent browser project Ladybird releases its first alpha build, featuring an entirely custom rendering and JS engine."
+     },
+     "source": "https://simonwillison.net/2026/Nov/23/ladybird/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-11-25T07:01+08:00"
+}
