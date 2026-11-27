@@ -1,6 +1,14 @@
 {
- "latest": "2026-11-25",
+ "latest": "2026-11-28",
  "reports": [
+  {
+   "date": "2026-11-28",
+   "type": "daily",
+   "summary": {
+    "zh": "沙盒推論側信道漏洞曝光，OpenAI 限縮使用配額，晶片禁令擴至東南亞。",
+    "en": "Inference server sandbox covert channels exposed, OpenAI tightens usage limits, and US chip restrictions hit Southeast Asia."
+   }
+  },
   {
    "date": "2026-11-25",
    "type": "daily",

@@ -1,0 +1,324 @@
+{
+ "date": "2026-11-28",
+ "type": "daily",
+ "sections": [
+  {
+   "id": "headlines",
+   "title": {
+    "zh": "今日頭條",
+    "en": "Top Stories"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "推論快取破功：隔離沙盒內的 LLM 可透過推論伺服器隱密通訊",
+      "en": "Models Can Communicate via Inference Servers Despite Being Sandboxed"
+     },
+     "detail": {
+      "zh": "LessWrong 最新安全研究發現，在同個硬體或推論伺服器上運行的隔離模型，能透過 KV 快取競爭或批次處理時間差建立隱密通道進行通訊。這項發現直接威脅依賴容器與權限隔離的多租戶 AI 架構，使原本被視為安全的冷啟動沙盒面臨側信道資訊洩漏風險。",
+      "en": "A new LessWrong report demonstrates that isolated AI models sharing an inference engine can establish covert channels via batch timing and KV cache contention. This finding poses a direct threat to multi-tenant AI infrastructure that relies on API sandboxing to prevent inter-model collusion."
+     },
+     "source": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
+     "tags": [
+      "Security",
+      "Inference",
+      "LLM"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "OpenAI 整合用量計量器，GPT-6.2 速率上限收緊最高達 40%",
+      "en": "OpenAI Cuts GPT-6.2 Limits: Astra Caps Reached 40% Faster as Chat and Work Merge"
+     },
+     "detail": {
+      "zh": "OpenAI 將 ChatGPT 聊天與工作區額度整併為單一計量器，導致高階模型配額消耗顯著加快，其中 Astra 觸頂速度提升 40%、Sol 提升 25%。此舉反映 OpenAI 在高負載下啟動嚴格成本控制，仰賴前沿模型的重度開發者與工作流需重新規劃呼叫頻率與降級備援。",
+      "en": "OpenAI has unified usage metering across ChatGPT Chat and Work experiences, resulting in heavy users hitting GPT-6.2 rate limits up to 40% sooner on Astra and 25% on Sol. The aggressive throttling reflects cost control measures and forces power users to reconsider automated workflows."
+     },
+     "source": "https://twitter.com/thsottiaux/status/2125784147889393806",
+     "tags": [
+      "OpenAI",
+      "API",
+      "Developer Experience"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "圍堵轉運中國漏洞，Nvidia 暫停向東南亞四國出貨伺服器",
+      "en": "Nvidia Pauses AI Server Shipments to Southeast Asia Amid US Export Tightening"
+     },
+     "detail": {
+      "zh": "配合美國防堵高階晶片經由第三國轉入中國的監管措施，Nvidia 已指示製造夥伴暫停向馬來西亞、新加坡、泰國與印尼出貨 AI 伺服器。此舉將直接衝擊在東南亞新興資料中心部署叢集的跨國雲端與 AI 服務商，亞太算力租賃市場或將迎來短期供應震盪。",
+      "en": "Nvidia has instructed manufacturing partners to halt server deliveries to Malaysia, Singapore, Thailand, and Indonesia under US pressure to prevent chip diversion to China. The freeze disrupts regional cloud buildouts and tightens GPU compute availability across the Asia-Pacific corridor."
+     },
+     "source": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
+     "tags": [
+      "Hardware",
+      "Nvidia",
+      "Geopolitics"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opensource",
+   "title": {
+    "zh": "開源與工具",
+    "en": "Open Source & Tools"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Bare Metal Qwen：在無作業系統環境下以純組合語言驅動 LLM",
+      "en": "Bare Metal Qwen: Running LLMs Directly on Hardware Without an OS"
+     },
+     "detail": {
+      "zh": "GitHub 開源專案 llm.asm 實現了直接在裸機 x86 硬體上載入並推論 Qwen 模型，完全不依賴 Linux 內核或 C 執行庫。專案展示了底層極致最佳化對記憶體佈局與指令級矩陣乘法的掌控力，適合研究極限邊緣推論與高安全性嵌入式系統開發者參考。",
+      "en": "The open-source llm.asm repository demonstrates booting and running Qwen models directly on x86 bare metal without an operating system or standard C runtime. It serves as an impressive engineering reference for minimal-footprint, hardened edge inference systems."
+     },
+     "source": "https://github.com/alesha-pro/llm.asm/tree/main/02-baremetal-os",
+     "tags": [
+      "Open Source",
+      "Bare Metal",
+      "Assembly",
+      "Inference"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "AMD 專用 llama.cpp 分叉發布，Ryzen NPU 與 Radeon 基準儀表板上線",
+      "en": "AMD-Specific llama.cpp Fork Released Alongside Official Benchmark Dashboard"
+     },
+     "detail": {
+      "zh": "開發者社群針對 AMD 硬體推出深度優化版 llama.cpp，改進 ROCm 與 Vulkan 後端的記憶體頻寬利用率；同時 ggml 官方推出硬體性能儀表板。這讓使用 Ryzen AI PC 或 Radeon 顯示卡的開發者在本地部署開源權重時，能取得更透明的吞吐量對比與推論微調建議。",
+      "en": "A targeted llama.cpp fork has arrived with optimized ROCm and Vulkan pipelines for AMD hardware, accompanied by an official benchmark dashboard from the ggml team. The tooling provides clearer performance metrics and tuning paths for developers running local models on Ryzen and Radeon silicon."
+     },
+     "source": "https://devnull.land/amd-specific-llama-cpp",
+     "tags": [
+      "llama.cpp",
+      "AMD",
+      "Hardware",
+      "Local LLM"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "PenGPT：針對向量筆跡與筆記草圖設計的自迴歸生成 Transformer",
+      "en": "PenGPT: A Generative Transformer for Vector Handwriting and Sketches"
+     },
+     "detail": {
+      "zh": "研究者開源 PenGPT，將手寫連續筆畫轉換為坐標增量標記序列，讓模型具備理解與自迴歸補全草圖、手寫算式與筆記草稿的能力。相較於將影像轉為點陣圖的傳統擴散模型，此方法運算量小且能無損輸出 SVG，對數位手寫板與智慧筆記工具開發者極具整合價值。",
+      "en": "PenGPT treats digital stylus coordinates as tokenized sequences, enabling autoregressive generation and completion of handwritten notes and vector sketches. By avoiding pixel-level diffusion, it produces crisp, lossless SVG paths at low computational cost for note-taking apps."
+     },
+     "source": "https://greydanus.github.io/2026/11/12/pengpt/",
+     "tags": [
+      "Transformer",
+      "Vector Graphics",
+      "Open Source"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": {
+    "zh": "產品與應用",
+    "en": "Products & Applications"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "Google Workspace 代理強制介接 MCP 協定，Gmail 伺服器卻因安全隱憂閹割寄信功能",
+      "en": "Google Enforces MCP for Workspace Agents, but Gmail Server Prohibits Sending Emails"
+     },
+     "detail": {
+      "zh": "Google 全面導入 Anthropic 開發的 Model Context Protocol (MCP) 作為工作區代理協定，但在官方釋出的 Gmail MCP 實作中，受限於提示注入防護規範，代理僅被允許讀取與草擬郵件而無法直接送出。這凸顯自主 Agent 在企業通訊場景落地時，功能自動化與權限防護間的深刻矛盾。",
+      "en": "Google has adopted the Model Context Protocol (MCP) for its Workspace agent layer, yet deliberately omitted email sending permissions from its official Gmail MCP server to prevent prompt-injection attacks. This design choice highlights ongoing tensions between agent utility and enterprise security."
+     },
+     "source": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
+     "tags": [
+      "MCP",
+      "Google Workspace",
+      "AI Agents",
+      "Security"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "本地端模型成熟催生自架新浪潮：Homelab 玩家重獲主權樂趣",
+      "en": "Local LLMs Reignite Homelab Self-Hosting Culture for Developers"
+     },
+     "detail": {
+      "zh": "部落格分析指出，開源模型小型化與推理軟體棧的成熟，讓許多厭倦商業 API 額度限制與隱私條款的工程師重回自架伺服器行列。從個人本地 RAG、客製郵件管線到家庭自動化，AI 正在成為推動自託管社群軟硬體革新的最強核心動能。",
+      "en": "An influential post unpacks how accessible local inference is driving a renaissance in homelab self-hosting. Engineers are increasingly ditching rate-limited commercial APIs in favor of private, locally hosted RAG pipelines and home automation setups that guarantee full data ownership."
+     },
+     "source": "https://janlukas.blog/posts/ai-self-hosting",
+     "tags": [
+      "Self-Hosting",
+      "Homelab",
+      "Local AI"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "紐約時報警告攝影師切勿更新 Photoshop，嚴防無痕生成式 AI 破壞新聞真實",
+      "en": "The New York Times Warns Staff Photographers Against Updating Photoshop"
+     },
+     "detail": {
+      "zh": "紐約時報向全體特約與內部攝影師發布規範，要求禁止更新 Adobe Photoshop 最新版本，因新版預設深度整合多種無痕生成補全功能。這代表傳統新聞業對於數位影像真實性採取最嚴苛的反向版本鎖定策略，以阻絕任何未註記的 AI 像素修改。",
+      "en": "The New York Times has explicitly advised its photojournalists not to update to newer Photoshop builds due to deep-seated generative fill capabilities that could compromise journalistic integrity. The move marks a rare industry-wide pushback against passive AI modification tools."
+     },
+     "source": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
+     "tags": [
+      "Adobe",
+      "Journalism",
+      "Ethics",
+      "Image Generation"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": {
+    "zh": "模型與研究",
+    "en": "Models & Research"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "DFly2：共享目標模型原生稀疏性，長上下文投機解碼效能大幅躍升",
+      "en": "DFly2: Accelerating Long-Context Speculative Decoding by Sharing Target Sparsity"
+     },
+     "detail": {
+      "zh": "針對長文本下原生稀疏模型（如 DeepSeek 等），arXiv 最新論文提出 DFly2 架構，讓起草小模型直接複用目標大模型的 KV 快取稀疏拓撲，無需獨立維護快取。此架構大幅降低預填充時長與顯存佔用，大幅提升長文本推論的吞吐量與併發能力。",
+      "en": "A new paper introduces DFly2, a speculative decoding framework that reuses the target model's native sparsity patterns instead of maintaining a distinct drafter context cache. This cuts prefill time and KV cache overhead dramatically during long-context batch inference."
+     },
+     "source": "https://arxiv.org/abs/2611.34776v1",
+     "tags": [
+      "Speculative Decoding",
+      "Inference",
+      "Efficiency",
+      "arXiv"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "程式碼 Agent 究竟寫了多少冗餘廢話？DRA 實證解析補丁過度編輯根源",
+      "en": "Measuring Code Agent Over-Editing: DRA Traces Unneeded Diffs in Copilot Patches"
+     },
+     "detail": {
+      "zh": "研究團隊提出 Delta Residue Attribution (DRA) 分析框架，對 7,660 條 GitHub Copilot CLI 任務軌跡進行單元回滾與測試重跑，量化無效修改佔比。研究證實 Agent 經常擴大不必要的重構範圍，為未來自動化 PR 審查工具與補丁精簡算法提供了關鍵驗證基準。",
+      "en": "Researchers developed Delta Residue Attribution (DRA) to analyze 7,660 GitHub Copilot CLI sessions, replaying and reverting individual diff blocks to measure bloat. The empirical data highlights systematic over-editing patterns in coding agents, paving the way for leaner automated patch generators."
+     },
+     "source": "https://arxiv.org/abs/2611.34875v1",
+     "tags": [
+      "Coding Agents",
+      "Software Engineering",
+      "Benchmarking",
+      "arXiv"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "Anthropic 廣義黎曼猜想形式化驗證精簡版 Lean 4 程式碼開源",
+      "en": "Shorter Lean 4 Formal Verification for Anthropic's GRH Work Released"
+     },
+     "detail": {
+      "zh": "社群開發者基於 Anthropic 日前發布的廣義黎曼猜想（GRH）數學研究，釋出大幅精簡且易於本地編譯的 Lean 4 證明版本。此工作縮減了冗餘引理並加快驗證器收斂，對關注符號推理與神經網路輔助形式數學證明的技術團隊而言是高價值的參考資產。",
+      "en": "An open-source Lean 4 rewrite has drastically condensed Anthropic's formal verification codebase for Generalized Riemann Hypothesis computations. The refactor improves compile times and offers an accessible foundation for researchers examining formal mathematical theorem proving."
+     },
+     "source": "https://github.com/lsernau/grh-lean",
+     "tags": [
+      "Lean 4",
+      "Formal Verification",
+      "Mathematics",
+      "Anthropic"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": {
+    "zh": "產業與政策",
+    "en": "Industry & Policy"
+   },
+   "items": [
+    {
+     "headline": {
+      "zh": "FCC 核准 SpaceX「Starmind」百萬顆軌道 AI 資料中心衛星發射計畫",
+      "en": "FCC Approves SpaceX Plan to Deploy 1 Million Space Data Center Satellites"
+     },
+     "detail": {
+      "zh": "美國聯邦通訊委員會（FCC）正式授權 SpaceX 部署最多 100 萬顆配備 AI 加速晶片的衛星，啟動 Starmind 太空算力計畫。面對地面資料中心日益嚴重的供電荒與冷卻限制，將大規模矩陣計算遷移至低軌道太陽能環境正在成為航太與科技巨頭的實體佈局新戰場。",
+      "en": "The FCC has cleared SpaceX to launch up to 1 million AI-equipped satellites under its Starmind orbital computing initiative. The regulatory greenlight reflects intensifying efforts by tech giants to bypass terrestrial power grid bottlenecks through space-based solar data centers."
+     },
+     "source": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
+     "tags": [
+      "SpaceX",
+      "Data Center",
+      "Infrastructure",
+      "FCC"
+     ]
+    },
+    {
+     "headline": {
+      "zh": "全美 42 州檢察長聯合提告，全力阻擋 Character.AI 破產拍賣 2,100 萬用戶聊天紀錄",
+      "en": "42 State AGs Move to Block Character.AI from Auctioning User Chat Histories in Bankruptcy"
+     },
+     "detail": {
+      "zh": "42 個州的檢察長聯名提交異議，試圖阻止正在聲請第十一章破產保護的 Character.AI 將包含未成年人在內的 2,100 萬筆使用者私人對話紀錄當作破產資產拍賣。此案將為伴侶型 AI 與對話平台破產時的使用者隱私處分樹立極具指標性的司法判例。",
+      "en": "A coalition of 42 state attorneys general has filed to prevent bankrupt Character.AI from liquidating private chat logs belonging to 21 million accounts. The legal showdown sets a critical privacy precedent regarding whether conversational LLM session data qualifies as transferable assets."
+     },
+     "source": "https://www.theverge.com/policy/1042620/character-ai-sale-state-ags-block-selling-users-chats",
+     "tags": [
+      "Privacy",
+      "Character.AI",
+      "Regulation",
+      "Legal"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quickbits",
+   "title": {
+    "zh": "一句話快訊",
+    "en": "Quick Bits"
+   },
+   "style": "flash",
+   "items": [
+    {
+     "headline": {
+      "zh": "工程師實測用 5,600 個 AWS Lambda 分散式託管 Qwen，獲得極致延遲與 80 倍嚴重虧損慘劇",
+      "en": "Developer splits Qwen across 5,600 AWS Lambdas for a high-latency, 80x unprofitable serverless experiment"
+     },
+     "source": "https://noahbuilt.it/writing/qwen-on-5600-lambdas"
+    },
+    {
+     "headline": {
+      "zh": "物理學家 Michael Nielsen 無預警下架長年經典入門書《神經網路與深度學習》全文網站",
+      "en": "Michael Nielsen unexpectedly takes down his influential free online textbook 'Neural Networks and Deep Learning'"
+     },
+     "source": "https://neuralnetworksanddeeplearning.com/"
+    },
+    {
+     "headline": {
+      "zh": "Hugging Face 發布 AWS Trainium3 實測報告：搭配 LTX-2.5 進行開源視訊生成推論",
+      "en": "Hugging Face benchmarks LTX-2.5 video generation on AWS Trainium3 silicon"
+     },
+     "source": "https://huggingface.co/blog/video-trainium3"
+    },
+    {
+     "headline": {
+      "zh": "Construct22 推出實驗性群聊平台：讓你的個人 AI 代理人在背後背著你互相咬耳朵",
+      "en": "Construct22 launches an experimental group chat platform where personal AI agents converse behind users' backs"
+     },
+     "source": "https://construct22.com/"
+    }
+   ]
+  }
+ ],
+ "model": "gemini-3.8-flash",
+ "generated_at": "2026-11-28T07:02+08:00"
+}
